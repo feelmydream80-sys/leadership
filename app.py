@@ -32,7 +32,6 @@ from src.metadata import (
     get_user_results, get_user_history, calculate_trait_delta, get_all_users_summary,
     calculate_trait_trend, analyze_cohort, analyze_gap, generate_insights, generate_cohort_insights
 )
-from src.database import init_db
 
 load_dotenv()
 
@@ -910,8 +909,11 @@ if __name__ == '__main__':
     import os
     os.environ['WERKZEUG_SERVER_TIMEOUT'] = '900'  # 15분 타임아웃
     
+    is_debug = os.getenv('FLASK_DEBUG', 'false').lower() in ('true', '1', 'yes')
+    
     print("=" * 60)
     print("리더십 분석 시스템 웹 서버 시작")
+    print(f"Debug 모드: {'ON' if is_debug else 'OFF'}")
     print("http://localhost:5000")
     print("=" * 60)
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=is_debug, host='0.0.0.0', port=5000)

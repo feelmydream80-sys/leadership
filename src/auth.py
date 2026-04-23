@@ -552,12 +552,12 @@ def get_dashboard_by_period(period='all'):
     conn = get_db()
     cursor = conn.cursor()
     
-    # 기간 필터
+    # 기간 필터 (파라미터 바인딩으로 SQL Injection 방지)
     cursor.execute('''
         SELECT trait_result, result_json, created_at
         FROM analysis_results
-        WHERE created_at >= DATE('now', '-{} days')
-    '''.format(days))
+        WHERE created_at >= DATE('now', '-' || ? || ' days')
+    ''', (days,))
     rows = cursor.fetchall()
     
     trait_counts = {}
