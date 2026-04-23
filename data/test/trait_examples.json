@@ -249,7 +249,7 @@
       "trait_id": "T101",
       "trait_name": "Risk: Avoidant",
       "category": "negative",
-      "raw_text": "이 문제는 제가 다루기 부담스럽습니다. 위원회의 결정을 기다려야 할 것 같습니다. 제가 결정할 일이 아니에요.",
+      "raw_text": "이 문제는 제가 직접 결정할 사항이 아닙니다. 사장님께 보고드려야 하고, 저 혼자 결정하면 누군가 문제가 생기면 제 탓으로 돌아올 텐데困습니다. 다 같이 결정합시다.",
       "expected_labels": ["N08-01", "N08-02", "N10-01", "N14-01"],
       "expected_result": {"primary": "T101", "secondary": []},
       "context": "normal"
