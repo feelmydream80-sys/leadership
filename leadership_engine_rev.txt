@@ -1,0 +1,274 @@
+================================================================
+leadership_engine.py 수정안
+수정 항목 2가지:
+  1. 중복 label 덮어씌우기 버그 수정
+  2. consistency 0.5 고정 → 실계산으로 교체
+================================================================
+
+----------------------------------------------------------------
+수정 1. 중복 label 덮어씌우기 버그
+----------------------------------------------------------------
+
+[문제]
+현재 코드:
+    label_confidences = {ml['label_id']: ml.get('confidence', 1.0) for ml in micro_labels}
+
+딕셔너리 컴프리헨션은 동일 key가 여러 번 나오면 마지막 값으로 덮어씌움
+M33-01이 confidence 0.9, 0.8, 0.7로 3번 등장하면 → 0.7만 남음
+수확 체감(log) 설계 전체가 무력화됨
+
+[수정]
+label_id별로 confidence를 리스트로 누적
+context도 set으로 누적해서 consistency 계산에 활용
+
+----------------------------------------------------------------
+수정 2. consistency 0.5 고정
+----------------------------------------------------------------
+
+[문제]
+현재 코드:
+    consistency = 0.5  # 하드코딩
+
+Confidence 공식:
+    confidence = (volume × 0.3) + (avg_nlp_conf × 0.5) + (consistency × 0.2)
+
+consistency가 항상 0.5면 Confidence 계산 자체를 신뢰할 수 없음
+
+[수정]
+설계 확정안대로 실계산:
+    consistency = 고유 context 수 / 전체 등장 횟수
+
+label별 평균:
+    전체 label의 consistency 평균을 최종 consistency로 사용
+
+================================================================
+수정 코드 (leadership_engine.py)
+================================================================
+
+아래 두 메서드를 교체하면 됨:
+  - process()
+  - _calculate_confidence()
+
+================================================================
+[ 수정 1: process() 메서드 전체 교체 ]
+================================================================
+
+    def process(self, micro_labels, context: str = "normal"):
+        """
+        수정사항:
+        - label_confidences: dict → defaultdict(list) 로 변경
+          동일 label 여러 번 등장 시 confidence 리스트 누적
+        - label_contexts: label별 등장 context set 누적
+          → consistency 계산에 사용
+        - label_count: label별 등장 횟수 누적
+          → effective_count 기반 수확 체감 반영 가능
+        - _calculate_confidence에 label_contexts 전달
+        """
+        from collections import defaultdict
+
+        # --- 수정 전 (삭제) ---
+        # label_ids = [ml['label_id'] for ml in micro_labels]
+        # label_confidences = {ml['label_id']: ml.get('confidence', 1.0) for ml in micro_labels}
+
+        # --- 수정 후 ---
+        label_conf_list = defaultdict(list)
+        label_context_list = defaultdict(set)
+        label_count = defaultdict(int)
+
+        for ml in micro_labels:
+            lid = ml['label_id']
+            label_conf_list[lid].append(ml.get('confidence', 1.0))
+            label_context_list[lid].add(ml.get('context', 'normal'))
+            label_count[lid] += 1
+
+        # label_ids: 중복 포함 전체 목록 (Pattern Engine 매칭용)
+        label_ids = [ml['label_id'] for ml in micro_labels]
+
+        # label_confidences: label별 평균 confidence (Pattern Engine 입력용)
+        label_confidences = {
+            lid: round(sum(confs) / len(confs), 4)
+            for lid, confs in label_conf_list.items()
+        }
+        # --- 수정 끝 ---
+
+        positive_traits_results = []
+        negative_traits_results = []
+
+        for trait_def in self.positive_traits:
+            strength, evidence = self._calculate_positive_trait(
+                trait_def, label_ids, label_confidences, context
+            )
+            if strength > 0:
+                positive_traits_results.append({
+                    'trait_id': trait_def['trait_id'],
+                    'name': trait_def['trait_name'],
+                    'strength': strength,
+                    'evidence': evidence
+                })
+
+        for trait_def in self.negative_traits:
+            strength = self._calculate_negative_trait(
+                trait_def, label_ids, label_confidences
+            )
+            if strength > 0:
+                negative_traits_results.append({
+                    'trait_id': trait_def['trait_id'],
+                    'name': trait_def['trait_name'],
+                    'strength': strength
+                })
+
+        positive_traits_results.sort(key=lambda x: x['strength'], reverse=True)
+        negative_traits_results.sort(key=lambda x: x['strength'], reverse=True)
+
+        total_positive = sum(t['strength'] for t in positive_traits_results) if positive_traits_results else 1
+
+        trait_percentages = []
+        for pt in positive_traits_results:
+            pct = round((pt['strength'] / total_positive) * 100, 1) if total_positive > 0 else 0
+            trait_percentages.append({
+                'trait_id': pt['trait_id'],
+                'name': pt['name'],
+                'percentage': pct,
+                'strength': pt['strength']
+            })
+
+        trait_percentages = [t for t in trait_percentages if t['percentage'] >= 3.0]
+        trait_percentages.sort(key=lambda x: x['percentage'], reverse=True)
+
+        primary = trait_percentages[0] if trait_percentages else None
+        secondary_list = trait_percentages[1:4] if len(trait_percentages) > 1 else []
+
+        # --- 수정: label_context_list, label_count 전달 ---
+        confidence = self._calculate_confidence(
+            micro_labels, label_confidences, label_context_list, label_count
+        )
+        # --- 수정 끝 ---
+
+        risks = self._detect_risks(micro_labels, positive_traits_results, negative_traits_results)
+        hybrid_traits = self._generate_hybrids(positive_traits_results)
+
+        return {
+            "primary": primary['trait_id'] if primary else None,
+            "primary_name": primary['name'] if primary else None,
+            "primary_strength": round(primary['strength'], 3) if primary else None,
+            "secondary": [t['trait_id'] for t in secondary_list],
+            "secondary_details": [(t['trait_id'], t['name'], t['percentage']) for t in secondary_list],
+            "confidence": confidence,
+            "confidence_level": self._get_confidence_level(confidence),
+            "evidence": primary.get('evidence', []) if primary else [],
+            "trait_percentages": {t['trait_id']: t['percentage'] for t in trait_percentages},
+            "sorted_trait_list": [(t['trait_id'], t['percentage'], round(t['strength'], 3)) for t in trait_percentages],
+            "negative_traits": [
+                {'trait_id': t['trait_id'], 'name': t['name'], 'severity': round(t['strength'], 2)}
+                for t in negative_traits_results[:5]
+            ],
+            "risks": risks,
+            "hybrid_traits": hybrid_traits
+        }
+
+
+================================================================
+[ 수정 2: _calculate_confidence() 메서드 전체 교체 ]
+================================================================
+
+    def _calculate_confidence(
+        self,
+        micro_labels,
+        label_confidences,
+        label_context_list,   # 수정: 추가된 파라미터
+        label_count           # 수정: 추가된 파라미터
+    ):
+        """
+        수정사항:
+        - consistency: 0.5 고정 → 실계산으로 교체
+          공식: label별 (고유 context 수 / 전체 등장 횟수) 의 평균
+          의미: 동일 label이 다양한 맥락에서 반복 등장할수록 일관성 높음
+               동일 맥락에서만 반복되면 일관성 낮음
+
+        예시:
+          M33-01이 crisis/normal/innovation 3가지 맥락에서 각 1번 → consistency 1.0
+          M33-01이 crisis에서만 3번 → consistency 0.33
+          M33-01이 1번만 등장 → consistency 1.0 (단일 등장은 패널티 없음)
+        """
+
+        # volume: 데이터 양 기반 점수 (5개 이상이면 최대)
+        volume = min(len(micro_labels) / 5, 1.0)
+
+        # avg_nlp_conf: label별 평균 confidence의 전체 평균
+        avg_nlp_conf = 0.0
+        if label_confidences:
+            avg_nlp_conf = sum(label_confidences.values()) / len(label_confidences)
+
+        # --- 수정 전 (삭제) ---
+        # consistency = 0.5
+
+        # --- 수정 후: consistency 실계산 ---
+        if label_count:
+            consistency_scores = []
+            for lid, count in label_count.items():
+                unique_contexts = len(label_context_list.get(lid, set()))
+                if count == 1:
+                    # 단일 등장은 일관성 측정 불가 → 중립값 0.5
+                    consistency_scores.append(0.5)
+                else:
+                    score = unique_contexts / count
+                    consistency_scores.append(score)
+            consistency = round(sum(consistency_scores) / len(consistency_scores), 4)
+        else:
+            consistency = 0.5
+        # --- 수정 끝 ---
+
+        confidence = (volume * 0.3) + (avg_nlp_conf * 0.5) + (consistency * 0.2)
+
+        return round(confidence, 3)
+
+
+================================================================
+수정 전후 동작 비교
+================================================================
+
+시나리오: M33-01이 3번 등장 (crisis, normal, crisis)
+
+[수정 전]
+  label_confidences["M33-01"] = 0.7  ← 마지막 값만 남음
+  consistency = 0.5                  ← 고정값
+
+[수정 후]
+  label_conf_list["M33-01"] = [0.9, 0.8, 0.7]
+  label_confidences["M33-01"] = 0.8  ← 평균값 사용
+  label_context_list["M33-01"] = {"crisis", "normal"}  ← 고유 맥락 2개
+  label_count["M33-01"] = 3
+
+  consistency["M33-01"] = 2 / 3 = 0.667  ← 실계산
+  → 같은 맥락만 반복됐다면 1/3 = 0.333으로 낮아짐
+
+
+================================================================
+적용 방법
+================================================================
+
+leadership_engine.py 에서:
+
+1. process() 메서드 전체를 위 수정 코드로 교체
+2. _calculate_confidence() 메서드 전체를 위 수정 코드로 교체
+3. 파일 상단 import 확인 (collections.defaultdict 필요)
+   → 현재 코드에 이미 collections import 없으므로 추가 필요
+
+파일 상단 import 추가:
+    from collections import defaultdict
+
+(process() 안에 로컬 import로 넣어도 동작하지만
+파일 상단으로 올리는 게 표준)
+
+================================================================
+변경 없는 항목 (건드리지 않아도 됨)
+================================================================
+
+- K_trait 계산: 지금 단계에서는 단순화 버전 유지
+  (실데이터 축적 후 정밀화)
+- _calculate_positive_trait(): 변경 없음
+- _calculate_negative_trait(): 변경 없음
+- _detect_risks(): 변경 없음
+- _generate_hybrids(): 변경 없음
+
+================================================================

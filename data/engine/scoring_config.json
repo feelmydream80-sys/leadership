@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "scoring_rules": {
+    "core_bonus": 0.3,
+    "negative_penalty": 0.8,
+    "log_norm_base": 1.0
+  }
+}
