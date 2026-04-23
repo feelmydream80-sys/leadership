@@ -69,7 +69,7 @@
       "trait_id": "T04",
       "trait_name": "Crisis Manager",
       "category": "positive",
-      "raw_text": "긴급 상황이다. 지금 즉시 대응에 들어간다. 모든 팀은私の 지시를 따르기 바란다. 1시간 내에 상황을 안정화시킬 것이다.",
+      "raw_text": "긴급 상황이다. 지금 즉시 대응에 들어간다. 모든 팀은 내 지시를 따르기 바란다. 1시간 내에 상황을 안정화시킬 것이다.",
       "expected_labels": ["M19-01", "M10-01", "M20-01", "M18-01"],
       "expected_result": {"primary": "T04", "secondary": ["T01"]},
       "context": "crisis"
@@ -109,7 +109,7 @@
       "trait_id": "T06",
       "trait_name": "Execution Driver",
       "category": "positive",
-      "raw_text": "생각은 충분하다. 이제 실행이다. 오늘 할 일을 내일까지 완수하자. 결과가的全部다.",
+      "raw_text": "생각은 충분하다. 이제 실행이다. 오늘 할 일을 내일까지 완수하자. 결과가 전부다.",
       "expected_labels": ["M10-01", "M10-02", "M27-01"],
       "expected_result": {"primary": "T06", "secondary": ["T01"]},
       "context": "normal"
@@ -119,7 +119,7 @@
       "trait_id": "T06",
       "trait_name": "Execution Driver",
       "category": "positive",
-      "raw_text": "회의는 이제 그만하자. 실행이 중요하다. 오늘 중에Launch하자. 빠른 실행이 경쟁력이다.",
+      "raw_text": "회의는 이제 그만하자. 실행이 중요하다. 오늘 중에 시작하자. 빠른 실행이 경쟁력이다.",
       "expected_labels": ["M10-01", "M10-02", "M19-01"],
       "expected_result": {"primary": "T06", "secondary": ["T04"]},
       "context": "normal"
@@ -149,7 +149,7 @@
       "trait_id": "T08",
       "trait_name": "Emotional Intelligence Leader",
       "category": "positive",
-      "raw_text": "오늘 수고하셨습니다.힘드셨죠? 무슨 일이 있는지 듣고 싶습니다. 언제든 저를 찾아와 말해하세요.",
+      "raw_text": "오늘 수고하셨습니다. 힘드셨죠? 무슨 일이 있는지 듣고 싶습니다. 언제든 저를 찾아와 말해하세요.",
       "expected_labels": ["M12-01", "M14-01", "M12-02", "M11-01"],
       "expected_result": {"primary": "T08", "secondary": ["T02"]},
       "context": "normal"
@@ -249,7 +249,7 @@
       "trait_id": "T101",
       "trait_name": "Risk: Avoidant",
       "category": "negative",
-      "raw_text": "이 결정은 내가 내리기 힘들다. 위원회의 결정을 기다립시다. 문제가 생기면 어떻게 하지.",
+      "raw_text": "이 문제는 제가 다루기 부담스럽습니다. 위원회의 결정을 기다려야 할 것 같습니다. 제가 결정할 일이 아니에요.",
       "expected_labels": ["N08-01", "N08-02", "N10-01", "N14-01"],
       "expected_result": {"primary": "T101", "secondary": []},
       "context": "normal"
@@ -259,7 +259,7 @@
       "trait_id": "T101",
       "trait_name": "Risk: Avoidant",
       "category": "negative",
-      "raw_text": "아직 결정하기엔早了. 더 많은 데이터가 필요합니다. 누가 책임지는 겁니까?",
+      "raw_text": "아직 결정할 시점이 아닙니다. 더 많은 데이터가 필요하다니깐요. 누가 책임질 건가요? 저는 몰라요.",
       "expected_labels": ["N08-01", "N08-02", "N08-03", "N33-01"],
       "expected_result": {"primary": "T101", "secondary": []},
       "context": "normal"
