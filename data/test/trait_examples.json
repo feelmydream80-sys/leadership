@@ -1,6 +1,6 @@
 {
   "schema_version": "2026-04-v1",
-  "description": "Leadership Trait Test Examples - Each trait has 2 example scenarios",
+  "description": "리더십 Trait 테스트 예제 - 각 Trait별 2개 시나리오",
   "total_traits": 18,
   "total_examples": 36,
   "examples": [
@@ -9,7 +9,7 @@
       "trait_id": "T01",
       "trait_name": "Strategic Decisive Leader",
       "category": "positive",
-      "raw_text": "이번 quarter 매출 30% 성장 목표를 설정하고, 모든 팀은 내일까지 구체적인 실행 계획을 제출해야 한다. 성과가 나오지 않으면 즉시 결과를 검토하고 조정할 것이다.",
+      "raw_text": "이번 분기 매출 30% 성장 목표를 설정하고, 모든 팀은 내일까지 구체적인 실행 계획을 제출해야 한다. 성과가 나오지 않으면 즉시 결과를 검토하고 조정할 것이다.",
       "expected_labels": ["M01-01", "M06-01", "M10-01", "M01-02", "M06-02", "M19-01"],
       "expected_result": {"primary": "T01", "secondary": ["T06", "T04"]},
       "context": "crisis"
@@ -29,7 +29,7 @@
       "trait_id": "T02",
       "trait_name": "Collaborative Leader",
       "category": "positive",
-      "raw_text": "먼저 모두의 의견을 들어보겠습니다. A팀장의 의견은 매우 good합니다. 함께 해결해 봅시다. 어떤 아이디어든 환영입니다.",
+      "raw_text": "먼저 모두의 의견을 들어보겠습니다. 왕팀장의 의견은 매우 좋은 것 같습니다. 함께 해결해 봅시다. 어떤 아이디어든 환영입니다.",
       "expected_labels": ["M11-01", "M15-01", "M15-03", "M11-02", "M12-01"],
       "expected_result": {"primary": "T02", "secondary": ["T08", "T07"]},
       "context": "normal"
@@ -39,7 +39,7 @@
       "trait_id": "T02",
       "trait_name": "Collaborative Leader",
       "category": "positive",
-      "raw_text": "우리 팀의 핵심은 소통입니다.每周 회의에서 모두가 말씀드릴 기회를 드리겠습니다. 의견이 있으시면 언제든 말씀해 주세요.",
+      "raw_text": "우리 팀의 핵심은 소통입니다. 매주 회의에서 모두가 발언할 기회를 드리겠습니다. 의견이 있으시면 언제든 말씀해 주세요.",
       "expected_labels": ["M11-01", "M15-01", "M15-03", "M15-02", "M15-05"],
       "expected_result": {"primary": "T02", "secondary": ["T08"]},
       "context": "normal"
@@ -59,7 +59,7 @@
       "trait_id": "T03",
       "trait_name": "Innovative Leader",
       "category": "positive",
-      "raw_text": "다른 회사에서는 하지 않는 방법을 우리가해 봅시다. 도전하는 문화가 우리 회사의strength입니다. 새로운 아이디어를 찾는 팀에게는 인센티브를 드리겠습니다.",
+      "raw_text": "다른 회사에서는 ���지 않는 방법을 우리가 해봅시다. 도전하는 문화가 우리 회사의 강점입니다. 새로운 아이디어를 찾는 팀에게는 보상을 드리겠습니다.",
       "expected_labels": ["M03-03", "M05-02", "M23-01", "M26-01", "M05-03"],
       "expected_result": {"primary": "T03", "secondary": ["T09"]},
       "context": "innovation"
@@ -69,7 +69,7 @@
       "trait_id": "T04",
       "trait_name": "Crisis Manager",
       "category": "positive",
-      "raw_text": "긴급 상황이다. 지금 즉시 대응에 들어간다. 모든 팀은 my 지시를 따르기 바란다. 1시간 내에 상황을 안정화시킬 것이다.",
+      "raw_text": "긴급 상황이다. 지금 즉시 대응에 들어간다. 모든 팀은私の 지시를 따르기 바란다. 1시간 내에 상황을 안정화시킬 것이다.",
       "expected_labels": ["M19-01", "M10-01", "M20-01", "M18-01"],
       "expected_result": {"primary": "T04", "secondary": ["T01"]},
       "context": "crisis"
@@ -79,7 +79,7 @@
       "trait_id": "T04",
       "trait_name": "Crisis Manager",
       "category": "positive",
-      "raw_text": "문제가 발생했다. 지금situation을 분석하고 있다. 빠르게 결론을 내릴 것이다. 모두 my指示대로 행동해달라.",
+      "raw_text": "문제가 발생했다. 지금 상황을 분석하고 있다. 빠르게 결론을 내릴 것이다. 모두 내 안내대로 행동해달라.",
       "expected_labels": ["M19-01", "M10-01", "M20-01", "M17-01"],
       "expected_result": {"primary": "T04", "secondary": ["T01", "T06"]},
       "context": "crisis"
@@ -89,7 +89,7 @@
       "trait_id": "T05",
       "trait_name": "Analytical Leader",
       "category": "positive",
-      "raw_text": "데이터를 먼저 분석해보자. 실제 numbers가 보여주는 바에 따라 결정하자. 우리의 결정은evidence 기반으로 해야 한다.",
+      "raw_text": "데이터를 먼저 분석해보자. 실제 숫자가 보여주는 바에 따라 결정하자. 우리의 결정은 증거 기반으로 해야 한다.",
       "expected_labels": ["M34-01", "M08-02", "M18-02"],
       "expected_result": {"primary": "T05", "secondary": ["T12"]},
       "context": "normal"
@@ -99,7 +99,7 @@
       "trait_id": "T05",
       "trait_name": "Analytical Leader",
       "category": "positive",
-      "raw_text": "투자 결정 전에 모든financial 데이터를 검토해야 합니다. 각 부서의 성과 데이터를 비교分析和后方做判断합시다.",
+      "raw_text": "투자 결정 전에 모든 재무 데이터를 검토해야 합니다. 각 부서의 성과 데이터를 비교 분석한 후 판단합시다.",
       "expected_labels": ["M34-01", "M08-02", "M08-01"],
       "expected_result": {"primary": "T05", "secondary": ["T01"]},
       "context": "normal"
@@ -109,7 +109,7 @@
       "trait_id": "T06",
       "trait_name": "Execution Driver",
       "category": "positive",
-      "raw_text": "생각은 충분하다. 이제実行이다. 오늘task를 내일까지 완수하자. 결과가全部다.",
+      "raw_text": "생각은 충분하다. 이제 실행이다. 오늘 할 일을 내일까지 완수하자. 결과가的全部다.",
       "expected_labels": ["M10-01", "M10-02", "M27-01"],
       "expected_result": {"primary": "T06", "secondary": ["T01"]},
       "context": "normal"
@@ -119,7 +119,7 @@
       "trait_id": "T06",
       "trait_name": "Execution Driver",
       "category": "positive",
-      "raw_text": "회의는 이제 그만하자. 실행이 wichtig하다. 오늘中にlaunch하자. 빠른 실행이 경쟁력이다.",
+      "raw_text": "회의는 이제 그만하자. 실행이 중요하다. 오늘 중에Launch하자. 빠른 실행이 경쟁력이다.",
       "expected_labels": ["M10-01", "M10-02", "M19-01"],
       "expected_result": {"primary": "T06", "secondary": ["T04"]},
       "context": "normal"
@@ -139,7 +139,7 @@
       "trait_id": "T07",
       "trait_name": "Coaching Leader",
       "category": "positive",
-      "raw_text": "당신의 잠재력은 정말 вели습니다.我来教你怎么做得更好、定期적인 피드백을 주고싶습니다.",
+      "raw_text": "당신의 잠재력은 정말 커습니다. 어떻게 더 잘할 수 있는지 알려드리겠습니다. 정기적인 피드백을 제공하고 싶습니다.",
       "expected_labels": ["M02-02", "M07-02", "M02-03", "M09-01"],
       "expected_result": {"primary": "T07", "secondary": ["T08"]},
       "context": "normal"
@@ -149,7 +149,7 @@
       "trait_id": "T08",
       "trait_name": "Emotional Intelligence Leader",
       "category": "positive",
-      "raw_text": "오늘 수고하셨습니다.힘드셨죠? 무슨 일이 있는지 듣고 싶습니다. 언제든 저를 찾아와倾诉하세요.",
+      "raw_text": "오늘 수고하셨습니다.힘드셨죠? 무슨 일이 있는지 듣고 싶습니다. 언제든 저를 찾아와 말해하세요.",
       "expected_labels": ["M12-01", "M14-01", "M12-02", "M11-01"],
       "expected_result": {"primary": "T08", "secondary": ["T02"]},
       "context": "normal"
@@ -159,7 +159,7 @@
       "trait_id": "T08",
       "trait_name": "Emotional Intelligence Leader",
       "category": "positive",
-      "raw_text": "당신의 Feelings을 이해합니다.스트레스 받을 수 있지요.우리 함께解決策을 찾아보겠습니다.",
+      "raw_text": "당신의 감정을 이해합니다. 스트레스 받을 수 있지요. 우리 함께 해결책을 찾아보겠습니다.",
       "expected_labels": ["M12-01", "M14-01", "M12-03", "M14-02"],
       "expected_result": {"primary": "T08", "secondary": ["T07"]},
       "context": "normal"
@@ -179,7 +179,7 @@
       "trait_id": "T09",
       "trait_name": "Visionary Leader",
       "category": "positive",
-      "raw_text": "미래의 목표를 공유하고 싶다. 우리의 비전은 industry를 바꾸는 것입니다. 모두에게 영감을 드리고 싶다.",
+      "raw_text": "미래의 목표를 함께 공유하고 싶다. 우리의 비전은 업계를 바꾸는 것입니다. 모두에게 영감을 드리고 싶다.",
       "expected_labels": ["M01-01", "M01-04", "M01-02", "M04-02"],
       "expected_result": {"primary": "T09", "secondary": ["T01"]},
       "context": "innovation"
@@ -229,7 +229,7 @@
       "trait_id": "T14",
       "trait_name": "Learning Agile Leader",
       "category": "positive",
-      "raw_text": "실패는 ��공への第一步です. 끊임없이 학습하고 적응해야 한다. 새로운 기술과 도전을 적극 받아들인다.",
+      "raw_text": "실패는 성공への第一步입니다. 끊임없이 학습하고 적응해야 한다. 새로운 기술과 도전을 적극 받아들인다.",
       "expected_labels": ["M21-01", "M22-01", "M21-02", "M22-02"],
       "expected_result": {"primary": "T14", "secondary": ["T03"]},
       "context": "innovation"
@@ -239,7 +239,7 @@
       "trait_id": "T14",
       "trait_name": "Learning Agile Leader",
       "category": "positive",
-      "raw_text": "항상 새로운 것을 배워야 한다. 빠르게 변화에 적응하는 것이 중요하다. 디지털 도구를 활용하여 더욱 inúmer치吧.",
+      "raw_text": "항상 새로운 것을 배워야 한다. 빠르게 변화에 적응하는 것이 중요하다. 디지털 도구를 활용하여 더 빨리 해보자.",
       "expected_labels": ["M21-01", "M22-01", "M35-01", "M37-01"],
       "expected_result": {"primary": "T14", "secondary": ["T09"]},
       "context": "innovation"
@@ -249,7 +249,7 @@
       "trait_id": "T101",
       "trait_name": "Risk: Avoidant",
       "category": "negative",
-      "raw_text": "이 결정은 내가 내리기 힘들다.委员会的결정을 기다립시다. 문제가 생기면我怎么辦.",
+      "raw_text": "이 결정은 내가 내리기 힘들다. 위원회의 결정을 기다립시다. 문제가 생기면 어떻게 하지.",
       "expected_labels": ["N08-01", "N08-02", "N10-01", "N14-01"],
       "expected_result": {"primary": "T101", "secondary": []},
       "context": "normal"
@@ -269,7 +269,7 @@
       "trait_id": "T102",
       "trait_name": "Risk: Authoritarian",
       "category": "negative",
-      "raw_text": "성과가 좋지 않을 경우 공개적으로 팀원을 비난한다.문제가 생기면 책임을个人에게 돌린다. 의사는 내가 단독으로 낸다.",
+      "raw_text": "성과가 좋지 않을 경우 공개적으로 팀원을 비난한다.문제가 생기면 책임을 개인에게 돌린다. 결정은 내가 단독으로 내린다.",
       "expected_labels": ["N15-03", "N19-01", "N08-01", "N07-02"],
       "expected_result": {"primary": "T102", "secondary": ["T101"]},
       "context": "crisis"
@@ -279,7 +279,7 @@
       "trait_id": "T102",
       "trait_name": "Risk: Authoritarian",
       "category": "negative",
-      "raw_text": "내 말대로 하면 된다. 추가讨论는必要없다. 다시는那样的 提出하지 마라.",
+      "raw_text": "내 말대로 하면 된다. 추가 토론은 필요없다. 다시는 그런 질문 하지 마라.",
       "expected_labels": ["N15-03", "N19-01", "N03-01", "N05-01"],
       "expected_result": {"primary": "T102", "secondary": []},
       "context": "crisis"
@@ -288,8 +288,8 @@
       "case_id": "T103-A",
       "trait_id": "T103",
       "trait_name": "Risk: Integrity Violation",
-      "category": "-negative",
-      "raw_text": "실제 데이터와 보고하는 데이터가 다릅니다. 중요한 정보는企业内部만 알고 있습니다.",
+      "category": "negative",
+      "raw_text": "실제 데이터와 보고하는 데이터가 다릅니다. 중요한 정보는 사내에서만 알고 있습니다.",
       "expected_labels": ["N30-01", "N28-01", "N34-01"],
       "expected_result": {"primary": "T103", "secondary": []},
       "context": "normal"
@@ -299,7 +299,7 @@
       "trait_id": "T103",
       "trait_name": "Risk: Integrity Violation",
       "category": "negative",
-      "raw_text": "이 문제는 외부에透露하면 안 됩니다. 보고서엔 다른 내용을 쓸 겁니다. 사실과 다르게 설명해달라.",
+      "raw_text": "이 문제는 외부에 공개하면 안 됩니다. 보고서엔 다른 내용을 쓸 겁니다. 사실과 다르게 설명해달라.",
       "expected_labels": ["N30-01", "N28-01", "N34-01", "N35-01"],
       "expected_result": {"primary": "T103", "secondary": []},
       "context": "crisis"
@@ -309,7 +309,7 @@
       "trait_id": "T104",
       "trait_name": "Risk: Narcissistic Leadership",
       "category": "negative",
-      "raw_text": "내가 없으면 이 公司는 어떻게 될까? 내 의견이 언제나 제일 중요하다. 모두 내 것을 칭찬해준다.",
+      "raw_text": "내가 없으면 이 회사는 어떻게 될까? 내 의견이 언제나 제일 중요하다. 모두가 나를 칭찬해준다.",
       "expected_labels": ["N04-01", "N09-01", "N08-03", "N14-02"],
       "expected_result": {"primary": "T104", "secondary": ["T102"]},
       "context": "normal"
@@ -319,7 +319,7 @@
       "trait_id": "T104",
       "trait_name": "Risk: Narcissistic Leadership",
       "category": "negative",
-      "raw_text": "나만 할 수 있다. 다른 사람은 믿을 수 없다. 모든 것은 내 것이다. 내가 곧 公司다.",
+      "raw_text": "나만 할 수 있다. 다른 사람은 믿을 수 없다. 모든 것은 내 것이다. 내가 곧 회사다.",
       "expected_labels": ["N04-01", "N09-01", "N14-03", "N27-01"],
       "expected_result": {"primary": "T104", "secondary": []},
       "context": "normal"
@@ -329,7 +329,7 @@
       "trait_id": "T105",
       "trait_name": "Risk: Manipulative Leadership",
       "category": "negative",
-      " raw_text": "성과 올면 promotion 보장한다. 하지만 실제로는 지키지 않는다. 공포로 위협하여 일을시킨다.",
+      "raw_text": "성과 좋으면 승진 보장한다. 하지만 실제로는 지키지 않는다. 공포로 위협하여 일을시킨다.",
       "expected_labels": ["N02-02", "N02-03", "N02-01"],
       "expected_result": {"primary": "T105", "secondary": ["T102"]},
       "context": "normal"
@@ -339,7 +339,7 @@
       "trait_id": "T105",
       "trait_name": "Risk: Manipulative Leadership",
       "category": "negative",
-      "raw_text": "이번엔 꼭 승진시켜줄게. 근데 실제로는 보상을 주지 않는다. 감정적으로 압박하여 일을시킨다.",
+      "raw_text": "이번엔 꼭 승진시켜줄게. 그런데 실제로는 보상을 주지 않는다. 감정적으로 압박하여 일을시킨다.",
       "expected_labels": ["N02-02", "N02-03", "N01-01", "N06-02"],
       "expected_result": {"primary": "T105", "secondary": []},
       "context": "normal"
@@ -349,7 +349,7 @@
       "trait_id": "T106",
       "trait_name": "Risk: Volatile Leadership",
       "category": "negative",
-      "raw_text": "어제도 달라고 오늘은 아니다. 의사결정이 불안정하다. 상황도 무시하고 강경 대응한다. 과도하게 통제한다.",
+      "raw_text": "어제도 좋다고 오늘은 아니다. 의사결정이 불안정하다. 상황도 무시하고 강경 대응한다. 과도하게 통제한다.",
       "expected_labels": ["N17-01", "N24-01", "N21-01", "N22-01"],
       "expected_result": {"primary": "T106", "secondary": ["T102"]},
       "context": "crisis"
@@ -359,7 +359,7 @@
       "trait_id": "T106",
       "trait_name": "Risk: Volatile Leadership",
       "category": "negative",
-      "raw_text": "오늘 한 일 내일은禁止다. 변화가 심하고 학습을 억제한다. 직원들이uncertainty를 느낀다.",
+      "raw_text": "오늘 한 일 내일은 금지다. 변화가 심하고 학습을 억제한다. 직원들이 불확실성을 느낀다.",
       "expected_labels": ["N17-01", "N24-01", "N23-01", "N26-01"],
       "expected_result": {"primary": "T106", "secondary": []},
       "context": "crisis"
