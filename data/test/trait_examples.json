@@ -59,7 +59,7 @@
       "trait_id": "T03",
       "trait_name": "Innovative Leader",
       "category": "positive",
-      "raw_text": "다른 회사에서는 ���지 않는 방법을 우리가 해봅시다. 도전하는 문화가 우리 회사의 강점입니다. 새로운 아이디어를 찾는 팀에게는 보상을 드리겠습니다.",
+      "raw_text": "다른 회사에서는 하지 않는 방법을 우리가 해봅시다. 도전하는 문화가 우리 회사의 강점입니다. 새로운 아이디어를 찾는 팀에게는 보상을 드리겠습니다.",
       "expected_labels": ["M03-03", "M05-02", "M23-01", "M26-01", "M05-03"],
       "expected_result": {"primary": "T03", "secondary": ["T09"]},
       "context": "innovation"
@@ -229,7 +229,7 @@
       "trait_id": "T14",
       "trait_name": "Learning Agile Leader",
       "category": "positive",
-      "raw_text": "실패는 성공への第一步입니다. 끊임없이 학습하고 적응해야 한다. 새로운 기술과 도전을 적극 받아들인다.",
+      "raw_text": "실패는 성공의 첫 번째 단계입니다. 끊임없이 학습하고 적응해야 한다. 새로운 기술과 도전을 적극 받아들인다.",
       "expected_labels": ["M21-01", "M22-01", "M21-02", "M22-02"],
       "expected_result": {"primary": "T14", "secondary": ["T03"]},
       "context": "innovation"
@@ -269,7 +269,7 @@
       "trait_id": "T102",
       "trait_name": "Risk: Authoritarian",
       "category": "negative",
-      "raw_text": "성과가 좋지 않을 경우 공개적으로 팀원을 비난한다.문제가 생기면 책임을 개인에게 돌린다. 결정은 내가 단독으로 내린다.",
+      "raw_text": "성과가 좋지 않을 경우 공개적으로 팀원을 비난한다. 문제가 생기면 책임을 개인에게 돌린다. 결정은 내가 단독으로 내린다.",
       "expected_labels": ["N15-03", "N19-01", "N08-01", "N07-02"],
       "expected_result": {"primary": "T102", "secondary": ["T101"]},
       "context": "crisis"
@@ -309,7 +309,7 @@
       "trait_id": "T104",
       "trait_name": "Risk: Narcissistic Leadership",
       "category": "negative",
-      "raw_text": "내가 없으면 이 회사는 어떻게 될까? 내 의견이 언제나 제일 중요하다. 모두가 나를 칭찬해준다.",
+      "raw_text": "제가 없으면 이 회사는 어떻게 될까? 내 의견이 언제나 제일 중요하다. 모두가 나를 칭찬해준다.",
       "expected_labels": ["N04-01", "N09-01", "N08-03", "N14-02"],
       "expected_result": {"primary": "T104", "secondary": ["T102"]},
       "context": "normal"
