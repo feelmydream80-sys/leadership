@@ -2,6 +2,7 @@
 Authentication Module - SHA-256 Hash Based
 """
 import hashlib
+import json
 import secrets
 import sqlite3
 from datetime import datetime
@@ -141,7 +142,6 @@ def get_all_analysis_results():
 
 def get_dashboard_stats():
     """대시보드 통계 데이터"""
-    import json
     conn = get_db()
     cursor = conn.cursor()
     
