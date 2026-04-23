@@ -643,6 +643,33 @@ def get_all_traits():
     traits = [{'id': k, 'name': v} for k, v in trait_map.items()]
     return jsonify({'traits': traits})
 
+@app.route('/api/trait-examples', methods=['GET'])
+def get_trait_examples():
+    """Trait별 테스트 예제 반환 (필터링 지원)"""
+    import random
+    
+    trait_filter = request.args.get('trait')
+    category = request.args.get('category')
+    
+    try:
+        with open('data/test/trait_examples.json', 'r', encoding='utf-8') as f:
+            test_data = json.load(f)
+    except FileNotFoundError:
+        return jsonify({'error': 'Test file not found'}), 404
+    
+    examples = test_data.get('examples', [])
+    
+    # 필터링
+    if trait_filter:
+        examples = [e for e in examples if e.get('trait_id') == trait_filter]
+    elif category:
+        examples = [e for e in examples if e.get('category') == category]
+    
+    # 랜덤 순서
+    random.shuffle(examples)
+    
+    return jsonify({'examples': examples, 'total': len(examples)})
+
 @app.route('/api/random-examples', methods=['GET'])
 def get_random_examples():
     """테스트 데이터에서 전체 예제 반환 (랜덤 순서)"""

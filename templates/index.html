@@ -157,7 +157,32 @@
             <div class="panel">
                 <div class="examples-header">
                     <h2>테스트 예제</h2>
-                    <button id="refreshExamplesBtn" class="btn btn-secondary btn-small">새로고침</button>
+                    <select id="traitFilter" class="filter-select">
+                        <option value="">전체</option>
+                        <optgroup label="📊 Positive Traits">
+                            <option value="T01">T01: Strategic Decisive</option>
+                            <option value="T02">T02: Collaborative</option>
+                            <option value="T03">T03: Innovative</option>
+                            <option value="T04">T04: Crisis Manager</option>
+                            <option value="T05">T05: Analytical</option>
+                            <option value="T06">T06: Execution Driver</option>
+                            <option value="T07">T07: Coaching</option>
+                            <option value="T08">T08: Emotional Intelligence</option>
+                            <option value="T09">T09: Visionary</option>
+                            <option value="T12">T12: Balanced</option>
+                            <option value="T13">T13: Ethical Courageous</option>
+                            <option value="T14">T14: Learning Agile</option>
+                        </optgroup>
+                        <optgroup label="⚠️ Negative Traits">
+                            <option value="T101">T101: Avoidant</option>
+                            <option value="T102">T102: Authoritarian</option>
+                            <option value="T103">T103: Integrity Violation</option>
+                            <option value="T104">T104: Narcissistic</option>
+                            <option value="T105">T105: Manipulative</option>
+                            <option value="T106">T106: Volatile</option>
+                        </optgroup>
+                    </select>
+                    <button id="refreshExamplesBtn" class="btn btn-secondary btn-small">🔄</button>
                 </div>
                 <div id="examplesList" class="examples-list">
                     <p class="loading-text">예제를 불러오는 중...</p>

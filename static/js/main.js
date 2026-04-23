@@ -587,13 +587,19 @@ document.addEventListener('DOMContentLoaded', function() {
         showDebug();
     }
 
-    // Load Random Examples
+    // Load Random Examples (with trait filter)
     async function loadRandomExamples() {
         const examplesList = document.getElementById('examplesList');
+        const traitFilter = document.getElementById('traitFilter');
+        const selectedTrait = traitFilter ? traitFilter.value : '';
+        
         examplesList.innerHTML = '<p class="loading-text">예제를 불러오는 중...</p>';
         
         try {
-            const response = await fetch('/api/random-examples');
+            const url = selectedTrait 
+                ? `/api/trait-examples?trait=${selectedTrait}` 
+                : '/api/trait-examples';
+            const response = await fetch(url);
             const data = await response.json();
             
             if (data.examples && data.examples.length > 0) {
@@ -602,29 +608,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     const card = document.createElement('div');
                     card.className = 'example-card';
                     
-                    // 예상 결과 파싱
-                    const expected = example.expected_result || {};
-                    const hasRisk = expected.risk && expected.risk.length > 0;
+                    const isNegative = example.category === 'negative';
                     
                     card.innerHTML = `
-                        <div class="case-id">${example.case_id}</div>
+                        <div class="case-id ${isNegative ? 'negative' : ''}">${example.case_id}</div>
+                        <div class="trait-name">${example.trait_name}</div>
                         <div class="text-preview">${escapeHtml(example.raw_text)}</div>
-                        <div class="labels-preview">
-                            ${example.expected_labels.map(l => `<span class="label-tag">${l}</span>`).join('')}
-                        </div>
                         <div class="expected-result">
-                            ${expected.primary ? `<span class="expected-primary">${expected.primary}</span>` : ''}
-                            ${expected.secondary ? expected.secondary.map(s => `<span class="expected-secondary">${s}</span>`).join('') : ''}
-                            ${hasRisk ? `<span class="expected-risk">${expected.risk.join(', ')}</span>` : ''}
+                            ${example.expected_result?.primary ? `<span class="expected-primary">${example.expected_result.primary}</span>` : ''}
+                            ${example.expected_result?.secondary?.length ? example.expected_result.secondary.map(s => `<span class="expected-secondary">${s}</span>`).join('') : ''}
                         </div>
                     `;
                     
                     card.addEventListener('click', function() {
-                        // Remove selection from all cards
                         document.querySelectorAll('.example-card').forEach(c => c.classList.remove('selected'));
-                        // Select this card
                         card.classList.add('selected');
-                        // Fill input text
                         inputText.value = example.raw_text;
                     });
                     
@@ -638,6 +636,23 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error loading examples:', error);
         }
     }
+
+    // Trait filter event listeners
+    document.addEventListener('DOMContentLoaded', function() {
+        const traitFilter = document.getElementById('traitFilter');
+        const refreshBtn = document.getElementById('refreshExamplesBtn');
+        
+        if (traitFilter) {
+            traitFilter.addEventListener('change', loadRandomExamples);
+        }
+        
+        if (refreshBtn) {
+            refreshBtn.addEventListener('click', loadRandomExamples);
+        }
+        
+        // Load initial examples
+        loadRandomExamples();
+    });
 
     // Show Prompt Modal
     function showPromptModal(prompt) {
