@@ -289,7 +289,7 @@
       "trait_id": "T103",
       "trait_name": "Risk: Integrity Violation",
       "category": "negative",
-      "raw_text": "실제 데이터와 보고하는 데이터가 다릅니다. 중요한 정보는 사내에서만 알고 있습니다.",
+      "raw_text": "실제 매출은 10%인데 보고서엔 30% 성장이라고 적겠습니다. 중요한 숫자들은 사내에서만 알고 있지요.",
       "expected_labels": ["N30-01", "N28-01", "N34-01"],
       "expected_result": {"primary": "T103", "secondary": []},
       "context": "normal"
@@ -309,7 +309,7 @@
       "trait_id": "T104",
       "trait_name": "Risk: Narcissistic Leadership",
       "category": "negative",
-      "raw_text": "제가 없으면 이 회사는 어떻게 될까? 내 의견이 언제나 제일 중요하다. 모두가 나를 칭찬해준다.",
+      "raw_text": "제가 없으면 이 회사는 움직일 수 없습니다. 내 말만 들어보면 된다. 모두가 나만 칭찬하고 있습니다.",
       "expected_labels": ["N04-01", "N09-01", "N08-03", "N14-02"],
       "expected_result": {"primary": "T104", "secondary": ["T102"]},
       "context": "normal"
@@ -319,7 +319,7 @@
       "trait_id": "T104",
       "trait_name": "Risk: Narcissistic Leadership",
       "category": "negative",
-      "raw_text": "나만 할 수 있다. 다른 사람은 믿을 수 없다. 모든 것은 내 것이다. 내가 곧 회사다.",
+      "raw_text": "나만 할 수 있다. 다른 사람들은 믿을 수 없어. 모든 성과는 내 것이다. 내가 곧 회사다.",
       "expected_labels": ["N04-01", "N09-01", "N14-03", "N27-01"],
       "expected_result": {"primary": "T104", "secondary": []},
       "context": "normal"
@@ -329,7 +329,7 @@
       "trait_id": "T105",
       "trait_name": "Risk: Manipulative Leadership",
       "category": "negative",
-      "raw_text": "성과 좋으면 승진 보장한다. 하지만 실제로는 지키지 않는다. 공포로 위협하여 일을시킨다.",
+      "raw_text": "이번 quarter 성과 좋으면 즉시 승진시켜드립니다. 하지만 실제로는 그런 일 없습니다. 안 하면 해고하겠습니다.",
       "expected_labels": ["N02-02", "N02-03", "N02-01"],
       "expected_result": {"primary": "T105", "secondary": ["T102"]},
       "context": "normal"
@@ -339,7 +339,7 @@
       "trait_id": "T105",
       "trait_name": "Risk: Manipulative Leadership",
       "category": "negative",
-      "raw_text": "이번엔 꼭 승진시켜줄게. 그런데 실제로는 보상을 주지 않는다. 감정적으로 압박하여 일을시킨다.",
+      "raw_text": "이번엔 꼭 승진시켜줄게. 그런데 실제로는 보상을 주지 않아. 이렇게밖에 안 되면 그만둬.",
       "expected_labels": ["N02-02", "N02-03", "N01-01", "N06-02"],
       "expected_result": {"primary": "T105", "secondary": []},
       "context": "normal"
@@ -349,7 +349,7 @@
       "trait_id": "T106",
       "trait_name": "Risk: Volatile Leadership",
       "category": "negative",
-      "raw_text": "어제도 좋다고 오늘은 아니다. 의사결정이 불안정하다. 상황도 무시하고 강경 대응한다. 과도하게 통제한다.",
+      "raw_text": "어제는 그냥 하라고 했는데 오늘은 그렇게 하면 안 된다. 상황과 관계없이 내 말씀만 따른다. 모든 것을 내가 직접 통제한다.",
       "expected_labels": ["N17-01", "N24-01", "N21-01", "N22-01"],
       "expected_result": {"primary": "T106", "secondary": ["T102"]},
       "context": "crisis"
@@ -359,7 +359,7 @@
       "trait_id": "T106",
       "trait_name": "Risk: Volatile Leadership",
       "category": "negative",
-      "raw_text": "오늘 한 일 내일은 금지다. 변화가 심하고 학습을 억제한다. 직원들이 불확실성을 느낀다.",
+      "raw_text": "오늘 하던 일은 이제 그만두고 새로 시작한다. 이렇게 자주 바뀌면 일할数が 없다. 모두 내맘대로 한다.",
       "expected_labels": ["N17-01", "N24-01", "N23-01", "N26-01"],
       "expected_result": {"primary": "T106", "secondary": []},
       "context": "crisis"
