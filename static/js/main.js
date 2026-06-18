@@ -330,10 +330,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const mode = document.querySelector('input[name="mode"]:checked').value;
             const llmProvider = document.getElementById('llmProvider').value;
             
+            // HANDOVER.md 파이프라인: 1.Vector DB 검색
             updatePipelineStep(1);
+            showLoading(true, 'Vector DB 검색 중', 'KoE5 + FAISS 인덱스 검색...');
             
             // LLM별 진행 상황 메시지 설정
-            let statusText = 'LLM 분석 중...';
+            let statusText = '하이브리드 파이프라인 실행 중...';
             let detailText = '';
             const startTime = Date.now();
             let timeUpdateInterval;
@@ -346,25 +348,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateLoadingStatus(statusText, `경과 시간: ${timeStr}`);
             };
             
-            if (llmProvider === 'gemini') {
-                detailText = 'Gemini API 호출 중...';
-            } else if (llmProvider === 'openrouter') {
-                detailText = 'OpenRouter API 호출 중...';
-            } else if (llmProvider === 'ollama') {
-                statusText = '로컬 LLM 분석 중';
-                detailText = 'llama3.2:3b 모델 사용 중...';
+            if (llmProvider === 'opencode') {
+                detailText = 'OpenCode (big-pickle) 호출 예정...';
             }
-            
-            showLoading(true, statusText, detailText);
-            
-            // 경과 시간 업데이트 시작
-            timeUpdateInterval = setInterval(updateTimeDisplay, 5000);
             
             hideError();
             hideResults();
             hideDebug();
 
+            // 2. 임계값 판단
             updatePipelineStep(2);
+            
+            // 3. 하이브리드 파이프라인 (LLM 호출 포함)
+            updatePipelineStep(3);
+            
+            showLoading(true, statusText, detailText);
+            timeUpdateInterval = setInterval(updateTimeDisplay, 5000);
 
             const response = await fetch('/api/analyze', {
                 method: 'POST',
@@ -380,18 +379,19 @@ document.addEventListener('DOMContentLoaded', function() {
             // 경과 시간 업데이트 중지
             clearInterval(timeUpdateInterval);
             
-            const data = await response.json();
-            
-            updatePipelineStep(3);
-            
-            if (data.error) {
-                showError(data.error);
-                resetPipeline();
-                return;
-            }
+             const data = await response.json();
+             
+             // 4. 후처리
+             updatePipelineStep(4);
+             
+             if (data.error) {
+                 showError(data.error);
+                 resetPipeline();
+                 return;
+             }
 
-            updatePipelineStep(4);
-            updatePipelineStep(5);
+             // 5. Trait 추론
+             updatePipelineStep(5);
             
             // 결과 표시
             displayResults(data);
@@ -542,6 +542,33 @@ document.addEventListener('DOMContentLoaded', function() {
             importantLabelsGrid.appendChild(card);
         });
 
+        // Vector DB Results
+        const vectorSection = document.getElementById('vectorSection');
+        const vectorMeta = document.getElementById('vectorMeta');
+        const vectorTableBody = document.getElementById('vectorTableBody');
+        
+        if (data.vector_results && data.vector_results.length > 0) {
+            vectorSection.style.display = 'block';
+            vectorMeta.innerHTML = `
+                <div class="meta-item"><strong>판단:</strong> ${data.vector_meta?.vector_reason || ''}</div>
+                <div class="meta-item"><strong>LLM 사용:</strong> ${data.vector_meta?.used_llm ? 'Yes' : 'No'}</div>
+            `;
+            vectorTableBody.innerHTML = '';
+            data.vector_results.forEach((r, idx) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${idx + 1}</td>
+                    <td><span class="label-id">${r.label_id}</span></td>
+                    <td>${r.confidence.toFixed(4)}</td>
+                    <td>${r.distance.toFixed(4)}</td>
+                    <td>${r.text}</td>
+                `;
+                vectorTableBody.appendChild(row);
+            });
+        } else {
+            vectorSection.style.display = 'none';
+        }
+        
         // 전체 추출된 라벨
         const labelsGrid = document.getElementById('extractedLabels');
         labelsGrid.innerHTML = '';

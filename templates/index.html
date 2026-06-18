@@ -194,22 +194,22 @@
         <div class="pipeline-guide" id="pipelineGuide">
             <div class="pipeline-step" data-step="1">
                 <div class="step-icon">1</div>
-                <div class="step-label">텍스트 분석</div>
+                <div class="step-label">Vector DB 검색</div>
             </div>
             <div class="pipeline-line"></div>
             <div class="pipeline-step" data-step="2">
                 <div class="step-icon">2</div>
-                <div class="step-label">LLM 호출</div>
+                <div class="step-label">임계값 판단</div>
             </div>
             <div class="pipeline-line"></div>
             <div class="pipeline-step" data-step="3">
                 <div class="step-icon">3</div>
-                <div class="step-label">라벨 정제</div>
+                <div class="step-label">하이브리드 파이프라인</div>
             </div>
             <div class="pipeline-line"></div>
             <div class="pipeline-step" data-step="4">
                 <div class="step-icon">4</div>
-                <div class="step-label">가중치 적용</div>
+                <div class="step-label">후처리</div>
             </div>
             <div class="pipeline-line"></div>
             <div class="pipeline-step" data-step="5">
@@ -336,6 +336,25 @@
             <div class="panel result-panel">
                 <h2>주요 Micro Labels</h2>
                 <div id="importantLabels" class="important-labels-grid"></div>
+            </div>
+
+            <!-- Vector DB Results -->
+            <div class="panel result-panel" id="vectorSection" style="display: none;">
+                <h2>Vector DB 검색 결과</h2>
+                <div class="vector-meta" id="vectorMeta"></div>
+                <table class="vector-table">
+                    <thead>
+                        <tr>
+                            <th>순위</th>
+                            <th>Label</th>
+                            <th>신뢰도</th>
+                            <th>거리</th>
+                            <th>정의</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vectorTableBody">
+                    </tbody>
+                </table>
             </div>
 
             <!-- Extracted Labels -->

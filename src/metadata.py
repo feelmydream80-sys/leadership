@@ -5,6 +5,7 @@ Phase 1: PART 1 (프로필) + PART 2 (진단 결과)
 import json
 import os
 import uuid
+import threading
 from datetime import datetime
 from src.database import get_db
 
@@ -13,18 +14,37 @@ os.makedirs(METADATA_DIR, exist_ok=True)
 
 METADATA_FILE = os.path.join(METADATA_DIR, 'users_metadata.json')
 
+# 파일 락을 위한 쓰레드 락
+_metadata_lock = threading.Lock()
+
 def load_metadata():
-    """메타데이터 파일 로드"""
-    if os.path.exists(METADATA_FILE):
-        with open(METADATA_FILE, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    return {"version": "2026-04", "last_updated": None, "users": []}
+    """메타데이터 파일 로드 (쓰레드 세이프)"""
+    with _metadata_lock:
+        if os.path.exists(METADATA_FILE):
+            try:
+                with open(METADATA_FILE, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+            except json.JSONDecodeError:
+                # 파일이 손상된 경우 기본값 반환
+                return {"version": "2026-04", "last_updated": None, "users": []}
+        return {"version": "2026-04", "last_updated": None, "users": []}
 
 def save_metadata(data):
-    """메타데이터 파일 저장"""
-    data['last_updated'] = datetime.now().isoformat()
-    with open(METADATA_FILE, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    """메타데이터 파일 저장 (쓰레드 세이프)"""
+    with _metadata_lock:
+        data['last_updated'] = datetime.now().isoformat()
+        # 임시 파일에 먼저 쓰고 이름 변경 (원자적 연산)
+        temp_file = METADATA_FILE + '.tmp'
+        try:
+            with open(temp_file, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+                f.flush()
+                os.fsync(f.fileno())  # 디스크에 강제 쓰기
+            os.replace(temp_file, METADATA_FILE)  # 원자적 이름 변경
+        except Exception as e:
+            if os.path.exists(temp_file):
+                os.remove(temp_file)
+            raise e
 
 def get_user_metadata(user_key):
     """사용자 메타데이터 조회"""
@@ -170,13 +190,21 @@ def save_analysis_metadata(user_key, analysis_result):
     return update_user_metadata(user_key, results=results)
 
 def _get_strength_level(confidence):
-    if confidence >= 0.8: return "Strong"
-    if confidence >= 0.5: return "Moderate"
+    try:
+        conf = float(confidence) if not isinstance(confidence, (int, float)) else confidence
+    except (TypeError, ValueError):
+        return "Weak"
+    if conf >= 0.8: return "Strong"
+    if conf >= 0.5: return "Moderate"
     return "Weak"
 
 def _get_confidence_level(confidence):
-    if confidence >= 0.75: return "High"
-    if confidence >= 0.45: return "Medium"
+    try:
+        conf = float(confidence) if not isinstance(confidence, (int, float)) else confidence
+    except (TypeError, ValueError):
+        return "Low"
+    if conf >= 0.75: return "High"
+    if conf >= 0.45: return "Medium"
     return "Low"
 
 def _get_severity_level(severity):

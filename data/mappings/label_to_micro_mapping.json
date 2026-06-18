@@ -1,5 +1,5 @@
 {
-  "schema_version": "2026-04-v2",
+  "schema_version": "2026-04-v3",
   "description": "Label ↔ Micro Label 매핑 테이블 v2.0 - 교차 가중치 포함",
   "positive_mappings": [
     {"label_id": "L01", "micro_codes": ["M01-01", "M01-02", "M01-03", "M01-04"], "cross_weights": {"M01-01": 0.9, "M01-02": 0.8, "M01-03": 0.7, "M01-04": 0.8}},

@@ -1,8 +1,8 @@
 {
-  "schema_version": "2026-04-v1",
+  "schema_version": "2026-04-v3",
   "description": "리더십 Trait 테스트 예제 - 각 Trait별 2개 시나리오",
-  "total_traits": 18,
-  "total_examples": 36,
+  "total_traits": 20,
+  "total_examples": 40,
   "examples": [
     {
       "case_id": "T01-A",
@@ -354,15 +354,55 @@
       "expected_result": {"primary": "T106", "secondary": ["T102"]},
       "context": "crisis"
     },
-    {
-      "case_id": "T106-B",
-      "trait_id": "T106",
-      "trait_name": "Risk: Volatile Leadership",
-      "category": "negative",
-      "raw_text": "오늘 하던 일은 이제 그만두고 새로 시작한다. 이렇게 자주 바뀌면 일할数が 없다. 모두 내맘대로 한다.",
-      "expected_labels": ["N17-01", "N24-01", "N23-01", "N26-01"],
-      "expected_result": {"primary": "T106", "secondary": []},
-      "context": "crisis"
-    }
-  ]
-}
+      {
+        "case_id": "T106-B",
+        "trait_id": "T106",
+        "trait_name": "Risk: Volatile Leadership",
+        "category": "negative",
+        "raw_text": "오늘 하던 일은 이제 그만두고 새로 시작한다. 이렇게 자주 바뀌면 일할数が 없다. 모두 내맘대로 한다.",
+        "expected_labels": ["N17-01", "N24-01", "N23-01", "N26-01"],
+        "expected_result": {"primary": "T106", "secondary": []},
+        "context": "crisis"
+      },
+      {
+        "case_id": "T10-A",
+        "trait_id": "T10",
+        "trait_name": "Strategic Execution Leader",
+        "category": "positive",
+        "raw_text": "우리의 전략적 목표는 명확합니다. 이제 실행만이 남았습니다. 목표를 달성하기 위해 매일 진행 상황을 점검하겠습니다. 빠른 실행이 핵심입니다.",
+        "expected_labels": ["M01-01", "M10-01", "M10-02", "M06-01", "M19-01"],
+        "expected_result": {"primary": "T10", "secondary": ["T01", "T06"]},
+        "context": "normal"
+      },
+      {
+        "case_id": "T10-B",
+        "trait_id": "T10",
+        "trait_name": "Strategic Execution Leader",
+        "category": "positive",
+        "raw_text": "이번 프로젝트는 전략적으로 매우 중요합니다. 계획을 세우자마자 바로 실행에 옮기겠습니다. 결과 중심으로 움직이겠습니다.",
+        "expected_labels": ["M01-01", "M10-01", "M10-02", "M27-01", "M19-01"],
+        "expected_result": {"primary": "T10", "secondary": ["T06"]},
+        "context": "crisis"
+      },
+      {
+        "case_id": "T11-A",
+        "trait_id": "T11",
+        "trait_name": "Empathetic Leader",
+        "category": "positive",
+        "raw_text": "당신의 마음이 어떠신지 정말 궁금합니다. 힘든 일이 있으면 언제든 말씀해 주세요. 저는 당신의 감정을 이해하고 싶습니다. 함께 나아가요.",
+        "expected_labels": ["M12-01", "M14-01", "M14-02", "M12-02", "M15-01"],
+        "expected_result": {"primary": "T11", "secondary": ["T08", "T07"]},
+        "context": "normal"
+      },
+      {
+        "case_id": "T11-B",
+        "trait_id": "T11",
+        "trait_name": "Empathetic Leader",
+        "category": "positive",
+        "raw_text": "팀원 한 분 한 분의 감정을 소중히 여깁니다. 스트레스 받는 일이 있으면 편하게 이야기하세요. 제가 도와드리겠습니다. 함께 고민해요.",
+        "expected_labels": ["M12-01", "M14-01", "M14-02", "M12-03", "M15-02"],
+        "expected_result": {"primary": "T11", "secondary": ["T08"]},
+        "context": "normal"
+      }
+    ]
+  }

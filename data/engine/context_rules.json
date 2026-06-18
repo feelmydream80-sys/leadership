@@ -1,6 +1,6 @@
 {
-  "schema_version": "2026-04-v2",
-  "description": "Context Layer 규칙 정의서 v2.0 - 상황별 가중치 조정 및 해석 보정",
+  "schema_version": "2026-04-v3",
+  "description": "Context Layer 규칙 정의서 v3.0 - 상황별 가중치 조정 및 해석 보정",
   "context_tags": ["crisis", "normal", "innovation"],
   "front_end_context": {
     "description": "Pattern Engine 진입 전 가중치 조정",
@@ -13,9 +13,9 @@
           {"micro_code": "M20-01", "reason": "위기 원인 파악이 Required로 격상"}
         ],
         "trait_multipliers": {
-          "T11": 1.3,
+          "T101": 1.3,
           "T12": 1.3,
-          "T20": 1.3,
+          "T04": 1.3,
           "T08": 1.3
         }
       },
@@ -37,8 +37,7 @@
         ],
         "trait_multipliers": {
           "T14": 1.3,
-          "T15": 1.3,
-          "T18": 1.3,
+          "T03": 1.3,
           "T05": 1.3
         }
       }
@@ -48,7 +47,7 @@
     "description": "출력 직전 해석 보정",
     "rules": [
       {
-        "condition": {"trait_id": "T23", "context": "crisis"},
+        "condition": {"trait_id": "T102", "context": "crisis"},
         "original_name": "통제형 관리자",
         "adjusted_name": "문제 해결형 리더",
         "rationale": "위기 상황에서는 통제가 문제 해결로 해석될 수 있음"
@@ -60,7 +59,7 @@
         "rationale": "위기 상황에서 공감은 안정화로 재해석"
       },
       {
-        "condition": {"trait_id": "T14", "context": "normal"},
+        "condition": {"trait_id": "T03", "context": "normal"},
         "original_name": "변화 주도 혁신가",
         "adjusted_name": "변화 주도 혁신가",
         "rationale": "원래 명칭 유지"

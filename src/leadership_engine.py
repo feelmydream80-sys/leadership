@@ -10,6 +10,7 @@ class LeadershipEngine:
         self._load_configs()
 
     def _load_configs(self):
+        # 핵심 설정 파일 로드
         with open(self.data_dir / 'traits/trait_definitions.json', 'r', encoding='utf-8') as f:
             self.trait_definitions = json.load(f)['traits']
         
@@ -19,11 +20,26 @@ class LeadershipEngine:
             hybrid_config = json.load(f)
             self.hybrid_rules = hybrid_config.get('hybrid_rules', [])
         
-        self.negative_trait_ids = {'T101', 'T102', 'T103', 'T104', 'T105', 'T106'}
-        self.positive_traits = [t for t in self.trait_definitions 
-                               if t['trait_id'] not in self.negative_trait_ids]
-        self.negative_traits = [t for t in self.trait_definitions 
-                               if t['trait_id'] in self.negative_trait_ids]
+        # 추가 설정 파일 로드 (외부화된 설정 반영)
+        config_files = {
+            'scoring_config': self.data_dir / 'engine/scoring_config.json',
+            'context_rules': self.data_dir / 'engine/context_rules.json',
+            'auto_mapping_rules': self.data_dir / 'engine/auto_mapping_rules.json',
+            'negative_mapping_rules': self.data_dir / 'engine/negative_mapping_rules.json'
+        }
+        
+        for config_name, config_path in config_files.items():
+            if config_path.exists():
+                with open(config_path, 'r', encoding='utf-8') as f:
+                    setattr(self, config_name, json.load(f))
+            else:
+                print(f"Warning: {config_name} not found at {config_path}")
+                setattr(self, config_name, {})
+        
+        self.positive_traits = [t for t in self.trait_definitions
+                               if t.get('trait_type', 'positive') == 'positive']
+        self.negative_traits = [t for t in self.trait_definitions
+                               if t.get('trait_type', 'positive') == 'negative']
         
         self._calculate_k_traits()
 
@@ -53,7 +69,14 @@ class LeadershipEngine:
 
         for ml in micro_labels:
             lid = ml['label_id']
-            label_conf_list[lid].append(ml.get('confidence', 1.0))
+            # confidence 타입 정규화 (str → float)
+            conf_val = ml.get('confidence', 1.0)
+            if isinstance(conf_val, str):
+                try:
+                    conf_val = float(conf_val)
+                except (TypeError, ValueError):
+                    conf_val = 1.0
+            label_conf_list[lid].append(conf_val)
             label_context_list[lid].add(ml.get('context', 'normal'))
             label_count[lid] += 1
 
@@ -185,7 +208,12 @@ class LeadershipEngine:
         req_total = len(required) if required else 0
         req_ratio = req_count / req_total if req_total > 0 else 1.0
         
-        penalty_factor = 0.3 if req_ratio < 1.0 and context != "crisis" else (0.5 if req_ratio < 1.0 else 1.0)
+        if req_ratio < 1.0 and context == "crisis":
+            penalty_factor = 0.7
+        elif req_ratio < 1.0:
+            penalty_factor = 0.5
+        else:
+            penalty_factor = 1.0
         
         strength_raw = 0.0
         evidence = []

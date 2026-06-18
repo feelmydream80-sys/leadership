@@ -15,8 +15,12 @@ from difflib import SequenceMatcher
 from typing import Dict, Set, Tuple, List, Optional, Callable
 
 from dotenv import load_dotenv
-import google.generativeai as genai
 from openai import OpenAI
+try:
+    from google import genai
+except ImportError:
+    # Fallback to old API if new package not available
+    import google.generativeai as genai
 
 # .env 파일 자동 로드
 load_dotenv()
@@ -108,86 +112,49 @@ def build_llm_prompt(user_input: str, allowed_labels: Set[str], label_name_map: 
         label_text = ", ".join(sorted(allowed_labels))
 
     prompt = f"""당신은 리더십 행동을 분석하여 Micro Label로 변환하는 시스템입니다.
-
+ 
 [절대 규칙]
-반드시 순수 JSON만 출력한다
-설명, 해설, 추가 텍스트 절대 금지
-코드블록(```) 사용 금지
-label_id는 반드시 아래 제공된 목록에서만 선택
-목록에 없는 label_id 생성 절대 금지
-각 문장을 분리하여 sentences 배열로 구성
-
-[핵심 목표]
-가능한 모든 관련 Micro Label을 누락 없이 선택한다 (Recall 최우선)
-과소추출 금지, 과잉추출 허용
-애매한 경우 제외하지 말고 반드시 포함하고 confidence로 조정
-
-[라벨 선택 3단계 - 반드시 모두 수행]
-1. 직접 행동 (Explicit): 문장에 명시된 행동은 반드시 라벨로 변환
-2. 행동의 의도 (Intent): 왜 이 행동을 했는지 추론하여 라벨 추가
-3. 행동의 결과/영향 (Impact): 조직/팀/구성원에 미치는 영향까지 확장하여 라벨 추가
-→ 위 3단계에서 도출 가능한 모든 라벨을 반드시 포함한다
-
-[핵심 강화 규칙 - 자동 확장 트리거]
-※ 아래 규칙은 "선택"이 아니라 "강제 적용"이다
-
-■ 보호 행동 트리거
-다음 키워드 또는 의미 포함 시 (보호, 방어, 대변, 대신 반대, 팀을 위해 행동):
-→ 반드시 포함: M14-01 (타인 우선 행동), M15-06 (심리적 보호)
-→ 추가: 상위자/외부/권력 대상에 대해 반대 or 저항 시: M14-02, M33-03, M33-01, M33-05
-
-■ 리스크/희생 트리거
-다음 상황 발생 시 (상위자에게 반대, 불이익 감수, 갈등 감수, 조직 권력 저항):
-→ 반드시 포함: M14-02 (희생적 지원)
-
-■ Impact 강제 확장 규칙
-팀 보호 행동 발생 시: M18-01 (안정감 제공), M15-05 (신뢰 형성)
-갈등/위기 상황에서 보호 행동 발생 시: 가능하면 모두 포함
-
-■ 리더 역할 기반 확장
-주어가 "리더"이고 팀 보호/의사결정/저항 행동 수행 시: M33-05 (책임 있는 행동)
-
-■ 압력/갈등 상황 트리거
-상위자, 갈등, 충돌, 반대, 위기 상황 포함 시: M33-03 (압력 저항), M33-01 (부당행위 대응)
-
-[유사 라벨 동시 선택 규칙]
-의미가 겹치더라도 모두 포함
-- 보호 행동 → M14-01, M14-02, M15-06 동시 선택
-- 압력 저항 → M33-03, M33-01 동시 선택
-- 신뢰/안정 → M15-05, M18-01 동시 선택
-
-[최소 라벨 개수 규칙]
-각 문장당 최소 3개 이상 필수
-부족할 경우 반드시 Intent + Impact로 확장하여 채운다
-
-[context 판단 기준]
-crisis: 갈등, 압력, 반대, 위기 상황 포함 시 우선 적용
-normal: 일반 협업
-innovation: 창의/변화 중심
-※ 애매하면 반드시 crisis 선택
-
+- 순수 JSON만 출력 (코드블록 금지, 설명 금지)
+- label_id는 반드시 제공된 목록에서만 선택
+- 각 문장을 sentences 배열로 구성
+ 
+[context 판단]
+- crisis: 갈등, 압력, 위기 상황
+- normal: 일반 협업
+- innovation: 창의/변화 중심 (맥락 불분명시 종합 판단)
+ 
 [confidence 기준]
-0.9 이상: 문장에서 직접적으로 명확
-0.7 ~ 0.89: 강한 추론
-0.5 ~ 0.69: 약하지만 합리적 추론 가능
-0.5 미만 금지
-
+- 0.9+: 명확히 직접 언급
+- 0.7~0.89: 강한 추론
+- 0.5~0.69: 합리적 추론
+- 0.5 미만: 금지
+ 
+[라벨 충돌 해결 규칙]
+- 동일 문장에 긍정/부정 라벨 키워드가 혼재될 경우, 텍스트의 최종 결론(결과)을 기준으로 판별한다.
+- 최종 결과가 긍정이면 긍정 라벨을, 부정이면 부정 라벨을 우선 부여한다.
+- 예: "서버 다운(부정)이 발생했으나, 10분 만에 완벽히 복구(긍정)되었다" → 최종 결과가 긍정이므로 M20-01(위기 대응) 우선 부여
+ 
 [출력 형식]
-{{
+{{ 
   "sentences": [
     {{
       "text": "문장 원문",
-      "context": "crisis",
+      "context": "innovation",
       "labels": [
         {{
-          "label_id": "M01-01",
-          "confidence": 0.85,
-          "reason": "구체적 근거"
+          "label_id": "M03-03",
+          "confidence": 0.95,
+          "reason": "핵심 근거"
         }}
       ]
     }}
   ]
 }}
+ 
+[참고]
+혁신/창의 상황에서는 M03, M05, M23, M26 계열을 고려하세요.
+비전 제시 상황에서는 M01 계열을 고려하세요.
+동기부여 상황에서는 M02 계열을 고려하세요.
 
 [사용 가능한 Micro Label 목록]
 {label_text}
@@ -224,10 +191,17 @@ def validate_structure(data: Dict, allowed_labels: Set[str]) -> Tuple[bool, str]
             if "confidence" not in l:
                 return False, f"sentences[{i}].labels[{j}]: confidence 없음"
             # reason은 선택적 필드
+            
+            # confidence 타입 정규화 (str → float)
+            try:
+                conf_value = float(l["confidence"])
+            except (TypeError, ValueError):
+                return False, f"sentences[{i}].labels[{j}]: confidence 타입 오류 ({l['confidence']})"
+            
             if l["label_id"] not in allowed_labels:
                 return False, f"sentences[{i}].labels[{j}]: 허용되지 않은 label_id ({l['label_id']})"
-            if not (0.0 <= l["confidence"] <= 1.0):
-                return False, f"sentences[{i}].labels[{j}]: confidence 범위 오류 ({l['confidence']})"
+            if not (0.0 <= conf_value <= 1.0):
+                return False, f"sentences[{i}].labels[{j}]: confidence 범위 오류 ({conf_value})"
 
     return True, "ok"
 
@@ -356,10 +330,14 @@ def filter_low_confidence(data: Dict, threshold: float = DEFAULT_CONF_THRESHOLD)
     filtered_sentences = []
 
     for sentence in data["sentences"]:
-        valid_labels = [
-            l for l in sentence["labels"]
-            if l["confidence"] >= threshold
-        ]
+        valid_labels = []
+        for l in sentence["labels"]:
+            try:
+                conf = float(l.get("confidence", 0))
+            except (TypeError, ValueError):
+                continue
+            if conf >= threshold:
+                valid_labels.append(l)
         if valid_labels:
             sentence["labels"] = valid_labels
             filtered_sentences.append(sentence)
@@ -390,6 +368,27 @@ def deduplicate_sentences(data: Dict, threshold: float = DEFAULT_DEDUP_THRESHOLD
             result.append(sentence)
 
     data["sentences"] = result
+    return data
+
+
+# -----------------------------------------------------------------------------
+# Step 9. Mutual Exclusion (객관적 처리 - Negative 우선 규칙 제거)
+# -----------------------------------------------------------------------------
+MUTUAL_EXCLUSION_PAIRS = {
+    "M14": ["N14-01", "N14-02", "N14-03"],
+    "M08": ["N08-01", "N08-02", "N08-03"],
+    "M15": ["N15-01", "N15-02", "N15-03", "N15-04", "N15-05", "N15-06"],
+    "M33": ["N33-01", "N33-02"],
+    "M30": ["N30-01"],
+}
+
+
+def resolve_mutual_exclusion(data: Dict) -> Dict:
+    """
+    Positive + Negative 라벨이 동시에 존재하는 경우 모두 보존
+    기존의 Negative 우선 규칙을 제거하여 객관적 분석 가능하도록 함
+    """
+    # 互斥処理ロジックを無効化 - 全ラベルを維持してトレイト計算に反映
     return data
 
 
@@ -475,7 +474,7 @@ def detect_conflicts(
 
 
 # -----------------------------------------------------------------------------
-# 전체 파이프라인 통합
+# 전체 파이프라인 통합 (하이브리드: Vector DB + LLM with Threshold)
 # -----------------------------------------------------------------------------
 def run_extraction_pipeline(
     user_input: str,
@@ -485,11 +484,12 @@ def run_extraction_pipeline(
     calibration_map: Optional[Dict[str, float]] = None,
     conf_threshold: float = DEFAULT_CONF_THRESHOLD,
     dedup_threshold: float = DEFAULT_DEDUP_THRESHOLD,
-    max_retry: int = DEFAULT_MAX_RETRY
+    max_retry: int = DEFAULT_MAX_RETRY,
+    vector_searcher: Optional[object] = None
 ) -> Dict:
     """
-    NLP 추출 파이프라인 전체 실행 엔트리 포인트
-
+    NLP 추출 파이프라인 전체 실행 엔트리 포인트 (하이브리드 버전)
+    
     Args:
         user_input: 분석할 사용자 입력 텍스트
         label_schema: Micro Label 스키마
@@ -499,54 +499,136 @@ def run_extraction_pipeline(
         conf_threshold: low confidence 제거 임계값
         dedup_threshold: 중복 문장 판정 유사도
         max_retry: LLM 호출 최대 재시도 횟수
-
+        vector_searcher: Vector DB 검색기 (없으면 LLM만 사용)
+    
     Returns:
         추출 결과, 충돌 목록, 메타데이터를 포함한 딕셔너리
     """
     if calibration_map is None:
         calibration_map = {}
-
+    
     if llm is None:
         llm = create_gemini_client()
-
+    
     # 1. 허용 레이블 로드
     allowed_labels, label_name_map = load_allowed_labels(label_schema)
-
-    # 2. 프롬프트 생성
-    prompt = build_llm_prompt(user_input, allowed_labels, label_name_map)
-
-    # 3. LLM 호출 + 검증
-    extracted = call_llm_with_retry(llm, prompt, allowed_labels, max_retry)
-
-    # 4. Confidence Calibration
-    extracted = apply_calibration(extracted, calibration_map)
-
-    # 5. Low confidence 제거
-    extracted = filter_low_confidence(extracted, conf_threshold)
-
-    # 6. 중복 문장 제거
-    extracted = deduplicate_sentences(extracted, dedup_threshold)
-
-    # 7. 문장 중요도 Weight 부여
-    extracted = apply_sentence_weights(extracted)
-
-    # 8. Label per sentence 상한 적용 (비활성화됨)
-    # extracted = apply_label_cap(extracted)
-
-    # 9. Conflict 감지
-    conflicts = detect_conflicts(extracted, conflict_axis_map)
-
-    # 10. 메타데이터 계산
-    total_sentences = len(extracted["sentences"])
-    total_labels = sum(len(s["labels"]) for s in extracted["sentences"])
-
-    # 11. 결과 반환
+    
+    # 2. Vector DB 검색 (제공된 경우)
+    vector_results = None
+    should_call_llm = True
+    vector_reason = "Vector DB 없음"
+    
+    if vector_searcher:
+        # Vector DB 검색 with Threshold 로직
+        vector_output = vector_searcher.search_with_threshold(user_input, k=15, expand=True)
+        vector_results = vector_output['results']
+        should_call_llm = vector_output['should_call_llm']
+        vector_reason = vector_output['reason']
+        
+        # 고신뢰도: LLM 건너뛰기, Vector DB 결과 직접 사용
+        # 저신뢰도: 빈 결과 반환 (매칭 없음)
+        if not should_call_llm and vector_results and '고신뢰도' in vector_reason:
+            # Vector DB 결과를 표준 포맷으로 변환
+            sentences = [{
+                "text": user_input,
+                "context": "normal",  # 기본 컨텍스트
+                "labels": [
+                    {
+                        "label_id": r['label_id'],
+                        "confidence": r['confidence'],
+                        "reason": f"Vector DB 고신뢰도 ({r['confidence']:.2f})"
+                    }
+                    for r in vector_results[:5]  # 상위 5개만
+                ],
+                "sentence_weight": 1.0
+            }]
+            
+            extracted = {"sentences": sentences}
+            
+            # Confidence Calibration (Vector DB 결과에도 적용)
+            extracted = apply_calibration(extracted, calibration_map)
+            
+            # Conflict 감지
+            conflicts = detect_conflicts(extracted, conflict_axis_map)
+            
+            # Mutual Exclusion 처리
+            extracted = resolve_mutual_exclusion(extracted)
+            
+            total_sentences = len(extracted["sentences"])
+            total_labels = sum(len(s["labels"]) for s in extracted["sentences"])
+            
+            return {
+                "extracted": extracted,
+                "conflicts": conflicts,
+                "meta": {
+                    "total_sentences": total_sentences,
+                    "total_labels": total_labels,
+                    "conflict_count": len(conflicts),
+                    "vector_only": True,
+                    "vector_reason": vector_reason
+                }
+            }
+    
+    # 3. LLM 호출 (필요한 경우만)
+    if should_call_llm or not vector_searcher:
+        # 프롬프트 생성
+        prompt = build_llm_prompt(user_input, allowed_labels, label_name_map)
+        
+        # Vector DB 결과가 있으면 프롬프트에 참고 정보 추가
+        if vector_results:
+            vector_context = "\n[Vector DB 검색 결과 참고]\n" + "\n".join([
+                f"- {r['label_id']} (신뢰도: {r['confidence']:.2f})"
+                for r in vector_results[:10]
+            ])
+            prompt += vector_context
+        
+        # LLM 호출 + 검증
+        extracted = call_llm_with_retry(llm, prompt, allowed_labels, max_retry)
+        
+        # 4. Confidence Calibration
+        extracted = apply_calibration(extracted, calibration_map)
+        
+        # 5. Low confidence 제거
+        extracted = filter_low_confidence(extracted, conf_threshold)
+        
+        # 6. 중복 문장 제거
+        extracted = deduplicate_sentences(extracted, dedup_threshold)
+        
+        # 7. 문장 중요도 Weight 부여
+        extracted = apply_sentence_weights(extracted)
+        
+        # 8. Conflict 감지
+        conflicts = detect_conflicts(extracted, conflict_axis_map)
+        
+        # 9. Mutual Exclusion 처리
+        extracted = resolve_mutual_exclusion(extracted)
+        
+        total_sentences = len(extracted["sentences"])
+        total_labels = sum(len(s["labels"]) for s in extracted["sentences"])
+        
+        return {
+            "extracted": extracted,
+            "conflicts": conflicts,
+            "meta": {
+                "total_sentences": total_sentences,
+                "total_labels": total_labels,
+                "conflict_count": len(conflicts),
+                "vector_only": False,
+                "vector_reason": vector_reason,
+                "used_llm": True
+            }
+        }
+    
+    # Vector DB 결과도 없고 LLM도 호출하지 않는 경우
     return {
-        "extracted": extracted,
-        "conflicts": conflicts,
+        "extracted": {"sentences": []},
+        "conflicts": [],
         "meta": {
-            "total_sentences": total_sentences,
-            "total_labels": total_labels,
-            "conflict_count": len(conflicts)
+            "total_sentences": 0,
+            "total_labels": 0,
+            "conflict_count": 0,
+            "vector_only": False,
+            "vector_reason": "저신뢰도 - 매칭 없음",
+            "used_llm": False
         }
     }

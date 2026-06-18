@@ -1,5 +1,5 @@
 {
-  "schema_version": "2026-04-v2",
+  "schema_version": "2026-04-v3",
   "negative_mapping_version": "v1.1",
   "documentation": {
     "overview": "본 매핑은 Negative Label(Nxx)을 Trait 평가 엔진의 Hard/Soft Forbidden 및 Risk Amplifier로 연결하기 위한 규칙 정의이다.",
@@ -187,7 +187,7 @@
       ]
     },
     {
-      "trait_id": "T10111",
+      "trait_id": "T101",
       "trait_name": "Risk: Avoidant",
       "logic": "회피형 리스크는 목표 모호화, 실행 방해, 불안 조장에 의해 강화됨",
       "risk_amplifier": [
@@ -197,7 +197,7 @@
       ]
     },
     {
-      "trait_id": "T10112",
+      "trait_id": "T102",
       "trait_name": "Risk: Authoritarian",
       "logic": "권위주의 리스크는 경청 거부, 심리적 안전 파괴, 포용성 위반에 의해 강화됨",
       "risk_amplifier": [
@@ -262,7 +262,7 @@
       ]
     },
     {
-      "trait_id": "T101113",
+      "trait_id": "T103",
       "trait_name": "Risk: Integrity Violation",
       "logic": "정직성 위반 Risk는 긍정 Trait 발동 자체를 억제하는 방향으로 작용",
       "hard_forbidden": [],
@@ -278,7 +278,7 @@
       ]
     },
     {
-      "trait_id": "T101114",
+      "trait_id": "T104",
       "trait_name": "Risk: Narcissistic Leadership",
       "logic": "자기애 리더십은 공감·협업·공정성 관련 모든 Positive Trait을 무효화",
       "hard_forbidden": [
@@ -297,7 +297,7 @@
       ]
     },
     {
-      "trait_id": "T101115",
+      "trait_id": "T105",
       "trait_name": "Risk: Manipulative Leadership",
       "logic": "조작형 리더십은 신뢰·동기·비전 관련 Positive Trait을 억제",
       "hard_forbidden": [
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "trait_id": "T101116",
+      "trait_id": "T106",
       "trait_name": "Risk: Volatile Leadership",
       "logic": "감정 기복·통제형 리더십은 혁신·분석·코칭 Positive Trait을 억제",
       "hard_forbidden": [
@@ -333,6 +333,46 @@
           "penalty": 0.5
         }
       ]
+    },
+    {
+      "trait_id": "T10",
+      "trait_name": "Strategic Execution Leader",
+      "logic": "전략 실행형 리더는 책임 회피 및 실행력 저해와 충돌",
+      "hard_forbidden": [
+        "N10",
+        "N08"
+      ],
+      "soft_forbidden": [
+        {
+          "label": "N06",
+          "penalty": 0.3
+        },
+        {
+          "label": "N19",
+          "penalty": 0.4
+        }
+      ],
+      "risk_amplifier": []
+    },
+    {
+      "trait_id": "T11",
+      "trait_name": "Empathetic Leader",
+      "logic": "공감형 리더는 심리적 안전 파괴 및 정서적 착취와 충돌",
+      "hard_forbidden": [
+        "N12",
+        "N14"
+      ],
+      "soft_forbidden": [
+        {
+          "label": "N15",
+          "penalty": 0.5
+        },
+        {
+          "label": "N11",
+          "penalty": 0.3
+        }
+      ],
+      "risk_amplifier": []
     }
   ]
 }

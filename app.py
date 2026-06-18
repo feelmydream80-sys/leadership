@@ -4,7 +4,9 @@ Flask Web Application for Leadership Analysis System
 """
 import json
 import os
+import sys
 from datetime import datetime
+from pathlib import Path
 from dotenv import load_dotenv
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 from src.nlp_pipeline import (
@@ -16,8 +18,10 @@ from src.nlp_pipeline import (
     apply_sentence_weights,
     detect_conflicts,
     create_opencode_client,
-    call_llm_with_retry
+    call_llm_with_retry,
+    run_extraction_pipeline
 )
+from src.vector_search import VectorSearcher
 from src.leadership_engine import LeadershipEngine
 from src.auth import (
     create_user, verify_user, get_user_by_id,
@@ -32,6 +36,8 @@ from src.metadata import (
     get_user_results, get_user_history, calculate_trait_delta, get_all_users_summary,
     calculate_trait_trend, analyze_cohort, analyze_gap, generate_insights, generate_cohort_insights
 )
+from src.routes.edit_labels import page_bp as edit_labels_page_bp, api_bp as edit_labels_api_bp
+from src.routes.edit_traits import page_bp as edit_traits_page_bp, api_bp as edit_traits_api_bp
 
 load_dotenv()
 
@@ -42,12 +48,25 @@ app.config['SESSION_TYPE'] = 'filesystem'
 # Initialize database
 init_db()
 
+# Register edit blueprints (page + api)
+app.register_blueprint(edit_labels_page_bp)
+app.register_blueprint(edit_labels_api_bp)
+app.register_blueprint(edit_traits_page_bp)
+app.register_blueprint(edit_traits_api_bp)
+
 # Global instances
 _engine = None
 _allowed_labels = None
 _label_name_map = None
 _conflict_axis_map = {}
 _macro_category_map = None
+_vector_searcher = None
+
+def get_vector_searcher():
+    global _vector_searcher
+    if _vector_searcher is None:
+        _vector_searcher = VectorSearcher()
+    return _vector_searcher
 
 def get_engine():
     global _engine
@@ -397,236 +416,168 @@ def generate_prompt():
 
 @app.route('/api/analyze', methods=['POST'])
 def analyze():
-    """전체 분석 파이프라인 실행"""
+    """표준 분석 파이프라인: Vector DB → 임계값 판단 → LLM(필요시) → Trait 추론"""
     data = request.get_json()
-    user_input = data.get('text', '')
-    llm_response = data.get('llm_response', '')
+    user_input = data.get('text', '').strip()
     mode = data.get('mode', 'auto')
-    llm_provider = data.get('llm_provider', 'gemini')
-    
-    debug_info = []
     
     if not user_input:
         return jsonify({'error': '텍스트를 입력해주세요.'}), 400
     
+    # 1. 설정 로드
     allowed_labels, label_name_map = get_label_config()
-    grouped_labels = get_grouped_labels()
     calibration_map = get_calibration_map()
     conflict_axis_map = get_conflict_axis_map()
+    vector_searcher = get_vector_searcher()
     
-    # Step 1: 프롬프트 생성 (카테고리별 그룹화)
-    prompt = build_llm_prompt(user_input, allowed_labels, label_name_map, grouped_labels)
-    debug_info.append({
-        'step': 1,
-        'name': '프롬프트 생성',
-        'input': user_input[:100] + '...' if len(user_input) > 100 else user_input,
-        'output': prompt[:500] + '...' if len(prompt) > 500 else prompt,
-        'details': f'프롬프트 길이: {len(prompt)}자'
-    })
-    
-    # Step 2: LLM 응답 획득
+    # 2. LLM 클라이언트 (자동 모드)
+    llm = None
     if mode == 'auto':
         try:
             llm = create_opencode_client()
-            
-            raw_response = call_llm_with_retry(llm, prompt, allowed_labels)
-            llm_response = json.dumps(raw_response, ensure_ascii=False, indent=2)
         except Exception as e:
-            error_msg = str(e)
-            
-            if 'opencode' in error_msg.lower():
-                user_message = f"OpenCode API 오류: {error_msg}"
-            else:
-                user_message = f"분석 중 오류 발생: {error_msg}"
-            
-            return jsonify({'error': user_message}), 500
-    else:
-        # 수동 모드: 사용자가 제공한 응답 사용
-        try:
-            raw_response = json.loads(llm_response)
-        except json.JSONDecodeError:
-            return jsonify({'error': 'LLM 응답이 유효한 JSON 형식이 아닙니다.'}), 400
-        
-        is_valid, error_msg = validate_structure(raw_response, allowed_labels)
-        if not is_valid:
-            return jsonify({'error': f'구조 검증 실패: {error_msg}'}), 400
+            return jsonify({'error': 'LLM 클라이언트 생성 실패: {}'.format(str(e))}), 500
     
-    debug_info.append({
-        'step': 2,
-        'name': 'LLM 응답',
-        'input': prompt[:200] + '...',
-        'output': llm_response[:500] + '...' if len(llm_response) > 500 else llm_response,
-        'details': 'JSON 파싱 성공'
-    })
+    # 3. 하이브리드 파이프라인 실행
+    try:
+        pipeline_output = run_extraction_pipeline(
+            user_input=user_input,
+            label_schema={'labels': [{'micro_labels': list(allowed_labels)}]},
+            conflict_axis_map=conflict_axis_map,
+            llm=llm,
+            calibration_map=calibration_map,
+            vector_searcher=vector_searcher
+        )
+        extracted = pipeline_output['extracted']
+        meta = pipeline_output['meta']
+    except Exception as e:
+        return jsonify({'error': '파이프라인 실행 실패: {}'.format(str(e))}), 500
     
-    # Step 3: Calibration
-    extracted = json.loads(llm_response) if isinstance(llm_response, str) else llm_response
-    before_cal = [[l['label_id'], l['confidence']] for s in extracted['sentences'] for l in s['labels']]
-    extracted = apply_calibration(extracted, calibration_map)
-    after_cal = [[l['label_id'], l['confidence']] for s in extracted['sentences'] for l in s['labels']]
-    
-    debug_info.append({
-        'step': 3,
-        'name': 'Calibration',
-        'input': str(before_cal[:5]),
-        'output': str(after_cal[:5]),
-        'details': f'보정 계수: 0.88'
-    })
-    
-    # Step 4: Low Confidence 필터링
-    before_filter = sum(len(s['labels']) for s in extracted['sentences'])
-    extracted = filter_low_confidence(extracted, threshold=0.5)
-    after_filter = sum(len(s['labels']) for s in extracted['sentences'])
-    
-    debug_info.append({
-        'step': 4,
-        'name': '필터링 (threshold=0.5)',
-        'input': f'전체 {before_filter}개',
-        'output': f'필터링 후 {after_filter}개',
-        'details': f'제거된 라벨: {before_filter - after_filter}개'
-    })
-    
-    # Step 5: 문장 Weight 적용
-    extracted = apply_sentence_weights(extracted)
-    weights = {s['text'][:30]: s.get('sentence_weight', 1.0) for s in extracted['sentences']}
-    
-    debug_info.append({
-        'step': 5,
-        'name': '문장 Weight',
-        'input': '문장 중요도 키워드',
-        'output': str(weights),
-        'details': 'IMPORTANCE_KEYWORD 포함 시 1.2'
-    })
-    
-    # Step 6: Trait 추론
-    micro_labels_for_engine = [
-        {
-            'label_id': l['label_id'],
-            'label_name': l.get('reason', 'N/A'),
-            'macro_category': get_macro_category(l['label_id']),
-            'confidence': l['confidence']
-        }
-        for s in extracted['sentences']
-        for l in s['labels']
-    ]
+    # 4. Trait 추론
+    micro_labels_for_engine = []
+    for s in extracted.get('sentences', []):
+        for l in s.get('labels', []):
+            micro_labels_for_engine.append({
+                'label_id': l['label_id'],
+                'label_name': l.get('reason', ''),
+                'macro_category': get_macro_category(l['label_id']),
+                'confidence': l['confidence']
+            })
     
     engine = get_engine()
     trait_result = engine.process(micro_labels_for_engine)
     trait_name_map = get_trait_name_map()
     
-    debug_info.append({
-        'step': 6,
-        'name': 'Trait 추론',
-        'input': str([l['label_id'] for l in micro_labels_for_engine[:5]]) + '...',
-        'output': f"Primary: {trait_result.get('primary')}, Positive: {len([t for t in trait_result.get('sorted_trait_list', [])])}, Negative: {len(trait_result.get('negative_traits', []))}",
-        'details': f"Secondary: {trait_result.get('secondary')}, sorted: {trait_result.get('sorted_trait_list', [])}"
-    })
-    
-    # Trait 상세 정보 조회
+    # 5. 상세 정보 구성
     primary_trait_id = trait_result['primary']
     primary_trait_type = trait_result.get('primary_type', 'positive')
-    primary_trait_details = get_trait_details(primary_trait_id)
+    primary_details = get_trait_details(primary_trait_id)
     
-    # DEBUG: strengths/risks 확인
-    print(f"[DEBUG] primary={primary_trait_id}, type={primary_trait_type}, details={primary_trait_details}")
-    
-    secondary_traits_details = [get_trait_details(t) for t in trait_result['secondary']]
-    
-    # 중요 Micro Label 상세 정보 (상위 5개)
+    # 중요 라벨 (상위 5개)
     top_labels = sorted(micro_labels_for_engine, key=lambda x: x['confidence'], reverse=True)[:5]
-    label_details = []
+    important_labels = []
     for l in top_labels:
-        details = get_label_details(l['label_id'])
-        label_details.append({
+        d = get_label_details(l['label_id'])
+        important_labels.append({
             'label_id': l['label_id'],
-            'name': details['name'],
-            'definition': details['definition'],
+            'name': d.get('name', ''),
+            'definition': d.get('definition', ''),
             'confidence': l['confidence'],
             'macro_category': l['macro_category']
         })
     
-    # % 기반 멀티 Trait 결과 구성 (type 포함)
-    sorted_trait_list = trait_result.get('sorted_trait_list', [])
-    negative_traits = trait_result.get('negative_traits', [])
-    
-    trait_percentage_with_names = [
-        {
+    # Trait 퍼센티지
+    trait_percentages = []
+    for t in trait_result.get('sorted_trait_list', []):
+        trait_percentages.append({
             'trait_id': t[0],
             'name': trait_name_map.get(t[0], 'Unknown'),
             'percentage': t[1],
             'type': t[3] if len(t) > 3 else 'positive'
-        }
-        for t in sorted_trait_list
-    ]
+        })
     
-    # 부정 Trait 이름 매핑
-    negative_traits_with_names = [
-        {
+    # 부정 Trait
+    negative_traits = []
+    for n in trait_result.get('negative_traits', []):
+        negative_traits.append({
             'trait_id': n['trait_id'],
             'name': trait_name_map.get(n['trait_id'], 'Unknown'),
             'severity': n['severity']
-        }
-        for n in negative_traits
+        })
+    
+    # 6. Vector DB 결과 (표시용)
+    vector_results = []
+    try:
+        vout = vector_searcher.search_with_threshold(user_input, k=15, expand=True)
+        vector_results = vout.get('results', [])
+    except:
+        pass
+    
+    # 7. 디버그 정보
+    top_label = 'None'
+    top_conf = 0.0
+    if vector_results:
+        top_label = vector_results[0]['label_id']
+        top_conf = vector_results[0]['confidence']
+    
+    debug_info = [
+        {'step': 1, 'name': 'Vector DB 검색', 'input': user_input[:80],
+         'output': 'Top: {} ({:.3f})'.format(top_label, top_conf),
+         'details': meta.get('vector_reason', '')},
+        {'step': 2, 'name': 'LLM 호출' if meta.get('used_llm') else 'Vector DB 직접 라벨링',
+         'input': 'Vector DB 결과 활용', 'output': 'LLM used: {}'.format(meta.get('used_llm')),
+         'details': 'vector_only: {}'.format(meta.get('vector_only'))},
+        {'step': 3, 'name': 'Calibration', 'input': 'raw confidence',
+         'output': 'calibrated', 'details': 'factor: {}'.format(calibration_map.get('default', 0.88))},
+        {'step': 4, 'name': 'Trait 추론', 'input': '{} labels'.format(len(micro_labels_for_engine)),
+         'output': 'Primary: {}'.format(primary_trait_id), 'details': 'Confidence: {:.3f}'.format(trait_result['confidence'])}
     ]
     
-    # 최종 결과 구성
-    result = {
+    # 8. 최종 응답
+    response = {
         'success': True,
         'input_text': user_input,
         'mode': mode,
-        'llm_response': llm_response,
+        'llm_response': json.dumps(extracted, ensure_ascii=False, indent=2),
         'extracted_labels': extracted,
         'trait_result': {
             'primary': primary_trait_id,
             'primary_type': primary_trait_type,
-            'primary_name': primary_trait_details['name'] if primary_trait_details else 'Unknown',
-            'primary_description': primary_trait_details.get('description', '') if primary_trait_details else '',
-            'strengths': primary_trait_details.get('strengths', []) if primary_trait_details else [],
-            'risks': primary_trait_details.get('risks', []) if primary_trait_details else [],
-            'secondary': trait_result['secondary'],
-            'secondary_details': [
-                {
-                    'trait_id': t,
-                    'name': d['name'] if d else 'Unknown',
-                    'description': d.get('description', '') if d else '',
-                    'type': t[3] if len(t) > 3 else 'positive'
-                }
-                for t, d in zip(trait_result['secondary'], secondary_traits_details)
-            ],
+            'primary_name': primary_details.get('name', '') if primary_details else '',
+            'primary_description': primary_details.get('description', '') if primary_details else '',
+            'strengths': primary_details.get('strengths', []) if primary_details else [],
+            'risks': primary_details.get('risks', []) if primary_details else [],
+            'secondary': trait_result.get('secondary', []),
             'confidence': trait_result['confidence'],
-            'evidence': trait_result['evidence'],
-            # % 기반 멀티 Trait
-            'trait_percentages': trait_percentage_with_names,
-            # 부정 Trait
-            'negative_traits': negative_traits_with_names
+            'evidence': trait_result.get('evidence', {}),
+            'trait_percentages': trait_percentages,
+            'negative_traits': negative_traits
         },
-        'important_labels': label_details,
+        'important_labels': important_labels,
+        'vector_results': vector_results,
+        'vector_meta': {
+            'vector_only': meta.get('vector_only', False),
+            'vector_reason': meta.get('vector_reason', ''),
+            'used_llm': meta.get('used_llm', False)
+        },
         'debug_info': debug_info
     }
     
-    # 분석 결과 저장 (로그인한 경우만)
+    # 9. 결과 저장 (로그인 사용자)
     user_id = session.get('user_id')
-    user_key = session.get('username')  # user_key로 username 사용
     if user_id:
         try:
-            result_json = json.dumps(result, ensure_ascii=False)
-            trait_result_str = json.dumps(trait_result, ensure_ascii=False)
-            save_analysis_result(user_id, user_input, result_json, trait_result_str)
-            
-            # 메타데이터 저장 (meta.md 기반)
-            if user_key:
-                save_analysis_metadata(user_key, result)
+            save_analysis_result(
+                user_id, user_input,
+                json.dumps(response, ensure_ascii=False),
+                json.dumps(trait_result, ensure_ascii=False)
+            )
+            if session.get('username'):
+                save_analysis_metadata(session.get('username'), response)
         except Exception as e:
-            print(f"결과 저장 실패: {e}")
+            print('결과 저장 실패: {}'.format(e))
     
-    # DEBUG: trait_result의 strengths/risks 확인
-    result['trait_result']['_debug'] = {
-        'primary': trait_result['primary'],
-        'primary_type': primary_trait_type,
-        'primary_trait_details': primary_trait_details
-    }
-    
-    return jsonify(result)
+    return jsonify(response)
 
 @app.route('/api/labels', methods=['GET'])
 def get_all_labels():
@@ -904,6 +855,48 @@ def save_test_result():
         'success': True,
         'filename': filename
     })
+
+@app.route('/api/settings/debug-status', methods=['GET'])
+def debug_status():
+    """디버그 모드 상태 확인"""
+    is_debug = os.getenv('FLASK_DEBUG', 'false').lower() in ('true', '1', 'yes')
+    return jsonify({'debug': is_debug})
+
+@app.route('/api/settings/save', methods=['POST'])
+def save_settings():
+    """API 설정 저장 (.env 파일 업데이트)"""
+    data = request.get_json()
+    opencode_key = data.get('opencode_api_key', '')
+    
+    if not opencode_key:
+        return jsonify({'success': False, 'message': 'API 키가 없습니다.'})
+    
+    # .env 파일 업데이트
+    env_path = '.env'
+    env_lines = []
+    
+    if os.path.exists(env_path):
+        with open(env_path, 'r', encoding='utf-8') as f:
+            env_lines = f.readlines()
+    
+    # 기존 OPENCODE_API_KEY 라인 찾아서 교체 또는 추가
+    found = False
+    for i, line in enumerate(env_lines):
+        if line.startswith('OPENCODE_API_KEY='):
+            env_lines[i] = f'OPENCODE_API_KEY={opencode_key}\n'
+            found = True
+            break
+    
+    if not found:
+        env_lines.append(f'OPENCODE_API_KEY={opencode_key}\n')
+    
+    with open(env_path, 'w', encoding='utf-8') as f:
+        f.writelines(env_lines)
+    
+    # 환경변수 즉시 반영
+    os.environ['OPENCODE_API_KEY'] = opencode_key
+    
+    return jsonify({'success': True, 'message': 'API 키가 저장되었습니다.'})
 
 if __name__ == '__main__':
     import os
