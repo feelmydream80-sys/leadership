@@ -1,0 +1,509 @@
+### SOURCE: paper_200_arXiv.pdf
+### PAPER_ID: 200
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 5
+
+
+===== PAGE 1 =====
+arXiv:0907.1317v1  [physics.soc-ph]  7 Jul 2009
+APS/123-QED
+Eﬀective leadership in competition
+Hai-Tao Zhang1,2, Ning Wang2, Michael Z. Q. Chen3, Tao Zhou4,5, and Changsong Zhou6,†
+1Department of Engineering, University of Cambridge, Cambridge CB2 1PZ, U.K.
+2Department of Control Science and Engineering,
+Huazhong University of Science and Technology, Wuhan 430074, P.R. China
+3Department of Automation, Nanjing University of Science and Technology, Nanjing 210094, P.R. China
+4Department of Modern Physics, University of Science and Technology of China, Hefei 230026, P.R. China
+5Department of Physics, University of Fribourg, Chemin du Muse 3, Fribourg CH-1700, Switzerland,
+6Department of Physics, Centre for Nonlinear Studies,
+and The Beijing-Hong Kong-Singapore Joint Centre for Nonlinear and Complex Systems (Hong Kong),
+Hong Kong Baptist University, Kowloon Tong, Hong Kong, China
+Among natural biological ﬂocks/swarms or even mass social activities, when the collective behav-
+iors of the followers has been dominated by the moving direction or opinion of one leader group, it
+seems very diﬃcult for later-coming leaders to reverse the orientation of the mass followers, espe-
+cially when they are in quantitative minority. This Letter reports a counter-intuitive phenomenon,
+Following the Later-coming Minority, provided that the late-comers obey a favorable distribution
+pattern which enables them to spread their inﬂuence to as many followers as possible in a given
+time and to accumulate enough power to govern these followers. We introduce a discriminant index
+to quantify the whole group’s orientation under competing leadership, which helps to design an
+economic way for the minority later-coming leaders to defeat the dominating majority leaders solely
+by optimizing their distribution pattern. Our investigation provides new insights into the eﬀective
+leadership in biological systems, with meaningful implication to social and industrial applications.
+PACS numbers: 05.65.+b, 89.75.-k, 89.20.Kk
+For biological ﬂocks/swarms, their collective behavior
+always depends on social interactions among group mem-
+bers. In many cases, just a few individuals have the per-
+tinent global information, like the knowledge about the
+location of a food source or an obstacle, or a migration
+route. It is known that several species can evolve spe-
+ciﬁc signals that help guide the uninformed individuals
+[1]. On the other hand, valuable leadership may be cor-
+related with age, status or reputation, and it is very com-
+mon for many species that experienced group members
+play an important role in helping the less experienced.
+It was demonstrated that a small proportion of informed
+individuals are suﬃcient to guide the navigating behav-
+ior of the whole group, e.g., foraging ﬁsh schools and bee
+swarms heading for new nest sites [2, 3].
+Nevertheless, the nature of bio-groups is not always
+that simple, since it often happens that the informed in-
+dividuals within a group may diﬀer with each other in
+their preferred directions due to diﬀerent experiences or
+motivations. This divergence also happens frequently in
+human society, e.g., diﬀerent political parties can pos-
+sess totally diﬀerent beliefs.
+Interestingly, it is often
+encountered that, when the mass followers’ orientation
+has been completely dominated by one leader group, an-
+other leader group, who may be in quantitative minority,
+enters aiming at reverse the followers’ orientation to its
+own. For instance, migrating birds or foraging insects
+developed an eﬀective way to deviate to a new promising
+direction at a low cost of additional leadership [3]. In
+elections, a new social party always desires to defeat its
+elder opponents with as few extra seats in a legislature
+as possible. In marketing competition, the newly coming
+corporations would manage to acquire more share from
+the market dominated by the monopolies at a low cost.
+In the last years, this issue of eﬀective leadership has
+attracted signiﬁcant attention [2, 3, 4, 5].
+In general,
+many existing works show that the whole group is more
+likely to follow the majority rather than the minority
+under the guidance of divergent leadership [6]. For in-
+stance, the cost to the groups as a whole is considerably
+higher for a “despotic” than for a “democratic decision”
+or “following the majority” manner [2]. The larger the
+group, the smaller the proportion of informed individuals
+is needed to guide the group [3]. In social science, it is
+shown that the public is apt to follow the majority under
+the impression of divergent opinions from diﬀerent social
+parties [7, 8]. The synchronization of many hands clap-
+ping [9] and the escaping panic [10] strongly imply the
+rule of “following the majority”. All these bring up an
+important question: is it possible for the minority later-
+coming leaders defeat the dominating majority ones and
+how?
+In this Letter we address this question in a generic
+model of collective behavior, the Vicsek model [11], in
+which individuals align motions to the average of their
+geographical neighbors to achieve the global velocity syn-
+chronization. Importantly, we have found that defeating
+by minority is highly possible provided that the later-
+comers adopt better distribution pattern to inﬂuence and
+persuade more followers. To quantify the eﬀectiveness of
+the leadership, we propose an evaluation index which can
+predict reasonably the orientation of the mass followers
+
+===== PAGE 2 =====
+2
+under the guidance of diverged leadership solely basing
+on the parameters of the distribution patterns.
+The original Vicsek model is extended to incorporate
+the inﬂuence of the earlier and later-coming leaders: a
+small proportion of the whole group of N-individuals
+is given a preferred motion direction representing, for
+example, the direction to a known food resource or a
+migration target, or the faithfulness for one political
+belief or commodity brand.
+In our model there are
+three types of individuals:
+i) Nr earlier-coming lead-
+ers moving rightwards, namely, Nr, whose dynamics are
+xri(t + 1) = xri(t) + v∡0o, i = 1, · · · , Nr; ii) Nl minor-
+ity later-coming leaders moving leftwards, namely, Nl,
+whose dynamics are xli(t + 1) = xli(t) + v∡180o, i =
+1, · · · , Nl with Nl ≤Nr; and iii) Nf uninformed indi-
+viduals, namely, Nf, whose dynamics are updated by
+xfi(t + 1) = xfi(t) + v∡θfi(t), i = 1, · · · , Nf, with
+Nf = N −Nr −Nl.
+Here, xi denotes the position of
+individual i, and the leaders move without being aﬀected
+the others. Nf are naive and have no preference in any
+particular direction but just follow the average direc-
+tions θfi(t) of their neighbors, and cannot diﬀerentiate
+the leaders and the followers. Note that, at the begin-
+ning, there are just Nr and Nf and once the orientation
+of Nf has completely aligned to Nr, Nl appears to com-
+pete with Nr to reverse the orientation of Nf.
+The velocity of the fi-th follower, i.e.
+vfi(t), has a
+constant speed v and a direction θ(t + 1) = ⟨θ (t)⟩r,
+where ⟨θ (t)⟩r denotes the average direction of individuals
+within a circle of radius r surrounding individual i (in-
+cluding itself) [11]. This kind of aligning mechanism can
+nicely mimic the local dynamics of “go with the stream”
+in both bio-groups and human society. To focus on the
+eﬀects of the leaders, we do not consider the inﬂuence of
+the external noise.
+Here, without loss of generality, we set N = 500 and
+L = 10 with periodic boundary conditions, and r = 1,
+v = 0.03 as Ref. [11]. The global orientation of the whole
+group is deﬁned as normalized steady-state alignment in-
+dex Vm = 1−θa/(π/2), where θa denotes the steady-state
+direction of the whole group, thus the values 1, −1 and 0
+of Vm mean that the whole group is completely following
+Nr, Nl and no preference in direction, respectively.
+Now recall the key problem this Letter addresses: is
+it possible for Nl to defeat Nr? Questions closely rele-
+vant to this issue have already kindled up the interests
+of not only physicists and biologists but also social scien-
+tists and marketing researchers for years [3, 7]. In these
+studies, it is generally drawn that the followers would be
+apt to follow the majority leaders since in the alignment
+models each individual follows the average direction of
+its neighbors. Then, it can be seen that, if the majority
+and the minority have the same geographical distribution
+pattern, the majority has either larger inﬂuence area or
+higher particle density which intensiﬁes their leadership.
+Thereby, it is natural to deduce that decisive parame-
+FIG. 1: Illustration of eﬀective leadership factors F1 and F2
+by normal length η and clustering factor σ, whose deﬁnitions
+will be given later. Here, ∥x∥2 =
+√
+xT x.
+ter(s) for eﬀective leadership may be not the absolute
+number of the leaders but the following two key, but
+competing factors: F1) Eﬀective Range: to distribute
+leaders’ inﬂuence to as many followers as possible within
+a given time; F2) Persuasive Intensity: to be suﬃciently
+persuasive to govern the followers they can inﬂuence with
+high density. In other words, minority leaders may defeat
+the majority ones provided that they have better F1 or
+F2 or both, and our work will verify such a hypothesis.
+In our scenario given above, F1 and F2 can be quanti-
+ﬁed by the normal length η and clustering factor σ, as
+shown in Fig. 1. Obviously, these two factors are however
+somewhat contradictive since F1 requires the leaders to
+distributed sparsely into the followers’ region while F2
+favors highly condensed leader groups, and this contra-
+diction constitutes the main challenge of the problem.
+FIG. 2: (Color online) Typical distribution patterns of lead-
+ers.
+To address this interesting question, we have imple-
+mented simulations with Nr distributed in the L × L
+square (Fig. 2(a)), as considered in most previous works.
+We then examine the eﬀectiveness of Nl leader group on
+various distribution patterns, such as the L × L square,
+L × L diagonal, L × 1 vertical, 1 × L horizontal and 1 × 1
+dotted regions as shown in Figs. 2(a)–(e), respectively.
+According to the two factors F1 and F2 of eﬀective
+leadership and taking into consideration of the moving
+
+===== PAGE 3 =====
+3
+directions of Nl and Nr, one can expect that L × 1 out-
+performs L × L because they have the identical F1 but
+L×1 favors F2. Analogously, L×1 can also be expected
+to be superior to 1 × L since they have the same F2 but
+L × 1 have better F1. However, it is diﬃcult to compare
+L × 1 and 1 × 1, since L × 1 has better F1 while 1 × 1
+greatly favors F2. Thus, one has to resort to numerical
+simulations to reveal more concrete rules behind.
+10
+0
+10
+1
+10
+2
+10
+3
+10
+4
+−1
+−0.5
+0
+0.5
+1
+t
+Vm
+ 
+ 
+horizontal
+square
+diagonal
+dotted
+vertical
+FIG. 3: Orientation reversion of the mass followers under the
+later-coming leaders Nl obeying 5 typical diﬀerent distribu-
+tion patterns given in Fig. 2. The follower group Nf has com-
+pletely aligned to the leaders Nr when Nl sets in at t = 0.
+Here, Nr = Nl = 10.
+Each point is an average over 1000
+independent runs for this and the following ﬁgures.
+Four more interesting and concrete phenomena are ob-
+served from Fig. 3: i) L×1 vertical and 1×1 dotted pat-
+terns (Figs. 2(c) and (e)) can defeat the earlier-coming
+L × L square pattern and reverse the orientation of the
+followers, while 1 × L horizontal, L × L square and L × L
+diagonal patterns (Figs. 2(a), (b) and (d)) not. ii) L × 1
+vertical and 1 × L horizontal patterns are the most and
+least eﬀective ones, respectively; iii) L×L diagonal distri-
+bution is a little bit better than the L×L square distribu-
+tion; iv) 1 × 1 dotted pattern is the second most eﬀective
+one (just below L × 1). Inspiringly, for Nl adopting a
+dotted distribution 1 × 1, it takes considerable running
+steps to propagate its inﬂuence to remote followers, so
+that the converging time is much longer. These simula-
+tion results help us understand more deeply the nature
+of F1and F2. Speciﬁcally, in our scenario,F1 has been
+realized by spreading Nl out suﬃciently perpendicularly
+to their movement direction, while a condensed distribu-
+tion corresponding to favorable F2 could ﬁrst slave the
+followers locally and then propagate the inﬂuence to the
+whole population.
+To this end, one can be delighted to infer that even if
+Nf have been completely dominated by Nr, it is highly
+possible for the minority Nl to reverse the followers’ opin-
+ion with their better distribution pattern.
+Indeed, as
+demonstrated clearly in Fig. 4 (a), in a large region above
+the white dashed line where Nl < Nr, the whole group
+reverses the orientation from Vm = 1 to Vm = −1 (blue
+region) to follow the leadership of the minority Nl which
+has a better distribution pattern (L × 1 vertical) com-
+pared to the majority (L × L square). Similar results are
+observed for the other favorable 1 × 1 dot pattern of Nl.
+ 
+ 
+5
+10
+15
+20
+10
+12
+14
+16
+18
+20
+Nr
+Nl
+a)
+ 
+ 
+5
+10
+15
+20
+10
+12
+14
+16
+18
+20
+−1
+−0.5
+0
+0.5
+1
+Nr
+Nl
+b)
+FIG. 4: (Color online) Eﬀective leadership for Nl vs Nr lead-
+ers with diﬀerent distribution patterns L×1 vertical and L×L
+square, respectively. (a) Vm from the model simulations. (b)
+Vm1 from Eq. (1).
+The numerical simulations suggest that the two fac-
+tors F1 (inﬂuencing area) and F2 (clustering intensity)
+determining the leadership performance can be quanti-
+ﬁed as below.
+As shown in Fig. 1, F1 can be repre-
+sented by the length of the leaders’ distribution region
+perpendicular to the movement direction of the leader,
+namely the normal length η.
+The clustering intensity
+F2 can be characterized by the reciprocal of the av-
+erage geographical distance among the leaders, namely
+the clustering factor σ.
+We ﬁnd that for the num-
+ber of leaders Nl, the average geographical distance be-
+tween the ﬁrst 2Nl nearest pairs of leaders can sensi-
+tively distinguish various patterns discussed in Fig.
+2
+and Fig.
+5.
+More precisely, for the Nl leaders, σl =
+1/(
+1
+2Nl
+P
+i,j∈Nl, j̸=i,∥xi−xj∥2≤¯d2Nl ∥xi −xj∥2). Here, ¯d2Nl
+denotes the geographical distance between the 2Nl-th
+nearest pair of the leader group. The same formula hold
+for σr of the leader group Nr.
+1
+1.2
+1.4
+1.6
+1.8
+2
+2.2
+−1
+−0.8
+−0.6
+−0.4
+−0.2
+0
+0.2
+0.4
+Rσ
+Vm
+ 
+ 
+Vm
+Vm1
+a)
+0
+5
+10
+0
+0.5
+1
+−1
+−0.5
+0
+0.5
+ 
+Rσ
+Rη
+Vm
+ 
+Vm
+Vm1
+b)
+FIG. 5: Roles of clustering factor ratio Rσ and normal length
+ratio Rη on the orientation of the followers. (a) Eﬀect of Rσ;
+(b) Combined eﬀects of both Rσ and Rη. Vm1 in Eq. (1) is
+compared to Vm from the Vicsek model simulations.
+Now with these factors ηl,r and σl,r (normal lengths
+and clustering factors of Nl and Nr, respectively), one
+is ready to make a concrete comparison between dif-
+ferent leaderships. To quantify the eﬀective leadership
+using these factors, we further deﬁne an inﬂuencing re-
+gion ratio Rη = ηl/ηr and a clustering intensity ratio
+Rσ = σl/σr. Remarkably, we ﬁnd that the eﬀective lead-
+ership can be reasonable predicted solely by these pa-
+rameters of the leader groups. We let Nr randomly dis-
+tribute in the unbiased L × L square (Fig. 2(a)), and let
+
+===== PAGE 4 =====
+4
+Nl (with Nl = Nr = 10) randomly distribute in L × L,
+L × (L −1), · · · , L × 1 rectangular regions, respectively,
+and hence ηr = ηl = L ( Rη = 1) while σl is increas-
+ing monotonously. As shown in Fig. 5(a), Vm drops with
+increasing Rσ until asymptotically approaching a satura-
+tion value of −1, indicating dominant leadership of Nl.
+To investigate the role of Rη and Rσ simultaneously, we
+let Nl (with Nl = Nr = 10) randomly distribute in L×L,
+(L −1) × (L −1), · · · , 1 × 1 square regions, respectively,
+which implies that ηl is falling whilst σl is rising along
+this distribution sequence. Fig. 5(b) shows that Vm re-
+duces with increasing Rη and Rσ.
+As a consequence,
+one can conﬁdently draw that the minority later-coming
+leaders do have the potential to reverse the followers if
+only they have larger value of η or σ or both.
+The observation from these intensive simulations sug-
+gest that we could determine eﬀective leadership for the
+two competing leader groups solely basing on speciﬁc
+combinations of the geometrical parameters η and σ. In
+fact, taking into consideration of the maximal and mini-
+mal saturation values 1 and −1 of Vm and Vm(1, 1) = 0,
+we hereby propose a discriminant index Vm1(Rη, Rσ) by
+Vm1(Rη, Rσ) = w1 tanh[γ(1 −Rσ)] + w2 tanh(1 −Rη).
+(1)
+Here, γ is used to adjust the origin-traversing slope of
+tanh(·) function, which endows Vm1 an essential degree
+of freedom. According to our extensive numerical simu-
+lations in Fig. 5, γ ∈[1.3, 1.6] yields satisfactory approxi-
+mation performance. Thereby, without loss of generality,
+we set γ = 1.5, and then apply Least Square Estimation
+to identify w1 = 1.0, w2 = 0.2 commonly for all the re-
+sults in Fig. 5. Note that this index is self-consistent in
+the sense that: i) the maximal and minimal saturation
+values keep at 1 and −1 for the feasible ranges of Rσ and
+Rη, and ii) if either value of Rσ and Rη is 1 then Vm1
+will be merely determined by the other one.
+It is important to note that the deﬁnition of the clus-
+tering factor σ naturally takes the eﬀect of the number
+of leaders Nl and Nr into account. Remarkably, Eq. (1)
+with the same parameter γ = 1.5, w1 = 1.0 and w2 = 0.2
+can account for the eﬀective leadership for ﬁxed patterns,
+but varying numbers Nl and Nr ( Fig. 4(b)). A compar-
+ison of the Figs. 4 (a) and (b) shows clearly that Vm1
+basing on the geometrical characterization of the distri-
+bution patterns of the leaders can very nicely predict the
+eﬀective leadership Vm in the model .
+In summary, uncovering the nature of eﬀective lead-
+ership is of great theoretical and practical signiﬁcance.
+We have shown that later-coming leaders, even in quan-
+titative minority, have the potential to defeat the earlier-
+coming dominating ones, if only the former obeys a bet-
+ter distribution pattern. A better distribution pattern
+has larger inﬂuential region and greater clustering factor,
+which can equip the leaders with the capability of inﬂu-
+encing more followers in a given period and strengthening
+the persuasion power on the followers as well. Intrigu-
+ing enough, the mechanism underlying such an apparent
+“following the minority” in the whole group is due to the
+scheme of “following the majority” locally.
+Moreover,
+we have demonstrated that an index merely basing on
+the geometrical parameters of the distribution patterns
+of the leaders can provide nice prediction of the eﬀec-
+tive leadership in competition. With this index one can
+quantify the advantage of one leader group over another
+so as to design an economical way for the later-coming
+leaders to defeat the majority earlier-coming ones. Our
+simulations on the other two more sophisticated models,
+the Couzin’s three-sphere model [1] and the alignment
+model [3], strongly support our conclusion on the eﬀec-
+tive leadership mechanism.
+Our investigation has launched a new exploration on
+the essential rules that govern leadership potentials. Mo-
+tivated by both natural and social systems, our ﬁndings
+have potential industrial and social applications as well.
+The results are valuable to explain how the migrating
+birds or foraging insects deviate to a new promising di-
+rection at a low cost of additional leadership. The ﬁnd-
+ings are also helpful to endow the newborn corporations
+with some economic strategy to compete with their dom-
+inating opponents in marketing competitions. Moreover,
+industrial multi-agent systems can be expected to bene-
+ﬁt from this work to improve its adaptability to a new
+environment.
+The work is partially supported by the National
+Natural Science Foundation of China (NNSFC, Grant
+No.
+60704041) and the Research Fund for the Doc-
+toral Program of Higher Education (RFDP, Grant No.
+20070487090) (HTZ), the NNSFC (Grant No. 10635040)
+(TZ) and by the Hong Kong Baptist University (CSZ).
+[1] I.D. Couzin, J. Krause, R. James, G.D. Ruxton and N.R.
+Franks, J. Theor. Biol. 218, 1 (2002).
+[2] L. Conradt and T. J. Roper, Nature 421, 155 (2003).
+[3] I.D. Couzin, J. Krause, N.R. Franks and S.A. Levin, Na-
+ture 433, 513 (2005).
+[4] D.J.T. Sumpter, Philosophical Transactions of the Royal
+Society B 361, 5 (2003).
+[5] J. Buhl, D.J.T. Sumpter, I.D. Couzin, J.J. Hale, E. Des-
+pland, E. R. Miller and S. J. Simpson, Science 312, 1402
+(2006).
+[6] C.K.W. De Dreu and N.K. De Vries, British Journal of
+Social Psychology 35, 77 (1996).
+[7] S. Suo and Y. Chen, Journal of Artiﬁcial Societies and
+Social Simulations 11, 42 (2008).
+[8] M. Anghel, Z. Toroczkai, K. E. Bassler and G Korniss,
+Phys. Rev. Lett. 92, 058701 (2004).
+[9] Z. Nada, E. Ravasz, Y. Brechet, T. Vicsek and A.-L.
+Barabasi, Nature 403, 849 (2000).
+[10] D. Helbing, I. Farkas and T. Vicsek, Nature 407, 487
+(2000).
+[11] T. Vicsek, A. Czir´ok, E. Ben-Jacob, I. Cohen, and O.
+
+===== PAGE 5 =====
+5
+Shochet, Phys. Rev. Lett. 75, 1226 (1995).

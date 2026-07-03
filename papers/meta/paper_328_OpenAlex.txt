@@ -1,0 +1,11 @@
+Title: Demystifying AI: What Digital Transformation Leaders Can Teach You about Realistic Artificial Intelligence
+Authors: Jürgen Kai‐Uwe Brock, Florian von Wangenheim
+Source: OpenAlex
+Date: 2019-07-24
+URL: https://doi.org/10.1177/1536504219865226
+
+Abstract (EN):
+Recent years have seen a reemergence of interest in artificial intelligence (AI) among both managers and academics. Driven by technological advances and public interest, AI is considered by some as an unprecedented revolutionary technology with the potential to transform humanity. But, at this stage, managers are left with little empirical advice on how to prepare and use AI in their firm’s operations. Based on case studies and the results of two global surveys among senior managers across industries, this article shows that AI is typically implemented and used with other advanced digital technologies in firms’ digital transformation projects. The digital transformation projects in which AI is deployed are mostly in support of firms’ existing businesses, thereby demystifying some of the transformative claims made about AI. This article then presents a framework for successfully implementing AI in the context of digital transformation, offering specific guidance in the areas of data, intelligence, being grounded, integrated, teaming, agility, and leadership.
+
+Abstract (KO):
+최근 몇 년 동안 관리자와 학계 모두에서 인공지능(AI)에 대한 관심이 다시 부각되었습니다. 기술 발전과 대중의 관심에 힘입어 일부 사람들은 AI를 인류를 변화시킬 잠재력을 지닌 전례 없는 혁명적 기술로 간주합니다. 그러나 이 단계에서 관리자에게는 회사 운영에서 AI를 준비하고 사용하는 방법에 대한 경험적 조언이 거의 남지 않습니다. 사례 연구와 산업 전반의 고위 관리자를 대상으로 한 두 번의 글로벌 설문 조사 결과를 바탕으로 이 기사에서는 AI가 일반적으로 기업의 디지털 혁신 프로젝트에서 다른 고급 디지털 기술과 함께 구현되고 사용된다는 것을 보여줍니다. AI가 배포되는 디지털 변혁 프로젝트는 대부분 기업의 기존 비즈니스를 지원하므로 AI에 대한 변혁적 주장 중 일부를 쉽게 이해할 수 있습니다. 그런 다음 이 기사에서는 디지털 혁신의 맥락에서 AI를 성공적으로 구현하기 위한 프레임워크를 제시하고 데이터, 인텔리전스, 기반, 통합, 팀 구성, 민첩성 및 리더십 분야에 대한 구체적인 지침을 제공합니다.

@@ -1,0 +1,941 @@
+### SOURCE: paper_324_OpenAlex.pdf
+### PAPER_ID: 324
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 14
+
+
+===== PAGE 1 =====
+© 2024 The Author(s). Published and Maintained by Noyam Journals.  
+This is an open access article under the CCBY license (http://creativecommons.org/licenses/by/4.0/). 
+E-Journal of Humanities, Arts and  
+Social Sciences (EHASS) 
+ISSN – Online 2720-7722 | Print 2821-8949 
+Volume 5 Issue 8 August 2024 pp 1582-1595 
+Available online at: https://noyam.org/journals/ehass/  
+DOI: https://doi.org/10.38159/ehass.20245812 
+ 
+AI-Driven Leadership: A Conceptual Framework for 
+Educational Decision-Making in the AI Era 
+Dean Collin Langeveldt1 
+ 
+1 School of Education, Sol Plaatje University, Kimberley, South Africa.
+ 
+ 
+ 
+  
+INTRODUCTION 
+Artificial Intelligence (AI) refers to various technologies that can perform tasks similar to human thinking, 
+learning, decision-making, and creativity.1 AI can transform education in many ways. As Rose Luckin, 
+Professor of Learner Centred Design at UCL Knowledge Lab, states, "AI is not just a tool for education, 
+but a partner in the learning process. AI can augment human intelligence, enhance human creativity, and 
+empower human agency. AI can also help us address the grand challenges of education, such as access, 
+quality, equity, and sustainability.”2 AI can transform education in many ways. It can make teaching and 
+learning better, customize learning experiences, improve efficiency and effectiveness, and help foster 
+innovation and diversity in the education sector.3 AI can help teachers with education, like creating and 
+giving lessons and giving feedback to students. It can also help students work together and communicate 
+with each other.4 Learners may also use AI to access personalized and adaptive learning content, connect 
+ 
+1 S.J. Russell and P. Norvig,  Artificial Intelligence: A Modern Approach , 4th ed. (London: Pearson Education, 2023). 
+2 Rose Luckin, “Towards Artificial Intelligence-Based Assessment Systems,” Nature Human Behaviour 1, no. 3 (2017): 0028. 
+3 UNESCO, “ Artificial Intelligence in Education,” 2023, https://en.unesco.org/artificial-intelligence/education. 
+4 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education (Pearson, 2023). 
+ 
+Correspondence 
+Dean Collin Langeveldt  
+Email: 
+ dean.langeveldt@spu.ac.za 
+ 
+ 
+Publication History 
+Received: 22nd January, 2024   
+Accepted: 16th  August, 2024  
+Published online:  
+30th  August, 2024 
+ABSTRACT  
+Artificial Intelligence (AI) is changing the way students are educated in many 
+ways, like improving teaching and learning, personalizing learning experiences, 
+making things more efficient and effective, and promoting creativity and 
+inclusivity. AI can cause problems for educational leaders. It can bring up ethical, 
+legal, social, and cultural issues. It also requires leaders to learn new skills and 
+abilities for the AI age. There is a need for Educational leaders to be proactive and 
+strategic in order to make the most of the advantages and find solutions for the 
+issues related to AI in education. This article aimed to examine how artificial 
+intelligence is used in leadership in education. It also proposed a framework to 
+understand and develop AI-based leadership in education. The basic idea of the 
+conceptual framework relies on the theories of AI, leadership, and decision-
+making. It has four parts: inputs, processes, outputs, and feedback. The impact of 
+the conceptual framework on education practices and policies was also examined. 
+The article also discussed how education practices and policies are influenced by 
+the conceptual framework. Additionally, the article explored the relationship 
+between the conceptual framework and its effects on education practices and 
+policies. The article highlighted the framework's limitations and suggests 
+potential areas for future research. This study contributes to the existing literature 
+on enhancing learning through technology. 
+ 
+Keywords: Artificial Intelligence, Educational Leadership, Decision-Making, 
+Conceptual Framework.
+
+===== PAGE 2 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1583 
+with intelligent tutors and mentors, and build 21st-century abilities such as critical thinking, problem-
+solving, and creativity.5  
+However, AI provides various problems and hazards for educational leaders, such as ethical, legal, 
+social, and cultural concerns, as well as the necessity to build new skills and competencies for the AI age.6 
+The fairness, transparency, accountability, and privacy of AI systems and data in education are all ethical 
+concerns.7 (Regulation of the ownership, liability, and duty of AI systems and data in education is one of 
+the legal challenges.8 Addressing the influence of AI on the job market, the digital gap, and the social 
+inclusion of various learners are all examples of societal challenges.9 Respecting the values, beliefs, and 
+conventions of various educational environments and stakeholders is one example of a cultural 
+challenge.10 Furthermore, educators must learn new skills and competencies for the AI future, such as data 
+literacy, computational thinking, digital leadership, and ethical awareness.11  
+ 
+To make the most of AI in education and successfully address its difficulties, educational leaders 
+must be proactive and deliberate. They must understand the fundamental concepts and processes of AI, as 
+well as how it may be employed in education. They must also comprehend the ramifications of education, 
+as well as the ethical and societal repercussions. They must make intelligent and responsible decisions 
+about AI systems and data, as well as how they are utilized, assessed, and improved in education.12 They 
+must also foster a culture that encourages humans and AI to collaborate and advance education. Holmes 
+et al. emphasize the importance of understanding the ethical and societal implications of education.13 They 
+must make informed and responsible decisions regarding AI systems and data, their usage, assessment, 
+and improvement in education.14  
+Despite the increased interest in and research on artificial intelligence in education and educational 
+leadership, there is a lack of a comprehensive and cohesive conceptual framework that connects these two 
+areas and handles their benefits and difficulties. Most present research on AI in education focuses on the 
+technical or pedagogical elements of AI systems and data while ignoring the ethical or social components 
+of AI in education.15 Furthermore, the majority of present research on educational leadership focuses on 
+the human or organizational components of leadership practice and growth while ignoring the technical 
+or digital aspects of leadership in the AI era.16  
+There is therefore a need to develop a conceptual framework to make AI in education work with 
+educational leadership. This approach of thinking should provide a comprehensive and systematic 
+knowledge of how artificial intelligence is applied in educational leadership. It should offer practical and 
+ethical guidance and proposals for establishing AI-powered educational leadership. The goal of this 
+research is to address the issue by offering a conceptual framework for incorporating artificial intelligence 
+into educational leadership. 
+ 
+5 Emily A Holmes et al., “Mental Imagery in Depression: Phenomenology, Potential Mechanisms, and Treatment Implications,” Annual 
+Review of Clinical Psychology 12, no. 1 (2016): 249–80. 
+6 Yinying Wang, “Artificial Intelligence in Educational Leadership: A Symbiotic Role of Human-Artificial Intelligence Decision-Making,” 
+Journal of Educational Administration 59, no. 3 (2021): 256–70. 
+7 N. Bostrom and E. Yudkowsky, “The Ethics of Artificial Intelligence ,” in The Cambridge Handbook of Artificial Intelligence, ed. K. 
+Frankish and W. Ramsey (Cambridge: Cambridge University Press, 2023). 
+8 R. Susskind and D. Susskind, The Future of Professions: How Technology Will Transform the Work of Human Experts (London:  Oxford 
+University Press, 2023). 
+9 Erik Brynjolfsson and Andrew McAfee, The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies 
+(WW Norton & Company, 2014). 
+10 Neil Selwyn et al., “What Might the School of 2030 Be like? An Exercise in Social Science Fiction,” Learning, Media and Technology 
+45, no. 1 (2020): 90–106. 
+11 T.H. Davenport and J. Foutty, “AI-Driven Leadership,”  MIT Sloan Management Review, 2023, https://sloanreview.mit.edu/article/ai-
+driven-leadership/. 
+12 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education. 
+13 Wayne Holmes, Maya Bialik, and Charles Fadel, Artificial Intelligence in Education Promises and Implications for Teaching and 
+Learning (Center for Curriculum Redesign, 2019). 
+14 B. Williamson,  Big Data in Education: The Digital Future of Learning, Policy and Practice (London: Sage, 2018). 
+15 Bostrom and Yudkowsky, “The Ethics of Artificial Intelligence .” 
+16 Davenport and Foutty, “AI-Driven Leadership”; Doniwen Pietersen, Dean Langeveldt, and Arrie Van Wyk, “The Multidimensional Role 
+of the Principal in Post-Apartheid-South-Africa,” Research in Educational Policy and Management 5, no. 2 (December 13, 2023): 263–74, 
+https://doi.org/10.46303/repam.2023.30.
+
+===== PAGE 3 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1584 
+  The article thus seeks to investigate the use of AI in educational leadership. Using a literature-based 
+research design it aims to provide a framework for understanding and developing AI-driven educational 
+leadership. The fundamental principles underlying AI, leadership, and decision-making form the 
+foundation of the whole system. The discussion will unfold under four themes: inputs (data sources and 
+systems that use AI to make choices), processes (algorithms and procedures that use AI to make decisions), 
+outputs (results and consequences of using AI to make decisions), and feedback (evaluation and 
+refinement of using AI to make decisions). 
+The paper begins by discussing artificial intelligence in education and educational leadership. 
+Secondly, it offers an idea of how artificial intelligence can be used in educational leadership. It will 
+finally investigate the conceptual framework's implications and make recommendations for educational 
+practice and policy.   
+ 
+LITERATURE REVIEW 
+This section explores the literature on artificial intelligence in education and educational leadership. It 
+identifies and investigates the types, instances, advantages, restrictions, difficulties, responsibilities, 
+functions, abilities, competencies, challenges, and trends of these two domains. It also emphasizes the 
+research gap that supports the necessity for an AI-driven leadership conceptual framework in education.  
+ 
+AI in Education 
+AI in education refers to the use of AI technologies to support and enhance various aspects of teaching 
+and learning processes.17 
+ 
+Types and Examples of AI Technologies in Education 
+There are different types and examples of AI technologies that can be applied in education. According to 
+Luckin et al., these can be classified into four categories:18  
+Learner-facing AI: These are AI systems that interact directly with learners, such as intelligent 
+tutors, adaptive learning platforms, chatbots, virtual assistants, games, simulations, etc. They can deliver 
+personalized and adaptive learning content, feedback, coaching, scaffolding, assessment, and motivation, 
+among other things. 
+AI systems that support instructors in activities such as curriculum design, lesson preparation, 
+material delivery, student monitoring, assessment, feedback, professional development, and so on. They 
+can help instructors save time, decrease effort, improve efficiency, and improve quality, among other 
+things. 
+Peer-facing AI systems, such as social networks, online communities, collaborative learning 
+platforms, peer assessment tools, and so on, allow cooperation and communication among learners or 
+teachers. They can assist students or teachers in sharing knowledge, resources, ideas, and experiences, 
+among other things. 
+ 
+Data-facing AI refers to AI systems that evaluate data from many sources, such as student 
+behavior, performance, progress, preferences, and so on, or instructor practice, effectiveness, and needs, 
+among others. They can give insights, suggestions, forecasts, visualizations, and so forth. 
+ 
+Benefits and limitations of AI for teaching and learning 
+AI technologies can offer various benefits for teaching and learning, such as: 
+• 
+Enhancing learning outcomes by providing personalized and adaptive learning experiences that 
+cater to individual learner needs, interests, goals, styles, etc.19  
+• 
+Improving learning efficiency by optimizing learning paths and pacing that suit learner abilities 
+and readiness.20  
+ 
+17 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education. 
+18 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education. 
+19 Holmes, Bialik, and Fadel, Artificial Intelligence in Education Promises and Implications for Teaching and Learning. 
+20 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education.
+
+===== PAGE 4 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1585 
+• 
+Fostering learning engagement by offering interactive and immersive learning environments that 
+stimulate learner curiosity and motivation.21  
+• 
+Developing 21st-century skills by exposing learners to complex and authentic problems that 
+require critical thinking problem-solving creativity collaboration etc.22  
+• 
+Supporting lifelong learning by enabling learners to access diverse and updated learning resources 
+anytime anywhere and at any pace.23 
+ 
+However, AI technologies also have some limitations for teaching and learning, such as: 
+• 
+Lacking human touch by replacing or reducing human interaction and emotion that is essential for 
+social and emotional learning.24  
+• 
+Raising ethical concerns by posing risks to learner privacy security consent trust etc., or teacher 
+autonomy accountability responsibility etc.25  
+• 
+Creating technical challenges by requiring reliable and robust infrastructure connectivity hardware 
+software etc., that may not be available or affordable for all learners or teachers.26 
+• 
+Generating pedagogical issues by relying on data-driven27 or algorithmic decision-making that 
+may not be transparent explainable, or aligned with learning objectives or values.28  
+ 
+Ethical, Legal, Social, and Cultural Issues of AI in Education 
+AI in education also raises various ethical, legal, social, and cultural issues that need to be addressed by 
+educational leaders, such as: 
+• 
+Ethical issues: These include ensuring the fairness, transparency, accountability, and privacy of AI 
+systems and data in education.29 For example, how to prevent or mitigate bias or discrimination in 
+AI systems or data that may affect learner outcomes or opportunities? How to ensure or verify the 
+accuracy or validity of AI systems or data that may influence learner assessment or feedback? How 
+to protect or respect the rights or interests of learners or teachers who use or are affected by AI 
+systems or data? 
+• 
+Legal issues: These include regulating the ownership, liability, and responsibility of AI systems 
+and data in education.30 For example, who owns or controls the AI systems or data that are used 
+or generated in education? Who is liable or accountable for the harms or damages caused by AI 
+systems or data in education? Who is responsible for the quality or standards of AI systems or data 
+in education? 
+• 
+Social issues: These include addressing the impact of AI on the labour market, the digital divide, 
+and the social inclusion of diverse learners.31 For example, how to prepare learners or teachers for 
+the changing skills or competencies required by the AI era? How to ensure access or equity of AI 
+systems or data for all learners or teachers regardless of their socio-economic status or location? 
+How to promote diversity or inclusion of learners or teachers from different backgrounds or 
+cultures in AI systems or data? 
+• 
+Cultural issues: These include respecting the values, beliefs, and norms of different educational 
+contexts and stakeholders.32 For example, how to align AI systems or data with the educational 
+goals or values of different countries or regions? How to accommodate AI systems or data with 
+ 
+21 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education. 
+22 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education. 
+23 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education. 
+24 Selwyn et al., “What Might the School of 2030 Be like? An Exercise in Social Science Fiction.” 
+25 Bostrom and Yudkowsky, “The Ethics of Artificial Intelligence .” 
+26 Selwyn et al., “What Might the School of 2030 Be like? An Exercise in Social Science Fiction.” 
+27 Dean Collin Langeveldt and Doniwen Pietersen, “Data-Driven Strategies for Addressing Challenges in Teacher Placement: A Legal and 
+Pedagogical Analysis for Inclusive Education in South Africa,” E-Journal of Humanities, Arts, and Social Sciences (EHASS)  39, no. 3 
+(2023): 1–121. 
+28 Bostrom and Yudkowsky, “The Ethics of Artificial Intelligence .” 
+29 Bostrom and Yudkowsky, “The Ethics of Artificial Intelligence .” 
+30 Susskind and Susskind, The Future of Professions: How Technology Will Transform the Work of Human Experts. 
+31 Brynjolfsson and McAfee, The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies. 
+32 Selwyn et al., “What Might the School of 2030 Be like? An Exercise in Social Science Fiction.”
+
+===== PAGE 5 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1586 
+the learning preferences or styles of different learners or teachers? How to communicate AI 
+systems or data with the expectations or perceptions of different parents or communities? 
+ 
+Educational Leadership 
+Educational leadership is the process of enlisting and guiding the talents and energies of teachers, students, 
+and parents toward achieving common educational aims. 33  Educational leadership is often used 
+synonymously with school leadership in the United States and has supplanted educational management in 
+the United Kingdom.34  
+ 
+Roles and Functions of Educational Leaders 
+Educational leaders can perform various roles and functions in different settings and levels of education. 
+According to Bush, these can be classified into six types:35 
+• 
+Instructional leadership: This type focuses on improving teaching and learning by setting clear 
+goals, monitoring curriculum and instruction, evaluating student progress, and providing feedback 
+and support. According to Pietersen et al. instructional leadership, which promotes a culture of 
+teaching and learning, is gaining importance as a strategy for enhancing schools in South Africa. 
+• 
+Transformational leadership: This type focuses on inspiring and motivating teachers and students 
+by creating a shared vision, fostering a culture of collaboration and innovation, empowering and 
+developing leaders, etc. 
+• 
+Distributed leadership: This type focuses on sharing and delegating leadership tasks and 
+responsibilities among multiple actors, such as teachers, students, parents, etc., based on their 
+expertise, skills, interests, etc. 
+• 
+Moral leadership: This type focuses on promoting ethical values and principles in education by 
+modeling moral behavior, fostering a climate of trust and respect, addressing ethical dilemmas, 
+etc.  
+• 
+Strategic leadership: This kind is concerned with the planning and implementation of educational 
+reform and improvement by examining internal and external issues, formulating strategic goals 
+and plans, mobilizing resources and stakeholders, and so on.  
+• 
+Postmodern leadership focuses on embracing variety and complexity in education by 
+acknowledging many viewpoints and realities, questioning prevailing discourses and practices, 
+promoting critical thought and conversation, and so on. 
+ 
+Skills and Competencies of Effective Educational Leaders 
+Educational leaders need to possess various skills and competencies to perform their roles and functions 
+effectively. According to Leithwood et al., these can be grouped into four categories:36 
+• 
+Cognitive skills: These include skills such as problem-solving, decision-making, critical thinking, 
+creativity, etc., that enable educational leaders to analyze information, generate solutions, evaluate 
+alternatives, etc. 
+• 
+Interpersonal skills: These include skills such as communication, collaboration, negotiation, 
+conflict resolution, etc., that enable educational leaders to interact with others, build relationships, 
+influence outcomes, etc. 
+• 
+Intrapersonal skills: These include skills such as self-awareness, self-regulation, self-motivation, 
+resilience, etc., that enable educational leaders to manage themselves, cope with stress, overcome 
+challenges, etc. 
+• 
+Technical skills: These include skills such as data literacy, computational thinking, digital 
+leadership, etc., that enable educational leaders to use and integrate technology in education, such 
+as AI systems and data. 
+ 
+ 
+33 Kenneth Leithwood, Alma Harris, and David Hopkins, “Seven Strong Claims about Successful School Leadership,” School Leadership 
+and Management 28, no. 1 (2008): 27–42. 
+34 T. Bush,  Theories of Educational Leadership and Management, 5th ed. (Sage Publications, 2023). 
+35 Bush,  Theories of Educational Leadership and Management. 
+36 Leithwood, Harris, and Hopkins, “Seven Strong Claims about Successful School Leadership.”
+
+===== PAGE 6 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1587 
+Educational Leadership Challenges and Trends 
+Changing expectations and demands from stakeholders, such as students, parents, teachers, policymakers, 
+and others, who have diverse requirements, interests, objectives, values, and so on.37  
+Growing complexity and unpredictability in the educational environment, such as globalization, 
+diversity, innovation, and competitiveness, all of which necessitate adaptive and flexible responses.38 
+Emerging technological opportunities and risks, such as AI, provide new possibilities and difficulties for 
+teaching and learning.39  
+ 
+METHODOLOGY 
+This article used a literature-based research design to develop a framework for AI-driven educational 
+leadership, examining the theoretical connections between AI theory, leadership theory, and decision-
+making theory. It synthesized existing frameworks from AI, educational leadership, and decision-making 
+fields to create a comprehensive understanding of AI-driven leadership. This study utilized academic 
+literature, reports, and theoretical models to examine AI in education, educational leadership, and 
+decision-making, establishing a comprehensive conceptual framework. This article used thematic analysis 
+to identify recurring themes in literature, providing a theoretical foundation for an AI-driven leadership 
+framework, involving data familiarization, code generation, theme review, and analysis writing. This 
+article adhered to ethical guidelines for attributing and citing sources. This article evaluated the validity 
+of a conceptual framework based on established theories, using rigorous citation practices, peer-reviewed 
+sources, and a comprehensive literature review, assessing its alignment with research questions, 
+coherence, and relevance. The literature review's limitations stemmed from the limited scope of existing 
+literature, the inability to include emerging perspectives, and the inability to capture all relevant sources. 
+Future research could validate the proposed framework through empirical studies in educational settings, 
+explore its practical implementation, and investigate how AI-driven leaders use data, foster innovation, 
+and handle ethical and social challenges in education. This article synthesized AI theories, educational 
+leadership, and decision-making to create a conceptual framework for AI-driven educational leadership, 
+aiming to contribute to the emerging field and offer insights for educational leaders and practitioners. 
+ 
+CONCEPTUAL FRAMEWORK 
+This section outlines the fundamental ideas for integrating AI technology into educational leadership. 
+There are two elements to it: the basic concepts and the major idea. The examination of important concepts 
+and models of AI, leadership, and decision-making, which provide the theoretical underpinning, guides 
+the research. Based on four elements: inputs, processes, outputs, and feedback, the conceptual model 
+presents a new paradigm for understanding and executing AI-driven leadership in education. 
+ 
+Theoretical Foundations 
+This work's theoretical underpinnings are founded on three domains: AI theory, leadership theory, and 
+decision-making theory. Each profession has a unique viewpoint on the use of AI in educational leadership. 
+ 
+AI Theory 
+Artificial intelligence theory is concerned with the principles and methods of artificial intelligence, which 
+is a branch of applied probability theory and analytic philosophy concerned with the theory of making 
+decisions based on assigning probabilities to various factors and assigning numerical consequences to the 
+outcome (Decision theory - Stanford Encyclopedia of Philosophy; Decision theory - Britannica; Decision 
+theory - Oxford Reference). AI theory incorporates a variety of AI technology forms and uses in education, 
+including learner-facing AI, teacher-facing AI, peer-facing AI, and data-facing AI. 40 AI theory also 
+addresses the advantages and disadvantages of AI in teaching and learning, such as improving learning 
+outcomes, increasing learning efficiency, fostering learning engagement, developing 21st century skills, 
+supporting lifelong learning, lacking human touch, raising ethical concerns, creating technical challenges, 
+ 
+37 Bush,  Theories of Educational Leadership and Management. 
+38 Leithwood, Harris, and Hopkins, “Seven Strong Claims about Successful School Leadership.” 
+39 Wang, “Artificial Intelligence in Educational Leadership: A Symbiotic Role of Human-Artificial Intelligence Decision-Making.” 
+40 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education.
+
+===== PAGE 7 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1588 
+and generating pedagogical issues.41 Furthermore, AI theory investigates the ethical, legal, social, and 
+cultural issues of AI in education, such as ensuring the fairness, transparency, accountability, and privacy 
+of AI systems and data, regulating the ownership, liability, and responsibility of AI systems and data, 
+addressing the impact of AI on the labor market, digital divide, and social inclusion of diverse learners, 
+and respecting the values, beliefs, and norms of various educational contexts and stakeholders.42  
+ 
+Leadership Theory 
+Leadership theory is concerned with the styles and approaches of leadership, which is the process of 
+enlisting and guiding the talents and energies of teachers, students, and parents toward achieving common 
+educational aims.43 Leadership theory encompasses different roles and functions of educational leaders in 
+different settings and levels of education, such as instructional leadership, transformational leadership, 
+distributed leadership, moral leadership, strategic leadership, and postmodern leadership.44 Leadership 
+theory also highlights the cognitive talents, interpersonal skills, intrapersonal skills, and technical abilities 
+of effective educational leaders. 45 Furthermore, leadership theory investigates educational leadership 
+difficulties and trends such as changing stakeholder expectations and demands, rising complexity and 
+unpredictability in the educational environment, and new possibilities and dangers from technology.46  
+ 
+Decision-Making Theory 
+Decision-making theory is concerned with the processes and circumstances that influence decision-
+making, which is defined as the act or process of selecting one course of action from among multiple 
+choices. (Oxford Bibliographies - Decision Making). Decision-making theory addresses several decision-
+making kinds and models that may be applied in various circumstances and contexts, such as rational 
+decision-making, limited rationality, intuitive decision-making, heuristic decision-making, and so on. 
+(Stanford Encyclopedia of Philosophy, Decision Making). Individual characteristics, social dynamics, 
+organizational culture, ethical concerns, and other factors all play a role in decision-making theory 
+(Decision Making - The MIT Press). Furthermore, decision-making theory evaluates the quality and 
+efficacy of decision-making in terms of accuracy, consistency, timeliness, and so on. (Oxford 
+Bibliographies - Decision Making) 
+ 
+Conceptual Model 
+This study's conceptual model is built on the integration of the theoretical underpinnings of AI theory, 
+leadership theory, and decision-making theory. It presents a new paradigm for comprehending and 
+creating AI-driven educational leadership. Inputs, processes, outputs, and feedback are the four 
+components of the framework. Each component reflects a unique facet of AI-powered decision-making 
+in educational leadership.  
+ 
+Figure 1: Conceptual Model 
+ 
+41 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education. 
+42 Bostrom and Yudkowsky, “The Ethics of Artificial Intelligence .” 
+43 Leithwood, Harris, and Hopkins, “Seven Strong Claims about Successful School Leadership.” 
+44 Bush,  Theories of Educational Leadership and Management. 
+45 Leithwood, Harris, and Hopkins, “Seven Strong Claims about Successful School Leadership.” 
+46 Bush,  Theories of Educational Leadership and Management. 
+Inputs
+• Educational Data
+• Educational Information
+• Educational Context
+Processes
+• AI Methods
+• Decision-making Models
+Outputs
+• Educational Actions
+• Educational Results
+Feedback
+• Performance Measurement
+• Performance Feedback
+• Performance Improvement
+
+===== PAGE 8 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1589 
+Inputs 
+Inputs are the data sources and information systems that serve as the foundation for AI-driven decision-
+making in educational leadership. These are their names: 
+• 
+ Educational data: This refers to the information that AI systems and data in education collect, 
+store, and analyze, such as learner behavior, performance, progress, preferences, and so on, or 
+teacher practice, effectiveness, and needs. (AI with a data-driven approach).47  
+• 
+Educational information: This includes insights, suggestions, forecasts, visualizations, and other 
+information created, displayed, and conveyed by AI systems and data in education. (AI with a data 
+focus). 
+• 
+ Educational context: These are the elements that form and impact the educational environment 
+and situation, such as educational goals, values, policies, standards, stakeholders, and so on. (AI 
+in education: ethical, legal, social, and cultural challenges). 
+ 
+Processes 
+Processes are the algorithms and techniques that enable AI-driven decision-making in educational 
+leadership.48 They include: 
+• 
+AI methods: These are the methods that apply AI technologies to support and enhance various 
+aspects of teaching and learning processes, such as curriculum design, lesson planning, content 
+delivery, student monitoring, evaluation, feedback, professional development, etc.49  (Teacher-
+facing AI), or personalized and adaptive learning content, feedback, guidance, scaffolding, 
+assessment, motivation, etc. (Learner-facing AI), or collaboration and communication among 
+learners or teachers (Peer-facing AI). 
+• 
+Decision-making models: These are the models that apply decision-making theories to guide and 
+improve the quality and effectiveness of decision-making in educational leadership, such as 
+rational decision-making, bounded rationality, intuitive decision-making, heuristic decision-
+making, etc. (Decision-making theory).50  
+ 
+Outputs 
+Outputs are the outcomes and impacts of AI-driven decision-making in educational leadership. They 
+include: 
+• 
+Educational actions: These are the actions that are taken or implemented by educational leaders 
+based on AI-driven decision-making, such as adopting, integrating, evaluating, and improving AI 
+systems and data in education (AI theory),51 or setting clear goals, monitoring curriculum and 
+instruction, evaluating student progress, providing feedback and support, etc. (Instructional 
+leadership), or creating a shared vision, fostering a culture of collaboration and innovation, 
+empowering and developing leaders, etc. (Transformational leadership), 52  or sharing and 
+delegating leadership tasks and responsibilities among multiple actors (Distributed leadership),53 
+or promoting ethical values and principles in education (Moral leadership),54 or planning and 
+implementing change and improvement in education (Strategic leadership) or embracing diversity 
+and complexity in education (Postmodern leadership).55  
+• 
+Educational results: These are the results that are achieved or expected by educational leaders from 
+AI-driven decision-making, such as improved teaching and learning outcomes (AI theory),56 or 
+ 
+47 Holmes, Bialik, and Fadel, Artificial Intelligence in Education Promises and Implications for Teaching and Learning. 
+48 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education. 
+49 Holmes, Bialik, and Fadel, Artificial Intelligence in Education Promises and Implications for Teaching and Learning. 
+50 W. K. Hoy and C. J. Tarter,  Administrators Solving the Problems of Practice: Decision-Making Concepts, Cases, and Consequences , 
+3rd ed. ( Pearson Education, 2008). 
+51 Luckin, “Towards Artificial Intelligence-Based Assessment Systems.” 
+52 Kenneth Leithwood and Doris Jantzi, “Transformational School Leadership for Large-Scale Reform: Effects on Students, Teachers, and 
+Their Classroom Practices,” School Effectiveness and School Improvement 17, no. 2 (2006): 201–27. 
+53 J. P. Spillane, Distributed Leadership (San Francisco: Jossey-Bass, 2006). 
+54 M. Fullan, Leading in a Culture of Change (San Francisco:  Jossey-Bass, 2001). 
+55 Peter Gronn, The New Work of Educational Leaders: Changing Leadership Practice in an Era of School Reform (Sage, 2003). 
+56 Luckin, “Towards Artificial Intelligence-Based Assessment Systems.”
+
+===== PAGE 9 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1590 
+better decisions (Decision-making theory),57 or new products (AI theory),58 or optimized business 
+processes (AI theory).59  
+ 
+Feedback 
+Feedback is the assessment and enhancement of AI-driven decision-making in educational leadership. 
+Performance measurement is the measuring of the performance of AI systems and data in education and 
+their alignment with educational aims and values (AI theory),60 or the performance of educational leaders 
+and their accomplishment of educational goals and standards (Leadership theory).61  
+Performance feedback is provided or received by artificial intelligence (AI) systems and data in 
+education and their users or beneficiaries (AI theory), or by educational leaders and their followers or 
+stakeholders (Leadership theory).62  
+Performance improvement: Improvement made or supported by AI systems and data in education 
+and the people who use or benefit from it (AI theory),63 or by educational leaders and the people who 
+follow or are affected by them (Leadership theory).64  
+ 
+DISCUSSIONS 
+The section discusses the effects and recommendations of the AI-driven leadership framework in the field 
+of education. It provides solutions for these questions: 
+• 
+How can school leaders use AI to improve their decision-making quality and speed? 
+• 
+How can educational leaders use AI to foster innovation and inclusion in their educational 
+institutions? 
+• 
+How can educational leaders use AI to address the ethical, legal, social, and cultural issues of AI 
+in education? 
+• 
+What are the key skills and competencies that educational leaders need to acquire for the AI era?  
+• 
+What are the best ways for educational leaders to improve and adapt to the AI era.? 
+• 
+What are the difficulties and dangers that school leaders need to avoid or handle in the era of AI? 
+ 
+Implications 
+The idea behind using AI in educational leadership has important implications for how education is 
+practiced and policies are developed. This study explains how AI is used in educational leadership and 
+gives guidelines for using AI in education. 
+ 
+How can people in charge of education use artificial intelligence to make better decisions that are 
+faster and more effective? 
+The conceptual framework helps educational leaders understand how AI can be used to make better 
+decisions in a more efficient way. Educational leaders can use data and algorithms to help them make 
+better decisions by using AI techniques and decision-making models. They can, for example, use AI 
+methodologies such as data analysis, machine learning, natural language processing, and so on to provide 
+insights, recommendations, projections, visualizations, and so on from a variety of educational data and 
+information (inputs). They can also use decision-making models (outputs) such as rational decision-
+making, restricted rationality, intuitive decision-making, heuristic decision-making, and so on to guide 
+and evaluate their decision-making processes. They may enhance the quality of their decisions by making 
+more informed, evidence-based, data-driven, objective, valid, and trustworthy decisions. They can also 
+enhance their decision-making efficiency by making faster, easier, simpler decisions. 
+ 
+57 H. A. Simon, The New Science of Management Decision (London:  Prentice Hall, 1977). 
+58 Luckin, “Towards Artificial Intelligence-Based Assessment Systems.” 
+59 Luckin, “Towards Artificial Intelligence-Based Assessment Systems.” 
+60 Luckin, “Towards Artificial Intelligence-Based Assessment Systems.” 
+61 Philip Hallinger, “Leading Educational Change: Reflections on the Practice of Instructional and Transformational Leadership,” 
+Cambridge Journal of Education 33, no. 3 (2003): 329–52. 
+62 Leithwood and Jantzi, “Transformational School Leadership for Large-Scale Reform: Effects on Students, Teachers, and Their 
+Classroom Practices.” 
+63 Luckin, “Towards Artificial Intelligence-Based Assessment Systems.” 
+64 Fullan, Leading in a Culture of Change.
+
+===== PAGE 10 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1591 
+ 
+How can educational leaders use AI to foster innovation and inclusion in their educational 
+institutions? 
+Another implication of the conceptual framework is that it shows how educational leaders can use AI to 
+foster innovation and inclusion in their educational institutions. By using AI methods and decision-making 
+models, educational leaders can create and implement new and improved products and processes that 
+enhance teaching and learning in their educational institutions. For example, they can use AI methods 
+such as intelligent tutors, adaptive learning platforms, chatbots, virtual assistants, games, simulations, etc., 
+to provide personalized and adaptive learning experiences that cater to individual learner needs, interests, 
+goals, styles, etc. (Learner-facing AI). They can also use AI methods such as curriculum design, lesson 
+planning, content delivery, student monitoring, evaluation, feedback, professional development, etc., to 
+assist teachers in their tasks and improve their efficiency and effectiveness (Teacher-facing AI). They can 
+also use AI methods such as social networks, online communities, collaborative learning platforms, peer 
+assessment tools, etc., to facilitate collaboration and communication among learners or teachers (Peer-
+facing AI). By doing so, they can foster innovation by creating a culture of experimentation and 
+exploration that supports the development of human-AI collaboration in education. They can also foster 
+inclusion by providing access and equity of AI systems and data for all learners or teachers regardless of 
+their socio-economic status or location (Data-facing AI), or by promoting diversity and inclusion of 
+learners or teachers from different backgrounds or cultures in AI systems and data (Ethical, legal, social, 
+and cultural issues of AI in education). 
+ 
+How can educational leaders use AI to address the ethical, legal, social, and cultural issues of AI in 
+education? 
+A further implication of the conceptual framework is that it shows how educational leaders can use AI to 
+address the ethical, legal, social, and cultural issues of AI in education. By using AI methods and decision-
+making models, educational leaders can ensure and verify the fairness, transparency, accountability, and 
+privacy of AI systems and data in education (Ethical issues). For example, they can use AI methods such 
+as data quality, data governance, data security, data privacy, etc., to ensure or verify the accuracy, validity, 
+reliability, security, privacy, etc., of AI systems and data in education (Data-facing AI). They can also use 
+decision-making models such as ethical decision-making, moral decision-making, value-based decision-
+making, etc., to guide and evaluate their decision-making processes based on ethical values and principles 
+such as fairness, transparency, accountability, privacy, etc. (Decision-making theory). By doing so, they 
+can address the ethical issues of AI in education by preventing or mitigating bias or discrimination in AI 
+systems or data that may affect learner outcomes or opportunities, or by protecting or respecting the rights 
+or interests of learners or teachers who use or are affected by AI systems or data. 
+By using AI methods and decision-making models, educational leaders can also regulate and 
+monitor the ownership, liability, and responsibility of AI systems and data in education (Legal issues). 
+They can, for example, utilize AI approaches such as data ownership, data licensing, data sharing, data 
+auditing, and so on to govern or oversee the ownership, control, access, and use of AI systems and data in 
+education (Data-facing AI). They may also utilize decision-making models like legal decision-making, 
+regulatory decision-making, compliance decision-making, and so on to guide and analyze their decision-
+making processes that are based on legal rules and regulations like laws, policies, standards, and so on 
+(Decision-making theory). They can handle the legal challenges of AI in education by ensuring or 
+validating the quality or standards of AI systems and data in education or assigning or enforcing liability 
+or accountability for injuries or damages caused by AI systems or data in education. 
+Educational leaders may handle the social and cultural concerns of AI in education by applying AI 
+methodologies and decision-making models. They can do so by employing AI methods such as data 
+analysis, machine learning, natural language processing, and so on to analyze and comprehend the impact 
+of AI on the labor market, the digital divide, and the social inclusion of diverse learners (Social issues), 
+or by employing AI methods such as natural language processing, computer vision, speech recognition, 
+and so on to respect and accommodate the values, beliefs, and norms of various educational contexts and 
+stakeholders (Cultural issues). They may also utilize decision-making models like social decision-making, 
+cultural decision-making, stakeholder decision-making, and so on to guide and assess their decision-
+
+===== PAGE 11 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1592 
+making processes based on social and cultural aspects including needs, interests, objectives, and values 
+(Decision-making theory). They can address the social issues of AI in education by preparing learners or 
+teachers for the changing skills or competencies required by the AI era,65 or by ensuring access or equity 
+of AI systems or data for all learners or teachers regardless of socioeconomic status or location,66 or by 
+promoting diversity or inclusion of learners or teachers from different backgrounds or cultures in AI 
+systems or data.67 They can also address the cultural issues of AI in education by aligning AI systems or 
+data with the educational goals or values of various countries or regions, or by accommodating AI systems 
+or data with the learning preferences or styles of various learners or teachers, or by communicating AI 
+systems or data with the expectations or perceptions of various parents or communities.68  
+ 
+RECOMMENDATIONS 
+The conceptual framework for AI-driven education leadership also includes some ideas for building AI-
+driven education leadership. It offers some critical skills and competencies that educational leaders should 
+develop for the AI age, as well as some best practices and tactics that educational leaders should implement 
+for the AI era, as well as some potential pitfalls and dangers that educational leaders should avoid or 
+minimize for the AI era. 
+ 
+What are the critical abilities and competencies that educational leaders must develop for the AI 
+era? 
+One of the conceptual framework's main recommendations is that it defines numerous important skills 
+and abilities that educational leaders would need in the AI future. Here are a few examples: 
+• 
+Data literacy means being able to understand and use data in different forms and situations.69 Being 
+able to understand and work with data is really important for educational leaders. They need this 
+skill to use AI technology and data in education, and to make smart choices based on evidence. 
+• 
+Computational thinking is the ability to generate and solve problems using computer science 
+concepts and methods such as abstraction, decomposition, and algorithms.70 Understanding and 
+utilizing AI technologies in education, as well as promoting innovation and creativity, need 
+computational thinking on the part of educational leaders. 
+• 
+Digital leadership means being able to guide and oversee the use of technology and data in 
+education. This involves tasks like introducing and using AI technology, evaluating its 
+effectiveness, and improving it. 71 To take full advantage of the advantages and conquer the 
+obstacles of AI in education, educational leaders need to have digital leadership. This will also 
+help them create an atmosphere that encourages creativity and diversity. 
+• 
+Ethical awareness means recognizing and addressing the ethical problems related to using AI in 
+education, like making sure it is fair, transparent, accountable, and respects privacy. 72 Ethical 
+awareness is essential for educational leaders to assure and verify the ethical ideals and principles 
+of AI systems and data in education, as well as to defend and respect learners' and instructors' 
+rights and interests. 
+ 
+ 
+What are the best practices and strategies that educational leaders need to adopt for the AI era? 
+Another recommendation of the conceptual framework is that it proposes certain best practices and tactics 
+that educational leaders should embrace for the AI era: 
+• 
+Creating a vision and a plan for artificial intelligence in education: Educational leaders must have 
+a clear vision and strategic plan for AI in education that is consistent with their educational aims 
+ 
+65 Brynjolfsson and McAfee, The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies. 
+66 Selwyn et al., “What Might the School of 2030 Be like? An Exercise in Social Science Fiction.” 
+67 Selwyn et al., “What Might the School of 2030 Be like? An Exercise in Social Science Fiction.” 
+68 Selwyn et al., “What Might the School of 2030 Be like? An Exercise in Social Science Fiction.” 
+69 Davenport and Foutty, “AI-Driven Leadership.” 
+70 Jeannette M. Wing, “Computational Thinking  ,”  Communications of the ACM 49, no. 3 (2023): 33–35. 
+71Eric C. Sheninger, Digital Leadership: Changing Paradigms for Changing Times. 2nd ed. (Thousand Oaks, CA: Corwin),  
+2019. 
+72 Bostrom and Yudkowsky, “The Ethics of Artificial Intelligence .”
+
+===== PAGE 12 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1593 
+and values and meets their educational requirements and difficulties.73 They must also convey their 
+vision and goal to their stakeholders, such as teachers, students, parents, legislators, and others, 
+and solicit input and support from them. 
+• 
+Creating a team and a network for AI in education Creating a team and a network for AI in 
+education involves bringing together different people with different skills, backgrounds, and 
+interests, like teachers, students, researchers, and developers, to work together and collaborate.74 
+They need to encourage teamwork and communication among team and network members. They 
+also need to give them the power to grow as leaders and learners. 
+• 
+ Choosing and integrating artificial intelligence (AI) systems and data in education: Educational 
+leaders must choose and integrate AI systems and data in education that are appropriate and 
+relevant for their educational context and situation, such as learner-facing AI, teacher-facing AI, 
+peer-facing AI, or data-facing AI.75 They must also assess and enhance the quality and efficacy of 
+AI systems and data in education, including correctness, consistency, timeliness, and so on 
+(decision-making theory).  
+• 
+Developing and implementing new and improved educational products and processes: Educational 
+leaders must develop and implement new and improved educational products and processes that 
+improve teaching and learning in their institutions, such as personalized and adaptive learning 
+experiences, interactive and immersive learning environments, complex and authentic problems, 
+and so on (AI theory). They must also assess and track the consequences and impacts of their 
+educational goods and processes, such as enhanced learning outcomes, smarter judgments, new 
+products, streamlined business processes, and so on (AI theory). 
+ 
+What are the potential pitfalls and risks that educational leaders need to avoid or mitigate for the 
+AI era? 
+A final recommendation of the conceptual framework is that it warns about some potential pitfalls and 
+risks that educational leaders need to avoid or mitigate for the AI era. These include: 
+• 
+Relying too much or too little on AI systems or data in education: Educational leaders need to find 
+a balance between trusting or distrusting AI systems or data in education. They should not rely too 
+much on AI systems or data in education without questioning or verifying their validity or 
+reliability. They should also not rely too little on AI systems or data in education without utilizing 
+or benefiting from their insights or recommendations.76  
+• 
+Replacing or reducing human interaction or emotion in education: Educational leaders need to 
+maintain or enhance human interaction or emotion in education. They should not replace or reduce 
+human interaction or emotion in education with AI systems or data in education. They should also 
+not ignore or neglect the social and emotional needs and aspects of learners and teachers.77  
+• 
+The misuse or violation of ethical, legal, social, and cultural considerations surrounding AI in 
+education.: Educational leaders must address the important ethical, legal, social, and cultural 
+problems related to using AI in education. They should not overlook or violate these issues. They 
+must evaluate the ethical, legal, social, and cultural implications of AI in education and not ignore 
+or violate the regulations governing them. They should also ensure that their actions do not 
+contradict the values and beliefs of their institution and the persons involved.78  
+CONCLUSION 
+This study looked at how AI is used in educational leadership and gave a way to understand and create 
+AI-based educational leadership. The basic idea behind the conceptual framework is to combine ideas 
+from AI, leadership, and decision-making. It has four main parts: inputs, processes, outputs, and feedback. 
+ 
+73 UNESCO, “ Artificial Intelligence in Education.” 
+74 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education. 
+75 Luckin R. et al.,  Intelligence Unleashed: An Argument for Artificial Intelligence in Education. 
+76 Bostrom and Yudkowsky, “The Ethics of Artificial Intelligence .” 
+77 Selwyn et al., “What Might the School of 2030 Be like? An Exercise in Social Science Fiction.” 
+78 Bostrom and Yudkowsky, “The Ethics of Artificial Intelligence ”; Susskind and Susskind, The Future of Professions: How Technology 
+Will Transform the Work of Human Experts; Brynjolfsson and McAfee, The Second Machine Age: Work, Progress, and Prosperity in a 
+Time of Brilliant Technologies; Selwyn et al., “What Might the School of 2030 Be like? An Exercise in Social Science Fiction.”
+
+===== PAGE 13 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1594 
+The article also explores how the conceptual framework affects and suggests improvements for education 
+practice and policy. 
+The conceptual framework has many benefits and useful ideas for improving artificial intelligence 
+in education and educational leadership. This text helps people understand how AI is important in 
+educational leadership and gives some advice on how to use AI effectively in education. It connects AI in 
+education with educational leadership, dealing with the good things and challenges. It also helps with new 
+ideas and different types of people by promoting working together with AI in education. 
+However, there are some problems and shortcomings in the plan that need to be recognized and fixed. 
+This information is from a survey of the literature, but it might not have all the important sources or 
+viewpoints about AI in education and educational leadership. This is also based on a study that is based 
+on theory and may not show the actual reality or complexity of using AI to make decisions in education 
+leadership. This text means that it is believed that using AI technology in education is a good and helpful 
+thing for all educational settings and people involved in education. This means researchers have to do 
+more research or create a better plan for using AI in education leadership. Doing research studies to test 
+and prove a theoretical framework in different educational settings and levels, like schools, universities, 
+districts, etc. This will be done by using different ways and sources of information, such as surveys, 
+interviews, observations, experiments, and so on. The goal is to make tools and resources that are helpful 
+for using AI to make decisions in education leadership. These tools can be things like guidelines, 
+checklists, and dashboards. They can be used on the internet or on mobile devices. 
+Stakeholders are looking into different approaches to AI-driven leadership in education, like ethical 
+and cultural frameworks, and taking into account different theories like critical theory and postmodern 
+theory. As a result, there is a need for more research or to expand the ideas behind AI-driven leadership 
+in education. There is also the need to conduct research in different schools and universities to see if the 
+ideas proposed by this researcher are true. Surveys, interviews, observations, and experiments to collect 
+data and test my ideas can be used. Creating helpful tools and resources, like frameworks, guidelines, 
+checklists, rubrics, dashboards, and more, to assist and improve AI-driven decision-making in educational 
+leadership. These tools can be accessed online, on mobile devices, through cloud computing, and similar 
+methods. Different ways to use AI in education where people lead, like ethical practices, cultural practices, 
+and involving everyone affected by the decisions are explored. Different ideas and approaches such as 
+looking critically at things, thinking about the world today, and understanding how different parts fit 
+together were used. 
+ 
+BIBLIOGRAPHY 
+Bostrom, N., and E. Yudkowsky. “The Ethics of Artificial Intelligence .” In The Cambridge Handbook 
+of Artificial Intelligence, edited by K. Frankish and W. Ramsey. Cambridge: Cambridge University 
+Press, 2023. 
+Brynjolfsson, Erik, and Andrew McAfee. The Second Machine Age: Work, Progress, and Prosperity in 
+a Time of Brilliant Technologies. WW Norton & Company, 2014. 
+Bush, T.  Theories of Educational Leadership and Management. 5th ed. Sage Publications, 2023. 
+Davenport, T.H., and J. Foutty. “AI-Driven Leadership.”  MIT Sloan Management Review, 2023. 
+https://sloanreview.mit.edu/article/ai-driven-leadership/. 
+Fullan, M. Leading in a Culture of Change. San Francisco:  Jossey-Bass, 2001. 
+Gronn, Peter. The New Work of Educational Leaders: Changing Leadership Practice in an Era of 
+School Reform. Sage, 2003. 
+Hallinger, Philip. “Leading Educational Change: Reflections on the Practice of Instructional and 
+Transformational Leadership.” Cambridge Journal of Education 33, no. 3 (2003): 329–52. 
+Holmes, Emily A, Simon E Blackwell, Stephanie Burnett Heyes, Fritz Renner, and Filip Raes. “Mental 
+Imagery in Depression: Phenomenology, Potential Mechanisms, and Treatment Implications.” 
+Annual Review of Clinical Psychology 12, no. 1 (2016): 249–80. 
+Holmes, Wayne, Maya Bialik, and Charles Fadel. Artificial Intelligence in Education Promises and 
+Implications for Teaching and Learning. Center for Curriculum Redesign, 2019. 
+Hoy, W. K., and C. J. Tarter.  Administrators Solving the Problems of Practice: Decision-Making 
+Concepts, Cases, and Consequences . 3rd ed.  Pearson Education, 2008.
+
+===== PAGE 14 =====
+Langeveldt, D.C. / E-Journal of Humanities, Arts and Social Sciences Vol.5 No.8(2024) pp 1582-1595 
+ 
+ 
+E-Journal of Humanities, Arts and Social Sciences  
+ 
+                                                                                                                        
+  1595 
+Langeveldt, Dean Collin, and Doniwen Pietersen. “Data-Driven Strategies for Addressing Challenges in 
+Teacher Placement: A Legal and Pedagogical Analysis for Inclusive Education in South Africa.” E-
+Journal of Humanities, Arts, and Social Sciences (EHASS)  39, no. 3 (2023): 1–121. 
+https://doi.org/10.38159/ehass.202341219 
+Leithwood, Kenneth, Alma Harris, and David Hopkins. “Seven Strong Claims about Successful School 
+Leadership.” School Leadership and Management 28, no. 1 (2008): 27–42. 
+Leithwood, Kenneth, and Doris Jantzi. “Transformational School Leadership for Large-Scale Reform: 
+Effects on Students, Teachers, and Their Classroom Practices.” School Effectiveness and School 
+Improvement 17, no. 2 (2006): 201–27. 
+Luckin R., Holmes W., Griffiths M., and Forcier L.B.  Intelligence Unleashed: An Argument for 
+Artificial Intelligence in Education. Pearson, 2023. 
+Luckin, Rose. “Towards Artificial Intelligence-Based Assessment Systems.” Nature Human Behaviour 
+1, no. 3 (2017): 0028. 
+Pietersen, Doniwen, Dean Langeveldt, and Arrie Van Wyk. “The Multidimensional Role of the 
+Principal in Post-Apartheid-South-Africa.” Research in Educational Policy and Management 5, no. 
+2 (December 13, 2023): 263–74. 
+https://doi.org/10.46303/repam.2023.30. 
+Russell, S.J., and P. Norvig.  Artificial Intelligence: A Modern Approach . 4th ed. London: Pearson 
+Education, 2023. 
+Selwyn, Neil, Luci Pangrazio, Selena Nemorin, and Carlo Perrotta. “What Might the School of 2030 Be 
+like? An Exercise in Social Science Fiction.” Learning, Media and Technology 45, no. 1 (2020): 
+90–106. 
+Simon, H. A. The New Science of Management Decision. London:  Prentice Hall, 1977. 
+Sheninger, Eric C. Digital Leadership: Changing Paradigms for Changing Times. 2nd ed. Thousand 
+Oaks, CA: Corwin, 2019 
+Spillane, J. P. Distributed Leadership. San Francisco: Jossey-Bass, 2006. 
+Susskind, R., and D. Susskind. The Future of Professions: How Technology Will Transform the Work of 
+Human Experts. London:  Oxford University Press, 2023. 
+UNESCO. “ Artificial Intelligence in Education,” 2023. https://en.unesco.org/artificial-
+intelligence/education. 
+Wang, Yinying. “Artificial Intelligence in Educational Leadership: A Symbiotic Role of Human-
+Artificial Intelligence Decision-Making.” Journal of Educational Administration 59, no. 3 (2021): 
+256–70. 
+Williamson, B.  Big Data in Education: The Digital Future of Learning, Policy and Practice. London: 
+Sage, 2018. 
+Wing, Jeannette M. “Computational Thinking.” Communications of the ACM 49, no. 3 (2023): 33–35. 
+ 
+ABOUT AUTHOR 
+Dr. Dean Collin Langeveldt is a Lecturer in Psychology of Education at Sol Plaatje University’s Faculty 
+of  Education. With a teaching career spanning from 1994 to 2021, he has extensive experience in 
+education, law, management, work-integrated learning (WIL), and human rights. His research focuses on 
+bullying, inclusive education, pre-service teacher education, and educational leadership. Dr. Langeveldt 
+holds a BA, HDE, ACE, Hons (cum laude), MEd, and PhD.

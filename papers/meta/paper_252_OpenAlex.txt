@@ -1,0 +1,11 @@
+Title: The impact of chief executive officer personality on top management team dynamics: One mechanism by which leadership affects organizational performance.
+Authors: Randall S. Peterson, Doug Smith, Paul V. Martorana, Pamela D. Owens
+Source: OpenAlex
+Date: 2003-01-01
+URL: https://doi.org/10.1037/0021-9010.88.5.795
+
+Abstract (EN):
+This article explores 1 mechanism by which leader personality affects organizational performance. The authors hypothesized and tested the effects of leader personality on the group dynamics of the top management team (TMT) and of TMT dynamics on organizational performance. To test their hypotheses, the authors used the group dynamics q-sort method, which is designed to permit rigorous, quantitative comparisons of data derived from qualitative sources. Results from independent observations of chief executive officer (CEO) personality and TMT dynamics for 17 CEOs supported the authors' hypothesized relationships both between CEO personality and TMT group dynamics and between TMT dynamics and organizational performance.
+
+Abstract (KO):
+이 기사에서는 리더의 성격이 조직 성과에 영향을 미치는 1가지 메커니즘을 살펴봅니다. 저자는 리더 성격이 최고 경영팀(TMT)의 그룹 역학에 미치는 영향과 TMT 역학이 조직 성과에 미치는 영향을 가설하고 테스트했습니다. 가설을 테스트하기 위해 저자는 정성적 소스에서 파생된 데이터를 엄격하고 정량적으로 비교할 수 있도록 설계된 그룹 역학 q-sort 방법을 사용했습니다. 17명의 CEO에 대한 최고 경영자(CEO) 성격과 TMT 역학을 독립적으로 관찰한 결과는 저자가 가정한 CEO 성격과 TMT 그룹 역학, TMT 역학과 조직 성과 간의 관계 가설을 뒷받침했습니다.

@@ -1,0 +1,626 @@
+### SOURCE: paper_359_arXiv.pdf
+### PAPER_ID: 359
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 13
+
+
+===== PAGE 1 =====
+Does Interpretability of Knowledge Tracing Models Support
+Teacher Decision Making?
+Adia Khalid, Alina Deriyeva, and Benjamin Paaßen
+Faculty of Technology, Bielefeld University
+preprint as provided by the authors
+Abstract
+Knowledge tracing (KT) models are a crucial basis for pedagogical decision-making,
+namely which task to select next for a learner and when to stop teaching a particular skill.
+Given the high stakes of pedagogical decisions, KT models are typically required to be in-
+terpretable, in the sense that they should implement an explicit model of human learning
+and provide explicit estimates of learners’ abilities. However, to our knowledge, no study
+to date has investigated whether the interpretability of KT models actually helps human
+teachers to make teaching decisions. We address this gap. First, we perform a simulation
+study to show that, indeed, decisions based on interpretable KT models achieve mastery
+faster compared to decisions based on a non-interpretable model. Second, we repeat the
+study but ask N = 12 human teachers to make the teaching decisions based on the in-
+formation provided by KT models. As expected, teachers rate interpretable KT models
+higher in terms of usability and trustworthiness. However, the number of tasks needed
+until mastery hardly differs between KT models.
+This suggests that the relationship
+between model interpretability and teacher decisions is not straightforward: teachers do
+not solely rely on KT models to make decisions and further research is needed to inves-
+tigate how learners and teachers actually understand and use KT models. Keywords:
+Knowledge Tracing, Interpretability, Bayesian Knowledge Tracing, Performance Factor
+Analysis, Deep Knowledge Tracing.
+1
+Introduction
+Knowledge tracing (KT) models are crucial parts of adaptive learning environments Abdel-
+rahman et al. [2023]. They predict how likely a student is to succeed in any of the possible
+next learning tasks and thereby help to decide which next task may be most suitable for a
+given student, i.e. the outer loop of an intelligent tutoring system VanLehn [2006]. Given the
+importance of pedagogical decisions, it has been argued that it is crucial for KT models to
+be interpretable to students and teachers Bull and Kay [2010], Chen et al. [2023], Lu et al.
+[2020]. More specifically, deep KT models have been criticized for using excessive numbers
+of parameters and failing to provide explicit estimates of student ability Khajah et al. [2016].
+However, to our knowledge, no study to date has investigated how much model interpretabil-
+ity actually helps human teachers to make pedagogical decisions. In this paper, we aim to
+address this gap.
+We perform two studies to investigate our research question: First, a simulation study in
+which we automatically select tasks to maximize the expected student learning gain based
+on different KT models; and we evaluate how fast (simulated) students learn based on the
+1
+arXiv:2511.02718v1  [cs.LG]  4 Nov 2025
+
+===== PAGE 2 =====
+preprint as provided by the authors
+2
+selected tasks. Second, we repeat the study but let N = 12 teachers select the tasks and decide
+when to stop teaching, based on the information provided by the different KT models. The
+students are simulated via an Elo model and the KT models are Bayesian Knowledge Tracing
+(BKT) Yudelson et al. [2013], Performance Factors Analysis (PFA) Pavlik et al. [2009], and
+Deep Knowledge Tracing (DKT) Piech et al. [2015]. BKT and PFA are interpretable in the
+sense that they have a well-defined underlying model of student learning with few parameters
+and offer explicit ability estimates, whereas DKT learns an implicit model using a recurrent
+neural network that does not have an immediate interpretation. Our core research hypothesis
+is that simulated students learn faster when decisions are made based on BKT and PFA
+instead of DKT.
+The main advantage of running our study in a simulation environment is that we have con-
+trol over many variables that could influence teaching: We control exactly how our simulated
+students react to teacher decisions and learn, can mathematically compute which decisions
+would be optimal and can compare this to teachers’ actual decisions. The only variable that
+changes between conditions is the KT model, nothing else. This does not replace research
+with human students but can isolate the specific effect of KT model interpretability and thus
+provide some insight if intepretability by itself helps teachers to make decisions.
+Our contributions are: a) a simulation environment to run studies with simulated students,
+b) a simulation study including mathematical predictions of learning gains for BKT, PFA,
+and DKT, and c) the first user study with teachers to compare teacher decision-making based
+on the information provided by BKT, PFA, and DKT.
+The experimental code can be found at https://gitlab.ub.uni-bielefeld.de/publications-ag-kml/
+kt_space_tutor.
+2
+Background and Related Work
+In this work, we use a broad definition of knowledge tracing (KT) models, akin to Abdel-
+rahman et al. [2023]. For us, KT is defined by taking a sequence of previous attempts of a
+learner as input and outputting a success prediction of said learner for every possible next
+task. More formally, let j1, . . . , jT ∈{1, . . . , m} be a sequence of tasks a certain learner has
+attempted and let x1, . . . , xT ∈{0, 1} be the corresponding sequence of success information –
+1 represents success, 0 represents failure. Then, we define a KT model as any function that
+maps a sequence (j1, x1), . . . , (jT , xT ) to an m-dimensional vector of probabilities ⃗pt+1 where
+pt+1,j is the model’s predicted probability that the student would successfully complete task
+j in the next time step; that is, xt+1 is predicted as 1 with probability pt+1,j if jt + 1 = j.
+We further call a KT model interpretable, if it provides an explicit ability estimate θt for each
+skill and each student in each time step. We now discuss all KT models considered in this
+paper in turn.
+The Elo model
+is commonly used in sports (particularly chess) to model skill development
+over time Pelánek [2016], Rüttgers et al. [2024]. Given a slope parameter a > 0, a difficulty
+parameter for each task bj, and a learning rate parameter κ > 0, Elo is defined by the
+equations:
+pt,j =
+1
+1 + exp(−a · (θt −bj)), with θt+1 = θt + κ · (xt −pt,jt),
+(1)
+Because the parameters of the model are difficult to estimate from data, we do not use it for
+KT in this paper, but rather to simulate students. This way, we ensure that the underlying
+simulation is substantially different from any KT model and avoid giving any KT model an
+unfair advantage.
+
+===== PAGE 3 =====
+preprint as provided by the authors
+3
+Bayesian Knowledge Tracing (BKT)
+is a two-state Hidden Markov Model Yudelson
+et al. [2013].
+In particular, let Xt be a random variable modeling the success/failure of
+a student at the task at time t (Xt = 0 for failure, Xt = 1 for success) and let Zt be
+a random variable modeling whether the student mastered the underlying skill at time t
+(Zt = 0 for not mastered and Zt = 1 for mastered). Then, a BKT model is fully defined
+by the equations pZ1(1) = pstart, pZt|Zt−1(1|1) = 1, pZT |Zt−1(1|0) = ptrans, pXt|Zt(1|0) =
+pguess, and pXt|Zt(0|1) = pslip, where pstart, ptrans, pguess, and pslip are the parameters of
+the model. All other probabilities follow via Bayesian reasoning. In our scenario, we are
+particularly interested in the probability pZt+1|X1,...,Xt(1|x1, . . . , xt), meaning the probability
+that the student has mastered the skill in the next time step, given all their previous successes
+and failures. This is our BKT ability estimate θt,k. Via Bayesian reasoning, we obtain the
+following recursive update formula for θt,k:
+θt+1,k = qt,k + ptrans · qt,k, with qt,k =
+
+
+
+(1−pslip)·θt,k
+(1−pslip)·θt,k+pguess·(1−θt,k)
+if xt = 1
+pslip·θt,k
+pslip·θt,k+(1−pguess)·(1−θt,k)
+if xt = 0
+.
+(2)
+Performance Factors Analysis (PFA)
+is a logistic model Pavlik et al. [2009]. In partic-
+ular, let K(j) be the set of skills required by task j. Then, the predicted probability of success
+according to PFA is:
+pt+1,j =
+1
+1 + exp(−zt+1,j), with zt+1,j =
+X
+k∈K(j)
+βk + γk · sk,t + ρk · fk,t,
+(3)
+where sk,t = P
+t:k∈K(jt) xt is the number of past successes of the student in skill k, fk,t =
+P
+t:k∈K(jt) 1 −xt is the number of past failures of the student in skill k, and βk, γk, and ρk
+are the parameters of the model, shared across students and tasks. βk can also be interpreted
+as the estimated initial ability of each student in skill k, γk as the learning rate for successes
+in skill k, and ρk as the learning rate for failures in skill k. Accordingly, we can interpret
+θk,t = βk + γk · sk,t + ρk · fk,t as the estimated ability of the student in skill k at time t.
+Deep Knowledge Tracing (DKT)
+predicts the probability of future success using a re-
+current neural network Piech et al. [2015]. In particular, every tuple (jt, xt) is encoded as
+a 2m-dimensional vector ˆxt, which is zero everywhere except for ˆxt,jt = 1 if xt = 1 and
+ˆxt,jt+m = 1 if xt = 0. Then, the recurrent neural net maps these encodings to a latent state
+vector ⃗ht+1 and a feedforward neural net finally maps ht to the predicted success probabilities
+⃗pt+1. The state vector is updated via a recurrent neural network (a GRU in our case Chung
+et al. [2014]), and the feedforward layer typically uses a sigmoid nonlinarity, same as (3).
+Importantly, the latent state ⃗ht has no intuitive interpretation and there is no immediate
+way to extract an ability estimate from ⃗ht. We do acknowledge that many attempts exist to
+make DKT more interpretable, such as Chen et al. [2023], Lu et al. [2020], but our research
+question is precisely whether interpretability is necessary in the first place. Therefore, we
+regard the default version of DKT as the non-interpretable control condition.
+2.1
+Prior studies of KT model interpretability
+To our knowledge, our study is the first human user study to compare the interpretability
+of KT models. Still, several prior reviews have contrasted the interpretability of different
+KT models on a computational and conceptual level. Khajah et al. [2016] compares DKT
+and BKT in depth, acknowledging that default DKT is more accurate in predicting future
+
+===== PAGE 4 =====
+preprint as provided by the authors
+4
+1
+Figure 1: The simulation loop involving knowledge tracing, task selection, sampling of success
+or failure, simulation update, and KT model update.
+task success compared to BKT, but showing that BKT can be extended to match DKT’s
+performance, while retaining its interpretability advantage. Ding and Larson [2019], Wang
+et al. [2023] go into more detail on DKT, highlighting counterintuitive behavior where DKT
+success predictions can wildly fluctuate, meaning that pt+1,j is very different from pt,j, e.g.
+due to overfitting to the training data. Gervet et al. [2020] compare logistic models (like
+PFA), BKT, and DKT in terms of accuracy for small and big data sets and find that logistic
+models are most accurate on small data sets, whereas DKT performs best on big data sets.
+Scruggs et al. [2023] evaluate how well the ability estimates of different KT models predict
+the post-test scores in a game-based learning environments and found that a very simple
+baseline tends to outperform the ability estimates provided by most KT models (even state-
+of-the-art ones). This suggests that the ability estimates provided by KT models may be
+predictive of future task performance, but not necessarily of post-test performance.
+Mao
+[2018] find that BKT outperforms DKT when predicting post-test scores in another setting.
+Overall, past research suggests that (default) DKT lacks interpretability and has counter-
+intuitive properties (like fluctuation), whereas PFA and BKT may be less accurate but provide
+more interpretability and each prediction is fully justified by explicit model equations. Our
+research question is whether this difference in interpretability also influences teachers’ decision
+making and subjective usability and trust.
+3
+Simulation Study
+To study the effectiveness of different KT models (PFA, BKT, and DKT) in making peda-
+gogical decisions, we first perform a simulation study.
+3.1
+Method
+We set up an Elo-based simulation environment that contains a minimal but non-trivial
+learning scenario. We include four learning tasks and two skills. Task 1 trains only skill 1,
+task 2 trains only skill 2, and tasks 3 and 4 train both skills. Tasks 1, 2, and 4 all have the
+difficulty parameter bj = 1, but task 3 is easier with b3 = 0. Then, we simulate each student
+using the scheme illustrated in Fig. 1. In particular, the steps of our method are:
+Initialization:
+We initialize one Elo model per skill, with initial Elo abilities θ∗
+1,1 = θ∗
+1,2 = 0.
+We denote the Elo abilities with an asterisk to distinguish them from the ability estimates of
+the KT models.
+
+===== PAGE 5 =====
+preprint as provided by the authors
+5
+1. KT prediction:
+Using the current KT model, we predict the success probability for
+each task pt,j and, if possible, an estimate θt,k for the student’s current ability in each skill.
+These predictions and estimates follow from the equations presented in Section 2. Note that,
+for BKT, we run a separate BKT model for each skill and, if a task involved multiple skills, we
+take the smallest predicted success probability across all skills. For PFA, we add a difficulty
+parameter into the model to improve the match with our scenario Deriyeva et al. [2024].
+2. Task selection:
+Using the current KT model, we select the next task jt for the student
+based on the highest expected learning gain. The expected learning gain can be quantified
+by summing over all skills involved in a task and adding the learning gain in case of success
+(according to the KT model) times the probability of success (according to the KT model)
+to the learning case in case of failure (according to the KT model) times the probability of
+failure (according to the KT model), minus the current ability estimate. For BKT, this yields
+the expression
+X
+k∈K(j)
+pt,j ·
+(1 −pslip) · θt,k
+(1 −pslip) · θt,k + pguess · (1 −θt,k)
++ (1 −pt,j) ·
+pslip · θt,k
+pslip · θt,k + (1 −pguess) · (1 −θt,k) −θt,k.
+(4)
+For PFA, we gain γk if the student succeeds and ρk if the student fails, yielding the much
+simpler expression:
+X
+k∈K(j)
+pt,j · γk + (1 −pt,j) · ρk.
+(5)
+For DKT, the expected learning gain is particularly difficult to compute because there is
+no explicit ability estimate in DKT. The only proxy we have is the predicted probability of
+success for each task. In particular, let ∆p1
+t,j′(j) be the difference pt+1,j′ −pt,j′ according
+to DKT if we feed another success on task j into the DKT model, and let ∆p0
+t,j′(j) be the
+difference pt+1,j′ −pt,j′ according to DKT if we feed another failure on task j into the DKT
+model. Then, our notion of expected learning gain for DKT becomes:
+m
+X
+j′=1
+pt,j · ∆p1
+t,j′(j) + (1 −pt,j) · ∆p0
+t,j′(j).
+(6)
+3. Sampling:
+Once a task jt is selected, we predict the success probability of the Elo model
+for each involved skill and then take the product over all skills involved in task jt to derive
+the success probability for the task. According to this probability, we then sample the success
+or failure xt of the simulated student.
+4. Simulation update:
+Once the success or failure xt is sampled, we update the Elo model
+for each involved skill. Notice, though, that the standard Elo model would reduce the skill
+estimate θ∗
+t,k if xt = 0. This is because, usually, the Elo model produces an estimate of ability,
+which needs to be reduced upon receiving evidence for a lack of ability. By contrast, we use
+Elo as a ground truth for simulation – and we assume that learners do not forget/lose ability
+during a single teaching session. Accordingly, we change the update formula (1) as follows:
+θ∗
+t+1,k = θ∗
+t,k +
+
+
+
+
+
+κ1 · (1 −p∗
+t,k,j)
+if k ∈K(jt) and xt = 1
+κ0 · (1 −p∗
+t,k,j)
+if k ∈K(jt) and xt = 0
+0
+if k /∈K(jt)
+(7)
+
+===== PAGE 6 =====
+preprint as provided by the authors
+6
+Steps until actual mastery
+Steps until simulation ends
+5
+10
+15
+20
+25
+30
+No. of steps
+Models
+ELO
+BKT
+PF
+A
+DKT
+Figure 2: The number of steps until mastery (left) and the number of steps until the simulation
+ends for the different KT models in the simulation study.
+where κ1 = 1 and κ0 = 0.5 are different learning rates for successes and failures, respectively.
+These choices are made to ensure that the simulated students learn more (namely twice as
+much) from successes compared to failures. In this setup, the “true” expected learning gain
+according to Elo would be:
+X
+k∈K(j)
+p∗
+t,j · κ1 · (1 −p∗
+t,j,k) + (1 −p∗
+t,j) · κ0 · (1 −p∗
+t,j,k).
+(8)
+Note that this strongly differs from the expected learning gain for all KT models (refer to (4),
+(5), and (6)). Therefore, no KT model has an a priori advantage.
+5. KT update:
+Based on the selected task jt and the sampled success/failure xt, we update
+the KT model using the respective equations from Section 2.
+End of simulation:
+Based on the updated KT model, we check whether the current KT
+model predicts mastery and would, therefore, end the teaching. We define mastery in our
+simulation as both skills exceeding ability 1.5 (according to the Elo model). Therefore, in
+PFA, we predict mastery if all skill estimates exceed 1.5. In BKT and DKT, we stop teaching
+if the predicted success probability across all tasks corresponds to an ability level of 1.5 in
+a logistic model. If mastery is not yet predicted, we increment the time step t by one and
+return to step (1) of the simulation loop.
+To generate training data for our KT models, we first simulate 500 students with random
+task choices in step 3. Then, we train our KT models on this data and evaluate them by
+simulating 1000 additional students per model.
+3.2
+Results
+All models achieved reasonable model fit with test accuracies of 70.40% for BKT, 81.04% for
+PFA, and 71.89% for DKT.
+
+===== PAGE 7 =====
+preprint as provided by the authors
+7
+We observe that PFA and BKT only stopped teaching if mastery was achieved, whereas
+DKT stopped before achieving mastery in 24% of cases. DKT was also unreliable in stopping
+when mastery was actually achieved: In the majority of simulations, we had to enforce an
+upper limit of 30 tasks because the simulation was caught in endless loops, meaning DKT never
+predicted a success probability high enough that it would indicate mastery. By contrast, PFA
+consistently stopped after 9 tasks and BKT mostly between 6-8 tasks – close to the optimal
+achievable value of 5-6 (Fig. 2, left). Mastery was actually achieved in PFA and BKT after
+6 steps, consistent with the optimum (the value for Elo), whereas DKT needed a median
+of 14 steps (Fig. 2, right). This difference is strongly significant in a Wilcoxon signed rank
+test (p < 10−10). In other words, our simulation clearly confirms our hypothesis: The non-
+interpretable KT model, DKT, leads to much less effective teaching decisions compared to
+the intepretable KT models, PFA and BKT.
+4
+Teacher Study
+Next, we repeat our simulation study, but let human teachers make the pedagogical decisions,
+namely which task to select next and when to stop.
+4.1
+Methods
+User interface:
+To enable teacher interaction with the simulation, we developed a user
+interface, shown in Fig. 3. The interface was designed to facilitate two types of pedagogical
+decisions: which task the simulated student should attempt next (buttons on the top left),
+and when to stop teaching (button on the bottom right).
+Other than that, we did not
+want teachers to employ any domain knowledge about specific skills; therefore, we invoked a
+deliberately unrealistic domain, namely teaching camels space-traveling skills. Importantly,
+the user interface did present all information available based on the KT models, namely
+which task relates to which skill, the past successes and failures of the simulated student, the
+predicted success probabilities for each task by the current KT model, and (for BKT and
+PFA) a graph of the ability estimates.
+Recruitment and ethics:
+We recruited study participants among the teaching staff of an
+interdisciplinary research institute at a mid-sized central European university. Our recruit-
+ment criterion was a minimum teaching experience of 6 months. Participants had no prior
+knowledge about knowledge tracing models. Recruitment took place both via e-mail and in
+person. Overall, N = 12 teachers were recruited. In line with European privacy regulations, to
+protect the privacy of participants, demographic data was not recorded and only anonymous
+data was kept for analysis. The study was approved by the local university ethics committee.
+Protocol:
+Participants were guided into a lab, received a briefing, and provided individual
+informed consent to participate in the study. Then, they were seated in front of a lab computer
+and performed nine teaching simulations in the user interface (Fig. 3), three for BKT, three
+for PFA, and three for DKT. In each simulation, participants selected the next task for
+the simulated student by clicking one of four buttons on the top left of the interface, and
+could decide to stop teaching the current student by clicking the button on the bottom right.
+Participants did not know which underlying KT model was used in each simulation and the
+order of KT models was systematically varied across participants to cover all permutations.
+After each model, participants completed two questionnaires, namely the System Usability
+Scale (SUS) Bangor et al. [2008] and the Trust of Automated Systems Test (TOAST) Wojton
+
+===== PAGE 8 =====
+preprint as provided by the authors
+8
+Figure 3: The user interface for the teacher study.
+Teachers could select tasks (buttons
+on the top left) and decide when to stop (button on the bottom right) based on which skills
+belonged to which tasks, past successes and failures of the simulated student, predicted success
+probabilities on each task by the KT model, and the ability estimates of the KT model. Best
+viewed in color.
+et al. [2020] to evaluate the subjective usability and trustworthiness of each KT model. Our
+user interface additionally recorded all selected tasks jt, the time until the next task selection,
+the sampled successes and failures xt, all predicted probabilities pt,j and ability estimates θt,k
+of the respective KT model, as well as the ground truth probabilities p∗
+t,j and abilities θ∗
+t,k of
+the Elo model.
+4.2
+Results
+We first observe that teachers sometimes stopped teaching too early: In the BKT condition,
+16% of simulations were stopped before achieving mastery, in PFA 5%, and in DKT 3%. The
+number of simulation steps is shown in Fig. 4. Teachers continued the simulation for 12 tasks
+in median for BKT and PFA, and for 14 tasks for DKT (the difference was not significant).
+However, counter to our hypothesis, the simulated students actually achieved mastery faster
+in the DKT condition compared to BKT (p ≈0.047 in a one-sided Welch t-test) and there
+was no significant difference between PFA and DKT (median of 8 tasks for BKT and 7 for
+PFA and DKT). This result can be explained with the tasks that were selected: In the DKT
+condition, teachers selected task 4 much more frequently, which was the optimal choice in our
+simulation (Fig. 5). However, we emphasize that the user interface did not suggest this choice,
+indicating that teachers considered information beyond what was provided by KT models.
+
+===== PAGE 9 =====
+preprint as provided by the authors
+9
+Steps until mastery
+Steps until teaching ends
+5
+10
+15
+20
+25
+No. of steps
+Models
+BKT
+PF
+A
+DKT
+Figure 4: The number of steps until mastery (left) and the number of steps until teaching
+ended (right) for the different KT models in the teacher study.
+Figure 5: Fraction of selected tasks across time for BKT (left), PFA (center), and DKT (right)
+across teachers in each step of the simulation.
+
+===== PAGE 10 =====
+preprint as provided by the authors
+10
+Decision Time:
+Given that the interpretable models (BKT and PFA) provide more infor-
+mation for teachers to process, we would assume that they need more time to decide which
+task to select next. In fact, differences are very slight with all medians slightly below 7.5
+seconds per decision, across conditions. Still, we detect significantly higher times in BKT
+compared to DKT (p < 0.05 in a t-test) and PFA compared to DKT (p < 0.05 in a t-test).
+Usability and Trust Ratings:
+Note that the user interface between conditions only dif-
+fered in the graph displayed on the right side of the interface (Fig. 3) with a graph for BKT
+and PFA and no graph for DKT. Teachers rated the usability of the BKT condition and the
+PFA condition (both ca. 60 points on the SUS scale) higher than DKT (ca. 50 points). The
+difference between BKT and DKT was significant in a t-Test (p < 0.05). In terms of the
+Trust of Automated Systems Test (TOAST), we observe significant differences in the under-
+standing subscale of TOAST between BKT and DKT (p < 0.01, effect size d = 0.84), and in
+both TOAST subscales between PFA and DKT (p < 0.05, effect sizes d = 0.43 and d = 0.81),
+indicating that teachers trusted the interpretable KT models more.
+5
+Limitations
+All our results should be interpreted with several limitations in mind. First, our recruitment
+procedure only included university-level teachers with relatively little teaching experience
+on average. Results for a different teacher population (primary, secondary, vocational, or
+continued education) may be different.
+Second, and perhaps most importantly, our simulation environment does not capture a
+realistic teaching setup. In our environment, teachers can only control which task to give to
+a student (corresponding to the outer loop of an intelligent tutoring system VanLehn [2006])
+and they only receive the information whether a student was successful or not and what a
+KT model makes of that information. We deliberately used such a reduced laboratory setup
+to ensure a consistent learning behavior of the simulated students and to keep the amount of
+time needed for the study feasible. However, in the real world, teachers would receive much
+richer information, would have a much broader range of possible pedagogical decisions, and
+countless confounding variables would interfere with the effect of interpretability.
+Third, even within the simulation environment, we had to make some design choices that
+may influence the results.
+It may be that for a different number of tasks, different diffi-
+culty parameters, different learning rates in the Elo model, a different ground-truth model,
+or a different user interface, different results would have occurred.
+The user interface is
+particularly noteworthy given that our participants gave rather low usability ratings, in-
+dicating the need for improvements.
+In more detail, it may well be that teachers had a
+hard time parsing the provided information correctly and that a user interface that better
+explained the provided information may have led to different outcomes. We encourage fur-
+ther research with variations of our setup and we share the source code for our study at
+https://gitlab.ub.uni-bielefeld.de/publications-ag-kml/kt_space_tutor.
+6
+Discussion and Conclusion
+In a simulation study and a teacher study, we investigated whether interpretable KT mod-
+els (BKT and PFA) are more helpful in pedagogical decision making compared to a non-
+interpretable KT model (DKT). In particular, we investigated which task to select next for a
+simulated student and when to stop teaching. In our simulation study, BKT and PFA clearly
+outperformed DKT with less tasks needed until mastery and more reliable stopping decisions.
+
+===== PAGE 11 =====
+preprint as provided by the authors
+11
+However, when N = 12 human teachers made the decisions, we did not observe any difference
+in number of tasks until stopping, and teachers selected slightly better tasks in the DKT con-
+dition compared to the BKT and PFA condition. There may be multiple explanations for this
+finding: First, teachers may have been cognitively overloaded by the graphs and, hence, may
+have decided more accurately when the interface provided less information. This hypothesis
+is in slight tension with usability ratings, though: teachers preferred the interface the BKT
+and PFA conditions, indicating that they did not feel more overloaded in these conditions.
+Second, teachers may have overtrusted the graphs provided by BKT and PFA and, therefore,
+may have been mislead by these graphs. This explanation is in line with the observation
+that teachers tended to stop slightly too early in the BKT condition which also tended to
+provide overly optimistic mastery estimates in the graph. However, it does not explain the
+precise task choices teachers made and it does not explain why teachers did not overtrust
+the DKT model – which would predict even poorer task choices according to our simulation.
+Therefore, a third explanation is that teachers may have mis-interpreted the graphs provided
+by BKT and PFA, leading them to select sub-optimal tasks (especially tasks 1 and 2, which
+only targeted a single skill).
+We believe that this suggests ample opportunity for future work, namely a) improved
+KT models that retain the desirable interpretability properties of PFA and BKT while being
+more accurate, b) better user interfaces for and explanations of KT models to help teachers
+in pedagogical decision making, and c) more research into how learners and teachers actually
+use KT model information and how pedagogical decision making can actually be improved
+based on KT models.
+Acknowledgement
+We thank the reviewers for their comments that informed our discussion of findings. Part of
+this work has been part of the project “Explaining Learner Models using Language Models”
+as part of KI:edu.nrw. KI:edu.nrw is funded by the Ministry of Culture and Science of the
+State of North Rhine-Westphalia. We gratefully acknowledge this support.
+References
+Ghodai Abdelrahman, Qing Wang, and Bernardo Nunes. Knowledge tracing: A survey. ACM
+Computing Surveys, 55(11):1–37, 2023. doi:https://doi.org/10.1145/3569576.
+Aaron Bangor, Philip T. Kortum, and James T. Miller.
+An empirical evaluation of the
+system usability scale. International Journal of Human–Computer Interaction, 24(6):574–
+594, 2008. doi:10.1080/10447310802205776.
+Susan Bull and Judy Kay. Open learner models. In Roger Nkambou, Jacqueline Bourdeau,
+and Riichiro Mizoguchi, editors, Advances in Intelligent Tutoring Systems, pages 301–322.
+Springer Berlin Heidelberg, 2010. doi:10.1007/978-3-642-14363-2_15.
+Jiahao Chen, Zitao Liu, Shuyan Huang, Qiongqiong Liu, and Weiqi Luo.
+Improving in-
+terpretability of deep sequential knowledge tracing models with question-centric cognitive
+representations. Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 37
+(12):14196–14204, 2023. doi:10.1609/aaai.v37i12.26661.
+Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, and Yoshua Bengio. Empirical evalu-
+ation of gated recurrent neural networks on sequence modeling. arXiv, 1412.3555, 2014.
+URL https://arxiv.org/abs/1412.3555.
+
+===== PAGE 12 =====
+preprint as provided by the authors
+12
+Alina Deriyeva, Jesper Dannath, and Benjamin Paassen. Incorporating struggle in perfor-
+mance factors analysis for programming education. In Francisco Bellas, Jens Dörpinghaus,
+Oscar Fontenla-Romero, and Michael Tiemann, editors, Proceedings of the International
+Workshop on AI in Education and Educational Research at the 27th European Conference
+on Artificial Intelligence (ECAI 2024), 2024. in press.
+Xinyi Ding and Eric C Larson. Why deep knowledge tracing has less depth than anticipated.
+In Proceedings of the International Conference on Educational Data Mining (EDM), pages
+282–287, 2019. URL https://eric.ed.gov/?id=ED599227.
+Theophile Gervet, Ken Koedinger, Jeff Schneider, Tom Mitchell, et al. When is deep learning
+the best approach to knowledge tracing? Journal of Educational Data Mining, 12(3):31–54,
+2020. doi:10.5281/zenodo.4143614.
+Mohammad Khajah, Robert V Lindsey, and Michael C Mozer. How deep is knowledge tracing?
+In Proceedings of the International Conference on Educational Data Mining (EDM), pages
+94–101, 2016. URL https://eric.ed.gov/?id=ED592694.
+Yu Lu, Deliang Wang, Qinggang Meng, and Penghe Chen. Towards interpretable deep learning
+models for knowledge tracing. In Proceedings of the International Conference on Artificial
+Intelligence in Education (AIED, pages 185–190, 2020. doi:10.1007/978-3-030-52240-7_34.
+Ye Mao. Deep learning vs. bayesian knowledge tracing: Student models for interventions.
+Journal of Educational Data Mining, 10(2):28–54, 2018. doi:10.5281/zenodo.3554691.
+Philip I Pavlik, Hao Cen, and Kenneth R Koedinger. Performance factors analysis–a new al-
+ternative to knowledge tracing. In Proceedings of the International Conference on Artificial
+Intelligence in Education (AIED), pages 531–538. Ios Press, 2009. doi:10.3233/978-1-60750-
+028-5-531.
+Radek Pelánek. Applications of the Elo rating system in adaptive educational systems. Com-
+puters & Education, 98:169–179, 2016. doi:10.1016/j.compedu.2016.03.017.
+Chris
+Piech,
+Jonathan
+Bassen,
+Jonathan
+Huang,
+Surya
+Ganguli,
+Mehran
+Sahami,
+Leonidas J Guibas, and Jascha Sohl-Dickstein.
+Deep knowledge tracing.
+In Pro-
+ceedings of the International Conference on Advances in Neural Information Pro-
+cessing (NeurIPS), 2015.
+URL https://proceedings.neurips.cc/paper/2015/hash/
+bac9162b47c56fc8a4d2a519803d51b3-Abstract.html.
+Sören Rüttgers, Ulrike Kuhl, and Benjamin Paaßen. Automatic matchmaking in two-versus-
+two sports. In Proceedings of the 17th International Conference on Educational Data Mining
+(EDM), page 458–468, 2024. doi:10.5281/zenodo.12729860.
+Richard Scruggs, Ryan S Baker, Philip I Pavlik Jr, Bruce M McLaren, and Ziyang Liu. How
+well do contemporary knowledge tracing algorithms predict the knowledge carried out of
+a digital learning game? Educational technology research and development, 71(3):901–918,
+2023. doi:10.1007/s11423-023-10218-z.
+Kurt VanLehn. The behavior of tutoring systems. International Journal of Artificial Intelli-
+gence in Education, 16(3):227–265, 2006. doi:10.5555/1435351.1435353.
+Xianqing Wang, Zetao Zheng, Jia Zhu, and Weihao Yu. What is wrong with deep knowledge
+tracing? attention-based knowledge tracing. Applied Intelligence, 53(3):2850–2861, 2023.
+doi:10.1007/s10489-022-03621-1.
+
+===== PAGE 13 =====
+preprint as provided by the authors
+13
+Heather M. Wojton, Daniel Porter, Stephanie T. Lane, Chad Bieber, and Poornima Madha-
+van. Initial validation of the trust of automated systems test (TOAST). The Journal of
+Social Psychology, 160(6):735–750, 2020. doi:10.1080/00224545.2020.1749020.
+Michael V Yudelson, Kenneth R Koedinger, and Geoffrey J Gordon. Individualized bayesian
+knowledge tracing models.
+In Proceedings of the International Conference of Artificial
+Intelligence in Education (AIED), pages 171–180, 2013. doi:10.1007/978-3-642-39112-5_18.

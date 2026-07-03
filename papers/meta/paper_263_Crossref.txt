@@ -1,0 +1,13 @@
+Title: Empowering Leadership and Employee Innovative Behavior: The Role of Creative Role Identity
+Authors: Gyung Mo Kang, Young-Eun Yang, Soojin Kim, Kiwook Kwon
+Source: Crossref
+Date: 2023-2-28
+URL: https://doi.org/10.22243/tklq.2023.14.1.47
+
+Abstract (EN):
+This empirical study examined both the mediating effect of creative role identity and the moderating effect of promotion focus on the relationship between empowering leadership and employee innovative behavior. Research models and hypotheses were established based on previous studies that explored empowering leadership, creative role identity, employee innovative behavior and promotion focus. It was confirmed that empowering leadership had a direct effect on employee innovative behavior and an indirect effect through the partially mediating variant of creative role identity. The study also confirmed that the lower an employee's promotion focus, the greater the effect of empowering leadership on creative role identity.
+The results of this study are significant because it verified the mechanism of identity perspective and expanded the literature on the effect of empowering leadership on employee innovative behavior. In particular, the creative role identity formed through leader's expectations, interactions, and employee's self-conceptualization of individual roles mediates the influence of empowering leadership on employee innovative behavior. At the same time, empowering leadership can influence employee innovative behavior differently depending on an employee's individual characteristic. Accordingly, continuous interaction for nurturing an employee's creative role identity rather than simple task instruction or delegation of authority is strongly recommended. Similarly, managers should demonstrate consistent interest in employee creative role identity as well as empowering leadership in order to encourage innovative behavior among employees.
+
+Abstract (KO):
+본 실증연구에서는 리더십 역량 강화와 직원 혁신행동의 관계에서 창조적 역할 정체성의 매개효과와 승진초점의 조절효과를 살펴보았다. 연구 모델과 가설은 역량 강화 리더십, 창의적인 역할 정체성, 직원 혁신적 행동 및 승진 초점을 탐구한 이전 연구를 기반으로 설정되었습니다. 리더십 임파워링은 직원의 혁신행동에 직접적인 영향을 미치고, 창조적 역할정체성의 부분매개변인을 통해 간접적인 영향을 미치는 것으로 확인되었다. 이 연구는 또한 직원의 승진 초점이 낮을수록 창의적인 역할 정체성에 대한 리더십 강화의 효과가 더 크다는 것을 확인했습니다.
+본 연구의 결과는 정체성 관점의 메커니즘을 검증하고, 리더십 임파워링이 직원 혁신행동에 미치는 영향에 대한 문헌을 확대했다는 점에서 의의가 있다. 특히, 리더의 기대와 상호작용, 직원의 개별 역할에 대한 자기개념화를 통해 형성된 창조적 역할정체성은 리더십 임파워링이 직원의 혁신행동에 미치는 영향을 매개하는 것으로 나타났다. 동시에, 리더십 강화는 직원의 개인 특성에 따라 직원의 혁신적인 행동에 다르게 영향을 미칠 수 있습니다. 따라서 단순한 업무 지시나 권한 위임보다는 직원의 창의적 역할 정체성 함양을 위한 지속적인 상호작용을 적극 권장합니다. 마찬가지로 관리자는 직원의 혁신적인 행동을 장려하기 위해 직원의 창의적인 역할 정체성과 리더십 강화에 대한 지속적인 관심을 보여야 합니다.

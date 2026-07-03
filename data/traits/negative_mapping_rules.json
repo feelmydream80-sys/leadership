@@ -159,7 +159,7 @@
       ]
     },
     {
-      "trait_id": "T08",
+      "trait_id": "T11",
       "trait_name": "Emotional Intelligence Leader",
       "logic": "공감형 리더는 공감 결여와 직접 충돌",
       "hard_forbidden": [
@@ -187,7 +187,7 @@
       ]
     },
     {
-      "trait_id": "T10",
+      "trait_id": "T06",
       "trait_name": "Risk: Avoidant",
       "logic": "회피형 리스크는 목표 모호화, 실행 방해, 불안 조장에 의해 강화됨",
       "risk_amplifier": [

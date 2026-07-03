@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+	<title>How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets  - earticle</title>
+	<meta name="Keywords" content="How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets ,인공지능, 평가, 의사결정자, 의사결정 대상, 공정성, 효율성, 불일치,Artificial intelligence, Evaluation, Decision maker, Decision target, Fairness, Efficiency, Discrepancy "/>
+<meta name="Description" content="Artificial intelligence (AI) is increasingly being integrated into workplace roles traditionally per"/>
+<meta name="citation_title" content="How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets "/>
+<meta name="citation_author" content="Youjung Jun"/>
+<meta name="citation_issn" content="1226-8380"/>
+<meta name="citation_publication_date" content="2025/05"/>
+<meta name="citation_journal_title" content="전문경영인연구"/>
+<meta name="citation_volume" content="28"/>
+<meta name="citation_issue" content="2"/>
+<meta name="citation_firstpage" content="29"/>
+<meta name="citation_lastpage" content="52"/>
+<meta name="citation_keywords" content="인공지능; 평가; 의사결정자; 의사결정 대상; 공정성; 효율성; 불일치;Artificial intelligence; Evaluation; Decision maker; Decision target; Fairness; Efficiency; Discrepancy "/>
+<meta name="citation_abstract" content="Artificial intelligence (AI) is increasingly being integrated into workplace roles traditionally performed by humans. However, limited research explores how people perceive AI in evaluative contexts. This study investigates individuals' attitudes toward AI-powered evaluation systems, particularly the perspectives of decision makers and decision targets. Despite the widespread assumption that those in management roles (e.g., bank managers) would favor AI in evaluations more than applicants, our findings reveal a consistent preference for human evaluators over AI, regardless of role. This preference is driven by the perception that human decision makers provide greater fairness, outweighing the efficiency benefits associated with AI. These results offer insight into the lower-than-expected adoption of AI-powered evaluation systems, highlighting the persistent value placed on human judgment in business decision-making. "/>
+<meta name="citation_abstract_html_url" content="https://www.earticle.net/Article/A467445"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets "/>
+<meta property="og:site_name" content="earticle"/>
+<meta property="og:url" content="https://www.earticle.net/Article/A467445"/>
+<meta property="og:description" content="Artificial intelligence (AI) is increasingly being integrated into workplace roles traditionally performed by humans. However, limited research explores how people perceive AI in evaluative contexts. This study investigates individuals' attitudes toward AI-powered evaluation systems, particularly the perspectives of decision makers and decision targets. Despite the widespread assumption that those in management roles (e.g., bank managers) would favor AI in evaluations more than applicants, our findings reveal a consistent preference for human evaluators over AI, regardless of role. This preference is driven by the perception that human decision makers provide greater fairness, outweighing the efficiency benefits associated with AI. These results offer insight into the lower-than-expected adoption of AI-powered evaluation systems, highlighting the persistent value placed on human judgment in business decision-making. "/>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" href="/images/earticle.ico" />
+<link rel="icon" type="image/png" href="/images/favicon/favicon_16.png" sizes="16x16"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_24.png" sizes="24x24"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_48.png" sizes="48x48"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_64.png" sizes="64x64"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_72.png" sizes="72x72"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_96.png" sizes="96x96"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_120.png" sizes="120x120"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_128.png" sizes="128x128"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_150.png" sizes="150x150"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_180.png" sizes="180x180"/>
+<link rel="icon" type="image/png" href="/images/favicon/favicon_196.png" sizes="196x196"/>
+<script src="/Scripts/jquery-3.3.1.js"></script>
+<script src="/Scripts/jquery.cookie-1.4.1.min.js"></script>
+<script src="/Scripts/jquery-ui-1.12.1.js"></script>
+<script src="/Scripts/jquery.validate.js"></script>
+<script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+<script src="/Scripts/modernizr-2.8.3.js"></script>
+<script src="/Scripts/site/login.js?dt=20211026"></script>
+<script src="/Scripts/site/common.prototype.js"></script>
+<script src="/Scripts/site/common.ui.js"></script>
+<script src="/Scripts/site/common.fn.js?dt=250828.1412"></script>
+
+<script src="/Scripts/plugin/konan/jquery.konan.sf.js"></script>
+<script src="/Scripts/plugin/konan/jquery.konan.sf-ko.js"></script>
+<script src="/Scripts/plugin/jquery.json.js"></script>
+<script src="/Scripts/site/cookielist.js"></script>
+<script src="/Scripts/site/pcheck.min.js"></script>
+<script src="/Scripts/site/search.js?dt=20240101"></script>
+<script src="/Scripts/site/event.js?dt=20200706"></script>
+
+<link href="/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+<link href="/Content/plugin/konan/konan.sf.css" rel="stylesheet" />
+<link href="/Content/layout/layout.css?dt=20250827" rel="stylesheet" />
+<link href="/Content/layout/layout_main.css?dt=20250827" rel="stylesheet" />
+<link href="/Content/layout/layout_sub.css?dt=20250829.1140" rel="stylesheet" />
+<link href="/Content/layout/print.css" rel="stylesheet" media="print" />
+
+	<script type="text/javascript">
+		$(function () {
+			$(window).bind("scroll", function () {
+				$("div.ui-selectmenu-menu").removeClass("ui-selectmenu-open");
+				$("div.ui-selectmenu-menu ul").attr("aria-hidden", "true");
+				if ($("#body").height() < 1000 || $(window).scrollTop() < 300) {
+					$("#head .top_search").removeClass("fixed");
+					$("#top_search_option-menu").removeClass("white");
+					$("#head .top_search fieldset legend img").attr("src", "/Images/common/logo_m.png");
+				}
+				else {
+					$("#head .top_search").addClass("fixed");
+					$("#top_search_option-menu").addClass("white");
+					$("#head .top_search fieldset legend img").attr("src", "/Images/common/logo_m_black.png");
+				}
+			});
+		})
+	</script>
+</head>
+<body>
+	<h1>Earticle</h1>
+	<div id="advertising">
+		<div class="container">
+		</div>
+	</div>
+	<div id="wrap">
+		<div id="head" class="sub_head">
+			
+	<script type="text/javascript">
+			if (/iP(ad|hone|od)/.test(navigator.platform) || (navigator.platform == 'MacIntel' && navigator.maxTouchPoints > 1)) {
+				self.location.href = "/Home/Gate?mode=mobile";
+			}
+	</script>
+
+<div class="top_group">
+	<div class="container">
+211.223.14.69			<button type="button" id="btnLoginGroup" aria-label="레이어 팝업으로 열림"><span>기관회원 로그인</span></button>
+	</div>
+</div>
+<div class="top_anb">
+	<div class="container">
+		<div class="user">
+				<button type="button" id="btnLoginPerson" class="person_login" aria-label="레이어 팝업으로 열림"><span>개인회원 로그인</span></button>
+				<a href="/PersonUser/Agreement" class="person_join">개인회원 가입</a>
+		</div>
+		<ul class="anb">
+			<li class="first"><a href="/" aria-label="첫 페이지로 이동">HOME</a></li>
+			<li><a href="/CS/">고객센터</a></li>
+			<li><a href="/CS/Guide">이용안내</a></li>
+		</ul>
+	</div>
+</div>
+<hr />
+<div id="loginForm" class="modal_content_show">
+	<ul class="tab" rule="login_tab_content">
+	<li><a href="#personLogin" title="개인회원 로그인 화면 보기">개인회원</a></li>
+
+	<li><a href="#groupLogin" title="기관회원 로그인 화면 보기">기관회원</a></li>
+	</ul>
+	<fieldset id="personLogin" class="login_tab_content">
+		<legend>개인회원 로그인</legend>
+		<div class="fieldsetBox">
+
+<form action="/Account/PersonLogin" id="personLoginForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="mfr99cMrnY8beGDpYZ1pyYVeZ9PSBX8WdJz56N8dUeY-fCusXrWPHeFys1DRjp_aSpgAHydJ-xJx4VSI_zJNcR1aPRMVogq0ICy42R8MPXQ1" />				<div class="id-pass">
+					<p class="input">
+						<label for="txtPersonLoginID">아이디</label>
+						<input type="text" id="txtPersonLoginID" name="id" placeholder="아이디를 입력해 주십시오" />
+					</p>
+					<p class="input">
+						<label for="txtPersonLoginPass">비밀번호</label>
+						<input type="password" id="txtPersonLoginPass" name="pass" placeholder="비밀번호를 입력해 주십시오" />
+					</p>
+				</div>
+					<button type="button" id="btnPersonLoginAct" class="login"><span>로그인</span></button>
+</form>			<form action="/Account/ExternalLogin" class="hidnForm" id="socialLogin" method="post"><input name="__RequestVerificationToken" type="hidden" value="qusMyvs3gLqp0ehH085UsjUgqzEO1wu9fI31TI906JrBudL1Vqmm3SvkrlFnESPrcesGMqJu_bjkdXWJ9B1CWTB8eWlO0eumc8zqaKKQFys1" />				<input type="hidden" name="provider" value="" />
+</form>			<div class="socialLogin">
+				<button type="button" id="btnSocialLoginNaver" class="naver" value="Naver"><span>네이버 아이디로 로그인</span></button>
+				<button type="button" id="btnSocialLoginKakao" class="kakao" value="Kakao"><span>카카오 아이디로 로그인</span></button>
+				<!---->
+        <button type="button" id="btnSocialLoginGoogle" class="google" value="Google"><span>구글 아이디로 로그인</span></button>
+				<!--<button type="button" id="btnSocialLoginFacebook" class="facebook" value="FaceBook"><span>페이스북 아이디로 로그인</span></button>-->
+			</div>
+			<hr />
+			<p class="link"><span>개인회원 가입으로 더욱 편리하게 이용하세요. </span><a class="join" href="/PersonUser/Agreement">개인회원 가입</a></p>
+			<p class="link"><span>아이디/비밀번호를 잊으셨나요?</span> <a class="find" href="/PersonUser/Find">아이디/비밀번호 찾기</a></p>
+		</div>
+		<script type="text/javascript">
+			$(function () {
+				$("#btnPersonLoginAct").bind("click", user_login_valid);
+				$("#txtPersonLoginPass").bind("keypress", function (e) { if (e.which == 13) { user_login_valid(); } });
+				$("div.socialLogin button").bind("click", function () {
+					socialLogin($(this).val());
+				});
+			});
+		</script>
+	</fieldset>
+		<fieldset id="groupLogin" class="login_tab_content">
+		<legend>기관회원 로그인</legend>
+		<div class="fieldsetBox">
+<form action="/Account/GroupLogin" id="groupLoginForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="kTcjRANkpshIlcmgnJaCzYQAA21eeCV_DPkovYX2YRhf5f_8rxYUS-97yKDlVRJdixxAGd9lo-FoyS_FJhNxnoXWPxA5pzs5gOOVh5c7GYY1" />					<p class="input">
+						<label for="txtGroupLoginOfficeName">소속기관</label>
+						<input type="hidden" id="hidnGroupLoginOfficeSn" name="groupKey" value="-1" />
+						<input type="text" id="txtGroupLoginOfficeName" placeholder="소속기관을 입력해 주십시오" />
+					</p>
+					<div class="id-pass">
+						<p class="input">
+							<label for="txtGroupLoginID">아이디</label>
+							<input type="text" id="txtGroupLoginID" name="id" placeholder="아이디를 입력해 주십시오" />
+						</p>
+						<p class="input">
+							<label for="txtGroupLoginPass">비밀번호</label>
+							<input type="password" id="txtGroupLoginPass" name="pass" placeholder="비밀번호를 입력해 주십시오" />
+						</p>
+					</div>
+					<button type="button" id="btnGroupLoginAct" class="login"><span>로그인</span></button>
+</form>			<div class="loginMessage">
+				소속기관에서 검색되지 않는 기관은 무료원문다운이 불가능합니다. 개인회원 가입 후 유료구매를 하시거나 소속기관 도서관에 이용문의해 주세요.
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function () {
+				$("#btnGroupLoginAct").bind("click", group_login_valid);
+				$("#txtGroupLoginPass").bind("keypress", function (e) { if (e.which == 13) { group_login_valid(); } });
+			});
+		</script>
+	</fieldset>
+</div>
+
+<div class="top_search">
+	<div class="container">
+		<fieldset>
+			<legend><a href="/" title="earticle 첫 화면으로 이동"><img src="/Images/common/logo_m.png" alt="earticle 로고" title="earticle-학술논문 검색서비스" /></a></legend>
+			<div class="searchBox">
+				<div class="inputBox">
+<form action="/Search/Result" id="topSearchForm" method="get">						<p>
+							<select id="top_search_option" name="sf" aria-label="검색 범위 선택">
+									<option value="1">전체</option>
+	<option value="2">제목</option>
+	<option value="3">저자명</option>
+	<option value="4">키워드</option>
+	<option value="5">초록/목차</option>
+	<option value="6">간행물명</option>
+	<option value="7">발행기관명</option>
+
+								<option value="issn">ISSN</option>
+							</select>
+							<label for="top_search_input" class="blind">검색어</label>
+							<input type="text" id="top_search_input" name="q" placeholder="검색어를 입력해 주세요." />
+							<!--<button type="button" id="btn_top_vkeyboard" title="다국어 입력기"><span class="img_btn_span">다국어입력기</span></button>-->
+							<button type="button" id="btn_top_search"><span class="img_btn_span">검색</span></button>
+							<button type="button" id="btn_top_advanced"><span>상세검색</span></button>
+						</p>
+</form>				</div>
+				<div class="keywordBox">
+
+				</div>
+			</div>
+		</fieldset>
+	</div>
+</div>
+<div class="top_gnb">
+	<div class="container">
+		<ul class="gnb">
+			<li><a href="/Subject/List">분야별 검색</a></li>
+			<li><a href="/Publisher/List">발행기관</a></li>
+			<li><a href="/Journal/List">간행물</a></li>
+		</ul>
+		<ul class="anb">
+			<li><a href="/Public/Provider">국가지식</a></li>
+				<li class="dot"><a href="javascript:login_form_open('person');" aria-label="로그인 후 이용가능(로그인 레이어팝업 열림)">마이페이지</a></li>
+		</ul>
+	</div>
+</div>
+		</div>
+		<div id="body">
+			<div class="container">
+				
+
+<div class="page_location">
+	<span for="" class="blind">현재 위치</span>
+	<a href="/" class="home"><span>Home</span></a>
+</div>
+				
+<div class="page_content art-detail">
+	<input type="hidden" id="d_refer" value=""/>
+	<input type="hidden" id="d_artType" value="A"/>
+	<input type="hidden" id="d_id" value="467445"/>
+	<input type="hidden" id="d_key" value="XB0bWGyk4X2r9UElpSwgK5VQmf86NsIWVCZX7HHWNqE="/>
+	<p class="art-label">
+		 <span class="part">[최고경영자연구]</span>	</p>
+	<h2>
+		How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets 
+			<br/><span class="tran">리더십 역할이 인공지능 결정 판단에 미치는 영향 : 의사결정자와 의사결정 대상 간의 차이 </span>
+			</h2>
+	<div class="section basicInfo">
+		<div class="preivew art_thumb" id="artPreview">
+			<img src="/Images/common/no_img_l.png" alt="첫 페이지 보기" />
+			<div class="over"></div>
+			<div class="act">
+				<button type="button" class="btn-big hidn" title="첫 페이지 보기"><span class="img_btn_span">표지보기</span></button>
+				<!--
+				<button type="button" class="btn-share addthis_button sns" addthis:url="https://www.earticle.net/Article/A467445" addthis:title="How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets " title="SNS 공유"><span class="img_btn_span">SNS 공유</span></button>
+				-->
+			</div>
+		</div>
+		<div class="info">
+			<ul>
+				<li>
+					<dl>
+						<dt>발행기관 </dt>
+						<dd>한국전문경영인학회 <a href="/Publisher/Detail/582" title="한국전문경영인학회 바로가기" class="direct"><span>바로가기</span></a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>간행물</dt>
+						<dd>
+							전문경영인연구
+									<span class="registration">KCI 등재</span>
+
+							<a href="/Journal/Detail/893 " title="전문경영인연구 바로가기" class="direct"><span>바로가기</span></a>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>통권</dt>
+						<dd>제28권 제2호 통권 제82호 (2025.05)<a href="/Journal/Issues/893/35617" title="제28권 제2호 통권 제82호 바로가기" class="direct"><span>바로가기</span></a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>페이지</dt>
+						<dd>pp.29-52</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>저자</dt>
+						<dd class="authors"> <span>Youjung Jun</span></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>언어</dt>
+						<dd>영어(ENG)                                           </dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>URL</dt>
+						<dd><span class="url">https://www.earticle.net/Article/A467445</span><button type="button" id="btnCopyUrl" class="btn btn-basic btn-copy" title="URL 복사"><span>복사</span></button></dd>
+					</dl>
+				</li>
+			</ul>
+			<p class="msg">
+※ 기관로그인 시 무료 이용이 가능합니다.
+			</p>
+		</div>
+		<div class="head-ctl art-ctl">
+			<button type="button" class="btn btn-strong btn-authorMore"><span>저자의 다른 논문</span></button>
+				<span class="price">6,100원</span>
+				<button type="button" class="btn btn-strong btn-purchase"><span>구매하기</span></button>
+			<button type="button" class="btn btn-back btn-quote"><span>인용하기</span></button>
+			<button type="button" class="btn btn-bookmark"><span>관심논문등록</span></button>
+		</div>
+	</div>
+	<div class="otherInfo">
+		<div class="detail-info">
+			<h3>원문정보</h3>
+				<div class="section">
+					<h4>초록</h4>
+							<dl class="abs">
+									<dt>
+										영어
+										<!--<button type="button" id="btn_webtalks" title="음성듣기"><span>음성듣기</span></button>-->
+									</dt>
+									<dd id="abs_cnt">Artificial intelligence (AI) is increasingly being integrated into workplace roles traditionally performed by humans. However, limited research explores how people perceive AI in evaluative contexts. This study investigates individuals' attitudes toward AI-powered evaluation systems, particularly the perspectives of decision makers and decision targets. Despite the widespread assumption that those in management roles (e.g., bank managers) would favor AI in evaluations more than applicants, our findings reveal a consistent preference for human evaluators over AI, regardless of role. This preference is driven by the perception that human decision makers provide greater fairness, outweighing the efficiency benefits associated with AI. These results offer insight into the lower-than-expected adoption of AI-powered evaluation systems, highlighting the persistent value placed on human judgment in business decision-making. </dd>
+							</dl>
+							<dl class="abs">
+							</dl>
+																<dl class="abs">
+						</dl>
+						<dl class="abs">
+								<dt>한국어</dt>
+								<dd>인공지능(AI)은 점점 더 인간이 수행하던 직무에 통합되고 있지만, 평가적 맥락에서 AI에 대한 인식에 대한 연구는 제한적이다. 본 연구는 AI 기반 평가 시스템에 대한 개인의 태도를 조사하며, 특히 의사결정자와 의사결정 대상자의 관점을 비교한다. 일반적으로 관리직(예: 은행 관리자)에 있는 사람들이 지원자보다 AI 평가를 더 선호할 것이라는 가정과 달리, 연구 결과는 역할에 관계없이 AI보다 인간 평가자를 일관되게 선호하는 경향을 보여준다. 이러한 선호는 AI의 효율성보다 인간 의사결정자가 더 높은 공정성을 제공할 것이라는 인식에 의해 결정된다. 본 연구는 AI 기반 평가 시스템의 예상보다 낮은 채택률을 설명하며, 비즈니스 의사결정에서 인간의 판단이 지속적으로 중요한 가치를 지닌다는 점을 시사한다.</dd>
+						</dl>
+											<!--<script type="text/javascript" src="http://service.webtalks.co.kr:80/webtalksJs.odc?userlicenseKey=85a41f93f27c96bffe2476241be7415a458512a6d9a989650ea0e753a895828ad21efc9fe5c90b580be270b7a7c7523b&custom_targetId=abs_cnt&custom_btn_id=btn_webtalks&custom_languagePack=EW1"></script>-->
+				</div>
+							<div class="section">
+					<h4>목차</h4>
+					<p>
+						Abstract<br/>Ⅰ.&nbsp;Introduction<br/>Ⅱ.&nbsp;Conceptual&nbsp;Background<br/>	2.1&nbsp;AI&nbsp;Assistance&nbsp;&&nbsp;Discrepancies<br/>	2.2&nbsp;Power,&nbsp;Status&nbsp;&&nbsp;Fairness&nbsp;Concern<br/>	2.3&nbsp;AI&nbsp;Fairness&nbsp;&&nbsp;Efficiency<br/>	2.4&nbsp;Hypotheses&nbsp;Development<br/>Ⅲ.&nbsp;Study&nbsp;Overview<br/>Ⅳ.&nbsp;Pilot&nbsp;Study<br/>	4.1&nbsp;Data&nbsp;Collection<br/>	4.2&nbsp;Procedure&nbsp;&&nbsp;Survey&nbsp;Sample<br/>	4.3&nbsp;Results<br/>	4.4&nbsp;Discussion<br/>Ⅴ.&nbsp;Study&nbsp;1&nbsp;(Applicant&nbsp;Perspective)<br/>	5.1&nbsp;Data&nbsp;Collection<br/>	5.2&nbsp;Procedure&nbsp;&&nbsp;Survey&nbsp;Sample<br/>	5.3&nbsp;Results<br/>	5.4&nbsp;Discussion<br/>Ⅵ.&nbsp;Study&nbsp;2&nbsp;(Bank&nbsp;Manager&nbsp;Perspective)<br/>	6.1&nbsp;Data&nbsp;Collection<br/>	6.2&nbsp;Procedure&nbsp;&&nbsp;Survey&nbsp;Sample<br/>	6.3&nbsp;Results<br/>	6.4&nbsp;Discussion<br/>Ⅶ.&nbsp;General&nbsp;Discussion<br/>	7.1&nbsp;Theoretical&nbsp;Implications<br/>	7.2&nbsp;Managerial&nbsp;Implications<br/>	7.3&nbsp;Limitations&nbsp;&&nbsp;Future&nbsp;Research<br/>References<br/>요약<br/>
+					</p>
+				</div>
+							<div class="section">
+					<h4>키워드</h4>
+							<span class="keyword">인공지능</span>
+							<span class="keyword">평가</span>
+							<span class="keyword">의사결정자</span>
+							<span class="keyword">의사결정 대상</span>
+							<span class="keyword">공정성</span>
+							<span class="keyword">효율성</span>
+							<span class="keyword">불일치</span>
+							<span class="keyword">Artificial intelligence</span>
+							<span class="keyword">Evaluation</span>
+							<span class="keyword">Decision maker</span>
+							<span class="keyword">Decision target</span>
+							<span class="keyword">Fairness</span>
+							<span class="keyword">Efficiency</span>
+							<span class="keyword">Discrepancy</span>
+				</div>
+							<div class="section">
+					<h4>저자</h4>
+					<ul class="authors">
+							<li>
+								Youjung Jun [ 전유정  | Assistant professor, Yonsei University ]
+															</li>
+					</ul>
+				</div>
+			<div class="section" id="reference">
+				<h4>참고문헌</h4>
+				<div class="msg">
+					<span class="source">자료제공 : <a href="https://academic.naver.com" target="_blank">네이버학술정보</a></span>
+				</div>
+				<ul>
+				</ul>
+				<div class="paging"></div>
+			</div>
+
+			<h3>간행물 정보</h3>
+			<div class="section">
+				<h4>발행기관</h4>
+				<div class="sub-sec pub-info">
+					<ul>
+						<li>
+							<dl>
+								<dt>발행기관명</dt>
+								<dd>
+									<strong>한국전문경영인학회</strong>
+									<span class="tran">	[Korea CEO Academy]
+</span>
+								</dd>
+							</dl>
+						</li>
+						<li><dl><dt>설립연도</dt><dd>1997</dd></dl></li>
+						<li><dl><dt>분야</dt><dd>사회과학>경영학</dd></dl></li>
+						<li><dl><dt>소개</dt><dd>국내외의 전문경영인에 관련된 학술연구와 이의 진흥과 보급을 목적으로 하며, 회원 상호간의 학술교류와 친목 도모, 유관기관 및 외국 학자와의 학술교류 촉진 등을 도모하는 것을 목적으로 한다.</dd></dl></li>
+					</ul>
+				</div>
+				<h4>간행물</h4>
+				<div class="sub-sec jou-info">
+					<div class="cover issue_cover">
+						<img src="https://file1.earticle.net/Cover/ThumbImage/S?path=202506/638844796409297963.jpg
+" alt="" />
+						<div class="over"></div>
+						<div class="act">
+								<button type="button" class="btn-cover btn-show-cover" value="	202506/638844796409297963.jpg
+" title="새 창에서 표지 열기"><span class="img_btn_span">표지보기</span></button>
+							<button type="button" class="btn-bookmark btn-interest-journal" value="582_893" title="관심저널 등록 창 열기"><span class="img_btn_span">관심저널 등록</span></button>
+						</div>
+					</div>
+					<div class="info">
+						<ul>
+							<li>
+								<dl>
+									<dt>간행물명</dt>
+									<dd>
+										<strong>전문경영인연구</strong>
+										<span class="tran">	[Journal of CEO and Management Studies]
+</span>
+									</dd>
+								</dl>
+							</li>
+							<li><dl><dt>간기</dt><dd>계간</dd></dl></li>
+							<li><dl><dt>pISSN</dt><dd>1226-8380</dd></dl></li>
+							
+							<li><dl><dt>수록기간</dt><dd>1998~2026</dd></dl></li>
+							<li><dl><dt>등재여부</dt><dd>KCI 등재</dd></dl></li>
+							<li><dl><dt>십진분류</dt><dd><span class='code'>KDC 325</span> <span class='code'>DDC 330</span></dd></dl></li>
+						</ul>
+					</div>
+				</div>
+				<div class="articleInVolume-box">
+					<h4>이 권호 내 다른 논문 <span>/ 전문경영인연구 제28권 제2호 통권 제82호</span></h4>
+					<div class="sub-sec art-in-issue" id="articleInVolume">
+						<ul></ul>
+						<div class="paging"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="withArt">
+			<div class="cited cited-naver">
+				<h4>피인용수 : <strong>0</strong>건 <span>(자료제공 : <a href="https://academic.naver.com" target="_blank">네이버학술정보</a>)</span></h4>
+				<div class="boxing">
+
+				</div>
+			</div>
+
+			<div class="used-together">
+				<h4>함께 이용한 논문 <span>이 논문을 다운로드한 분들이 이용한 다른 논문입니다.</span></h4>
+				<div class="boxing">
+					<ul></ul>
+				</div>
+			</div>
+		</div>
+	<div class="tail-ctl art-ctl"></div>
+</div>
+<div id="artPreviewBig" class="modal_content_show">
+	<div class="act"></div>
+	<div class="image">
+		<div class="first"></div>
+		<div class="others"></div>
+	</div>
+</div>
+<div id="artCitedMore" class="modal_content_show">
+	<div class="msg">
+		<span class="source">출처 : <a href="https://academic.naver.com" target="_blank">네이버학술정보</a></span>
+	</div>
+	<ul>
+
+	</ul>
+	<div class="paging"></div>
+</div>
+<div id="authorArticleMore" class="modal_content_show">
+	<div class="authors_act">
+		<button type="button" id="btnExcelAuthors" class="btn"><span>Excel 다운로드</span></button>
+	</div>
+	<ul class="art-list"></ul>
+	<div class="paging"></div>
+</div>
+<div id="artBuyMsg" class="modal_content_show art_list_act_dialog">
+	<p class="current"><strong id="usable_buy_count">0</strong>개의 논문이 장바구니에 담겼습니다.</p>
+	<p class="act">
+		<button id="btnMoveCart" class="btn btn-basic"><span>장바구니로 이동</span></button>
+		<button class="btn btn-back btn-continue"><span>계속해서 검색하기</span></button>
+	</p>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5930bcbf4bf0fab4"></script>
+<script type="text/javascript" src="/Scripts/site/articleA.js?v=240117"></script>
+<script type="text/javascript">
+
+	_quote = [{type:"APA", contents:"전유정. (2025). 리더십 역할이 인공지능 결정 판단에 미치는 영향 : 의사결정자와 의사결정 대상 간의 차이 . 전문경영인연구, 28(2), 29-52."}
+,{type:"APA", contents:"Youjung Jun. (2025). How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets . Journal of CEO and Management Studies, 28(2), 29-52."}
+,{type:"Chicago1", contents:"전유정. \"리더십 역할이 인공지능 결정 판단에 미치는 영향 : 의사결정자와 의사결정 대상 간의 차이 .\" 전문경영인연구 28, no.2 (2025): 29-52."}
+,{type:"Chicago1", contents:"Youjung Jun. \"How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets .\" Journal of CEO and Management Studies 28, no.2 (2025): 29-52."}
+,{type:"Chicago2", contents:"전유정. 2025. 리더십 역할이 인공지능 결정 판단에 미치는 영향 : 의사결정자와 의사결정 대상 간의 차이 . 전문경영인연구 28, no.2:29-52"}
+,{type:"Chicago2", contents:"Youjung Jun. 2025. How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets . Journal of CEO and Management Studies 28, no.2:29-52"}
+,{type:"Vancouver", contents:"전유정. 리더십 역할이 인공지능 결정 판단에 미치는 영향 : 의사결정자와 의사결정 대상 간의 차이 . 전문경영인연구 2025;28(2):29-52."}
+,{type:"Vancouver", contents:"Youjung Jun. How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets . Journal of CEO and Management Studies 2025;28(2):29-52."}
+,{type:"MLA", contents:"전유정. \"리더십 역할이 인공지능 결정 판단에 미치는 영향 : 의사결정자와 의사결정 대상 간의 차이 .\" 전문경영인연구, 28.2 (2025):29-52."}
+,{type:"MLA", contents:"Youjung Jun. \"How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets .\" Journal of CEO and Management Studies, 28.2 (2025):29-52."}
+,{type:"IEEE", contents:"전유정, \"리더십 역할이 인공지능 결정 판단에 미치는 영향 : 의사결정자와 의사결정 대상 간의 차이 ,\" 전문경영인연구, vol.28, no.2, pp.29-52, 2025."}
+,{type:"IEEE", contents:"Youjung Jun, \"How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets ,\" Journal of CEO and Management Studies, vol.28, no.2, pp.29-52, 2025."}
+,{type:"Harvard", contents:"전유정 2025, '리더십 역할이 인공지능 결정 판단에 미치는 영향 : 의사결정자와 의사결정 대상 간의 차이 ', 전문경영인연구, vol.28, no.2, pp.29-52."}
+,{type:"Harvard", contents:"Youjung Jun 2025, 'How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets ', Journal of CEO and Management Studies, vol.28, no.2, pp.29-52."}
+];
+
+	page_location_write("한국전문경영인학회", "/Publisher/Detail/582");
+	page_location_write("전문경영인연구", "/Journal/Detail/893 ");
+	page_location_write("제28권 제2호 통권 제82호", "/Journal/Issues/893/35617");
+	page_location_write("How Leadership Roles Shape Judgments of AI Decisions : Differences Between Decision Makers and Decision Targets ", null);
+
+	function article_detail_call(isLoc, isJou, org, jou, vol) {
+		if (isLoc) {
+			thumb_call($("#d_artType").val(), $("#d_id").val(), $("#d_key").val(), $("#artPreview"));
+		}
+
+		if (isJou) {
+			cited_call($("#d_artType").val() + $("#d_id").val());
+			reference_call($("#d_id").val());
+			author_check($("#d_id").val());
+		}
+		else {
+			$("#reference").remove();
+		}
+
+		if (isLoc && isJou) {
+			usedTogether_call($("#d_artType").val() + $("#d_id").val());
+		}
+		articleInIssue_call(org, jou, vol);
+	}
+
+	$(function () {
+		
+		article_detail_call(true, false, 582, 893, 35617);
+		
+
+		$("button.btn-copy").bind("click", function () {
+			copyObjectText($(this).parents("dd").find("span").html());
+		});
+		$("#artPreview button.btn-big").bind("click", function () {
+			download_preview($("#d_artType").val() + $("#d_id").val());
+			thumb_first_open();
+		});
+		$("#btn_webtalks").bind("click", function () {
+			webtalks_js.Player.voiceOnStartCheck();
+		});
+		$("#btnMoveCart").bind("click", function () { cart_redirect(); });
+		$("button.btn-continue").bind("click", function () {
+			dialog_close();
+		});
+		$("<div id='art_tail_ctl'></div>").insertBefore("#footer");
+		$("div.art-detail div.tail-ctl").append("<div>" + $("div.art-detail div.head-ctl").html() +"</div>").appendTo("#art_tail_ctl");
+		$("button.btn-browser-open").bind("click", function () {
+			selected_art_file_open($("#d_artType").val() + $("#d_id").val());
+		});
+		$("div.art-ctl button").bind("click", function () {
+			var cls = $(this).attr("class");
+			var key = $("#d_artType").val() + $("#d_id").val();
+			if (cls.indexOf("btn-purchase") >= 0) {
+				selected_buy(key);
+			}
+			else if (cls.indexOf("btn-download") >= 0) {
+				selected_download(key);
+			}
+			else if (cls.indexOf("btn-quote") >= 0) {
+				selected_quote("0" + key);
+			}
+			else if (cls.indexOf("btn-bookmark") >= 0) {
+				selected_bookmark(key);
+			}
+		});
+		scroll_event();
+		page_unload();
+		recent_article_cookie_add();
+	});
+</script>
+
+
+				<div class="widget_content">
+					<fieldset id="pageSaveWidget">
+	<legend>페이지 저장</legend>
+	<div class="fieldsetBox">
+<form action="/SaveUrl/Add" id="pageSaveForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="asFGPAxOC_GNxeXasPcOpvIXfZNWGm_PJuMXchCuVvh6OgDTiDUQKDi6XOU1ASh-a-ya3_4pWAMo8Y84BXF1YcfC2USp216ktflHmricy7A1" />			<input type="hidden" id="page_save_url" name="url" value=""/>
+			<label for="page_save_comment" class="blind">페이지 설명</label>
+			<input type="text" id="page_save_comment" name="comment" class="txt" value="" placeholder="페이지에 대한 설명을 기억하기 쉽게 작성해 주십시오." maxlength="100" />
+			<button type="button" id="btnPageSaveSubmit" class="btn btn-basic"><span>저장</span></button>
+</form>	</div>
+</fieldset>
+
+				</div>
+			</div>
+		</div>
+		
+
+<div id="sideQuick">
+	<ul class="menu">
+		<li><a href="javascript:recent_article_open();" class="recentread"><span>최근 열람<br />자료</span></a></li>
+		<li><a href="javascript:login_form_open('person');" class="access" title="간편교외접속 바로가기"><span>간편<br />교외접속</span></a></li>
+				<li><a href="/CS/QnA/List" class="qna" title="Q&amp;A 바로가기"><span>Q&amp;A</span></a></li>
+		<li><a href="/CS/FAQ/List" class="faq" title="FAQ 바로가기"><span>FAQ</span></a></li>
+		<li><a href="javascript:errWrite_open();" class="error" title="오류접수 입력창 열기"><span>오류접수</span></a></li>
+		<li><a href="#wrap" class="top" title="TOP 이동"><span>TOP</span></a></li>
+	</ul>
+	<div class="quick_screen"><div class="contents"></div></div>
+</div>
+
+	<div id="groupUserSearch" class="modal_content_show">
+		<fieldset>
+			<legend>소속기관 조회</legend>
+			<div class="fieldsetBox">
+				<div class="msg">
+					이용자님의 소속기관(단체)이 서비스에 가입되어 있는지 확인해 보십시오.<br />
+					기관회원에 소속되어 있는 이용자는 원문을 무료로 이용할 수 있습니다.
+				</div>
+				<form id="frmGroupSearch">
+					<label for="txtGroupSearch" class="blind">기관명</label>
+					<input type="text" id="txtGroupSearch" placeholder="기관명을 입력해 주십시오." />
+				</form>
+				<div class="result">
+
+				</div>
+			</div>
+		</fieldset>
+	</div>
+
+		<div id="footer">
+			<div class="container">
+	<hr />
+	<ul class="fnb">
+		<!--<li><a>회사소개</a></li>-->
+		<li><a href="/Cs/">고객센터</a></li>
+		<li><a href="http://contents.earticle.net" target="_blank">학술단체서비스안내</a></li>
+		<li><a href="/Rule/Privacy" class="privacy">개인정보처리방침</a></li>
+		<li><a href="javascript:noMail_open();">이메일무단수집거부</a></li>
+		<li><a href="/Company/Banner">배너다운로드</a></li>
+		<li><a href="javascript:emailWrite_open();">메일보내기</a></li>
+		<li class="last">
+			<a href="http://get.adobe.com/kr/reader/" target="_blank">원문뷰어설치</a>
+			<!---->
+			<a href="/Search/PageAuth/1f7beea0-2860-477f-9e21-282db4434085" style="position:absolute; left:-9999px; top:-9999px; width:1px; height:1px;" rel="nofollow">Page Authorization</a>
+			
+		</li>
+	</ul>
+	<hr />
+	<address>
+		상호:  주식회사 학술교육원   I   대표:  노방용   I   사업자등록번호:  122-81-88227   I   통신판매업신고번호:  제2008-인천부평-00176호   I   정보보호책임자:  이두영<br />
+		주소:  (21319)인천광역시 부평구 영성중로 50 미래타워 701호   I   전화:  0505-555-0740   I   팩스:  0505-555-0741   I   이메일:  earticle@earticle.net
+	</address>
+	<p class="copyright">
+		COPYRIGHT &copy; 2006 학술교육원. ALL RIGHTS RESERVED.
+		<strong>사전허가 없는 무단 크롤링은 민형사상 책임을 물을 수 있습니다.</strong>
+	</p>
+</div>
+<div id="voicemon_tip">음성지원 및 돋보기 서비스</div>
+
+<script type="text/javascript">
+	var voiceScript = document.createElement('script');
+	voiceScript.type = 'text/javascript';
+	//voiceScript.src = (window.location.host == "www-earticle-net-ssl.access.inu.ac.kr") ? "/voicemonTemp.aspx" : "/Common/Voicemon2" + (window.location.protocol != "https:" ? "?vt=false" : "");
+	voiceScript.src = "/Common/Voicemon2" + (window.location.protocol != "https:" ? "?vt=false" : "");
+	document.getElementsByTagName('body')[0].appendChild(voiceScript);
+</script>
+	
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-71LBQKDHJ2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-71LBQKDHJ2');
+</script>
+		</div>
+	</div>
+</body>
+</html>

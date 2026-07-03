@@ -1,0 +1,666 @@
+### SOURCE: paper_137_arXiv.pdf
+### PAPER_ID: 137
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 14
+
+
+===== PAGE 1 =====
+arXiv:2409.11685v1  [cs.SE]  18 Sep 2024
+Prototypical Leadership in
+Agile Software Development
+Jina Dawood1 and Lucas Gren1,2
+1 Chalmers University of Technology | University of Gothenburg,
+Gothenburg, Sweden
+2 Getinge AB
+Gothenburg, Sweden
+jinatamaradawood@gmail.com
+lucas.gren@getinge.com
+Abstract. Leadership in agile teams is a collective responsibility where
+team members share leadership work based on expertise and skills. How-
+ever, the understanding of leadership in this context is limited. This
+study explores the under-researched area of prototypical leadership, aim-
+ing to understand if and how leaders who are perceived as more repre-
+sentative of the team are more eﬀective leaders. Qualitative interviews
+were conducted with eleven members of six agile software teams in ﬁve
+Swedish companies from various industries and sizes. In this study, the
+eﬀectiveness of leadership was perceived as higher when it emerged from
+within the team or when leaders aligned with the group. In addition,
+leaders in managerial roles that align with the team’s shared values and
+traits were perceived as more eﬀective, contributing to overall team suc-
+cess.
+Keywords: leadership, agile teams, prototypicality, management, pro-
+totypical leadership
+1
+Introduction
+Leadership and management, while often conﬂated, are distinct concepts in or-
+ganizational theory. “Leadership [involves] the articulation of an organizational
+vision, introduction of major organizational change, providing inspiration, and
+dealing with highly stressful and troublesome aspects of the external environ-
+ments of organizations” [1, p. 444]. This deﬁnition emphasizes the visionary and
+inspirational aspects of leadership. In contrast, “Management consists of imple-
+menting the vision and strategy provided by leaders, coordinating and staﬃng
+the components of organizations, administering the infrastructures of organi-
+zations, and handling the day-to-day problems that inevitably emerge in the
+process of strategy and policy implementation and ongoing organizational func-
+tioning” [1, p. 445]. Management, therefore, focuses on the operational aspects
+of realizing the leader’s vision. Distilling these concepts further, “leadership is
+
+===== PAGE 2 =====
+getting group members to achieve the group’s goals” [2, p. 315]. This succinct def-
+inition captures the essence of leadership: inﬂuencing and guiding others toward
+a common objective. Leadership is a kind of work. It is important to note that
+even in self-organized and self-managed agile teams, leadership is still present [3].
+The distinction lies in how it is distributed; rather than being conﬁned to a sin-
+gle individual, many team members can dynamically share the leadership work,
+collaboratively driving the team toward its goals [3,4]. Team members and man-
+agers share leadership work based on their expertise and skills, ensuring equal
+participation and decision-making [5,3].
+Agile software development emphasizes collaboration, ﬂexibility, iterative de-
+velopment and customer satisfaction [6]. By embracing agile practices and meth-
+ods, organizations can increase productivity and deliver higher-quality software
+products to their customers [4].
+Self-managing teams face challenges like conﬂicting priorities and opinions,
+which impact their performance [7]. Eﬀective leadership remains essential in
+guiding and supporting agile teams to achieve their goals, whether shared or
+formal [8]. However, the transition from traditional to dynamic leadership has
+created confusion regarding the role of leadership in agile teams [9]. In addition,
+limited research on leadership in agile teams makes it hard to grasp what makes
+a leader eﬀective, even though leadership is vital for successful self-organization
+[8].
+Existing studies on leadership in agile software development have predomi-
+nantly concentrated on leadership styles and practices, overlooking the broader
+and more complex aspects of leadership [3,4,10]. A systematic literature review
+on agile leadership stated that “agile leadership research needs further attention
+and that more empirical studies are needed to understand agile leadership in
+general better.” [10]. A recent study by Gren et al. [3] highlights the necessity
+for additional research on leadership in agile software development. In addition,
+the authors propose that exploring prototypical leadership could be valuable.
+Prototypical leadership refers to leaders who exemplify their group’s highly
+valued characteristics and values [11]. To the best of our knowledge, no existing
+research explicitly examines prototypical leadership in the context of agile soft-
+ware development. However, research in other ﬁelds suggests that prototypical
+leadership can be highly beneﬁcial. For example, Avolio et al. [12] found that
+prototypical leadership attributes are essential in inﬂuencing transformational
+leadership ratings. Leaders who exhibited prototypical characteristics were rated
+higher than those who showed anti-typical features. Grille et al. [13] also found
+that promoting prototypical team leader behavior can increase psychological
+empowerment and shared leadership within teams.
+This study aims to explore prototypical leadership through the perspectives
+of individuals in the industry. Ultimately, this study aims to gain an initial under-
+standing of prototypical leadership in agile software development. The research
+questions addressed in this study are:
+
+===== PAGE 3 =====
+RQ1: How do members of agile software development teams perceive and
+experience leadership that aligns with team characteristics and values (i.e. pro-
+totypical leadership)?
+RQ2: What impact does prototypical leadership have on agile teams?
+Here, agile software development teams refer to the ideology in the Agile
+Manifesto [6] and the practices and methods that reﬂect those principles, such
+as scrum [14]. We have decided to center our research on the experiences and
+perspectives of individuals working within the industry. Therefore, we collected
+qualitative data through semi-structured interviews to answer the research ques-
+tions. Eleven members of six agile teams in ﬁve organizations in Sweden were
+interviewed. The qualitative data was analyzed using thematic analysis.
+This paper is organized as follows: Section 2 examines theories and existing
+research related to our objectives. Then, in Section 3, we describe our research
+design. In Section 4 we report our ﬁndings. Section 5 addresses our research
+questions, discusses the ﬁndings with existing literature, and explores their im-
+plications. Finally, we conclude the paper and provide some views on future
+research in Section 6.
+2
+Related Work
+This section provides an overview of the theoretical foundation for our study on
+prototypical leadership in agile software development teams. We focus on the
+Social Identity Theory of Leadership [16] and its application to agile contexts.
+Social Identity Theory, introduced by Tajfel et al. [15], explains how individ-
+uals categorize themselves and others into social groups based on shared traits,
+values, and norms. This categorization inﬂuences an individual’s behavior and
+self-concept3. Building on this foundation, Hogg et al. [16] developed the Social
+Identity Theory of Leadership, which emphasizes the leader’s role as a group
+member and their ability to embody and promote the group’s identity. Accord-
+ing to this theory, eﬀective leaders are those who best represent the group’s
+deﬁning characteristics and values, known as prototypical leaders.
+Prototypical leadership refers to leaders who exemplify their group’s highly
+valued characteristics and values [11]. These leaders are seen as embodying the
+group’s identity and are often more eﬀective in gaining support and inﬂuencing
+team members [17]. Research has shown that prototypical leaders often receive
+more support from their team members and are perceived as more eﬀective
+[18,19,20]. This is based on the belief that a prototypical leader will act in the
+team’s best interest and contribute to the group’s overall success.
+In agile software development, leadership often takes on a more collabora-
+tive and distributed form. Gren et al. [3] found that leadership in agile teams is
+dynamically shared among team members, fostering a sense of team belonging
+and adapting to diﬀerent organizational cultures. While research on prototypi-
+cal leadership in agile contexts is limited, studies on shared leadership in agile
+3 Self-concept refers to an individual’s perception of themselves, including their at-
+tributes, abilities, and identity within social groups [16].
+
+===== PAGE 4 =====
+teams suggest potential connections. Moe et al. [4] highlighted that shared lead-
+ership positively impacts team performance and member satisfaction by enabling
+collaboration and eﬀective decision-making. Our study aims to bridge the gap
+between prototypical leadership theory and the practical realities of leadership
+in agile software development teams.
+3
+Method
+This study aims to explore the concept of prototypical leadership in agile soft-
+ware development trough a qualitative interview study. Rather than focusing on
+quantitative measurements or quantities, we wanted to understand the “how”
+and “why” aspects [21]. While we collected data from multiple teams, our pri-
+mary unit of analysis is the individual participant’s perspective rather than the
+team or organization as a whole. Therefore, this study is best characterized as
+an interview study rather than a multiple case study.
+Qualitative data was collected through one-to-one interviews with eleven par-
+ticipants from six agile software teams in ﬁve Swedish companies. Thematic
+analysis [22] was employed to analyze the collected qualitative data. The follow-
+ing section will elaborate on our research design and the rationale behind our
+choices.
+Cases The cases in this study involved ﬁve Swedish companies selected based on
+their agile software development teams. These companies represented diﬀerent
+industries and varied in size, oﬀering various perspectives. Some of these compa-
+nies operated internationally, while the teams being studied were all located in
+Gothenburg, Sweden. One of the companies included in the study was a multi-
+national corporation operating in the automotive sector, from which two teams
+were studied. Another company operated in the food and beverage industry. The
+study also included a digital solutions provider, a small startup with nine em-
+ployees, and a company specializing in disruptive technologies in the automotive
+sector. To maintain anonymity, no further details can be disclosed about these
+organizations.
+Participants We employed a combination of convenience and purposive sampling
+strategies to select participants [23]. Our sampling approach aimed to ensure di-
+versity in our dataset while meeting speciﬁc criteria: (1) Participants working
+within agile software development teams, and (2)Representation from organiza-
+tions of diﬀerent sizes and industries. Additionally, we sought to include par-
+ticipants with varying ages, genders, and professional backgrounds to capture a
+range of perspectives.
+Nine men and two women between 24 and 61 years old participated. Six par-
+ticipants were selected from the same team, as all individuals expressed a will to
+participate. Additionally, two were from diﬀerent groups within the same com-
+pany, while the remaining three were from diﬀerent companies. All participants
+were part of software development teams, although not all held development
+
+===== PAGE 5 =====
+roles. Some participants had transitioned into management roles but had previ-
+ous experience as developers.
+Data saturation [24] was reached after the ninth interview. However, we con-
+ducted the two extra initially planned interviews to verify the data saturation.
+To ensure the participants’ anonymity, no additional details beyond what is
+presented will be disclosed, as individuals may be identiﬁed (see Table 1).
+Table 1. Team Information
+ID Team Team Size
+Industry
+A1
+A
+6
+Automotive
+B1
+B
+5
+Automotive
+C1
+C
+8
+Software Consultancy
+C2
+C
+8
+Software Consultancy
+C3
+C
+8
+Software Consultancy
+C4
+C
+8
+Software Consultancy
+C5
+C
+8
+Software Consultancy
+C6
+C
+8
+Software Consultancy
+D1
+D
+13
+Retail
+E1
+E
+8
+Automotive
+F1
+F
+7
+Foodservice
+Data Collection We gathered qualitative data through one-to-one interviews,
+which enabled us to obtain an in-depth understanding of the constructs. The
+interviews were semi-structured with mostly open-ended questions, allowing for
+a ﬂexible conversation that helped us comprehensively understand the partici-
+pants’ reasoning [22].
+An initial interview guide was developed based on a literature review on the
+topic and the stated research questions.
+We ﬁrst conducted two pilot interviews with industry professionals to iden-
+tify potential issues and areas for improvement in the interview guide. During
+the ﬁrst pilot interview, we realized that the interview guide contained too many
+close-ended questions, limiting the conversation’s ﬂexibility. Therefore, we mod-
+iﬁed our guide and conducted a second pilot interview to ensure our changes
+addressed the issue. After the second round, we realized some inconsistencies
+in the wording of speciﬁc questions, which we modiﬁed. The interview guide is
+available at Zenodo4.
+The pilot interviews were conducted solely in Swedish, as eight out of eleven
+participants were scheduled for interviews in Swedish. However, the interview
+guide was translated carefully to ensure consistency across all interviews.
+The modiﬁed interview guide used to collect qualitative data contained sev-
+enteen mainly open-ended questions. The interview guide comprised four sec-
+4 https://zenodo.org/records/13769850
+
+===== PAGE 6 =====
+tions: an introduction that included questions to gather demographic informa-
+tion, questions grouped into two themes (Team and Leadership), and a closing
+section where participants could provide additional comments. The data col-
+lected during the pilot interviews were not included in the data analysis and
+were not considered part of the ﬁnal sample of eleven participants.
+Face-to-face interviews were conducted at the participants’ workplaces, ex-
+cept for one individual who had a remote interview due to logistical constraints.
+Before the interviews, we stated that the study would focus on team dynamics
+and leadership. The participants were also provided with information regard-
+ing the use of their data, the voluntary nature of their participation, and the
+conﬁdentiality of their responses. Finally, with the participant’s consent, the in-
+terviews were audio recorded to ensure the accuracy of the data collected. The
+interviews lasted between 45 and 80 minutes and took place over three weeks.
+Eight interviews were held in Swedish, while three were conducted in En-
+glish. Interview materials were translated carefully to maintain consistency. The
+transcripts obtained from these interviews form the primary source of qualitative
+data. However, we also took notes during the interviews to highlight important
+parts and assist in guiding the conversation more eﬀectively.
+Descript5 was used to transcribe the interviews, and then we manually eval-
+uated them to ensure accuracy. In addition, extraneous ﬁller words were re-
+moved to make the transcripts more readable. Finally, all transcripts originally
+in Swedish were translated into English to simplify the coding process. We aimed
+at making the translation as accurate as possible by using DeepL6 and manu-
+ally checking the accuracy. We provided the participants with a summary of
+their statements for veriﬁcation, which they conﬁrmed. One researcher tran-
+scribed all interviews. To keep everything organized and conﬁdential, we gave
+each transcript and participant a unique number (see Table 1). We have taken
+an inductive approach in the data analysis, allowing the data to guide and shape
+our conclusions rather than beginning with preconceived notions [22]. The data
+were analyzed using the 6-step thematic analysis method proposed by Braun
+and Clarke [22] in ATLAS.ti7. Since our research focuses on understanding the
+experiences and perspectives of our participants, thematic analysis is particu-
+larly appropriate for our study. The process included the following steps: (1)
+Familiarizing with the data: the transcripts were reviewed multiple times. (2)
+Generating initial codes: interesting phrases or segments were highlighted by
+assigning codes. (3) Searching for themes: codes that appeared frequently and
+could be categorized into broader themes were grouped. (4) Reviewing themes:
+themes were reviewed, and a decision was made on whether to keep or drop
+them. (5) Deﬁning and naming themes: names were given to the themes that
+reﬂected their content. (6) Producing the report: in section 4 of the report, the
+main ﬁndings and quotes supporting each theme are presented.
+5 https://www.descript.com/
+6 https://www.deepl.com/translator
+7 https://atlasti.com/
+
+===== PAGE 7 =====
+The analysis followed an iterative process; steps 2-5 were repeated multiple
+times until thematic saturation was achieved [22]. Thematic saturation was con-
+sidered achieved when no new themes or meaningful insights emerged from the
+data.
+Table 2. Example Theme, Codes, and Quotation
+Theme
+Codes
+Quotation
+Leader-Team
+Align-
+ment for Success
+Group identity and values
+Representation, Leadership
+reﬂection
+“Because as a leader of a group you
+should be a reﬂection of the group in
+some way. Yes, it is like a church
+tower. You have the whole church,
+but it is like the church tower that
+stands out and the one everyone
+sees ﬁrst and it kind of points to
+everything, the whole foundation.”
+[C3]
+4
+Results
+We identiﬁed three themes that emerged from our analysis: (1) Shared Leadership
+Based on Tasks and Expertise, (2) Informal Hierarchy Based on Seniority, and
+(3) Leader-Team Alignment for Success.
+Shared leadership based on tasks and expertise In agile teams, participants em-
+phasized that leadership is shared among team members, with diﬀerent individ-
+uals taking on informal leadership roles based on their tasks and expertise. This
+approach allows each member to take responsibility and contribute as a leader
+in their expertise, which enables many team members to conduct leadership. If
+many team members share the leadership work, the leadership is perceived as
+stemming from the team members and thus being more prototypical. As one
+participant expressed:
+“So, everyone has sort of an informal leadership in the task really all the
+time and then you have to try to adapt it to the person and what they
+need. ” [C4]
+The participants’ emphasized that the team’s success rarely depends on just
+one person. Instead, everyone in the team works together and contributes to
+achieving common goals. Decisions are made by considering everyone’s input
+and expertise. As one participant said:
+“But when it comes to implementation, those things, then I feel like it’s
+more the team.Because everyone kind of brings diﬀerent expertise to the
+table. ” [C5]
+
+===== PAGE 8 =====
+In agile teams, leadership is a collective eﬀort encompassing everyday inter-
+actions and knowledge sharing among all team members. It involves everyone
+contributing their expertise and supporting one another, regardless of their roles
+or tasks. Multiple participants expressed this understanding of leadership:
+“That we stand up and help each other and teach each other. That is
+what makes us reach our goal.” [B1]
+Informal hierarchy based on seniority In agile teams, senior members or those
+with extensive experience often hold signiﬁcant inﬂuence, as most participants
+recognized. They have a deep understanding of speciﬁc technologies and devel-
+opment approaches, contributing to successful project implementation. These
+senior members are deﬁned by their prototypicality and often represent the val-
+ues and norms of the team. One participant highlighted the impact of senior
+leaders, stating:
+“Some of the best developed things are based on one of the most senior
+people taking the lead on something. And really got people on board with
+why you should have a certain technology or why you should develop this
+and that.” [F1]
+Participants emphasized that senior members not only oﬀer technical ex-
+pertise but also actively share their extensive experience and guidance. As one
+participant highlighted:
+“[name] has been developing for [many] years so [name] is also here to
+spread their knowledge to everyone else.” [C5]
+Moreover, participants recognized that the perception of seniority in the
+workplace often means that their opinions are seen as more important and re-
+ceive greater attention. As one participant explained:
+“Seniority is often such a thing in the workplace that you listen to the
+person who has the experience or the person who has been doing the
+project the longest. That their opinions are somehow more valuable or
+and that they are heard more anyway.” [E1]
+Leader-team alignment for success Most participants preferred team members as
+managerial leaders, despite potential concerns about group friction. They value
+leaders who know the team and their work, as highlighted by one participant:
+“If you are in a role that can aﬀect the job or my environment positively
+or negatively. I would rather have someone who knows what they do and
+what they work with. And who knows me or something like that and you
+really do if we have worked together.” [E1]
+
+===== PAGE 9 =====
+Regardless of whether the leader comes from within the team or externally, all
+participants stressed the signiﬁcance of the leader aligning with the team’s val-
+ues and working methods without imposing unnecessary changes. They stressed
+that a leader should represent and embody the values and essence of the group
+they lead. One participant [C3] compared a leader to a church tower that sym-
+bolizes and stands out for the entire church, highlighting the signiﬁcance of this
+representation.
+Participants also stressed the signiﬁcance of leaders actively engaging with
+the team, including sharing meals and informal interactions. They prefer leaders
+who are present and involved, unlike those who lack meaningful contact with
+the team. One participant shared their preference:
+“We usually eat lunch together. And I feel like that is important. I like
+that a lot better than someone coming in telling me what to do and then
+leaving and there’s no real interaction.” [C5]
+The ﬁndings show some possible positive outcomes such as job satisfaction
+and reduced turnover when leaders have aligned with their team. One participant
+shared their experience about an external leader who came into the team:
+“So, if we have a natural turnover of staﬀand then you suddenly get
+a leader who is liked and everything works well and no one is leaving
+because they like it, that’s an indicator. The only people who will leave
+are those who want to move on to some other development of some kind.”
+[A1]
+On the other hand, leaders who are perceived as unproductive often struggle
+to align themselves with the team. This lack of alignment erodes trust, hindering
+eﬀective teamwork. One participant shared their experience:
+“Since he wasn’t in the group at all, no one trusted him, and he doesn’t
+trust the group either because he wasn’t in the group. So, he was con-
+stantly checking that everyone is doing the right thing.” [C2]
+The ﬁndings highlight the nuanced nature of leadership in agile teams. Suc-
+cess in leadership extends beyond technical skills, requiring alignment with the
+team and active engagement. This alignment seems to contribute to positive
+collaboration, increased job satisfaction, and potentially lower the turnover.
+Summary
+1. Since agile teams share leadership work, the leadership is perceived as more
+prototypical.
+2. Not only one leader but the senior members of agile teams take on more
+leadership work, meaning it is also more prototypical then if only having
+one senior person who leads.
+3. Eﬀective managerial leadership in agile teams goes beyond technical exper-
+tise and requires alignment with the team’s goals and values, also showing
+the positive eﬀects of prototypical leadership.
+
+===== PAGE 10 =====
+5
+Discussion
+RQ1 How do members of agile software development teams perceive and experi-
+ence leadership that aligns with team characteristics and values (i.e. prototypical
+leadership)? Our research reveals the perception of prototypical leadership in
+agile software development in various ways. To comprehend these ﬁndings and
+address RQ1, we draw upon two theories: Social Identity Theory [15] and Social
+Identity Theory of Leadership [16]. The former theory explains the formation of
+agile teams based on shared traits, norms, and values, mirroring the categoriza-
+tion of individuals into groups. The study aligns with this theory, emphasizing
+that team formation centers on shared traits, norms, and values.
+As team members collectively deﬁne their identity in relation to the group,
+they also become more representative of the group, a concept known as group
+prototypicality [16]. This aligns with the Social Identity Theory of Leadership,
+where group members depend on leaders who embody the group’s traits and
+values, attracting followers and support.
+The above results show that, in agile teams, many leaders are likely to em-
+body leader prototypicality since the leadership is more shared. Team members
+who assume leadership positions tend to exhibit the deﬁning traits of the group,
+becoming prototypical leaders [11]. This phenomenon can also extend to man-
+agerial roles within the team, as senior members often progress to managerial
+positions. Additionally, external managerial leaders who share values and traits
+with the team tend to exhibit prototypical leadership. This concept may explain
+why teams accept some appointed leaders but reject others. A potential con-
+ﬂict can arise between various types of leaders within a team: those who emerge
+naturally and embody the team’s ideal characteristics (prototypical), and for-
+mally appointed managers. To mitigate this conﬂict, it is advisable to ensure
+that an appointed manager’s values and traits align closely with those of the
+team. However, if the team’s emerging values and norms diverge signiﬁcantly
+from the organization’s, it becomes crucial to proactively establish team norms
+during the team formation process. This approach can help bridge the gap be-
+tween organizational goals and team dynamics, fostering a more cohesive and
+eﬀective work environment.
+RQ2 What impact does prototypical leadership have on agile teams? This study
+highlights the signiﬁcant role of prototypical leadership in agile software de-
+velopment teams, bridging theoretical foundations with practical realities. Our
+ﬁndings reveal that team members who embody the characteristics of prototypi-
+cal leaders facilitate shared leadership by aligning with the team’s values, norms,
+and shared traits. Drawing from the Social Identity Theory of Leadership [16],
+we observe that these leaders play a crucial role in shaping and reinforcing the
+team’s social identity. In the context of agile development, where leadership is
+often distributed and collaborative [3], prototypical leaders emerge as key ﬁgures
+who embody the team’s identity, contributing to success by sharing knowledge,
+guiding peers, and supporting team members. This aligns with Moe et al.’s [4]
+
+===== PAGE 11 =====
+ﬁndings on the positive impact of shared leadership on team performance and
+member satisfaction in agile environments.
+Our study reveals that senior members within agile teams often assume the
+role of prototypical leaders, retaining signiﬁcant inﬂuence and naturally attract-
+ing followers. This phenomenon can be explained through the Social Identity
+Theory of Leadership, which posits that eﬀective leaders are those who best rep-
+resent the group’s deﬁning characteristics [16]. The support these senior members
+receive aligns with previous research indicating that prototypical leaders often
+receive backing even when their actions might be perceived as unfair [25,17].
+This unconditional support stems from the belief that prototypical leaders act
+in the team’s best interest [11], a perception reinforced by their track record of
+contributing to the team’s success. In our observed agile team context, senior
+members signiﬁcantly inﬂuence both technical work and social identity forma-
+tion.
+The presence of prototypical leaders in agile teams appears to have a positive
+impact on team dynamics and performance. This impact can be attributed to
+enhanced group-oriented behavior, which van Knippenberg and Hogg [17] iden-
+tify as crucial for leadership eﬀectiveness in organizations. In agile teams, this
+translates to improved collaboration and a stronger focus on collective goals.
+Furthermore, the alignment of prototypical leaders with team values and norms
+facilitates more eﬀective decision-making processes, supporting Moe et al.’s [4]
+ﬁndings on the positive impact of shared leadership on team performance. Our
+study suggests that the presence of prototypical leaders contributes to higher job
+satisfaction among team members, which can be attributed to the leader’s abil-
+ity to represent and promote the group’s identity, as highlighted by the Social
+Identity Theory of Leadership [16].
+In conclusion, prototypical leadership seems to have a positive impact on
+agile teams. Agile teams beneﬁt from leaders who align with the team’s values
+and exhibit group-oriented behavior, which then seems to lead to higher job
+satisfaction.
+5.1
+Implications
+The study’s ﬁndings carry some implications for bolstering leadership eﬀective-
+ness within agile software teams. Organizations aiming to cultivate teamwork
+and eﬀective leadership could prioritize individuals who align well with the team.
+While it is crucial for organizations to seek individuals who harmonize with agile
+teams, it is equally important to remain mindful of the potential limitations of
+exclusively focusing on this aspect. Striking a balance between aligning team
+members and recognizing the value of diverse skills and backgrounds could yield
+beneﬁts.
+Leaders, particularly senior members, should exemplify team-focused behav-
+ior and possess the requisite attributes for managerial roles. Actively engaging
+with the team, making collective decisions, and adhering to agile software devel-
+opment principles can enhance senior members’ support within the team. Finally,
+
+===== PAGE 12 =====
+organizations could strive to encourage prototypicality and group-oriented be-
+havior among their leaders to augment eﬀective leadership. This entails selecting
+leaders who share alignment with the team’s values, norms, and traits, while also
+supporting their development in embodying the group’s deﬁning characteristics.
+By taking these implications into account, organizations might be able to foster
+more eﬀective leadership.
+5.2
+Threats to validity
+This section addresses potential validity threats in the study, encompassing four
+key areas: external validity, internal validity, construct validity, and reliability,
+following parts of the framework established by Gren [26].
+External validity The study’s limited sample size, drawn from teams exclusively
+in Sweden, raises concerns about the generalizability of the ﬁndings. The use of
+convenience and purposive sampling methods introduces the potential for bias
+and restricts the broad applicability of the results. Moreover, the inclusion of six
+participants from the same team may introduce bias and might not accurately
+represent diverse teams in diﬀerent organizations.
+To somewhat mitigate these threats, we made deliberate eﬀorts to enhance
+sample diversity by selecting participants with varying backgrounds, teams, ages,
+genders, and roles. Additionally, the study aimed to encompass organizations
+from diverse industries and sizes to achieve a more representative sample.
+It is also important to note that our study was conducted exclusively in
+Swedish companies, which may limit the generalizability of our ﬁndings. Na-
+tional, regional, and cultural contexts can strongly inﬂuence values and norms
+related to leadership and management styles. Sweden, in particular, is known
+for its preference for ﬂat work hierarchies and participative leadership [27].
+Internal validity The reliance on self-reported data in the study may be inﬂu-
+enced by recall bias and social desirability bias. To try to address these biases,
+we emphasized honesty, anonymity, and voluntary participation. Conducting in-
+terviews in both Swedish and English could also have impacted the quality of
+conversations, introducing potential language-related biases and variations in
+participant comfort levels and ﬂuency.
+Construct validity A qualitative interview study and a thematic analysis method
+inherently involve researcher interpretation and judgment, introducing subjectiv-
+ity. As a single researcher conducted the interviews and coding, personal biases
+and preconceived notions may have inﬂuenced data collection, analysis, and re-
+sult interpretation. To try to address this threat, the second author reviewed the
+quotes and their related codes.
+Reliability The translation process from Swedish to English for the interview
+guide and transcripts introduces the possibility of errors or inaccuracies, poten-
+tially aﬀecting the reliability of data analysis. To somewhat mitigate this, we
+
+===== PAGE 13 =====
+used software for initial translation and conducted manual checks. Additionally,
+participants received summaries of their statements to conﬁrm accurate inter-
+pretation.
+6
+Conclusion and Future Work
+Our study explored prototypical leadership in agile software development teams
+through qualitative interviews with six teams across ﬁve Swedish companies. We
+found that prototypical leadership does exist in agile software development, and
+possibly even more than in a tradition team setup due to shared leadership and
+senior members also doing leadership work. We also saw that protptypicality is
+seen as increasing the leaders eﬀectiveness.
+Future research could delve into the dynamics and implications of prototyp-
+ical leadership in agile teams. Investigating preferences for internal leaders and
+their impact on group cohesion and prototypicality, as well as exploring how fol-
+lower perceptions inﬂuence leadership eﬀectiveness, are valuable areas for further
+study. Also, future research should explore how prototypical leadership manifests
+in agile teams across diﬀerent cultural contexts.
+References
+1. House, R.J., Aditya, R.N.: The social scientiﬁc study of leadership: Quo vadis?
+Journal of management 23(3) (1997) 409–473
+2. Hogg, M.A., Vaughan, G.M.: Social Psychology. 7 edn. Pearson, Harlow, England
+(2014)
+3. Gren, L., Ralph, P.: What makes eﬀective leadership in agile software development
+teams? In: The 44th International Conference on Software Engineering, New York,
+ACM (May 21–29 2022)
+4. Moe, N.B., Dingsyr, T., Kvangardsnes, O.: Understanding shared leadership in
+agile development: A case study. In: 2009 42nd Hawaii international conference on
+system sciences, IEEE (2009) 1–10
+5. Langfred, C.W.: The paradox of self-management: Individual and group autonomy
+in work groups. Journal of Organizational Behavior 21(5) (2000) 563–585
+6. Fowler, M., Highsmith, J.: The Agile Manifesto. In Software Development, Issue
+on Agile Methodologies, last accessed on December 29th, 2006 (August 2001)
+7. Tessem, B.: Individual empowerment of agile and non-agile software developers in
+small teams. Information and software technology 56(8) (2014) 873–889
+8. Spiegler, S.V., Heinecke, C., Wagner, S.: An empirical study on changing leadership
+in agile teams. Empirical Software Engineering 26 (2021) 1–35
+9. Xu, P., Shen, Y.: The role of leadership in agile software development. In: Inter-
+national Research Workshop on IT Project Management 2018, AIS (2018) 1–9
+10. Modi, S., Strode, D.: Leadership in agile software development: a systematic lit-
+erature review. In: Australasian Conference on Information Systems ACIS 2020
+Proceedings 55, AIS (2020) 1–12
+11. Kark, R., Shamir, B.:
+The dual eﬀect of transformational leadership: Priming
+relational and collective selves and further eﬀects on followers. In: Transformational
+and charismatic leadership: The road Ahead 10th anniversary edition. Emerald
+Group Publishing Limited (2013) 77–101
+
+===== PAGE 14 =====
+12. Avolio, B.J., Keng-Highberger, F.T., Lord, R.G., Hannah, S.T., Schaubroeck, J.M.,
+Kozlowski, S.W.: How leader and follower prototypical and antitypical attributes
+inﬂuence ratings of transformational leadership in an extreme context. Human
+Relations 75(3) (2022) 441–474
+13. Grille, A., Schulte, E.M., Kauﬀeld, S.: Promoting shared leadership: A multilevel
+analysis investigating the role of prototypical team leader behavior, psychological
+empowerment, and fair rewards. Journal of Leadership & Organizational Studies
+22(3) (2015) 324–339
+14. Diebold, P., Dahlem, M.: Agile practices in practice: a mapping study. In: Pro-
+ceedings of the 18th International Conference on Evaluation and Assessment in
+Software Engineering. (2014) 1–10
+15. Tajfel, H., Billig, M.G., Bundy, R.P., Flament, C.: Social categorization and inter-
+group behaviour. European journal of social psychology 1(2) (1971) 149–178
+16. Hogg, M.A.: A social identity theory of leadership. Personality and social psychol-
+ogy review 5(3) (2001) 184–200
+17. Van Knippenberg, D., Hogg, M.A.: A social identity model of leadership eﬀective-
+ness in organizations. Research in organizational behavior 25 (2003) 243–295
+18. Barreto, N.B., Hogg, M.A.:
+Evaluation of and support for group prototypical
+leaders: A meta-analysis of twenty years of empirical research. Social Inﬂuence
+12(1) (2017) 41–55
+19. Nye, J.L., Forsyth, D.R.: The eﬀects of prototype-based biases on leadership ap-
+praisals: A test of leadership categorization theory. Small Group Research 22(3)
+(1991) 360–379
+20. Rast III, D.E., Gaﬀney, A.M., Hogg, M.A., Crisp, R.J.: Leadership under uncer-
+tainty: When leaders who are non-prototypical group members can gain support.
+Journal of Experimental Social Psychology 48(3) (2012) 646–653
+21. Runeson, P., H¨ost, M.: Guidelines for conducting and reporting case study research
+in software engineering. Empirical software engineering 14(2) (2009) 131
+22. Braun, V., Clarke, V.: Using thematic analysis in psychology. Qualitative research
+in psychology 3(2) (2006) 77–101
+23. Etikan, I., Musa, S.A., Alkassim, R.S., et al.: Comparison of convenience sampling
+and purposive sampling.
+American journal of theoretical and applied statistics
+5(1) (2016) 1–4
+24. Guest, G., Bunce, A., Johnson, L.: How many interviews are enough? an experi-
+ment with data saturation and variability. Field methods 18(1) (2006) 59–82
+25. Ullrich, J., Christ, O., van Dick, R.: Substitutes for procedural fairness: Proto-
+typical leaders are endorsed whether they are fair or not.
+Journal of Applied
+Psychology 94(1) (2009) 235
+26. Gren, L.: Standards of validity and the validity of standards in behavioral software
+engineering research: The perspective of psychological test theory. In: International
+Symposium on Empirical Software Engineering and Measurement (ESEM). (2018)
+1–4
+27. Holmberg, I., ˚Akerblom, S.: Modelling leadership—implicit leadership theories in
+sweden. Scandinavian journal of management 22(4) (2006) 307–329

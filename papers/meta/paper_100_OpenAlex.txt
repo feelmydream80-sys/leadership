@@ -1,0 +1,11 @@
+Title: Predicting unit performance by assessing transformational and transactional leadership.
+Authors: Bernard M. Bass, Bruce J. Avolio, Dong I. Jung, Yair Berson
+Source: OpenAlex
+Date: 2003-01-01
+URL: https://doi.org/10.1037/0021-9010.88.2.207
+
+Abstract (EN):
+How do leadership ratings collected from units operating under stable conditions predict subsequent performance of those units operating under high stress and uncertainty? To examine this question, the authors calculated the predictive relationships for the transformational and transactional leadership of 72 light infantry rifle platoon leaders for ratings of unit potency, cohesion, and performance for U.S. Army platoons participating in combat simulation exercises. Both transformational and transactional contingent reward leadership ratings of platoon leaders and sergeants positively predicted unit performance. The relationship of platoon leadership to performance was partially mediated through the unit's level of potency and cohesion. Implications, limitations, and future directions for leadership research are discussed.
+
+Abstract (KO):
+안정적인 조건에서 운영되는 단위에서 수집된 리더십 등급은 높은 스트레스와 불확실성 하에서 운영되는 단위의 후속 성과를 어떻게 예측합니까? 이 질문을 조사하기 위해 저자는 전투 시뮬레이션 훈련에 참여하는 미 육군 소대에 대한 부대 잠재력, 결속력 및 성능 등급에 대한 72명의 경보병 소총 소대 지휘관의 변혁 및 거래 리더십에 대한 예측 관계를 계산했습니다. 소대장과 상사의 변혁적 및 거래적 보상 리더십 등급 모두 부대 성과를 긍정적으로 예측했습니다. 소대 리더십과 성과의 관계는 부대의 잠재력과 결속력 수준을 통해 부분적으로 매개되었습니다. 리더십 연구에 대한 시사점, 한계 및 향후 방향이 논의됩니다.

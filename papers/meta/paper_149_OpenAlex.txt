@@ -1,0 +1,11 @@
+Title: Authentic Leadership: Development and Validation of a Theory-Based Measure†
+Authors: Fred O. Walumbwa, Bruce J. Avolio, William L. Gardner, Tara S. Wernsing, Suzanne J. Peterson
+Source: OpenAlex
+Date: 2007-10-26
+URL: https://doi.org/10.1177/0149206307308913
+
+Abstract (EN):
+This study developed and tested a theory-based measure of authentic leadership using five separate samples obtained from China, Kenya, and the United States. Confirmatory factor analyses supported a higher order, multidimensional model of the authentic leadership construct (the Authentic Leadership Questionnaire [ALQ]) comprising leader self-awareness, relational transparency, internalized moral perspective, and balanced processing. Structural equation modeling (SEM) demonstrated the predictive validity for the ALQ measure for important work-related attitudes and behaviors, beyond what ethical and transformational leadership offered. Finally, results revealed a positive relationship between authentic leadership and supervisor-rated performance. Implications for research and practice are discussed.
+
+Abstract (KO):
+이 연구는 중국, 케냐, 미국에서 얻은 5개의 개별 표본을 사용하여 이론 기반의 진정한 리더십 측정 방법을 개발하고 테스트했습니다. 확인적 요인 분석은 리더 자기 인식, 관계 투명성, 내면화된 도덕적 관점 및 균형 잡힌 처리로 구성된 진정한 리더십 구성(ALQ)의 고차원적이고 다차원적인 모델을 지원했습니다. 구조 방정식 모델링(SEM)은 윤리적이고 변혁적인 리더십이 제공하는 것 이상으로 중요한 업무 관련 태도 및 행동에 대한 ALQ 측정의 예측 타당성을 입증했습니다. 마지막으로, 결과는 진정한 리더십과 감독자가 평가한 성과 사이에 긍정적인 관계가 있음을 보여주었습니다. 연구와 실습에 대한 시사점을 논의합니다.

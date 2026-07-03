@@ -1,0 +1,1450 @@
+RESEARCH
+Open Access
+© The Author(s) 2024. Open Access  This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, 
+sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and 
+the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this 
+article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included 
+in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will 
+need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+Emam et al. BMC Nursing          (2024) 23:772 
+https://doi.org/10.1186/s12912-024-02395-w
+BMC Nursing
+*Correspondence:
+Sabrine Mohammed Emam
+sabreen_emam@nursing.asu.edu.eg
+1Faculty of Nursing, Ain Shams University, Cairo, Egypt
+Abstract
+Background  Leadership in nursing is crucial for delivering high-quality healthcare and ensuring positive outcomes 
+for patients, staff, and institutions. Many nurses in leadership positions lack formal training, which can compromise 
+their effectiveness. This study aims to evaluate the effect of a leadership development program utilizing 360-degree 
+feedback on head nurses’ leadership practices.
+Methods  A true-experimental design was employed in three healthcare institutions. The study involved 80 head 
+nurses (40 intervention, 40 control), 240 staff nurses, and 29 supervisors. The intervention group participated in a six-
+week leadership development program using 360-degree feedback. Data were collected pre- and post-intervention 
+using the Leadership Development and 360-Degree Feedback Knowledge Questionnaire and the Leadership 
+Practices Inventory (LPI).
+Results  The intervention group showed significant improvements in leadership knowledge and practices across all 
+dimensions. Knowledge scores increased from 25.1 ± 8.8 to 93.0 ± 5.1 post-intervention, maintaining at 83.2 ± 7.1 at 
+follow-up. Self-assessed leadership scores improved from 88.1 ± 6.0 to 97.5 ± 2.7, and 98.5 ± 2.0 at follow-up. Supervisor 
+and staff assessments also showed substantial increases. Multiple linear regression analyses confirmed the strong 
+positive impact of the intervention on leadership outcomes.
+Conclusion  The leadership development program using 360-degree feedback significantly enhanced head nurses’ 
+leadership knowledge and practices. The results suggest that such programs can improve leadership capabilities in 
+healthcare settings, leading to better patient care and organizational performance. Future research should address 
+group homogeneity and explore long-term impacts on patient outcomes.
+Keywords  Leadership, 360-degree feedback, Nurse administrators, Professional development, Feedback, 
+Psychological, Organizational culture
+Leaders development program by 360 
+degree feedback: reflection on head nurses’ 
+leadership practices
+Sabrine Mohammed Emam1*, Samah Faisal Fakhry1 and Hanaa Mohamed Abdrabou1
+Page 2 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+Introduction
+Leadership in nursing is crucial for delivering high-
+quality healthcare and ensuring positive outcomes for 
+patients, staff, and institutions [1]. Despite its impor­
+tance, many nurses in leadership positions often lack 
+formal training, which can compromise their effective­
+ness and, consequently, the quality of care provided [2, 
+3]. Leadership development programs, therefore, have 
+become a priority in the healthcare environment, aiming 
+to equip nurse leaders with the necessary skills to man­
+age and inspire their teams effectively [4].
+One of the innovative approaches to leadership devel­
+opment is the use of 360-degree feedback, also known 
+as multi-source feedback [5–7]. This method involves 
+collecting comprehensive feedback on a leader’s perfor­
+mance from various sources, including peers, subordi­
+nates, and supervisors, providing a well-rounded view 
+of their strengths and areas for improvement [8, 9].In 
+previous studies, the 360-degree feedback approach has 
+shown promise in enhancing self-awareness and improv­
+ing leadership behaviors [10–12]. Despite this, there is 
+a lack of consensus on the effectiveness of this method 
+compared to other leadership development interven­
+tions. Moreover, existing literature often fails to address 
+how the unique challenges of acute healthcare settings 
+may influence the outcomes of such interventions [13, 
+14].
+Despite the recognized importance of effective lead­
+ership in healthcare, the complexity and high-pressure 
+environment of hospitals often pose significant chal­
+lenges for nurse leaders [15]. Head nurses, in particular, 
+must navigate diverse responsibilities, ranging from clini­
+cal oversight to administrative tasks and team manage­
+ment [16]. Traditional leadership training methods often 
+overlook these multifaceted demands, focusing instead 
+on generic management skills. This oversight can leave 
+head nurses ill-prepared to handle the unique challenges 
+of healthcare leadership, especially in specialized depart­
+ments like critical care, where decision-making and 
+team coordination are critical [17]. The incorporation of 
+360-degree feedback into leadership development pro­
+grams offers a tailored approach that addresses these spe­
+cific needs, providing actionable insights into a leader’s 
+interpersonal and organizational skills [18].
+This study’s findings will contribute to the existing body 
+of literature on leadership development in healthcare by 
+providing robust evidence on the impact of 360-degree 
+feedback. The results are expected to inform future 
+training programs, enhancing the leadership capacities 
+of head nurses and ultimately improving patient care 
+outcomes.
+This study aims to fill this gap by assessing the effect of 
+a leadership development program utilizing 360-degree 
+feedback on the leadership practices of head nurses. 
+Specifically, the study will investigate whether this 
+approach leads to measurable improvements in lead­
+ership knowledge and practices. By focusing on head 
+nurses across various hospital departments, including 
+critical care units, this research will provide insights into 
+the practical application and benefits of 360-degree feed­
+back in a real-world healthcare environment.
+Aim of the study
+The study aims to evaluate the effect of a leadership 
+development program utilizing 360-degree feedback on 
+head nurses’ leadership practices.
+Hypotheses
+1.	 Hypothesis 1: Participation in a leadership 
+development program utilizing 360-degree feedback 
+will significantly improve the leadership knowledge 
+of head nurses compared to those who do not 
+participate in the program.
+2.	 Hypothesis 2: Head nurses who undergo the 
+leadership development program will demonstrate 
+significant improvements in their leadership 
+practices, as measured by the Leadership Practices 
+Inventory (LPI), compared to head nurses who do not 
+undergo the program.
+3.	 Hypothesis 3: Head nurses who participate in 
+the leadership development program will receive 
+higher leadership performance ratings from their 
+supervisors and staff nurses compared to those who 
+do not participate in the program.
+Methods
+Design
+A true-experimental design was employed in this study to 
+evaluate the effect of a leadership development program 
+using 360-degree feedback on the leadership practices of 
+head nurses. The study utilized a randomized controlled 
+trial (RCT) approach, where participants were randomly 
+assigned to either the intervention group or the control 
+group, ensuring comparability between the groups.
+Setting
+The study was conducted in three prominent healthcare 
+institutions: Ain Shams University Hospital, a special­
+ized pediatric hospital, and El-Demerdash Hospital. Ain 
+Shams University Hospital, a major teaching hospital 
+affiliated with one of Egypt’s oldest universities, offers 
+a wide range of specialized medical services, making it 
+ideal for studying leadership practices in high-stakes 
+environments. The pediatric hospital focuses on the care 
+of children and adolescents, providing a full spectrum of 
+services from general care to specialized treatments. This 
+Page 3 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+setting requires unique leadership dynamics, particularly 
+in communication and empathy, to support patient and 
+family-centered care. El-Demerdash Hospital, known for 
+its comprehensive medical and surgical services, includes 
+critical care units that cater to patients needing advanced 
+life support and continuous monitoring. The inclusion 
+of these critical care settings allows for an examination 
+of leadership practices in environments characterized by 
+high patient acuity and multidisciplinary collaboration. 
+The diversity in clinical departments and patient popu­
+lations across these hospitals offers a robust platform 
+for evaluating leadership practices among head nurses, 
+ensuring that the study’s findings are applicable to a vari­
+ety of healthcare contexts.
+Sample and sampling
+The study employed a combination of proportional and 
+disproportional stratified random sampling. For head 
+nurses, a proportional sample ensured balanced rep­
+resentation, while for staff nurses, a disproportional 
+approach was used to gather adequate feedback from a 
+broader base of subordinates. The study involved a care­
+fully structured sampling process to ensure representa­
+tive data from key stakeholders in the healthcare setting. 
+The sampling included head nurses, staff nurses, and 
+supervisors, following a mixed proportional and dispro­
+portional stratified random sampling approach.
+1.	 Head Nurses: A proportional sample of 80 head 
+nurses was selected, with 40 head nurses assigned 
+to the intervention group and 40 to the control 
+group. This sample size was determined based 
+on a moderate effect size (0.65) aiming for a 95% 
+confidence level and 80% power in the study. The 
+head nurses were selected to participate based 
+on a minimum of two years of experience in their 
+roles, ensuring a sufficient level of expertise and 
+responsibility within the healthcare system.
+2.	 Staff Nurses: A disproportional stratified random 
+sample of 240 staff nurses was included, with 120 
+staff nurses allocated to each group. For each head 
+nurse, three subordinate staff nurses were randomly 
+selected to provide feedback and participate in the 
+study. This selection method was also guided by 
+the need to achieve a moderate effect size (0.40), 
+maintaining a 95% confidence level and 80% 
+study power. The involvement of staff nurses was 
+crucial for evaluating the impact of the leadership 
+development program on those directly supervised 
+by the head nurses.
+3.	 Supervisors: All available supervisors, totaling 
+29, were included in the study. These supervisors 
+provided higher-level assessments and feedback 
+as part of the 360-degree feedback process. The 
+inclusion of all supervisors was essential to capture 
+a comprehensive evaluation of the head nurses’ 
+leadership practices from multiple perspectives.
+Inclusion and exclusion criteria
+Inclusion criteria
+ 	•
+Participants (head nurses, staff nurses, and 
+supervisors) with at least two years of experience in 
+their respective roles.
+ 	•
+Consent to participate in the study, including 
+attending all required sessions and completing 
+assessments.
+Exclusion criteria
+ 	•
+Individuals with prior participation in similar 
+leadership development programs to avoid biases 
+due to previous exposure.
+Sample size calculation  The sample size was determined 
+using power analysis to ensure sufficient statistical power 
+to detect meaningful differences between the intervention 
+and control groups. Based on a desired power of 0.80, an 
+alpha level of 0.05, and an expected moderate effect size 
+(Cohen’s d = 0.50) for changes in leadership practices, the 
+required sample size was calculated to be 80 head nurses. 
+The same parameters were applied to calculate the sam­
+ple size for assistant nurses and supervisors, resulting in 
+a total of 240 assistant nurses and 40 supervisors. These 
+calculations were grounded in prior studies and practical 
+considerations within the similar healthcare setting [19–
+21]. The selection flow chat is shown in Fig. 1.
+Data collection tools
+The data collection tools utilized in this study included 
+the leadership development and 360-degree feedback 
+assessment knowledge questionnaire, as well as the Lead­
+ership Practices Inventory (LPI).
+The Leadership Development and 360-Degree feedback 
+knowledge questionnaire
+The Leadership Development and 360-Degree Feed­
+back Knowledge Questionnaire is a comprehensive tool 
+designed to assess head nurses’ knowledge of leadership 
+and 360-degree feedback mechanisms. originally devel­
+oped by Beverly alimo-metcalfe (1998) [8] and adapted 
+by the researcher, based on the works of Williams (2021) 
+and Pavlik (2019) [22], and translated into Arabic by 
+Hussein (2020) [23], this questionnaire features 42 mul­
+tiple-choice questions across five dimensions: leadership 
+Page 4 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+and management concepts (8 questions), leadership 
+styles (8 questions), leadership practices (13 questions), 
+360-degree feedback assessment (7 questions), and self-
+awareness (6 questions).
+Each correct response earns one point, with scores for 
+each dimension summed and converted into percent­
+age scores. Knowledge is considered satisfactory if the 
+score is 60% or higher. Validity was established through 
+face and content validation by five nursing administra­
+tion experts, leading to modifications for clarity and 
+relevance. The tool demonstrated high reliability, with a 
+Guttman split-half coefficient of 0.729.
+This questionnaire serves as a robust and reli­
+able instrument, providing valuable insights into the 
+Fig. 1  The sample flow chart
+ 
+Page 5 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+leadership capabilities of head nurses and facilitating tar­
+geted development and effective feedback mechanisms to 
+enhance their leadership practices.
+The Leadership practices inventory (LPI)
+The Leadership Practices Inventory (LPI) is a com­
+prehensive tool developed by Kouzes and Posner in 
+2017 to assess leadership behaviors [24] and was trans­
+lated into Arabic by Hussein in 2021 [23]. It comprises 
+30 self-administered statements categorized into five 
+dimensions: “Model the Way,” “Inspire a Shared Vision,” 
+“Challenge the Process,” “Enable Others to Act,” and 
+“Encourage the Heart.” Each statement is rated on a 
+5-point Likert scale, ranging from “rarely” to “always.” For 
+example, a statement might read, “I set a personal exam­
+ple of what I expect from others,” reflecting the “Model 
+the Way” dimension. The scoring involves summing the 
+scores for each dimension and calculating the mean to 
+obtain percentage scores. Knowledge is considered satis­
+factory if the score is 60% or higher.
+The LPI’s validity is well-established, supported by 
+extensive research. It has demonstrated high internal 
+consistency, with Cronbach’s alpha coefficients ranging 
+from 0.73 to 0.95. In this study, the LPI showed a Cron­
+bach’s alpha of 0.98, indicating extremely high reliability. 
+While such a high value suggests that the items are highly 
+correlated and may be measuring very similar constructs, 
+it ensures a precise measure of specific leadership traits. 
+Combining these variables into a single score provides 
+a comprehensive and precise assessment of leadership 
+practices, allowing for reliable inferences about the head 
+nurses’ leadership capabilities. The tool provides valuable 
+insights into leadership behaviors and areas for improve­
+ment, promoting self-awareness and effective leadership 
+practices. It is widely used in both academic research 
+and practical leadership development programs, helping 
+leaders to enhance their organizational performance and 
+team dynamics by offering a holistic view of their leader­
+ship capabilities. Through 360-degree feedback, the LPI 
+facilitates targeted development and supports the con­
+tinuous improvement of leadership skills.
+Operational definitions of variables
+Leadership Knowledge
+ 	•
+Definition: The understanding and awareness of 
+concepts, styles, practices, and feedback mechanisms 
+related to leadership among head nurses.
+ 	•
+Measurement: Assessed using the Leadership 
+Development and 360-Degree Feedback Knowledge 
+Questionnaire, which includes dimensions such as 
+leadership and management concepts, leadership 
+styles, leadership practices, 360-degree feedback 
+assessment, and self-awareness. Each correct answer 
+is scored as one point, with a total score converted 
+into a percentage. Knowledge is considered 
+satisfactory if the score is 60% or higher.
+Leadership practices
+ 	•
+Definition: The behaviors and actions exhibited 
+by head nurses in their leadership roles, including 
+modeling behavior, inspiring a shared vision, 
+challenging processes, enabling others to act, and 
+encouraging the heart.
+ 	•
+Measurement: Evaluated using the Leadership 
+Practices Inventory (LPI), which consists of 30 
+self-administered statements rated on a 5-point 
+Likert scale. Scores are summed and averaged to 
+provide a percentage score for each dimension. The 
+LPI’s validity and reliability are supported by high 
+Cronbach’s alpha coefficients.
+360-Degree feedback
+ 	•
+Definition: A comprehensive evaluation method 
+that gathers feedback on an individual’s leadership 
+performance from multiple sources, including 
+supervisors, peers, and subordinates.
+ 	•
+Measurement: Incorporated into the leadership 
+development program to provide a holistic 
+assessment of head nurses’ leadership capabilities, 
+identifying strengths and areas for improvement.
+Self-evaluation of performance
+ 	•
+Definition: The head nurses’ own assessment of 
+their leadership practices and knowledge.
+ 	•
+Measurement: Part of the 360-degree feedback 
+process and the Leadership Practices Inventory (LPI), 
+where head nurses rate their own behaviors and 
+practices.
+Field Work
+The field work for this study involved several key phases, 
+including preparation, implementation of the leadership 
+development program, data collection, and follow-up. 
+Each phase was meticulously planned and executed to 
+ensure the integrity and reliability of the data collected.
+Preparation phase
+Before the commencement of the intervention, a com­
+prehensive orientation session was conducted for all 
+participants, including head nurses, staff nurses, and 
+Page 6 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+supervisors. This session aimed to familiarize partici­
+pants with the study’s objectives, procedures, and expec­
+tations. The orientation included detailed explanations 
+of the 360-degree feedback mechanism, the roles of each 
+participant, and the significance of their input. Informed 
+consent was obtained from all participants, ensuring they 
+understood their voluntary participation and the confi­
+dentiality of their responses.
+Additionally, the research team coordinated with hos­
+pital administration and department heads to schedule 
+the training sessions and data collection activities. This 
+coordination ensured minimal disruption to the hospi­
+tal’s daily operations and facilitated the smooth running 
+of the study. Necessary materials, such as feedback forms, 
+questionnaires, and training modules, were prepared and 
+organized in advance.
+Implementation of the Leadership Development Program
+The core component of the field work involved the 
+implementation of a structured leadership development 
+program for the intervention group. This program was 
+designed based on the principles of the 360-degree feed­
+back process and included multiple interactive training 
+sessions. These sessions covered various aspects of lead­
+ership, including communication skills, conflict resolu­
+tion, decision-making, and emotional intelligence. The 
+training was delivered through a combination of lectures, 
+workshops, and role-playing exercises, aiming to enhance 
+the head nurses’ leadership competencies.
+Each training session was facilitated by experienced 
+trainers who specialized in healthcare leadership. The 
+sessions were conducted over a period of six weeks, with 
+weekly meetings lasting three hours each. The content 
+was tailored to address the specific challenges faced by 
+head nurses in a hospital setting. During these sessions, 
+participants were encouraged to engage actively, share 
+their experiences, and discuss practical applications of 
+the leadership concepts being taught.
+Data Collection
+Data collection was conducted in two main phases: pre-
+intervention and post-intervention.
+Pre-intervention Data Collection  Prior to the start of 
+the training program, baseline data were collected from 
+all participants. Head nurses, staff nurses, and supervi­
+sors completed the Leadership Practices Inventory (LPI) 
+and the Leadership Development and 360-Degree Feed­
+back Knowledge Questionnaire. These instruments were 
+used to assess the current level of leadership knowledge 
+and practices among head nurses, as well as perceptions 
+of their leadership effectiveness from the perspective of 
+staff nurses and supervisors.
+Post-intervention Data Collection  Following the com­
+pletion of the leadership development program, the same 
+questionnaires were administered to all participants to 
+measure any changes in leadership knowledge and prac­
+tices. The post-intervention data collection took place one 
+month after the final training session, providing sufficient 
+time for the participants to apply and reflect on the skills 
+and knowledge gained.
+Follow-Up and Feedback
+Following the completion of the leadership development 
+program and the post-intervention data collection, a 
+follow-up phase was conducted three months later. This 
+follow-up aimed to assess the long-term impact of the 
+program on head nurses’ leadership practices. The same 
+questionnaires used in the pre- and post-intervention 
+phases were administered to the participants to evalu­
+ate the retention and application of the skills and knowl­
+edge gained during the program. This phase was critical 
+in determining the sustainability of the program’s effects 
+and providing insights into areas requiring ongoing sup­
+port and reinforcement.
+Data Analysis and Reporting
+The collected data were systematically analyzed to iden­
+tify significant differences between the pre- and post-
+intervention scores, as well as between the intervention 
+and control groups. This analysis helped in evaluating 
+the effectiveness of the leadership development pro­
+gram. The findings were compiled into a detailed report, 
+highlighting key outcomes, insights, and recommenda­
+tions for future leadership training initiatives within the 
+healthcare sector.
+The field work was crucial in gathering comprehen­
+sive and actionable data on the impact of the leadership 
+development program. It provided valuable insights into 
+the enhancement of leadership skills among head nurses 
+and the overall improvement in the quality of care within 
+the hospital setting. The structured and well-coordinated 
+field work ensured the successful completion of the study 
+and contributed significantly to the understanding of 
+effective leadership practices in healthcare.
+Statistical analysis
+Data entry and statistical analysis were performed using 
+the SPSS 20.0 statistical software package. Descriptive 
+statistics, such as frequencies and percentages for quali­
+tative variables, and means, standard deviations, and 
+medians for quantitative variables, were used to pres­
+ent the data. The reliability of the knowledge and lead­
+ership tools was assessed using Split-half Gutman and 
+Cronbach’s alpha coefficients, respectively. F-tests were 
+utilized to compare quantitative continuous data, while 
+chi-square tests were used for qualitative categorical 
+Page 7 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+variables. Spearman rank correlation was employed to 
+assess the interrelationships among quantitative and 
+ranked variables. Multiple linear regression analysis was 
+conducted to identify independent predictors of knowl­
+edge and leadership scores, with analysis of variance for 
+the full regression models. Statistical significance was 
+determined at a p value < 0.05.
+Results
+Table 1 presents the demographic characteristics of head 
+nurses in the study and control groups, revealing several 
+notable differences. The study group had a significantly 
+higher average age (48.9 ± 4.9) compared to the con­
+trol group (44.7 ± 6.8), with a p-value of 0.002, based on 
+the t-test comparing mean values. There was also a sig­
+nificant difference in marital status distribution, with a 
+higher proportion of married individuals in the control 
+group (97.5%) compared to the study group (82.5%), as 
+indicated by a p-value of 0.03 from the chi-square test. 
+Additionally, the study group consisted exclusively of 
+female participants, similar to the control group, with 
+no significant difference in gender distribution (p = 0.31). 
+Educational qualifications were comparable between the 
+groups, predominantly consisting of diploma holders. A 
+Table 1  Demographic characteristics of head nurses in the study and control groups
+Group
+X2 test
+p-value
+Study
+(n = 40)
+Control
+(n = 40)
+No.
+%
+No.
+%
+Age:
+  < 50
+21
+52.5
+28
+70.0
+  50+
+19
+47.5
+12
+30.0
+2.58
+0.11
+  Range
+40–59
+32–59
+  Mean ± SD
+48.9 ± 4.9
+44.7 ± 6.8
+t = 3.17
+0.002*
+  Median
+49.0
+43.5
+Gender:
+  Male
+1
+2.5
+0
+0.0
+  Female
+39
+97.5
+40
+100.0
+1.01
+0.31
+Marital status:
+  Unmarried
+7
+17.5
+1
+2.5
+  Married
+33
+82.5
+39
+97.5
+5.00
+0.03*
+Nursing qualification:
+  Diploma
+31
+77.5
+33
+82.5
+  Bachelor
+9
+22.5
+7
+17.5
+0.31
+0.58
+Hospital:
+  Ain-Shams University
+15
+37.5
+0
+0.0
+  Pediatrics
+15
+37.5
+0
+0.0
+  El-Demerdash
+10
+25.0
+0
+0.0
+80.00
+< 0.001*
+  CV surgery
+0
+0.0
+25
+62.5
+  Ob/Gyne
+0
+0.0
+15
+37.5
+Unit:
+  Critical
+27
+67.5
+16
+40.0
+  Non-critical
+13
+32.5
+24
+60.0
+6.08
+0.01*
+Experience years (current as HN):
+  < 10
+16
+40.0
+18
+45.0
+  10+
+24
+60.0
+22
+55.0
+0.21
+0.65
+  Range
+< 1 = 35
+1–39
+  Mean ± SD
+14.0 ± 10.2
+13.9 ± 9.4
+t = 0.07
+0.95
+  Median
+12.0
+11.5
+Experience years (total):
+  < 30
+19
+47.5
+32
+80.0
+  30+
+21
+52.5
+8
+20.0
+9.14
+0.002*
+  Range
+20–40
+8–40
+  Mean ± SD
+29.0 ± 4.9
+24.0 ± 6.9
+3.74
+< 0.001*
+  Median
+30.0
+23.5
+Had training in leadership
+15
+37.5
+9
+22.5
+2.14
+0.14
+Page 8 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+significant disparity was observed in hospital affiliation, 
+with the study group representing various hospitals (Ain-
+Shams University, Pediatrics, El-Demerdash) and the 
+control group exclusively from CV surgery and Ob/Gyne 
+units (p < 0.001). Critical unit experience was more preva­
+lent among the study group (67.5%) compared to the con­
+trol group (40.0%), with a significant p-value of 0.01, also 
+based on the chi-square test. The groups were similar in 
+terms of years of experience as head nurses and overall 
+experience. However, the study group had a higher pro­
+portion of head nurses with 30 + years of total experience 
+(52.5% vs. 20.0%, p = 0.002), with this comparison again 
+based on mean values. Prior leadership training was 
+more common in the study group, but this difference was 
+not statistically significant (p = 0.14).
+Table 2 illustrates the scores of knowledge and leader­
+ship perception among head nurses in the study group 
+throughout the intervention. Significant improvements 
+were noted in all domains post-intervention, with knowl­
+edge scores increasing from 25.1 ± 8.8 to 93.0 ± 5.1 and 
+slightly decreasing to 83.2 ± 7.1 at follow-up, but remain­
+ing significantly higher than pre-intervention scores 
+(p < 0.001). Similarly, self-assessed leadership, supervisor-
+assessed leadership, and staff-assessed leadership scores 
+showed substantial increases post-intervention, main­
+taining significant gains at follow-up (p < 0.001), indicat­
+ing the program’s effectiveness.
+Table 3 shows that the control group’s scores for knowl­
+edge and leadership perception remained unchanged 
+throughout the intervention. The mean scores for 
+knowledge (24.9 ± 8.6 pre, 24.9 ± 8.5 post), self-assessed 
+leadership (89.9 ± 5.80 pre, 90.0 ± 5.8 post), leadership 
+as assessed by supervisors (68.5 ± 11.8 pre, 68.5 ± 11.8 
+post), and leadership as assessed by staff (53.6 ± 14.3 pre, 
+53.6 ± 14.3 post) showed no significant differences, with 
+p-values indicating no statistical significance (p > 0.98).
+The multiple linear regression model for head nurses’ 
+knowledge scores, as shown in Table 4, indicates signifi­
+cant predictors. The intervention group had a positive 
+standardized coefficient (B = 23.23, p < 0.001), showing a 
+strong positive impact on knowledge scores. Conversely, 
+the control group had a negative coefficient (B = -30.56, 
+p < 0.001), reflecting lower knowledge scores. The model 
+explains 68% of the variance (r-square = 0.68). The mod­
+el’s overall fit was highly significant (F = 209.07, p < 0.001), 
+with variables such as age, gender, qualification, marital 
+status, experience, hospital, unit, and courses considered.
+Table 5 presents the best-fitting multiple linear regres­
+sion model for the leadership (self) score, showing sig­
+nificant predictors. The constant is 62.33 (p < 0.001). The 
+intervention has a coefficient of 2.17 (p = 0.001), female 
+gender 7.26 (p = 0.009), total experience 0.24 (p < 0.001), 
+and knowledge score 0.08 (p < 0.001). The model’s 
+r-square is 0.48, indicating it explains 48% of the variance 
+in self-assessed leadership scores. The model ANOVA is 
+significant (F = 35.32, p < 0.001), validating the predictors’ 
+collective contribution.
+Table 2  Scores of knowledge and leadership perception in the study group throughout the intervention
+TIME
+F-Test
+p-value
+Pre
+Pot
+FU
+Mean ± SD
+Mean ± SD
+Mean ± SD
+Knowledge
+25.1 ± 8.8
+93.0 ± 5.1
+83.2 ± 7.1
+1050.78
+< 0.001*
+Leadership (self)
+88.1 ± 6.0
+97.5 ± 2.7
+98.5 ± 2.0
+83.82
+< 0.001*
+Leadership (supervisor)
+61.5 ± 14.0
+91.0 ± 6.7
+89.3 ± 5.9
+119.52
+< 0.001*
+Leadership (staff)
+44.3 ± 8.7
+86.7 ± 5.5
+86.1 ± 6.7
+496.55
+< 0.001*
+(*) Statistically significant at p < 0.05
+Table 3  Scores of knowledge and leadership perception in the 
+control group throughout the intervention
+TIME
+F-Test
+p-value
+Pre
+Post
+Mean ± SD
+Mean ± SD
+Knowledge
+24.9 ± 8.6
+24.9 ± 8.5
+0.00
+0.98
+Leadership (self)
+89.9 ± 5.80
+90.0 ± 5.8
+0.00
+0.98
+Leadership (supervisor)
+68.5 ± 11.8
+68.5 ± 11.8
+0.00
+1.00
+Leadership (staff)
+53.6 ± 14.3
+53.6 ± 14.3
+0.00
+1.00
+Table 4  Best fitting multiple linear regression model for head nurses’ knowledge score
+Unstandardized
+Coefficients
+Standardized
+Coefficients
+t-test
+p-value
+95% Confidence
+Interval for B
+B
+Std. Error
+Lower
+Upper
+Constant
+51.19
+6.01
+8.521
+< 0.001
+39.35
+63.04
+Control group
+-30.56
+2.79
+-0.47
+-10.960
+< 0.001
+-36.06
+-25.06
+Intervention
+23.23
+1.83
+0.54
+12.724
+< 0.001
+19.63
+26.83
+r-square = 0.68, Model ANOVA: F = 209.07, p < 0.001
+Variables entered and excluded: age, gender, qualification, marital status, experience, hospital, unit, courses
+Page 9 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+The multiple linear regression model for the leadership 
+(supervisor) score revealed several significant predictors 
+(Table 6). The intervention had a positive effect (B = 3.67, 
+p = 0.007). Age was a negative predictor (B = -0.28, 
+p = 0.038), while being married (B = 5.18, p = 0.036) and 
+holding a bachelor’s degree (B = 6.17, p = 0.001) were posi­
+tive predictors. Course attendance negatively impacted 
+the score (B = -4.45, p = 0.009), and the knowledge score 
+was a strong positive predictor (B = 0.31, p < 0.001). The 
+model explained 62% of the variance (r-square = 0.62).
+The results presented in Table  7 show the best-fit­
+ting multiple linear regression model for the leader­
+ship (staff) score. The constant term has a coefficient of 
+90.79 (SE = 14.98), which is highly significant (t = 6.060, 
+p < 0.001). The intervention variable has a positive coef­
+ficient of 12.29 (SE = 2.06), indicating a significant posi­
+tive impact on leadership scores (t = 5.960, p < 0.001). Age 
+has a negative coefficient of -0.78 (SE = 0.31), suggesting a 
+significant negative association (t = -2.508, p = 0.015). The 
+model explains 39% of the variance in leadership scores 
+(r-square = 0.39), and the overall model is significant 
+(F = 20.69, p < 0.001).
+Discussion
+This study aimed to evaluate the effect of a leadership 
+development program utilizing 360-degree feedback on 
+head nurses’ leadership practices. The findings demon­
+strate that the program had a significant positive impact 
+on head nurses’ leadership knowledge and practices 
+across all measured dimensions. These results highlight 
+the potential of structured leadership training incorpo­
+rating multi-source feedback to enhance nursing leader­
+ship capabilities in healthcare settings.
+Impact on Leadership Knowledge
+The significant improvements observed in the interven­
+tion group’s leadership knowledge scores, rising from 
+25.1 ± 8.8 pre-intervention to 93.0 ± 5.1 post-intervention 
+Table 5  Best fitting multiple linear regression model for the leadership (self) score
+Unstandardized
+Coefficients
+Standardized
+Coefficients
+t-test
+p-value
+95% Confidence
+Interval for B
+B
+Std. Error
+Lower
+Upper
+Constant
+62.33
+5.90
+10.558
+< 0.001
+50.69
+73.98
+Intervention
+2.17
+0.62
+0.25
+3.498
+0.001
+0.95
+3.40
+Female gender
+7.26
+2.77
+0.14
+2.622
+0.009
+1.80
+12.71
+Total experience
+0.24
+0.06
+0.23
+4.275
+< 0.001
+0.13
+0.35
+Knowledge score
+0.08
+0.02
+0.43
+5.412
+< 0.001
+0.05
+0.12
+r-square = 0.48, Model ANOVA: F = 35.32, p < 0.001
+Variables entered and excluded: age, qualification, marital status, current experience, unit, courses, hospital
+Table 6  Best fitting multiple linear regression model for the leadership (supervisor) score
+Unstandardized
+Coefficients
+Standardized
+Coefficients
+t-test
+p-value
+95% Confidence
+Interval for B
+B
+Std. Error
+Lower
+Upper
+Constant
+58.04
+7.82
+7.418
+< 0.001
+42.61
+73.47
+Intervention
+3.67
+1.35
+0.17
+2.725
+0.007
+1.01
+6.32
+Age
+-0.28
+0.13
+-0.11
+-2.089
+0.038
+-0.54
+-0.02
+Married
+5.18
+2.45
+0.10
+2.114
+0.036
+0.35
+10.00
+Bachelor degree
+6.17
+1.83
+0.16
+3.378
+0.001
+2.57
+9.78
+Course attendance
+-4.45
+1.68
+-0.13
+-2.645
+0.009
+-7.76
+-1.13
+Knowledge score
+0.31
+0.03
+0.63
+9.161
+< 0.001
+0.24
+0.38
+r-square = 0.62 Model ANOVA: F = 37.70, p < 0.001
+Variables entered and excluded: age, gender, qualification, marital status, experience, hospital
+Table 7  Best fitting multiple linear regression model for the leadership (staff) score
+Unstandardized
+Coefficients
+Standardized
+Coefficients
+t-test
+p-value
+95% Confidence
+Interval for B
+B
+Std. Error
+Lower
+Upper
+Constant
+90.79
+14.98
+6.060
+0.000
+60.88
+120.70
+Intervention
+12.29
+2.06
+0.58
+5.960
+0.000
+8.17
+16.41
+Age
+-0.78
+0.31
+-0.24
+-2.508
+0.015
+-1.41
+-0.16
+r-square = 0.39 Model ANOVA: F = 20.69, p < 0.001
+Variables entered and excluded: gender, qualification, marital status, experience, hospital, unit, group
+Page 10 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+and maintaining at 83.2 ± 7.1 at follow-up, underscore 
+the program’s effectiveness in increasing participants’ 
+understanding of leadership concepts and practices. This 
+aligns with previous researches found that formal lead­
+ership development programs positively influence indi­
+vidual competencies among hospital leaders [25, 26]. The 
+sustained improvement at follow-up suggests that the 
+knowledge gained was not merely short-term, but had a 
+lasting impact on participants’ leadership understanding 
+[27, 28].
+The multiple linear regression analyses provide valu­
+able insights into the factors influencing leadership out­
+comes. The strong positive impact of the intervention on 
+knowledge scores (B = 23.23, p < 0.001) in the regression 
+model confirms the program’s effectiveness in enhanc­
+ing leadership knowledge. The negative coefficient for the 
+control group (B = -30.56, p < 0.001) further emphasizes 
+the contrast between those who received the intervention 
+and those who did not.
+Improvement in Leadership practices
+The substantial enhancements in self-assessed leader­
+ship scores, from 88.1 ± 6.0 pre-intervention to 97.5 ± 2.7 
+post-intervention and 98.5 ± 2.0 at follow-up, indicate 
+increased confidence and self-awareness among head 
+nurses regarding their leadership abilities. This growth 
+in self-perception is a crucial outcome, as leaders’ self-
+awareness is closely linked to their effectiveness [29]. 
+The consistency between self-assessments and evalua­
+tions from supervisors and staff further validates these 
+improvements, suggesting that the changes were not only 
+perceived by the head nurses themselves but were also 
+evident to those they work with and lead [30–32]. Addi­
+tionally, these findings resonate with Abdelaliem et al. 
+(2024), who highlighted the importance of leader exper­
+tise and personal characteristics in influencing leadership 
+effectiveness and reducing turnover intentions among 
+nurses [33].
+The regression model for supervisor-assessed leader­
+ship scores revealed several interesting predictors. The 
+positive effect of the intervention (B = 3.67, p = 0.007) was 
+accompanied by positive associations with being married 
+and holding a bachelor’s degree. The negative impact of 
+age suggests that younger head nurses may have been 
+more receptive to the training or that supervisors may 
+have higher expectations for more experienced nurses 
+[34]. The negative association with prior course atten­
+dance is intriguing and may indicate that the 360-degree 
+feedback approach was particularly beneficial for those 
+without extensive prior leadership training [35].
+For self-assessed leadership scores, the intervention 
+emerged as a significant positive predictor (B = 2.17, 
+p = 0.001), along with female gender, total experience, and 
+knowledge scores. This suggests that while the program 
+was effective across participants, individual character­
+istics and prior experience also play a role in leadership 
+development outcomes [36, 37]. The positive association 
+between knowledge scores and self-assessed leadership 
+(B = 0.08, p < 0.001) indicates that increased understand­
+ing of leadership concepts translates to greater confi­
+dence in one’s leadership abilities [38].
+Enhanced Leadership performance ratings
+The marked improvement in leadership assessments 
+by supervisors (from 61.5 ± 14.0 to 91.0 ± 6.7) and staff 
+nurses (from 44.3 ± 8.7 to 86.7 ± 5.5) provides strong evi­
+dence of the program’s impact on observable leadership 
+behaviors. These findings are particularly noteworthy 
+as they represent evaluations from diverse perspectives 
+within the healthcare hierarchy, offering a comprehen­
+sive view of leadership improvement. The alignment of 
+these assessments with the head nurses’ self-evaluations 
+suggests that the program fostered not only improved 
+leadership skills but also enhanced self-awareness and 
+accurate self-perception among participants [39, 40].
+The regression model for supervisor-assessed leader­
+ship scores revealed several interesting predictors. The 
+positive effect of the intervention (B = 3.67, p = 0.007) was 
+accompanied by positive associations with being married 
+and holding a bachelor’s degree. The negative impact of 
+age suggests that younger head nurses may have been 
+more receptive to the training or that supervisors may 
+have higher expectations for more experienced nurses 
+[34]. The negative association with prior course atten­
+dance is intriguing and may indicate that the 360-degree 
+feedback approach was particularly beneficial for those 
+without extensive prior leadership training [35].
+For staff-assessed leadership scores, the intervention 
+again emerged as a strong positive predictor (B = 12.29, 
+p < 0.001), with age showing a negative association. This 
+consistency across different assessment perspectives 
+reinforces the program’s effectiveness while highlighting 
+the complex interplay of factors influencing leadership 
+perceptions [41].
+Broader implications and alignment with existing 
+literature
+The findings align with previous research on the benefits 
+of 360-degree feedback in leadership development. For 
+instance, Sureda (2021) found that multi-source feedback 
+enhanced motivation and performance among healthcare 
+professionals in Iceland [42]. Similarly, Chandler et al. 
+(2010) demonstrated the usefulness of 360-degree evalu­
+ations in outpatient settings, highlighting its value across 
+various healthcare contexts [43].
+The study’s results also support the broader literature 
+on the importance of leadership development in nurs­
+ing. As Kwame et al. (2024) emphasized, effective nursing 
+Page 11 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+leadership is crucial for delivering high-quality healthcare 
+and ensuring positive outcomes for patients, staff, and 
+institutions [44]. The significant improvements observed 
+across multiple leadership dimensions in this study sug­
+gest that structured programs like the one implemented 
+can address the leadership training gap often found in 
+nursing [45] .
+The holistic nature of the 360-degree feedback 
+approach used in this study aligns with recommenda­
+tions from Dalvi et al. (2023), who emphasized the role of 
+comprehensive feedback as a management tool in perfor­
+mance improvement [46]. By incorporating perspectives 
+from peers, subordinates, and supervisors, the program 
+provided head nurses with a well-rounded view of their 
+leadership strengths and areas for improvement, address­
+ing the multifaceted demands of their roles [47]. A recent 
+study by Spears-Jones et al. (2021) further supports 
+the value of integrating 360-degree feedback in leader­
+ship training programs, emphasizing its effectiveness in 
+enhancing leadership behaviors and performance out­
+comes across various organizational settings [48].
+Implications for nursing practice
+The findings of this study have significant implications 
+for nursing practice, particularly in leadership develop­
+ment. The positive impact of the 360-degree feedback-
+based leadership development program on head nurses’ 
+leadership knowledge and practices suggests that such 
+programs can play a crucial role in enhancing leadership 
+capabilities in healthcare settings. Improved leadership 
+practices among head nurses are likely to lead to better 
+team dynamics, fostering a collaborative work environ­
+ment essential for high-quality patient care. By incor­
+porating 360-degree feedback into leadership training, 
+healthcare institutions can cultivate a culture of continu­
+ous feedback and leadership development, which can 
+significantly enhance decision-making, conflict resolu­
+tion, and team management skills among nurse leaders. 
+Moreover, effective leadership, as developed through 
+these programs, is directly linked to improved patient 
+outcomes. By enhancing the leadership competencies of 
+head nurses, healthcare organizations can ensure that 
+their teams are better equipped to meet the challenges 
+of patient care, ultimately leading to better patient out­
+comes. The study also underscores the importance of 
+sustainable professional growth. Integrating 360-degree 
+feedback into regular professional development encour­
+ages ongoing personal and professional growth, ensuring 
+that nurse leaders maintain and enhance their skills over 
+time.
+Furthermore, these findings suggest a need for health­
+care institutions to invest in structured leadership 
+development programs as part of their policy frame­
+work. Institutionalizing such programs can ensure that 
+leadership development is a continuous process rather 
+than a one-time event, leading to sustained improve­
+ments in leadership quality across the organization. 
+Overall, the implementation of 360-degree feedback in 
+leadership development programs is a valuable strategy 
+that can lead to enhanced leadership practices, improved 
+team performance, and better patient care outcomes.
+Limitations of the study
+This study has several limitations that should be acknowl­
+edged. First, although efforts were made to ensure group 
+comparability through randomization, the initial differ­
+ences in age and experience between the intervention 
+and control groups might have influenced the outcomes. 
+These demographic differences could potentially affect 
+the generalizability of the findings. Second, the reliance 
+on self-reported data, particularly in the self-assessment 
+of leadership practices, may introduce bias. Participants 
+might have over- or under-estimated their leadership 
+abilities, which could affect the accuracy of the results. 
+While the study included multiple sources of feedback to 
+mitigate this issue, self-perception remains a subjective 
+measure.
+Third, the study was conducted in a specific health­
+care context within three institutions in Egypt, which 
+may limit the applicability of the results to other set­
+tings or regions. Different cultural, organizational, and 
+healthcare environments might influence how leadership 
+development programs are perceived and their effec­
+tiveness. Fourth, the study did not fully account for the 
+varying demands of different work environments, such 
+as acute versus non-acute care settings. This variability 
+might have affected the results, as leadership challenges 
+and requirements can differ significantly between these 
+environments.
+Lastly, the follow-up period was relatively short, lim­
+ited to three months after the intervention. While this 
+period was sufficient to assess immediate and short-
+term impacts, it may not capture the long-term sustain­
+ability of the leadership improvements observed. Future 
+research should include longer follow-up periods to eval­
+uate the enduring effects of such programs.
+Conclusion of the study
+This study provides robust evidence that a leadership 
+development program using 360-degree feedback can 
+effectively improve the leadership knowledge and prac­
+tices of head nurses. The significant improvements 
+observed in the intervention group, sustained through 
+the follow-up phase, highlight the value of such pro­
+grams in healthcare settings. Despite the study’s limita­
+tions, the findings support the integration of structured 
+leadership development initiatives to enhance leadership 
+Page 12 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+capabilities, ultimately leading to better patient care and 
+organizational performance.
+The positive impact on leadership practices as per­
+ceived by both supervisors and staff nurses underscores 
+the importance of comprehensive feedback mechanisms. 
+These programs not only enhance self-awareness among 
+head nurses but also promote a culture of continuous 
+professional development. To maximize the benefits, 
+healthcare organizations should consider implementing 
+regular leadership training programs and addressing the 
+specific needs of different groups within their workforce.
+Future research should focus on addressing the limi­
+tations identified in this study, such as ensuring more 
+homogeneous groups and using objective performance 
+measures. Additionally, exploring the long-term impact 
+of leadership development programs on patient care out­
+comes and organizational performance would provide 
+valuable insights into their effectiveness and inform the 
+design of future interventions.
+Abbreviations
+LPIs	
+Leadership Practices Inventory
+HN	
+Head Nurse
+SOA	
+Self-other Agreement
+Acknowledgements
+Not applicable.
+Author contributions
+Author contributions Conception and study design: SFF, HMA, SME. Collection 
+of data: HMA, SME. Data analysis and interpretation: SFF, SME. Planning of the 
+study design, searching: SFF, HMA, SME.Manuscript writing and editing: SFF, 
+SME.Final approval of manuscript: SFF, HMA, SME.
+Funding
+No financial support was provided.
+Open access funding provided by The Science, Technology & Innovation 
+Funding Authority (STDF) in cooperation with The Egyptian Knowledge Bank 
+(EKB).
+Data availability
+all required data are included in the research.
+Declarations
+Ethics approval and consent to participate
+Approval was obtained from the Scientific Research Ethics Committee of the 
+Faculty of Nursing, Ain Shams University. In addition, an official letter was 
+submitted from the Dean of the Faculty of Nursing at Ain Shams University to 
+the medical and nursing directors of Ain Shams University Hospitals to seek 
+their approval for conducting the study and collecting data. The researcher 
+obtained written informed consent from all study subjects. They were assured 
+about maintaining their anonymity and the confidentiality of any collected 
+data. Furthermore, they were informed that participation in the study was 
+voluntary, and they had the right to withdraw at any time.
+Consent for publication
+We confirm that all authors have approved the manuscript for submission.
+Competing interests
+The authors declare no competing interests.
+Received: 26 May 2024 / Accepted: 30 September 2024
+References
+1.	
+Alsadaan N, Salameh B, Reshia FAAE, Alruwaili RF, Alruwaili M, Awad Ali 
+SA, et al. Impact of nurse leaders behaviors on nursing staff performance: 
+a systematic review of literature. Inq J Heal Care Organ Provis Financ. 
+2023;60:004695802311785.
+2.	
+Algunmeeyn A, Mrayyan MT, Suliman WA, Abunab HY, Al-Rjoub S. Effective 
+clinical nursing leadership in hospitals: barriers from the perspectives of 
+nurse managers. BMJ Lead. 2024;8:20 LP – 24.
+3.	
+Oldland E, Botti M, Hutchinson AM, Redley B. A framework of nurses’ respon­
+sibilities for quality healthcare — exploration of content validity. Collegian. 
+2020;27:150–63.
+4.	
+Jiang X. Nursing leadership: key element of professional development. Int J 
+Nurs Sci. 2024;11:1–2.
+5.	
+Kanaslan EK, Iyem C. Is 360 Degree Feedback Appraisal an effective way of 
+performance evaluation? Int J Acad Res Bus Soc Sci. 2016;6.
+6.	
+Lockyer J, Sargeant J. Multisource feedback: an overview of its use and 
+application as a formative assessment. Can Med Educ J. 2022. https://doi.
+org/10.36834/cmej.73775.
+7.	
+Fleenor JW. What can we learn from Research on Multisource Feedback in 
+Organizations? Student Feedback on Teaching in Schools. Cham: Springer 
+International Publishing; 2021. pp. 221–36.
+8.	
+Alimo-Metcalfe B. 360 degree feedback and Leadership Development. Int J 
+Sel Assess. 1998;6:35–44.
+9.	
+Elbus LMS, Mostafa MG, Mahmoud FZ, Shaban M, Mahmoud SA. Nurse 
+managers’ managerial innovation and it’s relation to proactivity behavior and 
+locus of control among intensive care nurses. BMC Nurs. 2024;23:485.
+10.	 Bracken DW, Rose DS, Church AH. The evolution and devolution of 360° 
+feedback. Ind Organ Psychol. 2016;9:761–94.
+11.	 Das BK. G. R. Leadership development through 360-degree multi-rater feed­
+back—An experience sharing of need, approach, roll-out, and the impact. 
+Environ Soc Psychol. 2023;9.
+12.	 Restivo V, Minutolo G, Battaglini A, Carli A, Capraro M, Gaeta M, et al. Leader­
+ship Effectiveness in Healthcare settings: a systematic review and Meta-
+analysis of cross-sectional and before–after studies. Int J Environ Res Public 
+Health. 2022;19:10995.
+13.	 McGowan E, Hale J, Bezner J, Harwood K, Green-Wilson J, Stokes E. Leader­
+ship development of health and social care professionals: a systematic 
+review. BMJ Lead. 2020;4:231–8.
+14.	 Hannawa AF, Wu AW, Kolyada A, Potemkina A, Donaldson LJ. The aspects of 
+healthcare quality that are important to health professionals and patients: a 
+qualitative study. Patient Educ Couns. 2022;105:1561–70.
+15.	 Guibert-Lacasa C, Vázquez‐Calatayud M. Nurses’ clinical leadership in the 
+hospital setting: a systematic review. J Nurs Manag. 2022;30:913–25.
+16.	 Elhadad AE, Fathi W, Ahmed MF, Alzahraa F, Saad M. Association between 
+Leadership Competency, Quality of Work and Readiness for Change among 
+Head nurses (1) Asmaa Elsayed Elhadad, (2) Wafaa Fathi Sleem, (3) Maysa 
+Fekry Ahmed. Mansoura Nurs J (. 2022;9:189–200.
+17.	 Rasa J. Developing effective health leaders: the critical elements for success. J 
+Hosp Manag Heal Policy. 2020;4:6–6.
+18.	 Kjellström S, Stålne K, Törnblom O. Six ways of understanding leader­
+ship development: an exploration of increasing complexity. Leadership. 
+2020;16:434–60.
+19.	 Avolio BJ, Reichard RJ, Hannah ST, Walumbwa FO, Chan A. A meta-analytic 
+review of leadership impact research: experimental and quasi-experimental 
+studies. Leadersh Q. 2009;20:764–84.
+20.	 Rademaker T, Klingenberg I, Süß S. Leadership and technostress: a 
+systematic literature review. Manag Rev Q. 2023. https://doi.org/10.1007/
+s11301-023-00385-x.
+21.	 Njah J, Hansoti B, Adeyami A, Bruce K, O’Malley G, Gugerty MK, et al. Measur­
+ing for success: evaluating Leadership Training Programs for sustainable 
+impact. Ann Glob Heal. 2021;87:63.
+22.	 Williams MJ. 360 – DEGREE FEEDBACK FOR LEADERSHIP DEVELOPMENT. Coll 
+St Scholast ProQuest Diss Theses. 2021;19:1–23.
+23.	 Hussein T, F.Saad N M, Badran MM. Staff nurses Perception regarding nursing 
+Managers` Leadership practices and It`s relation to their knowledge sharing. 
+Egypt J Heal Care. 2021;12:1964–74.
+24.	 Kouzes JM, Posner BZ. Leadership Practices Inventory: Individual Feedback 
+Report. 2017;47.
+25.	 Flaig J, Alam A, Huynh J, Reid-Hector J, Heuer A. Examining how formal 
+Leadership Development Programs positively Influence Hospital leaders’ 
+individual competencies and organizational outcomes – an evidence-based 
+literature review. J Healthc Leadersh. 2020;12:69–83.
+Page 13 of 13
+Emam et al. BMC Nursing          (2024) 23:772 
+26.	 McAlearney AS. Using Leadership Development Programs to Improve Quality 
+and Efficiency in Healthcare. J Healthc Manag. 2008;53:319–31.
+27.	 Wang Q, Hou H, Li Z. Participative Leadership: A literature review and pros­
+pects for Future Research. Front Psychol. 2022;13.
+28.	 Alruwaili M, Elsayed Ramadan OM, Shaban M, Alruwaili A, Alsadaan N, Ali S, 
+et al. An Assessment of Pediatric nurses awareness and perceived knowledge 
+of Autism Spectrum disorders: a Gulf State Survey. Perspect Psychiatr Care. 
+2023;2023:1–9.
+29.	 Hartung P. The impact of self-awareness on Leadership Behavior. J Appl 
+Leadersh Manag. 2020;8:1–21.
+30.	 Oducado RMF. Influence of self-esteem, psychological empowerment, and 
+empowering leader behaviors on assertive behaviors of staff nurses. Belitung 
+Nurs J. 2021;7:179–85.
+31.	 Khan BP, Quinn Griffin MT, Fitzpatrick JJ. Staff nurses’ perceptions of their 
+nurse managers’ transformational Leadership behaviors and their own struc­
+tural empowerment. JONA J Nurs Adm. 2018;48:609–14.
+32.	 Dunning D, Heath C, Suls JM. Flawed Self-Assessment. Psychol Sci Public 
+Interes. 2004;5:69–106.
+33.	 Abdelaliem SMF, Asal MGR, Abou Zeid MAG, Hendy A, El-Sayed AAI. Humble 
+leadership and nurses’ turnover intention: The moderating effect of leader 
+expertise. Int Nurs Rev. 2024 Jul;22. https://doi.org/10.1111/inr.13025. Epub 
+ahead of print. PMID: 39037107.
+34.	 Chang W-P, Wang C-H. Factors related to nurse satisfaction with Supervisor 
+Leadership. Int J Environ Res Public Health. 2023;20:3933.
+35.	 Antonioni D, Park H. The relationship between rater affect and three sources 
+of 360-degree feedback ratings. J Manage. 2001;27:479–95.
+36.	 Sayed H, Sarhan A. Effect of Health Belief Model-based Educational Interven­
+tion on COVID-19 preventive behaviors among pregnant women. Tanta Sci 
+Nurs J. 2022;24:305–35.
+37.	 Chen J, Houser D. When are women willing to lead? The effect of team 
+gender composition and gendered tasks. Leadersh Q. 2019;30:101340.
+38.	 Rahmadani VG, Schaufeli WB, Stouten J, Zhang Z, Zulkarnain Z. Engaging 
+Leadership and its implication for Work Engagement and Job outcomes at 
+the Individual and Team Level: a Multi-level Longitudinal Study. Int J Environ 
+Res Public Health. 2020;17:776.
+39.	 Elamia A, Shabaan F, Atia N, Skokier M. Head nurses’ evaluation and nurses’ 
+self evaluation for performing chest nursing care procedures. Tanta Sci Nurs J. 
+2020;18:8–40.
+40.	 Kim H, Lee I, Lee B. Nursing leaders’ perceptions of the state of nursing leader­
+ship and the need for nursing leadership education reform: a qualitative 
+content analysis from South Korea. J Nurs Manag. 2022;30:2216–26.
+41.	 Lekwa AJ, Reddy LA, Dudek CM, Hua AN. Assessment of teaching to predict 
+gains in student achievement in urban schools. Sch Psychol. 2019;34:271–80.
+42.	 Sureda E, Chacón-Moscoso S, Sanduvete-Chaves S, Sesé A. A training inter­
+vention through a 360° Multisource Feedback Model. Int J Environ Res Public 
+Health. 2021;18:9137.
+43.	 Chandler N, Henderson G, Park B, Byerley J, Brown WD, Steiner MJ. Use of a 
+360-Degree evaluation in the outpatient setting: the usefulness of nurse, 
+Faculty, Patient/Family, and Resident self-evaluation. J Grad Med Educ. 
+2010;2:430–4.
+44.	 Kwame A, Petrucka PM. Effective nursing leadership as a catalyst for person-
+centered care and positive nursing-patient interactions: evidence from a 
+public Ghanaian hospital. Discov Heal Syst. 2024;3:50.
+45.	 Lavoie-Tremblay M, Boies K, Clausen C, Frechette J, Manning K, Gelsomini C, 
+et al. Evaluation of the effectiveness of a strengths-based nursing and Health­
+care Leadership program aimed at building leadership capacity: a concurrent 
+mixed-methods study. Int J Nurs Stud Adv. 2024;6:100184.
+46.	 Bajaj KK. 360-Degree feedback as a Tool for improving employee perfor­
+mance. Tuijin Jishu/Journal Propuls Technol. 2023;44:1938–45.
+47.	 Anonson J, Walker ME, Arries E, Maposa S, Telford P, Berry L. Qualities of 
+exemplary nurse leaders: perspectives of frontline nurses. J Nurs Manag. 
+2014;22:127–36.
+48.	 Spears-Jones C, Myles R, Porch T, Parris S, Ivy-Knudsen M, Dean HD. 
+(2021). Leading Organizational Change: Improved Leadership Behaviors 
+Among Public Health Leaders After Receiving Multirater Feedback and 
+Coaching. Workplace Health & Safety. 2021;69(9):400–409. https://doi.
+org/10.1177/21650799211001728
+Publisher’s note
+Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations. 

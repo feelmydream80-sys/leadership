@@ -11,66 +11,89 @@
 C:\dev\leadership\
 ├── AGENTS.md                          # 프로젝트 개요 및 품질 기준
 ├── FILE_STRUCTURE.md                  # 이 파일
-├── label_audit_report.md              # v2.1 라벨 감사 보고서 (178개 라벨 정의)
 ├── build_vector_db.py                 # FAISS 인덱스 빌더
-├── app.py / app_new.py                # 메인 애플리케이션
+├── app.py                             # 메인 애플리케이션
 ├── src/                               # 애플리케이션 소스 코드
 │   ├── routes/                        # API 라우트
 │   ├── auth.py
 │   ├── vector_search.py
-│   ├── hybrid_search.py
 │   ├── leadership_engine.py
+│   ├── data_validator.py
+│   ├── data_integrator.py
+│   ├── backup_manager.py
 │   └── ...
 ├── data/                              # 중앙 데이터 저장소
 │   ├── labels/
 │   │   ├── positive_labels.json       # 48개 긍정 매크로 카테고리
 │   │   └── negative_labels.json       # 32개 부정 매크로 카테고리
 │   ├── micro_labels/
-│   │   ├── positive_micro_labels.json # v1.0 긍정 마이크로 라벨
-│   │   ├── negative_micro_labels.json # v1.0 부정 마이크로 라벨
-│   │   ├── positive/                  # 개별 마이크로 라벨 JSON (M01-01 ~ M48-01)
-│   │   └── negative/                  # 개별 마이크로 라벨 JSON (N01-01 ~ N43-01)
+│   │   ├── positive_micro_labels.json # v1.0 긍정 마이크로 라벨 (구)
+│   │   ├── negative_micro_labels.json # v1.0 부정 마이크로 라벨 (구)
+│   │   ├── positive/                  # 개별 마이크로 라벨 JSON (98개, M01-01 ~ M48-01)
+│   │   └── negative/                  # 개별 마이크로 라벨 JSON (80개, N01-01 ~ N43-01)
 │   ├── vectors/
 │   │   ├── label_vectors.faiss        # FAISS 인덱스 (KoE5, 768-dim, 178 vectors)
 │   │   ├── metadata.json              # 라벨 메타데이터
 │   │   └── test_results.json          # T04-B, T105-A 테스트 결과
 │   ├── engine/                        # 검색 엔진 규칙
 │   ├── traits/                        # 특성(Trait) 정의
-│   └── patterns/                      # 벡터 검색 패턴
+│   ├── patterns/                      # 벡터 검색 패턴
+│   ├── test/                          # 테스트 케이스
+│   └── backups/                       # 자동 백업
 ├── dataset/                           # 학습 데이터 세트
 │   ├── ori/                           # 권위 데이터 소스 (원본)
 │   │   ├── positive_micro_labels_enhanced.json   # 98 긍정 enhanced 라벨
 │   │   ├── negative_micro_labels_enhanced.json   # 80 부정 enhanced 라벨
 │   │   ├── positive_v2_micro_labels.json         # v2.0 추가 긍정 라벨
 │   │   ├── negative_v2_micro_labels.json         # v2.0 추가 부정 라벨
-│   │   ├── batch1_M01-01_to_M03-03.json          # Positive wave 1
-│   │   ├── batch2_M04-01_to_M07-02.json          # Positive wave 1
-│   │   ├── batch3_M08-01_to_M12-03.json          # Positive wave 1
-│   │   ├── batch4_M13-01_to_M18-02.json          # Positive wave 1
-│   │   ├── batch5_M19-01_to_M24-02.json          # Positive wave 1
-│   │   ├── batch6_M25-01_to_M31-01.json          # Positive wave 2
-│   │   ├── batch7_M32-01_to_M37-02.json          # Positive wave 2
-│   │   ├── batch8_M38-01_to_M43-03.json          # Positive wave 2
-│   │   ├── batch9_M44-01_to_M48-01.json          # Positive wave 2
-│   │   ├── batch10_N01-01_to_N04-02.json         # Negative wave 1
-│   │   ├── batch11_N05-01_to_N08-03.json         # Negative wave 1
-│   │   ├── batch12_N09-01_to_N16-01.json         # Negative wave 2
-│   │   ├── batch13_N17-01_to_N25-01.json         # Negative wave 2
-│   │   ├── batch14_N26-01_to_N31-01.json         # Negative wave 2
-│   │   ├── batch15_N33-01_to_N43-01.json         # Negative wave 3
-│   │   ├── batch16_missing_pos_1.json            # Backfill: M01-04 ~ M47-02
-│   │   ├── batch17_missing_neg_1.json            # Backfill: N01-01 ~ N03-04
-│   │   ├── batch18_missing_neg_2.json            # Backfill: N04-01 ~ N06-03
-│   │   ├── batch19_missing_neg_3.json            # Backfill: N07-01 ~ N08-03
-│   │   ├── batch20_N24-02.json                   # Backfill: N24-02
+│   │   ├── batch1~9_M01-01_to_M48-01.json        # Positive wave 1-2
+│   │   ├── batch10~15_N01-01_to_N43-01.json      # Negative wave 1-3
+│   │   ├── batch16~20_missing_*.json              # Backfill 배치
+│   │   ├── debug*.py                              # 디버그 스크립트
 │   │   └── training_data_all_labels.json         # 18개 배치 통합 파일
-│   └── real_world/                    # 실제 한국 기업 사례 데이터
+│   ├── test_real_world/              # 실제 사례 데이터 (이동됨)
+│   ├── fixed_dataset.json            # 구 데이터셋
+│   └── batch*_extended_*.json        # 구 확장 배치 (미사용)
 ├── docs/                              # 설계 문서
-│   ├── architecture.md
-│   └── leadership_trait_system.md
+│   ├── core.md                        # 파이프라인 명세
+│   ├── HANDOVER.md                    # 운영 매뉴얼
+│   ├── vector_db_vs_llm_plan.md       # 아키텍처 비교
+│   ├── WEB_EDIT_PLAN.md               # 웹 편집 계획
+│   ├── label_audit_report.md          # 라벨 감사 보고서
+│   └── archive/                       # 🆕 구 문서 아카이브
+│       ├── RAG_PLAN.md
+│       ├── architecture.md
+│       ├── leadership_catalog.md
+│       ├── leadership_trait_system.md
+│       ├── leadership_evidence_validation_report.md
+│       ├── leadership_validation_ledger.md
+│       ├── IMPROVEMENT_GUIDE.md
+│       ├── CHANGELOG_leadership.md
+│       └── scripts/                   # 구 스크립트
+│           ├── benchmark.py
+│           ├── build_leadership_catalog.py
+│           └── add_past_tense_exclusion.py
+├── research/                          # 🆕 참고 연구자료
+│   ├── papers/                        # 학술 논문 텍스트 (9개, 큐레이션 코어)
+│   ├── surveys/                       # 리더십 서베이 도구
+│   │   └── vanDierendonck_2010_ServantLeadershipSurvey.pdf
+│   └── evidence_mapping/              # 라벨-증거 논문 매핑
+│       └── label_evidence_map.json    # 34개 라벨 근거 (R01~R17)
+├── papers/                            # 🆕 논문 컬렉션 (227편 초록 + 75 PDF, 두 집합은 별개)
+│   ├── metadata.csv                   # 마스터 메타데이터 (227 레코드, 초록)
+│   ├── pdfs/                          # 전문 PDF 75편 (metadata와 교집합 0, 주로 AI/디지털)
+│   ├── meta/                          # 초록 텍스트 227편
+│   ├── extracted/                     # 🆕 PDF 전문 추출 텍스트 (영구, PAGE 마커)
+│   │   ├── paper_*.txt                # 리더십 31 + 무관 28 (페이지 단위 인용용)
+│   │   ├── _no_content_stub/          # 다운로드 실패 스텁 15편 (내용 없음)
+│   │   ├── manifest.json              # 추출 인벤토리·상태 태그
+│   │   └── README.md                  # 참조 규약
+│   └── INDEX.md                       # 이론별 분류 인덱스 (자동생성)
 ├── templates/                         # 웹 UI 템플릿
 ├── static/                            # CSS/JS 정적 파일
-└── temp/                              # 임시 작업 파일 (버전 관리 대상 아님)
+├── temp/                              # 임시 작업 파일 (버전 관리 대상 아님)
+│   └── integrated_data.json           # `/api/edit/integrate` 생성 결과
+└── core/                              # AI명령어 참조
 ```
 
 ---
@@ -303,11 +326,14 @@ C:\dev\leadership\
 
 ### Deprecated (사용하지 않음)
 - `dataset/batch1_M01-01_to_M03-02.json` — 저품질 자동 생성 데이터 (신규 배치로 대체)
-- `dataset/batch1_extended_*.json` — 확장 버전 (현재 불필요)
+- `dataset/batch*_extended_*.json` — 확장 버전 (현재 불필요)
 
 ### Temporary (임시 파일 / 삭제 가능)
-- `temp/` 디렉토리 내 모든 파일
-- 루트의 `e.md`, `issues.txt`, `short_strings.txt` 등
+- `temp/` 디렉토리 내 `integrated_data.json` — `/api/edit/integrate` 호출 시 생성, 재생성 가능
+- `dataset/ori/debug*.py` — 디버그/일회성 스크립트
+
+### Archived (히스토리 보존)
+- `docs/archive/` — 구 설계 문서 및 일회성 스크립트 (삭제 대신 아카이브)
 
 ---
 

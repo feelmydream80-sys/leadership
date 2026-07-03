@@ -1,0 +1,161 @@
+### SOURCE: paper_340_arXiv.pdf
+### PAPER_ID: 340
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 3
+
+
+===== PAGE 1 =====
+arXiv:2211.12434v1  [cs.HC]  22 Nov 2022
+Expansive Participatory AI: Supporting Dreaming
+within Inequitable Institutions
+Michael Alan Chang∗
+UC Berkeley
+michaelc@berkeley.edu
+Shiran Dudy∗
+CU Boulder
+shiran.dudy@colorado.edu
+Abstract
+Participatory Artiﬁcial Intelligence (PAI) has recently gained interest by re-
+searchers as means to inform the design of technology through collective’s lived
+experience. PAI has a greater promise than that of providing useful input to devel-
+opers, it can contribute to the process of democratizing the design of technology,
+setting the focus on what should be designed. However, in the process of PAI
+there existing institutional power dynamics that hinder the realization of expan-
+sive dreams and aspirations of the relevant stakeholders. In this work we propose
+co-design principals for AI that address institutional power dynamics focusing on
+Participatory AI with youth.
+1
+Introduction
+As Artiﬁcial Intelligence (AI) has become immersed in our society, the value of Participatory AI
+(PAI) has increased, providing means to engage the public in the designing of AI products, systems,
+and spaces [van der Velden, 2015, Harrington, 2020, Arana-Catania et al., 2021]. PAI ampliﬁes the
+voices of the collective and democratizes the process through which these products are being real-
+ized. While developing awareness around the value of PAI remains a crucial ﬁrst step, past work has
+shown that many existing PAI processes are technocentric, where the co-design process is driven by
+a need to develop a tool supported through an emergent capability of AI [Martin Jr et al., 2020]. This
+priority of co-design is further reinforced by the powered nature of co-design where researchers and
+"researchees" have differential technological knowledge [Pierre et al., 2021, Scheall and Crutchﬁeld,
+2021]. Taken together, existing co-design techniques broaden participation but largely fall short on
+empowering impacted communities in expansively imagining socially just futures [Birhane et al.,
+2022].
+In this paper, we argue that co-design processes that empower communities to imagine expan-
+sive futures with technology such as AI must support participants in ﬁrst interrogating and deset-
+tling Bang et al. [2012] the often inequitable taken-for-granted ways of knowing and ways of doing
+that are baked into the institution that is the object of co-design (e.g., classroom, hospital, etc.)
+[Arnstein, 1969, Lugard, 1926, Sloane et al., 2020]. Ultimately, co-designed technologies that op-
+erate within existing problematic institutional norms may address a near-term need for participants,
+while reifying deeper systemic issues that continually serve to oppress, dominate, and marginalize
+non-dominant communities [Gray and Suri, 2019, Sloane et al., 2020].
+Towards this goal, we ﬁrst provide some general design principles that support creators of co-design
+spaces to desettle inequitable institutional practices. Next, we concretely illustrate these design
+principles in action through our experience co-designing educational AI-based tools with youth
+participants through our Learning Futures Workshop which sought to work with high-school aged
+∗Equal Contribution.
+36th Conference on Neural Information Processing Systems (NeurIPS 2022).
+
+===== PAGE 2 =====
+youth to imagine how AI has a role (if at all) in realizing their ideal collaborations within existing
+classroom spaces.
+2
+Principals and Pillars for Expansive Co-Design with Youth
+Desettling institutions through the Everyday and the Fantastical: Creators of co-designer spaces
+should emphasize that institutional goals, norms, and practices, are socially constructed rather than
+"inherent". Researchers may explore this by working with youth to dream about how a common
+institutional practice may look if applied in a fantastical setting (e.g., allowing youth to explore how
+collaboration looks outside of the institution of schooling).
+AI as a means to an end: Frame AI not as a means onto itself, but a means or a tool to help make
+possible an ideal, socially just institution.
+Removing concerns about AI Feasibility: To de-normalize differential knowledge regarding what
+is technically feasible, remove AI feasibility as a constraint allowing youth to freely dream. Feasi-
+bility can often be addressed later in the process by achieving an approximation of youth dreams
+through careful consideration.
+Support the complexity and contradictions of youth voices in co-design contexts: Recognize
+that in the process of expansive dreaming, participants will often hold contradictory beliefs about
+what is needed (e.g., hopes for institutional transformation vs. needs within the existing institution).
+Facilitators must embrace the idea that co-design participants are learners, gradually making sense
+of complex problems and solutions.
+3
+Case Study: Educational Institution and the Learning Futures Workshop
+We designed a Learning Futures Workshop, a workshop with the goal of surfacing youth’s expansive
+hopes and dreams for ideal collaboration inside modern classrooms, and identifying the role of AI
+in making those dreams a reality.
+Youth, a key impacted community member in schools, daily operate within the modern of insti-
+tution of schooling and it’s associated instructional practices, goals, and hierarchies. These prac-
+tices (e.g., grades, class periods, etc.) have been deﬁned as the grammar of schooling, which have
+proven to be resilient to reform efforts since their inception in the early 20th century Tyack and Tobin
+[1994]. While these classroom practices have been naturalized as simply "how things are", many
+have problematized the ideologies underlying the grammar of schooling. For instance, the grammar
+of schooling has been justiﬁed with the "logics of merit", which argue that students possess intrinsic
+characteristics that lead to success with the existing school system Oakes and Rogers [2007]. In ef-
+fect, the deﬁcit framing of non-dominant students are baked into the institutional fabric of schooling.
+Past AI-based co-design in the education context has tended to reproduce ideologies present in the
+grammar of schooling Chang et al. [2022].
+Consistent with the design principles in section 2, we de-settled the grammar of schooling by asking
+youth to explore collaboration outside of the school context, bringing youth participants to relatable,
+everyday spaces such as a 70 person student cooperative house. Inspired by these spaces, youth
+used junk material to construct ideal, fantastical collaborative spaces. Youth then considered how
+those ideal collaborative spaces could be made more engaging and joyful by technology-based tools.
+Finally, youth were given an opportunity to consider how those ideal collaborative spaces – and the
+technologies within those space – could be brought into the context of modern schools.
+We found that our Learning Futures Workshop supported youth in re-imagining key goals of schools
+and opened up expansive technological possibilities. Starting from the fantastical space, youth con-
+structed a collaborative space where they could dream together about a future they could see them-
+selves being in. Within this collaborative space, they imagined a technology that brought their
+dreams to life in real-time while they spoke. When bringing this ideal space into their actual class-
+rooms, youth expressed concerns that their goal of dreaming would not be acceptable inside class-
+room space, where work is the primary goal. Encouraged by the facilitators, youth re-imagined a
+classroom space where the goals of school were both dreaming and work, supported by their dream-
+based technology. While the dreaming technology as imagined by the youth was not directly feasible
+given the existing state of the art, youth were encouraged that advancements in the state of the art in
+generative models could support such a tool in the near future.
+2
+
+===== PAGE 3 =====
+Our approach towards PAI holds promise for the research community as well, where these expansive
+envisioning through lived experience of participants opens the door for ambitious horizons for the
+progress of AI.
+4
+Acknowledgements
+We are grateful to Thomas M. Philip, Arturo Cortez, and Ashieda McKoy, who were instrumental in
+the planning and facilitation of the Learning Futures Workshop. This research was made possible by
+NSF grant DRL-2019806, DRL-2019805, and NSF grant #2021159. We would also like to thank
+the anonymous reviewers who provided very useful comments. Finally, the opinions expressed are
+those of the authors, and do not represent views of the NSF.
+References
+Miguel Arana-Catania, Felix-Anselm Van Lier, Rob Procter, Nataliya Tkachenko, Yulan He, Arkaitz
+Zubiaga, and Maria Liakata. Citizen participation and machine learning for a better democracy.
+Digital Government: Research and Practice, 2(3):1–22, 2021.
+Sherry R Arnstein. A ladder of citizen participation. Journal of the American Institute of planners,
+35(4):216–224, 1969.
+Megan Bang, Beth Warren, Ann Rosebery, and Douglas L. Medin. Desettling expectations in science
+education. Human Development, 55:302 – 318, 2012.
+Abeba Birhane, William Isaac, Vinodkumar Prabhakaran, Mark Díaz, Madeleine Clare Elish, Iason
+Gabriel, and Shakir Mohamed. Power to the people? opportunities and challenges for participa-
+tory ai. arXiv preprint arXiv:2209.07572, 2022.
+Michael Alan Chang, Thomas M. Philip, Ashieda McKoy, Arturo Cortez, Tamara Sumner, and
+William Penuel. Engaging youth in envisioning ai in classrooms: Lessons learned. Rapid Com-
+munity Report Series, 2022.
+Mary L Gray and Siddharth Suri. Ghost work: How to stop Silicon Valley from building a new global
+underclass. Eamon Dolan Books, 2019.
+Christina N Harrington. The forgotten margins: what is community-based participatory health de-
+sign telling us? Interactions, 27(3):24–29, 2020.
+Frederick Lugard. The dual mandate in british tropical africa. 1922. Imperialism and Orientalism:
+A Documentary Sourcebook, pages 279–90, 1926.
+Donald Martin Jr, Vinodkumar Prabhakaran, Jill Kuhlberg, Andrew Smart, and William S Isaac.
+Participatory problem formulation for fairer machine learning through community based system
+dynamics. arXiv preprint arXiv:2005.07572, 2020.
+Jeannie Oakes and John Rogers. Radical change through radical means: learning power. Journal of
+Educational Change, 8:193–206, 2007.
+Jennifer Pierre, Roderic Crooks, Morgan Currie, Britt Paris, and Irene Pasquetto. Getting ourselves
+together: Data-centered participatory design research & epistemic burden. In Proceedings of the
+2021 CHI Conference on Human Factors in Computing Systems, pages 1–11, 2021.
+Scott Scheall and Parker Crutchﬁeld. The priority of the epistemic. Episteme, 18(4):726–737, 2021.
+Mona Sloane, Emanuel Moss, Olaitan Awomolo, and Laura Forlano. Participation is not a design
+ﬁx for machine learning. arXiv preprint arXiv:2007.02423, 2020.
+David B. Tyack and William Tobin. The “grammar” of schooling: Why has it been so hard to
+change? 1994.
+Maja van der Velden. Participatory design and design for values. Development, 11(3):215–236,
+2015.
+3

@@ -1,0 +1,11 @@
+Title: Authentic Leadership and Positive Psychological Capital
+Authors: Rachel Clapp‐Smith, Gretchen R. Vogelgesang, James B. Avey
+Source: OpenAlex
+Date: 2008-10-30
+URL: https://doi.org/10.1177/1548051808326596
+
+Abstract (EN):
+This study investigates the relationship between authentic leadership, trust, positive psychological capital (PsyCap), and performance at the group level of analysis. Data were collected from a small Midwestern chain of retail clothing stores, a context in which the needs for both authentic leadership and a positive sales staff are integral to the firm's performance. Constructs were aggregated to the store (group) level to test relationships between perceptions of authentic leadership, trust in management, positive psychological capital, and performance. Trust in management was found to mediate the relationship between PsyCap and performance and to partially mediate the relationship between authentic leadership and performance. Future discussions and implications are discussed.
+
+Abstract (KO):
+본 연구에서는 진정성 리더십, 신뢰, 긍정적 심리자본(PsyCap), 성과 간의 관계를 그룹 차원에서 분석하였다. 데이터는 중서부의 소규모 소매 의류 매장 체인에서 수집되었으며, 이러한 맥락에서 진정한 리더십과 긍정적인 영업 직원에 대한 요구는 회사 성과에 필수적입니다. 진정한 리더십에 대한 인식, 경영진에 대한 신뢰, 긍정적 심리적 자본 및 성과 간의 관계를 테스트하기 위해 구성 요소를 매장(그룹) 수준으로 집계했습니다. 경영신뢰는 싸이캡과 성과의 관계를 매개하는 것으로 나타났으며, 진정성 리더십과 성과의 관계에서는 부분매개하는 것으로 나타났다. 향후 논의와 시사점에 대해 논의합니다.

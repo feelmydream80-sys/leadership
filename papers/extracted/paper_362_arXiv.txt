@@ -1,0 +1,909 @@
+### SOURCE: paper_362_arXiv.pdf
+### PAPER_ID: 362
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 8
+
+
+===== PAGE 1 =====
+Altruistic Decision-Making for Autonomous
+Driving with Sparse Rewards
+Jack Geary
+School of Informatics
+University of Edinburgh
+Email: Jack.Geary@ed.ac.uk
+Henry Gouk
+School of Informatics
+University of Edinburgh
+Email: henry.gouk@ed.ac.uk
+Abstract—In order to drive effectively, a driver must be aware
+of how they can expect other vehicles’ behaviour to be affected
+by their decisions, and also how they are expected to behave by
+other drivers. One common family of methods for addressing
+this problem of interaction are those based on Game Theory.
+Such approaches often make assumptions about leaders and
+followers in an interaction which can result in conﬂicts arising
+when vehicles do not agree on the hierarchy, resulting in sub-
+optimal behaviour. In this work we deﬁne a measurement for
+the incidence of conﬂicts, Area of Conﬂict (AoC), for a given
+interactive decision-making model. Furthermore, we propose a
+novel decision-making method that reduces this value compared
+to an existing approach for incorporating altruistic behaviour.
+We verify our theoretical analysis empirically using a simulated
+lane-change scenario.
+I. INTRODUCTION & RELATED WORK
+Driving is an interactive task that requires agents to make
+decisions about if and when to perform certain manoeuvres
+in the pursuit of a navigational goal. Completing these ma-
+noeuvres often requires coordination with other drivers on
+the road without direct communication. Approaches to this in
+the autonomous driving literature typically presume to have
+access to a dense reward that has features that account for the
+interaction between agents [11, 8, 12]. These reward functions
+are generally learnt or hand-crafted before deployment—a
+process that requires manually specifying features that might
+be relevant. The reliance on complicated reward functions is a
+limitation of existing techniques that could pose serious safety
+risks or veriﬁcation issues.
+Game Theoretic approaches are a broad class of techniques
+that can be utilised to perform decision-making in problems
+involving interactions between agents. While many methods
+exist, in autonomous driving literature, it is common to treat
+such problems as Stackelberg games [10, 11, 8, 12]. This pro-
+vides a computationally tractable method for computing a joint
+equilibrium strategy for all the interacting agents. However,
+these approaches rely on a known hierarchy identifying the
+leader and followers in an interaction (e.g. at an intersection
+where vehicles enter in the order of arrival, at a signalised
+junction) which, in practise, is unknown. In general it is not
+the case that such a hierarchy is known (e.g. during a lane
+merge where drivers must simultaneously agree to execute a
+manoeuvre). This creates a problem: agents using the same
+decision-making assumptions can arrive at conﬂicting conclu-
+(a)
+C2
+GW
+C
+C1
+D
+(−∞, −∞)
+(0, 1)
+LC
+(1, 0)
+(−∞, −∞)
+(b)
+Fig. 1: (a): Motivating Example; Car C1 (blue) is in the left
+lane approaching a stopped car (grey). Car C2 (red) is in
+the adjacent lane. Dotted lines depict the options available
+to each vehicle; C1 cam either change lanes (LC) ahead
+of C2, or decelerate (D) to avoid collision. C2 can either
+continue at current velocity (C) or give way (GW) to allow
+C1 to merge onto the lane. (b) Reward matrix associated with
+the motivating example; C2 would prefer to continue, and
+C1 would prefer to change lanes. Diagonal entries in table
+represent states where either both vehicles collide or neither
+agent’s objective is satisﬁed, which is mutually undesirable.
+sions about the optimal strategy due to disagreements about
+who the leader and followers are. Such conﬂicts can result in
+sub-optimal or unsafe behaviour. We propose a metric—the
+Area of Conﬂict (AoC)—for quantifying the extent to which
+a pair of decision-making models will result in conﬂicting
+assumptions about who takes the role of leader or follower.
+This metric can be seen as a measure of robustness to the level
+arXiv:2007.07182v1  [cs.GT]  14 Jul 2020
+
+===== PAGE 2 =====
+of aggressiveness or passiveness exhibited by other agents in
+the driving environment.
+Using the insight provided by our conﬂict analysis, we
+propose a method for interactive decision-making that requires
+less familiarity with the other vehicles on the road than previ-
+ous approaches, while also being less susceptible to conﬂicts.
+Our approach makes use of a sparse reward signal, deﬁned
+using the intended goals of each road user. By including terms
+in the reward function that correspond to the success of other
+agents in accomplishing their goals, we are able to effectively
+model interactive behaviour between different agents on the
+road. This concept of altruism originates in Game Theory
+literature. Andreoni and Miller [5] presents the idea of altruism
+being a scalar value, α, that multiplies or adds with the rewards
+of the interacting agents to inﬂuence an agent’s decision-
+making by the potential payoffs to the other agents. In the
+work, Andreoni and Miller provide three distinct models for
+altruism: pure, duty and reciprocal. Our proposed deﬁnition
+best aligns with the deﬁnition for pure altruism. Similar to
+altruism in Game Theory, there is Social Value Orientation
+(SVO) in the ﬁelds of psychology and behavioural economics
+[9]. Schwarting et al. [12] implement a version of SVO that is
+similar to our proposed altruism implementation in that they
+weight the planning agent’s reward, and the rewards of the
+other agents according to the planning agent’s SVO value.
+II. CONFLICT IN THE STACKELBERG GAME
+In a 2-person Stackelberg game one player takes the role
+of the leader and the other the role of the follower. The
+leader chooses the action that maximises their reward under
+the assumption that the follower will behave optimally with
+respect to the leader’s choice. For example, using the reward
+matrix given in Figure 1b, if C1 were the leader then they
+would choose to lane change (and get reward of 1) as, when
+the follower, C2, chooses, aware C1’s choice, they will choose
+to give way (and get a reward of 0). However, if C2 were
+the leader instead, they would choose to continue (and get
+reward 1) and C1 would be forced to decelerate. Thus a
+conﬂict can emerge if it has not been agreed in advance
+which agent is the leader and which agent is the follower.
+In the case of autonomous driving, without any means of
+direct communication, or even an agreed upon policy, no such
+agreement can be reached. We deﬁne conﬂict as follows.
+Deﬁnition. Conﬂict: When players of a Stackelberg game
+compute different equilibria due to uncertainty over the iden-
+tity of the leader and the follower.
+Conﬂicts can be problematic as they can result in unforeseen
+catastrophic situations. In our example, if both C1 and C2
+decide on an action under the assumption that they are the
+leader, the resulting situation will be (LC,C), and the vehicles
+would crash. Therefore it is important that the method for
+decision-making has as low an incidence of conﬂict possible,
+so that it is equipped to handle a diverse range of other agents.
+In our example it is clear from the reward matrix that the
+players are in conﬂict, and there is no clear way to resolve it.
+C
+B1
+B2
+R
+A1
+(r111, r112)
+(r121, r122)
+A2
+(r211, r212)
+(r221, r222)
+Fig. 2: General reward matrix
+III. ALTRUISM AND AREA OF CONFLICT
+In this section we will deﬁne our variant of altruism, as
+well as an augmentation to the deﬁnition to account for
+iterated planning. We will also provide a deﬁnition for Area
+of Conﬂict.
+A. Altruism
+We model the interactive driving problem as a simultaneous
+game played on a reward matrix, indexed by actions, where
+each cell in the matrix contains the rewards received by each
+player if they each chose the corresponding action. Figure 2
+presents a general reward matrix where if the row player, R,
+and column player C, chose actions A1,B1 respectively, R
+would receive a reward of r111 and C would receive a reward
+of r112. The grid is 2 × 2 for demonstrative purposes and,
+in general, the grid can be of any size M × N where M is
+the number of actions available to R and N is the number of
+actions available to C, and each cell contains a reward pair
+(rmn1, rmn2). For simplicity we focus on the case where there
+are only 2 players however, this can generalise to any number
+of players. Unless the full index is required, we will refer to
+the row player’s reward for a particular action combination as
+r1 and, correspondingly, r2 for the column player’s reward.
+Pure Altruism, as deﬁned in [5], makes use of an altruism
+coefﬁcient α to deﬁne the altruistic reward,
+r∗
+i = ri + αr−i
+0 ≤α ≤1,
+(1)
+where the −i index corresponds to the agent that is not
+indexed by i, and r∗
+i is the effective reward agent i uses
+to perform decision-making. If α = 0 then the agents are
+indifferent to one another and if the value is 1 then the
+agents are cooperating in order to maximise the same reward,
+r∗
+i = ri + r−i.
+As an alternative to Pure Altruism we propose the following
+deﬁnition for the altruistic reward:
+r∗
+i = (1 −αi)ri + αir−i
+0 ≤αi ≤1.
+(2)
+In this case each agent has their own individual altruism
+coefﬁcient, and scaling agent i’s reward in parallel with agent
+−i’s allows for more ﬂexible behaviours; if αi = 0 then the
+agent is wholly egoistic, if αi = 1 then the agent is wholly
+altruistic. To avoid confusion we will refer to the [5] altruism
+as “pure altruism” and our proposed deﬁnition as “altruism”.
+Extensive previous and ongoing work has been dedicated to
+estimating reward functions and interactive parameters [2, 1,
+3, 12]. In this work we presume that the “true” reward matrix
+{(rmn1, rmn2)}0<m≤M,0<n≤N, and altruism values α1, α2
+
+===== PAGE 3 =====
+are known to both agents. Each agent can then, independently,
+construct the reward matrix {(r∗mn1, r∗
+mn2)}0<m≤M,0<n≤N,
+which they will use to choose which action to perform.
+B. Augmented Altruism
+Repeated iteration over the system of equations deﬁned by
+Equation 2 produces a variation that accounts for both agent’s
+awareness of the other altruistic coefﬁcient. By ﬁnding the
+steady-state of this system we arrive at the deﬁnition of the
+altruistic reward presented in Equation 3. In the interest of
+saving space we defer the complete derivation to Appendix A.
+r∗
+i = (1 −αi)ri + αi(1 −α−i)r−i
+1 −αiα−i
+i ∈{1, 2}
+(3)
+This value, which we refer to as the augmented altruistic
+reward, is an improvement on our base altruism deﬁnition, as
+it is a computationally tractable method for accouting for both
+players altruism values when evaluating options, whereas the
+original deﬁnition only accounted for the agent’s own α.
+C. Area of Conﬂict
+Altruism can be used to resolve conﬂict scenarios; in the
+example in Figure 1b, if α1 = 1, for instance, then C1 would
+get an effective reward of 0 for performing the lane change,
+and a reward of 1 for decelerating and allowing C2 to proceed.
+However, altruism does not entirely eliminate conﬂict since, if
+α2 = 1 also, then the players are once again in conﬂict, with
+each so eager to facilitate the other that neither can achieve
+their objectives.
+Let fI : RM×N ×[0, 1]×[0, 1] →{A1, A2}×{B1, B2} be
+a function, parametrised by the altruism coefﬁcients, mapping
+from the reward matrix to the equilibrium of the corresponding
+Stackelberg game for some interactive decision-making model
+I. The previous observation indicates that, for a given reward
+matrix, there is a region in the parameter-space that will always
+result in conﬂict. We call this region the Area of Conﬂict
+(AoC). It is desirable to choose a decision-making method
+that minimises the AoC for a given reward matrix.
+In the following derivations we will refer to the reward
+matrix deﬁned in Figure 2. Without loss of generality we will
+assume the cell (A2, B1) is optimal for R and (A1, B2) is
+optimal for C. We further assume that there are no ambiguities
+in each agents’ rewards. This gives us the following:
+r211 >r121, r111, r221
+r122 >r212, r112, r222.
+(4)
+It is immediately clear that with these constraints that decision-
+making on the reward matrix will result in conﬂict, regardless
+of the value of the parameters. Therefore it is vacuously true
+that the AoC for the traditional Stackelberg solution method
+is 1 [13]. We will use this value as a baseline.
+In general we observe that conﬂict will occur if:
+(r∗
+211 > r∗
+121 ∧r∗
+122 > r∗
+212)
+∨(r∗
+211 < r∗
+121 ∧r∗
+122 < r∗
+212)
+(5)
+TABLE I: AoC deﬁnitions for various interactive decision-
+making models, where we set A = r211−r121 and B = r122−
+r212 for compactness. See Appendix B for the deﬁnitions of
+p1 and p2.
+Area of Conﬂict
+Baseline [13]
+1
+Pure Altruism [5]
+min( A
+B , B
+A )
+SVO [12]
+p1p2+( π
+2 −p1)( π
+2 −p2)
+( π
+2 )2
+Altruism
+2(
+AB
+(A+B)2 )
+Aug-Altruism
+ln(A + B)( A
+B + B
+A ) −( A
+B ln(A) + B
+A ln(B)) −1
+TABLE II: Calculated AoC values for various interactive
+decision-making models based on the reward matrix given in
+Figure 1b.
+Area of Conﬂict
+Baseline [13]
+1
+Pure Altruism [5]
+1
+SVO [12]
+0.5
+Altruism
+0.5
+Aug-Altruism
+.38623
+The deﬁnition of the AoC of a decision-making model
+follows from Equation 5, and we defer the explicit derivations
+to Appendix B. The AoC deﬁnitions for the standard Stack-
+elberg Game, Pure Altruism, SVO, Altruism, and Augmented
+Altruism are provided in Table I. Table II presents evaluations
+corresponding to the reward matrix in Figure 1b.
+We observe that the AoC for the Augmented Altruism
+signiﬁcantly outperforms the other considered models. This
+means that, in repeated pairings of agents with altruism scores
+sampled uniformly from [0, 1], the incidence of conﬂict would
+be lowest when using this model. In general we empirically
+observe that, for reasonable magnitudes of
+A
+B Augmented
+Altruism consistently outperforms the other models. Figure 3a
+shows the AoC plotted against A, when B = 1. We observe
+that for 0.33 < A < 3 Augmented Altruism achieves minimal
+values. From Figure 3b we see that when B = 3.5 this
+range is 1.6 < A < 10.4. This demonstrates the effectiveness
+of the proposed model for minimising conﬂict. In the next
+section we will demonstrate how this result inﬂuences the
+ability for optimal control planners to plan and execute optimal
+trajectories.
+IV. EXPERIMENTS
+The theoretical analysis provided in Section III demon-
+strates the extent to which each method is robust to conﬂicts.
+In this section we show how conﬂicts can impact the ability
+of an agent to accomplish its objective in a timely fashion.
+The experimental setup is described in Appendix D, and the
+speciﬁc dynamics model used during simulation is given in
+Appendix C.
+The measurements taken during the experiments were the
+time taken for each vehicle to get within a distance ϵ of
+
+===== PAGE 4 =====
+(a)
+(b)
+Fig. 3: Plot of the AoC for varying values of A. The Blue
+line corresponds to Altruism, the Green SVO, and the Purple
+Augmented Altruism. (a) B = 1, (b) B = 3.5.
+(a)
+(b)
+(c)
+(d)
+Fig. 4: Plot of the average total signed time required for
+the vehicles to reach their objective. The trajectory time is
+signed using the maximum reward received by either player
+during the experiment. Each (α1, α2)-indexed cell in the grid
+contains the average result achieved over 25 experiments. The
+order of the results are; (a) Altruism, (b) SVO, (c) Augmented
+Altruism, (d) Baseline
+their intended destination state, ti
+c, and the true reward pair
+(r1, r2) received by the players based on the executed actions
+(Ai, Bj). This value is computed from the ground truth reward
+matrix. To report the results we sum the completion times, and
+multiply this by the maximum reward received by either player
+for the execution,
+Tc = t1
+c + t2
+c
+R = max(r1, r2) × Tc,
+which encodes both the time taken to reach the goal state
+(magnitude) and whether a conﬂict occurred (sign).
+From the construction of the experiment we would expect
+that conﬂict will result in both agents being too passive, or
+both being too aggressive. In the former, both will choose the
+less desirable action to allow the other to proceed, and in the
+latter both agents will pursue their objective, expecting the
+other to give way. We would expect, when the players are in
+agreement, that trajectory durations should be relatively small,
+as each agent has a good approximation for the other agent’s
+trajectory.
+The results for our experiments are shown in Figure 4.
+The x and y axes of the grid are parameterised by C1 and
+C2’s interactive parameter values respectively. The colour of
+each cell in the grid is determined by the average value of R
+achieved over repeated experiments.
+The trends of the grid roughly approximate the shapes cut
+out by the constraint boundaries depicted in Figure 5, which
+provides an empirical veriﬁcation of our theoretical analysis.
+As predicted by the AoC ﬁgures reported in Table II, the
+baseline method that does not perform any form of altruistic
+modelling is always in conﬂict. In contrast, the three altruistic
+planners are able to produce conﬂict-free plans with varying
+degrees of success. The SVO and Altruism methods obtain
+comparable number of conﬂicts (13 cells with conﬂicts, 12
+without). Furthermore, our Augmented Altruism method is
+able to achieve the lowest number of conﬂicts, with nine
+conﬂict cells and 16 non-conﬂict cells. This shows that our
+method is more robust than other approaches to the underlying
+levels of altruism that can be exhibited by agents.
+V. CONCLUSION
+In this work we proposed a novel formulation for an
+interactive decision-making model based on existing theo-
+ries in the Game Theory literature. We proposed a method
+for augmenting such models, and a novel metric, AoC, for
+measuring and comparing the performance of an interactive
+decision-making model. Using this method we demonstrated
+that our augmented model achieved better theoretical and
+empirical results than existing methods. We also demonstrated
+that conﬂict negatively impacted a planning agent’s ability to
+construct efﬁcient, interactive, trajectories, and that a lower
+AoC correlated with shorter trajectories.
+ACKNOWLEDGEMENTS
+The authors would like to acknowledge Subramanian Ra-
+mamoorthy for facilitating this work. Funding for this work
+was provided in part by FiveAI.
+REFERENCES
+[1] Stefano V Albrecht and Peter Stone. Reasoning about
+hypothetical agent behaviours and their parameters. arXiv
+preprint arXiv:1906.11064, 2019.
+[2] Stefano V Albrecht, Jacob W Crandall, and Subrama-
+nian Ramamoorthy.
+Belief and truth in hypothesised
+behaviours. Artiﬁcial Intelligence, 235:63–94, 2016.
+
+===== PAGE 5 =====
+[3] Stefano V Albrecht, Cillian Brewitt, John Wilhelm,
+Francisco Eiras, Mihai Dobre, and Subramanian Ra-
+mamoorthy. Integrating Planning and Interpretable Goal
+Recognition for Autonomous Driving.
+arXiv preprint
+arXiv:2002.02277, 2020.
+[4] Joel A E Andersson, Joris Gillis, Greg Horn, James B
+Rawlings, and Moritz Diehl.
+CasADi – A software
+framework for nonlinear optimization and optimal con-
+trol.
+Mathematical Programming Computation, 11(1):
+1–36, 2019.
+[5] James Andreoni and John H Miller. Rational cooperation
+in the ﬁnitely repeated prisoner’s dilemma: Experimental
+evidence.
+The economic journal, 103(418):570–585,
+1993.
+[6] Tamer Bas¸ar and Geert Jan Olsder. Dynamic noncoop-
+erative game theory. SIAM, 1998.
+[7] Michael D¨uring and Patrick Pascheka. Cooperative de-
+centralized decision making for conﬂict resolution among
+autonomous agents. INISTA 2014 - IEEE International
+Symposium on Innovations in Intelligent Systems and
+Applications, Proceedings, pages 154–161, 2014.
+[8] Jaime F Fisac, Eli Bronstein, Elis Stefansson, Dorsa
+Sadigh, S Shankar Sastry, and Anca D Dragan. Hier-
+archical game-theoretic planning for autonomous vehi-
+cles. In 2019 International Conference on Robotics and
+Automation (ICRA), pages 9590–9596. IEEE, 2019.
+[9] Charles G McClintock and Scott T Allison. Social value
+orientation and helping behavior 1. Journal of Applied
+Social Psychology, 19(4):353–362, 1989.
+[10] Dorsa Sadigh, Shankar Sastry, Sanjit A Seshia, and
+Anca D Dragan.
+Planning for autonomous cars that
+leverage effects on human actions. In Robotics: Science
+and Systems, volume 2, 2016.
+[11] Dorsa Sadigh, Nick Landolﬁ, S. Shankar Sastry, Sanjit A.
+Seshia, and Anca Dragan. Planning for cars that coordi-
+nate with people: leveraging effects on human actions for
+planning and active information gathering over human
+internal state.
+Autonomous Robots, 42(7):1405–1426,
+2018.
+[12] Wilko Schwarting, Alyssa Pierson, Javier Alonso-mora,
+Sertac Karaman, and Daniela Rus.
+Social behavior
+for autonomous vehicles. Proceedings of the National
+Academy of Sciences of the United States of America,
+2019.
+[13] Heinrich Von Stackelberg. Market structure and equilib-
+rium. Springer Science & Business Media, 2010.
+[14] Yevgeniy Vorobeychik and Michael P Wellman. Stochas-
+tic search methods for Nash equilibrium approximation
+in simulation-based games.
+In Proceedings of the 7th
+international joint conference on Autonomous agents
+and multiagent systems-Volume 2, pages 1055–1062.
+International Foundation for Autonomous Agents and
+Multiagent Systems, 2008.
+
+===== PAGE 6 =====
+APPENDIX A
+DERIVING AUGMENTED ALTRUISM
+When attempting to identify equilibria in Game Theoretic
+problem formulations it is not uncommon to used iterative best
+response methods to compute the Nash Equilibrium [14]. In
+practise this involves each agent choosing an optimal action
+based on the optimal actions for the other agents in the
+previous iteration. It is known that if these methods converge
+to a solution, it is a Nash Equilibrium [6].
+We observe that in the context of applying altruism, an
+iterative approach can be used; after each agent computes their
+altruistic reward once, they can repeat the process using the
+rewards computed in the previous iteration. This gives us the
+following system of equations:
+rk
+1 = (1 −α1)r1 + α1rk−1
+2
+rk
+2 = (1 −α2)r2 + α2rk−1
+1
+,
+where k ≥0 gives the iteration index, and we assume that
+agent i does not iterate over reward ri as the amount of reward
+they would get from achieving their own objective, (1−αi)ri,
+is not a value that needs to be optimised. Since the altruism
+coefﬁcients are bounded, 0 ≤αi ≤1, we know this system
+will converge (we assume that α1 and α2 are not both exactly
+1, as this renders the computation unsolvable). We can ﬁnd
+the steady state for this system by solving:
+r∞
+1 = (1 −α1)r1 + α1r∞
+2
+r∞
+2 = (1 −α2)r2 + α2r∞
+1
+Which yields the solution:
+r∗
+i = (1 −αi)ri + αi(1 −α−i)r−i
+1 −αiα−i
+i ∈{1, 2}
+APPENDIX B
+DERIVING AREA OF CONFLICT
+Conﬂict will occur if:
+(r∗
+211 > r∗
+121 ∧r∗
+122 > r∗
+212)
+∨(r∗
+211 < r∗
+121 ∧r∗
+122 < r∗
+212)
+(6)
+By solving these inequalities for the various methods listed
+above we get the following bounds for the AoC (In order to
+save space we will let A = r211 −r121 and B = r122 −r212).:
+• Pure Altruism: (α1 > A
+B ∧α2 > B
+A)∨(α1 < A
+B ∧α2 < B
+A)
+• Altruism: (α1 >
+A
+B+A ∧α2 >
+B
+B+A)∨(α1 <
+A
+B+A ∧α2 <
+B
+B+A)
+• Augmented Altruism:
+(1 −1−α1
+α1
+A
+B < α2 <
+B
+B+(1−α1A) ∧0 < α1 < 1)
+In all of the above cases it also holds that 0 ≤αi < 1,
+except in the case of augmented altruism, where 0 < α1 < 1.
+Each of the logical conjunctions (∧) speciﬁes a bounded region
+of parameter space which will result in conﬂict, and the logical
+disjunctions (∨) deﬁne pairs of non-overlapping regions (see
+Figure 5 for a graphical depiction of these regions). Therefore
+Fig. 5: A plot of the constraints deﬁning AoC for various
+reward models for the example reward matrix (Figure 1b).
+Per the Altruism constraints (Green) the game is in conﬂict if
+the coefﬁcients (a1,a2) are in the antidiagonal quadrants. The
+same bounds apply for SVO when θi is normalised. For the
+Augmented Altruism constraints (Red) the game is in conﬂict
+if (a1,a2) lie in the region bounded by the x and y-axes and
+the red dotted lines.
+we can deﬁne the AoC as the sum of the areas of these regions
+in parameter space. For Pure Altruism, and our proposed
+Altruism, these are straightforward computations.The AoC for
+Augmented Altruism is given by:
+AoC =
+Z 1
+0
+B
+B + (1 −α)Adα −
+Z 1
+A
+A+B
+1 −1 −α
+α
+A
+B dα
+= ln(A + B)(A
+B + B
+A) −(A
+B ln(A) + B
+Aln(B)) −1
+(7)
+For comparison we can also perform the same evaluation
+for SVO ([12]).
+r∗
+i = cos(θi)ri + sin(θi)r−i
+0 ≤θi ≤2π
+(8)
+By the same procedure as before we observe that conﬂict
+occurs with SVO when:
+(θ1 < tan−1(A
+B ) ∧θ2 < tan−1(B
+A))
+∨(θ1 > tan−1(A
+B ) ∧θ2 > tan−1(B
+A))
+(9)
+Even though the SVO mechanism allows for masochistic
+and sadistic behaviours (corresponding to angles resulting in
+coefﬁcients with negative magnitudes), to facilitate comparison
+we constrain the SVO coefﬁcients to be between 0 and 1. This
+
+===== PAGE 7 =====
+implies 0 < θi < π
+2 . We can therefore compute the AoC for
+SVO as:
+p1 = max(0, min(π
+2 , tan−1(A
+B )))
+p2 = max(0, min(π
+2 , tan−1(B
+A)))
+AoC = p1p2 + ( π
+2 −p1)( π
+2 −p2)
+( π
+2 )2
+(10)
+APPENDIX C
+TRAJECTORY PLANNING
+In the literature the problem of interaction-aware trajectory
+planning for autonomous vehicles is often treated as an optimal
+control problem, under the assumption that an accurate, dense
+reward function is available for the other interacting vehicles
+([10],[8],[12]). In practise this is generally an overly conser-
+vative assumption, as such reward functions often require a
+familiarity with the subject that is typically not available. In
+order to demonstrate the efﬁcacy of our proposed decision-
+making method we articulate the path planning problem as
+an optimal control problem with a generic reward, that uses
+the information from the interaction-aware decision-making
+models to coarsely estimate the behaviour of the other agent.
+A. Vehicle Model
+We model the dynamics for both vehicles using a discrete
+kinematic bicycle model. This is given by:
+
+
+xk+1
+yk+1
+vk+1
+θk+1
+
+
+=
+
+
+xk
+yk
+vk
+θk
+
+
++
+
+
+vkcos(θ + δk)
+vksin(θk + δk)
+ak
+2vk
+L sin(δk)
+
+
+∆t
+where L is the inter-axle length of the vehicle, and
+(ak, δk) ∈R2 are control inputs received from the planner.
+B. Modelling Other Vehicles
+To model the behaviour of the other interacting vehicle we
+assume that each action available to the vehicle corresponds to
+a destination state relative to the state of the vehicle at the time
+the action to be performed is decided, t0 = 0. We deﬁne the
+relative change associated with each action as a (dx, dv) ∈R2
+pair of intended changes in x position and velocity, such that:
+⃗xﬁnal :=
+
+
+xﬁnal
+yﬁnal
+vﬁnal
+θﬁnal
+
+
+=
+
+
+xt0
+yt0
+vt0
+θt0
+
+
++
+
+
+dx
+0
+dv
+0
+
+
+Following the approach speciﬁed in [7] we represent the
+trajectory deﬁned by (⃗xinit, ⃗uinit, ⃗xﬁnal) with a pair of polyno-
+mials
+x(t) = x5t5 + x4t4 + x3t3 + x2t2 + x1t1 + x0
+y(t) = y4t4 + y3t3 + y2t2 + y1t1 + y0
+such that
+x(tinit) = xinit,
+y(tinit) = yinit
+˙x(tinit) = vinit ∗cos(θinit),
+˙y(tinit) = vinit ∗sin(θinit)
+¨x(tinit) = ax,
+¨y(tinit) = ay
+x(T) = xﬁnal
+˙x(T) = vﬁnal ∗cos(θﬁnal),
+˙y(T) = vﬁnal ∗sin(θﬁnal)
+¨x(T) = 0,
+¨y(T) = 0
+where T is the length of the trajectory, tinit is the time when
+planning is taking place, and (ax, ay) is the parametric accel-
+eration at time tinit. We explicitly presume that upon reaching
+its destination, the car will have 0 lateral and longitudinal
+acceleration. Implicitly, based on the deﬁnition for ⃗xﬁnal we
+also presume that the vehicle’s ﬁnal heading is the same as
+the heading at time of planning t0. We do not deﬁne the y
+trajectory on the ﬁnal position, as the change in x-coordinate
+and velocity are sufﬁcient for the purposes of deﬁning lane
+changing or lane keeping trajectories.
+Producing trajectories using this method is computationally
+tractable allowing for more frequent re-computation, and also
+facilitates imposing speed limit and jerk constraints on the gen-
+erated trajectories. The estimated state at any time 0 ≤t ≤T,
+⃗x−i
+t
+:= (xt, yy, vt, θt)T along the trajectory can be computed
+from the parametric state (x(t), y(t), ˙x(t), ˙y(t), ¨x(t), ¨y(t))T .
+Therefore we can construct a discretisation of the trajectory
+X−i = {⃗x−i
+k∆t}
+k= T
+∆t
+k=0
+C. Trajectory Planning
+We formulate the trajectory planning problem as an opti-
+mal control problem where the planning agent minimises an
+egoistic cost function, conditioned on the discretised estimated
+trajectory for the other vehicle X.
+minimize
+⃗x0,...,⃗xN+1,⃗u0,...,⃗uN
+N
+X
+j=0
+J(⃗xj, ⃗uj, ⃗xi
+ﬁnal)
+subject to
+⃗x0 = ⃗xi
+init
+⃗xk+1 = F(⃗xk, ⃗uk) k = 0, . . . , N
+⃗b(⃗xj, ⃗uj) ≤0, j = 0, . . . , N.
+⃗c(⃗xj, ⃗x−i
+j ) ≤0, j = 0, . . . , N.
+where F(⃗x, ⃗u) is the kinematic bicycle model, ⃗b deﬁnes the
+egoistic constraints on the vehicle, and ⃗c deﬁnes the collision
+avoidance constraints.
+We let J(⃗x, ⃗u, ⃗xdest) = ⃗wT ·(⃗x−⃗xdest)2, the sum of squared
+distance to the intended destination state, where ⃗w ∈R4
+are manually speciﬁed weights. This cost function drives the
+planner to the desired destination as quickly as permitted by
+the constraints, which include collision avoidance constraints
+to account for the presence of the other vehicle.
+
+===== PAGE 8 =====
+In ⃗b we apply bounds on the x-coordinate to keep the
+car on the road, speed limit constraints, as well as heading
+constraints to prevent the car from doing a u-turn on the
+road. We also bound the control inputs, (a, δ), to be within
+reasonable bounds. We adapt the collision avoidance condition
+from [7] and use it as an collision avoidance constraint in
+⃗c(⃗xi, ⃗x−i);
+1 −
+ 
+(
+xi
+j −x−i
+j
+rx
+)2 + (
+yi
+j −y−i
+j
+ry
+)2
+!
+< 0
+where (rx, ry) ∈R2 are the half-length of the major and
+minor axes of an ellipse centered on the vehicle.
+APPENDIX D
+EXPERIMENTAL METHOD
+We run our experiments on a scenario as depicted in Figure
+1, with car C1 in the left lane wanting to merge into the
+right lane to avoid having to brake, and car C2 preferring to
+continue at their current pace over giving way. In terms of
+(dx, dv), we deﬁne these options as {((lw, 0), 0, −10m/s)}
+and {(0, 0), (0, −5m/s)} respectively, where lw is the lane
+width in metres. For simplicity we do not include the sta-
+tionary obstacle in the experiment, but the values in the
+reward matrix are manually constructed, and are independent
+of the environment, so this omission does not affect planner
+behaviour. We also changed the values in the reward matrix
+to be:
+C2
+GW
+C
+C1
+D
+(−1, −1)
+(0, 1)
+LC
+(1, 0)
+(−1, −1)
+This does not affect the performance of any of the decision-
+makers we evaluate since, as can be seen in Section III, the
+reasoning applied only depends on the values in the preferred
+outcomes for each player, in this case the values on the
+antidiagonal. This does affect the true reward received by the
+players, which will be part of our evaluation.
+The initial positions of the cars are randomly perturbed such
+that either car can start up to a car length ahead of the other,
+and offset from the middle of the lane by up to a quarter
+of the lane width. Both cars start with an initial velocity of
+15m/s, with a speed limit of 15m/s. The acceleration range
+is [−3m/s2, 3m/s2] and the rate of change of heading, δ is
+bound in [−1deg/s2, 1deg/s2].
+In our experiments we evaluate the performance of in-
+teractive decision-makers utilising; SVO [12], Altruism and
+Augmented Altruism. We use a non-interactive decision-maker
+as a baseline to compare the performance against. To make
+the results comparable use a ﬁnite set of coefﬁcients, and
+run identical experiments with each combination (α1, α2). For
+Altruism and Augmented Altruism the coefﬁcient values used
+are:
+A := [0, .25, .51, .75, .99]
+where the .51 value was used to avoid stalemates in decision
+making (i.e. scenarios where a player would not have a clear
+preference, and .99 used to avoid violating the constraints on
+Augmented Altruism. Equivalently for SVO:
+SV O := [0, π
+8 , π
+4 , 3π
+8 , 1]
+We solve the optimal control trajectory planning problem
+using Model Predictive Control in a receding horizon fashion.
+We use a timestep size, ∆t of .2 seconds, a lookahead horizon
+of 4 seconds. We use the optimal planning library CasADi([4])
+to solve the Optimal Control problem using an Interior Point
+Optimizer method, replanning at 1Hz.
+At the start of each experiment each player independently
+decides upon an action using the same decision-making
+method and the assigned coefﬁcients. During planning, each
+player i uses the state of the other player, −i, to construct
+a coarse approximation of their presumed trajectory, X−i.
+Player i then uses this to generate their own optimal trajectory,
+which they follow. Once the agent has satisﬁed this initial
+objective, if it is not their “true” objective, as speciﬁed by
+the true reward matrix, the agent then plans an optimal
+trajectory to satisfy this objective. The experiment concludes
+when both agents have achieved their true objectives, when
+∃t < T
+s.t.
+∥⃗xi
+t −⃗xi
+dest ∥2< ϵ. We record the time,ti
+c,
+when each agent satisﬁed their objective for the ﬁnal time (e.g.
+if an agent satisﬁes an objective, but then has to move away
+from it to avoid collision, ti
+c is reset). The true reward ri the
+planner converged to for each agent is also recorded.

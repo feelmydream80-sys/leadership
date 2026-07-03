@@ -1,0 +1,11 @@
+Title: Leadership, consensus decision making and collective behaviour in humans
+Authors: John R.G. Dyer, Anders Johansson, Dirk Helbing, Iain D. Couzin, Jens Krause
+Source: OpenAlex
+Date: 2008-12-12
+URL: https://doi.org/10.1098/rstb.2008.0233
+
+Abstract (EN):
+This paper reviews the literature on leadership in vertebrate groups, including recent work on human groups, before presenting the results of three new experiments looking at leadership and decision making in small and large human groups. In experiment 1, we find that both group size and the presence of uninformed individuals can affect the speed with which small human groups (eight people) decide between two opposing directional preferences and the likelihood of the group splitting. In experiment 2, we show that the spatial positioning of informed individuals within small human groups (10 people) can affect the speed and accuracy of group motion. We find that having a mixture of leaders positioned in the centre and on the edge of a group increases the speed and accuracy with which the group reaches their target. In experiment 3, we use large human crowds (100 and 200 people) to demonstrate that the trends observed from earlier work using small human groups can be applied to larger crowds. We find that only a small minority of informed individuals is needed to guide a large uninformed group. These studies build upon important theoretical and empirical work on leadership and decision making in animal groups.
+
+Abstract (KO):
+이 논문은 인간 그룹에 대한 최근 연구를 포함하여 척추동물 그룹의 리더십에 관한 문헌을 검토한 후 소규모 및 대규모 인간 그룹의 리더십과 의사 결정을 조사하는 세 가지 새로운 실험 결과를 제시합니다. 실험 1에서 우리는 그룹 크기와 정보를 모르는 개인의 존재가 소규모 인간 그룹(8명)이 두 개의 반대 방향 선호 사이에서 결정하는 속도와 그룹 분할 가능성에 영향을 미칠 수 있음을 발견했습니다. 실험 2에서는 소규모 인간 그룹(10명) 내에서 정보를 보유한 개인의 공간적 위치 지정이 그룹 동작의 속도와 정확성에 영향을 미칠 수 있음을 보여줍니다. 우리는 그룹의 중앙과 가장자리에 여러 리더를 배치하면 그룹이 목표에 도달하는 속도와 정확성이 향상된다는 것을 발견했습니다. 실험 3에서는 대규모 군중(100명 및 200명)을 사용하여 소규모 인간 그룹을 사용한 이전 작업에서 관찰된 경향이 더 큰 군중에 적용될 수 있음을 보여줍니다. 우리는 정보가 없는 대규모 그룹을 안내하는 데 정보가 있는 소수의 개인만이 필요하다는 것을 발견했습니다. 이러한 연구는 동물 집단의 리더십과 의사 결정에 관한 중요한 이론적, 경험적 연구를 기반으로 합니다.

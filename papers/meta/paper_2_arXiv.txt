@@ -1,0 +1,11 @@
+Title: A simple way to speedup Gauss Elimination
+Authors: Sivaram Ambikasaran
+Source: arXiv
+Date: 2011-01-21
+URL: http://arxiv.org/abs/1101.4081v3
+
+Abstract (EN):
+This article looks at a simple modification to speedup the conventional Gauss Elimination. The proposed modification speeds up the conventional Gauss Elimination by a factor of nearly 9/7 (in the asymptotic limit).
+
+Abstract (KO):
+이 기사에서는 기존의 가우스 제거 속도를 높이기 위한 간단한 수정 사항을 살펴봅니다. 제안된 수정은 기존의 가우스 소거 속도를 거의 9/7(점근 한계에서)까지 가속화합니다.

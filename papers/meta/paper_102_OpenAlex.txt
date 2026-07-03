@@ -1,0 +1,11 @@
+Title: Personality and Transformational and Transactional Leadership: A Meta-Analysis.
+Authors: Joyce E. Bono, Timothy A. Judge
+Source: OpenAlex
+Date: 2004-01-01
+URL: https://doi.org/10.1037/0021-9010.89.5.901
+
+Abstract (EN):
+This study was a meta-analysis of the relationship between personality and ratings of transformational and transactional leadership behaviors. Using the 5-factor model of personality as an organizing framework, the authors accumulated 384 correlations from 26 independent studies. Personality traits were related to 3 dimensions of transformational leadership--idealized influence-inspirational motivation (charisma), intellectual stimulation, and individualized consideration--and 3 dimensions of transactional leadership--contingent reward, management by exception-active, and passive leadership. Extraversion was the strongest and most consistent correlate of transformational leadership. Although results provided some support for the dispositional basis of transformational leadership--especially with respect to the charisma dimension--generally, weak associations suggested the importance of future research to focus on both narrower personality traits and nondispositional determinants of transformational and transactional leadership.
+
+Abstract (KO):
+본 연구는 성격과 변혁적, 거래적 리더십 행동의 평가 사이의 관계에 대한 메타 분석이었습니다. 성격의 5요인 모델을 체계적 프레임워크로 사용하여 저자는 26개의 독립적인 연구로부터 384개의 상관관계를 축적했습니다. 성격 특성은 변혁적 리더십의 3차원인 이상화된 영향력-영감동기(카리스마), 지적 자극, 개별화된 배려와 거래적 리더십의 3차원인 조건부 보상, 예외적 능동적 리더십, 수동적 리더십과 관련이 있는 것으로 나타났다. 외향성은 변혁적 리더십의 가장 강력하고 일관된 상관관계였습니다. 비록 결과가 변혁적 리더십의 기질적 기초에 대한 일부 지원을 제공했지만(특히 카리스마 차원과 관련하여) 일반적으로 약한 연관성은 변혁적 및 거래적 리더십의 좁은 성격 특성과 비성향적 결정 요인 모두에 초점을 맞추는 향후 연구의 중요성을 제안했습니다.

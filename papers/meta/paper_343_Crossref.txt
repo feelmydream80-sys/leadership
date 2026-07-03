@@ -1,0 +1,15 @@
+Title: Transition of the Physician Leadership with AI: Case Analyses of AI Implementation in Clinical Practice
+Authors: Yukyung Kim, Jeewhan Yoon
+Source: Crossref
+Date: 2025-8-30
+URL: https://doi.org/10.22243/tklq.2025.16.3.89
+
+Abstract (EN):
+Worldwide emergence of generative artificial intelligence (AI) into healthcare systems has led to increasing needs in the potential roles of AI-powered physicians. As AI demonstrates appropriate and objective capabilities of making decision, the leadership required to physician must be redefined. This study focused on identification and proposals of effective leadership models for physicians in the AI field.
+With three-phase research design, the first study investigates the current adoption and technological development of AI in the medical field. Second, a comprehensive review of prior studies on physician leadership is conducted to classify relevant leadership frameworks. Based on this analysis, transformational and servant leadership are acknowledged as key models appropriate to the evolving healthcare context. Finally, case studies of healthcare institutions implementing AI are conducted to assess how these leadership models operate in practice. The results suggest that transformational leadership is essentially required for implementation of innovation and management changes, while servant leadership plays a critical role in preserving patient-centered care in AI-enhanced clinical environments.
+This study offers several suggestions: (1) physicians must facilitate their leadership competencies to navigate the profound shifts in professional roles caused by AI; (2) a transition from traditional leadership to more adaptive and empathetic models is required, particularly transformational and servant leadership; and (3) governments should commit leadership education and support systems as part of national healthcare strategies to prepare for AI-driven transformation. These insights provide a foundation for reimagining physician leadership in the future of medicine.
+
+Abstract (KO):
+생성적 인공 지능(AI)이 의료 시스템에 전 세계적으로 등장하면서 AI 기반 의사의 잠재적인 역할에 대한 수요가 증가했습니다. AI가 적절하고 객관적인 의사결정 능력을 입증함에 따라 의사에게 요구되는 리더십도 재정의되어야 한다. 본 연구에서는 AI 분야 의사를 위한 효과적인 리더십 모델을 발굴하고 제안하는 데 중점을 두었습니다.
+3단계 연구 설계를 통해 첫 번째 연구는 의료 분야에서 AI의 현재 채택과 기술 개발을 조사합니다. 둘째, 관련 리더십 프레임워크를 분류하기 위해 의사 리더십에 관한 선행 연구를 종합적으로 검토한다. 이 분석을 바탕으로 변혁적이고 섬기는 리더십이 진화하는 의료 환경에 적합한 핵심 모델로 인식됩니다. 마지막으로 AI를 구현하는 의료 기관의 사례 연구를 수행하여 이러한 리더십 모델이 실제로 어떻게 작동하는지 평가합니다. 결과는 혁신과 관리 변화를 구현하기 위해서는 변혁적 리더십이 필수적으로 요구되는 반면, 서번트 리더십은 AI로 강화된 임상 환경에서 환자 중심 진료를 유지하는 데 중요한 역할을 한다는 것을 시사합니다.
+이 연구는 몇 가지 제안을 제시합니다. (1) 의사는 AI로 인한 전문적 역할의 심오한 변화를 탐색하기 위해 리더십 역량을 촉진해야 합니다. (2) 전통적인 리더십에서 보다 적응적이고 공감적인 모델, 특히 변혁적이고 섬기는 리더십으로의 전환이 필요합니다. (3) 정부는 AI 중심 변혁을 준비하기 위해 국가 의료 전략의 일환으로 리더십 교육 및 지원 시스템을 투입해야 합니다. 이러한 통찰력은 의학의 미래에서 의사 리더십을 재구상하기 위한 기반을 제공합니다.

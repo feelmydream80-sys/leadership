@@ -1,0 +1,7 @@
+Title: A generative AI-powered vulnerability analysis framework for better web security - Hybrid testing with Nmap
+Authors: Do-Hyeon Choi
+Source: Crossref
+Date: 2025-11-30
+URL: https://doi.org/10.22678/jic.2025.23.11.053
+
+Abstract (EN):

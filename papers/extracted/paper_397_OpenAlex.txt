@@ -1,0 +1,220 @@
+### SOURCE: paper_397_OpenAlex.pdf
+### PAPER_ID: 397
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 7
+
+
+===== PAGE 1 =====
+Earticle
+211.223.14.69 기관회원 로그인
+개인회원 로그인 개인회원 가입
+•  HOME
+•  고객센터
+•  이용안내
+•  개인회원
+•  기관회원
+개인회원 로그인
+ 로그인
+아이디
+비밀번호
+네이버 아이디로 로그인 카카오 아이디로 로그인 구글 아이디로 로그
+인
+개인회원 가입으로 더욱 편리하게 이용하세요. 개인회원 가입
+아이디/비밀번호를 잊으셨나요? 아이디/비밀번호 찾기
+기관회원 로그인
+ 로그인
+소속기관
+아이디
+비밀번호
+소속기관에서 검색되지 않는 기관은 무료원문다운이 불가능합니다.
+개인회원 가입 후 유료구매를 하시거나 소속기관 도서관에 이용문의
+해 주세요.
+
+===== PAGE 2 =====
+[image]
+전체 제목 저자명 키워드 초록/목차 간행물명 발행기관명 ISSN 검색
+어 검색 상세검색
+•  분야별 검색
+•  발행기관
+•  간행물
+•  국가지식
+•  마이페이지
+현재 위치 Home
+[최고경영자연구]
+How Leadership Roles Shape Judgments
+of AI Decisions : Differences Between
+Decision Makers and Decision Targets
+리더십 역할이 인공지능 결정 판단에 미치는
+영향 : 의사결정자와 의사결정 대상 간의 차이
+[image]
+표지보기
+•  발행기관
+한국전문경영인학회 바로가기
+•  간행물
+전문경영인연구 KCI 등재 바로가기
+•  통권
+제28권 제2호 통권 제82호 (2025.05)바로가기
+•  페이지
+pp.29-52
+•  저자
+
+===== PAGE 3 =====
+Youjung Jun
+•  언어
+영어(ENG)
+•  URL
+https://www.earticle.net/Article/A467445복사
+※ 기관로그인 시 무료 이용이 가능합니다.
+저자의 다른 논문 6,100원 구매하기 인용하기 관심논문등록
+원문정보
+초록
+영어
+Artificial intelligence (AI) is increasingly being integrated
+into workplace roles traditionally performed by humans.
+However, limited research explores how people perceive AI
+in evaluative contexts. This study investigates individuals'
+attitudes toward AI-powered evaluation systems,
+particularly the perspectives of decision makers and
+decision targets. Despite the widespread assumption that
+those in management roles (e.g., bank managers) would
+favor AI in evaluations more than applicants, our findings
+reveal a consistent preference for human evaluators over
+AI, regardless of role. This preference is driven by the
+perception that human decision makers provide greater
+fairness, outweighing the efficiency benefits associated with
+AI. These results offer insight into the lower-than-expected
+adoption of AI-powered evaluation systems, highlighting
+the persistent value placed on human judgment in business
+decision-making.
+한국어
+인공지능(AI)은 점점 더 인간이 수행하던 직무에 통합되고
+있지만, 평가적 맥락에서 AI에 대한 인식에 대한 연구는 제한
+적이다. 본 연구는 AI 기반 평가 시스템에 대한 개인의 태도
+
+===== PAGE 4 =====
+를 조사하며, 특히 의사결정자와 의사결정 대상자의 관점을
+비교한다. 일반적으로 관리직(예: 은행 관리자)에 있는 사람
+들이 지원자보다 AI 평가를 더 선호할 것이라는 가정과 달리,
+연구 결과는 역할에 관계없이 AI보다 인간 평가자를 일관되
+게 선호하는 경향을 보여준다. 이러한 선호는 AI의 효율성보
+다 인간 의사결정자가 더 높은 공정성을 제공할 것이라는 인
+식에 의해 결정된다. 본 연구는 AI 기반 평가 시스템의 예상
+보다 낮은 채택률을 설명하며, 비즈니스 의사결정에서 인간
+의 판단이 지속적으로 중요한 가치를 지닌다는 점을 시사한
+다.
+목차
+Abstract
+Ⅰ. Introduction
+Ⅱ. Conceptual Background
+2.1 AI Assistance & Discrepancies
+2.2 Power, Status & Fairness Concern
+2.3 AI Fairness & Efficiency
+2.4 Hypotheses Development
+Ⅲ. Study Overview
+Ⅳ. Pilot Study
+4.1 Data Collection
+4.2 Procedure & Survey Sample
+4.3 Results
+4.4 Discussion
+Ⅴ. Study 1 (Applicant Perspective)
+5.1 Data Collection
+5.2 Procedure & Survey Sample
+5.3 Results
+5.4 Discussion
+Ⅵ. Study 2 (Bank Manager Perspective)
+6.1 Data Collection
+6.2 Procedure & Survey Sample
+6.3 Results
+6.4 Discussion
+Ⅶ. General Discussion
+7.1 Theoretical Implications
+7.2 Managerial Implications
+7.3 Limitations & Future Research
+
+===== PAGE 5 =====
+References
+요약
+키워드
+인공지능 평가 의사결정자 의사결정 대상 공정성 효율성 불일치 
+Artificial intelligence Evaluation Decision maker Decision target
+Fairness Efficiency Discrepancy
+저자
+•  Youjung Jun [ 전유정 | Assistant professor, Yonsei University
+]
+참고문헌
+자료제공 : 네이버학술정보
+간행물 정보
+발행기관
+•  발행기관명
+한국전문경영인학회 [Korea CEO Academy]
+•  설립연도
+1997
+•  분야
+사회과학>경영학
+•  소개
+국내외의 전문경영인에 관련된 학술연구와 이의 진흥
+과 보급을 목적으로 하며, 회원 상호간의 학술교류와
+친목 도모, 유관기관 및 외국 학자와의 학술교류 촉진
+등을 도모하는 것을 목적으로 한다.
+간행물
+
+===== PAGE 6 =====
+[image]
+표지보기 관심저널 등록
+•  간행물명
+전문경영인연구 [Journal of CEO and Management
+Studies]
+•  간기
+계간
+•  pISSN
+1226-8380
+•  수록기간
+1998~2026
+•  등재여부
+KCI 등재
+•  십진분류
+KDC 325 DDC 330
+이 권호 내 다른 논문 / 전문경영인연구 제28권 제2호 통권 제82호
+피인용수 : 0건 (자료제공 : 네이버학술정보)
+함께 이용한 논문 이 논문을 다운로드한 분들이 이용한 다른 논문입
+니다.
+출처 : 네이버학술정보
+Excel 다운로드
+0개의 논문이 장바구니에 담겼습니다.
+장바구니로 이동 계속해서 검색하기
+
+===== PAGE 7 =====
+페이지 저장
+페이지 설명 저장
+•  최근 열람
+자료
+•  간편
+교외접속
+•  Q&A
+•  FAQ
+•  오류접수
+•  TOP
+소속기관 조회
+이용자님의 소속기관(단체)이 서비스에 가입되어 있는지 확인해 보
+십시오.
+기관회원에 소속되어 있는 이용자는 원문을 무료로 이용할 수 있습니
+다.
+기관명
+•  고객센터
+•  학술단체서비스안내
+•  개인정보처리방침
+•  이메일무단수집거부
+•  배너다운로드
+•  메일보내기
+•  원문뷰어설치 Page Authorization
+상호: 주식회사 학술교육원 I 대표: 노방용 I 사업자등록번호:
+122-81-88227 I 통신판매업신고번호: 제2008-인천부평-00176호 I 정
+보보호책임자: 이두영
+주소: (21319)인천광역시 부평구 영성중로 50 미래타워 701호 I 전
+화: 0505-555-0740 I 팩스: 0505-555-0741 I 이메일:
+earticle@earticle.net
+COPYRIGHT © 2006 학술교육원. ALL RIGHTS RESERVED. 사전허
+가 없는 무단 크롤링은 민형사상 책임을 물을 수 있습니다.
+음성지원 및 돋보기 서비스

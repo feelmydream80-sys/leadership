@@ -1,0 +1,11 @@
+Title: Transformational Leadership And Organizational Culture
+Authors: Bernard M. Bass, Bruce J. Avolio
+Source: OpenAlex
+Date: 1994-01-01
+URL: https://doi.org/10.1080/01900699408524907
+
+Abstract (EN):
+Abstract Nine types of organizational cultures are defined in terms of the extent transformational and transactional leadership and their effects form accepted ways of behaving. The Organizational Description Questionnaire (ODQ) is used by members of the organizations to describe their cultures. The nine types of organizations include the high-contrast culture with both strong transformational and transactional qualities to the "garbage can" which lacks either kind of leadership of consequence. A majority of organizations are somewhere inbetween either loosely guided, coasting, or contractual.
+
+Abstract (KO):
+Abstract 9가지 유형의 조직 문화는 변혁적, 거래적 리더십의 범위와 그 효과가 수용된 행동 방식을 형성하는 정도의 측면에서 정의됩니다. ODQ(조직 설명 설문지)는 조직 구성원이 조직 문화를 설명하는 데 사용됩니다. 9가지 유형의 조직에는 강력한 변혁적 특성과 거래적 특성을 모두 갖춘 고대비 문화와 결과에 대한 리더십이 결여된 "쓰레기통"이 포함됩니다. 대부분의 조직은 느슨하게 안내되거나, 순항하거나, 계약을 맺거나 그 사이 어딘가에 있습니다.

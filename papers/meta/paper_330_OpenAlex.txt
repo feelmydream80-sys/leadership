@@ -1,0 +1,7 @@
+Title: Ethical and legal challenges of artificial intelligence-driven healthcare
+Authors: Sara Gerke, Timo Minssen, Glenn Cohen
+Source: OpenAlex
+Date: 2020-01-01
+URL: https://doi.org/10.1016/b978-0-12-818438-7.00012-5
+
+Abstract (EN):

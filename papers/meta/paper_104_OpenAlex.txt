@@ -1,0 +1,11 @@
+Title: Transformational leadership, transactional leadership, locus of control, and support for innovation: Key predictors of consolidated-business-unit performance.
+Authors: Jane M. Howell, Bruce J. Avolio
+Source: OpenAlex
+Date: 1993-12-01
+URL: https://doi.org/10.1037/0021-9010.78.6.891
+
+Abstract (EN):
+The authors used measures of leadership, locus of control, and support for innovation to predict the consolidated-unit performance of 78 managers. Results revealed that 3 transformational-leadership measures were associated with a higher internal locus of control and significantly and positively predicted business-unit performance over a 1-year interval. Transactional measures of leadership, including contingent reward and management by exception (active and passive), were each negatively related to business-unit performance. Causal relationships between the transformational-leadership behaviors and unit performance were moderated by the level of support for innovation in the business unit
+
+Abstract (KO):
+저자들은 리더십, 통제 소재지, 혁신에 대한 지원 등의 척도를 사용하여 78명의 관리자의 통합 단위 성과를 예측했습니다. 결과는 3가지 변혁적 리더십 측정이 더 높은 내부 통제 위치와 연관되어 있으며 1년 간격으로 사업 단위 성과를 유의미하고 긍정적으로 예측하는 것으로 나타났습니다. 조건부 보상 및 예외에 의한 관리(능동 및 수동)를 포함한 리더십의 거래 측정은 각각 사업 단위 성과에 부정적인 관련이 있었습니다. 변혁적 리더십 행동과 단위 성과 간의 인과 관계는 사업 단위의 혁신 지원 수준에 따라 조절되었습니다.

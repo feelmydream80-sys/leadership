@@ -1,0 +1,2393 @@
+REVIEW PAPER
+Review of Managerial Science (2024) 18:493–538
+https://doi.org/10.1007/s11846-023-00649-6
+Abstract
+Entrepreneurship represents a key motor of economic growth, and entrepreneurial 
+leadership (EL) represents a vital constituent thereof. However, its examination re­
+mains factious, and integration with the wider leadership literature is fragmentary. 
+EL is claimed by some as representing a construct distinct from extant leadership 
+styles, even though the major contribution made by transformational leadership 
+(TL) theory remains under-researched and under-reported. Furthermore, TL is often 
+used to measure leaders in entrepreneurship, resulting in a lack of clarity regarding 
+the relationship between TL and EL. Our study seeks to contribute to the literature 
+by elucidating the distinction and overlap between the two leadership constructs, as 
+currently defined by available questionnaires. To this end, conceptual work, current 
+findings, and research practice are reviewed. Drawn from a final sample of 25 arti­
+cles, our findings show appreciable conceptual divergence. However, questionnaires 
+of EL overlap significantly with TL and are subject to validation and discriminant 
+validity issues; many researchers furthermore continue to use TL questionnaires to 
+measure EL. Very little compelling empirical evidence for divergent validity was 
+found, though strong correlations between EL and TL were observed. Our study 
+contributes an overview of EL from the viewpoint of leadership science, providing 
+recommendations to entrepreneurship researchers examining EL. We suggest that 
+future work should satisfy two main goals: the establishment of a conceptualization 
+of EL which can empirically demonstrate divergent validity versus other, accepted 
+measures of leadership, and the creation of a cogent and a specific theoretical model 
+to support it.
+Keywords  Entrepreneurial · Transformational · Leadership · Systematic Literature 
+Review
+Received: 19 May 2022 / Accepted: 2 March 2023 / Published online: 22 March 2023
+© The Author(s) 2023
+Transformational and entrepreneurial leadership: A review 
+of distinction and overlap
+Theo Émile Ravet-Brown1
+ · Marco Furtner1
+ · Andreas Kallmuenzer2
+	
+ Theo Émile Ravet-Brown
+theo.ravet@uni.li
+1	
+Liechtenstein Business School, University of Liechtenstein, Vaduz 9490, Liechtenstein
+2	
+Department of Strategy, Excelia Business School, La Rochelle 17000, France
+1 3
+T. É. Ravet-Brown et al.
+JEL Classification  L26 Entrepreneurship · M12 Personnel Management
+1  Introduction
+The study of entrepreneurial leadership (EL) examines those who set out to improve 
+their circumstances by founding new enterprises (Hensellek et al. 2023), and by gath­
+ering around them a group of like-minded followers who join them in realizing their 
+vision (Liu et al. 2022). EL today presents a disparate array of conceptual and prac­
+tical approaches to those interested in pinning down its measurement (Clark et al. 
+2019). Research using the term includes anything from the procedural examination 
+of leadership of entrepreneurial ventures (Freeman and Siegfried 2015), to strate­
+gic considerations of the value of entrepreneurially-minded management in extant 
+enterprises and their corporate venturing (Karol 2015; Niemann et al. 2022), to the 
+behavioral delineation of a unique leadership style that is unalienably entrepreneur­
+ial (Bagheri and Harrison 2020). However, mainstream leadership research diverges 
+from employing these kinds of broad definitions (Reid et al. 2018). More concrete, 
+quantifiable operationalizations of leadership styles, such as empowering leadership 
+(Cheong et al. 2019) or transformational leadership (TL) (Bass and Avolio 1997) 
+have long proven fruitful (Derue et al. 2011) and continue to be sought after (Hems­
+horn de Sanchez et al. 2022). While some conceptual work on EL acknowledges this 
+kind of convention (Leitch and Volery 2017), it rapidly swells to encompass a blend 
+of interpersonal and strategic components (Bagheri and Harrison 2020). However, 
+the importance to EL scholarship of arriving at a serviceable, shared definition is 
+clear, as many scholars seek to measure EL as a distinct, operationalized style (e.g. 
+Niemann et al. 2022). As leaders, entrepreneurs are undoubtedly a key ingredient in 
+determining the viability of their idea and the success of the venture it begets (Liu et 
+al. 2022; Tarí et al. 2023); their ability to marshal the resources needed for success, 
+both human and non-human, is essential (Brush et al. 2001). In short, EL represents 
+the crux of successful entrepreneurship (Faridian 2023), so how is it best measured? 
+Is EL capturable through mainstream conceptions, as some have suggested (Vecchio 
+2003), or does it require some unique, distinct construct? The examination of these 
+questions has remained fragmented, and their answer has yet to be found (Clark et al. 
+2019; Clark and Harrison 2019). Calls to integrate EL more closely with the field of 
+leadership are not new (Antonakis and Autio 2012), even though a paucity of com­
+prehensive integration of a theoretical framework persists from within mainstream 
+leadership science into EL, such as the Full-Range Leadership Theory (FRLT; see 
+Bass 1985; Bass and Avolio 1997). Conceptually, both TL and its parent theory, the 
+FRLT, formulate leadership styles as a composition of concrete, visible behaviors and 
+saliently displayed attributes, together constituting “a process whereby an individual 
+influences a group of individuals to achieve a common goal” (Northouse 2018, p. 43). 
+Current measures of EL however do not fully conform to this theoretical framework 
+(c.f. Bagheri and Harrison 2020; Renko et al. 2015), despite the three prominent 
+operationalizations of EL drawing considerably on TL (Bagheri and Harrison 2020; 
+Gupta et al. 2004; Renko et al. 2015). In fact, even a cursory examination of these 
+measures reveals marked item overlap with questionnaires for TL, an issue which 
+1 3
+494
+Transformational and entrepreneurial leadership: A review of…
+authors in the field of EL have previously pointed to (Renko et al. 2015). This kind of 
+admixture obstructs the establishment of a distinct, behaviorally proximal definition 
+of EL.
+This alone represents sufficient reason to consider an examination of TL and EL 
+in concert. Aside from the overwhelming acceptance of TL in mainstream leadership 
+literature (Deng et al. 2022), it continues to be used “routinely” in the examination 
+of entrepreneurial leaders (Reid et al. 2018, p. 152). However, there are also con­
+ceptual differences which several authors have pointed to. The question of scope, 
+of “leadership in” versus “leadership of” organizations, is crucial (Antonakis and 
+Autio 2012). For example, some authors point to behaviors such as opportunity rec­
+ognition (Renko 2017) or recruitment (Bagheri and Harrison 2020) which are not 
+inherently connected to the leadership of employees, as representing the key differ­
+ences between TL and EL. A further dimension is context; some acknowledge the 
+behavioral similarities between the two forms of leadership behaviors, but then point 
+to the position of the entrepreneurial leader within a firm that experiences evolving 
+environmental contingencies as a key antecedent for their ability to motivate follow­
+ers (Gupta et al. 2004). The genesis of leadership concepts is thought by some to rep­
+resent another point of difference; TL, developed purely within leadership science, 
+is deemed somehow limited in its applicability or dynamism (Cai et al. 2019, p. 212; 
+see for comparison Deng et al. 2022; Gerards et al. 2021; Jensen et al. 2020), while 
+EL is considered as representing a new construct suitable for capturing leadership in 
+the current era of economic upheaval and opportunity (e.g. Mehmood et al. 2021a; 
+Röschke 2018a). While the progenitors of novel constructs convincingly claim their 
+distinctiveness, originality, and usefulness, this does not necessarily make them so 
+(Shaffer et al. 2016); proof of their divergent validity, and thus their utility, may be 
+delivered only through empirical examination. Moreover, locating and positioning 
+an entrepreneurial style within the field of extant leadership styles has long been 
+called for (see Antonakis and Autio 2012, p. 203) particularly in light of suggestions 
+that there may be nothing unique about EL at all (e.g. Vecchio 2003). Some scholars 
+even argue that the two fields of entrepreneurship and leadership are phenomeno­
+logical derivatives of an underlying, deeper construct, namely EL (Becherer et al. 
+2008). Helpfully, several recent reviews have sought to bring clarity in one way or 
+another (e.g. Clark et al. 2019; Faridian 2023; Harrison et al. 2018; Leitch and Har­
+rison 2018a; Leitch and Harrison 2018b; Leitch and Volery 2017), even though these 
+papers failed to substantively engage with the mainstream leadership discourse. A 
+wide gap is also visible between these reviews, on the one hand, and review publica­
+tions from within leadership science, on the other (e.g. Reid et al. 2018). Moreover, 
+these EL-focused conceptual works refrained from engaging in an exhaustive exami­
+nation of the overlap and differences between TL and EL, both comprehensively and 
+at various levels of analysis, while combining the level of concept, measure, and 
+findings. It is this contribution our paper seeks to provide.
+In summary, the measurement of EL may be considered a key challenge facing 
+entrepreneurship and leadership research; a distinct research gap exists around the 
+current state of EL measurement, as well as its underlying theoretical conceptualiza­
+tion (Clark and Harrison 2019). It is also unclear whether current conceptualizations 
+are inherently reliant on TL, or whether they present as sufficiently distinct to permit 
+1 3
+495
+T. É. Ravet-Brown et al.
+the measurement of a unique construct. How does the theoretical work behind them 
+support such a distinction; how do the commonly used questionnaires differ in con­
+tent; and how do researchers in the field of EL view this distinction? In short, is it 
+currently possible to measure EL without measuring TL? To provide an answer, three 
+specific research questions (RQs) will be examined:
+RQ1: What is the conceptual overlap between EL and TL?
+RQ2: What is the overlap of content among the currently available operation­
+alizations of EL and TL?
+RQ3: How does empirical research in the measurement of leadership within the 
+field of entrepreneurship research reflect this potential overlap?
+The authors deem it essential to take this kind of holistic, multi-leveled view, and it 
+is this gap that the present review seeks to close. Adhering to previous convention 
+(Bichler et al. 2022; Kraus et al. 2020), we adopted a systematic literature review with 
+content analysis as the method for shedding light on this fragmented field (Leitch 
+and Volery 2017). In doing so, our paper offers three sets of results. With respect to 
+RQ1, a marked lack of mutual interaction is found on the one hand between the main 
+corpus of theoretical development in EL and, on the other, mainstream leadership 
+research. This hampers attempts to embed EL within the wider leadership literature, 
+particularly concerning its relationship with TL. Regarding RQ2, a deeper analysis 
+of the three extant measures of EL found not only strong overlap with TL, but also 
+profound issues in their conceptualization and validation, particularly with regard to 
+their discriminant validity relating to other leadership styles. Finally, in answering 
+RQ3, the review found no consensus on the use of EL questionnaires in the current 
+literature; notably, it found TL-questionnaires to be widely used in the measurement 
+of EL. It furthermore found conflicting statistical results indicating a clear lack of 
+discriminant validity between measures of the two constructs.
+2  Theoretical background
+2.1  Transformational leadership
+Current leadership literature has been described as vast (Klijn et al. 2022), vibrant 
+(Gardner et al. 2020) and mature (Cogliser and Brigham 2004). The FRLT (Bass 
+1985; Burns 1978), often termed the Full-Range Leadership Model, has long repre­
+sented the dominant paradigm within it (Gardner et al. 2020). Implicitly, the FRLT 
+subscribes to a model of leadership based on the interaction between followers and 
+leaders. This interaction constitutes an influence process, the agent of which is the 
+leader, and the objective of which is the motivation of individual followers towards 
+the achievement of a shared goal (Banks et al. 2022). In other words, such concep­
+tions of leadership are considered as constituting “an interactional phenomenon that 
+unfolds through discrete observable behaviors” (Hemshorn de Sanchez et al. 2022, 
+p. 342). This perspective may broadly be conflated with what Antonakis and Autio 
+(2012) termed “leadership in” organizations, as opposed to the more strategically 
+1 3
+496
+Transformational and entrepreneurial leadership: A review of…
+oriented “leadership of.” The conception of leadership as a granular, behavioral, 
+interpersonal influence process forms the theoretical paradigm in which the present 
+review remains grounded, especially since it informs most current, mainstream lead­
+ership research, including the FRLT (Yukl 2013).
+TL is the most active and effective style of leadership posited in the FRLT (e.g. 
+Żywiołek et al. 2022). Furthermore, and in contrast to the closely related, simi­
+larly effective, but poorly defined concept of charismatic leadership (Antonakis et 
+al. 2016; House 1977), TL is clearly established to encompass four key dimensions 
+based on Avolio (2010). First, idealized influence denotes a leader who is considered 
+moral, trustworthy, and principled, and who displays a sense of purpose and power 
+while reassuring, guiding, and ennobling their followers. Inspirational motivation, 
+the second facet, is the evocation of motivation through the articulation of an engag­
+ing, challenging, compelling vision of a shared future. This goes hand in hand with 
+intellectual stimulation, the third constituent, which is essentially the furtherance of 
+the ability of both oneself and followers to consider problems in novel, unusual, and 
+productive ways. Individual consideration finally encompasses a leader’s mandate 
+to pay due attention to his or her followers, assisting in their development, listening, 
+mentoring, and nurturing (Avolio 2010). Crucial here is the aspect of individual­
+ity, with due care being given to each and every follower as a unique individual 
+whose needs diverge from those of others, and from those of the group at large. 
+Taken together, proper practice of these dimensions has shown itself overwhelmingly 
+effective (Wang et al. 2011). Aside from the transformational-transactional paradigm, 
+numerous further approaches are currently trending, such as digital (Oberer and 
+Erkollar 2018), empowering (Cheong et al. 2019) and servant leadership (Eva et al. 
+2019). Most, however, have long conceptualized leadership as an influence process 
+largely aligned with the FRLT’s underlying paradigmatic perspective (Yukl 1989), 
+and continue to do so (cf. Montano et al. 2023; Tarí et al. 2023).
+The importance of leadership to organizational outcomes can hardly be overstated 
+(Banks et al. 2017), and TL in particular has repeatedly shown itself to be an emi­
+nently effective tool in a leader’s kit (e.g. Deng et al. 2022; Judge and Piccolo 2004; 
+Lowe et al. 1996). Specifically, TL has been found to stimulate organizational citizen­
+ship behaviors (e.g. Khan and Khan 2022), performance (e.g. Prabhu and Srivastava 
+2023), attitudes, and employee satisfaction (Alwali and Alwali 2022) to name just 
+a few. In particular, transformational leaders have been shown to facilitate not only 
+followers’ performance, but also their creativity (e.g. Żywiołek et al. 2022) and inno­
+vation (e.g. Begum et al. 2022), two vital constituents “inseparable” from entrepre­
+neurship (Gilad 1984, p. 151). These beneficial effects have been theoretically and 
+empirically linked to each of the four facets of TL noted above. For example, inspi­
+rational motivation is considered as boosting followers’ intrinsic motivation, which 
+in turn is crucial to creativity (Amabile 1996; de Jesus et al. 2013), while intellectual 
+stimulation engages and promotes followers’ capacity for critical and exploratory 
+thinking (Sosik et al. 1998), thereby boosting creativity and innovation (e.g. Thuan 
+2020; Yasin et al. 2014), which has been shown to mediate the positive effect of TL 
+on firm performance (Overstreet et al. 2013). In addition to its widely accepted util­
+ity, there are further reasons for explicitly examining TL as it relates to EL. First, 
+TL is the one mainstream style of leadership most routinely applied to entrepreneur­
+1 3
+497
+T. É. Ravet-Brown et al.
+ship (e.g. Fries et al. 2021; Luu 2023; Soomro and Shah 2022), having been used to 
+predict entrepreneurial creativity (Gumusluoglu and Ilsev 2009) and performance 
+(Harsanto and Roelfsema 2015), among other outcomes. Second, as their respective 
+authors state, the three most eminent measures for EL currently available (Bagheri 
+and Harrison 2020; Gupta et al. 2004; Renko et al. 2015) relied on TL to varying 
+degrees during their conceptualization, in particular on the sub-facets of visionary 
+leadership (inspirational motivation) and encouraging novel ways of thinking in fol­
+lowers (intellectual stimulation). These three eminent measures together represent the 
+vast majority of citations for any measures of EL, and lie at the heart of much of the 
+theoretical discourse on EL (see e.g. Clark et al. 2019; Leitch and Harrison 2018b). 
+Third, other researchers continue to use TL, as defined in the Multifactor Leadership 
+Questionnaire (Bass and Avolio 1997), to measure the leadership of entrepreneurs, 
+in place of any of the three currently available EL questionnaires (see e.g. Bamiatzi 
+et al. 2015; Ensley et al. 2006; Ng and Kee 2018; Verma and Kumar 2021). In addi­
+tion, numerous studies have recently sought to replicate the results achieved with TL 
+using novel conceptualizations of EL (e.g. Newman et al. 2018). Finally, a select few 
+studies have actually quantitatively examined the two together (Cai et al. 2019; Lee et 
+al. 2020; Newman et al. 2018); their contribution has yet to be considered within the 
+larger picture. The interaction between EL and TL is therefore intensifying.
+In summary, TL may be considered a staple of mainstream leadership science, 
+with extensive evidence accrued in support of its predictive power and validity. It has 
+been repeatedly used to measure EL, is considered by some to represent the leader­
+ship component of EL and is heavily represented in EL questionnaires.
+2.2  Entrepreneurial leadership
+Entrepreneurship is an important engine for both national and global economies 
+(Carlsson et al. 2013; van Praag and Versloot 2007). Central issues in entrepreneur­
+ship research continue to include opportunity recognition, innovation, and risk-tak­
+ing (Carlsson et al. 2013), mirroring classical lines of thought which conceptualized 
+the entrepreneur as a risk-taker (Knight 1921), a creator (Schumpeter 1942), or an 
+arbitrator of economic disequilibria (Kirzner 1973). All of these emphasize the per­
+son of the entrepreneur, who represents by definition a leader of sorts. Though more 
+modern approaches, such as effectuation (Hubner et al. 2022), knowledge spillover 
+(Iftikhar et al. 2022), or bricolage (Crupi et al. 2022), have sought more holistic and 
+process-oriented frameworks for understanding entrepreneurship, this emphasis has 
+remained central. For example, Sarasvathy argues that entrepreneurs are effectuators 
+first, and that the charismatic or visionary leadership frequently attributed to them is 
+often misperceived (2008, p. 235). In contrast, the bricolage approach seeks to take a 
+firm-wide perspective, tackling the phenomenon of entrepreneurship through socio-
+economic analysis (Baker and Nelson 2005). A wide variety of approaches are now 
+available which variously examine entrepreneurship as a mindset (e.g. Kuratko et al. 
+2021), a process (e.g. Hikkerova et al. 2016), or a collection of traits (e.g. Munir et 
+al. 2019), although the general focus remains on the figure of the entrepreneur. Over 
+the last two decades, however, the debate has widened in its appreciation of the scope 
+and nature of entrepreneurship (Landström 2020), kicked off by a widely quoted 
+1 3
+498
+Transformational and entrepreneurial leadership: A review of…
+assertion by Shane and Venkataraman (2000, p. 218) that “the field involves the study 
+of sources of opportunities, the process of discovery, evaluation, and exploitation of 
+opportunities, and the set of individuals who discover, evaluate, and exploit them”.
+As may be expected, such a wide field has given rise to an equally extensive range 
+of appreciations of what EL may be understood to be. Even though the progenitor 
+fields of entrepreneurship and leadership display certain similarities in their histori­
+cal development (Harrison and Leitch 1994; Leitch and Volery 2017), the explicit, 
+scientific examination of their intersection is a comparatively novel field of inquiry 
+(Fernald et al. 2005), regardless of whether it is considered as starting with Lippitt 
+(1987), or with Cogliser and Brigham (2004). Numerous definitions of EL have been 
+proposed, some prominent examples of which are given in Table 1. Cunningham and 
+Lischeron’s (1991) definition is foundational, and the aftereffects that were conjured 
+by the breadth of its scope continue to be felt in the disparity of the field three decades 
+later. Following this, Ireland et al. (2003) as well as Cogliser and Brigham (2004) are 
+both often referenced. The former, with its emphasis on leading others to strategically 
+manage resources, somewhat evokes the concept of empowering leadership (Cheong 
+et al. 2019). In contrast, Cogliser and Brigham’s (2004) definition makes no real men­
+tion of leading followers, instead stating that resources must be marshaled, detailing 
+how an entrepreneur must adapt leadership of their venture along with its growth; 
+Table 1  Definitions of EL - Adapted from Leitch and Volery (2017)
+Source
+Definition
+Cunningham 
+and
+Lischeron 
+(1991)
+EL involves setting clear goals, creating opportunities, empowering people, preserving 
+organizational intimacy, and developing a human resource system.
+Nicholson 
+(1998)
+Entrepreneurial leaders can differ from other leaders and nonleaders in specific respects 
+including traits such as high risk-taking behavior, openness, need for achievement and 
+low deliberation. EL is also about being resistant to the socialisation that shapes mana­
+gerial personality and the willingness to escape management into leadership.
+Ireland et al. 
+(2003)
+EL entails the ability to influence others to manage resources strategically in order to 
+emphasize both opportunity-seeking and advantage-seeking behaviors.
+Cogliser and 
+Brigham 
+(2004)
+EL should involve idea generation, idea structuring and idea promotion, where idea 
+generation is critical in the early stages of a venture and idea structuring and promotion 
+in the latter stages. Therefore, an entrepreneurial leader does not only need to recognise 
+opportunities, but he or she must also be able to marshal the resources necessary to
+reach the potential of that opportunity.
+Gupta et al. 
+(2004)
+Leadership that creates visionary scenarios that are used to assemble and mobilize a 
+supporting cast of participants who become committed by the vision to the discovery 
+and exploitation of strategic value creation.
+Kuratko 
+(2007)
+EL is a unique concept combining the identification of opportunities, risk taking be­
+yond security and being resolute enough to follow through.
+Surie and 
+Ashley
+(2008)
+Leadership capable of sustaining innovation and adaptation in high velocity and uncer­
+tain environments.
+Leitch et al. 
+(2013)
+EL is the leadership role performed in entrepreneurial ventures, rather than in the more 
+general sense of an entrepreneurial style of leadership.
+Renko et al. 
+(2015)
+EL entails influencing and directing the performance of group members toward the 
+achievement of organizational goals that involve recognizing and exploiting entrepre­
+neurial opportunities.
+1 3
+499
+T. É. Ravet-Brown et al.
+Fig. 1  Flowchart, showing the stages of the systematic literature review
+ 
+1 3
+500
+Transformational and entrepreneurial leadership: A review of…
+this bears little resemblance to mainstream theories of leadership, and has yet to give 
+rise to any instruments of measurement. Finally, the most influential definition has 
+almost certainly been that of Gupta et al. (2004), which will be discussed in detail 
+below. However, even at this early stage, it may be noted that their definition bears 
+some resemblance to TL, with its emphasis on vision (Gupta et al. 2004). Though 
+some still adhere to this conceptualization (e.g. Pu et al. 2022), most now engage 
+with the definition of Renko et al. (2015), the use of which has been increasing in 
+recent publications (e.g. Hoang et al. 2022; Lin and Yi 2022; Malibari and Bajaba 
+2022; Strobl et al. 2022).
+An increasing body of work is seeking to pin down EL, with two clearly vis­
+ible overarching perspectives emerging: leadership or entrepreneurship (Leitch and 
+Harrison 2018a; Röschke 2018b). The latter generally conceptualizes EL as a mind­
+set, with leadership subsumed into the overall application of entrepreneurship. This 
+point of view is typified by Gupta et al. (2004) and Kuratko (2007), though some 
+more recent work follows in the same vein (e.g. Lyons et al. 2020). Others take a 
+slightly different tone, clearly stating that EL is not a “style” of leadership, but instead 
+describes the leadership role performed in entrepreneurial ventures (Leitch and Vol­
+ery 2017). This thread of research embraces the notion that, as such, leadership is 
+not merely a subordinate component in a hierarchical topology that emanates from 
+entrepreneurship, but that, indeed, entrepreneurship may be regarded as the essence 
+of EL (Harrison et al. 2016). In contrast, the approach exists which defines EL from 
+the standpoint of leadership science (Baumol 1968; Leitch and Volery 2017). The 
+pinnacle of this viewpoint was seen with Vecchio (2003), who framed EL merely as 
+leadership carried out within the narrow context of an entrepreneurial venture, and 
+nothing more. Within this school of thought, a further division may be made between 
+adherents to behavior (e.g. Bagheri and Harrison 2020; Hoang et al. 2022) or trait-
+based (e.g. Kuratko 2007; Nicholson 1998) theories. The latter is however criticized 
+for its relatedness to now-outmoded trait-based theories in mainstream leadership 
+science (e.g. Kempster and Cope 2010). Complicating the debate is the atheoretical 
+and fragmented nature of the EL field (Leitch and Harrison 2018a), due in part to the 
+various streams of inquiry from which the modern pool of research has long drawn 
+its inspiration, including areas as diverse as education (Peck 1991; Raby et al. 2023), 
+political (Schneider and Teske 1992; Vivona 2023), and community entrepreneur­
+ship (Dongul and Artantaş 2022; Selsky and Smith 1994). Some consider a kind 
+of “cross-pollination” between entrepreneurship, leadership, and their area of focus 
+to be increasing, with the flow becoming increasingly multi-directional (Leitch and 
+Harrison 2018a), while others suggest that both the field of leadership and entrepre­
+neurship stem from a common phenomenon (EL) or the need to create (Becherer et 
+al. 2008). Consensus in short is lacking, and definitions vary.
+To summarize, EL is a field of scholarship undergoing rapid development, which 
+has hitherto lacked a coherent, widely accepted definition of its subject of inquiry. In 
+light of the reviewed literature, it may be noted that TL and EL are two concepts that 
+often intermingle in the study of entrepreneurship (Reid et al. 2018). While a number 
+of reviews (e.g. Clark et al. 2019; Faridian 2023) have recently sought to bring some 
+clarity, and have done so with admirable depth and acuity, questions remain. Two 
+points remain unclear: the differences between the recognized role of TL in informing 
+1 3
+501
+T. É. Ravet-Brown et al.
+questionnaires of EL, the actual distinction these measures show from measures of 
+TL and their unique contributions beyond TL; and the resulting research landscape 
+with respect to the questionnaire-based measurement of EL. In the next section we 
+present the method which we used to help us answer our RQs.
+3  Methodology
+3.1  Planning the review
+In line with the methodology set out in Tranfield et al. (2003), Kraus et al. (2020) 
+and Kraus et al. (2022), the present systematic literature review was split into distinct 
+stages. Before commencing, a purely exploratory reading of the recent literature on 
+EL was carried out, encompassing a primary analysis of all literature available under 
+the search term “Entrepreneurial Leadership” on the Clarivate Web of Science. This 
+established several primary antecedents for the creation of a systematic literature 
+review (SLR) (Kraus et al. 2020). First, a sufficient number of articles were found, as 
+was a clear surge in the number of articles published over the last five years. Second, 
+a lack of both solid theory and formally agreed-upon definitions were noted by a 
+number of authorities in the field (e.g. Ahmed and Harrison 2022; Leitch and Har­
+rison 2018a). Finally, the specific area under investigation presented a broad range 
+of literature based on inconsistent terminologies, and displayed considerable frag­
+mentation (Clark et al. 2019). As such, it was determined that the application of the 
+SLR methodology bore the potential to establish a worthwhile contribution to current 
+research.
+After the primary, unstructured analysis of the current literature had established 
+the need for an SLR, a panel of experts on the study of leadership in entrepreneurship 
+was convened. In line with the reasoning detailed in Sects. 1 and 2 above, the three 
+RQs stated in the Introduction were derived and formalized to circumscribe the scope 
+of the present review more precisely. Regarding RQ1, the current literature was to be 
+examined with respect to the similarities and distinctions between EL and TL, includ­
+ing theoretical and conceptual contributions that considered EL with explicit refer­
+ence to TL. This simultaneously included examining the conceptual placement of EL, 
+as well as the implicit and explicit extent to which it cohered with TL’s theoretical 
+framework, embedded within the FRLT, i.e. leadership as an interpersonal influence 
+process. Regarding the second RQ, the literature was to be examined with respect to 
+the similarities and distinctions between EL and TL at the level of specific operation­
+alizations, i.e. questionnaire based measures available to those intent on measuring 
+EL quantitatively. Regarding the third RQ, the literature was to be examined to yield 
+empirical findings on both EL and TL, contextualizing the relationships between EL 
+and TL discerned in the answers to questions 1 and 2.
+Furthermore, inclusion criteria were established to increase the transparency and 
+replicability of the results, and to ensure that only papers of sufficient quality were 
+included. Since the objective of the present review was to furnish readers with a com­
+prehensive, multi-level overview of the overlap and differences between TL and EL, 
+both conceptual and empirical papers were accepted, the latter including both qualita­
+1 3
+502
+Transformational and entrepreneurial leadership: A review of…
+tive and quantitative investigations of EL. All included papers had to be published in 
+English, and had to be presented as full-length, original articles, which represented 
+either an empirical or a conceptual contribution relevant to answering one of the 
+three RQs. Furthermore, the included papers had to be available in one of the seven 
+databases and meta-database search engines used (see Sect. 3.2.1- Primary Search). 
+In addition to these criteria for inclusion, an SLR demands specific exclusion crite­
+ria. These were thus defined, with the goal of ensuring that no papers of low quality 
+or thematic unsuitability were accepted into the sample. Following the recommen­
+dations for reviews of research on entrepreneurship by Kraus et al. (2020), books, 
+conference proceedings, letters to the editor, responses to these, and other, non-peer-
+reviewed articles were specifically excluded. Furthermore, papers were excluded if 
+they appeared in journals with an impact factor of less than 1 at the time of the 
+search (April 2022), in line with previous SLRs in the Review of Managerial Science 
+(e.g. Ribeiro-Navarrete et al. 2022; Salmony & Kanbach 2022). Finally, papers were 
+excluded if abstract or full-text screening showed that they failed to discuss as a main 
+topic either TL used as EL, or both TL and EL in explicit concert.
+3.2  Conducting the review
+3.2.1  Primary search
+In order to adhere to the subject matter while ensuring that all possible, pertinent con­
+tributions would be included, an exhaustive all-fields search was carried out across 
+a number of major databases and search engines. These were identified via analysis 
+of previous SLRs, both within the field of EL (e.g. Clark et al. 2019; Harrison et al. 
+2016) and within the journal targeted for publication, the Review of Managerial Sci­
+ence (e.g. Feser 2022; Salmony and Kanbach 2022). This led to the selection of the 
+databases of Taylor and Francis, Emerald, Wiley Online, and SAGE Journals, as well 
+as the meta-database search engines Web of Science, ScienceDirect, and JSTOR. In 
+line with previous publications (e.g. Alaassar et al. 2022; but see also Deyanova et al. 
+2022), Google Scholar’s search engine was additionally utilized, and findings com­
+pared to the final sample to determine whether a significant number of peer-reviewed 
+works might have been excluded due to selection of these databases. No major con­
+tributions were found that had been excluded without warrant.
+Keyword strings were kept constant across all databases and search engines. The 
+combination of “Entrepreneurial leadership” coupled with “Transformational leader­
+ship” was employed, using the Boolean operator “AND” to conjoin the two, thus 
+excluding any articles which failed to mention both. Since the RQs focus on examin­
+ing the overlap and difference between the concepts of EL and TL specifically, using 
+these concrete terms without variation was deemed most fitting. Including research 
+on entrepreneurial or visionary leaders, for example, would have broadened the scope 
+beyond the core definitional and conceptual discourse the RQs sought to unravel; 
+articles not even containing the term “Entrepreneurial leadership” were considered 
+to represent a tangential contribution to the discourse. The same logic was applied to 
+articles not explicitly referencing TL. This step, while potentially subject to type-1 
+errors, represented the only clear and replicable path to the creation of a sample of 
+1 3
+503
+T. É. Ravet-Brown et al.
+manageable size. Limiting the search to title, abstract, and subject terms would have 
+excluded an excessive number of relevant results, even using truncated forms (such 
+as entre* and transf* and leader*). Using an all-fields search with truncated forms 
+would have yielded an excess of 10,000 articles without guaranteeing full coverage 
+due to the terminological disunity surrounding EL. The coverage period was chosen 
+to stretch up until April 31st, 2022, given that data collection was carried out in May 
+2022. In response to the authors’ initial sighting of the literature, no bound on past 
+papers was considered necessary, as an explicit mention of both EL and TL would 
+not pre-date the creation of the FRLT. Any potential early articles which dealt with 
+the topic were considered valuable input. This search methodology yielded a pri­
+mary pool of 428 articles. The searches had already filtered by publication type, with 
+only peer-reviewed articles accepted, and all others rejected. Duplicates were then 
+removed, leaving 398 articles.
+3.2.2  Abstract screening and full-text screening
+Synthesis of the literature followed a two-step approach, in line with recently pub­
+lished SLRs (e.g. Feser 2022). First, abstract screening led to the inclusion of 110 
+papers, with 298 removed (see Fig. 1). This involved removing all articles which 
+failed to explicitly examine EL or TL, were deemed inadmissible by type but had 
+passed the database filtering, were duplicates the first screening had missed, or were 
+not published in English. For example, many articles were found which mentioned 
+either TL or EL only once or twice, included references in the bibliography that con­
+tained those terms, or had abstracts in English but were written in another language. 
+Such articles were removed from the sample.
+Finally, a full reading of the remaining 110 articles was carried out, leading to 
+the exclusion of a further 85 papers. All papers were read by two researchers, and 
+decisions had to be unanimous for exclusion to occur; in cases where the researchers 
+failed to agree, a third member of the team made the decision to include or reject. 
+Only a few articles were found which required this measure. This screening phase 
+addressed two main points: quality and relevance. With respect to quality, papers 
+were examined for appropriate referencing; for a presentation of results that was both 
+unambiguous, and sufficiently underpinned by coherent arguments; and for publica­
+tion in reputable and widely cited journals, with an impact factor of greater than 1. 
+Regarding the second point of concern, i.e. relevance, attention was paid to the fea­
+tures of the articles which would help in answering the three RQs (see above). The 
+topicality of the articles was examined, in line with the reasoning stated in Sect. 3.1; 
+it should be noted that articles which framed EL purely in terms of TL were not 
+excluded. In addition, papers were cross-referenced while reading to make sure that 
+no key works had been missed. Some contributions were identified that could have 
+offered a potential benefit but appeared in journals with an impact factor lower than 1.
+3.2.3  Synthesis and content analysis
+As a consequence of the screening procedures detailed above, a sample of 25 papers 
+was conserved for data extraction and analysis; these are listed in Sect. 4, Table 2. 
+1 3
+504
+Transformational and entrepreneurial leadership: A review of…
+Due to the fragmentation of the field, the heterogeneity of the resulting sample, and 
+the conceptual and terminological disunity, a qualitative methodology was combined 
+with a synthesizing approach (Gentles et al. 2016). In doing this, both deductive and 
+inductive codes were used, while reference to the underlying framework of the FRLT 
+provided a guideline for the categorization of approaches to EL determined in the 
+sample (cf. Feser 2022). In a first step, key characteristics of the articles were iden­
+tified, permitting a rough separation along formal lines. Conceptual and empirical 
+articles were separated, with all purely conceptual articles forming the first category. 
+Articles which examined EL explicitly using measures of TL were then grouped into 
+a second category. This led to a remainder of articles that could be split into two final 
+categories: three articles that proposed measures of EL, as well as four articles which 
+used such measures to empirically examine EL. In all, four categories emerged which 
+will inform the discussion below. A second step then saw the content analysis of 
+all articles by all three authors, identifying thematic and conceptual similarities and 
+differences, with the researchers engaged in a constant and iterative exchange. The 
+resulting corpus of content was then analyzed with respect to the RQs, elucidated 
+in the Results section, and key findings drawn for further contextualization in the 
+Discussion section.
+4  Results
+The results of the SLR paint a clear picture of a thriving and rapidly growing field of 
+research. As can be seen in Fig. 2, research on the intersection between EL and TL has 
+increased markedly within the last decade, catalyzed perhaps by the Journal of Small 
+Fig. 2  Chart showing publication frequency of articles covering EL, and both EL and TL, by year
+ 
+1 3
+505
+T. É. Ravet-Brown et al.
+Business Management’s 2015 special issue on EL. As can be seen from the overlay 
+with general search results for EL, specific interest in the role of TL in EL increased 
+in tandem during the previous decade. The final sample is depicted in Table 2.
+In the present systematic literature review, 25 articles were examined to gain a 
+better understanding of the conceptual and practical relationship between TL and EL. 
+Four categories of articles were thematically distinguished (see Table 4), and each 
+was analyzed with specific regard to their particularities and individual contributions. 
+The first group of seven articles discusses EL and TL conceptually, some systemati­
+cally, and some in a narrative manner. These offer an interesting meta-informational 
+view, and shall inform the discussion both with regard to similarities between the two 
+leadership styles, and concerning the distinctness which researchers at large attribute 
+to current conceptualizations of EL. These papers will inform the answer to RQ1. A 
+second category of three papers contains the three extant measures of EL (Bagheri 
+and Harrison 2020; Gupta et al. 2004; Renko et al. 2015). Examining their component 
+items and dimensions will offer first-hand input for a direct comparison of EL and TL 
+operationalization, and will be central to answering RQ2. Vital for answering RQ3 
+are first four articles quantitatively examining EL, three doing so side by side with 
+TL (Cai et al. 2019; Lee et al. 2020; Newman et al. 2018), and the other replicating 
+results previously garnered with respect to TL, but using EL instead. The statistical 
+results contained within these four will offer vital clues to the discriminant validity at 
+the level of pure data, of EL versus TL. Finally, the fourth and largest group of eleven 
+articles examined EL using TL both quantitatively and qualitatively. As such, they 
+lend an interesting counterpoint to current conceptions which determine EL to be a 
+distinct style (e.g. Renko 2017). Of particular interest will be an analysis and synthe­
+sis of the arguments put forth within them for the use of TL within the entrepreneurial 
+paradigm. The results of the content analysis of each article are offered below, by 
+category, beginning with previous reviews and conceptual contributions, followed by 
+extant measures of EL, moving on to quantitative examinations of EL and TL, and 
+ending with papers that examine EL purely in terms of TL.
+4.1  Reviews and conceptual contributions
+In beginning the content analysis of the results, the theoretical articles of Category 
+I offer an interesting window into the previous theoretical discussion regarding the 
+relationship between EL and TL at the construct level. Moreover, by assessing their 
+implicit and explicit adherence to the FRLT’s paradigm of leadership, interaction-
+based leader-follower influence, a description of their congruence with the main­
+stream of leadership literature is made possible.
+Of seven purely conceptual articles, only two lead with the assumption that EL 
+should be regarded as a coherent and distinct concept or style (Harrison et al. 2020; 
+Leitch and Volery 2017). In contrast, the other articles reveal the breadth of cur­
+rent, alternative perspectives. These share no theoretical accord in their view of EL; 
+whether in their level of analysis of leadership (Lyons et al. 2020), their epistemic 
+approach (Kimbu et al. 2021), or the centrality they accord to the measures and con­
+cepts currently at the heart of EL (Reid et al. 2018; Leitch and Volery 2017) defini­
+tively argue that EL represents a new and distinct paradigm at the intersection of its 
+1 3
+506
+Transformational and entrepreneurial leadership: A review of…
+Authors 
+and Year
+Concep­
+tual or 
+Empirical
+Focus
+Journal
+Bagheri 
+and Harri­
+son (2020)
+Empirical
+Develops a novel, extensive scale of EL, drawing on Gupta et 
+al. (2004) and Huang et al. (2014).
+J Small 
+Bus Enterp 
+Dev
+Baldegger 
+and Gast 
+(2016)
+Empirical
+Uses the FRLT as the basis for a qualitative investigation of 
+leadership in entrepreneurial ventures, and suggests that an 
+evolution from transformational to transactional takes place.
+Int J En­
+trep Behav 
+Res
+Bamiatzi et 
+al. (2015)
+Empirical
+Examines female entrepreneurs using the full MLQ, finding that 
+the highest scores by far were achieved on TL.
+J Small 
+Bus 
+Manag
+Cai et al. 
+(2019)
+Empirical
+Measures the connection between creativity at various levels in 
+an entrepreneurial venture and ENTRELEAD.
+J Bus 
+Psychol
+Ensley et 
+al. (2006)
+Empirical
+Examines the effect of TL and transactional leadership styles on 
+new venture performance and new venture growth.
+J Bus 
+Ventur
+Fries et al. 
+(2021)
+Theory
+Literature review comparing leadership styles (TL, transaction­
+al, autocratic, expert, laissez-faire, participative and referent) 
+with leadership behaviors (entrepreneurial, nepotistic, pater­
+nalistic, steward and supportive) in family firms. EL behavior 
+overlaps strongly with only TL.
+J Fam Bus 
+Strategy
+Gupta et al. 
+(2004)
+Empirical
+Development of a scale of EL with five behavioral dimensions: 
+Framing the challenge, absorbing uncertainty, path clearing, 
+building commitment and specifying limits.
+J Bus 
+Ventur
+Harrison 
+and Leitch 
+(1994)
+Theory
+Discusses at length the then nascent field of EL, with reference 
+to both progenitor fields and possible future directions and 
+theoretical currents.
+Entrep 
+Reg Dev
+Harrison et 
+al. (2020)
+Theory
+Provides an overview of the fields of entrepreneurship, leader­
+ship, and EL through the use of a critical literature review.
+J Small 
+Bus Entrep
+Hensel 
+and Visser 
+(2018)
+Empirical
+Examines TL in entrepreneurial teams with shared responsi­
+bilities, its positive effects, as well as the mediating role of 
+personality traits.
+Int J En­
+trep Behav 
+Res
+Kimbu et 
+al. (2021)
+Empirical
+Qualitative investigation of female EL in the Ghanaian and 
+Nigerian tourism industry. Discusses the role and utility of TL.
+Ann Tour 
+Res
+Lee et al. 
+(2020)
+Empirical
+Meta-analytic review of thirteen established leadership styles, 
+including both TL and EL, and their respective effects on 
+creativity.
+Eur J Work 
+Organ 
+Psychol
+Leitch and 
+Volery 
+(2017)
+Theory
+Introductory literature review which seeks to provide a brief 
+overview of the fields of entrepreneurship, leadership, and EL, 
+as well as their interconnections.
+Int Small 
+Bus J
+Lyons et al. 
+(2020)
+Theory
+Proposes a 30-point skill inventory for successful entrepreneur­
+ship, which includes TL.
+J Entrep 
+Public
+McCar­
+thy et al. 
+(2010)
+Empirical
+Examines leadership styles in Russian entrepreneurial ventures, 
+with qualitative coding revealing that a style termed “open” is 
+most prevalent, which strongly resembles TL.
+Calif 
+Manag 
+Rev
+Newman et 
+al. (2018)
+Empirical
+Examines both EL and TL quantitatively, as well as their 
+effect on the relationship between creative self-efficacy and 
+innovation.
+J Bus Res
+Ng and 
+Kee (2018)
+Empirical
+Examines TL in SMEs combined with measures of “entrepre­
+neurial competencies” (Chandler and Jansen 1992), including 
+opportunity recognition.
+Manag 
+Decis
+Table 2  Final sample of 25 papers Of these, the five most highly cited articles are listed in Table 3
+1 3
+507
+T. É. Ravet-Brown et al.
+two parent fields of entrepreneurship and leadership, offering three reasons. First, 
+they argue that numerous scholars view entrepreneurs as leaders by default (e.g. 
+Cunningham and Lischeron 1991); second, they mention the similar evolutionary 
+paths of the two fields; finally, they adduce the similarities between EL on the one 
+hand, and TL, charismatic, and authentic leadership on the other. With respect to the 
+Table 3  Highly cited articles (n > 200) discussing TL and EL. Given above are the authors, year of publica­
+tion, the title of the article and journal of publication, as well as the number of citations as stated on Google 
+Scholar™ as of February 1st, 2023
+Authors and Year
+Title
+Citations
+Journal
+Ensley et al. (2006)
+The moderating effect of environmental dynamism 
+on the relationship between entrepreneur leader­
+ship behavior and new venture performance
+576
+J Bus 
+Ventur
+Gupta et al. (2004)
+Entrepreneurial Leadership: Developing and mea­
+suring a cross-cultural construct
+1,228
+ J Bus 
+Ventur
+Leitch and Volery 
+(2017)
+Entrepreneurial Leadership: Insights and 
+directions.
+278
+Int Small 
+Bus J
+Newman et al. (2018) The effects of employees’ creative self-efficacy on 
+innovative behavior: The role of Entrepreneurial 
+Leadership
+351
+J Bus 
+Res
+Renko et al. (2015)
+Understanding and Measuring Entrepreneurial 
+Leadership Style
+676
+J Small 
+Bus 
+Manag
+Authors 
+and Year
+Concep­
+tual or 
+Empirical
+Focus
+Journal
+Ng et al. 
+(2019)
+Empirical
+Similar to the earlier study by Ng and Kee (2018). Examines 
+the role of TL and “entrepreneurial competence” (Chandler and 
+Jansen 1992) on the performance of SMEs.
+J Small 
+Bus Enterp 
+Dev
+Paudel 
+(2019)
+Empirical
+Seeks to replicate previous results linking TL with entrepreneur­
+ial performance using Gupta et al.’s (2004) measure for EL.
+South 
+Asian J 
+Bus Stud
+Reid et al. 
+(2018)
+Theory
+Critical literature review examining the intersection between 
+the fields of leadership and entrepreneurship, from a leadership 
+perspective.
+Leadersh 
+Q
+Renko et 
+al. (2015)
+Empirical
+Development of a new, short measure for EL. Encompasses 
+eight items in one dimension.
+J Small 
+Bus 
+Manag
+Verma and 
+Kumar 
+(2021)
+Empirical
+Examination of leadership styles, TL among them, in ecologi­
+cally-minded startups and the interactions with the mindset that 
+typifies them, termed “green entrepreneurship”.
+J Entrep 
+Emerg 
+Econ
+Wang et al. 
+(2012)
+Empirical
+Case-study-based examination of differing styles of leader­
+ship in entrepreneurial ventures, and a discussion of how these 
+connect to traditional Chinese philosophies of Confucianism, 
+Legalism and Daoism.
+Asia Pac 
+Bus Rev
+Xu and Jin 
+(2022)
+Empirical
+Empirical examination of stressors typically encountered within 
+entrepreneurship on TL in its function as EL.
+J Bus Res
+Zaech and 
+Baldegger 
+(2017)
+Empirical
+Empirical examination of the prevalence of the leadership styles 
+of the FRLT in entrepreneurial ventures, as well as their effect 
+on performance.
+Int Small 
+Bus J
+Table 2  (continued)
+ 
+1 3
+508
+Transformational and entrepreneurial leadership: A review of…
+theoretical paradigm of the FRLT, the authors initially confirm and acknowledge that 
+leadership “revolves around the process of influencing others” (Leitch and Volery 
+2017, p. 147). However, thereafter, the separation between “leadership in” and “lead­
+ership of” is quickly subsumed by a broader, phenomenological interpretation of EL 
+as a field of research, as opposed to a concrete, operationalizable style of leadership. 
+Concretely, the authors consider EL as a “leadership role performed in entrepreneur­
+ial ventures, rather than in the more general sense of an entrepreneurial style of lead­
+ership” (Leitch and Volery 2017, p. 148). In a similar vein, Harrison et al. (2020) 
+also argue that EL is a distinct phenomenon. Though providing extensive and useful 
+theoretical exploration, however, their treatment of TL is somewhat perfunctory; they 
+Table 4  Articles distributed into the four categories
+Category
+Articles
+I: Reviews and conceptual 
+contributions
+Fries et al. (2021), Harrison and Leitch (1994), Harrison et al. 
+(2020), Kimbu et al. (2021), Leitch and Volery (2020), Lyons et al. 
+(2020), Reid et al. (2018)
+II: Measures of EL
+Bagheri and Harrison (2020), Gupta et al. (2004), Renko et al. (2015)
+III: Quantitative studies of EL 
+and TL
+Cai et al. (2019), Lee et al. (2020), Newman et al. (2018), Paudel 
+(2019)
+IV: Studies employing TL in 
+lieu of EL
+Baldegger and Gast (2016), Bamiatzi et al. (2015), Ensley et al. 
+(2006), Hensel and Visser (2018), McCarthy et al. (2010), Ng and 
+Kee (2018), Ng et al. (2019), Wang et al. (2012), Verma and Kumar 
+(2021), Xu and Jin (2022), Zaech and Baldegger (2017)
+Fig. 3  Proportion of overall 
+sample according to category
+ 
+1 3
+509
+T. É. Ravet-Brown et al.
+make no mention of its pertinent role in informing all extant conceptualizations of EL 
+(Bagheri and Harrison 2020; Gupta et al. 2004; Renko et al. 2015), nor of the numer­
+ous authors who use TL in lieu of EL (see e.g. Category II). These authors argue for 
+what may be termed the positive integration perspective (Fernald et al. 2005), which 
+posits that EL as a field emerged from the positive integration of its two parents.
+At the root of this perspective lies a paper by Harrison and Leitch (1994) that rep­
+resents a foundational text in the field of EL. They cite Carsrud and Johnson (1989) 
+to claim that the fields of entrepreneurship and leadership have evolved in parallel, 
+laying the groundwork for numerous later authors who take this line (e.g. Harrison 
+et al. 2020; Harrison and Leitch 1994; Leitch and Volery 2017). However, instead 
+of claiming EL as representing a distinct construct at that point, Harrison and Leitch 
+(1994) use these parallels to suggest a theoretical paradigm which future research at 
+the carrefour of the two fields could follow: contingency. Arguing that leadership 
+research developed from trait over situation to contingency, they note that entrepre­
+neurship had yet to embrace the last step, and quote numerous studies advocating the 
+use of contemporary developments in leadership (e.g. Chell et al. 1991; Greenberger 
+and Sexton 1987). The contingency approach has indeed been applied to EL, though 
+more so from within the field of leadership than recent conceptual developments in 
+EL (Antonakis and Autio 2012; Baldegger and Gast 2016). The remaining four purely 
+conceptual papers in the present sample take differing, more generalist perspectives. 
+One discusses identity construction in female entrepreneurial leaders in Ghana and 
+Nigeria through the lens of poststructural feminism (Kimbu et al. 2021). Building on 
+the socially constructed nature of EL, the authors challenge the endemic, essentialist 
+claims which implicitly couch entrepreneurship and EL in relation to norms that are 
+predominantly male (Kakabadse et al. 2018; Tlaiss and Kauser 2019) and embedded 
+in the Northern Hemisphere (Figueroa-Domecq et al. 2020). Similarly, the notion 
+of TL and transactional leadership being respectively typical of women and men is 
+tempered with the argument that both context, and the social construction of entrepre­
+neurial identity, play a vital yet under-researched moderating role (Cliff et al. 2005; 
+Zapalska et al. 2015). This viewpoint is invigorating, and moves beyond concep­
+tualizations which focus merely on dichotomizing the theoretical heritage defining 
+the current field of EL (e.g. Röschke 2018a). In contrast, Lyons et al. (2020) focus 
+on a far more tangible, skill-based perspective of rural entrepreneurship, subsuming 
+TL as a part thereof, but making no mention of the ongoing debates surrounding the 
+definition of the term “EL” (e.g. Harrison et al. 2020; Leitch and Volery 2017). The 
+authors determine TL, as defined by Bass (1985) as representing a mere one in 30 of 
+the skills necessary for successful entrepreneurship. In doing so, they may implicitly 
+be deemed as acknowledging the FRLT’s paradigm of leadership.
+Finally, Reid et al. (2018) provide an overview of the cross-fertilization of entre­
+preneurship and leadership, in accordance with the five key dimensions described in 
+the foundational work by Cogliser and Brigham (2004). The contribution of Reid et 
+al. (2018) extensively discusses the contributions made by leadership research which 
+have directly impacted the field of EL research. With respect to leadership, their 
+perspective may be considered firmly aligned with the FRLT’s underlying paradigm, 
+of “leadership in” versus “leadership of” organizations. Numerous contributions are 
+discussed, among them the utility of TL in enhancing creativity and innovation in 
+1 3
+510
+Transformational and entrepreneurial leadership: A review of…
+entrepreneurial ventures and its place as a primary tool for growth-oriented entre­
+preneurs, while the effect of TL on stakeholder perceptions of entrepreneurial vision 
+is stated as a possible question for future research. A final contribution examines 
+leadership styles and leadership behaviors in varying types of family-owned busi­
+nesses (Fries et al. 2021). These authors through their own literature review establish 
+a number of leadership styles and leadership behaviors typical of family businesses. 
+As one of five of the latter, they define EL behavior in accordance with Pistrui et al. 
+(2000), while adhering to the more widespread definition of TL in accordance with 
+Bass (1985). In doing so, these authors also implicitly adopt the FRLT’s framework 
+of leadership as a leader-follower process.
+4.2  Measures of entrepreneurial leadership
+Although the above-mentioned theoretical work provides insight into the conceptual 
+debates surrounding EL, the key interface between theory and empirical findings is 
+represented by operationalized tools for measurement. The present sample contains 
+the three most prominent measures of EL, as well as several articles which employ 
+them, discussed in the next subsection. First, there is Gupta et al.’s (2004) ques­
+tionnaire, and a study which used it (Paudel 2019); second, Renko et al.’s (2015) 
+measure, also found in two publications (Cai et al. 2019; Newman et al. 2018), them­
+selves included in an in-sample meta-analysis (Lee et al. 2020). Finally, the recent 
+contribution by Bagheri and Harrison (2020), though not used by any articles in the 
+present sample, represents a major step in the creation of an operationalized mea­
+sure of EL. The first operationalization of EL still in common usage is represented 
+by Gupta et al.’s (2004) model. Not parsed directly as a questionnaire measure, the 
+contribution instead develops a list of behaviors considered unique to an entrepre­
+neurial style of leadership. Numerous steps of development occurred which will be 
+examined in detail in the discussion, resulting in five behavioral dimensions: Framing 
+the challenge, absorbing uncertainty, path clearing, building commitment, and speci­
+fying limits. Several of these behaviors clearly mirror certain aspects of TL, such as 
+“Has a vision and imagination of the future”, “Sets high standards of performance”, 
+or “Inspires emotions, beliefs, values and behaviors of others, inspires others to be 
+motivated to work hard” (Gupta et al. 2004, p. 250). While the authors discuss these 
+similarities, they point to differences such as “ambitious foresight and pattern recog­
+nition capabilities” required in entrepreneurial leaders which are absent in TL (Gupta 
+et al. 2004, p. 254).
+Renko et al.’s (2015) ENTRELEAD was developed as a short measure for EL, 
+in part to explicitly remedy the issues inherent in the previously used measure (i.e. 
+Gupta et al. 2004). Using standard procedures of scale development and valida­
+tion, the authors settle on an eight-item scale for the measurement of EL. Just as 
+in the previously examined scale, a strong resemblance to TL is evident. Three of 
+ENTRELEAD’s eight items (“Has creative solutions to problems”, “Challenges and 
+pushes me to act in a more innovative way”, “Wants me to challenge the current 
+ways we do business”) bear a striking resemblance to the TL sub-dimension of intel­
+lectual stimulation, while one is identical in content to inspirational motivation (“Has 
+a vision of the future of our business”), and another is strongly reminiscent of ide­
+1 3
+511
+T. É. Ravet-Brown et al.
+alized influence behavior (“Demonstrates passion for his/her work”). Building on 
+both of these previous scales, Bagheri and Harrison (2020) presented the longest 
+and most detailed scale of EL to date, composed of 40 items along eight dimensions, 
+and with high internal validity. Among these eight dimensions, numerous items can 
+be found that are strongly reminiscent of other leadership styles, such as empower­
+ing leadership (e.g. “Creates an environment where organization staff feel free to 
+try new things”; cf. Cheong et al. 2019), self-leadership (e.g. “Shows awareness of 
+their strengths and weaknesses”, “Demonstrates the ability to manage time effec­
+tively”; c.f. Houghton et al. 2003) or TL (e.g. “Leads their followers by serving as a 
+role model”, “Inspires emotions, beliefs, values and behaviors of followers”, “Shows 
+empathy towards his/her followers”; Bass 1985), while further items fit poorly with a 
+mainstream conceptualization of leadership as an inter-personal, goal-oriented influ­
+ence process (e.g. “Anticipates possible future events”, “Recognises existing market 
+opportunities”, “Actively identifies, develops and goes after new business”). While 
+Bagheri and Harrison’s scale, due to its novelty, has yet to be widely applied, the 
+former two scales have found considerable use since their creation.
+4.3  Quantitative studies of entrepreneurial and transformational leadership
+Four contributions in the sample examine EL quantitatively. Of these, two publica­
+tions examine both EL and TL quantitatively (Cai et al. 2019; Newman et al. 2018), 
+while a third incorporates these and others into a meta-analysis (Lee et al. 2020). 
+A fourth paper by Paudel (2018) examines only EL, employing the ENTRELEAD 
+scale to replicate results connecting TL with innovation, and finds that EL predicts 
+it (β = 0.58, p = .00). Meanwhile, two studies directly assessed both EL and TL using 
+designated measures. Cai et al. (2019) linked the ENTRELEAD scale with creativ­
+ity and innovation, two aspects highly relevant to entrepreneurship. With respect to 
+their treatment of TL, they cursorily noted that it failed to explain employee creativ­
+ity when recognizing business opportunities. The authors do not further discuss the 
+FRLT or its underlying theoretical framework, but adduce a definition of leadership 
+as “influencing and directing the performance of group members towards the achieve­
+ment of organizational goals that involve recognizing and exploiting entrepreneurial 
+activities” by Renko et al. (2015, p. 55). Apart from the emphasis on opportunity 
+recognition, this matches well with the FRLT’s conceptualization of leadership as an 
+interpersonal, goal-oriented influence process. Their results found significant predic­
+tive effects by EL, and none whatsoever by TL for employees’ creative self-efficacy 
+(r = .52, p < .01), team creative self-efficacy (r = .35, p < .05), employee creativity 
+(r = .58, p < .01), and team creativity (r = .64, p < .01). Furthermore, they demonstrated 
+no statistical correlation between EL and TL. In contrast, Newman et al. (2018) found 
+a strong positive relationship between TL and EL (r = .81, p < .05) while showing only 
+a correlation of EL with innovative behavior (r = .14, p < .05). TL was also found to 
+correlate with innovative behavior (r = .10, p < .10). Like the publication by Cai et 
+al. (2019), this contribution focuses on Bandura’s social cognitive theory (1986) to 
+explain the positive effects of EL on creative self-efficacy and innovation (Newman 
+et al. 2018). Incorporating both of these results is a meta-analysis by Lee et al. (2020), 
+which tied EL with authentic leadership for the strongest correlation to creativity 
+1 3
+512
+Transformational and entrepreneurial leadership: A review of…
+(Spearman’s ρ = 0.47) with a weaker correlation to innovation (ρ = 0.29), comparable 
+to TL, which hovered at around ρ = 0.30 for both creativity and innovation.
+4.4  Studies using transformational in lieu of entrepreneurial leadership
+To provide an interesting narrative counterpoint, Category IV examines the large 
+swathe of articles which examined EL using the construct of TL, thereby implicitly 
+adopting the theoretical framework of the FRTL. Four examined TL as an antecedent 
+variable with respect to performance (Ng et al. 2019; Zaech and Baldegger 2017), 
+and were variously moderated by environmental dynamism (Ensley et al. 2006) and 
+personality (Hensel and Visser 2018). Overall, three main streams of argumentation 
+can be found that pertain to the RQ. First, several argue for using TL in the study 
+of entrepreneurship, either due to its intrinsically useful general effects (e.g. Ng et 
+al. 2019; Xu and Jin 2022), or because measures of EL are deemed insufficiently 
+focused on leadership in its classical definition (Baldegger and Gast 2016; Zaech and 
+Baldegger 2017), or simply by default (Bamiatzi et al. 2015; Ensley et al. 2006). A 
+second grouping (Hensel and Visser 2018; Ng and Kee 2018) examines the positive 
+effect of TL on innovation, drawing on the wealth of literature supporting this link 
+(Gumusluoglu and Ilsev 2009), as well as the equally well-supported link between 
+innovation and entrepreneurial success (Ireland et al. 2003). Finally, a third tranche 
+does not employ TL in particular, instead either examining it for beneficial effects 
+in comparison with a number of other leadership styles (Verma and Kumar 2021), 
+or finding TL, through inductively qualitative analysis, to be the main style applied 
+by entrepreneurs or in entrepreneurial ventures (McCarthy et al. 2010; Wang et al. 
+2012). The theoretical arguments in each will be traced to provide clarity with respect 
+to the RQs.
+Ng et al. (2019) introduce their own, brief literature review in which a number 
+of sources are cited supporting the value of TL to the success of enterprises. How­
+ever, the relevance of some of these sources to entrepreneurship appears tenuous 
+(e.g. Schaubroeck et al. 2007), and no explicit justification is given regarding why 
+other measures, which are more visibly relevant, are avoided (e.g. Renko et al. 2015). 
+Ensley et al. (2006) in contrast discuss at great length their rationale for employing 
+the transactional-transformational paradigm. In essence, they define the entrepreneur 
+as a leader by default, given the need to garner resources if opportunities are to be 
+exploited. From there on, the use of the most prominent paradigm for the measurement 
+of leadership is arrived at, equally, by default (Ensley et al. 2006). Another contribu­
+tion traces the evolution of leadership style from within the paradigm of leadership 
+emergence, documenting a shift from transformational to transactional with increas­
+ing maturity of the venture (Baldegger and Gast 2016). The rationale given here for 
+the use of TL hinged on a clear separation between entrepreneur and entrepreneurial 
+leader: EL is considered simply as leadership within an entrepreneurial context in the 
+tradition of Vecchio (2003), the measurement which is considered perfectly achiev­
+able through the use of established tools (Baldegger and Gast 2016). The co-authored 
+publication by Zaech and Baldegger (2017) follows the same line of reasoning. Only 
+one article explicitly examined the female leadership of entrepreneurial ventures, by 
+correlating Full Range Leadership Theory styles with entrepreneurial competencies 
+1 3
+513
+T. É. Ravet-Brown et al.
+(Bamiatzi et al. 2015). Here, the Multifactor Leadership Questionnaire (Bass and 
+Avolio 1997) is used, supplemented by specific but not further defined questions on 
+leadership style (e.g. autocratic vs. democratic). Finally, Xu and Jin (2022) empiri­
+cally examine stressors typically encountered within entrepreneurship, and how these 
+moderate the expression of TL in its function as EL. These authors point to the con­
+siderable body of work that has demonstrated the effectiveness of TL when exhibited 
+by entrepreneurial leaders.
+Hensel and Visser (2018) offer a causal chain of reasoning for using TL. First, 
+they state the importance of innovation to entrepreneurial effectiveness (Lukes and 
+Stephan 2017), offering evidence for the undisputed importance of TL for team 
+innovation (García-Morales et al. 2012), ultimately stating that little research has 
+examined the latter assertion in teams under shared leadership. It is this gap they 
+thereafter choose to exploit, finding that a variety of personality traits affect the two 
+key dimensions of vision articulation and intellectual stimulation (Hensel and Visser 
+2018; Ng and Kee 2018), as in their paper detailed above, adduce TL together with 
+entrepreneurial competences, examining their effect on SME performance. Again, 
+no clear justification is established for a potentially direct, beneficial effect which TL 
+might have that makes it suitable for entrepreneurship, except through the interposed 
+variable of innovation (Ng and Kee 2018; Verma and Kumar 2021) do not explicitly 
+state that TL is EL; instead, they examine a number of leadership styles (charismatic, 
+visionary, TL, servant) and the interactions with “green entrepreneurship” which 
+may affect overall firm growth. Interestingly, they refrain from including any extant 
+measures of EL in their analysis. Finally, two publications can be distinguished by 
+their use of a qualitative approach. One examines the relationship between EL, con­
+ceptualized as lying on the continuum between TL and transactional leadership, and 
+traditional Chinese paradigms of leadership (Wang et al. 2012). The second paper 
+analyzed open-ended questionnaires from 130 entrepreneurs using content analysis 
+methodology to inductively categorize and identify common leadership styles. Their 
+result showed an overwhelming proportion of entrepreneurs adhering to an “open” 
+leadership style, which the authors determined to be “consistent with the characteris­
+tics of TL” (McCarthy et al. 2010, p. 55).
+5  Discussion
+5.1  RQ1 (theory)
+In the previous section, we delineated the output of the content analysis and the iden­
+tification of thematic groupings and their conceptual significance, with respect to 
+the RQs this work is devoted to. Regarding RQ1, the results detailed above offer a 
+conflicting picture. Two conceptual contributions examined here embrace the sugges­
+tion that EL is a distinct phenomenon (Harrison et al. 2020; Leitch and Volery 2017). 
+Other recent works advocate a similar position (Clark et al. 2019; Harrison et al. 
+2016), in line with early work that foreshadowed a split appreciation of EL (Harrison 
+and Leitch 1994). Indeed, this central cluster of scholarship in the field of EL (includ­
+ing Ahmed and Harrison 2021; Clark et al. 2019; Leitch and Volery 2017) is informed 
+1 3
+514
+Transformational and entrepreneurial leadership: A review of…
+by the notion of “diametrically opposed views” of EL, caused by research on EL 
+being anchored “either in the leadership or in the entrepreneurship field” (Leitch and 
+Volery 2017, p. 150). Even these authors however explicitly confirm the relevance 
+of TL (Leitch and Volery 2017), and begin by considering leadership as “the process 
+of influencing … to accomplish shared objectives” (Leitch and Volery 2017, p. 147). 
+This is completely in line with the FRLT’s theoretical conception of leadership, but 
+the authors quickly proceed to vastly broaden the scope of what they consider to fall 
+under the term of EL. As such, it could be argued that the authors argue more for a 
+distinct paradigm than a distinct style, in contrast to others (e.g. Renko 2017). This 
+represents a key issue; numerous key conceptual works, including those by Gupta 
+et al. (2004), Leitch and Volery (2017) and Harrison et al. (2020), examine EL as an 
+issue fundamentally collocated at several levels of analysis. Others are even more 
+broad in their definition, considering EL “a new leadership style that is required to 
+fulfill the current business changes in the fourth industrial revolution” (Pauceanu et 
+al. 2021). While such a holistic appreciation may be useful in stimulating debate, it 
+is this intermingling of levels of analysis which problematizes the creation of a con­
+ceptual basis suitable for greater operational specificity. This specificity is necessary 
+for the development of an operational definition of EL that can be used by scholars 
+for measurement; one that is sufficiently distinct from TL and one that is accepted by 
+mainstream leadership science to meet the currently dominant definition of leader­
+ship as a behavioral influence process between leader and follower (Antonakis and 
+Autio 2012; Hemshorn de Sanchez et al. 2022). Only if both these aspects were suf­
+ficiently realized could the gap between EL and the wider leadership literature be 
+bridged, and a measure of EL found that is capable of receiving a greater degree of 
+acceptance by researchers across their clusters. Furthermore, previous contributions 
+exist which sought to establish definitions that could serve as a framework for such 
+developments (e.g. Antonakis and Autio 2012), and recent work has already begun to 
+determine behaviorally proximal components of EL (e.g. Maran et al. 2019).
+Regardless of the precise terminology, an apparent consequence of this concep­
+tual school of thought is the creation of a form of EL, detailed in the findings above, 
+which stands somewhat apart from established measures of leadership (Harrison et 
+al. 2020; Leitch and Volery 2017). Proponents of this model argue for its value, but 
+both these and other review articles on the subject (e.g. Clark et al. 2019; Harrison 
+et al. 2016) fail to acknowledge the extremely limited scope with which the current 
+measures of EL have been accepted in mainstream leadership research (e.g. Reid et 
+al. 2018). Issues also surround Harrison et al.’s (2020) conceptual discussion of TL. 
+In their review of EL, which specifically seeks to disentangle the components of 
+leader and entrepreneur, overviews are given of both fields of study. TL is briefly dis­
+cussed, even though mention of the parent FRLT is absent, as is its value in supplying 
+other, validated styles, such as transactional leadership, as is the central role of TL 
+in informing all three measures of EL currently available (Harrison et al. 2020). Nor 
+is mention made of the statistical results detailed in the present review. The authors 
+point out, somewhat confusingly, that there have been failed attempts to redefine TL 
+“by including vision” (Harrison et al. 2020, p. 6), which the authors consider key 
+to EL; vision has been a central component of TL since its inception (Bass 1985; 
+Burns 1978). Nevertheless, in elucidating their theoretical basis for this position, the 
+1 3
+515
+T. É. Ravet-Brown et al.
+authors provide strong, implicit claims of comprehensiveness and authority in their 
+discussion (Harrison et al. 2020), stemming from an epistemic narrative derived from 
+earlier work (Fernald et al. 2005; Harrison and Leitch 1994). Furthermore, while 
+partially acknowledging the role of TL, they detract from it rather vigorously, point­
+ing to a “lack of empirical evidence” for its effectiveness (Harrison et al. 2020, p. 6) 
+among other factors, but making no mention of the wealth of studies, reviews, and 
+meta-analyses which offer the opposite picture (e.g. Dvir et al. 2002; Gumusluoglu 
+and Ilsev 2009; Judge and Piccolo 2004; Lowe et al. 1996; Wang et al. 2011; see 
+also Sect. 2.1- Transformational Leadership). As such, while these authors argue for 
+a clear separation of EL from TL, the lack of engagement with mainstream leader­
+ship literature obscures how a broader dialogue might reflect their proposed, distinct 
+construct. Instead, the suggestion is made that both entrepreneurship and leadership 
+may be better understood by integrating them “via the lens of the EL paradigm”; it 
+is not completely clear what this paradigm is, however (Harrison et al. 2020, p. 12).
+This school of thought contrasts with other theoretical appreciations, both of the 
+place of EL within leadership, and of EL as a style of leadership, that barely mention 
+the EL construct elaborated above (Harrison et al. 2020; Leitch and Volery 2017), 
+nor the measures deriving from it. For example, the review of leadership styles by 
+Fries et al. (2021) makes no mention of the currently available scales of EL (Bagheri 
+and Harrison 2020; Gupta et al. 2004; Renko et al. 2015). In contrast, they find EL 
+behaviors to overlap strongly with, and only with, TL (Fries et al. 2021; see also 
+Peters and Kallmünzer 2018). Similarly, in their comprehensive analysis of the inter­
+section between entrepreneurship and leadership, Ried et al. (2018) touch on these 
+measures of EL briefly, but merely to note their use of vision as a key component of 
+measuring it. Neither engages with the theoretical arguments supporting their con­
+ception. Therefore, the value of these extant operationalizations of EL has not yet 
+been fully accepted by more mainstream leadership researchers, indicating that the 
+lack of engagement emanates not only from the nuclear field of EL, but also from the 
+wider research community. For example, Kimbu et al. (2018) refrained from empha­
+sizing the existence of a distinct style of EL, even though theirs represents a sweeping 
+examination of leadership theory within entrepreneurship. This reality is paralleled in 
+other, highly cited works on entrepreneurial leadership (e.g. Schoemaker et al. 2018). 
+Similarly, Lyons et al. (2020) consider EL as representing the full gamut of behaviors 
+a leader-entrepreneur must show in order to arrive at a successful venture, with the 
+emphasis on the “entrepreneur.” The specific component of leading followers, they 
+deem, is well served by the extant construct of TL. This conceptualization clashes 
+with Leitch and Volery’s (2017) proposition that extricating EL from the “leadership 
+in” or “leadership of” debate is incidental, precisely because EL should be more com­
+prehensive, including interactions with shareholders and, more broadly, the dyna­
+mism of the phenomenon of entrepreneurship (Leitch and Volery 2017).
+In summary, results show that several publications find EL and TL to overlap at 
+the concept (e.g. Kimbu et al. 2021; Lyons et al. 2020) and construct (e.g. Fries et 
+al. 2021; McCarthy et al. 2010) levels, while others argue for its value as a distinct 
+construct (e.g. Harrison et al. 2020; Leitch and Volery 2017). In response to RQ1, it 
+can be stated that a lack of clear and reciprocal engagement between theoretical work 
+on EL and TL renders a determination of their overlap inconclusive, a result in line 
+1 3
+516
+Transformational and entrepreneurial leadership: A review of…
+with previous reviews of EL (Antonakis and Autio 2012). As such, it is suggested that 
+this area in particular could benefit from further study, a greater exchange between 
+scholars, and a more nuanced integration of extant leadership frameworks into EL.
+5.2  RQ2 (content)
+The theoretical landscape is inconsistent, as demonstrated above. The effects these 
+inconsistencies have exerted on the three measures of EL currently in use will now 
+be charted to answer RQ2. Gupta et al.‘s conceptualization (2004) was chronologi­
+cally the first of those still in use, and continues to inform current developments. It is 
+however by no means unanimously adopted. Renko et al. (2015) specifically detract 
+from the earlier measure, stating, among other concerns, that it was not specific to 
+entrepreneurship, a suggestion seconded by Clark et al. (2019) in more recent works. 
+Furthermore a number of its items were “characteristic of TL” (Renko et al. 2015, 
+p. 60). In addition, this overlap with TL is admitted by the original authors (Gupta et 
+al. 2004, p. 245). However, a more fundamental issue exists. Though largely ignored 
+by those employing this measure, it was neither methodologically conceived nor 
+suitably validated as a questionnaire. Gupta et al. themselves note that the GLOBE 
+(House et al. 1999) data they employ was “not originally intended” for the develop­
+ment of a novel construct (2004, p. 257), let alone the creation and validation of a 
+new scale. In addition, their methodology in doing so was highly unorthodox. A first 
+step saw five behaviors, deemed necessary for entrepreneurial leaders drawn from 
+the existing concepts of TL, team-building, and value-based leadership (Gupta et 
+al. 2004). As stated (Renko et al. 2015, p. 60), these five behaviors indeed appear 
+significantly indebted to TL (e.g. “The articulation of a compelling vision”). In a 
+number of further steps, five specific EL “roles” were established: framing the chal­
+lenge, absorbing uncertainty, path-clearing, building commitment and specifying 
+limits (Gupta et al. 2004, p. 247). Thereafter, the authors selected from 112 attributes 
+of “outstanding leadership” contained in the GLOBE data-set a total of 19 that they 
+“expected to load” onto the five previously established roles of EL (Gupta et al. 
+2004, p. 249). However, though the following factor analysis yielded results deemed 
+acceptable, and the subdimensions did indeed inter-correlate to an acceptable degree, 
+the authors warn that “the fit indices for the confirmatory factor analysis at individual 
+levels of analysis deteriorated substantially” (Gupta et al. 2004, p. 251). Furthermore, 
+external validity was established only within the GLOBE data-set, by correlating EL 
+with several Hofstede cultural dimensions deemed relevant to entrepreneurship, but 
+only at the level of entire societies (Shane et al. 1995). Such claims of ecological 
+validity have been sharply criticized, with regard to the GLOBE studies as a whole 
+(Graen 2006). The above shows numerous diversions from standard practice of scale 
+development, which normatively entails the creation of an item pool, either from 
+solid conceptual foundations or from specific, related, previously validated scales; 
+the administration of these items to multiple unique samples of respondents; and 
+progressive exploratory and confirmatory factor analyses of these unique responses 
+(DeVellis and Thorpe 2021). Leadership styles that were elucidated in accordance 
+with this process include, among others, ethical leadership (Kalshoven et al. 2011), 
+servant leadership (Van Dierendonck and Nuijten 2011), and authentic leadership 
+1 3
+517
+T. É. Ravet-Brown et al.
+(Walumbwa et al. 2008). Scale development for leadership-related constructs also 
+follows this process, as seen in publications operationalizing Machiavellianism in 
+leaders (Dahling et al. 2009) or leader-member-exchange (Liden and Maslyn 1998), 
+among others.
+However, Gupta et al.’s measure (2004) is employed as a questionnaire by numer­
+ous researchers with only minor adaptation (e.g. Huang et al. 2014), demonstrating 
+that this long and laborious process of explicit scale creation and validation has been 
+curtailed (see e.g. Boateng et al. 2018; Hinkin 1995). In addition to being criticized 
+for its similarity to TL (Renko et al. 2015), this scale should thus be viewed with 
+caution with respect to validity. This issue is of central importance, as it may help 
+to explain the large number of publications studying EL without recourse to either 
+this measure or those derived from it (see Category IV in Results). Returning to 
+the criticism leveled by Renko et al. (2015), that Gupta et al. (2004) overly relied 
+on TL, it must be noted that the critics appear to fall prey to the same issue. Their 
+ENTRELEAD scale is the most widely used questionnaire measure of a distinct 
+EL style after Gupta et al. (2004), though this ratio is shifting as most authors now 
+use ENTRELEAD (e.g. Dabić et al. 2021; Niemann et al. 2022). As detailed in the 
+Results section, several items on the ENTRELEAD scale closely resemble items used 
+to assess TL. Table 5 shows the ENTRELEAD scale (Renko et al. 2015) side by side 
+with a shortened measure for TL by Carless et al. (2000). This same measure was 
+used alongside ENTRELEAD to assess TL in two of the papers in the sample.
+The last three items of each scale (Table 5) vary considerably. Aside from these, 
+numerous items show strong similarities in meaning and formulation; the short 
+length of each scale necessitates the assumption of considerable issues of confla­
+tion. Furthermore, both the Gupta and Renko publications discuss the differences 
+between EL and TL, and both list non-EL leadership behaviors. However, these lists 
+differ on numerous points. For example, Gupta et al. (2004, p. 250) consider EL as 
+encompassing an “Unusual ability to persuade others of his/her viewpoint”. This is 
+Table 5  TL (Carless et al. 2000) and EL (Renko et al. 2015) scales, grouped according to similarity of item
+Measure of TL by Carless et al. 2000
+Measure of EL by Renko et al. 2015
+● Encourages thinking about problems in new ways and 
+questions assumptions
+● Has creative solutions to problems
+● Challenges and pushes me to act in a 
+more
+innovative way
+● Wants me to challenge the current ways 
+we do business
+● Is clear about his/her values and practices what he/she 
+preaches
+● Instils pride and respect in others and inspires me by 
+being highly competent
+● Demonstrates passion for his/her work
+● Communicates a clear and positive vision of the future
+● Has a vision of the future of our 
+business
+● Treats staff as individuals, supports and encourages their 
+development
+● Gives encouragement and recognition to staff
+● Fosters trust, involvement and cooperation among team 
+members
+● Often comes up with radical improve­
+ment ideas for the products/services we 
+are selling
+● Often comes up with ideas of complete­
+ly new products/services that we could sell
+● Takes risks
+1 3
+518
+Transformational and entrepreneurial leadership: A review of…
+reminiscent of charisma and charismatic leadership, which Renko et al. explicitly 
+state is not a requirement for EL (2015, p. 57). Finally, the remaining items found on 
+the ENTRELEAD scale (“Often comes up with radical improvement ideas for the 
+products/services we are selling”, “Often comes up with ideas of completely new 
+products/services that we could sell”, “Takes risks”) are in no direct way related 
+to mainstream definitions of leadership, such as “a process whereby an individual 
+influences a group of individuals to achieve a common goal” (Northouse 2018, p. 
+43). This raises two main points. First, previous research has sought to unite aspects 
+of strategic entrepreneurship with EL (Covin and Slevin 2002; Ireland et al. 2003). 
+While this conceptual heritage is discussed by Renko et al. (2015), works from within 
+mainstream leadership science which have responded to the limitations of such an 
+approach, and suggested potential remedial steps, are not mentioned (e.g. Antonakis 
+and Autio 2012).
+Second, leadership research has shown eminent success in focusing on proximal, 
+clearly definable behaviors salient in leader-follower interactions (Derue et al. 2011). 
+This approach, if anything, is gathering momentum rather than being overtaken by 
+other paradigms (e.g. Hemshorn de Sanchez et al. 2022). Aspects relevant to the 
+leadership of venture instead of followers, such as opportunity recognition (Emami 
+et al. 2022) or risk-taking, could represent interference in determining a leadership 
+style in this manner. Until the role of leadership in entrepreneurship is clearer, any 
+extraneous aspects should therefore be examined under the aegis of their respective 
+conceptualizations; opportunity recognition and risk taking both have little to do with 
+the leading of employees, and both have produced extensive, theoretically coherent 
+research of their own (e.g. Angelsberger et al. 2017; Grégoire et al. 2010; Palich and 
+Bagby 1995). For example, behaviors which encourage employees to take risks are 
+a component of the style of leadership known as empowering (Cheong et al. 2019). 
+However, this stands apart from a leader’s own tendency towards risk-taking, the 
+measurement of which, in any case, can be accomplished with far greater subtlety 
+and accuracy than through asking “Do you take risks?” (an item of ENTRELEAD, 
+Renko et al. 2015; see in contrast Lejuez et al. 2002). A potential role-modeling effect 
+may well be worth exploring (Newman et al. 2018), but this should be done in its own 
+right, perhaps by examining leader perceptions as a mediating factor between leaders’ 
+and followers’ displays of risk, instead of as an afterthought on leadership question­
+naires. The same holds true for opportunity recognition. While some argue that such 
+a distinction is not of primary importance (Leitch and Volery 2017), this overlooks 
+the fact that many researchers seek to use conceptualizations of EL as they would, 
+for example, the Multifactor Leadership Questionnaire (Antonakis 2001): as a con­
+cretely quantifiable, questionnaire-measured, exogenous variable. This includes Cai 
+et al. (2019), who explicitly state that “recently, scholars have consistently proposed 
+the treatment of EL as a specific leadership style” (Cai et al. 2019, p. 205). Similarly, 
+Newman et al. (2018) and Paudel (2019) use EL in this manner, as do numerous fur­
+ther studies of EL not included in the present sample, such as by Dabić et al. (2021) 
+or Mehmood et al. (2021b). In summary, it may be observed that the ENTRELEAD 
+scale also suffers from certain issues of discriminant validity and overlap. This might 
+serve to explain why, though the most frequently used of the three measures of EL, it 
+1 3
+519
+T. É. Ravet-Brown et al.
+was nevertheless disregarded in the many recent studies of EL which used scales of 
+TL (see Sect. 4.4- Studies using transformational in lieu of EL).
+Finally, results show that the most recent measure of EL by Bagheri and Harrison 
+(2020) demonstrates the greatest divergence from scales of TL. As detailed above, 
+this extensive questionnaire offers numerous items clearly distinct from TL, though 
+several items continue to linger that seem highly indebted to it. In this, they strongly 
+resemble the creation of the conceptualization by Gupta et al. (2004), whose theo­
+retical foundation Bagheri and Harrison (2020) acknowledge as the basis for their 
+own measure. Here, however, a number of issues emerge. The authors argue for the 
+value of Gupta et al.’s (2004) scale as a basis, asserting that it is the most widely used 
+scale of EL, and implicitly argue for its acceptance by scholars. However, this asser­
+tion seems incongruous. First, numerous scholars have presented strongly opposing 
+views (e.g. Harrison et al. 2018; Leitch et al. 2013; Leitch and Volery 2017), among 
+them one of the two authors in recent publications (Harrison et al. 2016, 2020), who 
+suggested that the underlying data-set was no longer relevant and had limited poten­
+tial (Clark et al. 2019). Second, of the studies included in the recent meta-analysis 
+by Lee et al. (2020), all four employed the ENTRELEAD scale (Renko et al. 2015), 
+with two of these authored by the other author of the new measure (Bagheri 2017; 
+Bagheri and Akbari 2018). At least one more recent publication by this author also 
+used ENTRELEAD (Bagheri et al. 2022), as have an increasing number of others 
+(e.g. Hensellek et al. 2023; Hoang et al. 2022; Lin and Yi 2022; Malibari and Bajaba 
+2022; Strobl et al. 2022). Gupta et al.‘s conceptualization (2004) is thus by no means 
+unanimously adopted which, particularly in light of the inherent conceptual and 
+methodological issues discussed above, makes its use as the basis for a novel measure 
+problematic. A further issue complicates the adoption of this novel scale: the lack of 
+a coherent analysis of divergent validity via a nomological network. As stated in the 
+Results section, while the scale is less dependent on TL, it nevertheless incorporates 
+items typical of both this and other, established leadership styles. Previous work has 
+pointed to the futility of introducing novel leadership styles that show high overlap 
+with extant conceptualizations (Deng et al. 2022; see also Banks et al. 2016 and Hoch 
+et al. 2018). Furthermore, and mirroring the issues surrounding ENTRELEAD, those 
+items not representative of extant leadership styles largely fail to conform to a classi­
+cal, theoretical appreciation of leadership as an influence process between leader and 
+follower. The authors specifically state in the introduction to their paper that most 
+previous measures of EL failed to focus on the “critical aspects of the construct such 
+as risk taking, innovation …opportunity recognition” (Bagheri and Harrison 2020, p. 
+660). This issue gains momentum from recognition of numerous results demonstrat­
+ing the benefits of authentic (Jensen and Luthans 2006), autonomous (Felix et al. 
+2018), charismatic (Men et al. 2021), empowering (Cheong et al. 2019), transactional 
+(Ma and Jiang 2018) and shared leadership (Zhou et al. 2015) in entrepreneurship. 
+Finally, whereas Bagheri and Harrison’s eight-dimensional model provided “accept­
+able” model fit (2020, p. 670), this was not true of any proposed model which con­
+sidered EL as a single-factor construct (p. 669), mirroring the measure by Gupta et al. 
+(2004). This stands in contrast to most established leadership styles, which will often 
+undergo combination into one overall variable measuring how strongly a certain style 
+such as TL is expressed (Hughes et al. 2018). It is therefore uncertain whether this 
+1 3
+520
+Transformational and entrepreneurial leadership: A review of…
+proposed, unified concept of EL shows an advantage in practice compared to the 
+utilization of existing measures of leadership, risk taking behavior, and so forth. In 
+other words, does it in fact capture one distinct, coherent entrepreneurial style of 
+leadership?
+In response to RQ2, therefore, a number of points may be observed. First, regard­
+ing the content of their items, current questionnaire measures of EL overlap sig­
+nificantly with TL. Second, there is a paucity of statistical analyses of discriminant 
+validity, hampering the identification and dimensional elucidation of EL into TL and 
+non-TL aspects. Third, non-overlapping items do not conform to a theoretical para­
+digm in which leadership is a leader-follower influence process. Finally, several of 
+the scales display issues with scale development and validation, calling into question 
+their use.
+5.3  RQ3 (practice)
+Finally, RQ3 remains of whether the overlap between TL and EL was reflected at the 
+level of empirical researchers examining it. The relationship between the conceptual 
+foundations of these papers and the FRLT will also be discussed. Two groups of 
+articles from the sample offer a substrate for discussion. First, there are the quantita­
+tive and qualitative papers that explicitly used TL in lieu of EL; second, there were 
+the few papers which quantitatively examined both EL and TL. The former group in 
+particular appears only loosely connected to theoretical and operational conceptual­
+izations of EL that claim it as a unique style. Overall, Category IV in particular shows 
+the prevalence, only partially acknowledged by some (e.g. Harrison et al. 2020), 
+of TL in the study of leadership within the field of entrepreneurship. Moreover, all 
+these papers implicitly align with the FRLT’s conceptualization of leadership as an 
+influence process between leader and follower. 11 papers within Category IV, all 
+published after the appearance of the first measure explicitly designed for EL (Gupta 
+et al. 2004), choose to use TL as locum tenens for EL. Xu and Jin (2022) touch on 
+articles engaged in debating the constitution of EL (e.g. Leitch and Volery 2017), yet 
+skirt entirely any acknowledgement of preexisting measures thereof, instead point­
+ing to the “considerable body of research” which has demonstrated the effective­
+ness of TL as EL (Xu and Jin 2022, p. 280). A further publication which regards 
+the entrepreneur as a leader by default employs what it deems the most prominent 
+theoretical paradigm in leadership: TL (Ensley et al. 2006). It should however be 
+noted that this publication appeared a mere two years after the first concrete mea­
+sure for entrepreneurship (Gupta et al. 2004). At this point, EL was only marginally 
+established as a field in its own right, and the authors’ research was on “the leader­
+ship of entrepreneurs” (Ensley et al. 2006, p. 246). However, Ng and Kee (2018) 
+also use TL with reference to the body of previous research demonstrating its posi­
+tive effects, as do five further publications of the 11 in this category (Baldegger and 
+Gast 2016; Bamiatzi et al. 2015; Ensley et al. 2006; Hensel and Visser 2018; Ng et 
+al. 2019). While the precise application of TL therein varies, the common thread is 
+an implicit recognition of its utility as a measure in the context of EL. Some authors 
+consciously argue for it. For example, one contribution embraces the dipolar nature 
+of TL and transactional leadership to chart the evolution of leadership requirements 
+1 3
+521
+T. É. Ravet-Brown et al.
+in a maturing entrepreneurial venture (Baldegger and Gast 2016). As mentioned in 
+the Results section, these authors specifically dismiss extant measures of EL, due to 
+their inclusion of aspects deemed unrelated to leadership. Others however arrive at 
+TL by default, in itself an interesting commentary on the acceptance of EL-scales 
+(e.g. Ng and Kee 2018).
+Noteworthy too is that this association of EL and TL extends beyond the Western 
+sphere into work examining EL in Ghana and Nigeria (Kimbu et al. 2021) as well 
+as in China (Wang et al. 2012). While acknowledging the existence of a measure for 
+EL (Gupta et al. 2004), these authors deem its conceptual development to be at an 
+“embryonic stage,” and thus decide to follow in what they view as standard practice, 
+drawing on mainstream leadership literature (Wang et al. 2012, p. 507). Represent­
+ing scholars from both the fields of leadership (e.g. Baldegger and Gast 2016) and 
+entrepreneurship (Verma and Kumar 2021), these publications offer strong support to 
+the notion that, at the level of empirical research practice, EL and TL appear indistin­
+guishable. This trend stands in marked contrast to the previously detailed assertions 
+of the wide adoption of EL scales in the study of EL (Bagheri and Harrison 2020). 
+Moreover, it opens up the question of why a swathe of recent reviews on EL skirt 
+the central role TL has in measuring it in practice (e.g. Clark et al. 2019; Leitch and 
+Volery 2017). Even so, most authors in the sample examined do not go so far as to 
+claim that EL and TL are identical. However, the study examining Russian EL style 
+inductively found that most entrepreneurs applied a style “consistent with the char­
+acteristics of transformational leadership” (McCarthy et al. 2010, p. 55). This offers 
+firm credence to the relevance of TL within entrepreneurship, as well as intimating 
+further the inherent, construct-level overlap between TL and EL (McCarthy et al. 
+2010).
+This certainly provides a partial answer to RQ3 by demonstrating that empiri­
+cal practice often considers TL and EL synonymous, confirming previous research 
+which finds TL to be used as EL “routinely” (Reid et al. 2018, p. 152). However, a 
+final portion of the sample remains to be discussed: those results which quantitatively 
+examined TL and EL together. A caveat is the publication by Paudel (2018), which 
+instead successfully replicated results linking TL with innovation using a measure 
+of EL (Renko et al. 2015). This result may well be explained by Paudel’s use of the 
+ENTRELEAD scale, and the similarity with TL regarding item content discussed 
+above. With these similarities in mind, an examination of the meta-analysis by Lee 
+et al. (2020) may be illuminating. As stated above, it found significant correlations 
+between innovation and EL as well as TL, with EL outperforming TL as a predic­
+tor. Central to answering the RQs of the present review, however, is their finding a 
+relationship of ρ = 0.93 between EL and TL (Lee et al. 2020), even though EL was 
+examined across only four samples, two of which are included in the present review. 
+While the scale used in one publication could not be ascertained, at least three used 
+ENTRELEAD; the high correlation between EL and TL, as demonstrated at an 
+item level in Table 5, is therefore confirmed in statistical analysis. The two samples 
+included here, also found in Lee et al. (2020), are those by Cai et al. (2019) who mea­
+sured creativity, and Newman et al. (2018), who measured innovation. Upon closer 
+examination, these two studies paint a picture whose contrast could not be stronger, 
+even though both employed the ENTRELEAD scale alongside the same, shortened 
+1 3
+522
+Transformational and entrepreneurial leadership: A review of…
+instrument for TL by Carless et al. (2000; see Table 5). As detailed in Results, Cai et 
+al. (2019) found strong positive effects between EL and various aspects of creativity. 
+Simultaneously, they found no correlation between EL and TL, remarkable given the 
+visible item-level content shared by these two scales (see Table 5 above). However, 
+any elucidation of item-level correlations is lacking which might precisely reveal 
+whence these wildly diverging correlations between two such similar measures stem, 
+as is any substantive discussion (see Cai et al. 2019, p. 212-4). This is regrettable, 
+as it is these that would offer valuable insights into the precise mechanism through 
+which EL offers such substantial gains over TL in the prediction of creativity, an area 
+in which TL has repeatedly proven itself in the past (Gumusluoglu and Ilsev 2009; 
+Jung et al. 2003; Shin and Zhou 2003). Both this publication and that by Newman 
+et al. (2018) adduce Bandura’s social cognitive theory (1986) to conceptualize the 
+transposition of behaviors such as risk taking from leaders to followers. Within this 
+tripartite agentic distinction made by Bandura (2001), the definition of agent refers to 
+“producers as well as products of social systems,” reminiscent of the definition of an 
+entrepreneur as issued by Gartner et al. (1992). The question posed in the introduc­
+tion thus reemerges. Is it currently possible to measure EL without measuring TL? 
+One last set of results may illuminate the answer.
+Using the two exact same questionnaire measures and a larger sample, Newman 
+et al. (2018) find wildly differing results from Cai et al. (2019). Specifically, they 
+confirmed the predictive effect of EL on innovation, but found a similar effect for 
+TL. Their results present themselves far more in line both with the overlap visible in 
+Table 5 between EL and TL, and the authors’ own argumentation, who acknowledge 
+both the similarities between EL and TL, and the predictive effects of TL on creativ­
+ity. Such a strong contrast with the results of Cai et al. (2019) cautions patience for 
+further findings. The divergent results in this case may rest on the difference between 
+creativity and innovation, even though the two are intrinsically related (Anderson et 
+al. 2014). However, the value of TL for both creativity and innovation, considered 
+“inseparable” from entrepreneurship (Gilad 1984, p. 151) is not only empirically 
+established (Gumusluoglu and Ilsev 2009), but clear causal paths for this effect have 
+also been traced and elaborated upon theoretically (Jung et al. 2003). By eliciting 
+high motivation and increasing followers’ self-esteem and self-worth, transforma­
+tional leaders increase spontaneous acts of innovation (Mumford et al. 2002). Indi­
+vidual consideration serves as a reward, while intellectual stimulation specifically 
+fosters novel and creative thinking (Sosik et al. 1998). However, more vital than the 
+conflicting findings regarding creativity and innovation is the following. Newman et 
+al. (2018) find a strong correlation between TL and EL (r = .81, p < .05), suggesting 
+that recent studies using ENTRELEAD may have measured TL, rather than some 
+distinctly unique style of EL (e.g. Dabić et al. 2021; Mehmood et al. 2021a; Mehm­
+ood et al. 2021b; Niemann et al. 2022; Pauceanu et al. 2021). The relationship found 
+by Newman et al. (2018) between the ENTRELEAD scale and Carless et al.’s (2000) 
+measure of TL clearly indicates an almost complete lack of divergent validity at the 
+instrument level (r = .81, p < .05; Newman et al. 2018), particularly given that the 
+result is confirmed in meta-analysis (ρ = 0.93; SDρ = 0.04; Lee et al. 2020).
+With respect to Question 3, the present analysis thus finds that, in practice, TL 
+and EL are poorly separated. Numerous authors consider TL as representing EL, and 
+1 3
+523
+T. É. Ravet-Brown et al.
+many authors use TL by default when measuring EL, acknowledging the conceptu­
+alization of leadership inherent to the FRLT. Meanwhile, statistical results directly 
+comparing the two may be termed inconclusive at best (Cai et al. 2019). At worst, 
+results cast serious doubt on the discriminant validity of currently available measures 
+of EL versus TL (Newman et al. 2018; Lee et al. 2020).
+6  Conclusion
+The present review examined the relationship between TL and EL across a sample 
+of 25 articles and over various levels of analysis. A number of key findings can be 
+stated in answer to the RQs posed in the Introduction. RQ1 concerned the conceptual 
+overlap and distinction between EL and TL. We found a cluster of conceptual work 
+advocating EL as a form or paradigm of leadership distinct from TL; differences 
+here include for example the incorporation of strategically oriented behaviors such 
+as opportunity recognition (Harrison et al. 2020; Leitch and Volery 2017). However, 
+we also find that work hailing from the wider leadership literature fails to appreciate 
+this distinction in numerous instances, with most authors considering EL and TL as 
+overlapping both conceptually (Kimbu et al. 2021; Lyons et al. 2020) and at the level 
+of concrete, defined constructs (Fries et al. 2021; McCarthy et al. 2010). The analysis 
+suggests a need for greater mutual fertilization of concepts and methods between the 
+field of EL and leadership studies as a contributing factor. RQ2 examined the over­
+lap of currently available measures of EL and TL, with two key findings to report. 
+First, the three available scales of EL contain items at odds with the widely used 
+understanding of leadership as an interpersonal influence process directed towards 
+the achievement of shared goals. Aspects of EL such as opportunity recognition fall 
+outside this conceptual paradigm, an issue considered problematic by researchers in 
+the field (e.g. Baldegger and Gast 2016). Those items that do conform to the interper­
+sonal understanding of leadership demonstrate a high degree of overlap with TL. For 
+example, items of the ENTRELEAD that measure interpersonal leadership are prac­
+tically indistinguishable from items from TL scales. Second, all three scales suffer to 
+varying degrees from issues of validation and model fit. The most recent contribution 
+appears least afflicted, representing a valuable step towards an operational definition 
+of EL (Bagheri and Harrison 2020). Testing for discriminant validity versus TL is 
+however lacking, while overlap in item content is notable. Finally, RQ3 sought an 
+answer to the role of TL in measuring EL, and the testimony of available quantita­
+tive results examining both EL and TL. In response, it is found that many researchers 
+continue to use TL to measure EL for various reasons (e.g. Lyons et al. 2020; Ng et 
+al. 2019). Available EL scales have thus failed to gain overarching acceptance as 
+measures of EL. Moreover, quantitative examinations have failed to show a defini­
+tive degree of discriminant validity between EL and TL, with some results indicating 
+almost complete overlap (Newman et al. 2018; Lee et al. 2020).
+Our study offers a first critical, up-to-date examination of the overlap between TL 
+and the fragmented scholarship surrounding EL. We draw firm conclusions based on 
+the examination of conceptual developments, research practice, and previous empiri­
+cal findings. In summary, the present contribution thus creates a road map for those 
+1 3
+524
+Transformational and entrepreneurial leadership: A review of…
+measuring and studying EL, and points out several significant issues and discursive 
+paradigms the researcher should be aware of. Moreover, we embed the nascent lit­
+erature on EL within the broader, more accepted theoretical framework of the FRLT. 
+This lays a path towards an increased exploration of EL by mainstream leadership 
+research and, in particular, an increase in scholarly communication and exchange. 
+The limitations of the present study, the implications of the findings and suggestions 
+for future research are offered below.
+6.1  Limitations
+The present contribution claimed to clarify the interplay between EL and TL, seeking 
+to curb the catachresis plaguing EL research. However, this paper is subject to a num­
+ber of limitations. First and most importantly, the scope of the review was not exhaus­
+tive. The present SLR followed a structured and literature-based approach. Despite 
+this, it is impossible to guarantee that all relevant articles were included in the data­
+bases chosen. As stated in Sect. 2.1, only articles that explicitly mentioned TL and 
+EL were examined. For a more comprehensive picture, this pool could be expanded 
+along two dimensions. First, research could be included that explicitly examines TL 
+within organizations that are emphasizing entrepreneurial action, such as those in the 
+process of spinning off sub-units, acquiring startups, or engaging in corporate ventur­
+ing. In short, this could identify organizational contexts in which leadership is exam­
+ined that falls under a broad definition of EL, but where the specific term is not used. 
+Conversely, all papers could be included which explicitly examine EL, and from 
+these only those that examine leadership behaviors typical of TL without explicitly 
+employing the term. A second limitation lies in the comparative brevity with which 
+some of the articles were necessarily treated for the sake of space. The statistical 
+results in Cai et al. (2019), Newman et al. (2018), and Lee et al. (2020) would for 
+example permit a far more in-depth discussion with respect to RQ3. Finally, several 
+review articles with interesting insights fell outside the bounds of this sample because 
+they were either thematically off-point, not found in any of the databases examined 
+(e.g. Clark and Harrison 2019; Clark et al. 2019), or the impact factor of the publish­
+ing journal was below 1 (Harrison et al. 2016).
+6.2  Implications
+The current study contributes by offering theoretical implications in three areas of lit­
+erature where gaps were observed. First, we have provided an important contribution 
+to the wider, fragmented discourse on entrepreneurial leaders. We offer a road map by 
+showing that research past (e.g. Ensley et al. 2006; Wang et al. 2012) and present (e.g. 
+Ng et al. 2019; Verma and Kumar 2021) employ TL as a valid adjunct to measuring 
+EL, and by demonstrating that the use of current measures of EL (Bagheri and Har­
+rison 2020; Gupta et al. 2004; Renko et al. 2015) is plagued by issues. Specifically, 
+their use guarantees neither measurement of EL, as opposed to TL, nor measurement 
+of leadership behaviors, as accepted under the widely acclaimed FRLT paradigm. 
+Further, two of three available EL questionnaires failed to provide conclusive, sta­
+tistical evidence for a unified construct of EL (Bagheri and Harrison 2020; Gupta et 
+1 3
+525
+T. É. Ravet-Brown et al.
+al. 2004). The recent inclusion of additional leadership concepts such as empowering 
+or self-leadership (Harrison and Bagheri 2020; cf. Cheong et al. 2019; Houghton et 
+al. 2003) fails to ameliorate the lack of cross-validation and dedicated sampling for 
+discriminant validity, and our findings thus contribute by demonstrating that mea­
+surement of EL should be accompanied by, at minimum, a proven questionnaire 
+measure of TL (e.g. Multifactor Leadership Questionnaire, Bass and Avolio 1997). 
+Such combined use would permit meta-analysis of its divergent validity and enable 
+further refinement or dimensional reduction. Moreover, we find an increasing number 
+of studies employing the ENTRELEAD scale (Renko et al. 2015), most by entre­
+preneurship researchers, whose familiarity with leadership literature may be limited 
+(e.g. Dabić et al. 2021; Mehmood et al. 2021a; Mehmood et al. 2021b; Pauceanu et 
+al. 2021). Our contribution is therefore a demonstration to these researchers of the 
+issues with EL-measures noted above.
+We further contribute to the ongoing discourse by drawing together previous 
+research to show that TL provides four concrete, theoretically elucidated sub-dimen­
+sions that are suitable for further analysis of EL outcomes (e.g. Hensel and Visser 
+2018; Lee et al. 2020), and that TL has the ability to transcend cultural boundaries 
+(Crede et al. 2019). This has been specifically demonstrated for entrepreneurial lead­
+ers in various cultures (Kimbu et al. 2021; Wang et al. 2012). The FRLT additionally 
+provides an equally validated, alternative style, transactional leadership, which is 
+effective in many other contexts. Finally, it delineates a concrete, ineffective, nega­
+tive leadership style: laissez-faire (Antonakis 2001).Our study also contributes by 
+outlining that non-TL items on current measures of EL largely reflect non-leadership 
+aspects, such as opportunity recognition, and suggest their measurement via dedi­
+cated instruments. For example, entrepreneurial opportunity recognition has recently 
+been measured by examining both perceived proficiency in recognizing opportuni­
+ties, as well as by gauging the actual number of opportunities exploited (Maran et al. 
+2021).
+Second, we contribute to the literature by contextualizing the work of a core com­
+munity of EL researchers (e.g. Harrison et al. 2016; Leitch and Volery 2017), which 
+claims a high degree of authority and centrality in EL matters. By examining it from 
+the perspective of leadership research, our study offers more insights into the practice 
+of EL research as currently found around the world. Despite claims that EL is a dis­
+tinct and valid construct, the present study finds that EL, as an operationalized set of 
+behaviors that portray the leader-follower influence process, has yet to be established. 
+Our work therefore contributes directly to the debate by offering as a primary goal the 
+differentiation of EL from other extant, mainstream styles of leadership, such as trans­
+formational (Bass 1985), empowering (Cheong et al. 2019), and authentic leadership 
+(Jensen and Luthans 2006). While Bagheri and Harrison’s (2020) recent measure of 
+EL has taken great strides in this direction, we contribute by demonstrating how this 
+and other measures diverge from accepted norms of scale development, and by sug­
+gesting the outline of a process of scale development and validation to remedy this. In 
+addition, our study contributes by clearly connecting the currently confused picture 
+of EL-TL measurement, both in terms of research practice and conflicting statistical 
+results, with this non-normative history of development of EL scales. We further offer 
+a modest contribution to this process by pointing to previous literature reviews which 
+1 3
+526
+Transformational and entrepreneurial leadership: A review of…
+could serve as groundwork for ongoing development, and which have determined 
+traits such as tenacity, a need for power and control, charisma, flexibility and an 
+internal locus of control to be related to EL (e.g. Harrison et al. 2016). However, the 
+authors caution that the leadership literature itself has observed an overproliferation 
+of leadership styles, and empirical testing has repeatedly revealed purportedly new 
+leadership styles such as authentic or empowering as overlapping significantly with 
+TL (Deng et al. 2022).
+Third, the present study provides a modest contribution to the leadership literature. 
+We carry on and strengthen work by Fries et al. (2021) and Ried et al. (2018), which 
+sought to examine EL as one of numerous styles. The present review details several 
+areas of distinction and overlap between EL and other, established styles of leader­
+ship. Furthermore, we offer additional support to the recent findings which indicate 
+that a proliferation of leadership styles may often fail to provide extra value beyond 
+TL (Deng et al. 2022; cf. Shaffer et al. 2016). Overall, we provide value by couching 
+the current, fragmented literature on EL more clearly in the terminology of main­
+stream leadership research, thus hopefully opening the door for a renewed “assault” 
+on the delineation of EL’s fundamental building blocks.
+Our study also contributes by providing several managerial implications. The 
+holistic approach taken by EL research noted above, while hindering scale develop­
+ment, may be useful in obtaining a coherent and comprehensive understanding of 
+EL in the field. However, considering the overlap of current definitions of EL with 
+TL (e.g. Newman et al. 2018), the implication for managerial practice is clearly that 
+TL is a suitable style in many contexts with entrepreneurial features. This is further 
+inferred by the many studies that purport to examine EL using the ENTRELEAD 
+scale, which find some positive effect of EL on a variety of outcomes (Dabić et al. 
+2021; Mehmood et al. 2021a, b). As stated in the Discussion, ENTRELEAD overlaps 
+considerably with TL. Taken together with recent findings from the field of leader­
+ship, our study thus contributes to transfer and practice by underlining the value of 
+TL versus novel models of leadership (Deng et al. 2022). Therefore, professionals in 
+management and human resources may consider TL as representing a key leadership 
+style for entrepreneurial ventures. With regard to policy implications, our findings 
+contribute by suggesting that TL may be used as an adjunct to EL in the training of 
+entrepreneurs. This concerns executive education, which has shown that entrepre­
+neurship and an entrepreneurial mindset can be aided by educational means (e.g. 
+Bachmann et al. 2021). Until a true, distinct leadership style of EL is found and 
+widely accepted, therefore, the use of TL to cover the leadership aspect of entrepre­
+neurship may be considered as representing best practice. The vision communication 
+and charisma of the transformational leader has persistently been shown to encourage 
+exceptional performance in employees (Ng 2017); their intellectual stimulation has 
+proven vital in breaching the boundaries of convention, and delivering innovations of 
+product, service or business model (e.g. Begum et al. 2022). The individual consid­
+eration awarded followers has repeatedly engendered job satisfaction, low turnover, 
+and improved personal outcomes in the examined samples (e.g. Alwali and Alwali 
+2022). Our findings further contribute by suggesting that executive education and 
+transfer make use of dedicated resources for non-leadership EL components, such as 
+opportunity recognition, supplementary to TL.
+1 3
+527
+T. É. Ravet-Brown et al.
+6.3  Future research directions
+The authors identify two main areas that could benefit from further inquiry. First, 
+we encourage future research to create a clear definition differentiating EL “in” ver­
+sus “of” (entrepreneurial ventures). The owner-entrepreneur who leads might show 
+“leadership of” behaviors, but his subordinates within a startup who lead employees 
+may only show “leadership in” behaviors. Separating these precedes the elucidation 
+of a concrete, behavioral delineation of EL to capture the “leadership in” compo­
+nent (Antonakis and Autio 2012), in line with the dominant paradigm of leadership 
+research, the FRLT (Bass and Avolio 1997). A wider understanding of EL, one that 
+does not focus on leader-follower behaviors, may be termed a “leadership of” under­
+standing. However, such an understanding of EL overlaps significantly with research 
+into entrepreneurs and entrepreneurial orientation (Covin et al. 2020), given its inclu­
+sion of risk-taking (Renko et al. 2015) and opportunity recognition (e.g. Bagheri and 
+Harrison 2020). Separating EL “in” versus “of” represents a necessary step which 
+several authors have already taken (Ng and Kee 2018; Ng et al. 2019; Harrison et 
+al. 2018) proposed a differentiation between internally and externally driven studies 
+on EL. Similarly, Antonakis and Autio (2012) assigned extant leadership styles to 
+phases of the entrepreneurial venture such as Precreation, Start-up and Consolida­
+tion. We suggest both as useful starting points for further examining and defining 
+EL. Dismissing all non-behavioral aspects of EL could impede a full appreciation 
+of entrepreneurship’s economic and social value (Antonakis and Autio 2012), while 
+more carefully separating its dimensions could lead to a more granular appreciation 
+of EL as a procedural phenomenon. Context is a crucial if often overlooked aspect 
+in leadership (Liden and Antonakis 2009; Lowe and Gardner 2000), particularly in 
+entrepreneurship. For example, when pre-founding, the entrepreneur by necessity 
+must be a risk-taker and opportunity seeker; later, management and leadership often 
+replace these attributes in terms of importance (Alvarez and Barney 2007; Gray et al. 
+2003). We suggest that future research should further engage with such differences 
+(Baldegger and Gast 2016), in line with Cogliser and Brigham’s (2004) foundational 
+definition of EL.
+Second, moving beyond the “leadership in” versus “leadership of” issue, there 
+is a drastic lack of substantive research on the concrete leader behaviors shown by 
+female entrepreneurs. Although some studies do exist (e.g. Harrison et al. 2018; 
+Yousafzai et al. 2015), they are far too few (Clark et al. 2019). A further aspect is that 
+of “co-leadership.” While entrepreneurial ventures, in particular the modern, “techie” 
+startup, often rely on teams of founders sharing leadership responsibilities at both the 
+managerial and strategic levels (Ensley et al. 2006), no current conceptualization of 
+EL directly addresses this interpersonal perspective, even though the paradigm of 
+leader-member-exchange would lend itself to such an investigation (Leitch and Vol­
+ery 2017). This reflects a wider issue, i.e. that conceptualizations of EL which take a 
+less leader-centric approach may well be worth exploring, as mentioned by previous 
+reviewers of the field (Leitch and Harrison 2018a).
+Supplementary Information  The online version contains supplementary material available at https://doi.
+org/10.1007/s11846-023-00649-6.
+1 3
+528
+Transformational and entrepreneurial leadership: A review of…
+Authors Contribution  MF and TRB contributed to the preliminary conception and design of the systematic 
+literature review, and carried out literature collation and analysis. The draft of the manuscript in its present 
+form was written by AK and TRB; all authors read and approved the final manuscript.
+Funding  The authors declare that no funds, grants, or other support were received to support the prepara­
+tion of this manuscript, and that they have no relevant financial or non-financial interests to disclose.
+Open access funding provided by University of Liechtenstein
+Data Availability  Regarding the underlying data, the papers which form the sample underlying the present 
+SLR are available from the databases stated in the manuscript.
+Open Access  This article is licensed under a Creative Commons Attribution 4.0 International License, 
+which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long 
+as you give appropriate credit to the original author(s) and the source, provide a link to the Creative 
+Commons licence, and indicate if changes were made. The images or other third party material in this 
+article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line 
+to the material. If material is not included in the article’s Creative Commons licence and your intended use 
+is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission 
+directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by/4.0/.
+References
+Ahmed F, Harrison C (2021) Challenges and competencies of entrepreneurial leaders in driving innova­
+tion at DIY laboratories. Technol Anal Strateg 33(10):1132–1146. https://doi.org/10.1080/0953732
+5.2021.1908538
+Ahmed F, Harrison C (2022) Entrepreneurial leadership development in teams: a conceptual model. Int J 
+Entrep Innov Manag. https://doi.org/10.1177/14657503221143977
+Alaassar A, Mention AL, Aas TH (2022) Facilitating innovation in FinTech: a review and research agenda. 
+Rev Manag Sci 17:1–34. https://doi.org/10.1007/s11846-022-00531-x
+Alvarez SA, Barney JB (2007) Discovery and creation: alternative theories of entrepreneurial action. 
+Strateg Entrep J 1(1–2):11–26. https://doi.org/10.1002/sej.4
+Alwali J, Alwali W (2022) The relationship between emotional intelligence, transformational leadership, 
+and performance: a test of the mediating role of job satisfaction. Leadersh Organ Dev. https://doi.
+org/10.1108/LODJ-10-2021-0486. J (ahead-of-print)
+Amabile TM (1996) Creativity and innovation in organizations. Harvard Business School, Boston
+Anderson N, Potočnik K, Zhou J (2014) Innovation and creativity in organizations: a state-of-the-science 
+review, prospective commentary, and guiding framework. J Manag 40(5):1297–1333. https://doi.
+org/10.1177/0149206314527128
+Angelsberger M, Kraus S, Mas-Tur A, Roig-Tierno N (2017) International opportunity recognition: an 
+overview. J Small Bus Strategy 27(1):19–36
+Antonakis J (2001) The validity of the transformational, transactional, and laissez-faire leadership model as 
+measured by the Multifactor Leadership Questionnaire (MLQ 5X). Walden University, Minneapolis
+Antonakis J, Autio E (2012) Entrepreneurship and leadership: the psychology of entrepreneurship. In: 
+Baum JR, Frese M, Baron RA (eds) The psychology of entrepreneurship. Lawrence Erlbaum Associ­
+ates Publishers, Mahwah, pp 189–208
+Antonakis J, Bastardoz N, Jacquart P, Shamir B (2016) Charisma: an ill-defined and ill-mea­
+sured gift. Annu Rev Organ Psychol Organ Behav 3:293–319. https://doi.org/10.1146/
+annurev-orgpsych-041015-062305
+Avolio BJ (2010) Full range leadership development. SAGE Publications, New York City
+Bachmann AK, Maran T, Furtner M, Brem A, Welte M (2021) Improving entrepreneurial self-efficacy 
+and the attitude towards starting a business venture. Rev Manag Sci 15:1707–1727. https://doi.
+org/10.1007/s11846-020-00394-0
+1 3
+529
+T. É. Ravet-Brown et al.
+Bagheri A (2017) The impact of entrepreneurial leadership on innovation work behavior and opportu­
+nity recognition in high-technology SMEs. J High Technol Manag Res 28:159–166. https://doi.
+org/10.1016/j.hitech.2017.10.003
+Bagheri A, Akbari M (2018) The impact of entrepreneurial leadership on nurses’ innovation behavior. J 
+Nurs Scholarsh 50:28–35. https://doi.org/10.1111/jnu.12354
+Bagheri A, Harrison C (2020) Entrepreneurial leadership measurement: a multi-dimensional construct. J 
+Small Bus Enterp Dev 27(4):659–679. https://doi.org/10.1108/jsbed-01-2019-0027
+Bagheri A, Newman A, Eva N (2022) Entrepreneurial leadership of CEOs and employees’ innovative 
+behavior in high-technology new ventures. J Small Bus Manag 60:805–827. https://doi.org/10.1080
+/00472778.2020.1737094
+Baker T, Nelson RE (2005) Creating something from nothing: resource construction through entrepreneur­
+ial bricolage. Adm Sci Q 50:329–366. https://doi.org/10.2189/asqu.2005.50.3.329
+Baldegger U, Gast J (2016) On the emergence of leadership in new ventures. Int J Entrep Behav Res 
+22(6):933–957. https://doi.org/10.1108/ijebr-11-2015-0242
+Bamiatzi V, Jones S, Mitchelmore S, Nikolopoulos K (2015) The role of competencies in shaping the 
+Leadership style of female entrepreneurs: the case of North West of England, Yorkshire, and North 
+Wales. J Small Bus Manag 53:627–644. https://doi.org/10.1111/jsbm.12173
+Bandura A (1986) Social foundations of thought and action: a social cognitive theory. Prentice-Hall, Upper 
+Saddle River
+Bandura A (2001) Social cognitive theory: an agentic perspective. Annu Rev Psychol 52:1–26. https://doi.
+org/10.1146/annurev.psych.52.1.1
+Banks GC, Dionne SD, Mast MS, Sayama H (2022) Leadership in the digital era: a review of who, what, 
+when, where, and why. Leadersh Q 33:101634. https://doi.org/10.1016/j.leaqua.2022.101634
+Banks GC, Engemann KN, Williams CE, Gooty J, McCauley KD, Medaugh MR (2017) A meta-analytic 
+review and future research agenda of charismatic leadership. Leadersh Q 28(4):508–529. https://doi.
+org/10.1016/j.leaqua.2016.12.003
+Bass BM (1985) Leadership and performance beyond expectations. Collier Macmillan, New York City
+Bass BM, Avolio BJ (1997) Full range leadership development: Manual for the Multifactor Leadership 
+Questionnaire. Mind Garden, Menlo Park
+Baumol WJ (1968) Entrepreneurship in economic theory.Am Econ Rev64–71
+Becherer RC, Mendenhall ME, Eickhoff KF (2008) Separated at birth: an inquiry on the conceptual inde­
+pendence of the entrepreneurship and the leadership constructs. N Engl J Entrep 11(2):13–27. https://
+doi.org/10.1108/NEJE-11-02-2008-B002
+Begum S, Ashfaq M, Xia E, Awan U (2022) Does green transformational leadership lead to green innova­
+tion? The role of green thinking and creative process engagement. Bus Strategy Environ 31(1):580–
+597. https://doi.org/10.1002/bse.2911
+Bichler BF, Kallmünzer A, Peters M (2022) Get on Task: a pragmatic Tutorial on Planning and conduct­
+ing a systematic literature review. In: Okumus F, Rasoolimanesh SM, Jahani S (eds) Contemporary 
+Research Methods in Hospitality and Tourism. Emerald Publishing Limited, Bingley, pp 39–53
+Boateng GO, Neilands TB, Frongillo EA, Melgar-Quiñonez HR, Young SL (2018) Best practices for 
+developing and validating scales for health, social, and behavioral research: a primer. Front Public 
+Health 6:149. https://doi.org/10.3389/fpubh.2018.00149
+Burns JM (1978) Leadership. Harper and Row, New York
+Brush CG, Greene PG, Hart MM (2001) From initial idea to unique advantage: the entrepreneurial chal­
+lenge of constructing a resource base. Acad Manag Perspect 15(1):64–78. https://doi.org/10.5465/
+ame.2001.4251394
+Cai W, Lysova EI, Khapova SN, Bossink BA (2019) Does entrepreneurial leadership foster creativity 
+among employees and teams? The mediating role of creative efficacy beliefs. J Bus Psychol 34:203–
+217. https://doi.org/10.1007/s10869-018-9536-y
+Carless SA, Wearing AJ, Mann L (2000) A short measure of transformational leadership. J Bus Psychol 
+14:389–405. https://doi.org/10.1023/A:1022991115523
+Carlsson B, Braunerhjelm P, McKelvey M, Olofsson C, Persson L, Ylinenpää H (2013) The evolv­
+ing domain of entrepreneurship research. Small Bus Econ 41:913–930. https://doi.org/10.1007/
+s11187-013-9503-y
+Carsrud AL, Johnson RW (1989) Entrepreneurship: a social psychological perspective. Entrep Reg Dev 
+1(1):21–31. https://doi.org/10.1080/08985628900000003
+Chandler GN, Jansen E (1992) The founder’s self-assessed competence and venture performance. J Bus 
+Ventur 7(3):223–236. https://doi.org/10.1016/0883-9026(92)90028-P
+1 3
+530
+Transformational and entrepreneurial leadership: A review of…
+Chell E, Haworth J, Brearley S (1991) The entrepreneurial personality, vol 16. Routledge, London
+Cheong M, Yammarino FJ, Dionne SD, Spain SM, Tsai CY (2019) A review of the effectiveness of 
+empowering leadership. Leadersh Q 30(1):34–58. https://doi.org/10.1016/j.leaqua.2018.08.005
+Clark CM, Harrison C (2019) Entrepreneurship: an assimilated multi-perspective review. J Small Bus 
+Entrep 31(1):43–71. https://doi.org/10.1080/08276331.2018.1446665
+Clark CM, Harrison C, Gibb S (2019) Developing a conceptual Framework of Entrepreneurial Leadership: 
+a systematic literature review and thematic analysis.Int Rev Entrep17(3)
+Cliff JE, Langton N, Aldrich HE (2005) Walking the talk? Gendered rhetoric vs. action in small firms. 
+Organ Stud 26(1):63–91. https://doi.org/10.1177/0170840605046490
+Cogliser CC, Brigham KH (2004) The intersection of leadership and entrepreneurship: mutual lessons to 
+be learned. Leadersh Q 15(6):771–799. https://doi.org/10.1016/j.leaqua.2004.09.004
+Covin JG, Rigtering JC, Hughes M, Kraus S, Cheng CF, Bouncken RB (2020) Individual and team entre­
+preneurial orientation: scale development and configurations for success. J Bus Res 112:1–12. https://
+doi.org/10.1016/j.jbusres.2020.02.023
+Covin JG, Slevin DP (2002) The entrepreneurial imperatives of strategic leadership. In: Hitt MA, Ireland 
+RD, Camp SM, Sexton DL (eds) Strategic Entrepreneurship: creating a New Mindset. Blackwell 
+Publishers, Oxford, pp 309–327
+Crede M, Jong J, Harms P (2019) The generalizability of transformational leadership across cultures: a 
+meta-analysis. J Manag Psychol 34(3):139–155. https://doi.org/10.1108/JMP-11-2018-0506
+Crupi A, Liu S, Liu W (2022) The top-down pattern of social innovation and social entrepreneurship. Bri­
+colage and agility in response to COVID‐19: cases from China. R&D Manag 52(2):313–330. https://
+doi.org/10.1111/radm.12499
+Cunningham JB, Lischeron J (1991) Defining entrepreneurship. J Small Bus Manag 29:45–61
+Dabić M, Stojčić N, Simić M, Potocan V, Slavković M, Nedelko Z (2021) Intellectual agility and inno­
+vation in micro and small businesses: the mediating role of entrepreneurial leadership. J Bus Res 
+123:683–695. https://doi.org/10.1016/j.jbusres.2020.10.013
+Dahling JJ, Whitaker BG, Levy PE (2009) The development and validation of a new Machiavellianism 
+scale. J Manag 35(2):219–257. https://doi.org/10.1177/0149206308318618
+De Jesus SN, Rus CL, Lens W, Imaginário S (2013) Intrinsic motivation and creativity related to product: 
+a meta-analysis of the studies published between 1990–2010. Creat Res J 25(1):80–84. https://doi.
+org/10.1080/10400419.2013.752235
+Deng C, Gulseren D, Isola C, Grocutt K, Turner N (2022) Transformational leadership effectiveness: an 
+evidence-based primer. Hum Resour Dev Int. https://doi.org/10.1080/13678868.2022.2135938
+Derue DS, Nahrgang JD, Wellman NED, Humphrey SE (2011) Trait and behavioral theories of leadership: 
+an integration and meta-analytic test of their relative validity. Pers Psychol 64(1):7–52. https://doi.
+org/10.1111/j.1744-6570.2010.01201.x
+DeVellis RF, Thorpe CT (2021) Scale development: theory and applications. SAGE, London
+Deyanova K, Brehmer N, Lapidus A, Tiberius V, Walsh S (2022) Hatching start-ups for sustainable 
+growth: a bibliometric review on business incubators. Rev Manag Sci 16(7):2083–2109. https://doi.
+org/10.1007/s11846-022-00525-9
+Dongul ES, Artantaş E (2022) Exploring the link between social work, entrepreneurial leadership, social 
+embeddedness, social entrepreneurship and firm performance: a case of SMES owned by chinese 
+ethnic community in Turkey. https://doi.org/10.1108/JEC-11-2021-0162. J Enterp Communities 
+(ahead-of-print)
+Dvir T, Eden D, Avolio BJ, Shamir B (2002) Impact of transformational leadership on follower development 
+and performance: a field experiment. Acad Manag J 45(4):735–744. https://doi.org/10.2307/3069307
+Emami A, Ashourizadeh S, Sheikhi S, Rexhepi G (2022) Entrepreneurial propensity for market analysis 
+in the time of COVID-19: benefits from individual entrepreneurial orientation and opportunity confi­
+dence. Rev Manag Sci 16(8):2413–2439. https://doi.org/10.1007/s11846-021-00499-0
+Ensley MD, Pearce CL, Hmieleski KM (2006) The moderating effect of environmental dynamism on the 
+relationship between entrepreneur leadership behavior and new venture performance. J Bus Ventur 
+21(2):243–263. https://doi.org/10.1016/j.jbusvent.2005.04.006
+Eva N, Robin M, Sendjaya S, van Dierendonck D, Liden RC (2019) Servant leadership: a systematic review 
+and call for future research. Leadersh Q 30(1):111–132. https://doi.org/10.1016/j.leaqua.2018.07.004
+Faridian PH (2023) Leading open innovation: the role of strategic entrepreneurial leadership in orchestra­
+tion of value creation and capture in GitHub open source communities. Technovation 119:102546. 
+https://doi.org/10.1016/j.technovation.2022.102546
+1 3
+531
+T. É. Ravet-Brown et al.
+Felix C, Aparicio S, Urbano D (2018) Leadership as a driver of entrepreneurship: an international explor­
+atory study. J Small Bus Enterp Dev 26(3):397–420. https://doi.org/10.1108/jsbed-03-2018-0106
+Fernald LW, Solomon GT, Tarabishy A (2005) A new paradigm: entrepreneurial leadership. South Bus 
+Rev 30(2):1–10
+Feser D (2022) Innovation intermediaries revised: a systematic literature review on innovation interme­
+diaries’ role for knowledge sharing. Rev Manag Sci. https://doi.org/10.1007/s11846-022-00593-x
+Figueroa-Domecq C, de Jong A, Williams AM (2020) Gender, tourism & entrepreneurship: a critical 
+review. Ann Tour Res 84:102980. https://doi.org/10.1016/j.annals.2020.102980
+Freeman D, Siegfried RL (2015) Entrepreneurial leadership in the context of company start-up and growth. 
+J Leadersh Stud 8(4):35–39. https://doi.org/10.1002/jls.21351
+Fries A, Kammerlander N, Leitterstorf M (2021) Leadership styles and leadership behaviors in family 
+firms: a systematic literature review. J Fam Bus Strategy 12(1):100374. https://doi.org/10.1016/J.
+JFBS.2020.100374
+García-Morales VJ, Jiménez-Barrionuevo MM, Gutiérrez-Gutiérrez L (2012) Transformational leadership 
+influence on organizational performance through organizational learning and innovation. J Bus Res 
+65(7):1040–1050. https://doi.org/10.1016/j.jbusres.2011.03.005
+Gardner WL, Lowe KB, Meuser JD, Noghani F, Gullifor DP, Cogliser CC (2020) The leadership tril­
+ogy: a review of the third decade of the leadership quarterly. Leadersh Q 31(1):101379. https://doi.
+org/10.1016/j.leaqua.2019.101379
+Gartner WB, Bird BJ, Starr JA (1992) Acting as if: differentiating entrepreneurial from organizational 
+behavior. Entrep Theory Pract 16(3):13–32. https://doi.org/10.1177/104225879201600302
+Gentles SJ, Charles C, Nicholas DB, Ploeg J, McKibbon KA (2016) Reviewing the research methods 
+literature: principles and strategies illustrated by a systematic overview of sampling in qualitative 
+research. Syst Rev 5:172. https://doi.org/10.1186/s13643-016-0343-0
+Gerards R, van Wetten S, van Sambeek C (2021) New ways of working and intrapreneurial behaviour: 
+the mediating role of transformational leadership and social interaction. Rev Manag Sci 15(7):2075–
+2110. https://doi.org/10.1007/s11846-020-00412-1
+Gilad B (1984) Entrepreneurship: the issue of creativity in the market place. J Creat Behav 18(3):151–161. 
+https://doi.org/10.1002/j.2162-6057.1984.tb00379.x
+Graen GB (2006) In the eye of the beholder: cross-cultural lesson in leadership from project GLOBE: 
+a response viewed from the third culture bonding (TCB) model of cross-cultural leadership. Acad 
+Manag Perspect 20(4):95–101. https://doi.org/10.5465/AMP.2006.23270309
+Gray JH, Densten IL, Sarros JC (2003) Size matters: organisational culture in small, medium, and large 
+australian organisations. J Small Bus Entrep 17(1):31–46. https://doi.org/10.1080/08276331.2003.1
+0593311
+Greenberger DB, Sexton DL (1987) Leadership and entrepreneurship: New directions for venture initia­
+tion and success. In: Roberts GB, Lasher H, Maliche E (eds) New ventures: The proceedings of the 
+second annual conference of the United States Association For Small Business and Entrepreneurship, 
+Kennesaw College, Marietta, pp. 52–57
+Grégoire DA, Barr PS, Shepherd DA (2010) Cognitive processes of opportunity recognition: the role of 
+structural alignment. Organ Sci 21(2):413–431. https://doi.org/10.1287/orsc.1090.0462
+Gumusluoglu L, Ilsev A (2009) Transformational leadership, creativity, and organizational innovation. J 
+Bus Res 62(4):461–473. https://doi.org/10.1016/j.jbusres.2007.07.032
+Gupta V, MacMillan IC, Surie G (2004) Entrepreneurial leadership: developing and measuring a cross-
+cultural construct. J Bus Ventur 19(2):241–260. https://doi.org/10.1016/S0883-9026(03)00040-5
+Harrison C, Paul S, Burnard K (2016) Entrepreneurial Leadership: a systematic literature review. Int Rev 
+Entrep 14(2):235–264
+Harrison RT, Leitch CM (1994) Entrepreneurship and leadership: the implications for education and devel­
+opment. Entrep Reg Dev 6(2):111–125. https://doi.org/10.1080/08985629400000007
+Harrison RT, Leitch CM, McAdam M (2018) Breaking glass: towards a gendered analysis of entrepre­
+neurial leadership. In: Harrison RT, Leitch CM (eds) Research Handbook on Entrepreneurship and 
+Leadership. Edward Elgar Publishing, Cheltenham, pp 467–490
+Harrison C, Omeihe I, Simba A, Omeihe K (2020) Leading the way: the entrepreneur or the leader? J 
+Small Bus Entrep 1–17. https://doi.org/10.1080/08276331.2020.1840853
+Harsanto B, Roelfsema H (2015) Asian leadership styles, entrepreneurial firm orientation and business 
+performance. Int J Entrep Small Bus 26(4):490–499. https://doi.org/10.1504/IJESB.2015.072759
+1 3
+532
+Transformational and entrepreneurial leadership: A review of…
+Hemshorn de Sanchez CS, Gerpott FH, Lehmann-Willenbrock N (2022) A review and future agenda for 
+behavioral research on leader–follower interactions at different temporal scopes. J Organ Behav 
+43(2):342–368. https://doi.org/10.1002/job.2583
+Hensel R, Visser R (2018) Shared leadership in entrepreneurial teams: the impact of personality. Int J 
+Entrep Behav Res 24(6):1104–1119. https://doi.org/10.1108/IJEBR-03-2018-0133
+Hensellek S, Kleine-Stegemann L, Kollmann T (2023) Entrepreneurial leadership, strategic flexibility, 
+and venture performance: does founders’ span of control matter? J Bus Res 157:113544. https://doi.
+org/10.1016/j.jbusres.2022.113544
+Hinkin TR (1995) A review of scale development practices in the study of organizations. J Manag 
+21(5):967–988. https://doi.org/10.1177/014920639502100509
+Hikkerova L, Ilouga SN, Sahut JM (2016) The entrepreneurship process and the model of volition. J Bus 
+Res 69(5):1868–1873. https://doi.org/10.1016/j.jbusres.2015.10.071
+Hoang G, Luu TT, Nguyen TT, Du T, Le LP (2022) Examining the effect of entrepreneurial leadership on 
+employees’ innovative behavior in SME hotels: a mediated moderation model. Int J Hosp Manag 
+102:103142. https://doi.org/10.1016/j.ijhm.2022.103142
+Hoch JE, Bommer WH, Dulebohn JH, Wu D (2018) Do ethical, authentic, and servant leadership explain 
+variance above and beyond transformational leadership? A meta-analysis. J Manag 44(2):501–529. 
+https://doi.org/10.1177/0149206316665461
+Houghton JD, Neck CP, Manz CC (2003) Self-leadership and superleadership. Shared leadership: refram­
+ing the hows and whys of leadership. In: Pearce CL, Conger JA (eds) Shared Leadership: reframing 
+the Hows and Whys of Leadership. SAGE Publications, Thousand Oaks, pp 123–140
+House RJ (1977) A theory of charismatic leadership. In: Hunt JG, Larson LL (eds) The cutting edge. 
+Southern Illinois University Press, Carbondale, pp 189–207
+House RJ, Hanges PJ, Ruiz-Quintanilla SA, Dorfman PW, Javidan M, Dickson M, Gupta V (1999) Cul­
+tural influences on leadership and organizations. In: Gesner M, Arnold V (eds) Advances in global 
+leadership. JAI Press, Stamford, pp 175–233
+Huang S, Ding D, Chen Z (2014) Entrepreneurial leadership and performance in chinese new ventures: 
+a moderated mediation model of exploratory innovation, exploitative innovation and environmental 
+dynamism. Creat Innov Manag 23(4):453–471. https://doi.org/10.1111/caim.12085
+Hubner S, Most F, Wirtz J, Auer C (2022) Narratives in entrepreneurial ecosystems: drivers of effectuation 
+versus causation. Small Bus Econ 59:211–242. https://doi.org/10.1007/s11187-021-00531-3
+Hughes DJ, Lee A, Tian A, Newman A, Legood A (2018) Leadership, creativity, and innovation: a criti­
+cal review and practical recommendations. Leadersh Q 29(5):549–569. https://doi.org/10.1016/j.
+leaqua.2018.03.001
+Iftikhar MN, Justice JB, Audretsch DB (2022) The knowledge spillover theory of entrepreneurship: an 
+asian perspective. Small Bus Econ 59:1401–1426. https://doi.org/10.1007/s11187-021-00577-3
+Ireland RD, Hitt MA, Sirmon DG (2003) A model of strategic entrepreneurship: the construct and its 
+dimensions. J Manag 29(6):963–989. https://doi.org/10.1016/S0149-2063(03)00086-2
+Jensen SM, Luthans F (2006) Entrepreneurs as authentic leaders: impact on employees’ attitudes. Lead­
+ersh Organ Dev J 27(8):646–666. https://doi.org/10.1108/01437730610709273
+Jensen M, Potočnik K, Chaudhry S (2020) A mixed-methods study of CEO transformational leadership 
+and firm performance. Eur Manag J 38(6):836–845. https://doi.org/10.1016/j.emj.2020.05.004
+Judge TA, Piccolo RF (2004) Transformational and transactional leadership: a meta-analytic test of their 
+relative validity. J Appl Psychol 89(5):755. https://doi.org/10.1037/0021-9010.89.5.755
+Jung DI, Chow C, Wu A (2003) The role of transformational leadership in enhancing organizational 
+innovation: hypotheses and some preliminary findings. Leadersh Q 14(4–5):525–544. https://doi.
+org/10.1016/s1048-9843(03)00050-x
+Kalshoven K, Den Hartog DN, De Hoogh AH (2011) Ethical leadership at work questionnaire (ELW): 
+development and validation of a multidimensional measure. Leadersh Q 22(1):51–69. https://doi.
+org/10.1016/j.leaqua.2010.12.007
+Kakabadse NK, Tatli A, Nicolopoulou K, Tankibayeva A, Mouraviev N (2018) A gender perspective on 
+entrepreneurial leadership: female leaders in Kazakhstan. Eur Manag Rev 15(2):155–170. https://doi.
+org/10.1111/emre.12125
+Karol RA (2015) Leadership in the context of corporate entrepreneurship. J Lead Stud 8:30–34. https://
+doi.org/10.1002/jls.21350
+Kempster S, Cope J (2010) Learning to lead in the entrepreneurial context. Int J Entrep Behav Res 
+16(1):5–34. https://doi.org/10.1108/13552551011020054
+1 3
+533
+T. É. Ravet-Brown et al.
+Khan AN, Khan NA (2022) The nexuses between transformational leadership and employee green organ­
+isational citizenship behaviour: role of environmental attitude and green dedication. Bus Strategy 
+Environ 31(3):921–933. https://doi.org/10.1002/bse.2926
+Kimbu AN, de Jong A, Adam I, Ribeiro MA, Afenyo-Agbe E, Adeola O, Figueroa-Domecq C (2021) 
+Recontextualising gender in entrepreneurial leadership. Ann Tour Res 88:103176. https://doi.
+org/10.1016/j.annals.2021.103176
+Kirzner I (1973) Competition and entrepreneurship. University of Chicago Press, Chicago
+Klijn EH, de Boer N, Eshuis J (2022) Leading frontline enforcers: how supervisors’ leadership style 
+impacts inspectors’ enforcement style. Public Manag Rev 24(3):398–417. https://doi.org/10.1080/
+14719037.2020.1833610
+Knight FH (1921) Risk, uncertainty and profit. Houghton Mifflin Company, Boston and New York
+Kraus S, Breier M, Dasí-Rodríguez S (2020) The art of crafting a systematic literature review in entrepre­
+neurship research. Int Entrep Manag J 16(3):1023–1042. https://doi.org/10.1007/s11365-020-00635-4
+Kraus S et al (2022) Literature reviews as independent studies: guidelines for academic practice. Rev 
+Manag Sci 16:2577–2595. https://doi.org/10.1007/s11846-022-00588-8
+Kuratko DF (2007) Entrepreneurial leadership in the 21st century: Guest editor’s perspective. J Leadersh 
+Organ Stud 13(4):1–11. https://doi.org/10.1177/10717919070130040201
+Kuratko DF, Fisher G, Audretsch DB (2021) Unraveling the entrepreneurial mindset. Small Bus Econ 
+57(4):1681–1691. https://doi.org/10.1007/s11187-020-00372-6
+Landström H (2020) The evolution of entrepreneurship as a scholarly field. Found Trends Entrep 16(2):65–
+243. https://doi.org/10.1561/0300000083
+Lee A, Legood A, Hughes D, Tian AW, Newman A, Knight C (2020) Leadership, creativity and innova­
+tion: a meta-analytic review. Eur J Work Organ Psychol 29(1):1–35. https://doi.org/10.1080/13594
+32x.2019.1661837
+Leitch CM, Harrison RT (2018a) Entrepreneurial leadership: a critical review and research agenda. In: 
+Blackburn R, De Clercq D, Heinonen J (eds) SAGE handbook of Small Business and Entrepreneur­
+ship. Sage, London, pp 15–37
+Leitch CM, Harrison RT (2018b) The evolving field of entrepreneurial leadership: an overview. In: Har­
+rison RT, Leitch CM (eds) Research Handbook on Entrepreneurship and Leadership. Edward Elgar 
+Publishing, Cheltenham, pp 3–34
+Leitch CM, McMullan C, Harrison RT (2013) The development of entrepreneurial leadership: 
+the role of human, social and institutional capital. Br J Manag 24(3):347–366. https://doi.
+org/10.1111/j.1467-8551.2011.00808.x
+Leitch CM, Volery T (2017) Entrepreneurial leadership: insights and directions. Int Small Bus J 35(2):147–
+156. https://doi.org/10.1177/0266242616681397
+Lejuez CW et al (2002) Evaluation of a behavioral measure of risk taking: the Balloon Analogue Risk Task 
+(BART). J Exp Psychol Appl 8(2):75. https://doi.org/10.1037//1076-898x.8.2.75
+Liden RC, Antonakis J (2009) Considering context in psychological leadership research. Hum Relat 
+62(11):1587–1605. https://doi.org/10.1177/0018726709346374
+Liden RC, Maslyn JM (1998) Multidimensionality of leader-member exchange: an empirical assessment 
+through scale development. J Manag 24(1):43–72. https://doi.org/10.1016/S0149-2063(99)80053-1
+Lin Q, Yi L (2022) Survival of the fittest: the multiple paths of entrepreneurial leadership driving adap­
+tive innovation in uncertain environment. Eur J. https://doi.org/10.1108/EJIM-10-2021-0488. Innov 
+Manag (ahead-of-print)
+Lippitt GL (1987) Entrepreneurial leadership: a performing art. J Creat Behav 21(3):264–270. https://doi.
+org/10.1002/j.2162-6057.1987.tb00483.x
+Liu J, Zhou X, Wang Q (2022) The influence of entrepreneurial leadership on employee improvisa­
+tion in new ventures: based on cognitive-affective processing system framework. https://doi.
+org/10.1108/K-10-2021-0933. Kybernetes (ahead-of-print)
+Lowe KB, Gardner WL (2000) Ten years of the leadership quarterly: contributions and challenges for the 
+future. Leadersh Q 11(4):459–514. https://doi.org/10.1016/S1048-9843(00)00059-x
+Lowe KB, Kroeck KG, Sivasubramaniam N (1996) Effectiveness correlates of transformational and trans­
+actional leadership: a meta-analytic review of the MLQ literature. Leadersh Q 7(3):385–425. https://
+doi.org/10.1016/S1048-9843(96)90027-2
+Lukes M, Stephan U (2017) Measuring employee innovation: a review of existing scales and the devel­
+opment of the innovative behavior and innovation support inventories across cultures. Int J Entrep 
+Behav Res 23(1):136–158. https://doi.org/10.1108/ijebr-11-2015-0262
+1 3
+534
+Transformational and entrepreneurial leadership: A review of…
+Luu TD (2023) Fostering strategic entrepreneurship of SMEs: the role of organisational change forces. 
+https://doi.org/10.1108/MD-08-2021-1024. Manag Decis (ahead-of-print)
+Lyons TS, Lyons JS, Jolley GJ (2020) Entrepreneurial skill-building in rural ecosystems: a framework 
+for applying the readiness inventory for successful entrepreneurship (RISE). J Entrep Public Policy 
+9(1):112–136. https://doi.org/10.1108/jepp-09-2019-0075
+Ma X, Jiang W (2018) Transformational leadership, transactional leadership, and employee creativity in 
+entrepreneurial firms. J Appl Behav Sci 54(3):302–324. https://doi.org/10.1177/0021886318764346
+Malibari MA, Bajaba S (2022) Entrepreneurial leadership and employees’ innovative behavior: a sequen­
+tial mediation analysis of innovation climate and employees’ intellectual agility. J Innov Knowl 
+7(4):100255. https://doi.org/10.1016/j.jik.2022.100255
+Maran T, Bachmann AK, Mohr C, Ravet-Brown T, Vogelauer L, Furtner M (2021) Motivational founda­
+tions of identifying and exploiting entrepreneurial opportunities. Int J Entrep Behav Res 27(4):1054–
+1081. https://doi.org/10.1108/IJEBR-05-2020-0291
+Maran T, Furtner M, Kraus GS, Liegl S, Jones P (2019) Entrepreneurial leadership: an experimental 
+approach investigating the influence of eye contact on motivation. J Small Bus Strategy 29(3):16–32
+McCarthy DJ, Puffer SM, Darda SV (2010) Convergence in entrepreneurial leadership style: evidence 
+from Russia. Calif Manag Rev 52(4):48–72. https://doi.org/10.1525/cmr.2010.52.4.48
+Mehmood MS, Jian Z, Akram U, Tariq A (2021a) Entrepreneurial leadership: the key to develop creativity 
+in organizations. Leadersh Organ Dev J 42(3):434–452. https://doi.org/10.1108/LODJ-01-2020-0008
+Mehmood MS, Jian Z, Akram U, Akram Z, Tanveer Y (2021b) Entrepreneurial leadership and team creativ­
+ity: the roles of team psychological safety and knowledge sharing. Pers Rev. https://doi.org/10.1108/
+PR-07-2020-0517
+Men LR, Qin YS, Mitson R (2021) Engaging startup employees via charismatic leadership communica­
+tion: the importance of communicating “vision, passion, and care. Int J Bus Commun. https://doi.
+org/10.1177/23294884211020488
+Montano D, Schleu JE, Hüffmeier J (2023) A meta-analysis of the relative contribution of lead­
+ership styles to followers’ mental health. J Leadersh Organ Stud 30(1):90–107. https://doi.
+org/10.1177/15480518221114854
+Mumford MD, Scott GM, Gaddis B, Strange JM (2002) Leading creative people: orchestrating expertise 
+and relationships. Leadersh Q 13(6):705–750. https://doi.org/10.1016/S1048-9843(02)00158-3
+Munir H, Jianfeng C, Ramzan S (2019) Personality traits and theory of planned behavior comparison of 
+entrepreneurial intentions between an emerging economy and a developing country. Int J Entrep 
+Behav Res 25(3):554–580. https://doi.org/10.1108/ijebr-05-2018-0336
+Newman A, Herman HM, Schwarz G, Nielsen I (2018) The effects of employees’ creative self-efficacy 
+on innovative behavior: the role of entrepreneurial leadership. J Bus Res 89(C):1–9. https://doi.
+org/10.1016/j.jbusres.2018.04.001
+Ng WHT (2017) Transformational leadership and performance outcomes: analyses of multiple mediation 
+pathways. Leadersh Q 23(3):385–417. https://doi.org/10.1016/j.leaqua.2016.11.008
+Ng HS, Kee DMH (2018) The core competence of successful owner-managed SMEs. Manag Decis 
+56(1):252–272. https://doi.org/10.1108/MD-12-2016-0877
+Ng HS, Kee DMH, Ramayah T (2019) Examining the mediating role of innovativeness in the link between 
+core competencies and SME performance. J Small Bus Enterp Dev 27(1):103–129. https://doi.
+org/10.1108/jsbed-12-2018-0379
+Nicholson N (1998) Personality and entrepreneurial leadership: a study of the heads of the UK’s 
+most successful independent companies. Eur Manag J 16(5):529–539. https://doi.org/10.1016/
+S0263-2373(98)00030-9
+Niemann CC, Mai R, Dickel P (2022) Nurture or nature? How organizational and individual fac­
+tors drive corporate entrepreneurial projects. J Bus Res 140:155–169. https://doi.org/10.1016/j.
+jbusres.2021.11.065
+Northouse PG (2018) Leadership: theory and practice. SAGE, London
+Oberer B, Erkollar A (2018) Leadership 4.0: Digital leaders in the age of industry 4.0. J Leadersh Organ 
+Stud 7(4). https://doi.org/10.33844/ijol.2018.60332
+Overstreet RE, Hanna JB, Byrd TA, Cegielski CG, Hazen BT (2013) Leadership style and organizational 
+innovativeness drive motor carriers toward sustained performance. Int J Logist Manag 24(2):247–
+270. https://doi.org/10.1108/ijlm-12-2012-0141
+Palich LE, Bagby DR (1995) Using cognitive theory to explain entrepreneurial risk-taking: challenging 
+conventional wisdom. J Bus Ventur 10(6):425–438. https://doi.org/10.1016/0883-9026(95)00082-J
+1 3
+535
+T. É. Ravet-Brown et al.
+Pauceanu AM, Rabie N, Moustafa A, Jiroveanu DC (2021) Entrepreneurial leadership and sustainable 
+development—A systematic literature review. Sustainability 13(21):1–18. https://doi.org/10.3390/
+su132111695
+Paudel S (2019) Entrepreneurial leadership and business performance: Effect of organizational innova­
+tion and environmental dynamism. South Asian J Bus Stud 8(3):348–369. https://doi.org/10.1108/
+sajbs-11-2018-0136
+Peck KL (1991) Before looking for the gas pedal: a call for entrepreneurial leadership in american schools. 
+Education 111(4):516–520
+Peters M, Kallmünzer A (2018) Entrepreneurial orientation in family firms: the case of the hospitality 
+industry. Curr Issues Tour 21(1):21–40. https://doi.org/10.1080/13683500.2015.1053849
+Pistrui D, Welsch HP, Wintermantel O, Liao J, Pohl HJ (2000) Entrepreneurial orientation and family 
+forces in the new Germany: similarities and differences between East and west german entrepreneurs. 
+Fam Bus Rev 13(3):251–264. https://doi.org/10.1111/J.1741-6248.2000.00251.x
+Prabhu MH, Srivastava AK (2023) Modeling transformational leadership, supply chain collaboration and 
+firm performance–a case of India. Int J. https://doi.org/10.1108/IJOEM-04-2022-0651. Emerg Mark 
+(ahead-of-print)
+Pu B, Sang W, Yang J, Ji S, Tang Z (2022) The Effect of Entrepreneurial Leadership on Employees’ Tacit 
+Knowledge sharing in Start-Ups: a Moderated Mediation Model. Psychol Res Behav Manag 15:137. 
+https://doi.org/10.2147/PRBM.S347523
+Raby RL, Fischer H, Cruz NI (2023) Community College International leaders’ sensemaking: Entre­
+preneurial Leadership Skills and Behavior. Community Coll Rev 51(1):52–74. https://doi.
+org/10.1177/00915521221125822
+Reid SW, Anglin AH, Baur JE, Short JC, Buckley MR (2018) Blazing new trails or opportunity lost? Eval­
+uating research at the intersection of leadership and entrepreneurship. Leadersh Q 29(1):150–164. 
+https://doi.org/10.1016/j.leaqua.2017.11.005
+Renko M (2017) Entrepreneurial leadership. In: Day DV, Antonakis J (eds) The nature of Leadership. 
+Sage, London, pp 381–408
+Renko M, El Tarabishy A, Carsrud AL, Brännback M (2015) Understanding and measuring entrepreneur­
+ial leadership style. J Small Bus Manag 53(1):54–74. https://doi.org/10.1111/jsbm.12086
+Ribeiro-Navarrete S, Piñeiro-Chousa J, López-Cabarcos M, Palacios-Marqués D (2022) Crowdlend­
+ing: mapping the core literature and research frontiers. Rev Manag Sci 16:2381–2411. https://doi.
+org/10.1007/s11846-021-00491-8
+Röschke A (2018a) Entrepreneurial Leadership. Dissertation, University of St. Gallen
+Röschke A (2018b) The concept and evolution of entrepreneurial leadership: a bibliometric analysis. In: 
+Harrison RT, Leitch CM (eds) Research Handbook on Entrepreneurship and Leadership. Edward 
+Elgar Publishing, Cheltenham, pp 37–64
+Salmony FU, Kanbach DK (2022) Personality trait differences across types of entrepreneurs: a systematic 
+literature review. Rev Manag Sci 16(3):713–749. https://doi.org/10.1007/s11846-021-00466-9
+Sarasvathy SD (2008) Effectuation: elements of entrepreneurial expertise. Edward Elgar Publishing, 
+Cheltenham
+Schaubroeck J, Lam SS, Cha SE (2007) Embracing transformational leadership: team values and 
+the impact of leader behavior on team performance. J Appl Psychol 92(4):1020. https://doi.
+org/10.1037/0021-9010.92.4.1020
+Schneider M, Teske P (1992) Toward a theory of the political entrepreneur: evidence from local govern­
+ment. Am Political Sci Rev 86(3):737–747. https://doi.org/10.2307/1964135
+Schoemaker PJ, Heaton S, Teece D (2018) Innovation, dynamic capabilities, and leadership. Calif Manag 
+Rev 61(1):15–42. https://doi.org/10.1177/00081256187902
+Schumpeter JA (1942) Capitalism, socialism and democracy. University of Illinois at Urbana-Cham­
+paign’s Academy for Entrepreneurial Leadership Historical Research Reference in Entrepreneurship, 
+Urbana Champaign
+Selsky JW, Smith AE (1994) Community entrepreneurship: a framework for social change leadership. 
+Leadersh Q 5(3–4):277–296. https://doi.org/10.1016/1048-9843(94)90018-3
+Shaffer JA, DeGeest D, Li A (2016) Tackling the problem of construct proliferation: a guide to assess­
+ing the discriminant validity of conceptually related constructs. Organ Res Methods 19(1):80–110. 
+https://doi.org/10.1177/1094428115598239
+Shane S, Venkataraman S (2000) The promise of entrepreneurship as a field of research. Acad Manag Rev 
+25:217–226. https://doi.org/10.2307/259271
+1 3
+536
+Transformational and entrepreneurial leadership: A review of…
+Shane S, Venkataraman S, MacMillan I (1995) Cultural differences in innovation championing strategies. 
+J Manag 21(5):931–952. https://doi.org/10.1016/0149-2063(95)90048-9
+Shin SJ, Zhou J (2003) Transformational leadership, conservation, and creativity: evidence from Korea. 
+Acad Manag J 46(6):703–714. https://doi.org/10.2307/30040662
+Soomro BA, Shah N (2022) Robustness of the transformational leadership towards corporate entrepre­
+neurship. J Public Aff 22(2):e2509. https://doi.org/10.1002/pa.2509
+Sosik JJ, Kahai SS, Avolio BJ (1998) Transformational leadership and dimensions of creativity: motivating 
+idea generation in computer-mediated groups. Creat Res J 11(2):111–121. https://doi.org/10.1207/
+s15326934crj1102_3
+Strobl A, Kallmünzer A, Peters M (2022) Entrepreneurial Leadership in Austrian Family SMEs: a Con­
+figurational Approach. Int Small Bus J. https://doi.org/10.1177/02662426221084918
+Surie G, Ashley A (2008) Integrating pragmatism and ethics in entrepreneurial leadership for sustainable 
+value creation. J Bus Ethics 81(1):235–246. https://doi.org/10.1007/s10551-007-9491-4
+Tarí JJ, Maquieira SP, Molina-Azorín JF (2023) The link between transformational leadership and the 
+EFQM model elements. Bus Process Manag. https://doi.org/10.1108/BPMJ-10-2022-0498. J 
+(ahead-of-print)
+Thuan LC (2020) Motivating follower creativity by offering intellectual stimulation. Int J Organ Anal 
+28(4):817–829. https://doi.org/10.1108/IJOA-06-2019-1799
+Tlaiss HA, Kauser S (2019) Entrepreneurial leadership, patriarchy, gender, and identity in the arab world: 
+Lebanon in focus. J Small Bus Manag 57(2):517–537. https://doi.org/10.1111/jsbm.12397
+Tranfield D, Denyer D, Smart P (2003) Towards a methodology for developing evidence-informed 
+management knowledge by means of systematic review. Br J Manag 14(3):207–222. https://doi.
+org/10.1111/1467-8551.00375
+Van Dierendonck D, Nuijten I (2011) The servant leadership survey: development and validation of a mul­
+tidimensional measure. J Bus Psychol 26(3):249–267. https://doi.org/10.1007/s10869-010-9194-1
+Van Praag CM, Versloot PH (2007) What is the value of entrepreneurship? A review of recent research. 
+Small Bus Econ 29(4):351–382. https://doi.org/10.1007/s11187-007-9074-x
+Vecchio RP (2003) Entrepreneurship and leadership: common trends and common threads. Hum Resour 
+Manag Rev 13(2):303–327. https://doi.org/10.1016/S1053-4822(03)00019-6
+Verma P, Kumar V (2021) Developing leadership styles and green entrepreneurial orientation to measure 
+organization growth: a study on indian green organizations. J Entrep Emerg Econ 14(6):1299–1324. 
+https://doi.org/10.1108/jeee-01-2021-0035
+Vivona R (2023) The new era leadership for the public sector? Entrepreneurship, effectiveness, and 
+democracy. Public Manag Rev 1–17. https://doi.org/10.1080/14719037.2022.2162957
+Walumbwa FO, Avolio BJ, Gardner WL, Wernsing TS, Peterson SJ (2008) Authentic leadership: 
+development and validation of a theory-based measure. J Manag 34(1):89–126. https://doi.
+org/10.1177/0149206307308913
+Wang G, Oh IS, Courtright SH, Colbert AE (2011) Transformational leadership and performance across 
+criteria and levels: a meta-analytic review of 25 years of research. Group Organ Manag 36(2):223–
+270. https://doi.org/10.1177/1059601111401017
+Wang CL, Tee DD, Ahmed PK (2012) Entrepreneurial leadership and context in chinese firms: a tale of 
+two chinese private enterprises. Asia Pac Bus Rev 18(4):505–530. https://doi.org/10.1080/1360238
+1.2012.690257
+Xu F, Jin L (2022) Impact of daily entrepreneurial stressors on long-term transformational leader behaviors 
+and well-being: Differences in experienced and nascent entrepreneurs. J Bus Res 139(C):280–291. 
+https://doi.org/10.1016/j.jbusres.2021.09.059
+Yasin G, Nawab S, Bhatti KK, Nazir T (2014) Relationship of intellectual stimulation, innovations and 
+SMEs performance: Transformational leadership a source of competitive advantage in SMEs. Middle 
+East J Sci Res 19(1):74–81. https://doi.org/10.5829/idosi.mejsr.2014.19.1.12458
+Yousafzai SY, Saeed S, Muffatto M (2015) Institutional theory and contextual embeddedness of women’s 
+entrepreneurial leadership: evidence from 92 countries. J Small Bus Manag 53(3):587–604. https://
+doi.org/10.1111/jsbm.12179
+Yukl G (2013) Leadership in Organizations. Prentice Hall, Englewood Cliffs
+Yukl G (1989) Managerial leadership: a review of theory and research. J Manag 15(2):251–289. https://
+doi.org/10.1177/014920638901500207
+Zapalska AM, Brozik D, Zieser N (2015) Factors affecting success of small business enterprises in the 
+polish tourism industry. Tourism 63(3):365–381
+1 3
+537
+T. É. Ravet-Brown et al.
+Zaech S, Baldegger U (2017) Leadership in start-ups. Int Small Bus J 35(2):157–177. https://doi.
+org/10.1177/0266242616676883
+Zhou W, Vredenburgh D, Rogoff EG (2015) Informational diversity and entrepreneurial team performance: 
+moderating effect of shared leadership. Int Entrep Manag J 1(11):39–55. https://doi.org/10.1007/
+s11365-013-0274-3
+Żywiołek J, Tucmeanu ER, Tucmeanu AI, Isac N, Yousaf Z (2022) Nexus of transformational leadership, 
+employee adaptiveness, knowledge sharing, and employee creativity. Sustainability 14(18):11607. 
+https://doi.org/10.3390/su141811607
+Publisher’s Note  Springer Nature remains neutral with regard to jurisdictional claims in published maps 
+and institutional affiliations.
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under 
+a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted 
+manuscript version of this article is solely governed by the terms of such publishing agreement and appli­
+cable law.
+1 3
+538

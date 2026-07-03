@@ -1,0 +1,11 @@
+Title: The Effects of Transformational Leadership on Organizational Performance through Knowledge and Innovation<sup>*</sup>
+Authors: Victor Jesús García Morales, Francisco Javier Lloréns Montes, Antonio José Verdú Jover
+Source: OpenAlex
+Date: 2007-10-31
+URL: https://doi.org/10.1111/j.1467-8551.2007.00547.x
+
+Abstract (EN):
+Today's information and knowledge society requires new leaders who can confront a reality based on knowledge and foster innovation to achieve improvements in organizational performance. However, organizations sometimes fail to achieve sustainable competitive advantage due to their limited understanding of the relationships between these strategic variables. To date, very little research has analysed the direct and indirect relationships between these variables. Our study seeks to fill this research gap by analysing theoretically and empirically how the leader's perceptions of different intermediate strategic variables related to knowledge (knowledge slack, absorptive capacity, tacitness, organizational learning) and innovation influence the relation between transformational leadership and organizational performance. Based on the literature, we develop a theoretical model that shows the interrelations between these variables. We then test the model using data from 408 Spanish organizations, discuss the findings and provide several implications for business practitioners.
+
+Abstract (KO):
+오늘날 정보지식사회에서는 지식을 바탕으로 현실을 직시하고 혁신을 통해 조직의 성과를 향상시킬 수 있는 새로운 리더가 필요합니다. 그러나 조직은 이러한 전략적 변수 간의 관계에 대한 이해가 부족하여 지속 가능한 경쟁 우위를 달성하지 못하는 경우가 있습니다. 현재까지 이러한 변수 간의 직간접적 관계를 분석한 연구는 거의 없습니다. 우리의 연구는 지식(지식 여유, 흡수 능력, 암묵성, 조직 학습) 및 혁신과 관련된 다양한 중간 전략 변수에 대한 리더의 인식이 변혁적 리더십과 조직 성과 사이의 관계에 어떻게 영향을 미치는지 이론적, 경험적으로 분석하여 이러한 연구 공백을 메우려고 합니다. 문헌을 바탕으로 우리는 이러한 변수 간의 상호 관계를 보여주는 이론적 모델을 개발합니다. 그런 다음 408개 스페인 조직의 데이터를 사용하여 모델을 테스트하고 결과를 논의하며 비즈니스 실무자에게 몇 가지 시사점을 제공합니다.

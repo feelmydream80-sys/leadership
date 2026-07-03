@@ -1,0 +1,11 @@
+Title: Decision-making, leadership and performance links in private education institutes
+Authors: Nuri Gökhan Torlak, Ahmet Demir, Taylan Budur
+Source: OpenAlex
+Date: 2021-03-29
+URL: https://doi.org/10.1108/ramj-10-2020-0061
+
+Abstract (EN):
+Purpose This paper aims to investigate the relationships between participative decision-making, ethical leadership and leadership performance, which might make school leaders quit autocratic behavior and enhance their performance at private K12 schools in Iraq. Design/methodology/approach The researchers collected data through a questionnaire using a stratified sampling methodology from 207 educators of 10 institutions. The research methodology included demographic analysis, factor analysis, structural equation modeling and mediation analysis. Findings The participative decision-making affected moral, knowledge and attitude that contributed to leadership performance. Besides, the only attitude mediated the relationship between participative decision-making and leadership performance. Research limitations/implications The study is limited to private K12 schools in Iraq. Therefore, the findings cannot be generalized. It might guide educational institutes to change their management style. Originality/value The study delivers a unique insight into education in Iraq.
+
+Abstract (KO):
+목적 이 논문은 학교 지도자들이 독재적인 행동을 그만두고 이라크의 K12 사립학교에서의 성과를 향상시킬 수 있는 참여적 의사 결정, 윤리적 리더십 및 리더십 성과 사이의 관계를 조사하는 것을 목표로 합니다. 설계/방법론/접근법 연구자들은 10개 기관의 207명의 교육자로부터 계층화된 샘플링 방법을 사용하여 설문지를 통해 데이터를 수집했습니다. 연구방법에는 인구통계학적 분석, 요인분석, 구조방정식모형, 매개분석 등이 포함되었다. 조사 결과 참여적 의사 결정은 리더십 성과에 기여하는 도덕적, 지식 및 태도에 영향을 미쳤습니다. 또한, 유일한 태도는 참여적 의사결정과 리더십 성과 간의 관계를 매개하는 것으로 나타났다. 연구의 한계/의미 본 연구는 이라크의 K12 사립학교에만 국한되었습니다. 따라서 결과를 일반화할 수 없습니다. 교육 기관의 관리 스타일을 바꾸도록 안내할 수 있습니다. 독창성/가치 이 연구는 이라크 교육에 대한 독특한 통찰력을 제공합니다.

@@ -1,0 +1,2453 @@
+The Servant Leadership Survey: Development and Validation
+of a Multidimensional Measure
+Dirk van Dierendonck • Inge Nuijten
+Published online: 3 September 2010
+ The Author(s) 2010. This article is published with open access at Springerlink.com
+Abstract
+Purpose
+The purpose of this paper is to describe the
+development
+and
+validation
+of
+a
+multi-dimensional
+instrument to measure servant leadership.
+Design/Methodology/Approach
+Based on an extensive
+literature review and expert judgment, 99 items were for-
+mulated. In three steps, using eight samples totaling 1571
+persons from The Netherlands and the UK with a diverse
+occupational background, a combined exploratory and
+conﬁrmatory factor analysis approach was used. This was
+followed by an analysis of the criterion-related validity.
+Findings
+The ﬁnal result is an eight-dimensional measure
+of 30 items: the eight dimensions being: standing back,
+forgiveness,
+courage,
+empowerment,
+accountability,
+authenticity, humility, and stewardship. The internal con-
+sistency of the subscales is good. The results show that the
+Servant Leadership Survey (SLS) has convergent validity
+with other leadership measures, and also adds unique ele-
+ments to the leadership ﬁeld. Evidence for criterion-related
+validity came from studies relating the eight dimensions to
+well-being and performance.
+Implications
+With this survey, a valid and reliable
+instrument to measure the essential elements of servant
+leadership has been introduced.
+Originality/Value
+The SLS is the ﬁrst measure where the
+underlying factor structure was developed and conﬁrmed
+across several ﬁeld studies in two countries. It can be used
+in future studies to test the underlying premises of servant
+leadership theory. The SLS provides a clear picture of the
+key
+servant
+leadership
+qualities
+and
+shows
+where
+improvements can be made on the individual and organi-
+zational level; as such, it may also offer a valuable starting
+point for training and leadership development.
+Keywords
+Servant leadership  Measurement
+development  Positive organizational behavior 
+Empowerment  Humility
+The 21st century has launched a rocketing interest in lead-
+ership theories. The emphasis has shifted to enhancing
+motivation and social responsibility to secure success and
+proﬁt in modern organizations. Leadership has been sug-
+gested to be a key factor for engaged employees (Luthans
+2002) and for innovative organizations (Garcia-Morales
+et al. 2008). The present theory of servant leadership may be
+of great value in this respect. Servant leadership was ﬁrst
+introduced by Greenleaf (1977) more than 30 years ago, and
+has recently been rediscovered by scholars. It is character-
+ized as a more ethical (Clegget al. 2007) and people-centered
+theory of leadership. Compared to transformational leader-
+ship, it introduces a moral component (Graham 1991), and
+puts explicit emphasis on the needs of followers (Patterson
+2003). In servant leadership the ideal of service is embedded
+in the leader–follower relationship. The biggest difference
+with other types of leadership is that servant leaders are
+genuinely concerned with followers (Greenleaf 1977), rather
+than—for example with transformational leaders—organi-
+zational objectives (Graham 1991; Stone et al. 2004); that
+they work from a base of equality combined with a strong
+focus on social responsibility (Reinke 2004).
+The aim of this article is to describe the development of
+a valid and reliable instrument that measures servant
+leadership in all its complexity, that is behaviorally
+D. van Dierendonck (&)  I. Nuijten
+Rotterdam School of Management, Erasmus University,
+Erasmus University Rotterdam, PO Box 1738, Room T08-07,
+3000 DR Rotterdam, The Netherlands
+e-mail: DvanDierendonck@rsm.nl
+123
+J Bus Psychol (2011) 26:249–267
+DOI 10.1007/s10869-010-9194-1
+oriented, focuses on the role of the leader in the relation-
+ship with followers, and which is easy to use. Despite
+previous attempts to construct a valid and reliable instru-
+ment, there still is a need for a concise scale representing
+the essential characteristics of servant leadership within a
+multi-dimensional framework directly linked to Green-
+leaf’s ideas. At the moment, there is no generally agreed
+upon deﬁnition of what servant leadership is in terms of
+leader behavior. That is an important reason why different
+measures exist. It should be acknowledged that no single
+measure can fully capture and operationalise complicated
+constructs—like servant leadership—and that it may be
+sensible to have a broader range of instruments available
+(Leary and Hoyle 2009). This is particularly true for ser-
+vant leadership. We need studies comparing the different
+measures to enhance our insight into what the core of
+servant leadership is. An instrument of servant leadership
+would ideally (a) be very valuable in encouraging empiri-
+cal research to understand the real value of servant lead-
+ership within modern organizations, (b) help to understand
+which dimensions are critical for employee well-being and
+performance, and (c) help to determine how servant lead-
+ership differs from other leadership styles, such as trans-
+formational and ethical leadership. We will ﬁrst describe
+the foundations of our theoretical model on which we
+based the item formulation. Next, the psychometric anal-
+yses, including exploratory and conﬁrmatory factor anal-
+yses, will be discussed. Finally, the content, incremental
+and criterion-related validity is addressed.
+Phase 1: Development of the Servant Leadership
+Survey
+In his seminal work ‘‘The Servant as Leader’’, Greenleaf
+(1977) introduced his basic ideas on servant leadership.
+This booklet did not give a concise conceptual deﬁnition of
+servant leadership. According to Greenleaf ‘going beyond
+one’s self-interest’ was the core characteristic of servant
+leadership; although mentioned in other leadership theo-
+ries, it has never been given a central position as in servant
+leadership theory. The servant leader is governed by cre-
+ating opportunities for followers to help them grow (Lu-
+thans and Avolio 2003). It is also important to realize that
+according to Greenleaf the servant leader is ‘primus inter
+pares’ (i.e., ﬁrst among equals). Servant leaders do not use
+their power to get things done, but use persuasion to con-
+vince their staff. In addition, and more explicitly than in
+any other leadership theory, servant leadership theory
+places the leader in the role of a steward who holds the
+organization in trust (Reinke 2004). Recently, Parolini
+et al. (2009) conﬁrmed that, when comparing them to
+transformational leaders, servant leaders are perceived as
+more focused on the needs of the individual; their alle-
+giance lies more with the individual than with the organi-
+zation; quite contrary thus to transformational leaders.
+Based on Greenleaf’s ideas, Spears (1995) distinguished 10
+characteristics that are generally quoted as the essential
+elements of servant leadership: listening, empathy, healing,
+awareness, persuasion, conceptualization, foresight, stew-
+ardship, commitment, and building community.
+The development of an adequate instrument requires that
+several criteria have to be met. Primarily, the multi-dimen-
+sionality of the concept should be guaranteed. Servant
+leadership covers a wide range of behaviors which are hard
+to grasp in one or two constructs, and may sometimes seem
+difﬁcult to disentangle. In addition to Spears (1995), several
+other scholars have been engaged in servant leadership
+behavior. Laub (1999), for example, developed a conceptual
+model of six clusters of servant leadership characteristics
+(personal development, valuing people, building commu-
+nity, displaying authenticity, providing leadership, sharing
+leadership), each consisting of three categories. Russell and
+Stone (2002) mentioned nine functional characteristics
+(vision, honesty, integrity, trust, service, modeling, pio-
+neering, appreciation of others, empowerment) and eleven
+additional characteristics of servant leadership. Finally,
+Patterson’s
+(2003)
+model
+includes
+seven
+dimensions
+(agapao love, humility, altruism, vision, trust, empower-
+ment, service).
+It seems that from a theoretical point of view, one is
+inclined to include dozens of characteristics a leader needs
+to display to be called a servant leader which are in turn
+hard to include in a methodological design, and may be
+hard to handle in practice. This has indeed proved to be a
+real challenge. Earlier servant leadership research showed
+quite some content overlap in the operationalisation of the
+different dimensions underlying the proposed measure. For
+instance, Laub (1999) developed a 60-item measure—the
+Organizational Leadership Assessment (OLA)—clustering
+six key areas. Although the OLA should be credited for
+stimulating servant leadership research, the intercorrela-
+tions between the six areas are so high that the overall OLA
+score is recommended for research purposes, whereby its
+multidimensional nature is lost. Another frequently used
+instrument is Page and Wong’s (2000) Servant Leadership
+Proﬁle. Building
+from
+a 12
+dimensional conceptual
+framework, they initially distinguished eight dimensions;
+and later reduced them via seven to ﬁve (Wong and Davey
+2007). In an attempt to replicate this factor structure,
+Dennis and Winston (2003) even brought it back to a three-
+dimensional structure. Barbuto and Wheeler (2006) intro-
+duced a 23-item ﬁve-dimensional instrument that would
+match the 10 characteristics described by Spears. How-
+ever, a recent attempt to replicate their ﬁndings failed
+and suggested that the instrument might actually be
+250
+J Bus Psychol (2011) 26:249–267
+123
+one-dimensional (Dannhauser and Boshoff 2007). Dennis
+and Bocarnea (2005) developed a ﬁve-dimensional instru-
+ment directly related to Patterson’s (2003) seven-dimen-
+sional model. Unfortunately, their original study used one
+sample only. Recently, this instrument has been translated
+into Spanish and was studied within a Latin American
+context (McIntosh and Irving 2008) where the reliability
+for only three of the scales was conﬁrmed.
+A few years ago, Sendjaya et al. (2008) introduced an
+instrument consisting of 35 items representing 22 charac-
+teristics divided over six scales. Regretfully, their study
+does not provide information on the solidity of the
+hypothesized six-dimensional structure. The authors only
+tested the one-dimensionality of each of the six core
+dimensions separately. No data were presented on the
+factorial validity of the overall six-dimensional model. The
+intercorrelations between the dimensions ranged between
+.66 and .87, which is a matter of concern for the proposed
+multi-dimensional structure. The only research where both
+an exploratory and a conﬁrmatory sample were included is
+the one by Liden et al. (2008). They validated a 28-item
+seven-dimensional servant leadership scale in two samples,
+one consisting of 298 students, the other consisting of 182
+individuals working for a production and distribution
+company. A conﬁrmatory factor analysis conﬁrmed their
+seven-factor model as the best ﬁtting model.
+Ideally, one would like to have a number of studies in
+order to reveal a multi-dimensional structure that holds
+across several samples. However, that is precisely what is
+missing. When used in other samples than the development
+one, constructs that were hypothesized to be separate
+constructs collapsed into one (e.g., Dannhauser and
+Boshoff 2007; Dennis and Winston 2003). Given these
+mostly unsuccessful attempts, it should not come as a sur-
+prise that Ehrhart (2004) used a one-dimensional self-
+developed 14-item scale. However, a one-dimensional scale
+does not do justice to the concept of servant leadership.
+Apart from the above mentioned problems, most—if not
+all—scales of servant leadership mainly deal with what we
+would call the ‘people’ side of servant leadership. This
+includes aspects like: helping, serving, being honorable,
+authentic, and empathic, behaving ethically, healing, and
+accepting. Although certainly valuable and important, they
+do not cover the whole concept. The use of the term
+‘servant’ in servant leadership often results in too much
+attention for the people aspects of servant leadership. This
+can hinder its implementation in organizations. It is indeed
+important to pay equal attention to the ‘leader’ part of
+servant leadership. Servant leadership is also about giving
+direction. A servant leader knows very well where to take
+the organization and the people in it (Greenleaf 1977). A
+servant leader needs to be a courageous steward who is
+able to hold people accountable for their own good. In most
+of the scales these ‘leader’ aspects of servant leadership are
+missing. Liden et al. (2008) touch upon stewardship with
+their concepts ‘creating value for the community’ and
+‘conceptual skills’, but ignore the important aspects of
+accountability and courage. The instrument we propose
+focuses on both the ‘people’ and the ‘leader’ aspects of
+servant leadership.
+With the introduction of a new instrument—the Servant
+Leadership Survey (SLS)—we have attempted to overcome
+the above mentioned shortcomings. The SLS primarily
+focuses on the leader–follower relationship measured from
+the perspective of the follower. Our aim was that it should
+(1) cover the essential aspects of servant leadership, (2) be
+easy to apply, and (3) be psychometrically valid and reli-
+able. We demonstrate the factorial validity, the internal
+consistency, the content validity, the incremental validity,
+and the criterion-related validity of this instrument in three
+phases.
+Following Hinkin (1995), we conducted a study where a
+deductive phase was followed by an inductive phase given
+the importance of content validity with regard to the for-
+mulation of new items. After close reading of the available
+literature we summarized the main characteristics of ser-
+vant leadership and formed a preliminary model of servant
+leadership (Van Dierendonck and Heeren 2006). Inter-
+views were then held with managers who, according to
+experts from the European Greenleaf Centre for Servant
+Leadership, exempliﬁed servant leadership. The insights
+from the literature as put forward in the preliminary model
+and those from these interviews led to the servant leader-
+ship characteristics, which we discuss below.
+(1)
+Empowerment: a motivational concept focused on
+enabling people and encouraging personal develop-
+ment (Conger 2000). Empowerment aims at fostering
+a pro-active, self-conﬁdent attitude among followers
+and gives them a sense of personal power. Empow-
+ering
+leadership
+behavior
+includes
+aspects
+like
+encouraging self-directed decision making, informa-
+tion sharing, and coaching for innovative perfor-
+mance (Konczak et al. 2000). The servant leader’s
+belief in the intrinsic value of each individual is the
+central issue in empowerment; it is all about recog-
+nition, acknowledgment, and the realization of each
+person’s abilities and what the person can still learn
+(Greenleaf 1998).
+(2)
+Accountability: holding people accountable for per-
+formance they can control (Conger 1989). This makes
+accountability a mechanism by which responsibility
+for outcomes is given to individuals and teams
+(Konczak et al. 2000). It ensures that people know
+what is expected of them, which is beneﬁcial for both
+employees and the organization (Froiland et al. 1993).
+J Bus Psychol (2011) 26:249–267
+251
+123
+It is a powerful tool to show conﬁdence in one’s
+followers; it provides boundaries within which one is
+free to achieve one’s goals. Although popular liter-
+ature on servant leadership emphasizes accountability
+as very relevant, it has often been neglected by
+scholars and has never been incorporated in any of the
+other measures of servant leadership.
+(3)
+Standing back: is about the extent to which a leader
+gives priority to the interest of others ﬁrst and gives
+them the necessary support and credits. Standing back
+is also about retreating into the background when a
+task has successfully been accomplished. Standing
+back should be closely related to most other aspects
+of servant leadership such as authenticity, empower-
+ment, humility, and stewardship.
+(4)
+Humility: the ability to put one’s own accomplish-
+ments and talents in a proper perspective (Patterson
+2003). Humility in leadership focuses on daring to
+admit that one is not infallible and does make
+mistakes (Morris et al. 2005). Humility arises from
+a proper understanding of one’s strong and weak
+points. Servant leaders acknowledge their limitations
+and therefore actively seek the contributions of others
+in order to overcome those limitations.
+(5)
+Authenticity: is closely related to expressing the ‘true
+self’, expressing oneself in ways that are consistent
+with inner thoughts and feelings (Harter 2002).
+Authenticity is about being true to oneself, accurately
+representing—privately and publicly—internal states,
+intentions, and commitments (Peterson and Seligman
+2004). From an organizational perspective it can be
+deﬁned as behaving in such a way that professional
+roles remain secondary to whom the individual is as a
+person (Halpin and Croft 1966).
+(6)
+Courage: daring to take risks and trying out new
+approaches
+to
+old
+problems
+(Greenleaf
+1991).
+According to Greenleaf (1991) courage is an impor-
+tant characteristic that distinguishes the servant leader
+from other leaders. Within the organizational context,
+courage is about challenging conventional models of
+working behaviors (Hernandez 2008); it is essential
+for innovation and creativity. Courage is related to
+pro-active behavior and implies creating new ways.
+To do so, means strongly relying on values and
+convictions that govern one’s actions (Russell and
+Stone 2002).
+(7)
+Interpersonal acceptance: the ability to understand
+and experience the feelings of others, understand
+where people come from (George 2000), and the
+ability to let go of perceived wrongdoings and not
+carry a grudge into other situations (McCullough
+et al. 2000). In other words, interpersonal acceptance
+is about empathy: being able to cognitively adopt the
+psychological perspective of other people and expe-
+rience feelings of warmth and compassion. Further-
+more, interpersonal acceptance is about being able to
+forgive when confronted with offenses, arguments,
+and mistakes. For servant leaders it is important to
+create an atmosphere of trust where people feel
+accepted, are free to make mistakes and know that
+they will not be rejected (Ferch 2005). Hence, it
+facilitates the development of high-quality interper-
+sonal relationships through a better understanding of
+the behavior of others. Servant leaders are not
+revengeful or eager to get even, this creates a setting
+that brings out the best in people.
+(8)
+Stewardship: the willingness to take responsibility for
+the larger institution and go for service instead of
+control and self-interest (Block 1993). Leaders should
+not only act as caretakers, but also act as role models
+(Hernandez 2008). By setting the right example,
+leaders can stimulate others to act in the common
+interest. Stewardship is closely related to social
+responsibility, loyalty, and team work. These con-
+structs all ‘‘represent a feeling of identiﬁcation with
+and sense of obligation to a common good that
+includes the self but that stretches beyond one’s own
+self-interest’’ (Peterson and Seligman 2004, p. 370).
+In conclusion, based on an analysis of the servant
+leadership literature and interviews with servant leaders,
+these eight aspects were selected as the best indicators of
+servant leadership and were therefore included in the
+empirical design.
+Study 1
+Method
+Participants
+The composite sample of this study con-
+sisted of four samples, including 668 persons from the
+Netherlands. Sample 1 was collected through an open
+online survey. Participants received an e-mail sent to the
+mailing list of the Greenleaf Center for Servant Leadership
+Europe. Additionally, an invitation was put on the website
+of the Center and e-mails were sent to people belonging to
+the social networks of the authors. All recipients were
+asked to forward the invitation to people they knew. The
+webpage with the start page of the questionnaire was
+checked by 504 people of whom 213 persons ﬁlled out the
+complete list. Sample 2 was also an open online survey
+conducted within the network of a Master student. Five
+hundred and three people checked out the webpage of
+whom 202 people ﬁlled out the complete list. The partic-
+ipants were employed in diverse occupations (e.g., ﬁnance,
+consultancy, health care, education, civil service). Sample
+252
+J Bus Psychol (2011) 26:249–267
+123
+3 was obtained from a study at a high school. The teaching
+staff (678 persons) was asked in a personal e-mail to par-
+ticipate in a survey on leadership and well-being. One
+hundred and sixty teachers completed the survey. Sample 4
+was a combined sample of small studies conducted in a
+clinic, a restaurant, several shops, a ﬁre brigade, and a
+small factory and included 93 people. All respondents in
+these samples participated voluntary.
+The mean age of this composite sample was 40.6 years
+(SD = 12.1), with 11.2 years (SD = 10.4) of work expe-
+rience. The sample consisted of 47.9% men and 52.1%
+women. Forty-two percent worked in a proﬁt organization,
+58% in a non-proﬁt organization. The majority had a male
+supervisor (71.5%) versus 28.5% with female supervisor.
+Measures
+Based on our conceptual model, we opera-
+tionalised the eight earlier mentioned aspects. After the
+content analysis for critical aspects of servant leadership,
+we checked the operationalisations of related constructs to
+develop a ﬁrst pool of items. Most items were speciﬁcally
+formulated for our measure, except those for empowerment
+that were taken from the Konczak et al. (2000) measure.
+All items were positively formulated, except for three
+items that were aimed at the forgiveness aspect of inter-
+personal acceptance.
+These items were subjected to a critical review by three
+master students who had extensively studied the literature
+on servant leadership as part of their thesis project. They
+had to decide to what extent they felt that items reﬂected
+servant leadership—as described in the eight concepts
+above—and whether crucial aspects had been overlooked.
+Based on their opinions, from the original item pool of 110
+items, 20 items were removed, and 9 new items were
+added, reaching a total of 99 items. All people in Study 1
+responded to these 99 SLS items that were formulated in
+this item generation phase.
+Results
+In order to achieve a psychometrically sound multi-dimen-
+sional measure that holds under cross-validation, explor-
+atory factor analysis was used as a ﬁrst step. The primary
+goal of exploratory factor analysis is to reduce a large set of
+measured variables to a smaller set. The goal was to reduce
+the set of 99 items so that only the items remained that best
+exempliﬁed one of the proposed dimensions without loading
+too high on one or more of the other dimensions. Exploratory
+factor analysis can be used to determine whether the
+hypothesized dimensions actually are reﬂected in the col-
+lected data. It should, however, be noted that even with
+exploratory factor analysis, theory remains an important
+guideline to decide which items to keep and which items to
+remove (Henson and Roberts 2006).
+The ﬁrst stage in analyzing the data with exploratory
+factor analysis is checking the conditions for a stable factor
+structure (Ferguson and Cox 1993). This requires that the
+sample size is large enough. The two most frequently used
+criteria are the absolute minimum number of subjects and
+the relative number indicated by the subjects-to-variables
+ratio. Somewhere between 100 and 300 subjects have been
+suggested as the minimum number of subjects, whereby
+Guadagnoli and Velicer (1988) even suggested that 100
+subjects may be acceptable. With 668 subjects in our
+composite sample, this criterion is absolutely met. Rec-
+ommendations for the subject-to-variable
+ratio range
+between 2:1 and 10:1. The generally accepted minimum
+for reaching a stable factor structure is 5:1 (Ferguson and
+Cox 1993). In our sample this ratio was 6.7:1, thus higher
+than the generally accepted minimum ratio.
+The next step is to check whether the items are multi-
+variate normally distributed by checking their skewness
+and kurtosis. Following Ferguson and Cox (1993), we
+checked whether no more than 25% exceeded the range of
+±2.0. With respect to skewness, no items fell outside this
+range. With respect to kurtosis, only 6 out of 99 (6%) fell
+outside the range.
+We then applied the Kaiser–Meyer–Olkin test and the
+Bartlett’s test of sphericity to make sure that the correlation
+matrix was appropriate to produce a factor structure not
+found by chance. The Kaiser–Meyer–Olkin test was .980,
+well above the required minimum value of .5. The
+approximate chi-square of the Bartlett’s test of sphericity
+was signiﬁcant (51094.251, df = 4851, p \ .001), indi-
+cating that a discoverable factor structure exists in the data.
+Therefore, we can conclude that the necessary conditions
+for ﬁnding a stable factor structure exist within the dataset.
+In stage 2 the number of factors to be extracted from the
+data is determined. The three most used techniques are the
+Kaiser 1 rule that is extracting the number of factors with
+an Eigenvalue higher than 1, the Scree test, and parallel
+analysis (Hayton et al. 2004). The Kaiser 1 rule has the
+tendency to overestimate the number of factors; the Scree
+test is vulnerable to subjective interpretation on where the
+break in the plot is. Parallel analysis is considered the most
+accurate method to determine the number of factors to
+retain. We used both the Kaiser 1 rule to determine the
+maximum number of factors and parallel analysis for the
+exact number, following the guidelines and syntax pro-
+vided by Hayton et al. (2004).
+Fourteen factors were found with an Eigenvalue higher
+than 1. The Eigenvalues were 41.934, 4.927, 2.820, 2.251,
+1.892, 1.800, 1.566, 1.418, 1.411, 1.310, 1.180, 1.115,
+1.073, and 1.010. With parallel analysis a random gener-
+ated set of Eigenvalues is compared to the empirically
+derived Eigenvalues. Using the syntax provided by Hayton
+et al. (2004) 50 random datasets were generated with SPSS
+J Bus Psychol (2011) 26:249–267
+253
+123
+each consisting of 668 persons and 99 variables. Next, all
+datasets were subjected to a factor analysis. The Eigen-
+values of the ﬁrst 14 factors were averaged across these 50
+datasets. To determine the number of factors in our dataset,
+both plots were compared. The number of extractable
+factors is indicated by the point immediately before the
+point where both lines cross. The averaged random
+Eigenvalues were 1.857, 1.810, 1.773, 1.737, 1.706, 1.678,
+1.625, 1.599, 1.577, 1.552, 1.533, 1.508, and 1.490. A
+comparison of both lists indicates that the crossing point
+lies between factor 6 and 7. Therefore, we may conclude
+that six factors probably is the most accurate number to be
+extracted from the data.
+In stage 3 the items that best ﬁtted the six factors
+mentioned above were selected. Varimax rotation was used
+since this method seeks to maximize the variance across all
+factors. Items had to have a minimum factor loading of .4
+on one-factor only, and the minimum difference in factor
+loading on the remaining ﬁve factors of .2 (Ferguson and
+Cox 1993). Subsequent factor analyses were performed,
+starting with all 99 items. Each time the items with the
+highest cross-loadings were excluded. Finally 28 items
+remained, whereby the six factors explained 65% of the
+variance. Based on item content, we labeled six dimen-
+sions,
+namely
+empowerment,
+accountability,
+standing
+back, authenticity, courage, and forgiveness. It should be
+noted that a comparison of the original varimax rotated
+component matrix with the oblimin pattern matrix showed
+that both matrices were comparable, lending support to this
+28-item selection.
+Due to the results of the factor analysis we had to review
+the measurement of the eight anticipated constructs. For
+the interpersonal acceptance dimension, only the items
+explicitly focusing on forgiveness stayed as a separate
+factor; therefore we decided to rename this dimension
+forgiveness. The empathy items loaded on several other
+dimensions and were removed. In comparing the six
+dimensions with our original conceptual model, it is
+striking that the items for humility had disappeared. So, if
+we would purely follow the psychometric criteria, we
+would lose a very important conceptual element of servant
+leadership. Double checking the factor structure showed
+that most of these items had double loadings on the
+dimensions Standing back and empowerment, often as high
+as .50 on both factors. In a sense, humility was a seventh
+factor loading between these dimensions. It is interesting
+that from a theoretical perspective this makes perfect sense
+since servant leaders combine a service attitude with
+empowerment, and are most successful when they are
+humble. Therefore, we decided to keep the six items that
+exempliﬁed the Humility dimension best.
+Finally, we found that the items for the eighth dimen-
+sion—stewardship—did
+not
+accurately
+reﬂect
+this
+construct. Nevertheless, we hold the view that it is an
+important aspect in the whole concept of servant leader-
+ship. Therefore, we decided to keep it as a dimension, but
+we reformulated two items and added three new ones. The
+SLS now counted 39 items representing eight hypothesized
+dimensions. These 39 SLS items were subjected to a con-
+ﬁrmatory factor analysis in a new sample in Study 2.
+Study 2
+Method
+Participants
+The sample of this study was collected
+through an open online survey. Participants were invited in
+an online newsletter which was sent to civil servants
+throughout the Netherlands asking for volunteers to par-
+ticipate in a study on leadership. No incentive was offered
+for participation. The webpage was checked by 734 people
+of whom 263 persons ﬁlled out the survey.
+The mean age of this ﬁfth sample was 47.3 years
+(SD = 9.1), with 3.7 years (SD = 4.7) of work experience
+at their present job. The sample consisted of 64.2% men
+and 35.8% women. The majority had a male supervisor
+(80.5%) versus 19.5% with a female supervisor.
+Measures
+Servant leadership. Servant leadership was
+measured with 39 items derived from the exploratory factor
+analysis in Study 1.
+Results
+In Study 1 we reduced the number of items with explor-
+atory factor analysis to keep those with the strongest
+indications of conforming to the proposed underlying
+structure. In Study 2 we used conﬁrmatory factor analysis
+so that the hypothesized factor structure can be tested for
+its ﬁt to the observed covariance structure (Henson and
+Roberts 2006). It is the preferred analysis method if theory
+underlies the measured constructs. With conﬁrmatory fac-
+tor analysis different models can be tested and compared.
+In addition, information is provided (i.e., modiﬁcation
+indices) to guide us towards further reﬁning our measure.
+We tested the stability of the eight-factor model with the
+39 items derived in the ﬁrst step. MPlus 5.1 (Muthe´n and
+Muthe´n 2007) was used to carry out all the conﬁrmatory
+factor analyses. First, a one-factor model where all items
+loaded on one servant leadership factor was tested. The chi-
+square
+was
+2934.7,
+df = 702,
+p \ .001,
+CFI = .65,
+TLI = .63, SRMR = .09, AIC = 27966.4, RMSEA = .11.
+Next, the eight-factor model derived from the analysis of
+Study 1 was tested. The eight servant leadership factors
+were allowed to correlate. The chi-square was 1488.7,
+df = 674, p \ .001, CFI = .87, TLI = .86, SRMR = .06,
+254
+J Bus Psychol (2011) 26:249–267
+123
+AIC = 26576.3, RMSEA = .07. A comparison of these
+results conﬁrms that the survey is multi-dimensional. The
+relative ﬁt indices of this eight-factor model are already
+reasonable and the chi-square of the eight-factor model is
+signiﬁcantly better than that of the one-factor model
+(Dv2 = 1466.0, df = 21, p \ .001).
+Because the relative ﬁt indices of the eight-factor
+model—with values lower than .90 for CFI and TLI—
+indicate some kind of model misﬁt, we checked the load-
+ings on the factors. It turned out that all items loaded
+signiﬁcantly on their respective factors with standardized
+factor loadings between .46 and .86. It is likely that the
+misﬁt is due to overlap between factors. Therefore, the
+modiﬁcation indices were checked for possible misspeci-
+ﬁcation in the model. We eliminated those items that
+according to the modiﬁcation indices had high double
+loadings in this study. Three items from the empowerment
+scale, two stewardship items, one standing back item, one
+courage item, one humility item, and one item from the
+authenticity
+scale—were
+consequently
+removed.
+This
+increased the ﬁt of this model to a chi-square of 623.5,
+df = 377, CFI = .93, TLI = .92, SRMR = .05, AIC =
+19354.6, RMSEA = .05. The standardized solution of this
+eight-factor model is shown in Table 1.
+Our survey now consisted of eight factors captured by
+30 items which could empirically be differentiated and
+conceptually interpreted. Now, we had to test it in another
+study. In Study 1, the humility items cross-loaded on
+empowerment and on standing back. By eliminating the
+items with cross-loadings it is expected that this issue is
+resolved as well. To check whether this is correct, we
+compared in Study 3 the ﬁt of four models: the eight-factor
+model, a six-factor model with all empowerment, humility
+and standing back items loading on one-factor and two-
+seven-factor models with the humility items also loading
+on the empowerment dimension or on the standing back
+factor.
+Study 3
+Method
+Participants
+The composite sample of this study con-
+sisted of two samples from the Netherlands, totaling 236
+persons. The ﬁrst sample of Study 3 (sample 6 of this
+paper) was collected through an open online survey. People
+at management positions within the network of the
+researchers were asked to help out with the research by
+asking their direct reports to ﬁll out the survey anony-
+mously. One hundred and one persons ﬁlled out the SLS.
+The second sample of Study 3 (sample 7 of this paper) was
+drawn from employees working at gas stations from a large
+oil
+company.
+One
+hundred
+and
+thirty-ﬁve
+people
+participated. The mean age of this composite sample was
+40.1 years (SD = 10.3) with 6.4 years (SD = 6.2) of work
+experience. The sample consisted of 36.1% men and 63.9%
+women. Within this group the majority had a male super-
+visor (79.1%) and 20.9% had a woman as supervisor. As in
+the previous studies, participation was voluntary.
+Measures
+Servant leadership. Servant leadership was
+measured with 30 items derived from the results of Study 2.
+Results
+The eight-factor model was conﬁrmed in this study, with a
+chi-square of 562.5, df = 377, CFI = .94, TLI = .93,
+SRMR = .05, AIC = 17150.5, RMSEA = .05. The gen-
+erally accepted values of good ﬁt are close to .95 for the CFI
+and the TLI, and less than .08 for the SRMR and RMSEA
+(Fan and Sivo 2007; Hu and Bentler 1998). Next, we com-
+pared the ﬁt of this model with the three models that presume
+that humility is not a separate dimension. The ﬁt of the six-
+factor model was signiﬁcantly lower (v2 = 833.2, df =
+390, CFI = .87, TLI = .85, SRMR = .06, AIC = 17395.1,
+RMSEA = .07; Dv2 = 270.7, df = 23, p \ .001). The ﬁt of
+the seven-factor model with all humility and empowerment
+items
+loading
+on
+one-factor
+had
+a
+similar
+low
+ﬁt
+(v2 = 800.9, df = 384, CFI = .87, TLI = .85, SRMR =
+.06, AIC = 17374.8, RMSEA = .07; Dv2 = 238.4, df = 7,
+p \ .001). The ﬁt of the seven-factor model with humility
+and standing back items one-factor was reasonable, but still
+signiﬁcantly less compared to the eight-factor model
+(v2 = 619.4, df = 384, CFI = .93, TLI = .92, SRMR =
+.06, AIC = 17193.4, RMSEA = .05; Dv2 = 57.2, df = 7,
+p \ .001). We may, therefore, conclude that we conﬁrmed
+the factorial validity of the eight-factor model in an inde-
+pendent sample.
+To enhance our understanding of the relations between
+the eight dimensions, we tested the eight-factor model with
+one underlying second-order factor. With respect to the
+relative ﬁt indices, the ﬁt of this model approached that of
+the eight-factor model with all factors interrelated (v2 =
+600.1, df = 397, CFI = .94, TLI = .93, SRMR = .06,
+AIC = 17148.1, RMSEA = .05). The standardized factor
+loadings of the latent factors on this second-order servant
+leadership factor were .92 for empowerment, .40 for
+accountability, .84 for standing back, .82 for humility, .71
+for authenticity, .53 for courage, .19 for forgiveness, and
+.92 for stewardship. Seven out of eight factors loaded
+moderately to high on this second-order factor.
+The reliability in terms of internal consistency was good
+for all scales. The combined sample of all three studies
+showed Cronbach’s alpha’s of .89 for empowerment
+(7 items), .81 for accountability (3 items), .76 for standing
+back (3 items), .91 for humility (5 items), .82 for authenticity
+J Bus Psychol (2011) 26:249–267
+255
+123
+(4 items), .69 for courage (2 items), .72 for forgiveness
+(3 items), and .74 for stewardship (3 items).
+In conclusion, at this stage of the development of the
+instrument, our survey consisted of eight factors captured
+by 30 items which could empirically be differentiated and
+conceptually interpreted. The following step was to use this
+instrument in a new study in the United Kingdom. This
+fourth study was added as a ﬁrst test for the cross-cultural
+validity of our measure. The data of studies 1, 2, and 3
+were collected within the Netherlands. Although Table 1
+shows the English language version, the original ques-
+tionnaire is in Dutch. Both translation and implicit lead-
+ership models could have inﬂuenced the factorial structure.
+According to the Globe study (House et al. 2004), the
+Netherlands and the United Kingdom are positioned in
+different clusters, that is the Germanic and Anglo clusters.
+Table 1 Factor loadings conﬁrmatory factor analysis, Study 2 (N = 263), standardized values
+1
+2
+3
+4
+5
+6
+7
+8
+Empowerment
+1. My manager gives me the information I need to do my work well.
+.67
+2. My manager encourages me to use my talents.
+.69
+3. My manager helps me to further develop myself.
+.82
+4. My manager encourages his/her staff to come up with new ideas.
+.81
+12. My manager gives me the authority to take decisions which make work easier for me.
+.79
+20. My manager enables me to solve problems myself instead of just telling me what to do.
+.71
+27. My manager offers me abundant opportunities to learn new skills.
+.72
+Standing back
+5. My manager keeps himself/herself in the background and gives credits to others.
+.65
+13. My manager is not chasing recognition or rewards for the things he/she does for others.
+.71
+21. My manager appears to enjoy his/her colleagues’ success more than his/her own.
+.60
+Accountability
+6. My manager holds me responsible for the work I carry out.
+.57
+14. I am held accountable for my performance by my manager.
+.85
+22. My manager holds me and my colleagues responsible for the way we handle a job.
+.63
+Forgiveness
+7. My manager keeps criticizing people for the mistakes they have made in their work (r).
+.70
+15. My manager maintains a hard attitude towards people who have offended him/her at work (r).
+.75
+23. My manager ﬁnds it difﬁcult to forget things that went wrong in the past (r).
+.43
+Courage
+8. My manager takes risks even when he/she is not certain of the support from his/her own manager.
+.50
+16. My manager takes risks and does what needs to be done in his/her view.
+.89
+Authenticity
+9. My manager is open about his/her limitations and weaknesses.
+.69
+17. My manager is often touched by the things he/she sees happening around him/her.
+.55
+24. My manager is prepared to express his/her feelings even if this might have undesirable consequences.
+.67
+28. My manager shows his/her true feelings to his/her staff.
+.83
+Humility
+10. My manager learns from criticism.
+.75
+18. My manager tries to learn from the criticism he/she gets from his/her superior.
+.71
+25. My manager admits his/her mistakes to his/her superior.
+.85
+29. My manager learns from the different views and opinions of others.
+.71
+30. If people express criticism, my manager tries to learn from it.
+.88
+Stewardship
+11. My manager emphasizes the importance of focusing on the good of the whole.
+.65
+19. My manager has a long-term vision.
+.69
+26. My manager emphasizes the societal responsibility of our work.
+.57
+ Copyright 2010 by Van Dierendonck and Nuijten. The Servant Leadership Survey may freely be used for scientiﬁc purposes. Item numbers in
+the table refer to the items place in the survey
+256
+J Bus Psychol (2011) 26:249–267
+123
+As such, information on the cross-cultural stability of the
+underlying factorial model through a replication of the
+eight-factor structure is essential to build a greater trust in
+the stability of the instrument.
+Study 4
+Method
+Participants
+The study was conducted online as a lead-
+ership study. Respondents were recruited via a panel ﬁrm
+located in the United Kingdom. Three hundred and eighty-
+four people participated. The mean age of this sample was
+42.5 years (SD = 9.9) with 6.4 years (SD = 5.5) of work
+experience. The sample consisted of 37.2% men and 62.8%
+women.
+Measures
+Servant leadership. Servant leadership was
+measured with 30 items derived from the results of Study 2.
+The translation into English was ﬁrst done by both authors
+separately. Following, both versions were compared and
+differences reconciled by a back-translation procedure.
+This version was cross-checked by a professional translator
+with an English language degree.
+Results
+Theeight-factor modelwasconﬁrmedinthisstudy,withachi-
+squareof1197.7,df = 377,CFI = .93,TLI = .92,SRMR =
+.07, AIC = 29733.1, RMSEA = .05. The goodness-of-ﬁt
+indices for the Englishversionare similartothe one’s reported
+for the Dutch version in Study 2 and 3. We can, therefore,
+conclude that we found conﬁrmation for the cross-cultural
+factorial validity of the eight-factor model in an UK sample.
+Similar to Study 3, we again tested the eight-factor model
+with one underlying second-order factor. With respect to the
+relative ﬁt indices, the ﬁt of this model ﬁt was slightly less
+compared to the eight-factor model with all factors interre-
+lated
+(v2 = 1314.4,
+df = 397,
+CFI = .92,
+TLI = .91,
+SRMR = .06, AIC = 29809.9, RMSEA = .08). The stan-
+dardized factor loadings of the latent factors on this second-
+order servant leadership factor were .90 for empowerment,
+.17 for accountability, .90 for standing back, .93 for humility,
+.82 for authenticity, .58 for courage, .60 for forgiveness, and
+.93 for stewardship. Again, seven out of eight dimensions
+loaded moderately to high on this second-order. However, in
+this UK sample it was accountability that loaded lower than
+the others. Despite the relative low factor loading within this
+speciﬁc sample, it may be good to realize that accountability
+has been positioned as an essential element of the ‘leader’
+aspect of servant leadership and is therefore kept within the
+instrument.
+The reliability in terms of internal consistency was good
+for all scales. Cronbach’s alpha’s were .94 for empower-
+ment (7 items), .93 for accountability (3 items), .92 for
+standing back (3 items), .95 for humility (5 items), .76 for
+authenticity (4 items), .91 for courage (2 items), .90 for
+forgiveness (3 items), and .87 for stewardship (3 items).
+In summary, we have found support for the eight-factor
+structure from the exploratory phase in two new samples in
+the Netherlands and in the UK. The results of the second-
+order model of both samples show that the strongest indi-
+cators of servant leadership seem to be empowerment,
+standing back, humility, and stewardship with factor
+loadings of .80 and higher. Forgiveness and accountability
+deviate most from the other six factors. For forgiveness this
+could be explained in that it only applies in situations
+where something has gone wrong as opposed to the other
+factors that focus on more generally applicable behaviors.
+Accountability is the factor that strongest exempliﬁes the
+leader part of servant leadership.
+Phase 2: Content Validity of the SLS
+To study the content validity of the SLS it is compared to
+two other measures of servant leadership, a one-dimen-
+sional measure (Ehrhart 2004) and a multi-dimensional
+measure (Liden et al. 2008). Given that all three measures
+focus on servant leadership, considerable overlap is to be
+expected, indicating convergent validity. However, we
+expect some discriminant validity as well, because the SLS
+covers essential aspects of servant leadership that other
+scales have neglected.
+Servant leadership has many parallels with transforma-
+tional leadership, but moves beyond transformational
+leadership with its alignment of leaders’ and followers’
+motives (Barbuto and Wheeler 2006). More particularly, a
+servant leader is genuinely concerned with serving fol-
+lowers (Greenleaf 1977), while transformational leaders
+have a greater concern for the strategic use of followers to
+reach organizational goals (Stone et al. 2004). With a
+leader whose main focus is on the people within the
+organization, there is room for safe and secure relation-
+ships. Furthermore, we expect that servant leadership will
+distinguish itself from transformational leadership by sev-
+eral essential characteristics emphasizing the focus on the
+followers.
+Servant leadership can also be related to the more recent
+work on ethical leadership (Brown et al. 2005). Ethical
+leadership is a more normative approach that focuses on
+the question of appropriate behavior in organizations.
+Ethical leadership and servant leadership share character-
+istics such as care for people, integrity, trustworthiness, and
+serving the good of the whole. In ethical leadership,
+J Bus Psychol (2011) 26:249–267
+257
+123
+however, the emphasis is more on directive and normative
+behavior, whereas servant leadership has a stronger focus
+on the developmental aspect of the followers. It is not so
+much focused on the norms within an organization, but
+more on how individuals themselves want and can do
+things. Considering the importance of caring for people and
+being trustworthy in both types of leadership, we expect to
+ﬁnd high correlations between servant leadership and eth-
+ical leadership.
+Another theory of leadership is the leader-member
+exchange (LMX) theory (Dansereau et al. 1975); it
+describes the relation between and follower as an exchange
+relationship. Leaders use their position power to develop
+exchange relationships with different followers. It assumes
+that leaders pay attention to the speciﬁc needs of individual
+followers and approach each member of their work group
+individually. More particularly, LMX theory emphasizes
+how leaders work with their followers on a one-to-one
+basis to develop high-quality relationships with each of
+them (Graen and Uhl-Bien 1995). Within this relationship,
+respect for each other’s capabilities, reciprocal trust and the
+expectation of partnership are essential. Therefore, it is
+expected that followers of servant leaders will experience a
+high LMX quality in this relationship.
+We also compare servant leaders to charismatic leaders,
+who are similar to servant leaders in that they have clear
+goals for their followers, communicate high expectations
+for followers, exhibit conﬁdence in followers’ abilities to
+meet these expectations (Shamir et al. 1993; Shamir and
+Howell 1999), and are courageous (Murphy and Ensher
+2008). However, other characteristics of charismatic lead-
+ers also include dominant and manipulative behavior,
+showing no regard for the beneﬁts of others (Northouse
+2007). In this respect they are very different from servant
+leaders, which we expect to ﬁnd in the data.
+The ﬁnal leadership style to which we will compare
+servant leadership is transactional leadership. Transactional
+leaders do not individualize the needs of followers or focus
+on their personal development. Moreover, they exchange
+things of value with subordinates to advance their own and
+their followers’ agenda (Howell and Avolio 1993). Trans-
+actional leadership is most likely found in well-ordered
+societies (Bass et al. 2003), and probably most effective
+when quantitative performance is required (Hoyt and
+Blascovich
+2003).
+Exhibiting
+transactional
+leadership
+means that followers agree with, accept, or comply with the
+leader in exchange for praise, rewards, and resources or the
+avoidance of disciplinary action. Transactional leadership,
+in its corrective form is called active management by
+exception. It means that the leader sets standards for
+compliance and performance, and may punish followers for
+not meeting these standards (Bass et al. 2003). As such, this
+leadership style implies less attention for nurturing and
+facilitating. Research has shown that trust, satisfaction and
+work group cohesion are greater for transformational
+leaders than for transactional leaders (Hoyt and Blascovich
+2003). We therefore expect punishment behavior to be only
+weakly related to servant leadership behavior.
+Method
+Participants
+For this phase a composite sample was used by combining
+the eight samples used in the four studies of Phase 1. This
+composite sample consisted of 1571 persons, 1187 ﬁlled
+out the Dutch version and 384 ﬁlled out the English ver-
+sion. Different concepts were measured in each of the
+samples, all on a six-point Likert scale, except for the scale
+by Liden et al. (2008) that used a seven-point Likert scale.
+Measures
+SLS. The 30-item version derived from the development
+phase was used.
+Servant leadership, a one-dimensional scale. A general
+measure of servant leadership developed by Ehrhart (2004)
+was included in sample 3, Study 1. This measure consists
+of 14 items focused on ethical behaviors and prioritization
+of subordinates’ concerns. It is used as a one-dimensional
+general scale of servant leadership. The internal consis-
+tency is .95.
+Servant leadership scale. This 28-item scale of servant
+leadership developed by Liden et al. (2008) was used in
+Study 4 (UK sample). The scale consists of seven dimen-
+sions: emotional healing, creating value of the community,
+conceptual skills, empowering, helping subordinates grow
+and succeed, putting subordinates ﬁrst, and behaving eth-
+ically. The internal consistencies are .90, .92, .86, .91, .94,
+.89, and .90, respectively.
+Transformational leadership. Transformational leader-
+ship was measured with the scale developed by Rafferty
+and Grifﬁn (2004) in both samples in Study 3, samples 6
+and 7. This scale consists of ﬁve 3-item subscales: vision,
+inspirational communication, intellectual stimulation, sup-
+portive leadership, and personal recognition. The internal
+consistencies are acceptable: .64, .63, .74, .77, and .85,
+respectively.
+Ethical leadership. Ethical leadership was measured
+with the 10-item scale developed by Brown et al. (2005) in
+samples 3 and 4 in Study 1. The internal consistency is
+high (alpha = .95).
+LMX-7. Leader-member exchange was measured with
+Scandura and Graen’s (1984) seven-item measure of LMX.
+This scale was included in sample 1. The internal consis-
+tency is .92.
+258
+J Bus Psychol (2011) 26:249–267
+123
+Charismatic leadership. Perceived charisma of the lea-
+der was measured with a six-item scale developed by
+Damen et al. (2008) based on the work of Bass (1985), and
+Conger and Kanungo (1987). The scale was included in
+sample 3, Study 1. The internal consistency of this scale is
+.94.
+Punishment behavior. Contingent punishment has been
+suggested as an element of transactional leadership by
+Podsakov et al. (1984). It was measured with their three-
+item measure in sample 7, Study 3. The internal consis-
+tency was .75.
+Results
+For the combined Dutch samples, Table 2 shows the cor-
+relations between the eight servant leadership factors and 10
+other leadership (sub)scales. The intercorrelations between
+the eight servant leadership dimensions are in line with the
+differences between the dimensions, correlations ranging
+from .02 to .71. Support for the content validity can be
+found in the correlation pattern of Ehrhart’s one-dimen-
+sional servant leadership scale and ethical leadership with
+empowerment, standing back, humility, authenticity, and
+stewardship. Given the conceptual overlap, high correla-
+tions were expected and found, whereas the correlations
+with punishment behavior turned out to be moderate to low
+as we predicted. This is where servant leadership behavior
+clearly differs from transactional leadership. The patterns of
+transformational leadership, LMX-7 and charismatic lead-
+ership with the eight servant leadership dimensions of the
+SLS are similar in that they reveal strong correlations with
+empowerment, humility, and stewardship, followed by
+similarly strong relations with authenticity and standing
+back. The lowest correlations were generally found with
+accountability, courage, and forgiveness, conﬁrming their
+unique character.
+For the UK sample, Table 3 shows the correlations
+between the eight servant leadership factors of our measure
+and the seven of the Liden et al. (2008) measure. The
+intercorrelations between the eight servant leadership
+dimensions are in line with the differences between the
+dimensions, with correlations ranging from .08 to .81.
+Support for the content validity can be found in the cor-
+relation pattern between both measures, ranging between
+.02 and .85. Given the conceptual overlap, high correla-
+tions were expected and found. Of the eight SLS dimen-
+sions,
+empowerment,
+standing
+back,
+humility,
+and
+stewardship showed the strongest overall overlap with the
+Liden et al. scale. The lowest correlations were found for
+accountability.
+Table 2 Descriptives and intercorrelations among leadership dimensions (Dutch composite sample, N = 1167)
+M
+SD
+N
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14 15
+16
+17
+Servant Leadership Survey
+1. Empowerment
+4.39
+.90 1187
+2. Accountability
+4.86
+.70 1187 .46
+3. Standing back
+3.67
+.95 1187 .54 .15
+4. Humility
+4.13
+.93 1187 .71 .30 .60
+5. Authenticity
+3.62
+.94 1187 .55 .17 .52
+.63
+6. Courage
+3.86 1.08 1187 .47 .24 .29
+.39 .35
+7. Forgiveness
+3.87 1.05 1187 .14 .02 .15
+.22 .08
+-.02?
+8. Stewardship
+4.43
+.91
+495 .71 .40 .52
+.64 .48
+.49
+.03?
+Transformational leadership
+9. Vision
+4.60
+.80
+235 .63 .38 .40
+.46 .32
+.27
+-.03? .60
+10. Inspirational communication 4.58
+.70
+235 .76 .36 .58
+.65 .43
+.37
+-.06? .63 .61
+11. Intellectual stimulation
+4.11
+.80
+235 .65 .36 .33
+.45 .44
+.41
+-.19
+.54 .49 .56
+12. Supportive leadership
+4.37
+.81
+235 .77 .25 .64
+.73 .55
+.27
+-.14
+.55 .55 .69 .58
+13. Personal recognition
+4.51
+.89
+235 .74 .28 .52
+.60 .47
+.29
+-.09? .53 .51 .68 .60 .69
+Other leadership dimensions
+14. Punishment behavior
+4.36
+.76
+135 .22 .41 .12? .29 .14?
+.23
+-.41
+.31 .15 .31 .40 .20 .26
+15. Ethical leadership
+4.36
+.86
+253 .74 .39 .64
+.81 .61
+.50
+.34
+.76 –
+–
+–
+–
+–
+–
+16. Charismatic leadership
+3.84 1.16
+180 .81 .60 .65
+.74 .62
+.57
+.32
+–
+–
+–
+–
+–
+–
+–
+–
+17. LMX-7
+3.39
+.83
+209 .85 .32 .61
+.76 .70
+.42
+.52
+–
+–
+–
+–
+–
+–
+–
+–
+–
+18. Servant leadership (Ehrhart)
+3.73
+.99
+180 .84 .64 .71
+.85 .73
+.58
+.31
+–
+–
+–
+–
+–
+–
+–
+–
+.85 –
+Note: All correlations signiﬁcant p \ .05, except ? p = n.s
+J Bus Psychol (2011) 26:249–267
+259
+123
+To enhance our insight in the connections underlying the
+18 leadership scales in the Dutch composite sample, an
+exploratory factor analysis was performed with MPlus 5.1.
+Since different scales were used in the different samples,
+missing values analysis was used to examine the overall
+underlying pattern (Muthe´n and Muthe´n 2007). With
+maximum likelihood estimation, MPlus uses missing values
+analysis to calculate an overall covariance table that is used
+as input for the factor analysis. The program provides
+goodness-of-ﬁt indices to determine the most likely number
+of factors underlying the 18 scales. For the one-factor
+model, the chi-square was 609.9, df = 135, CFI = .92,
+TLI = .92, SRMR = .08, AIC = 23861.8, RMSEA = .06.
+For the two-factor model the chi-square was 278.0, df =
+118,
+CFI = .97,
+TLI = .97,
+SRMR = .06,
+AIC =
+23563.9, RMSEA = .04. For the three-factor model it was
+186.0, df = 102, CFI = .99, TLI = .98, SRMR = .05,
+AIC = 23503.9, RMSEA = .04. Finally, for the four-fac-
+tor model the chi-square was 114.8, df = 87, CFI = 1.00,
+TLI = .99, SRMR = .04, AIC = 23462.6, RMSEA = .03.
+Although there is signiﬁcant evidence for a four-factor
+model, the factor structure of that model showed that on
+one-factor, only one leadership scale loaded higher than .40.
+Therefore, Table 4 shows the oblique geomin rotated
+loadings provided by MPlus for the three-factor model.
+Given the high loading of empowerment, accountability,
+vision, and intellectual stimulation, factor one can be
+interpreted as the ‘leader’-side of servant leadership. The
+Table 3 Descriptives and intercorrelations among leadership dimensions (Study 4, UK sample, N = 384)
+M
+SD
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Servant Leadership Survey
+1. Empowerment
+4.06
+1.12
+2. Accountability
+4.84
+.81
+.22
+3. Standing back
+3.61
+1.27
+.81
+.13
+4. Humility
+3.56
+1.12
+.77
+.11
+.77
+5. Authenticity
+3.50
+1.23
+.55
+.12
+.57
+.61
+6. Courage
+3.61
+1.23
+.51
+.08?
+.43
+.46
+.39
+7. Forgiveness
+2.81
+1.33
+.52
+.11
+.51
+.58
+.27
+.25
+8. Stewardship
+3.90
+1.14
+.76
+.15
+.73
+.80
+.53
+.52
+.52
+Servant Leadership Scale
+9. Emotional healing
+4.52
+1.52
+.73
+.09?
+.67
+.75
+.59
+.45
+.57
+.75
+10. Creating value for community
+3.58
+1.46
+.60
+.02?
+.63
+.64
+.51
+.38
+.38
+.68
+.68
+11. Conceptual skills
+4.87
+1.24
+.72
+.18
+.67
+.69
+.50
+.51
+.47
+.75
+.75
+.62
+12. Empowering
+4.87
+1.35
+.74
+.20
+.60
+.80
+.45
+.45
+.47
+.62
+.69
+.53
+.64
+13. Helping subordinates grow and succeed
+4.16
+1.51
+.85
+.14
+.76
+.79
+.57
+.49
+.51
+.77
+.79
+.72
+.75
+.73
+14. Putting subordinates ﬁrst
+3.74
+1.39
+.75
+.04?
+.76
+.77
+.57
+.49
+.48
+.75
+.76
+.77
+.72
+.66
+.85
+15. Behaving ethically
+4.28
+1.46
+.71
+.10
+.76
+.77
+.57
+.41
+.54
+.75
+.77
+.77
+.75
+.62
+.77
+.80
+Note: All correlations signiﬁcant p \ .05, except ? p = n.s
+Table 4 Factor structure second-order exploratory factor analysis
+(oblique geomin rotation, Dutch composite sample, N = 1167)
+I
+II
+III
+Servant Leadership Survey (SLS)
+1. Empowerment
+.75
+2. Accountability
+.81
+-.34
+3. Standing back
+.73
+4. Humility
+.66
+5. Authenticity
+.76
+6. Courage
+.42
+7. Forgiveness
+.88
+8. Stewardship
+.67
+Transformational leadership
+9. Vision
+.84
+10. Inspirational communication
+.70
+11. Intellectual stimulation
+.77
+12. Supportive leadership
+.35
+.62
+13. Personal recognition
+.57
+.32
+Other leadership dimensions
+14. Punishment behavior
+.44
+-.56
+15. Ethical leadership
+.40
+.55
+16. Charismatic leadership
+.60
+.32
+17. LMX-7
+.68
+.32
+18. Servant leadership (Ehrhart)
+.38
+.66
+Notes: Factor loadings [.30 are depicted. Factor loading are signiﬁ-
+cant p [ .05
+260
+J Bus Psychol (2011) 26:249–267
+123
+‘leader’-side involves enabling followers to express their
+talents by setting clear goals, providing a meaningful work
+environment, challenges and the necessary tools and
+conditions.
+Factor two represents the ‘servant’-side of servant
+leadership, it is the ‘service attitude’ factor. The scales
+standing back, humility, authenticity, supportive leader-
+ship, and ethical leadership signify the willingness to
+support, to listen to and to serve others. It is about being
+able to be authentic and stand back, thereby allowing the
+employees to ﬂourish.
+Factor three, the forgiveness factor indicates that errors
+are part of the job, that mistakes can enhance learning, and
+that grudges are dysfunctional. It is about forgiving people
+instead of punishing them, looking forward instead of
+looking back. Forgiveness and contingent reward load high
+on this third factor.
+The UK sample had no missing values and was analyzed
+with SPSS. The second-order exploratory factor analysis
+suggested two factors with an Eigenvalue larger than 1
+(9.380 and 1.128) that were also easy to interpret (see
+Table 5); factor one being the servant leadership and factor
+two the accountability factor. The UK data suggests that
+the big difference between both measures of servant lead-
+ership is that our measure includes accountability and
+forgiveness.
+Given the correlation tables and the results from the
+second-order factor analyses, we may safely conclude we
+have found support for the construct validity of the SLS.
+Although servant leadership has overlap with other lead-
+ership styles,—most notably due to its multi-dimensional
+nature—it also adds unique elements to the leadership
+ﬁeld.
+Phase 3: Criterion-Related Validity of the SLS
+Given the central role of leaders in the social setting of
+most
+organizations,
+the
+behavior
+shown
+by
+leaders
+towards their followers plays an important role as to how
+supportive a work setting is perceived. Moreover, lead-
+ership is an increasingly acknowledged factor for follower
+well-being (Ilies et al. 2005). There is abundant evidence
+that a controlling, less supportive leadership style, with
+vague responsibilities and lack of feedback, is related to
+lower levels of well-being (Cartwright and Cooper 1994;
+Sosik and Godshalk 2000; Van Dierendonck et al. 2004).
+A supportive environment, on the other hand, provides
+positive affect, a sense of predictability, and recognition
+of self-worth (Walter and Bruch 2008). As such, it is
+likely that servant leadership behavior is beneﬁcial for
+follower engagement, job satisfaction, and performance.
+To test this hypothesis we used the vitality measure by
+Ryan and Frederick (1997), Schaufeli et al. (2002)
+engagement scale, a measure for organizational commit-
+ment (Mowday et al. 1979), and two estimates of job
+satisfaction.
+We also wanted to gain insight in the predictive value of
+our instrument for follower behavior. For this purpose the
+instrument by Morrison and Phelps (1999) was added to
+measure extra-role behavior. This included in-role behav-
+ior, civic virtue, altruism, and taking charge. Previous
+studies have shown that supportive leadership is related to
+organizational citizenship behavior (e.g., Euwema et al.
+2007). In addition, we added a measure for self-assessed
+performance.
+Finally, we will discuss the concept of leadership
+clarity. Leadership clarity, which is the followers con-
+sensual perception of clarity of and no conﬂict over who
+is the leader (West et al. 2003), is related to favorable
+performance conditions. The study by West et al. (2003)
+showed it is related to clear team objectives, commitment
+to objectives, team member participation, commitment to
+excellence, and team innovation. One of the objectives
+behind our measure is to explicitly include the leadership
+aspect within servant leadership. As such, several of the
+servant leader factors are expected to be positively related
+to leadership clarity.
+Table 5 Factor structure second-order exploratory factor analysis,
+UK Sample (N = 384)
+I
+II
+Servant Leadership Survey (SLS)
+1. Empowerment
+.88
+2. Accountability
+.92
+3. Standing back
+.86
+4. Humility
+.89
+5. Authenticity
+.67
+6. Courage
+.57
+7. Forgiveness
+.62
+-.41
+8. Stewardship
+.88
+Servant leadership (Liden et al.)
+9. Emotional healing
+.88
+10. Creating value for community
+.79
+11. Conceptual skills
+.84
+12. Empowering
+.78
+13. Helping subordinates grow and succeed
+.92
+14. Putting subordinates ﬁrst
+.90
+15. Behaving ethically
+.88
+Notes: Factor loadings [.30 are depicted (oblique rotation). Factor
+loading are signiﬁcant p [ .05
+J Bus Psychol (2011) 26:249–267
+261
+123
+Method
+Participants
+A composite sample of the eight samples in four studies of
+Phase 1 was used, consisting of 1571 persons. Different
+concepts were measured in each of the samples.
+Measures
+Vitality. Vitality was measured with the seven items of the
+Subjective Vitality Scale (Ryan and Frederick 1997) and
+showed an internal consistency of .88. The scale was
+included in Study 2.
+Engagement. Engagement with work was measured with
+the nine-item short version of the Utrechtse Engagement
+Scale (Schaufeli et al. 2002). The scales consist of three
+sub-dimensions: vigor, absorption, and dedication. For a
+general indication of engagement the average mean score
+across the nine items was used. The internal consistency is
+excellent with an alpha of .93.
+Job satisfaction. Job satisfaction was measured in two
+samples. In sample 2 of Study 1, three items derived from
+the Michigan Organizational Assessment Questionnaire
+that focus on global job satisfaction were included (Cam-
+man et al. 1979). Internal consistency is .78. In sample 3,
+ﬁve items indicated to which extent employees were sat-
+isﬁed with their leader, management in general, their work
+environment and their coworkers. Internal consistency is
+.79. The standardized average score (for each sample
+separately) was used in the analysis.
+Organizational commitment. Organizational commit-
+ment was measured in Study 4 with a seven-item scale
+based on the instrument developed by Mowday et al.
+(1979). Example items are ‘‘I am willing to put in a great
+deal of effort beyond that normally expected in order to
+help my organization be successful’’, and ‘‘I am proud to
+tell others that I am part of the organization I work for’’.
+The internal consistency is .94.
+Extra-role behavior. Extra-role behavior was measured
+with the scale of Morrison and Phelps (1999). The scale
+consists of 23 items divided over four subscales: in-role
+behavior, civic virtue, altruism, and taking charge. This
+scale was ﬁlled out by the supervisors of 48 of the par-
+ticipants in sample 4 of Study 1. One leader assessed six
+persons, ﬁve leaders assessed two persons, and 32 leaders
+assessed one person. The internal consistencies are high,
+.91, .72, .87, and .94, respectively.
+Performance. This is a seven-item scale devised spe-
+ciﬁcally for inclusion in Study 4. Example items are: ‘‘I
+adequately complete assigned duties’’, and ‘‘I perform the
+tasks that are expected of me’’. The internal consistency is
+.84.
+Leadership clarity. This scale is based on the study by
+West et al. (2003). The scale consists of four items, for
+example, ‘‘it is clear who leads my group/department/
+team’’ and ‘‘the leadership position in my group/depart-
+ment/team is debated’’. It was included in Study 4. The
+internal consistency is .84.
+Results
+To test the extent that servant leadership is related to job-
+related well-being, the correlations between the eight ser-
+vant leadership dimensions and well-being at work were
+calculated, as is shown in Table 6. Engagement and job
+satisfaction were part of Study 1, so regretfully no corre-
+lations with stewardship could be calculated. Nevertheless,
+the other seven dimensions are positively related to both
+engagement and job satisfaction. The strongest relations
+were found for empowerment, accountability, and humility,
+with correlations ranging between .33 and .62. Stewardship
+Table 6 Correlations between servant leadership and subjective outcomes
+Vitality
+Engagement
+Job
+satisfaction
+Organizational
+commitment
+Performance
+(self-assessed)
+1. Empowerment
+.25**
+.43**
+.62*
+.62**
+.21**
+2. Accountability
+.17**
+.41**
+.33*
+.14**
+.32**
+3. Standing back
+.21**
+.18*
+.32*
+.54**
+.16**
+4. Humility
+.23**
+.33**
+.48*
+.54**
+.09
+5. Authenticity
+.20**
+.29**
+.35**
+.36**
+.08
+6. Courage
+.12
+.23**
+.31**
+.39**
+.07
+7. Forgiveness
+-.04
+.08
+.20**
+.36**
+.14**
+8. Stewardship
+.33**
+–
+–
+.60**
+.17**
+Notes: N = 263 (Study 2) for vitality, N = 202 (Study 1: sample 2) for engagement, N = 362 (Study 1: samples 2 and 3) for job satisfaction, and
+N = 384 (UK sample, Study 4) for organizational commitment and performance. Stewardship was not included in the studies on job satisfaction
+and engagement
+** p \ .01, * p \ .05
+262
+J Bus Psychol (2011) 26:249–267
+123
+was measured in relation to vitality in Study 2, resulting in a
+signiﬁcant positive correlation. In the UK sample, the
+relations
+with organizational commitment were even
+stronger, ranging between .14 and .60. In particular
+empowerment, standing back, humility, and stewardship are
+strongly related to commitment. Self-assessed performance
+was related to ﬁve of the eight dimensions, with signiﬁcant
+correlations between .14 and .32 (Table 6).
+It seems there is clear evidence for the relation between
+servant leadership and well-being at work. The next
+question addresses the relation between servant leadership
+and actual follower behavior. Table 7 shows the correla-
+tions of servant leadership and follower extra-role behav-
+ior. Given the small sample size (48 employees), the power
+was low and it was impossible to perform regression or
+multilevel analyses. Multilevel effects are also not expec-
+ted given that this sample included 38 leaders, most of
+them assessing only one person. There appeared to be
+moderately strong relationships between empowerment and
+in-role behavior, civic virtue and taking charge. Account-
+ability was related to civic virtue; and humility to civic
+virtue, altruism, and taking charge. All these correlations
+conﬁrm the relevance of servant leadership for actual
+behavior of followers. Interesting is the negative relation of
+forgiveness with civic virtue. It would seem that ill-
+behaving employees are being excused more often, prob-
+ably because there is more need to do so (Table 7).
+The ﬁnal question concerns the added value of the SLS
+to the Liden et al. (2008) servant leadership measure. A
+multiple regression analysis was performed. To determine
+the strongest predictors, stepwise was used as entry
+method. The most important predictors for organizational
+commitment in addition to variance explained by two
+dimensions of the Liden et al. measure were empowerment
+and authenticity. For self-assessed performance, account-
+ability and forgiveness (both part of the SLS) were inclu-
+ded in the ﬁnal equation; none of the Liden et al. measure
+dimensions were included. Variance in leadership clarity
+was explained by empowerment, accountability and for-
+giveness and two dimensions of Liden et al.
+So, for all three outcome variables, the SLS showed
+added value (Table 8). Intriguingly, two beta-coefﬁcients
+are negative, authenticity in relation to organizational
+commitment, and ‘‘creating value for the community’’ in
+relation to leadership clarity. This is most likely caused by
+the Liden et al. measure, given that the negative beta of
+authenticity disappeared when only the SLS was included
+in the regression with organizational commitment and the
+negative
+coefﬁcient
+in
+relation
+to
+leadership
+clarity
+remained in the equation with only the Liden et al. mea-
+sure. A similar effect was already reported in the original
+article by Liden et al. (2008), where several dimensions
+showed this phenomenon in relation to extra-role behavior.
+It suggests the inﬂuence of multicollinearity as a result of
+the strong overlap between the dimensions of the Liden
+et al. measure.
+Discussion
+In this article, we described the development and validation
+of the SLS. Intrigued by the concept of servant leadership,
+which encompasses the elements that have been related to
+effective leadership since the days of Socrates (Williamson
+2008), we focused on developing an instrument that
+establishes, deﬁnes and operationalizes the core features of
+servant leadership. Our focus was on transparent leader
+behavior that can inﬂuence follower well-being and per-
+formance. Having completed two qualitative and eight
+quantitative studies (with almost 1600 participants), we
+think we have come a long way in getting to the heart of
+servant leadership. By ﬁrst deﬁning the dimensions, we
+increased the chances that the dimensions of the SLS are
+easy to interpret and can be used in different settings
+(Venkatraman 1989). After the qualitative research part,
+the construct validity was determined with exploratory and
+conﬁrmatory factor analysis. The SLS consists of eight
+dimensions which have proven stable over several samples
+in two countries. These eight dimensions cover the most
+important aspects of servant leadership; furthermore, the
+survey has added value since it includes essential (servant)
+leader characteristics that have been neglected in other
+leadership scales so far. The internal consistency of the
+subscales turned out to be good across all samples. Finally,
+evidence for criterion-related validity came from studies
+relating the eight dimensions to organizational commit-
+ment, performance, and leadership clarity.
+Considering the above, we may safely conclude that the
+SLS is a valid and reliable instrument to measure servant
+leadership. It has one underlying leadership dimension,
+Table 7 Correlations between servant leadership and extra-role
+behavior
+In-role
+behavior
+Civic
+virtue
+Altruism
+Taking
+charge
+1. Empowerment
+.30*
+.38**
+.16
+.35*
+2. Accountability
+.20
+.28*
+.19
+.13
+3. Standing back
+.13
+.18
+-.13
+-.07
+4. Humility
+.17
+.35*
+.33*
+.49***
+5. Authenticity
+.10
+.08
+.13
+.13
+6. Courage
+.20
+.03
+.24
+.23
+7. Forgiveness
+-.08
+-.29*
+-.10
+-.21
+Notes:
+N = 48
+(Study
+1:
+sample
+4)
+* p \ .05,
+** p \ .01,
+*** p \ .001. Stewardship was not included in this sample
+J Bus Psychol (2011) 26:249–267
+263
+123
+namely servant leadership. The overall conﬁrmatory factor
+analyses across different samples support the predicted
+eight-factor structure and the inter-connectedness of the
+dimensions. More particularly, the conﬁrmation of the
+eight-dimensional structure across samples, gives conﬁ-
+dence in the replication of its structure in future studies.
+The external validation of the instrument with other
+leadership scales has shown that it is important to take the
+full eight-factor model into account to measure servant
+leadership in its full breadth. As expected, there was
+overlap with ethical, charismatic, and LMX leadership, but
+due to its conceptual breadth and by including account-
+ability and forgiveness, the instrument deﬁnitely has dis-
+criminant validity and added value. The second-order
+factor analysis (Table 4) with transformational and trans-
+actional leadership conﬁrmed the hypothesized stronger
+focus of servant leadership on an attitude characterized by
+service and on attending to the needs of followers. This is
+in line with Stone et al.’s (2004) view on the essential
+difference between servant leadership and transformational
+leadership. Forgiveness clearly is another dimension that
+differentiates servant leadership from transformational
+leadership; it has most overlap with the punishment aspect
+of transactional leadership, which negatively loads on the
+third ‘forgiveness’-factor.
+The most important contribution of this instrument to the
+development of servant leadership theory is that it is the ﬁrst
+instrument to include the essential elements from the servant
+leadership literature (Greenleaf 1996) that can be psycho-
+metrically distinguished. The SLS not only measures the
+‘servant’ but also the ‘leader’ part of servant leadership.
+Accountability, courage and forgiveness are essential and
+the most important new additions compared to the existing
+servant leadership instruments. None of them were included
+in any of the other servant leadership measures. The second-
+order exploratory factor analyses (Tables 4 and 5) suggest
+that Ehrhart’s one-dimensional measure mostly captures the
+‘service attitude’ factor and that the Liden et al. (2008)
+measure misses out with respect of accountability. Espe-
+cially empowerment, accountability, and forgiveness appear
+to be essential factors for effective leadership. These three
+dimensions provided added explained variance above the
+Liden et al. (2008) measure in relation to organizational
+commitment, self-assessed performance, and leadership
+clarity.
+Accountability, as deﬁned in this article, has to our
+knowledge only been included in the study on empowering
+leader behaviors by Konczak et al. (2000). However,
+explicitly giving followers responsibility is an essential
+element of effective and positive leadership. Accountabil-
+ity not only provides meaning, it is also beneﬁcial for self-
+determination (feeling competent and autonomous), and
+therefore, provides a means to gain self-respect. Courage
+means the willingness to stand up and ﬁght for what you
+believe, despite potential criticism and adversity. Servant
+leaders are pioneers, they dare to make unconventional
+decisions in line with their values and will ‘walk their talk’
+no matter what happens. Therefore, courage is a crucial
+characteristic of servant leaders. Finally, being able to
+forgive is an invaluable quality of any human being.
+Table 8 Multiple regression
+analysis, UK sample (N = 384)
+Note: Signiﬁcant beta loadings
+are depicted
+(method = stepwise), p [ .05
+Organizational
+commitment
+Performance
+(self-assessed)
+Leadership
+clarity
+Servant Leadership Survey (SLS)
+1. Empowerment
+.23
+.15
+2. Accountability
+.34
+.12
+3. Standing back
+4. Humility
+5. Authenticity
+-.14
+6. Courage
+7. Forgiveness
+.18
+.12
+8. Stewardship
+Servant leadership (Liden et al.)
+9. Emotional healing
+.24
+10. Creating value for community
+.27
+-.19
+11. Conceptual skills
+.17
+.33
+12. Empowering
+13. Helping subordinates grow and succeed
+14. Putting subordinates ﬁrst
+15. Behaving ethically
+R2
+aid
+.51
+.13
+.20
+264
+J Bus Psychol (2011) 26:249–267
+123
+Leaders who are able to forgive, can be more open,
+objective and supportive of all their followers. Obviously,
+it is not an excuse for continuous mistakes and ﬂaws.
+Forgiveness is simply about accepting the other person
+(Autry 2004).
+Another important theoretical contribution of this study
+is that our data allows us to speculate on what might be
+primary
+versus
+secondary
+aspects
+of
+servant
+leader
+behavior as experienced by followers. There is clear
+overlap in the main ﬁndings of the factor loadings of the
+eight factors on the second-order servant leader factor in
+both conﬁrmatory analyses (in the developmental phase),
+and the outcomes of second-order exploratory factor
+analysis that included the other servant leadership scales
+(Tables 4 and 5). It suggests that the primary aspects of
+servant leader behavior are empowerment, accountability,
+standing back, humility, and stewardship, leaving authen-
+ticity, courage, and forgiveness as secondary aspects.
+Knowing how to describe servant leader behavior as
+experienced by followers instead of in terms of the leader’s
+motives or in the outcomes of leadership behavior, allows
+for a better recognition, operationalization and—ulti-
+mately, development of a practical instrument to encourage
+this kind of leadership behavior.
+Since we included humility, standing back, and stew-
+ardship as essential aspects of servant leadership, this
+measure may also contribute to research into level-5
+leadership. This type of leadership was introduced by
+Collins (2001) in his seminal work on successful long-
+lasting corporations and incorporates the need for humility.
+However, empirical research where this is tested in the
+day-to-day work setting has as yet not been conducted. It is
+our hope that this new measure will facilitate and initiate
+further empirical research in this ﬁeld.
+Limitations and Strengths
+Despite the fact that our study is quite comprehensive, we
+acknowledge the limitations of our study too. Our main
+focus was to construct a reliable and valid instrument of
+servant leadership, our priority was to determine the psy-
+chometric qualities of the selected items as key determi-
+nants of the eight constructs. The number of items in the
+SLS, especially in the ﬁrst studies, prevented the inclusion
+of other leadership scales together with outcome measures.
+Therefore, to show the added value of the SLS in com-
+parison to other leadership measures, we used a second-
+order exploratory factor analysis. This gave indications of
+potential overlap and differences between all the leadership
+scales. Another limitation is that we had to rely on con-
+venience sampling for most of the studies. Especially with
+web-based online studies, it is impossible to know how
+many people actually received the call to participate. We
+decided to gather data with a web-based online survey to
+avoid having to rely on student samples, a frequently used
+strategy in the development of other servant leadership
+measures. A resulting strength in comparison to previous
+measurement development articles is that with the present
+heterogeneous composite sample of people working in
+diverse professions in proﬁt and not-for-proﬁt sectors,
+mono-sample bias is avoided. This gives conﬁdence in the
+generalizability of the eight-factor structure. Next, we were
+unable to obtain sufﬁcient multilevel data. Most leaders
+and followers that were willing to participate did so
+anonymously. Therefore, future research should obtain data
+that allows the use of multilevel analysis.
+It stands to reason that we are aware that our data is
+cross-sectional. Thus, even though we have indications that
+servant leadership as measured by the SLS is related to
+well-being and performance, it is impossible to draw ﬁrm
+causal conclusions about the predictive validity of the SLS.
+Future research should use longitudinal designs to see
+whether this instrument for measuring servant leader
+behavior is indeed able to predict follower well-being and
+performance over time. Nevertheless, the data presented in
+this article give conﬁdence that this instrument meets the
+psychometric qualities to measure servant leadership from
+the perspective of the follower in a reliable and valid way.
+We would like to emphasize that when using the survey in
+future research, it is important to avoid changes in the
+wording and in the response scales, or even delete items.
+This may have implications for the validity of the scales as
+presented here.
+In conclusion, with data from 2 countries, 4 studies, 8
+samples, 1571 participants, and a strong link towards
+servant leadership theory, we have presented an instru-
+ment that is a valuable addition to the current selection of
+servant leadership measures. This is the ﬁrst paper that
+includes three measures of servant leadership, allowing
+for a comparison between them. In order to enhance our
+insight into what the core of servant leadership is, studies
+comparing different measures are essential. Additionally,
+we are not aware of an article that includes this many
+different leadership measures and reports their interrelat-
+edness. As such, this paper also contributes to our
+thinking on leadership in general. With the SLS, we now
+have an instrument that can be used to establish the
+effects of servant leadership on individuals and organi-
+zations. More and better insights grounded in empirically
+based ﬁndings are essential in order to alert organizations
+to the necessity of being open to the needs and wishes of
+employees, acknowledging their worth and achievements,
+but also of being stewards and making people feel
+responsible for their work.
+J Bus Psychol (2011) 26:249–267
+265
+123
+Acknowledgment
+The authors would like to thank Anna Andrejew,
+Marina Diepeveen, Josine Honselaar, Ngan Nguyen, and the Green-
+leaf Center Europe for their help with the data collection.
+Open Access
+This article is distributed under the terms of the
+Creative Commons Attribution Noncommercial License which per-
+mits any noncommercial use, distribution, and reproduction in any
+medium, provided the original author(s) and source are credited.
+References
+Autry, J. A. (2004). The servant leader: How to build a creative team,
+develop great morale, and improve bottom-line performance.
+New York: Three Rivers Press.
+Barbuto, J. E., Jr., & Wheeler, D. W. (2006). Scale development and
+construct clariﬁcation of servant leadership. Group & Organi-
+zation Management, 31, 300–326.
+Bass, B. M. (1985). Leadership and performance beyond expecta-
+tions. New York: Free Press.
+Bass, B. M., Avolio, B. J., Jung, D. I., & Berson, Y. (2003).
+Predicting unit performance by assessing transformational and
+transactional leadership. Journal of Applied Psychology, 88,
+207–218.
+Block, P. (1993). Stewardship: Choosing service over self-interest.
+San Francisco: Berrett-Koehler.
+Brown, M. E., Trevino, L. K., & Harrison, D. A. (2005). Ethical
+leadership: A social learning perspective for construct develop-
+ment and testing. Organizational Behavior and Human Decision
+Processes, 97, 117–134.
+Camman, C., Fichman, M., Jenkins, D., & Klesh, J. (1979). The
+Michigan organizational assessment questionnaire. Unpublished
+manuscript, University of Michigan at Ann Arbor.
+Cartwright, S., & Cooper, C. L. (1994). The human effects of mergers
+and acquisitions. In C. L. Cooper & D. M. Rousseau (Eds.),
+Trends in organizational behaviour (Vol. 1). New York: Wiley.
+Clegg, S., Kornberger, M., & Rhodes, C. (2007). Business ethics as
+practice. British Journal of Management, 18, 107–122.
+Collins, J. (2001). Good to great: Why some companies make the leap
+and others don’t. New York: Harper-Collins.
+Conger, J. A. (1989). The charismatic leader: Behind the mystique of
+exceptional leadership. San Francisco: Jossey-Bass.
+Conger, J. A. (2000). Motivate performance through empowerment.
+In E. A. Locke (Ed.), The Blackwell handbook of principles of
+organizational behavior (pp. 137–149). Oxford: Blackwell
+Publishing.
+Conger, J. A., & Kanungo, R. N. (1987). Toward a behavioral theory
+of charismatic leadership in organizational settings. Academy of
+Management Review, 12, 637–647.
+Damen, F., van Knippenberg, B., & van Knippenberg, D. (2008).
+Affective match: Leader emotional displays, follower positive
+affect, and follower performance. Journal of Applied Social
+Psychology, 38, 868–902.
+Dannhauser, Z., & Boshoff, A. B. (2007). Structural equivalence of
+the Barbuto and Wheeler (2006) Servant Leadership Question-
+naire on North American and South African samples. Interna-
+tional Journal of Leadership Studies, 2, 148–168.
+Dansereau, F., Graen, G., & Haga, W. J. (1975). A vertical dyad
+linkage approach to leadership within formal organizations: A
+longitudinal investigation of the role making process. Organi-
+zational Behavior and Human Performance, 13, 46–78.
+Dennis, R. S., & Bocarnea, M. (2005). Development of the servant
+leadership assessment instrument. Leadership & Organization
+Development Journal, 26, 600–615.
+Dennis, R., & Winston, B. E. (2003). A factor analysis of Page and
+Wong’s servant leadership instrument. Leadership & Organiza-
+tional Development Journal, 24, 455–459.
+Ehrhart, M. G. (2004). Leadership and procedural justice climate as
+antecedents of unit-level organizational citizenship behavior.
+Personnel Psychology, 57, 61–95.
+Euwema, M. C., Wendt, H., & van Emmerik, H. (2007). Leadership
+styles and group organizational citizenship behavior across
+cultures. Journal of Organizational Behavior, 28, 1035–1057.
+Fan, X., & Sivo, S. A. (2007). Sensitivity of ﬁt indices to model
+misspeciﬁcation and model types. Multivariate Behavioral
+Research, 42, 509–529.
+Ferch, S. (2005). Servant-leadership, forgiveness, and social justice.
+The International Journal of Servant-Leadership, 1, 97–113.
+Ferguson, E., & Cox, T. (1993). Exploratory factor analysis: A users’
+guide. International Journal of Selection and Assessment, 1,
+84–94.
+Froiland, P., Gordon, J., & Picard, M. (1993). In search of
+accountability. Training, 30, 59.
+Garcia-Morales, V. J., Llorens-Montes, F. J., & Verdu-Jover, A. J.
+(2008). The effects of transformational leadership on organiza-
+tional performance through knowledge and innovation. British
+Journal of Management, 19, 299–319.
+George, J. M. (2000). Emotions and leadership: The role of emotional
+intelligence. Human Relations, 53, 1027–1055.
+Graen, G. B., & Uhl-Bien, M. (1995). Relationship-based approach to
+leadership. Development of leader-member exchange LMX
+theory. The Leadership Quarterly, 6, 219–247.
+Graham, J. W. (1991). Servant-leadership in organizations: Inspira-
+tional and moral. The Leadership Quarterly, 2, 105–119.
+Greenleaf, R. K. (1977). Servant-leadership: A journey into the
+nature of legitimate power and greatness. New York: Paulist
+Press.
+Greenleaf, R. K. (1991). The servant as leader. Indianapolis: The
+Greenleaf Center.
+Greenleaf, R. K. (1996). On becoming a servant leader. San
+Francisco: Jossey-Bass.
+Greenleaf, R. K. (1998). The power of servant-leadership. San
+Francisco: Berrett-Koehler.
+Guadagnoli, E., & Velicer, W. (1988). Relation of sample size to the
+stability of component patterns. Psychological Bulletin, 103,
+265–275.
+Halpin, A., & Croft, D. (1966). Organizational climate of schools. In
+A. Halpin (Ed.), Theory and research in administration (pp.
+131–249). New York: Prentice Hall.
+Harter, S. (2002). Authenticity. In C. R. Snyder & S. J. Lopez (Eds.),
+Handbook of positive psychology (pp. 382–394). New York:
+Oxford University Press.
+Hayton, J. C., Allen, D. G., & Scarpello, V. (2004). Factor retention in
+exploratory factor analysis: A tutorial on parallel analysis.
+Organizational Research Methods, 7, 191–205.
+Henson, R. K., & Roberts, J. K. (2006). Use of exploratory factor
+analysis in published research. Common errors and some
+comment on improved practice. Educational and Psychological
+Measurement, 66, 393–416.
+Hernandez, M. (2008). Promoting stewardship behavior in organiza-
+tions: A leadership model. Journal of Business Ethics, 80,
+121–128.
+Hinkin, T. R. (1995). A review of scale development practices in the
+study of organizations. Journal of Management, 21, 967–988.
+House, R. J., Hanges, P. J., Javidan, M., Dorfman, P. W., & Gupta, V.
+(2004). Culture, leadership, and organizations. The Globe study
+of 62 societies. Thousand Oaks: Sage Publications.
+Howell, J. M., & Avolio, B. J. (1993). Transformational leadership,
+transactional leadership, locus of control, and support for
+266
+J Bus Psychol (2011) 26:249–267
+123
+innovation: Key predictors of consolidated-business-unit-perfor-
+mance. Journal of Applied Psychology, 78, 891–902.
+Hoyt, C. L., & Blascovich, J. (2003). Transformational and transac-
+tional leadership in virtual and physical environments. Small
+Group Research, 34, 678–715.
+Hu, L., & Bentler, P. M. (1998). Fit indices in covariance structure
+modeling: Sensitivity to underparameterized model misspeciﬁ-
+cation. Psychological Methods, 3, 424–453.
+Ilies, R., Morgeson, F. P., & Nahrgang, J. D. (2005). Authentic
+leadership and eudaimonic well-being: Understanding leader-
+follower outcomes. The Leadership Quarterly, 16, 373–394.
+Konczak, L. J., Stelly, D. J., & Trusty, M. L. (2000). Deﬁning and
+measuring empowering leader behaviors: Development of an
+upward feedback instrument. Educational and Psychological
+Measurement, 60, 301–313.
+Laub, J. A. (1999). Assessing the servant organization: Development
+of the organizational leadership assessment (OLA) instrument.
+Doctoral dissertation, Boca Raton, Florida.
+Leary, M. R., & Hoyle, R. H. (2009). Handbook of individual
+differences in social behavior. New York: The Guilford Press.
+Liden, R. C., Wayne, S. J., Zhao, H., & Henderson, D. (2008). Servant
+leadership: Development of a multidimensional measure and
+multi-level assessment. The Leadership Quarterly, 19, 161–177.
+Luthans, F. (2002). The need and meaning of positive organizational
+behavior. Journal of Organizational Behavior, 23, 695–706.
+Luthans, F., & Avolio, B. (2003). Authentic leadership development.
+In K. S. Cameron & J. E. Dutton (Eds.), Positive organizational
+scholarship (pp. 241–254). San Francisco: Berrett-Koehler.
+McCullough, M. E., Hoyt, W. T., & Rachal, K. C. (2000). What we
+know (and need to know) about assessing forgiveness constructs.
+In M. E. McCullough, K. I. Pargament, & C. E. Thoresen (Eds.),
+Forgiveness: Theory, research, and practice (pp. 65–88). New
+York: Guilford Press.
+McIntosh, T. A., & Irving, J. A. (2008, May). Evaluating the
+Instrumento de Contribucion al Liderazgo de Siervo (ICLS) for
+reliability in Latin America. Paper presented at the Servant
+Leadership Roundtable at Regent University, Virginia Beach.
+Morris, J. A., Brotheridge, C. M., & Urbanski, J. C. (2005). Bringing
+humility to leadership: Antecedents and consequences of leader
+humility. Human Relations, 58, 1323–1350.
+Morrison, E. W., & Phelps, C. C. (1999). Taking charge at work:
+Extra-role efforts to initiate workplace change. Academy of
+Management Journal, 42, 403–419.
+Mowday, R. T., Steers, R. M., & Porter, L. W. (1979). The
+measurement of organizational commitment. Journal of Voca-
+tional Behavior, 14, 224–247.
+Murphy, S. E., & Ensher, E. A. (2008). A qualitative analysis of
+charismatic leadership in creative teams: The case of television
+directors. Leadership Quarterly, 19, 335–352.
+Muthe´n, L. K., & Muthe´n, B. O. (1998–2007). MPlus user’s guide
+(5th ed.). Los Angeles: Muthe´n & Muthe´n.
+Northouse, P. G. (2007). Leadership: Theory and practice (4th ed.).
+Thousand Oaks, CA: Sage Publications.
+Page, D., & Wong, P. T. P. (2000). A conceptual framework to
+measuring servant leadership. In A. Adjibolosoo (Ed.), The
+human factor in shaping the course of history and development.
+Boston, MA: University Press of America.
+Parolini, J., Patterson, K., & Winston, B. (2009). Distinguishing
+between transformational and servant-leadership. Leadership &
+Organization Development Journal, 30, 274–291.
+Patterson, K. A. (2003). Servant leadership: A theoretical model
+(Doctoral dissertation, Regent University, ATT 3082719).
+Peterson, C., & Seligman, M. E. P. (2004). Character strengths and
+virtues: A handbook and classiﬁcation. Oxford, England: Oxford
+University Press.
+Podsakov, P. M., Todor, W. D., Grover, R. A., & Huber, V. L. (1984).
+Situational moderators of leader reward and punishment behav-
+iors: Fact or ﬁction? Organizational Behavior and Human
+Performance, 34, 21–63.
+Rafferty, A. E., & Grifﬁn, M. A. (2004). Dimensions of transforma-
+tional leadership: Conceptual and empirical extensions. The
+Leadership Quarterly, 15, 329–354.
+Reinke, S. J. (2004). Service before self: Towards a theory of servant-
+leadership. Global Virtue Ethics Review, 3, 30–57.
+Russell, R. F., & Stone, A. G. (2002). A review of servant-leadership
+attributes: Developing a practical model. Leadership & Orga-
+nization Development Journal, 23, 145–157.
+Ryan, R. M., & Frederick, C. (1997). On energy, personality, and
+health: Subjective vitality as a dynamic reﬂection of well-being.
+Journal of Personality, 65, 529–565.
+Scandura, T., & Graen, G. B. (1984). Moderating effects of initial
+leader-member exchange status on the effects of a leadership
+intervention. Journal of Applied Psychology, 69, 428–436.
+Schaufeli, W. B., Salanova, M., Gonza´lez-Roma´, V., & Bakker, A. B.
+(2002). The measurement of burnout and engagement: A
+conﬁrmatory factor analytic approach. Journal of Happiness
+Studies, 3, 71–92.
+Sendjaya, S., Sarros, J. C., & Santora, J. C. (2008). Deﬁning and
+measuring servant-leadership behaviour in organizations. Jour-
+nal of Management Studies, 45, 402–424.
+Shamir, B., House, R. J., & Arthur, M. B. (1993). The motivational
+aspects of charismatic leadership: A self-concept theory. Orga-
+nizational Science, 4, 1–17.
+Shamir, B., & Howell, J. M. (1999). Organizational and contextual
+inﬂuences on the emergence and effectiveness of charismatic
+leadership. The Leadership Quarterly, 10, 257–283.
+Sosik, J. J., & Godshalk, V. M. (2000). Leadership, mentoring
+functions received, and job-related stress: A conceptual model
+and preliminary study. Journal of Organizational Behavior, 21,
+365–390.
+Spears, L. C. (1995). Reﬂections on leadership: How Robert K.
+Greenleaf’s theory of servant-leadership inﬂuenced today’s top
+management thinkers. New York: Wiley.
+Stone, A. G., Russell, R. F., & Patterson, K. (2004). Transformational
+versus servant-leadership: A difference in leader focus. Leader-
+ship & Organizational Development Journal, 25, 349–361.
+Van Dierendonck, D., Haynes, C., Borrill, C., & Stride, C. (2004).
+Leadership behavior and subordinate well-being. Journal of
+Occupational Health Psychology, 9, 165–175.
+Van Dierendonck, D., & Heeren, I. (2006). Toward a research model
+of servant-leadership. The International Journal of Servant-
+Leadership, 2, 147–169.
+Venkatraman, N. (1989). Strategic orientation of business enterprises:
+The construct, dimensionality, and measurement. Management
+Science, 35, 942–962.
+Walter, F., & Bruch, H. (2008). The positive group affect spiral: A
+dynamic model of the emergence of positive affective similarity
+in work groups. Journal of Organizational Behavior, 29,
+239–261.
+West, M. A., Borrill, C. S., Dawson, J. F., Brodbeck, F., Shapiro, D.
+A., & Haward, B. (2003). Leadership clarity and team innovation
+in health care. Leadership Quarterly, 14, 393–410.
+Williamson, T. (2008). The good society and the good soul: Plato’s
+Republic on leadership. The Leadership Quarterly, 19, 397–408.
+Wong, P. T. P., & Davey, D. (2007). Best practices in servant
+leadership. Servant leadership research roundtable—July 2007.
+Virginia Beach: Regent University.
+J Bus Psychol (2011) 26:249–267
+267
+123

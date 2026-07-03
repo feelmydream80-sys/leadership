@@ -1,0 +1,11 @@
+Title: Leadership and Organizational Performance: A Study of Large Corporations
+Authors: Stanley Lieberson, James O’Connor
+Source: OpenAlex
+Date: 1972-04-01
+URL: https://doi.org/10.2307/2094020
+
+Abstract (EN):
+Leadership influence in large complex organizations, though commonly assumed to be greatly significant, is normally not studied in terms of the variance accounted for in organizational performance. The leadership effect is viewed here as a product of an organization's environmental constraints and its leadership variance. Based on sales, earnings, and profit margin data for 167 large corporations over twenty years, we compare the impact of leadership changes with yearly, industry, and company influences. Industry and company account for far more of the variance in two performance variables than does leadership, but not for profit margins after lag effects are considered. It appears that the importance of external restrictions, and hence the maximum possible leadership influence, may range widely between specific performance criteria. The second phase of the study considers industry characteristics that appear to be associated with high and low leadership influences. These results suggest a perspective on organization performance that may be applied to the leadership influence in other large organizations and political bodies, like cities, states and nations.
+
+Abstract (KO):
+크고 복잡한 조직에서 리더십의 영향력은 일반적으로 매우 중요한 것으로 가정되지만 일반적으로 조직 성과에서 설명되는 차이 측면에서 연구되지 않습니다. 여기서 리더십 효과는 조직의 환경적 제약과 리더십 차이의 산물로 간주됩니다. 20년간 167개 대기업의 매출, 이익, 이익률 데이터를 바탕으로 리더십 변화가 미치는 영향을 연도별, 산업별, 회사별 영향력과 비교합니다. 업계와 기업은 리더십보다 두 성과 변수의 차이가 훨씬 더 크지만 시차 효과를 고려한 후 이윤에는 영향을 미치지 않습니다. 외부 제한의 중요성과 이에 따라 가능한 최대 리더십 영향력은 특정 성과 기준에 따라 광범위하게 달라질 수 있는 것으로 보입니다. 연구의 두 번째 단계에서는 높은 리더십 영향력과 낮은 리더십 영향력과 연관되어 있는 것으로 보이는 업계 특성을 고려합니다. 이러한 결과는 도시, 주, 국가와 같은 다른 대규모 조직 및 정치 기관의 리더십 영향력에 적용될 수 있는 조직 성과에 대한 관점을 제시합니다.

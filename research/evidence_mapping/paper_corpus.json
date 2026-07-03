@@ -1,0 +1,3717 @@
+{
+ "generated": "2026-07-02",
+ "theory2trait": {
+  "transformational": [
+   "T01",
+   "T03",
+   "T04",
+   "T09"
+  ],
+  "transactional": [
+   "T01",
+   "T06"
+  ],
+  "servant": [
+   "T02",
+   "T07",
+   "T11"
+  ],
+  "ethical": [
+   "T13"
+  ],
+  "authentic": [
+   "T13",
+   "T14",
+   "T103"
+  ],
+  "adaptive_agile": [
+   "T04",
+   "T12",
+   "T14"
+  ],
+  "digital": [
+   "T05",
+   "T14",
+   "T03"
+  ],
+  "emotional_intelligence": [
+   "T11",
+   "T02"
+  ],
+  "strategic_cvf": [
+   "T01",
+   "T05",
+   "T06",
+   "T12"
+  ],
+  "entrepreneurial": [
+   "T03",
+   "T13",
+   "T14"
+  ],
+  "shared_empowering": [
+   "T02",
+   "T11"
+  ],
+  "charismatic": [
+   "T09",
+   "T04"
+  ],
+  "crisis": [
+   "T04"
+  ],
+  "toxic_dark": [
+   "T104",
+   "T105"
+  ],
+  "authoritarian": [
+   "T102"
+  ],
+  "laissez_passive": [
+   "T101"
+  ]
+ },
+ "corpus": [
+  {
+   "pid": 400,
+   "level": "abstract",
+   "title": "체육수업에서 팀 구성과 역할 분담에 대한 학생의 경험",
+   "year": "2010-03-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 399,
+   "level": "abstract",
+   "title": "Analysis of Linguistic Interaction within a Group According to Leader's Leadership in Scientific Inquiry Activity in Ele",
+   "year": "2012-08-30",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": true
+  },
+  {
+   "pid": 398,
+   "level": "abstract",
+   "title": "The Effects of Badminton Athletes’ Life Skills on Perceived Performance",
+   "year": "2022-08-31",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": true
+  },
+  {
+   "pid": 396,
+   "level": "abstract",
+   "title": "교사가 지각한 유아교육기관장의 변혁적 리더십, 유아교사의 의사결정 참여 영역, 조직헌신과의 관계",
+   "year": "2012-12-31",
+   "source": "OpenAlex",
+   "theories": [
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 395,
+   "level": "abstract",
+   "title": "Examining the Structural Relationship among Leadership Styles, Employee Empowerment and Organizational Commitment: Evide",
+   "year": "2018-08-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational",
+    "shared_empowering"
+   ],
+   "traits": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T06",
+    "T09",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 393,
+   "level": "abstract",
+   "title": "보육교사가 지각한 시설장의 리더십 및 의사결정 유형과 교사효능감 간의 관계 연구",
+   "year": "2010-01-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 391,
+   "level": "abstract",
+   "title": "Charles De Gaulle’s Leadership Research through CIP Leadership Model",
+   "year": "2024-5-30",
+   "source": "Crossref",
+   "theories": [
+    "charismatic"
+   ],
+   "traits": [
+    "T04",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 390,
+   "level": "abstract",
+   "title": "The Effects of Leadership Education on Leadership Life Skill and Self-Esteem in Children from Low-Income Families",
+   "year": "2020-2-29",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 389,
+   "level": "abstract",
+   "title": "A Study of Interrelationship between the Formation of Church Leadership and Followership",
+   "year": "2014-11-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 388,
+   "level": "abstract",
+   "title": "A Study on Leadership for Missional Ministry : Focusing on Missional Leadership and Leadership Theories",
+   "year": "2026-5-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 387,
+   "level": "abstract",
+   "title": "Ministerial Leadership in the Post-Covid-19 Era: As Viewed through the Leadership Model of Decision-Making",
+   "year": "2021-2-28",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 386,
+   "level": "abstract",
+   "title": "고등학생의 의사결정 유형에 따른 생명과학 관련 사회적•윤리적 문제에 대한 의사결정 양상 분석",
+   "year": "2015-7",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 385,
+   "level": "abstract",
+   "title": "리더십 역할이 인공지능 결정 판단에 미치는 영향 : 의사결정자와 의사결정 대상 간의 차이",
+   "year": "2025-5-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 384,
+   "level": "abstract",
+   "title": "The Structural Relationship among Principal Leadership, School Climate, Teacher Cooperation and Decision-making",
+   "year": "2023-6-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 383,
+   "level": "abstract",
+   "title": "Ethical leadership and the psychology of decision making",
+   "year": "2004-05-19",
+   "source": "OpenAlex",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 382,
+   "level": "abstract",
+   "title": "Decision-making, leadership and performance links in private education institutes",
+   "year": "2021-03-29",
+   "source": "OpenAlex",
+   "theories": [
+    "ethical",
+    "shared_empowering",
+    "authoritarian"
+   ],
+   "traits": [
+    "T02",
+    "T102",
+    "T11",
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 380,
+   "level": "abstract",
+   "title": "Crucial Decisions: Leadership in Policy-Making and Crisis Management",
+   "year": "1990-07-01",
+   "source": "OpenAlex",
+   "theories": [
+    "crisis"
+   ],
+   "traits": [
+    "T04"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 378,
+   "level": "abstract",
+   "title": "Leadership, consensus decision making and collective behaviour in humans",
+   "year": "2008-12-12",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 377,
+   "level": "abstract",
+   "title": "Leadership and Decision-Making.",
+   "year": "1973-12-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 376,
+   "level": "abstract",
+   "title": "International Decision Making: Leadership Matters",
+   "year": "1998-01-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 374,
+   "level": "abstract",
+   "title": "Leadership and Decision-Making",
+   "year": "1973-06-15",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 370,
+   "level": "abstract",
+   "title": "Leadership and Decision-Making in Times of Change",
+   "year": "2024-4-18",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 367,
+   "level": "abstract",
+   "title": "Leadership Skills and the Dialectics of Leadership in\n                    Group Decision Making",
+   "year": "1996",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 365,
+   "level": "abstract",
+   "title": "Leadership and Decision-Making",
+   "year": "2024-4-18",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 364,
+   "level": "abstract",
+   "title": "Leadership, Management, Team Working, and Decision Making",
+   "year": "2013-5-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 354,
+   "level": "abstract",
+   "title": "Quantum decision making by social agents",
+   "year": "2012-02-21",
+   "source": "arXiv",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 351,
+   "level": "abstract",
+   "title": "A Study on Meaning-Based Computational Structures - A Structural Comparison between Design Mathematics-Based AI and Conv",
+   "year": "2025-9-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 350,
+   "level": "abstract",
+   "title": "The Evolution of AI-Based Digital Mental Health Research in English-Language Journals: A Text Mining Analysis of Human–A",
+   "year": "2026-4-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 349,
+   "level": "abstract",
+   "title": "A generative AI-powered vulnerability analysis framework for better web security - Hybrid testing with Nmap",
+   "year": "2025-11-30",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 348,
+   "level": "abstract",
+   "title": "Proposal for an AI-based Home Rehabilitation Training Service for Arthritis Patients -Focusing on the Human-AI Collabora",
+   "year": "2025-3-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 347,
+   "level": "abstract",
+   "title": "Development and Evaluation of an Integrated Model Combining AI-based Adaptive Learning (AI-AL) and Project-based Learnin",
+   "year": "2026-5-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 345,
+   "level": "abstract",
+   "title": "AI 추천시스템 기반 버티컬 플랫폼의 개인화 서비스 특성과 효과 연구",
+   "year": "2024-5-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 344,
+   "level": "abstract",
+   "title": "Analysis of instructor’s generative ai utilization types and ai-based learning orchestration roles in project-based lear",
+   "year": "2025-12-31",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 343,
+   "level": "abstract",
+   "title": "Transition of the Physician Leadership with AI: Case Analyses of AI Implementation in Clinical Practice",
+   "year": "2025-8-30",
+   "source": "Crossref",
+   "theories": [
+    "servant",
+    "transformational",
+    "digital"
+   ],
+   "traits": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T07",
+    "T09",
+    "T11",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 330,
+   "level": "abstract",
+   "title": "Ethical and legal challenges of artificial intelligence-driven healthcare",
+   "year": "2020-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 329,
+   "level": "abstract",
+   "title": "Closing the AI accountability gap",
+   "year": "2020-01-23",
+   "source": "OpenAlex",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 328,
+   "level": "abstract",
+   "title": "Demystifying AI: What Digital Transformation Leaders Can Teach You about Realistic Artificial Intelligence",
+   "year": "2019-07-24",
+   "source": "OpenAlex",
+   "theories": [
+    "transformational",
+    "digital",
+    "adaptive_agile"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T05",
+    "T09",
+    "T12",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 327,
+   "level": "abstract",
+   "title": "Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implicatio",
+   "year": "2023-03-11",
+   "source": "OpenAlex",
+   "theories": [
+    "transformational",
+    "digital"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T05",
+    "T09",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 325,
+   "level": "abstract",
+   "title": "AI-Driven Leadership",
+   "year": "2020-02-18",
+   "source": "OpenAlex",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 323,
+   "level": "abstract",
+   "title": "AI-Driven Leadership in the Modern Era for Revolutionizing Next-Generation Strategies",
+   "year": "2025-01-24",
+   "source": "OpenAlex",
+   "theories": [
+    "transformational",
+    "digital",
+    "adaptive_agile"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T05",
+    "T09",
+    "T12",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 322,
+   "level": "abstract",
+   "title": "Equilibrating Emotional Intelligence and AI Driven Leadership for Transnational Organizations",
+   "year": "2021-02-17",
+   "source": "OpenAlex",
+   "theories": [
+    "digital",
+    "emotional_intelligence"
+   ],
+   "traits": [
+    "T02",
+    "T03",
+    "T05",
+    "T11",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 321,
+   "level": "abstract",
+   "title": "AI-Driven Leadership",
+   "year": "2022-6-9",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 320,
+   "level": "abstract",
+   "title": "Artificial Intelligence (AI)-Driven Leadership",
+   "year": "2025-9-26",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 318,
+   "level": "abstract",
+   "title": "From Data To Decisions",
+   "year": "2026-2-20",
+   "source": "Crossref",
+   "theories": [
+    "digital",
+    "shared_empowering"
+   ],
+   "traits": [
+    "T02",
+    "T03",
+    "T05",
+    "T11",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 317,
+   "level": "abstract",
+   "title": "Preparing Educational Leaders for AI Literacy Through Ethical, Purpose-Driven, and Culturally Responsive Leadership",
+   "year": "2026-2-20",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 316,
+   "level": "abstract",
+   "title": "Data-Informed, Not Data-Driven",
+   "year": "2026-2-20",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 315,
+   "level": "abstract",
+   "title": "The Mediating Role of AI-Driven Leadership Decision Making in the Relationship Between Green AI and Sustainable Leadersh",
+   "year": "2026-5-1",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 314,
+   "level": "abstract",
+   "title": "AI-Driven Leadership",
+   "year": "2020-2-18",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 313,
+   "level": "abstract",
+   "title": "AI-Driven Corporate Governance Structure",
+   "year": "2025-12-2",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 312,
+   "level": "abstract",
+   "title": "Tech-Driven Leadership: Transforming Industries and Economies with Quantum AI",
+   "year": "2025-2-28",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 304,
+   "level": "abstract",
+   "title": "Effect of Leadership WalkRounds Convergence to Establish a Patient Safety Culture",
+   "year": "2015-06-28",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 303,
+   "level": "abstract",
+   "title": "링컨의 리더십 개발 사례연구: 문화 역사 활동이론을 중심으로",
+   "year": "2011-03-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 302,
+   "level": "abstract",
+   "title": "「聖學輯要」에서의 인문학적 리더십 개발",
+   "year": "2017-09-30",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 301,
+   "level": "abstract",
+   "title": "리더십 개발 교육 사례연구: 대기업 사례 중심으로",
+   "year": "2021-01-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 300,
+   "level": "abstract",
+   "title": "성인교육자 리더십과 리더십 개발 연구를 위한 이슈의 개념화와 이론적 틀",
+   "year": "2006-08-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 299,
+   "level": "abstract",
+   "title": "평생학습 관점에서의 김대중의 리더십 개발 사례연구 - ACS 모델을 중심으로 -",
+   "year": "2016-04-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 298,
+   "level": "abstract",
+   "title": "소그룹 리더십 개발 원리와 훈련방안",
+   "year": "2013-05-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 297,
+   "level": "abstract",
+   "title": "체육교사의 교수전문성 리더십 개발",
+   "year": "2009-12-30",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 296,
+   "level": "abstract",
+   "title": "기업의 리더십 개발 트렌드",
+   "year": "2006-01-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 294,
+   "level": "abstract",
+   "title": "A Study on the Development of Case Discussion Leadership Program for Principals",
+   "year": "2021-10-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 293,
+   "level": "abstract",
+   "title": "A Case Study of Leadership Development Program : Korean Conglomerate cases",
+   "year": "2021-8-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 292,
+   "level": "abstract",
+   "title": "Development of a digital leadership competency model for school principals",
+   "year": "2025-8-30",
+   "source": "Crossref",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 291,
+   "level": "abstract",
+   "title": "A study of complexity leadership scale development : Airline crews",
+   "year": "2019-12-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 290,
+   "level": "abstract",
+   "title": "Development of Brain-Friendly Leadership Competency Enhancement Program",
+   "year": "2025-12-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 289,
+   "level": "abstract",
+   "title": "Scale Development of Sustainability Leadership for Restaurant Managers",
+   "year": "2024-6-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 288,
+   "level": "abstract",
+   "title": "Path Dependence of North Korea’s Nuclear and Missile",
+   "year": "2017-12-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 287,
+   "level": "abstract",
+   "title": "「聖學輯要」에서의 인문학적 리더십 개발: ‘정가(正家)’의 관계리더십",
+   "year": "2019-8",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 286,
+   "level": "abstract",
+   "title": "Taking Gender Into Account: Theory and Design for Women's Leadership Development Programs",
+   "year": "2011-09-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional"
+   ],
+   "traits": [
+    "T01",
+    "T06"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 283,
+   "level": "abstract",
+   "title": "The Center for Creative Leadership handbook of leadership development",
+   "year": "2010-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "strategic_cvf"
+   ],
+   "traits": [
+    "T01",
+    "T05",
+    "T06",
+    "T12"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 279,
+   "level": "abstract",
+   "title": "The Essence of Leadership and Pathways to Leadership Development",
+   "year": "2026-2-11",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 278,
+   "level": "abstract",
+   "title": "Skills of the leadership development specialist",
+   "year": "2009-11-4",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 277,
+   "level": "abstract",
+   "title": "Leadership exchange: contextualized learning about how leadership is accomplished and personalized leadership developmen",
+   "year": "2017-11-24",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 276,
+   "level": "abstract",
+   "title": "Why Leadership Research Is Generally Irrelevant for Leadership Development",
+   "year": "2003-9-12",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 275,
+   "level": "abstract",
+   "title": "Leadership Courses and Formal Leadership Development Programs as Key Leadership Learning Events",
+   "year": "2017-3-27",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 274,
+   "level": "abstract",
+   "title": "Different approaches to leadership development",
+   "year": "2009-11-4",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 273,
+   "level": "abstract",
+   "title": "Charting the Landscape of Leadership and Leadership Development",
+   "year": "2026-2-11",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 272,
+   "level": "abstract",
+   "title": "Rethinking Leadership and Leadership Development",
+   "year": "2025-3-11",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 271,
+   "level": "abstract",
+   "title": "Leader and leadership development",
+   "year": "2020-5-7",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 270,
+   "level": "abstract",
+   "title": "Leadership development",
+   "year": "2020-4-23",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 264,
+   "level": "abstract",
+   "title": "The Relationship among Leadership of Sports Center Managers, Organizational Commitment and Organizational Citizenship Be",
+   "year": "2010-8-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": true
+  },
+  {
+   "pid": 263,
+   "level": "abstract",
+   "title": "Empowering Leadership and Employee Innovative Behavior: The Role of Creative Role Identity",
+   "year": "2023-2-28",
+   "source": "Crossref",
+   "theories": [
+    "shared_empowering"
+   ],
+   "traits": [
+    "T02",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 262,
+   "level": "abstract",
+   "title": "Trust as the Link Between Leadership and Performance: Dual Pathways of Transformational and Transactional Leadership",
+   "year": "2025-11-30",
+   "source": "Crossref",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 261,
+   "level": "abstract",
+   "title": "Linking Innovation to Performance in Social Economy Organizations: Moderating Effects of Networks",
+   "year": "2025-11-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 260,
+   "level": "abstract",
+   "title": "A Study on the Relationships Among Absorptive Capacity of Employees, Organizational Citizenship, SCM performance, and In",
+   "year": "2012-10-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 259,
+   "level": "abstract",
+   "title": "The Effects of Collaborative Leadership on the Creativity Performance of Employees A Serial Mediation Model*",
+   "year": "2025-6-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 258,
+   "level": "abstract",
+   "title": "교사의 셀프 리더십과 조직 건강 및 교사 효능감 간의 관계",
+   "year": "2020-6-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 257,
+   "level": "abstract",
+   "title": "An Exploratory Study on S/W Project Quality and Organizational Performance by Process Maturity Certification",
+   "year": "2004-4-1",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 256,
+   "level": "abstract",
+   "title": "조직 성숙도 수준과 성과 향상을 위한 소프트웨어 프로세스 개선의 성공 요인",
+   "year": "2015-6",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 255,
+   "level": "abstract",
+   "title": "The Effects of Organizational Contextual Factors in The Relationship between Authentic Leadership and Team Performance",
+   "year": "2025-3-31",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 252,
+   "level": "abstract",
+   "title": "The impact of chief executive officer personality on top management team dynamics: One mechanism by which leadership aff",
+   "year": "2003-01-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 251,
+   "level": "abstract",
+   "title": "Innovation and intellectual capital as intermediary variables among transformational leadership, transactional leadershi",
+   "year": "2020-03-02",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 248,
+   "level": "abstract",
+   "title": "Executive Leadership and Organizational Performance: Suggestions for a New Theory and Methodology",
+   "year": "1988-09-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 246,
+   "level": "abstract",
+   "title": "The Effects of Transformational Leadership on Organizational Performance through Knowledge and Innovation<sup>*</sup>",
+   "year": "2007-10-31",
+   "source": "OpenAlex",
+   "theories": [
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 245,
+   "level": "abstract",
+   "title": "Leadership and Organizational Performance: A Study of Large Corporations",
+   "year": "1972-04-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 244,
+   "level": "abstract",
+   "title": "Measuring Organizational Performance",
+   "year": "2025-7-3",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 242,
+   "level": "abstract",
+   "title": "Fake leadership, authentic leadership, and job performance",
+   "year": "2023-11-20",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 240,
+   "level": "abstract",
+   "title": "Innovative Leadership Strategies for Optimal Organizational Performance",
+   "year": "2024-5-13",
+   "source": "Crossref",
+   "theories": [
+    "ethical",
+    "transformational",
+    "digital"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T05",
+    "T09",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 239,
+   "level": "abstract",
+   "title": "The Relation Between Servant Leadership, Organizational Performance, and the High-Performance Organization Framework",
+   "year": "2012-5",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 238,
+   "level": "abstract",
+   "title": "Executive Leadership and Organizational Performance",
+   "year": "2002-9-26",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 237,
+   "level": "abstract",
+   "title": "Leadership, job performance, and organizational reliability",
+   "year": "2023-11-20",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 236,
+   "level": "abstract",
+   "title": "Resilient Leadership: The Role of Well-being in Leadership and Organizational Performance",
+   "year": "2021-10-15",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 228,
+   "level": "abstract",
+   "title": "리더십 효과성 모형 연구 :상황적 리더십 모형에 대한 비판적 고찰과 대안의 모색",
+   "year": "2006-06-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 227,
+   "level": "abstract",
+   "title": "리더십 행동과 리더-구성원 교환관계(LMX), 리더십 효과성 간의 관계: 공직사회를 중심으로",
+   "year": "2013-03-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 226,
+   "level": "abstract",
+   "title": "노동조합지도자 리더십 효과성: 투쟁성향과 온건성향에 대한 상황 이론의 탐색",
+   "year": "2009-05-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 225,
+   "level": "abstract",
+   "title": "하향적 영향력 전술, 개인적 권력, 그리고 리더십 효과성 간의 관계에 관한 탐색적 연구",
+   "year": "2014-11-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 224,
+   "level": "abstract",
+   "title": "리더십 행동과 리더-구성원 교환관계(LMX), 리더십 효과성 간의 관계",
+   "year": "2013-03-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 223,
+   "level": "abstract",
+   "title": "거래적 리더십과 변환적 리더십 유형이 리더십 효과성 및 스포츠성과에 미치는 영향",
+   "year": "2005-09-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional"
+   ],
+   "traits": [
+    "T01",
+    "T06"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 222,
+   "level": "abstract",
+   "title": "지방자치단체장들의 변혁적 리더십과 리더십 효과성",
+   "year": "2003-03-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 221,
+   "level": "abstract",
+   "title": "태권도지도자의 변혁적 리더십 효과성 분석",
+   "year": "2017-06-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 220,
+   "level": "abstract",
+   "title": "리더십 효과성 모형 연구",
+   "year": "2006-06-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 219,
+   "level": "abstract",
+   "title": "노동조합지도자 리더십 효과성",
+   "year": "2009-09-30",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 218,
+   "level": "abstract",
+   "title": "서울시 청년 일자리 지원 정책의 효과성 검증",
+   "year": "2024-9-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 217,
+   "level": "abstract",
+   "title": "대학의 비교과 프로그램 효과성 분석을 위한 메타분석 연구: 2015~2016 국내 초기 비교과 프로그램 효과성 연구를 중심으로",
+   "year": "2019-2",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 216,
+   "level": "abstract",
+   "title": "지역특화산업육성 연구개발지원사업의 효과성 분석",
+   "year": "2024-9-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 215,
+   "level": "abstract",
+   "title": "The Satisfaction and View of Elementary and Secondary School Leaders Participated in the In-service Training for Creativ",
+   "year": "2022-2-28",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 214,
+   "level": "abstract",
+   "title": "The Structure Analysis among Elementary School Principal’s Moral Leadership, Teacher’s Commitment, and School’s Organiza",
+   "year": "2021-12-31",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 213,
+   "level": "abstract",
+   "title": "The Differential Effects of Leadership Style on Organizational Effectiveness - of Korean Army -",
+   "year": "2017-3-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 212,
+   "level": "abstract",
+   "title": "The Direction of ROK Army’s Leadership Development  to Enhance the Effectiveness of the Mission Command",
+   "year": "2021-10-31",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 211,
+   "level": "abstract",
+   "title": "CEO Leadership Effectiveness across Cultures: The Effect of Fit and Behavior",
+   "year": "2014",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 210,
+   "level": "abstract",
+   "title": "Leadership Effectiveness across Cultures: The Linkage with CEO Behaviors",
+   "year": "2014",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 209,
+   "level": "abstract",
+   "title": "CEO Leadership Effectiveness across Cultures: Superior and Inferior CEOs",
+   "year": "2014",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 208,
+   "level": "abstract",
+   "title": "Leadership Effectiveness",
+   "year": "2006",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 207,
+   "level": "abstract",
+   "title": "Leadership Development and Training",
+   "year": "2025-9-8",
+   "source": "Crossref",
+   "theories": [
+    "transformational",
+    "digital"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T05",
+    "T09",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 206,
+   "level": "abstract",
+   "title": "Global Mindset and Leadership Effectiveness",
+   "year": "2013",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 205,
+   "level": "abstract",
+   "title": "Globalization and Leadership Effectiveness",
+   "year": "2013",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 204,
+   "level": "abstract",
+   "title": "Leadership Effectiveness",
+   "year": "2004",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 197,
+   "level": "abstract",
+   "title": "아버지의 양육참여도가 유아의 서번트 리더십 및 놀이성에 미치는 영향",
+   "year": "2017-12-01",
+   "source": "OpenAlex",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 196,
+   "level": "abstract",
+   "title": "학교장의 서번트 리더십, 교사효능감 및 학교조직몰입 간의 관계",
+   "year": "2007-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 195,
+   "level": "abstract",
+   "title": "예비 특수(체육)교사의 서번트 리더십 인식 분석",
+   "year": "2019-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 194,
+   "level": "abstract",
+   "title": "국내 학술지에 게재된 서번트 리더십 관련 연구동향 분석",
+   "year": "2021-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 193,
+   "level": "abstract",
+   "title": "유아 서번트 리더십 교육을 위한 『지장경』 탐색",
+   "year": "2018-03-30",
+   "source": "OpenAlex",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 192,
+   "level": "abstract",
+   "title": "도산 안창호의 서번트 리더십 연구",
+   "year": "2009-03-30",
+   "source": "OpenAlex",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 191,
+   "level": "abstract",
+   "title": "셀프 이스팀 서번트 리더십",
+   "year": "2006-06-01",
+   "source": "OpenAlex",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 190,
+   "level": "abstract",
+   "title": "최고경영자의 서번트 리더십 사례연구",
+   "year": "2016-10-01",
+   "source": "OpenAlex",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 189,
+   "level": "abstract",
+   "title": "호텔기업의 서번트 리더십이 리더만족과 추가적 노력에 미치는 영향",
+   "year": "2006-09-01",
+   "source": "OpenAlex",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 188,
+   "level": "abstract",
+   "title": "진성, 서번트 리더십 스타일이 심리적 임파워먼트에 미치는 영향에 대한 한중비교연구",
+   "year": "2016-05-01",
+   "source": "OpenAlex",
+   "theories": [
+    "servant",
+    "shared_empowering"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 187,
+   "level": "abstract",
+   "title": "Verification for Structural Modeling between Servant and Transformational Leadership, Organizational Citizenship Behavio",
+   "year": "2018-12-31",
+   "source": "Crossref",
+   "theories": [
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 186,
+   "level": "abstract",
+   "title": "A Study of the Contemporary Applicability of Servant Leadership in Its Relation to the Spirituality of the Protestant Re",
+   "year": "2017-11-30",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 185,
+   "level": "abstract",
+   "title": "The Effect of Servant Leadership of Church Education Ministers on Transformational Leadership, Satisfaction and Commitme",
+   "year": "2017-10-30",
+   "source": "Crossref",
+   "theories": [
+    "servant",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T07",
+    "T09",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 184,
+   "level": "abstract",
+   "title": "An Analysis of Research Trends About Servant Leadership Published in Korean Journal Articles",
+   "year": "2021-2-28",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 183,
+   "level": "abstract",
+   "title": "A Study on the Effect of Servant Leadership on Spiritual Maturity",
+   "year": "2024-2-28",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 182,
+   "level": "abstract",
+   "title": "The Relationship between Servant Leadership, Organizational Commitment, Customer Orientation, and Hospital Performance ：",
+   "year": "2021-12-31",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 181,
+   "level": "abstract",
+   "title": "Developing a Scale for Measuring the Servant Leadership in Unified Concept of Validity",
+   "year": "2017-5-31",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 180,
+   "level": "abstract",
+   "title": "The Effect of Principal’s Servant Leadership on Job Satisfaction",
+   "year": "2018-9-30",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 179,
+   "level": "abstract",
+   "title": "\"The Emergence of Servant Leadership and its  Impact on Organization Commitment and  Amy Morale in the Army Organization",
+   "year": "2019-2-28",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 178,
+   "level": "abstract",
+   "title": "상사의 온정적 합리주의 리더십과 공무원의 서번트 리더십 및 조직몰입과의 관계 연구",
+   "year": "2019-2",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 177,
+   "level": "abstract",
+   "title": "Biblical Servant Leadership",
+   "year": "2018",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 176,
+   "level": "abstract",
+   "title": "Servant Leadership in Government Institutions",
+   "year": "2023",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 174,
+   "level": "abstract",
+   "title": "Servant Leadership in Government Institutions",
+   "year": "2022",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 173,
+   "level": "abstract",
+   "title": "Servant Leadership and Love",
+   "year": "2010",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 172,
+   "level": "abstract",
+   "title": "Servant Leadership and Its Vulnerability",
+   "year": "2022",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 171,
+   "level": "abstract",
+   "title": "Review of Followership Theory and Servant Leadership Theory: Understanding How Servant Leadership Informs Followership",
+   "year": "2017",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 170,
+   "level": "abstract",
+   "title": "Servant Leadership and Its Vulnerability",
+   "year": "2023",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 169,
+   "level": "abstract",
+   "title": "Servant Leadership",
+   "year": "2025-5-27",
+   "source": "Crossref",
+   "theories": [
+    "servant",
+    "authentic"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T103",
+    "T11",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 168,
+   "level": "abstract",
+   "title": "Demystifying Servant Leadership",
+   "year": "2010",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 166,
+   "level": "abstract",
+   "title": "The causal relationships among authentic leadership, self-efficacy, hope, optimism and resilience on the perspectives of",
+   "year": "2018-2-28",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 165,
+   "level": "abstract",
+   "title": "Analysis of Structural Relations among The Innovation Department Head Teacher’s Authentic Leadership, Teacher Efficacy, ",
+   "year": "2022-6-30",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 164,
+   "level": "abstract",
+   "title": "The Structural Relationships between Principal's Authentic Leadership, Teachers' Empowerment, Teachers' Trust in School ",
+   "year": "2019-6-30",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 163,
+   "level": "abstract",
+   "title": "A Phenomenological Study on the Experience of the Limitations and Overcoming Efforts of Elementary School Principals’ Au",
+   "year": "2026-4-30",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 162,
+   "level": "abstract",
+   "title": "Analysis of Structural Relations among Principal’s Authentic Leadership, Positive Psychological Capital, Organizational ",
+   "year": "2021-12-30",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 161,
+   "level": "abstract",
+   "title": "The Moderating Effects of Followers’ Personality (Stability and Openness) between Transformational or Authentic leadersh",
+   "year": "2017-6-30",
+   "source": "Crossref",
+   "theories": [
+    "authentic",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T09",
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 160,
+   "level": "abstract",
+   "title": "The Causal Relationships among Authentic Leadership, Self-efficacy,  and Performance of Team Sports Players",
+   "year": "2023-12-31",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 159,
+   "level": "abstract",
+   "title": "A Critical Review of the Concept of Authentic Leadership",
+   "year": "2022-11-30",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 158,
+   "level": "abstract",
+   "title": "\"The Structural Relationship among Principal's Authentic Leadership, Teachers’ Positive Psychological Capital and  Schoo",
+   "year": "2023-3-30",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 156,
+   "level": "abstract",
+   "title": "Authentic Leadership and Positive Psychological Capital",
+   "year": "2008-10-30",
+   "source": "OpenAlex",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 155,
+   "level": "abstract",
+   "title": "Discovering your authentic leadership.",
+   "year": "2007-02-01",
+   "source": "OpenAlex",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 152,
+   "level": "abstract",
+   "title": "Authentic Leadership: Rediscovering the Secrets to Creating Lasting Value",
+   "year": "2003-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 149,
+   "level": "abstract",
+   "title": "Authentic Leadership: Development and Validation of a Theory-Based Measure†",
+   "year": "2007-10-26",
+   "source": "OpenAlex",
+   "theories": [
+    "authentic",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T09",
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 147,
+   "level": "abstract",
+   "title": "Authentic leadership",
+   "year": "2024-8-13",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 145,
+   "level": "abstract",
+   "title": "Viewpoint: responsible investment and authentic leadership",
+   "year": "2013-10-31",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 144,
+   "level": "abstract",
+   "title": "Authentic Leadership for Employee Retention",
+   "year": "2018-5-20",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 142,
+   "level": "abstract",
+   "title": "Authentic Leadership Measures: An Authentic Measure for Authentic Leadership?",
+   "year": "2023-12-20",
+   "source": "Crossref",
+   "theories": [
+    "authentic",
+    "emotional_intelligence"
+   ],
+   "traits": [
+    "T02",
+    "T103",
+    "T11",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 140,
+   "level": "abstract",
+   "title": "Viewpoint: an authentic jerk. Authentic leadership can be bad leadership",
+   "year": "2013-10-31",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 139,
+   "level": "abstract",
+   "title": "Authentic Leadership",
+   "year": "2016-7-27",
+   "source": "Crossref",
+   "theories": [
+    "servant",
+    "authentic",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T07",
+    "T09",
+    "T103",
+    "T11",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 138,
+   "level": "abstract",
+   "title": "Authentic leadership",
+   "year": "2020-4-23",
+   "source": "Crossref",
+   "theories": [
+    "authentic",
+    "charismatic"
+   ],
+   "traits": [
+    "T04",
+    "T09",
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 136,
+   "level": "abstract",
+   "title": "The joint effect of servant leadership, collective public service motivation, and ethical climate on collective organiza",
+   "year": "2017-9-30",
+   "source": "Crossref",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 135,
+   "level": "abstract",
+   "title": "The Relationship among Legitimacy, Rationality of Organization, CEO's Ethical Leadership and Organizational Performance",
+   "year": "2018-11-30",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 134,
+   "level": "abstract",
+   "title": "Relation between Ethical Leadership perceived by College Soccer Players and Sport Character and Interdependence",
+   "year": "2019-8-31",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 133,
+   "level": "abstract",
+   "title": "Team Leader’s Ethical Leadership, Team Knowledge Sharing, Team Innovative Behavior: The Moderated Mediation Model of Tea",
+   "year": "2023-3-31",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 132,
+   "level": "abstract",
+   "title": "Authentic Leadership, Leader Ethical Value and Follower’s Belief about Corporate Social Responsibility: A Moderated Medi",
+   "year": "2022-3-31",
+   "source": "Crossref",
+   "theories": [
+    "authentic"
+   ],
+   "traits": [
+    "T103",
+    "T13",
+    "T14"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 131,
+   "level": "abstract",
+   "title": "A study on ethical leadership and LMX for organizational citizenship behavior : Moderating effect of organizational trus",
+   "year": "2020-3-31",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 130,
+   "level": "abstract",
+   "title": "The Effects of Leaders’Influence Tactics on Leadership Effectiveness : Moderating Effects of Ethical Leadership",
+   "year": "2018-8-31",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 129,
+   "level": "abstract",
+   "title": "A Study on Components and Academic Status of Ethical Leadership Theory",
+   "year": "2024-6-30",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 128,
+   "level": "abstract",
+   "title": "성찰성과 연대성의 회복을 위한 \"윤리적 리더십\" 교과목 개발 연구",
+   "year": "2019-6",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 127,
+   "level": "abstract",
+   "title": "국내 윤리적 리더십 연구의 현황과 과제",
+   "year": "2019-12",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 126,
+   "level": "abstract",
+   "title": "Ethical Leadership",
+   "year": "2013-1-28",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 125,
+   "level": "abstract",
+   "title": "Bringing Together Diﬀerent Perspectives on Ethical Leadership",
+   "year": "2015-9-7",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 123,
+   "level": "abstract",
+   "title": "Ethical Dimensions of Leadership Influence Processes",
+   "year": "1996",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 122,
+   "level": "abstract",
+   "title": "Ethical Dimensions in Leadership Motivation",
+   "year": "1996",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 120,
+   "level": "abstract",
+   "title": "Preparing for Ethical Leadership",
+   "year": "1996",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 119,
+   "level": "abstract",
+   "title": "Ethics, Leadership, and Ethical Leadership",
+   "year": "2018",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 118,
+   "level": "abstract",
+   "title": "Ethical School Leadership",
+   "year": "2022-5-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 117,
+   "level": "abstract",
+   "title": "Ethical leadership",
+   "year": "2020-4-23",
+   "source": "Crossref",
+   "theories": [
+    "ethical"
+   ],
+   "traits": [
+    "T13"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 116,
+   "level": "abstract",
+   "title": "Christian Spirituality and Leadership for the Conquest of Fragmentation by Nano Society",
+   "year": "2023-5-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 115,
+   "level": "abstract",
+   "title": "Leadership for Spiritual Formation in Modern Culture",
+   "year": "2014-11-30",
+   "source": "Crossref",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 114,
+   "level": "abstract",
+   "title": "The Relationships between the Taekwondo Instructors` Transformational-transactional Leadership on the Organizational Com",
+   "year": "2009-8-31",
+   "source": "Crossref",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 113,
+   "level": "abstract",
+   "title": "The Effects of Organizational Commitment on Leadership Style: Focused on Transactional Leadership and Transformational L",
+   "year": "2014-12-30",
+   "source": "Crossref",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 112,
+   "level": "abstract",
+   "title": "Effects of Organizational Culture, Transformational Leadership and Transactional Leadership on Organizational Effectiven",
+   "year": "2016-3-31",
+   "source": "Crossref",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 111,
+   "level": "abstract",
+   "title": "A study on the samurai Sakamoto Ryoma’s leadership: Focus on the transactional leadership",
+   "year": "2020-11-30",
+   "source": "Crossref",
+   "theories": [
+    "transactional"
+   ],
+   "traits": [
+    "T01",
+    "T06"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 110,
+   "level": "abstract",
+   "title": "Structural Relationships among Transformational Leadership, Transactional Leadership, Athlete Satisfaction and Coacting ",
+   "year": "2012-5-31",
+   "source": "Crossref",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": true
+  },
+  {
+   "pid": 109,
+   "level": "abstract",
+   "title": "옥타비아누스(Octavianus)의 리더십에 관한 연구: ‘거래적 리더십’과 ‘카리스마 리더십’",
+   "year": "2019-12",
+   "source": "Crossref",
+   "theories": [
+    "transactional",
+    "charismatic"
+   ],
+   "traits": [
+    "T01",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 108,
+   "level": "abstract",
+   "title": "Fairness Perceptions and Trust as Mediators for Transformational and Transactional Leadership: A Two-Sample Study",
+   "year": "1999-12-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 107,
+   "level": "abstract",
+   "title": "Superiors' evaluations and subordinates' perceptions of transformational and transactional leadership.",
+   "year": "1988-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 106,
+   "level": "abstract",
+   "title": "Transformational and transactional leadership and innovative behavior: The moderating role of psychological empowerment",
+   "year": "2009-08-20",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 104,
+   "level": "abstract",
+   "title": "Transformational leadership, transactional leadership, locus of control, and support for innovation: Key predictors of c",
+   "year": "1993-12-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 102,
+   "level": "abstract",
+   "title": "Personality and Transformational and Transactional Leadership: A Meta-Analysis.",
+   "year": "2004-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational",
+    "charismatic",
+    "laissez_passive"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09",
+    "T101"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 101,
+   "level": "abstract",
+   "title": "Re‐examining the components of transformational and transactional leadership using the Multifactor Leadership",
+   "year": "1999-12-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 100,
+   "level": "abstract",
+   "title": "Predicting unit performance by assessing transformational and transactional leadership.",
+   "year": "2003-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 99,
+   "level": "abstract",
+   "title": "Transformational and Transactional Leadership: A Meta-Analytic Test of Their Relative Validity.",
+   "year": "2004-10-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational",
+    "laissez_passive"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09",
+    "T101"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 95,
+   "level": "abstract",
+   "title": "Transactional Leadership",
+   "year": "2025-2-4",
+   "source": "Crossref",
+   "theories": [
+    "transactional"
+   ],
+   "traits": [
+    "T01",
+    "T06"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 91,
+   "level": "abstract",
+   "title": "Transactional Analysis Group Leadership Operations",
+   "year": "1971-10",
+   "source": "Crossref",
+   "theories": [
+    "transactional"
+   ],
+   "traits": [
+    "T01",
+    "T06"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 77,
+   "level": "abstract",
+   "title": "Antecedents of Organizational Citizenship Behavior: The Mediating Role of Leader-member Exchange",
+   "year": "2015-01-28",
+   "source": "OpenAlex",
+   "theories": [
+    "transformational",
+    "shared_empowering"
+   ],
+   "traits": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T09",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 60,
+   "level": "abstract",
+   "title": "IMPACT OF TRANSFORMATIONAL LEADERSHIP ON FOLLOWER DEVELOPMENT AND PERFORMANCE: A FIELD EXPERIMENT.",
+   "year": "2002-08-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 58,
+   "level": "abstract",
+   "title": "Transformational Leadership And Organizational Culture",
+   "year": "1994-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 56,
+   "level": "abstract",
+   "title": "Transformational Leadership",
+   "year": "2019-01-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 53,
+   "level": "abstract",
+   "title": "Two Decades of Research and Development in Transformational Leadership",
+   "year": "1999-03-01",
+   "source": "OpenAlex",
+   "theories": [
+    "transactional",
+    "transformational",
+    "shared_empowering"
+   ],
+   "traits": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T06",
+    "T09",
+    "T11"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 51,
+   "level": "abstract",
+   "title": "Transformational Leadership",
+   "year": "2006-08-15",
+   "source": "OpenAlex",
+   "theories": [
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T09"
+   ],
+   "noise": false
+  },
+  {
+   "pid": 30,
+   "level": "abstract",
+   "title": "Naked-eye detection of fluoride ion in water: a remarkably selective easy-to-prepare test paper",
+   "year": "2006-01-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 28,
+   "level": "abstract",
+   "title": "Semiquantitative Specific Test Paper for Glucose in Urine",
+   "year": "1956-11-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 27,
+   "level": "abstract",
+   "title": "Bounds testing approaches to the analysis of level relationships",
+   "year": "2001-05-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 26,
+   "level": "abstract",
+   "title": "Testing for a unit root in time series regression",
+   "year": "1988-01-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 25,
+   "level": "abstract",
+   "title": "The Measurement of Observer Agreement for Categorical Data",
+   "year": "1977-03-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 23,
+   "level": "abstract",
+   "title": "A Heteroskedasticity-Consistent Covariance Matrix Estimator and a Direct Test for Heteroskedasticity",
+   "year": "1980-05-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 22,
+   "level": "abstract",
+   "title": "Some Tests of Specification for Panel Data: Monte Carlo Evidence and an Application to Employment Equations",
+   "year": "1991-04-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 21,
+   "level": "abstract",
+   "title": "Co-Integration and Error Correction: Representation, Estimation, and Testing",
+   "year": "1987-03-01",
+   "source": "OpenAlex",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 2,
+   "level": "abstract",
+   "title": "A simple way to speedup Gauss Elimination",
+   "year": "2011-01-21",
+   "source": "arXiv",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 1,
+   "level": "abstract",
+   "title": "This paper has been withdrawn",
+   "year": "2003-09-17",
+   "source": "arXiv",
+   "theories": [],
+   "traits": [],
+   "noise": false
+  },
+  {
+   "pid": 137,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "transformational",
+    "shared_empowering",
+    "adaptive_agile"
+   ],
+   "traits": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T09",
+    "T11",
+    "T12",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_137_arXiv.txt"
+  },
+  {
+   "pid": 167,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "servant"
+   ],
+   "traits": [
+    "T02",
+    "T07",
+    "T11"
+   ],
+   "noise": false,
+   "txt": "paper_167_arXiv.txt"
+  },
+  {
+   "pid": 198,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "emotional_intelligence"
+   ],
+   "traits": [
+    "T02",
+    "T11"
+   ],
+   "noise": false,
+   "txt": "paper_198_arXiv.txt"
+  },
+  {
+   "pid": 199,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "adaptive_agile"
+   ],
+   "traits": [
+    "T04",
+    "T12",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_199_arXiv.txt"
+  },
+  {
+   "pid": 200,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "toxic_dark"
+   ],
+   "traits": [
+    "T104",
+    "T105"
+   ],
+   "noise": false,
+   "txt": "paper_200_arXiv.txt"
+  },
+  {
+   "pid": 201,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [],
+   "traits": [],
+   "noise": false,
+   "txt": "paper_201_arXiv.txt"
+  },
+  {
+   "pid": 230,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "transactional",
+    "transformational",
+    "crisis"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T06",
+    "T09"
+   ],
+   "noise": false,
+   "txt": "paper_230_arXiv.txt"
+  },
+  {
+   "pid": 235,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [],
+   "traits": [],
+   "noise": false,
+   "txt": "paper_235_arXiv.txt"
+  },
+  {
+   "pid": 250,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "servant",
+    "ethical",
+    "transformational"
+   ],
+   "traits": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T07",
+    "T09",
+    "T11",
+    "T13"
+   ],
+   "noise": false,
+   "txt": "paper_250_OpenAlex.txt"
+  },
+  {
+   "pid": 267,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [],
+   "traits": [],
+   "noise": false,
+   "txt": "paper_267_arXiv.txt"
+  },
+  {
+   "pid": 268,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [],
+   "traits": [],
+   "noise": false,
+   "txt": "paper_268_arXiv.txt"
+  },
+  {
+   "pid": 305,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": true,
+   "txt": "paper_305_arXiv.txt"
+  },
+  {
+   "pid": 306,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_306_arXiv.txt"
+  },
+  {
+   "pid": 307,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_307_arXiv.txt"
+  },
+  {
+   "pid": 309,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_309_arXiv.txt"
+  },
+  {
+   "pid": 310,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_310_arXiv.txt"
+  },
+  {
+   "pid": 324,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_324_OpenAlex.txt"
+  },
+  {
+   "pid": 326,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_326_OpenAlex.txt"
+  },
+  {
+   "pid": 331,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_331_OpenAlex.txt"
+  },
+  {
+   "pid": 333,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_333_arXiv.txt"
+  },
+  {
+   "pid": 334,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_334_arXiv.txt"
+  },
+  {
+   "pid": 336,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [],
+   "traits": [],
+   "noise": false,
+   "txt": "paper_336_arXiv.txt"
+  },
+  {
+   "pid": 338,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "transformational",
+    "digital"
+   ],
+   "traits": [
+    "T01",
+    "T03",
+    "T04",
+    "T05",
+    "T09",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_338_arXiv.txt"
+  },
+  {
+   "pid": 342,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "shared_empowering"
+   ],
+   "traits": [
+    "T02",
+    "T11"
+   ],
+   "noise": false,
+   "txt": "paper_342_Crossref.txt"
+  },
+  {
+   "pid": 355,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_355_arXiv.txt"
+  },
+  {
+   "pid": 356,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "digital"
+   ],
+   "traits": [
+    "T03",
+    "T05",
+    "T14"
+   ],
+   "noise": false,
+   "txt": "paper_356_arXiv.txt"
+  },
+  {
+   "pid": 358,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [],
+   "traits": [],
+   "noise": false,
+   "txt": "paper_358_arXiv.txt"
+  },
+  {
+   "pid": 362,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [],
+   "traits": [],
+   "noise": false,
+   "txt": "paper_362_arXiv.txt"
+  },
+  {
+   "pid": 375,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [],
+   "traits": [],
+   "noise": false,
+   "txt": "paper_375_OpenAlex.txt"
+  },
+  {
+   "pid": 381,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [],
+   "traits": [],
+   "noise": false,
+   "txt": "paper_381_OpenAlex.txt"
+  },
+  {
+   "pid": 392,
+   "level": "fulltext",
+   "title": "(no metadata)",
+   "year": "",
+   "source": "",
+   "theories": [
+    "shared_empowering"
+   ],
+   "traits": [
+    "T02",
+    "T11"
+   ],
+   "noise": false,
+   "txt": "paper_392_OpenAlex.txt"
+  }
+ ]
+}

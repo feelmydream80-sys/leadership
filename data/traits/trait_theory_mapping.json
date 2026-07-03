@@ -1,163 +1,862 @@
 {
-  "schema_version": "2026-04-v3",
-  "description": "Trait ↔ 리더십 이론 매핑 테이블 v3.0 - 외부 검증을 위한 이론 기반 매핑",
-  "purpose": "외부 검증 대응 (논문 / HR / 감사), 모델 신뢰성 확보",
+  "schema_version": "2026-06-v4",
+  "version": "v4.2",
+  "last_updated": "2026-07-02",
+  "description": "Trait↔이론 매핑 v4.2 - 검증 결과 반영(T08·T10 삭제, T01·T06·T12·T102 재정렬)",
+  "purpose": "외부 검증 대응(논문/HR/감사), 모델 신뢰성 확보, 지속적 논문 누적 기반 근거 관리",
+  "changelog_ref": "docs/CHANGELOG_leadership.md",
+  "catalog_ref": "docs/leadership_catalog.md",
+  "validation_statement": "본 모델은 Full-Range(변혁적·거래적·자유방임), Servant, Ethical/Authentic, Adaptive, Dark Triad/HDS 이론을 기반으로, 행동 단위(Micro Label)와 패턴 매칭을 통해 동적 성향을 추론하도록 재구성한 응용 모델이다. v4.0에서 긍정 Trait의 이론 매핑을 ref data 논문 근거에 맞춰 재정렬하고 인용을 부여하였다.",
+  "paper_registry": {
+    "R01": {
+      "citation": "Dumdum, U. R., Lowe, K. B., & Avolio, B. J. (2002)",
+      "title": "A Meta-analysis of Transformational and Transactional Leadership Correlates of Effectiveness and Satisfaction",
+      "in_ref_data": true,
+      "file": "DumdumLoweAvolioFinalVersion.doc",
+      "type": "meta-analysis"
+    },
+    "R02": {
+      "citation": "Batista-Foguet, J. M., Esteve, M., & van Witteloostuijn, A. (2021)",
+      "title": "Measuring leadership: an assessment of the MLQ",
+      "in_ref_data": true,
+      "file": "journal.pone.0254329.pdf",
+      "type": "measurement-validation"
+    },
+    "R03": {
+      "citation": "van Dierendonck, D., & Nuijten, I. (2010)",
+      "title": "The Servant Leadership Survey: Development and Validation of a Multidimensional Measure",
+      "in_ref_data": true,
+      "file": "s10869-010-9194-1.pdf",
+      "type": "scale-development"
+    },
+    "R04": {
+      "citation": "Indarta, Y., et al. (2024)",
+      "title": "The Evolution of Servant Leadership Research (2020-2024): A Systematic Review",
+      "in_ref_data": true,
+      "file": "596-Article Text-2269-1-10-20241120.pdf",
+      "type": "systematic-review"
+    },
+    "R05": {
+      "citation": "최루디아 (2020)",
+      "title": "경쟁가치모형 기반 리더십 다면평가에서 평가주체 간 지각차이 및 리더십 행동과 효과성 관계 분석",
+      "in_ref_data": true,
+      "file": "KCI_FI002613507.pdf",
+      "type": "empirical-multirater"
+    },
+    "R06": {
+      "citation": "Das, B. K., & Rajini, G. (2024)",
+      "title": "Leadership development through 360-degree multi-rater feedback",
+      "in_ref_data": true,
+      "file": "LeadershipDevelopment.pdf",
+      "type": "intervention-case"
+    },
+    "R07": {
+      "citation": "Emam, S. M., et al. (2024)",
+      "title": "Leadership development program utilizing 360-degree feedback (BMC Nursing)",
+      "in_ref_data": true,
+      "file": "s12912-024-02395-w.pdf",
+      "type": "true-experiment"
+    },
+    "R08": {
+      "citation": "Soomro et al. (2024)",
+      "title": "Review of Entrepreneurial Leadership vs Transformational Leadership (Rev Manag Sci)",
+      "in_ref_data": true,
+      "file": "s11846-023-00649-6.pdf",
+      "type": "systematic-review"
+    },
+    "R09": {
+      "citation": "Azhar, Z., & Ayobami, A. (2026)",
+      "title": "Leadership competencies: a global bibliometric analysis (1960-2025)",
+      "in_ref_data": true,
+      "file": "s43621-026-02809-6.pdf",
+      "type": "bibliometric"
+    },
+    "X01": {
+      "citation": "Bass, B. M. (1985)",
+      "title": "Leadership and Performance Beyond Expectations",
+      "in_ref_data": false,
+      "type": "foundational-theory"
+    },
+    "X02": {
+      "citation": "Paulhus, D. L., & Williams, K. M. (2002)",
+      "title": "The Dark Triad of personality",
+      "in_ref_data": false,
+      "type": "foundational-theory"
+    },
+    "X03": {
+      "citation": "Rosenthal, S. A., & Pittinsky, T. L. (2006)",
+      "title": "Narcissistic leadership",
+      "in_ref_data": false,
+      "type": "foundational-theory"
+    },
+    "X04": {
+      "citation": "Hogan, R., & Hogan, J. (2001)",
+      "title": "Assessing leadership: A view from the dark side (HDS)",
+      "in_ref_data": false,
+      "type": "foundational-theory"
+    },
+    "X05": {
+      "citation": "Goleman, D. (1995)",
+      "title": "Emotional Intelligence",
+      "in_ref_data": false,
+      "type": "foundational-theory"
+    },
+    "R10": {
+      "citation": "Bono, J. E., & Judge, T. A. (2004)",
+      "title": "Personality and Transformational and Transactional Leadership: A Meta-Analysis",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 102,
+      "source_level": "abstract_only",
+      "type": "meta-analysis"
+    },
+    "R11": {
+      "citation": "Walumbwa, F. O., Avolio, B. J., Gardner, W. L., Wernsing, T. S., & Peterson, S. J. (2008)",
+      "title": "Authentic Leadership: Development and Validation of a Theory-Based Measure (ALQ)",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 149,
+      "source_level": "abstract_only",
+      "type": "scale-development"
+    },
+    "R12": {
+      "citation": "Min, D., & Jung, D. (2022)",
+      "title": "A Critical Review of the Concept of Authentic Leadership",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 159,
+      "source_level": "abstract_only",
+      "type": "critical-review (counter-evidence)"
+    },
+    "R13": {
+      "citation": "Schaubroeck, J., Woessner, Z. W., & Malonson, B. (2013)",
+      "title": "Ethical Leadership (Oxford Bibliographies)",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 126,
+      "source_level": "abstract_only",
+      "type": "construct-review"
+    },
+    "R14": {
+      "citation": "Pillai, R., Schriesheim, C. A., & Williams, E. S. (1999)",
+      "title": "Fairness Perceptions and Trust as Mediators for Transformational and Transactional Leadership: A Two-Sample Study",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 108,
+      "source_level": "abstract_only",
+      "type": "empirical-SEM"
+    },
+    "R15": {
+      "citation": "Bass, B. M. (1999)",
+      "title": "Two Decades of Research and Development in Transformational Leadership",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 53,
+      "source_level": "abstract_only",
+      "type": "foundational-review"
+    },
+    "R16": {
+      "citation": "de Waal, A., & Sivro, M. (2012)",
+      "title": "The Relation Between Servant Leadership, Organizational Performance, and the HPO Framework",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 239,
+      "source_level": "abstract_only",
+      "type": "empirical"
+    },
+    "R17": {
+      "citation": "Kang, G. M., Yang, Y.-E., Kim, S., & Kwon, K. (2023)",
+      "title": "Empowering Leadership and Employee Innovative Behavior: The Role of Creative Role Identity",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 263,
+      "source_level": "abstract_only",
+      "type": "empirical"
+    },
+    "R18": {
+      "citation": "Cortellazzo, L., Bruni, E., & Zampieri, R. (2019)",
+      "title": "The Role of Leadership in a Digitalized World: A Review (Frontiers in Psychology)",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 331,
+      "source_level": "full_text",
+      "extracted": "papers/extracted/paper_331_OpenAlex.txt",
+      "type": "systematic-review"
+    },
+    "R19": {
+      "citation": "주영경, 김명소 (2022)",
+      "title": "팀 기반 공유 리더십 척도 개발 연구: 내용타당도 중심으로 (한국심리학회지: 산업및조직)",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 342,
+      "source_level": "full_text",
+      "extracted": "papers/extracted/paper_342_Crossref.txt",
+      "type": "scale-development"
+    },
+    "R20": {
+      "citation": "Hartnell, C. A., & Lemoine, G. J. (2025)",
+      "title": "Servant Leadership (others-focused, multiple stakeholders)",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 169,
+      "source_level": "abstract_only",
+      "type": "construct-review"
+    },
+    "R21": {
+      "citation": "Nosratabadi, S., Bahrami, P., Palouzian, K., & Mosavi, A.",
+      "title": "Leader Cultural Intelligence and Organizational Performance",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 235,
+      "source_level": "full_text",
+      "extracted": "papers/extracted/paper_235_arXiv.txt",
+      "type": "empirical"
+    },
+    "R22": {
+      "citation": "Pasupuleti, M. K. (2024)",
+      "title": "Innovative Leadership Strategies for Optimal Organizational Performance (integrity → trust)",
+      "in_ref_data": false,
+      "in_papers_collection": true,
+      "paper_id": 240,
+      "source_level": "abstract_only",
+      "type": "chapter-review"
+    }
+  },
+  "evidence_strength_scale": {
+    "strong": "ref data 내 1차 근거(메타분석/실험/검증된 척도)로 직접 뒷받침",
+    "medium": "ref data 내 간접 근거(리뷰/계량서지) 또는 단일 근거",
+    "weak": "ref data 직접 근거 부족, 외부 원전 보강 필요"
+  },
   "reference_theories": [
-    "Transformational Leadership",
+    "Full-Range Leadership (Transformational / Transactional / Laissez-faire)",
     "Servant Leadership",
     "Ethical Leadership",
+    "Authentic Leadership",
     "Adaptive Leadership",
     "Ambidextrous Leadership",
+    "Digital Leadership",
     "Data-Driven Decision Making",
+    "Emotional Intelligence (Goleman)",
+    "Competing Values Framework",
     "Dark Triad Research",
-    "Authentic Leadership",
     "Hogan Development Survey (HDS)"
   ],
-  "validation_statement": "본 모델은 Transformational, Servant, Ethical Leadership 이론을 기반으로, 행동 단위(Micro Label)와 패턴 매칭을 통해 동적 성향을 추론하도록 재구성한 응용 모델이다.",
   "trait_mappings": [
     {
       "trait_id": "T01",
       "trait_name": "Strategic Decisive Leader",
-      "primary_theory": "Ethical Leadership",
-      "secondary_theory": "Servant Leadership",
-      "evidence": "도덕성 + 구성원 보호",
-      "differentiation": "기존 이론의 정적 분류를 동적 패턴으로 변환"
+      "primary_theory": "Full-Range Leadership (Transactional/Active)",
+      "secondary_theory": "Adaptive Leadership",
+      "evidence": "목표 설정과 신속·명확한 의사결정(결단). 비전 라벨 제거로 구인 정제.",
+      "citations": [
+        "R01",
+        "R02",
+        "R10",
+        "R14",
+        "R15"
+      ],
+      "evidence_strength": "medium",
+      "differentiation": "결단(T01)·실행(T06)·비전(T09) 분리",
+      "validation_status": "construct_supported",
+      "validation_gap": "재정의 후 결단 구인으로 정렬됨. 우리 데이터 신뢰도 검증은 미실시 | 2026-07-01: 거래적(contingent reward) 근거를 부재 논문(MacKenzie) 대신 Bono&Judge(2004) 메타분석·Pillai(1999)·Bass(1999)로 확보(초록 수준).",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 44,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          51,
+          53,
+          56,
+          58,
+          60,
+          77,
+          91,
+          95,
+          99,
+          100,
+          101,
+          102,
+          104,
+          106,
+          107
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T02",
       "trait_name": "Collaborative Leader",
-      "primary_theory": "Ethical Leadership",
-      "secondary_theory": null,
-      "evidence": "규범, 책임",
-      "differentiation": "행동 단위 기반 원칙 준수 측정"
+      "primary_theory": "Servant Leadership",
+      "secondary_theory": "Transformational Leadership (Individualized Consideration)",
+      "evidence": "팀 결속·소통·권한 위임(empowerment). 서번트 리더십 핵심 차원.",
+      "citations": [
+        "R03",
+        "R04",
+        "R16",
+        "R19",
+        "R20"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "협력 행동을 관찰 가능한 행동 단위로 분해",
+      "validation_status": "construct_supported",
+      "validation_gap": "서번트 empowerment 구인 견고(R03). 단, 우리 데이터 대상 신뢰도/요인 검증 없음",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 44,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          53,
+          77,
+          136,
+          137,
+          139,
+          142,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          176
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T03",
       "trait_name": "Innovative Leader",
-      "primary_theory": "Ethical Leadership",
-      "secondary_theory": null,
-      "evidence": "신뢰 형성 핵심 요소",
-      "differentiation": "상황별 일관성 패턴 분석"
+      "primary_theory": "Transformational Leadership (Intellectual Stimulation)",
+      "secondary_theory": "Ambidextrous Leadership",
+      "evidence": "지적 자극을 통한 새로운 시도와 변화 주도. 탐색(exploration) 행동.",
+      "citations": [
+        "R01",
+        "R08",
+        "R18"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "혁신 구인을 탐색·실험 행동 단위로 운용화",
+      "validation_status": "construct_supported",
+      "validation_gap": "변혁적 지적자극 구인 견고. 라벨-이론 정합. 경험적 검증 없음 | 2026-07-02: 디지털 리더십에 Cortellazzo(2019) 전문 근거 추가(페이지 인용 가능).",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 64,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          51,
+          53,
+          56,
+          58,
+          60,
+          77,
+          99,
+          100,
+          101,
+          102,
+          104,
+          106,
+          107,
+          108,
+          112
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T04",
       "trait_name": "Crisis Manager",
-      "primary_theory": "Servant Leadership",
-      "secondary_theory": null,
-      "evidence": "공감 중심",
-      "differentiation": "공감 행동의 구체적 관찰 단위"
+      "primary_theory": "Adaptive Leadership",
+      "secondary_theory": "Transactional Leadership (Active Management-by-Exception)",
+      "evidence": "위기 상황에서의 적응적 대응과 능동적 예외 관리.",
+      "citations": [
+        "R09"
+      ],
+      "evidence_strength": "medium",
+      "differentiation": "위기 대응 행동을 상황(crisis context) 가중 패턴으로 측정",
+      "validation_status": "unverified",
+      "validation_gap": "위기관리를 안정적 \"성향(trait)\"으로 볼지 논쟁적; ref data 근거는 계량서지(R09)뿐",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 43,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          51,
+          53,
+          56,
+          58,
+          60,
+          77,
+          99,
+          100,
+          101,
+          102,
+          104,
+          106,
+          107,
+          108,
+          109
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T05",
       "trait_name": "Analytical Leader",
-      "primary_theory": "Servant Leadership",
-      "secondary_theory": "Transformational Leadership",
-      "evidence": "안전감 → 혁신 기반",
-      "differentiation": "심리적 안전감을 혁신의 선행조건으로 모델링"
+      "primary_theory": "Data-Driven Decision Making",
+      "secondary_theory": "Transactional Leadership",
+      "evidence": "데이터·근거 기반 의사결정 선호. 분석적 역량.",
+      "citations": [
+        "R09",
+        "R02",
+        "R18"
+      ],
+      "evidence_strength": "weak",
+      "differentiation": "분석 행동을 관찰 단위로 분해 (ref data 직접 근거 보강 필요)",
+      "validation_status": "unverified",
+      "validation_gap": "required 라벨 1개(M34-01)로 구인 취약; 데이터기반 의사결정은 역량이며 검증된 리더십 스타일 아님 | 2026-07-02: 디지털 리더십에 Cortellazzo(2019) 전문 근거 추가(페이지 인용 가능).",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 34,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          207,
+          240,
+          283,
+          292,
+          306,
+          307,
+          309,
+          310,
+          313,
+          314,
+          315,
+          316,
+          317,
+          318,
+          320
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T06",
       "trait_name": "Execution Driver",
-      "primary_theory": "Transformational Leadership",
-      "secondary_theory": null,
-      "evidence": "개별적 배려",
-      "differentiation": "코칭 행동을 개별 관찰 단위로 분해"
+      "primary_theory": "Competing Values Framework (Task Orientation, 과업지향)",
+      "secondary_theory": "Transactional Leadership",
+      "evidence": "과업지향·성과 실행. 경쟁가치모형의 과업지향이 효과성과 연관(R05); 거래적 실행.",
+      "citations": [
+        "R05",
+        "R01",
+        "R10",
+        "R14"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "실행 행동을 성과·목표 달성 패턴으로 측정",
+      "validation_status": "construct_supported",
+      "validation_gap": "과업지향 구인은 R05에서 검증. \"contingent reward\"(보상)와는 구분 — 보상형은 별도 라벨/Trait 필요(미보유) | 2026-07-01: 거래적 과업/보상 구인에 Bono&Judge(2004)·Pillai(1999) 추가(초록).",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 23,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          53,
+          58,
+          91,
+          95,
+          99,
+          100,
+          101,
+          102,
+          104,
+          106,
+          107,
+          108,
+          109,
+          112,
+          113
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T07",
       "trait_name": "Coaching Leader",
-      "primary_theory": "Servant Leadership",
-      "secondary_theory": null,
-      "evidence": "이타성",
-      "differentiation": "이타적 행동의 구체적 관찰"
-    },
-    {
-      "trait_id": "T08",
-      "trait_name": "Emotional Intelligence Leader",
-      "primary_theory": "Transactional Leadership",
-      "secondary_theory": null,
-      "evidence": "성과 중심 실행",
-      "differentiation": "실행 행동을 패턴 기반으로 측정"
+      "primary_theory": "Transformational Leadership (Individualized Consideration)",
+      "secondary_theory": "Servant Leadership",
+      "evidence": "구성원 개별 배려·개발·피드백. 360도 개발 개입에서 실증 효과.",
+      "citations": [
+        "R06",
+        "R07"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "코칭 행동을 개별 관찰 단위로 분해",
+      "validation_status": "construct_supported",
+      "validation_gap": "변혁적 개별배려/코칭 구인 견고(R06,R07 개발효과 실증). 우리 라벨 매핑은 미검증",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 32,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          136,
+          139,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          176,
+          178,
+          179,
+          180,
+          181
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T09",
       "trait_name": "Visionary Leader",
-      "primary_theory": "Transactional Leadership",
-      "secondary_theory": "Ethical Leadership",
-      "evidence": "결과 책임",
-      "differentiation": "책임과 윤리의 복합 패턴"
+      "primary_theory": "Transformational Leadership (Idealized Influence & Inspirational Motivation)",
+      "secondary_theory": null,
+      "evidence": "비전 제시·영감적 동기부여. 변혁적 리더십의 증강효과 핵심.",
+      "citations": [
+        "X01",
+        "R01",
+        "R02"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "비전·영감 행동을 명확한 미래 방향 제시 단위로 측정",
+      "validation_status": "construct_supported",
+      "validation_gap": "변혁적 II·IM 구인 견고, 라벨 정합. 경험적 검증 없음",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 41,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          51,
+          53,
+          56,
+          58,
+          60,
+          77,
+          99,
+          100,
+          101,
+          102,
+          104,
+          106,
+          107,
+          108,
+          109
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
+    },
+    {
+      "trait_id": "T11",
+      "trait_name": "Empathetic Leader",
+      "primary_theory": "Servant Leadership (Humility, Standing Back, Forgiveness)",
+      "secondary_theory": null,
+      "evidence": "공감·겸손·정서 배려(서번트 humility/standing back/forgiveness). 구 T08 흡수.",
+      "citations": [
+        "R03",
+        "R04",
+        "R16",
+        "R20"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "공감 행동을 겸손·관용 등 구체적 관찰 단위로 분해 (v4.0 신규 매핑)",
+      "validation_status": "construct_supported",
+      "validation_gap": "구 T08 흡수로 판별타당도 문제 해소. 서번트 척도(R03) 문항 대비 매핑 검증은 미실시",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 44,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          53,
+          77,
+          136,
+          137,
+          139,
+          142,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          176
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T12",
       "trait_name": "Balanced Leader",
-      "primary_theory": "Adaptive Leadership",
-      "secondary_theory": null,
-      "evidence": "불확실성 대응",
-      "differentiation": "불확실성 속 안정화 행동 측정"
+      "primary_theory": "Competing Values Framework (Behavioral Complexity)",
+      "secondary_theory": "Ambidextrous Leadership",
+      "evidence": "경쟁가치 간 균형·행동적 복잡성. R05가 리더십 복잡성의 효과성을 검정.",
+      "citations": [
+        "R05",
+        "R09"
+      ],
+      "evidence_strength": "medium",
+      "differentiation": "불확실성 속 안정화·균형 행동 측정",
+      "validation_status": "partially_supported",
+      "validation_gap": "R05의 리더십 복잡성과 연결되나 우리 라벨(운영안정·투명소통)의 복잡성 측정 타당성 미검증",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 5,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          137,
+          199,
+          283,
+          323,
+          328
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T13",
       "trait_name": "Ethical Courageous Leader",
-      "primary_theory": "Adaptive Leadership",
-      "secondary_theory": null,
-      "evidence": "상황 대응",
-      "differentiation": "상황별 접근법 조정 패턴"
+      "primary_theory": "Ethical Leadership",
+      "secondary_theory": "Servant Leadership (Courage, Accountability) / Authentic Leadership",
+      "evidence": "윤리적 판단과 도덕적 용기. 서번트의 courage·accountability 차원과 정합.",
+      "citations": [
+        "R03",
+        "R09",
+        "R11",
+        "R13"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "윤리·용기 행동을 원칙 고수·위험 감수 단위로 측정",
+      "validation_status": "construct_supported",
+      "validation_gap": "윤리·용기·진정성이 SLS courage/accountability/authenticity와 정합. 우리 라벨 검증은 미실시 | 2026-07-01: 윤리 근거를 부재 논문(arXiv_34) 의존에서 Schaubroeck(2013)·Walumbwa ALQ 내재화된 도덕관점으로 보강(초록).",
+      "counter_evidence": "R12(Min&Jung 2022): 진정성 리더십 개념의 이론적 불명확성·측정 타당성 비판(184편 리뷰). 윤리·진정성 구인 지지는 있으나 판별/측정에는 미해결 위험.",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 37,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          117,
+          119,
+          120,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          135,
+          138,
+          139
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T14",
       "trait_name": "Learning Agile Leader",
-      "primary_theory": "Transformational Leadership",
-      "secondary_theory": null,
-      "evidence": "변화 촉진",
-      "differentiation": "변화 주도 행동의 구체적 관찰"
+      "primary_theory": "Adaptive Leadership",
+      "secondary_theory": "Digital Leadership",
+      "evidence": "실패 학습과 디지털·AI 환경 적응. 역량 추세에서 디지털·적응 부상.",
+      "citations": [
+        "R09",
+        "R07",
+        "R18"
+      ],
+      "evidence_strength": "medium",
+      "differentiation": "학습·적응 행동을 변화 수용 단위로 측정",
+      "validation_status": "partially_supported",
+      "validation_gap": "learning agility 구인은 존재하나 \"digital\" 주장 근거는 계량서지(R09)뿐; required 2개로 취약 | 2026-07-02: 디지털 리더십에 Cortellazzo(2019) 전문 근거 추가(페이지 인용 가능).",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 56,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          132,
+          137,
+          138,
+          139,
+          140,
+          142,
+          144,
+          145,
+          147,
+          149,
+          152,
+          155,
+          156,
+          158,
+          159
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T101",
       "trait_name": "Risk: Avoidant",
-      "primary_theory": "Passive Leadership",
+      "primary_theory": "Laissez-Faire / Passive Leadership",
       "secondary_theory": null,
-      "evidence": "책임 회피",
-      "differentiation": "회피 행동 패턴 측정"
+      "evidence": "자유방임·수동적 회피. MLQ 독립 2차요인 및 메타분석에서 효과성과 부적 관계.",
+      "citations": [
+        "R02",
+        "R01"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "회피·방임 행동 패턴 측정",
+      "validation_status": "construct_supported",
+      "validation_gap": "자유방임이 MLQ 독립요인으로 검증(R02), 라벨 정합. 우리 데이터 검증 없음",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 2,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          99,
+          102
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T102",
       "trait_name": "Risk: Authoritarian",
       "primary_theory": "Authoritarian Leadership",
-      "secondary_theory": null,
-      "evidence": "통제 중심",
-      "differentiation": "통제 행동의 구체적 관찰"
+      "secondary_theory": "Competing Values Framework (Hierarchy Orientation, 위계지향)",
+      "evidence": "통제·위계지향. R05에서 위계지향이 주요 행동 차원으로 측정됨(부하·상사 평가).",
+      "citations": [
+        "R05"
+      ],
+      "evidence_strength": "weak",
+      "differentiation": "통제 행동의 구체적 관찰 (ref data 직접 근거 부족, 원전 보강 필요)",
+      "validation_status": "partially_supported",
+      "validation_gap": "R05 위계지향으로 ref data 근거 확보(unverified→상향). 다만 위계지향≠권위주의 위험, 부정성 입증엔 원전 추가 필요",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 1,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          382
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T103",
       "trait_name": "Risk: Integrity Violation",
-      "primary_theory": "Authentic Leadership",
-      "secondary_theory": null,
-      "evidence": "언행 불일치",
-      "differentiation": "신뢰 파괴 행동 패턴 측정"
+      "primary_theory": "Authentic Leadership (inverse)",
+      "secondary_theory": "Ethical Leadership",
+      "evidence": "언행 불일치·진정성 위반. 서번트 척도의 authenticity 차원의 역(逆) 구인.",
+      "citations": [
+        "R03",
+        "R11",
+        "R12"
+      ],
+      "evidence_strength": "medium",
+      "differentiation": "신뢰 파괴 행동 패턴 측정",
+      "validation_status": "partially_supported",
+      "validation_gap": "진정성(역) 구인은 그럴듯하나 ref data 근거 간접적 | 2026-07-01: 진정성 리더십 검증척도(ALQ, R11)의 역구인으로 근거 보강. 단 R12의 측정 비판이 경계 모호성 위험 잔존.",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 21,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          132,
+          138,
+          139,
+          140,
+          142,
+          144,
+          145,
+          147,
+          149,
+          152,
+          155,
+          156,
+          158,
+          159,
+          161
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T104",
       "trait_name": "Risk: Narcissistic Leadership",
       "primary_theory": "Dark Triad Research",
       "secondary_theory": "Destructive Leadership",
-      "evidence": "Paulhus & Williams (2002), Rosenthal & Pittinsky (2006) - 자기 과대평가·착취",
-      "differentiation": "나르시시즘 학술 구인을 행동 단위 Micro Label로 분해"
+      "evidence": "자기 과대평가·착취. 다크 트라이어드 나르시시즘 구인.",
+      "citations": [
+        "X02",
+        "X03"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "나르시시즘 학술 구인을 행동 단위 Micro Label로 분해",
+      "validation_status": "construct_supported",
+      "validation_gap": "다크 트라이어드 나르시시즘 구인 견고하나 원전이 ref data 외부(X02,X03); 우리 라벨 미검증",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 1,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          200
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T105",
       "trait_name": "Risk: Manipulative Leadership",
-      "primary_theory": "Dark Triad Research",
+      "primary_theory": "Dark Triad Research (Machiavellianism)",
       "secondary_theory": "Abusive Supervision",
-      "evidence": "Paulhus & Williams (2002) Machiavellianism - 조작, 냉소, 허위 약속",
-      "differentiation": "마키아벨리즘 핵심 행동을 감정 압박·보상 조작 레이블로 운용화"
+      "evidence": "조작·냉소·허위 약속·감정 압박. 마키아벨리즘 핵심 행동.",
+      "citations": [
+        "X02"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "마키아벨리즘 핵심 행동을 감정 압박·보상 조작 레이블로 운용화",
+      "validation_status": "construct_supported",
+      "validation_gap": "마키아벨리즘 구인 견고하나 원전 ref data 외부(X02); 우리 라벨 미검증",
+      "corpus_evidence": {
+        "source": "papers/ collection (abstract/fulltext, theory-linked)",
+        "count": 1,
+        "level": "theory_linked_abstract",
+        "sample_paper_ids": [
+          200
+        ],
+        "note": "해당 trait의 이론에 부합하는 논문 수(내용 키워드 기반). 이론 지지 근거이며, 우리 라벨 operationalization의 검증은 아님(초록 다수)."
+      }
     },
     {
       "trait_id": "T106",
       "trait_name": "Risk: Volatile Leadership",
       "primary_theory": "Hogan Development Survey (HDS)",
       "secondary_theory": "Destructive Leadership",
-      "evidence": "Hogan & Hogan (2001) Excitable·Cautious derailers - 과잉 통제, 혁신 억제",
-      "differentiation": "HDS Moving Away/Against 행동을 혁신 억제·학습 파괴 레이블로 통합"
+      "evidence": "감정 기복·과잉 통제. HDS Excitable·Cautious 탈선요인.",
+      "citations": [
+        "X04"
+      ],
+      "evidence_strength": "strong",
+      "differentiation": "HDS Moving Away/Against 행동을 혁신 억제·학습 파괴 레이블로 통합",
+      "validation_status": "construct_supported",
+      "validation_gap": "HDS 탈선요인 견고하나 원전 ref data 외부(X04); 우리 라벨 미검증",
+      "corpus_evidence": {
+        "source": "papers/ collection",
+        "count": 0,
+        "level": "none",
+        "note": "papers/ 컬렉션에 이 trait 이론(예: 다크 트라이어드/HDS)에 부합하는 논문 없음 → 근거 공백 유지"
+      }
     }
   ],
   "theory_comparison": {
@@ -177,5 +876,24 @@
       "traditional": "단일 유형",
       "this_model": "복합 / Hybrid 허용"
     }
-  }
+  },
+  "validation_policy": {
+    "default": "unverified",
+    "principle": "Trait/Micro Label은 옳다고 전제하지 않는다. 논문 근거가 (1)구인 타당성과 (2)우리의 라벨 operationalization을 모두 뒷받침할 때만 상향한다.",
+    "empirical_gap": "현재 어떤 Trait도 우리 자체 데이터에 대한 경험적 검증(요인분석/신뢰도/평가자간 일치도)을 거치지 않았다. 따라서 최고 등급은 construct_supported(구인만 인정)이며 fully-verified는 없다.",
+    "status_vocab": {
+      "unverified": "직접근거 부족 또는 구인 자체 미확립",
+      "partially_supported": "구인은 인정되나 판별타당도/라벨-이론 불일치 등 결함",
+      "construct_supported": "학계가 구인을 인정하나 우리 라벨의 측정 타당성은 미검증",
+      "contradicted": "문헌과 충돌"
+    },
+    "ledger_ref": "docs/leadership_validation_ledger.md"
+  },
+  "validation_summary": {
+    "construct_supported": 12,
+    "unverified": 2,
+    "partially_supported": 4
+  },
+  "collection_note": "2026-07-01: papers/ 컬렉션(227편 초록 + 75 PDF) 유입. 갭 논문 R10–R17을 초록 수준으로 등록(거래적·윤리·진정성·서번트·임파워링). 전문(full-text) 대조는 미실시 → source_level=abstract_only. 반증: R12(진정성 비판). 부정/독성 리더십 직접 근거는 이 컬렉션에도 부재.",
+  "corpus_reference": "research/evidence_mapping/paper_corpus.json (258편 이론/trait 매핑)"
 }

@@ -1,0 +1,11 @@
+Title: Transformational and Transactional Leadership: A Meta-Analytic Test of Their Relative Validity.
+Authors: Timothy A. Judge, Ronald F. Piccolo
+Source: OpenAlex
+Date: 2004-10-01
+URL: https://doi.org/10.1037/0021-9010.89.5.755
+
+Abstract (EN):
+This study provided a comprehensive examination of the full range of transformational, transactional, and laissez-faire leadership. Results (based on 626 correlations from 87 sources) revealed an overall validity of .44 for transformational leadership, and this validity generalized over longitudinal and multisource designs. Contingent reward (.39) and laissez-faire (-.37) leadership had the next highest overall relations; management by exception (active and passive) was inconsistently related to the criteria. Surprisingly, there were several criteria for which contingent reward leadership had stronger relations than did transformational leadership. Furthermore, transformational leadership was strongly correlated with contingent reward (.80) and laissez-faire (-.65) leadership. Transformational and contingent reward leadership generally predicted criteria controlling for the other leadership dimensions, although transformational leadership failed to predict leader job performance.
+
+Abstract (KO):
+이 연구는 변혁적, 거래적, 자유방임적 리더십의 전체 범위에 대한 포괄적인 조사를 제공했습니다. 결과(87개 소스의 626개 상관 관계를 기반으로 함)는 변혁적 리더십에 대한 전반적인 타당도가 .44로 나타났으며 이 타당성은 종단적 및 다중 소스 설계에 걸쳐 일반화되었습니다. 조건부 보상(.39)과 자유방임(-.37) 리더십은 전체 관계에서 다음으로 가장 높았습니다. 예외에 의한 관리(능동 및 수동)가 기준과 일관되지 않게 관련되었습니다. 놀랍게도 조건부 보상 리더십이 변혁적 리더십보다 더 강한 관계를 갖는 몇 가지 기준이 있었습니다. 또한, 변혁적 리더십은 조건부 보상(.80) 및 자유방임(-.65) 리더십과 강한 상관관계가 있었습니다. 변혁적 리더십과 우발적 보상 리더십은 일반적으로 다른 리더십 차원을 통제하는 기준을 예측했지만, 변혁적 리더십은 리더의 직무 성과를 예측하지 못했습니다.

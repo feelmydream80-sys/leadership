@@ -1,0 +1,11 @@
+Title: Preparing Educational Leaders for AI Literacy Through Ethical, Purpose-Driven, and Culturally Responsive Leadership
+Authors: Rolla Elsaiary
+Source: Crossref
+Date: 2026-2-20
+URL: https://doi.org/10.4018/979-8-3373-4908-4.ch005
+
+Abstract (EN):
+As artificial intelligence (AI) becomes integrated into instruction, assessment, communication, and school operations, educational leadership must shift from technical adoption to purpose-driven and ethical practice. This chapter argues that effective AI leadership begins with knowing one's “why,” drawing on Simon Sinek's purpose-centered leadership, Brené Brown's focus on vulnerability and courage, and John C. Maxwell's influence-based model. AI literacy is defined as a holistic capacity that combines technical awareness with ethical judgment, cultural responsiveness, equity-focused thinking, and strategic clarity. The L.E.A.D. Framework (Learn, Evaluate, Apply, Develop) is presented as a guide for intentional AI leadership, supported by principles of psychological safety, engagement, and meaningful work. A dual-language, project-based learning example illustrates how human-centered leadership guides responsible AI use. The chapter concludes with practical tools and a research agenda for building ethical, equitable, and future-ready AI leadership capacity.
+
+Abstract (KO):
+인공 지능(AI)이 교육, 평가, 커뮤니케이션 및 학교 운영에 통합됨에 따라 교육 리더십은 기술 채택에서 목적 중심의 윤리적 실천으로 전환되어야 합니다. 이 장에서는 Simon Sinek의 목적 중심 리더십, Brené Brown의 취약성과 용기에 대한 초점, John C. Maxwell의 영향력 기반 모델을 활용하여 효과적인 AI 리더십이 자신의 '왜'를 아는 것에서 시작된다고 주장합니다. AI 리터러시는 기술적 인식과 윤리적 판단, 문화적 대응성, 형평 중심적 사고, 전략적 명확성을 결합하는 총체적 역량으로 정의됩니다. L.E.A.D. 프레임워크(학습, 평가, 적용, 개발)는 심리적 안전, 참여 및 의미 있는 작업의 원칙을 바탕으로 의도적인 AI 리더십을 위한 가이드로 제시됩니다. 이중 언어, 프로젝트 기반 학습 사례는 인간 중심의 리더십이 책임감 있는 AI 사용을 어떻게 안내하는지 보여줍니다. 이 장은 윤리적이고 공평하며 미래 지향적인 AI 리더십 역량을 구축하기 위한 실용적인 도구와 연구 의제로 마무리됩니다.

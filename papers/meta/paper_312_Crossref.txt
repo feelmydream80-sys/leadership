@@ -1,0 +1,17 @@
+Title: Tech-Driven Leadership: Transforming Industries and Economies with Quantum AI
+Authors: Murali Krishna Pasupuleti
+Source: Crossref
+Date: 2025-2-28
+URL: https://doi.org/10.62311/nesx/rb-978-81-985979-8-4
+
+Abstract (EN):
+Abstract:
+Tech-driven leadership is increasingly defined by the ability to steer organizations and public institutions through rapid technological change while preserving legitimacy, resilience, and shared prosperity. Quantum AI—understood as the principled integration of quantum computing methods, quantum-inspired optimization, and modern statistical and machine-learning pipelines—expands the decision space for complex economic and industrial systems where classical approaches face computational and uncertainty bottlenecks. Yet capability alone does not produce transformation: leaders must translate algorithms into accountable choices, align technology with organizational incentives, and manage risks that emerge from feedback loops, measurement limits, and contested public values. This book develops a coherent, research-led framework for deploying quantum AI as a leadership instrument for industry modernization and economic governance. It advances a disciplined approach to uncertainty, causal evaluation, trustworthy prediction, and scalable analytics operations, with particular attention to reproducibility and democratic contestability. The manuscript positions outputs such as value charters, operating-envelope statements, assurance cases, and recourse protocols as essential complements to technical models. Across global contexts—South Asia, Europe, Africa, and the Americas—the book provides decision tools and governance practices that enable innovation without overstating certainty, thereby supporting researchers, practitioners, and policymakers seeking durable, evidence-based transformation.
+Keywords
+quantum AI, tech-driven leadership, strategic transformation, uncertainty management, research design, causal inference, statistical modeling, predictive analytics, generalization, trustworthy AI, governance, MLOps, reproducibility, big data engineering, operating envelope, risk register, policy evaluation, industrial modernization, public value, organizational resilience
+
+Abstract (KO):
+개요:
+기술 중심 리더십은 합법성, 탄력성, 공유 번영을 유지하면서 급속한 기술 변화를 통해 조직과 공공 기관을 조종하는 능력으로 점점 더 정의되고 있습니다. 양자 컴퓨팅 방법, 양자 영감을 받은 최적화, 최신 통계 및 기계 학습 파이프라인의 원칙적인 통합으로 이해되는 Quantum AI는 고전적인 접근 방식이 계산 및 불확실성 병목 현상에 직면하는 복잡한 경제 및 산업 시스템의 의사 결정 공간을 확장합니다. 그러나 능력만으로는 변화가 이루어지지 않습니다. 리더는 알고리즘을 책임 있는 선택으로 전환하고, 기술을 조직의 인센티브에 맞추고, 피드백 루프, 측정 한계 및 논쟁의 여지가 있는 공공 가치에서 발생하는 위험을 관리해야 합니다. 이 책은 양자 AI를 산업 현대화 및 경제 거버넌스를 위한 리더십 도구로 배포하기 위한 일관되고 연구 주도적인 프레임워크를 개발합니다. 재현성과 민주적 경합 가능성에 특히 주의를 기울여 불확실성, 인과관계 평가, 신뢰할 수 있는 예측 및 확장 가능한 분석 작업에 대한 체계적인 접근 방식을 발전시킵니다. 원고에서는 가치 헌장, 운영 봉투 명세서, 보증 사례 및 상환 프로토콜과 같은 출력을 기술 모델의 필수 보완 요소로 지정합니다. 남아시아, 유럽, 아프리카, 아메리카 등 글로벌 맥락에서 이 책은 확실성을 과장하지 않으면서 혁신을 가능하게 하는 의사결정 도구와 거버넌스 관행을 제공함으로써 지속적이고 증거 기반의 변화를 추구하는 연구자, 실무자, 정책 입안자를 지원합니다.
+키워드
+양자 AI, 기술 중심 리더십, 전략적 혁신, 불확실성 관리, 연구 설계, 인과 추론, 통계 모델링, 예측 분석, 일반화, 신뢰할 수 있는 AI, 거버넌스, MLOps, 재현성, 빅 데이터 엔지니어링, 운영 범위, 위험 등록, 정책 평가, 산업 현대화, 공공 가치, 조직 탄력성

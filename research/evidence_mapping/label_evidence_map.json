@@ -1,0 +1,438 @@
+{
+  "generated_at": "2026-06-25",
+  "last_corrected": "2026-07-01",
+  "description": "Micro Label → Evidence Paper mapping. Each label cites the paper(s) and page/section that support its definition.",
+  "_update_2026_07_02": "코퍼스 연결: (1) papers/ 258편(초록227+전문31)을 내용기반 이론분류→trait 매핑, trait_theory_mapping.json에 corpus_evidence 통합(각 긍정 trait 23~64편). (2) 전문 근거 R18 Cortellazzo(2019) 디지털리더십 리뷰 등재 → M21-01 보강·M35-01·M37-01 신규(페이지 인용). (3) 라벨-코퍼스 키워드 후보는 research/evidence_mapping/label_corpus_candidates.json에 별도 관리(검증완료와 분리, unverified). (4) 07-03 후보 정독 승격: 초록/전문 검증으로 M16-01(이해관계자)·M24-02(권한위임)·M25-01(다문화)·M15-05(신뢰)·M47-01(공유리더십) 신규 + M43-01 보강. 오탐 후보(예: M03-03↔계량경제, M27-02↔환자안전)는 기각. 검증완료 라벨 41개(긍정 41.8%). R19 공유리더십척도·R21 문화지능은 전문(페이지) 근거.",
+  "_update_2026_07_01": "papers/ 컬렉션(227편) 유입 반영: (1) 부재 논문 의존 라벨 보강 — M06-01/M10-01(거래적)은 Bono&Judge2004·Pillai1999로, M28-01/M30-01/M33-01(윤리)은 Walumbwa2008 ALQ·Schaubroeck2013으로 대체 근거 추가. (2) 신규 라벨 3건(M32-01 자기성찰, M41-01 자기인식, M43-01 참여적 의사결정). 총 근거 보유 라벨 34개. 신규 근거는 모두 abstract 수준(전문 대조 미실시), 반증 R12(진정성 비판) 병기. 부정/독성 리더십 라벨은 여전히 근거 0건.",
+  "_correction_note": "2026-07-01 교정: van Dierendonck & Nuijten(2010) SLS의 최종 8차원은 standing back, forgiveness, courage, empowerment, accountability, authenticity, humility, stewardship임. 'Interpersonal Acceptance'는 최종 차원명이 아니며(개발 과정 개념으로, forgiveness 항목만 별도 요인으로 잔존, empathy 항목은 안정적 요인 미형성·탈락 — 원문 §Development). 이에 따라 M11-01/M12-01/M15-01/M15-03의 차원명·note를 실제 차원으로 교정하고 공감 라벨의 약한 지지를 명시함. P009–P012 인용은 원문이 저장소에 부재하여 대조 불가(unverified).",
+  "labels": {
+    "M01-01": {
+      "label_name": "명확한 비전 제시",
+      "macro": "L01",
+      "macro_name": "비전 제시 및 방향 설정",
+      "traits": ["T01", "T09"],
+      "theory": "transformational",
+      "evidence": [
+        {"paper_id": "P002", "paper": "BatistaFoguet_2021_MLQ_ConstructValidity.pdf", "pages": "1-3", "section": "MLQ Idealized Influence dimension", "note": "MLQ measures vision articulation as core of idealized influence (Bass & Avolio Full Range Model)"},
+        {"paper_id": "P009", "paper": "MacKenzie_2001_TransformationalTransactional_SalesPerformance.pdf", "pages": "1-2", "section": "Abstract & Introduction", "note": "Transformational leadership includes communicating compelling vision"}
+      ]
+    },
+    "M01-02": {
+      "label_name": "장기 방향 설정",
+      "macro": "L01",
+      "macro_name": "비전 제시 및 방향 설정",
+      "traits": ["T01", "T09"],
+      "theory": "transformational",
+      "evidence": [
+        {"paper_id": "P002", "paper": "BatistaFoguet_2021_MLQ_ConstructValidity.pdf", "pages": "2-4", "section": "Full Range Theory background", "note": "Inspirational motivation dimension includes future-oriented direction setting"}
+      ]
+    },
+    "M02-01": {
+      "label_name": "내재적 동기 자극",
+      "macro": "L02",
+      "macro_name": "동기부여 및 성장 지원",
+      "traits": ["T07", "T09"],
+      "theory": "transformational",
+      "evidence": [
+        {"paper_id": "P003", "paper": "vanDierendonck_2010_ServantLeadershipSurvey.pdf", "pages": "2-4", "section": "Empowerment dimension", "note": "Servant leadership empowerment dimension involves enabling self-motivation and autonomy"}
+      ]
+    },
+    "M03-01": {
+      "label_name": "창의적 사고 촉진",
+      "macro": "L03",
+      "macro_name": "지적 자극",
+      "traits": ["T03"],
+      "theory": "transformational",
+      "evidence": [
+        {"paper_id": "P002", "paper": "BatistaFoguet_2021_MLQ_ConstructValidity.pdf", "pages": "1-2", "section": "Intellectual Stimulation factor", "note": "MLQ Intellectual Stimulation measures leader's encouragement of creativity and innovation"},
+        {"paper_id": "P004", "paper": "RavetBrown_2024_EntrepreneurialTransformational_Review.pdf", "pages": "3-5", "section": "Intellectual stimulation in TL vs EL", "note": "Intellectual stimulation overlaps with entrepreneurial opportunity recognition"}
+      ]
+    },
+    "M10-01": {
+      "label_name": "신속한 실행",
+      "macro": "L10",
+      "macro_name": "실행력 및 완수",
+      "traits": ["T01", "T06"],
+      "theory": "transactional",
+      "evidence": [
+        {"paper_id": "P009", "paper": "MacKenzie_2001_TransformationalTransactional_SalesPerformance.pdf", "pages": "3-5", "section": "Transactional leadership measures", "note": "Contingent reward leadership involves clear execution expectations and follow-through (주의: P009 원문 부재)"},
+        {"paper_id": "R14", "paper": "Pillai et al. 1999 SEM (papers/meta/paper_108)", "pages": "abstract", "section": "Transactional leadership → procedural justice/trust", "note": "2026-07-01 보강: 거래적 리더십의 실행/기대 명확화가 절차공정성·신뢰·OCB로 이어짐을 2표본 SEM(N=192,155)으로 확인(초록 수준)"}
+      ]
+    },
+    "M11-01": {
+      "label_name": "적극적 경청",
+      "macro": "L11",
+      "macro_name": "적극적 경청",
+      "traits": ["T02", "T11"],
+      "theory": "servant",
+      "evidence": [
+        {"paper_id": "P003", "paper": "vanDierendonck_2010_ServantLeadershipSurvey.pdf", "pages": "4-6", "section": "Empowerment dimension", "note": "경고(느슨한 매핑): SLS에 '경청' 별도 차원 없음. 경청은 empowerment(구성원 자기주도·발언 촉진)의 행동 요소로 간접 연결됨"},
+        {"paper_id": "P005", "paper": "Emam_2024_NursingLeadership.pdf", "pages": "2-3", "section": "Introduction", "note": "Communication and empathy critical in healthcare leadership context"}
+      ]
+    },
+    "M12-01": {
+      "label_name": "공감 표현",
+      "macro": "L12",
+      "macro_name": "공감 및 감정적 배려",
+      "traits": ["T11"],
+      "theory": "servant",
+      "evidence": [
+        {"paper_id": "P003", "paper": "vanDierendonck_2010_ServantLeadershipSurvey.pdf", "pages": "2-4", "section": "Forgiveness dimension (구 interpersonal acceptance)", "note": "약한 지지·반증 주의: SLS 개발 시 empathy 항목은 안정적 요인을 형성하지 못해 탈락하고 forgiveness 항목만 별도 차원으로 남음. 따라서 '공감 표현' 라벨에 대한 SLS 척도의 직접 지지는 약함(용서/수용 측면만 부분 근거)"},
+        {"paper_id": "P005", "paper": "Emam_2024_NursingLeadership.pdf", "pages": "2-3", "section": "Introduction", "note": "Empathy in patient-centered care and staff support (맥락 근거)"}
+      ]
+    },
+    "M15-01": {
+      "label_name": "심리적 안전감 조성",
+      "macro": "L15",
+      "macro_name": "심리적 안전감 조성",
+      "traits": ["T02", "T11"],
+      "theory": "servant",
+      "evidence": [
+        {"paper_id": "P003", "paper": "vanDierendonck_2010_ServantLeadershipSurvey.pdf", "pages": "3-5", "section": "Standing Back & Humility dimensions", "note": "Servant leadership creates safe environment through standing back and humility (교정: SLS에 'interpersonal acceptance' 최종 차원 없음)"}
+      ]
+    },
+    "M21-01": {
+      "label_name": "지속적 학습",
+      "macro": "L21",
+      "macro_name": "학습 및 디지털 민첩성",
+      "traits": ["T14"],
+      "theory": "digital",
+      "evidence": [
+        {"paper_id": "P006", "paper": "Azhar_2026_LeadershipCompetencies_Bibliometric.pdf", "pages": "2-5", "section": "Literature Review & Results", "note": "Continuous learning identified as critical leadership competency for VUCA environment"},
+        {"paper_id": "R18", "paper": "Cortellazzo et al. 2019 (papers/extracted/paper_331_OpenAlex.txt)", "pages": "PAGE 1, 3", "section": "Leader's skills in the digital age", "note": "2026-07-02 전문 근거: 디지털 시대 리더의 학습·역량이 핵심 행위자로 강조됨(리뷰). 페이지 단위 인용 가능"}
+      ]
+    },
+    "M35-01": {
+      "label_name": "디지털 도구 활용",
+      "macro": "L35",
+      "macro_name": "디지털 도구 활용 및 자동화",
+      "traits": ["T05", "T14"],
+      "theory": "digital",
+      "evidence": [
+        {"paper_id": "R18", "paper": "Cortellazzo et al. 2019 (papers/extracted/paper_331_OpenAlex.txt)", "pages": "PAGE 1-2", "section": "Digital tools; e-leadership definition", "note": "2026-07-02 전문 근거: e-leadership은 '기술로 매개된 사회적 영향 과정'(Avolio et al. 2000)으로 정의되며, 디지털 도구가 리더십의 핵심 구성요소로 다뤄짐"}
+      ]
+    },
+    "M37-01": {
+      "label_name": "AI/기술 기반 혁신",
+      "macro": "L37",
+      "macro_name": "AI 및 기술 기반 혁신",
+      "traits": ["T03", "T14"],
+      "theory": "digital",
+      "evidence": [
+        {"paper_id": "R18", "paper": "Cortellazzo et al. 2019 (papers/extracted/paper_331_OpenAlex.txt)", "pages": "PAGE 3, 7", "section": "Characteristics of digital leaders; virtual teams", "note": "2026-07-02 전문 근거: 디지털 리더의 역할·행동, 가상팀 성과에 대한 리더십 스타일 영향(리뷰). 기술 기반 리더십 혁신의 근거"}
+      ]
+    },
+    "M23-01": {
+      "label_name": "혁신 기회 탐색",
+      "macro": "L23",
+      "macro_name": "혁신 기회 탐색",
+      "traits": ["T03"],
+      "theory": "entrepreneurial",
+      "evidence": [
+        {"paper_id": "P004", "paper": "RavetBrown_2024_EntrepreneurialTransformational_Review.pdf", "pages": "3-6", "section": "EL as distinct construct", "note": "Opportunity recognition and innovation-seeking as core EL behaviors"}
+      ]
+    },
+    "M28-01": {
+      "label_name": "투명한 정보 공개",
+      "macro": "L28",
+      "macro_name": "투명한 소통",
+      "traits": ["T13"],
+      "theory": "ethical",
+      "evidence": [
+        {"paper_id": "P011", "paper": "paper_34_arXiv_EthicalLeadership_AI.pdf", "pages": "1-3", "section": "Abstract & Framework", "note": "Transparency and accountability as key ethical leadership principles in AI era (주의: P011 원문 부재)"},
+        {"paper_id": "R11", "paper": "Walumbwa et al. 2008 ALQ (papers/meta/paper_149)", "pages": "abstract", "section": "Relational transparency dimension", "note": "2026-07-01 보강: 부재 P011 대체. 진정성 리더십 검증척도 ALQ의 'relational transparency' 차원(개방적·진실한 정보 공유)을 5개국 표본 CFA로 확인"}
+      ]
+    },
+    "M30-01": {
+      "label_name": "언행 일치",
+      "macro": "L30",
+      "macro_name": "언행 일치 및 일관성",
+      "traits": ["T13"],
+      "theory": "ethical",
+      "evidence": [
+        {"paper_id": "P011", "paper": "paper_34_arXiv_EthicalLeadership_AI.pdf", "pages": "2-4", "section": "Ethical framework dimensions", "note": "Integrity and consistency in ethical decision-making (주의: P011 원문 부재)"},
+        {"paper_id": "R11", "paper": "Walumbwa et al. 2008 ALQ (papers/meta/paper_149)", "pages": "abstract", "section": "Internalized moral perspective dimension", "note": "2026-07-01 보강: 언행일치는 ALQ의 'internalized moral perspective'(내적 도덕기준에 따른 자기규제)와 정합. 단 R12(2022) 진정성 척도 측정타당성 비판 병기"},
+        {"paper_id": "R13", "paper": "Schaubroeck et al. 2013 Ethical Leadership (papers/meta/paper_126)", "pages": "abstract", "section": "Ethical leadership construct", "note": "2026-07-01 보강: 윤리적 리더십의 확립된 측정치·구인으로 언행일치(integrity) 지지"}
+      ]
+    },
+    "M33-01": {
+      "label_name": "도덕적 원칙 준수",
+      "macro": "L33",
+      "macro_name": "도덕적 용기",
+      "traits": ["T13"],
+      "theory": "ethical",
+      "evidence": [
+        {"paper_id": "P011", "paper": "paper_34_arXiv_EthicalLeadership_AI.pdf", "pages": "1-3", "section": "Abstract & Introduction", "note": "Moral courage in facing ethical challenges of new technology (주의: P011 원문 부재)"},
+        {"paper_id": "R13", "paper": "Schaubroeck et al. 2013 Ethical Leadership (papers/meta/paper_126)", "pages": "abstract", "section": "Ethical leadership as psychological construct", "note": "2026-07-01 보강: 부재 P011 대체. 확립된 측정치를 갖춘 윤리적 리더십 구인으로 도덕원칙 준수 지지"}
+      ]
+    },
+    "M34-01": {
+      "label_name": "데이터 기반 의사결정",
+      "macro": "L34",
+      "macro_name": "데이터 기반 의사결정",
+      "traits": ["T05"],
+      "theory": "digital",
+      "evidence": [
+        {"paper_id": "P006", "paper": "Azhar_2026_LeadershipCompetencies_Bibliometric.pdf", "pages": "3-5", "section": "Results", "note": "Data-driven decision-making identified as emerging leadership competency"}
+      ]
+    },
+    "M36-01": {
+      "label_name": "전략적 사고",
+      "macro": "L36",
+      "macro_name": "전략적 리더십",
+      "traits": ["T01", "T12"],
+      "theory": "strategic",
+      "evidence": [
+        {"paper_id": "P007", "paper": "Joo_2020_CVF_LeadershipComplexity.pdf", "pages": "95-100", "section": "Introduction & CVF framework", "note": "Competing Values Framework identifies strategic thinking as key leadership role in innovation and broker quadrants"}
+      ]
+    },
+    "M44-01": {
+      "label_name": "전략적 영향력 행사",
+      "macro": "L44",
+      "macro_name": "전략적 영향",
+      "traits": ["T01"],
+      "theory": "strategic",
+      "evidence": [
+        {"paper_id": "P007", "paper": "Joo_2020_CVF_LeadershipComplexity.pdf", "pages": "100-105", "section": "Behavioral complexity analysis", "note": "Strategic influence and stakeholder alignment in CVF's external focus quadrants"}
+      ]
+    },
+    "M46-01": {
+      "label_name": "기업가적 기회 포착",
+      "macro": "L46",
+      "macro_name": "기업가적 리더십",
+      "traits": ["T03"],
+      "theory": "entrepreneurial",
+      "evidence": [
+        {"paper_id": "P004", "paper": "RavetBrown_2024_EntrepreneurialTransformational_Review.pdf", "pages": "5-8", "section": "EL behavioral dimensions", "note": "Opportunity recognition and resource leveraging as distinct EL behaviors from TL"}
+      ]
+    },
+    "M06-01": {
+      "label_name": "목표 설정 및 기대치 명확화",
+      "macro": "L06",
+      "macro_name": "목표 설정 및 기대치 명확화",
+      "traits": ["T01", "T06"],
+      "theory": "transactional",
+      "evidence": [
+        {"paper_id": "P009", "paper": "MacKenzie_2001_TransformationalTransactional_SalesPerformance.pdf", "pages": "3-5", "section": "Transactional leadership measures", "note": "Contingent reward leadership involves setting clear goals, expectations, and performance criteria (주의: P009 원문 부재)"},
+        {"paper_id": "R10", "paper": "Bono&Judge 2004 메타분석 (papers/meta/paper_102)", "pages": "abstract", "section": "Contingent reward dimension", "note": "2026-07-01 보강: 부재 P009 대체. 거래적 리더십의 contingent reward 차원(명확한 목표·기대·성과기준)을 26개 연구·384상관 메타분석으로 확인(초록 수준)"}
+      ]
+    },
+    "M19-01": {
+      "label_name": "신속한 의사결정",
+      "macro": "L19",
+      "macro_name": "신속한 의사결정",
+      "traits": ["T01", "T04", "T06"],
+      "theory": "adaptive",
+      "evidence": [
+        {"paper_id": "P010", "paper": "paper_32_arXiv_TL_Change.pdf", "pages": "1-2", "section": "Transformational leadership and change", "note": "Rapid decision-making as key crisis leadership behavior in construction industry change contexts"},
+        {"paper_id": "P006", "paper": "Azhar_2026_LeadershipCompetencies_Bibliometric.pdf", "pages": "3-4", "section": "Results", "note": "Quick decision-making identified as adaptive leadership competency in VUCA environments"}
+      ]
+    },
+    "M05-02": {
+      "label_name": "변화 실행 장려",
+      "macro": "L05",
+      "macro_name": "변화 주도",
+      "traits": ["T03", "T04"],
+      "theory": "transformational",
+      "evidence": [
+        {"paper_id": "P010", "paper": "paper_32_arXiv_TL_Change.pdf", "pages": "1-2", "section": "Abstract", "note": "Transformational leadership influences team members' readiness for change, encouraging implementation of new approaches"}
+      ]
+    },
+    "M20-01": {
+      "label_name": "위기 대응 및 문제 해결",
+      "macro": "L20",
+      "macro_name": "위기 대응 및 문제 해결",
+      "traits": ["T04"],
+      "theory": "adaptive",
+      "evidence": [
+        {"paper_id": "P010", "paper": "paper_32_arXiv_TL_Change.pdf", "pages": "1-2", "section": "Introduction", "note": "Crisis response and problem-solving as core adaptive leadership behaviors in challenging environments"}
+      ]
+    },
+    "M17-01": {
+      "label_name": "상황적 유연성",
+      "macro": "L17",
+      "macro_name": "상황적 유연성",
+      "traits": ["T12"],
+      "theory": "adaptive",
+      "evidence": [
+        {"paper_id": "P006", "paper": "Azhar_2026_LeadershipCompetencies_Bibliometric.pdf", "pages": "2-4", "section": "Literature Review", "note": "Situational flexibility identified as critical leadership competency for adapting to VUCA environments"},
+        {"paper_id": "P007", "paper": "Joo_2020_CVF_LeadershipComplexity.pdf", "pages": "95-100", "section": "Introduction", "note": "Behavioral complexity theory requires leaders to flexibly switch between competing leadership roles"}
+      ]
+    },
+    "M27-01": {
+      "label_name": "전략적 자원 배분",
+      "macro": "L27",
+      "macro_name": "전략적 자원 배분",
+      "traits": ["T12"],
+      "theory": "strategic",
+      "evidence": [
+        {"paper_id": "P007", "paper": "Joo_2020_CVF_LeadershipComplexity.pdf", "pages": "100-105", "section": "CVF framework application", "note": "Strategic resource allocation as key leadership behavior in CVF's Producer and Director roles"}
+      ]
+    },
+    "M02-02": {
+      "label_name": "성장 기회 제공",
+      "macro": "L02",
+      "macro_name": "동기부여 및 성장 지원",
+      "traits": ["T07"],
+      "theory": "servant",
+      "evidence": [
+        {"paper_id": "P003", "paper": "vanDierendonck_2010_ServantLeadershipSurvey.pdf", "pages": "2-4", "section": "Empowerment dimension", "note": "Servant leadership's empowerment dimension includes providing growth opportunities and enabling follower development"},
+        {"paper_id": "P005", "paper": "Emam_2024_NursingLeadership.pdf", "pages": "2-3", "section": "Introduction", "note": "Leadership development programs in nursing focus on providing growth opportunities for staff"}
+      ]
+    },
+    "M39-01": {
+      "label_name": "인재 육성",
+      "macro": "L39",
+      "macro_name": "인재 육성",
+      "traits": ["T07"],
+      "theory": "context_specific",
+      "evidence": [
+        {"paper_id": "P012", "paper": "paper_33_arXiv_Delegation.pdf", "pages": "1-2", "section": "Abstract", "note": "Effective delegation and talent development as critical competencies in software management leadership"}
+      ]
+    },
+    "M14-01": {
+      "label_name": "타인 우선 행동",
+      "macro": "L14",
+      "macro_name": "이타적 행동 및 희생",
+      "traits": ["T11"],
+      "theory": "servant",
+      "evidence": [
+        {"paper_id": "P003", "paper": "vanDierendonck_2010_ServantLeadershipSurvey.pdf", "pages": "3-5", "section": "Standing Back & Humility dimensions", "note": "Putting others first is core to servant leadership's Standing Back and Humility dimensions"}
+      ]
+    },
+    "M22-01": {
+      "label_name": "실패 수용 및 학습",
+      "macro": "L22",
+      "macro_name": "실패 수용 및 회복",
+      "traits": ["T14"],
+      "theory": "adaptive",
+      "evidence": [
+        {"paper_id": "P006", "paper": "Azhar_2026_LeadershipCompetencies_Bibliometric.pdf", "pages": "3-5", "section": "Results", "note": "Learning from failure and resilience identified as critical adaptive competencies in bibliometric analysis"}
+      ]
+    },
+    "M26-01": {
+      "label_name": "실험 및 도전 장려",
+      "macro": "L26",
+      "macro_name": "실험 및 도전 장려",
+      "traits": ["T03", "T14"],
+      "theory": "entrepreneurial",
+      "evidence": [
+        {"paper_id": "P004", "paper": "RavetBrown_2024_EntrepreneurialTransformational_Review.pdf", "pages": "4-7", "section": "EL distinctiveness", "note": "Encouraging experimentation and risk-taking as distinguishing features of entrepreneurial leadership"}
+      ]
+    },
+    "M15-03": {
+      "label_name": "적극적 의견 청취",
+      "macro": "L15",
+      "macro_name": "심리적 안전감 조성",
+      "traits": ["T02"],
+      "theory": "servant",
+      "evidence": [
+        {"paper_id": "P003", "paper": "vanDierendonck_2010_ServantLeadershipSurvey.pdf", "pages": "4-6", "section": "Empowerment dimension", "note": "Seeking input and enabling voice map to SLS empowerment dimension (교정: 'interpersonal acceptance'는 SLS 최종 차원 아님)"}
+      ]
+    },
+    "M18-02": {
+      "label_name": "데이터 기반 문제 진단",
+      "macro": "L18",
+      "macro_name": "불확실성 속 안정감 제공",
+      "traits": ["T05"],
+      "theory": "digital",
+      "evidence": [
+        {"paper_id": "P006", "paper": "Azhar_2026_LeadershipCompetencies_Bibliometric.pdf", "pages": "3-5", "section": "Results", "note": "Data-driven diagnosis and analytical problem-solving identified as emerging leadership competency"}
+      ]
+    },
+    "M04-01": {
+      "label_name": "카리스마적 영감",
+      "macro": "L04",
+      "macro_name": "카리스마적 영향력",
+      "traits": ["T09"],
+      "theory": "transformational",
+      "evidence": [
+        {"paper_id": "P002", "paper": "BatistaFoguet_2021_MLQ_ConstructValidity.pdf", "pages": "1-3", "section": "MLQ factor structure", "note": "Idealized Influence (charisma) measured as core transformational leadership dimension with significant follower trust effects"}
+      ]
+    },
+    "M32-01": {
+      "label_name": "자기성찰",
+      "macro": "L32",
+      "macro_name": "자기인식 및 자기성찰",
+      "traits": ["T13", "T14"],
+      "theory": "authentic",
+      "evidence": [
+        {"paper_id": "R11", "paper": "Walumbwa et al. 2008 ALQ (papers/meta/paper_149)", "pages": "abstract", "section": "Self-awareness & Balanced processing dimensions", "note": "2026-07-01 신규: ALQ의 self-awareness(자기 강점/약점/가치 이해)·balanced processing(정보의 객관적 검토) 차원이 자기성찰을 검증된 척도로 뒷받침. 반증: R12(진정성 척도 측정타당성 비판)"}
+      ]
+    },
+    "M41-01": {
+      "label_name": "자기인식",
+      "macro": "L41",
+      "macro_name": "자기인식",
+      "traits": ["T13", "T14"],
+      "theory": "authentic",
+      "evidence": [
+        {"paper_id": "R11", "paper": "Walumbwa et al. 2008 ALQ (papers/meta/paper_149)", "pages": "abstract", "section": "Self-awareness dimension", "note": "2026-07-01 신규: 진정성 리더십 4차원 중 self-awareness가 예측타당도를 보임(윤리·변혁 리더십 통제 후에도). 단 abstract 수준, 우리 라벨과 문항 대응 미확인"},
+        {"paper_id": "R06", "paper": "Das_2024_LeadershipDevelopment_360Feedback.pdf", "pages": "1-3", "section": "360-degree feedback", "note": "360도 다면평가가 자기인식 개발의 도구로 작용"}
+      ]
+    },
+    "M43-01": {
+      "label_name": "참여적 의사결정",
+      "macro": "L43",
+      "macro_name": "참여와 조정",
+      "traits": ["T02", "T47"],
+      "theory": "shared_empowering",
+      "evidence": [
+        {"paper_id": "R17", "paper": "Kang et al. 2023 (papers/meta/paper_263)", "pages": "abstract", "section": "Empowering leadership → innovative behavior", "note": "2026-07-01 신규: 임파워링 리더십이 창의적 역할정체성을 매개로 구성원 혁신행동에 직·간접 효과(실증). 참여·위임 라벨의 근거. 단 abstract 수준"},
+        {"paper_id": "R19", "paper": "주영경·김명소 2022 공유리더십 척도 (papers/extracted/paper_342_Crossref.txt)", "pages": "PAGE 1-2", "section": "공유 리더십 4요인: 수평적 업무 상호작용", "note": "2026-07-03 전문 근거: 내용타당도 검증된 공유 리더십 척도. '수평적 업무 상호작용'·'자발적 업무수행' 요인이 참여적 의사결정을 뒷받침"}
+      ]
+    },
+    "M47-01": {
+      "label_name": "공유 리더십",
+      "macro": "L47",
+      "macro_name": "분산 리더십",
+      "traits": ["T02"],
+      "theory": "shared_empowering",
+      "evidence": [
+        {"paper_id": "R19", "paper": "주영경·김명소 2022 공유리더십 척도 (papers/extracted/paper_342_Crossref.txt)", "pages": "PAGE 1-2", "section": "공유 리더십 조작적 정의·4요인", "note": "2026-07-03 전문 근거(직접): 팀 구성원이 제공하는 리더십으로 공유 리더십을 정의, 4요인(공동 리더 정체성/지지와 배려/자발적 업무수행/수평적 상호작용) 28문항 내용타당도 검증"}
+      ]
+    },
+    "M24-02": {
+      "label_name": "권한 위임",
+      "macro": "L24",
+      "macro_name": "운영 안정성 유지",
+      "traits": ["T02", "T07"],
+      "theory": "shared_empowering",
+      "evidence": [
+        {"paper_id": "R17", "paper": "Kang et al. 2023 (papers/meta/paper_263)", "pages": "abstract", "section": "Empowering leadership", "note": "2026-07-03: 임파워링 리더십(권한 위임)이 구성원 혁신행동 촉진(실증)"},
+        {"paper_id": "P300", "paper": "최은수 2006 성인교육자 리더십 (papers/meta/paper_300)", "pages": "abstract", "section": "리더십 자질 6유형", "note": "2026-07-03: '권한 위임 리더십'을 리더의 핵심 자질 6유형 중 하나로 제시"}
+      ]
+    },
+    "M25-01": {
+      "label_name": "글로벌/다문화 리더십",
+      "macro": "L25",
+      "macro_name": "글로벌 리더십",
+      "traits": ["T12"],
+      "theory": "context_specific",
+      "evidence": [
+        {"paper_id": "R21", "paper": "Nosratabadi et al. Leader Cultural Intelligence (papers/extracted/paper_235_arXiv.txt)", "pages": "PAGE 1", "section": "Leader Cultural Intelligence → Organizational Performance", "note": "2026-07-03 전문 근거: 리더의 문화지능(cultural intelligence)이 조직성과와 연결됨을 실증. 다문화·글로벌 리더십 라벨의 직접 근거"}
+      ]
+    },
+    "M16-01": {
+      "label_name": "이해관계자 관계 구축",
+      "macro": "L16",
+      "macro_name": "이해관계자 관리",
+      "traits": ["T02"],
+      "theory": "servant",
+      "evidence": [
+        {"paper_id": "R20", "paper": "Hartnell & Lemoine 2025 Servant Leadership (papers/meta/paper_169)", "pages": "abstract", "section": "Multiple stakeholders definition", "note": "2026-07-03: 서번트 리더십은 employees·teams·organizations·shareholders·customers·community 등 '다수 이해관계자'의 웰빙 향상에 헌신 → 이해관계자 관계 구축 근거"}
+      ]
+    },
+    "M15-05": {
+      "label_name": "신뢰 형성",
+      "macro": "L15",
+      "macro_name": "심리적 안전감 조성",
+      "traits": ["T02", "T11"],
+      "theory": "servant",
+      "evidence": [
+        {"paper_id": "R14", "paper": "Pillai et al. 1999 (papers/meta/paper_108)", "pages": "abstract", "section": "Trust as mediator", "note": "2026-07-03: 변혁·거래적 리더십이 절차공정성을 거쳐 '신뢰'로 이어짐을 2표본 SEM으로 검증"},
+        {"paper_id": "R22", "paper": "Pasupuleti 2024 (papers/meta/paper_240)", "pages": "abstract", "section": "Integrity → trust", "note": "2026-07-03: 진실성·투명성·윤리적 행동이 '신뢰 증진'과 구성원 몰입으로 이어짐"}
+      ]
+    }
+  }
+}

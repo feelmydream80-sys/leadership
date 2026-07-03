@@ -1,0 +1,1267 @@
+### SOURCE: paper_308_arXiv.pdf
+### PAPER_ID: 308
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 11
+
+
+===== PAGE 1 =====
+ADVISER: AI-Driven Vaccination Intervention Optimiser for Increasing Vaccine
+Uptake in Nigeria
+Vineet Nair1 , Kritika Prakash1 , Michael Wilbur2 , Aparna Taneja1 ,
+Corinne Namblard3 , Oyindamola Adeyemo3 , Abhishek Dubey2 , Abiodun Adereni3 ,
+Milind Tambe1 , Ayan Mukhopadhyay2∗
+1Google Research, India
+2Vanderbilt University, USA
+3HelpMum, Nigeria
+{vineetn, kritikaprakash, aparnataneja, milindtambe}@google.com,
+{michael.p.wilbur, abhishek.dubey, ayan.mukhopadhyay}@vanderbilt.edu,
+corinne.namblard@gmail.com, {oyindamola, biodun}@helpmum.org
+Abstract
+More than 5 million children under ﬁve years die
+from largely preventable or treatable medical con-
+ditions every year, with an overwhelmingly large
+proportion of deaths occurring in under-developed
+countries with low vaccination uptake.
+One of
+the United Nations’ sustainable development goals
+(SDG 3) aims to end preventable deaths of new-
+borns and children under ﬁve years of age.
+We
+focus on Nigeria, where the rate of infant mortal-
+ity is appalling. We collaborate with HelpMum, a
+large non-proﬁt organization in Nigeria to design
+and optimize the allocation of heterogeneous health
+interventions under uncertainty to increase vacci-
+nation uptake, the ﬁrst such collaboration in Nige-
+ria. Our framework, ADVISER: AI-Driven Vacci-
+nation Intervention Optimiser, is based on an inte-
+ger linear program that seeks to maximize the cu-
+mulative probability of successful vaccination. Our
+optimization formulation is intractable in practice.
+We present a heuristic approach that enables us to
+solve the problem for real-world use-cases. We also
+present theoretical bounds for the heuristic method.
+Finally, we show that the proposed approach out-
+performs baseline methods in terms of vaccination
+uptake through experimental evaluation. HelpMum
+is currently planning a pilot program based on our
+approach to be deployed in the largest city of Nige-
+ria, which would be the ﬁrst deployment of an AI-
+driven vaccination uptake program in the country
+and hopefully, pave the way for other data-driven
+programs to improve health outcomes in Nigeria.
+1
+Introduction
+The state of maternal and infant health in Nigeria is appalling.
+The estimated maternal mortality rate in Nigeria is about 814
+∗Corresponding Author
+per 100,000 live births; in comparison, Poland and Italy’s ma-
+ternal mortality rate is 2 deaths per 100,000 live births. In
+fact, Nigeria alone accounts for more than 10% of mater-
+nal deaths globally, while only accounting for 2.6% of the
+world’s population [World Health Organization, 2014]. In-
+fant deaths in the country are also shockingly high—Nigeria
+loses 2300 children under ﬁve years of age daily [Okwuwa
+and Adejo, 2020]. The sustainable development goals (SDG
+1 and SDG 3) aim to mobilize resources to the developing
+world to address inequity due to poverty and end preventable
+deaths of infants completely [United Nations, 2020]. How-
+ever, we are far from achieving these goals.
+In collaboration with HelpMum, a large non-proﬁt organi-
+zation based in Nigeria, we identify three signiﬁcant chal-
+lenges contributing to high mortality rates among mothers
+and infants. First, with an immunization rate of 13% for chil-
+dren between 12-23 months, Nigeria has the lowest vaccina-
+tion rate in Africa. While vaccination is available for free in
+Nigeria, lack of awareness about the importance of vaccina-
+tion is one of the major concerns for the low uptake of vac-
+cination. Second, HelpMum identiﬁed that a primary driver
+for mothers not taking their children for vaccination is the
+high transportation cost relative to their income; we found
+that 46% of families analyzed as a part of this study earned
+less than $25 per month. Third, although several organiza-
+tions, such as HelpMum, strive to design interventions for at-
+risk mothers and children, there is a gross imbalance between
+resource availability and demand for healthcare services.
+HelpMum works closely with several local and state gov-
+ernments in Nigeria. Even though it uses a vaccination track-
+ing system to remind mothers of upcoming vaccination, it has
+proven to be ineffective in practice. As part of this project,
+four new interventions were designed to increase vaccina-
+tion uptake in Nigeria.
+HelpMum (including its advisory
+board) and domain experts guided the design of each inter-
+vention. The interventions (described later in the paper) are
+geared towards increasing the awareness of vaccination, re-
+minding mothers about upcoming vaccinations for their chil-
+dren, providing accessibility to vaccination centers by operat-
+ing a pick-up and drop-off service, and conducting a door-to-
+arXiv:2204.13663v3  [cs.AI]  5 Jul 2022
+
+===== PAGE 2 =====
+(a)
+(b)
+Figure 1: (a) HelpMum reaches out to low-income neighborhoods to distribute clean birth kits and increase awareness of getting vaccinated.
+(b) A high-level overview of ADVISER: AI Driven Vaccination Intervention OptimiSER. We formulate the allocation of heterogeneous
+resources as an integer linear program (ILP). We use a greedy pruning strategy to make the ILP tractable and use guided local search to
+generate promising vehicle routes.
+door vaccination delivery program. However, matching the
+interventions to speciﬁc individuals presents a challenge—
+there exist far too many eligible recipients for the interven-
+tions as compared to the available resources.
+Indeed, the
+state in Nigeria where HelpMum is based has approximately
+1.7 million children under ﬁve years of age.
+In contrast,
+HelpMum has only 4 buses at their disposal for picking up
+mothers, and only a limited number of healthcare workers are
+available for conducting door-to-door interventions. More-
+over, the interventions do not necessarily guarantee success-
+ful vaccination. For example, HelpMum has observed that,
+at times, parents fail to bring their children for immuniza-
+tion despite repeated phone calls about upcoming vaccination
+schedules. These domain-speciﬁc challenges require that the
+allocation of limited resources is optimized under uncertainty
+of the outcomes.
+We present a principled framework for optimizing the
+allocation of heterogeneous health interventions under un-
+certainty.
+Our approach, named ADVISER: AI Driven
+Vaccination Intervention OptimiSER, can guide non-proﬁt
+organizations and government agencies to increase vaccina-
+tion uptake in resource-constrained geographies, that are cru-
+cial to achieving key goals outlines in SDG 1 and SDG 3 of
+the United Nations [United Nations, 2020]. Our approach is
+based on formulating an integer linear program (ILP) to max-
+imize the cumulative probability of success of heterogeneous
+interventions under uncertainty. However, in our setting, it is
+infeasible to solve the ILP directly (even if the inputs were
+generated). In this paper, we tackle the challenges in a prin-
+cipled manner. Speciﬁcally, we make the following contri-
+butions: 1) We present a formulation for optimizing the al-
+location of heterogeneous health resources under uncertainty.
+2) We present a heuristic approach to prune the decision space
+of the ILP by leveraging the structure of the problem. We also
+present a theoretical bound on the objective value attainable
+by the heuristic with respect to the optimal solution to the ILP.
+3) We show how guided local search can be used to gener-
+ate promising vehicle routes based on the probability of spe-
+ciﬁc individuals requiring the pickup service for vaccination.
+4) We estimate the success of interventions through historical
+data and community surveys. 5) We test our algorithmic ap-
+proach using the data collected by HelpMum. Experimental
+results demonstrate that the proposed approach signiﬁcantly
+outperforms baseline approaches. 6) Finally, HelpMum is
+currently developing a pilot plan to deploy ADVISER in the
+largest city in West Africa. To the best of our knowledge, our
+solution would be the ﬁrst AI-enabled program for increasing
+vaccination uptake in Nigeria.
+2
+Related Work
+We discuss prior work related to combinatorial resource allo-
+cation under uncertainty for achieving health outcomes. The
+optimization of resources can be either done in a single-
+shot manner or by considering the sequential nature of the
+decision-making problem.
+The speciﬁc paradigm for re-
+source allocation depends on the speciﬁc problem domain.
+For example, the optimization of patient admissions in hospi-
+tals [Hulshof et al., 2013], allocating home healthcare ser-
+vices [Aiane et al., 2015], and redistribution of patients
+among hospitals in case of a surge in demand (e.g., in case
+of a pandemic) [Parker et al., 2020] have been modeled as
+single-shot optimization problems. Speciﬁcally, Parker et al.
+solve the problem of ﬁnding optimal demand and resource
+transfers to minimize the surge capacity and resource short-
+age during a period of heightened demand due to COVID-
+19 [Parker et al., 2020]. Aiane et al. work on allocating
+services such as medical, paramedical, and social services
+delivered to patients in their homes modeled using an MILP
+formulation [Aiane et al., 2015]. Our problem setting and for-
+mulation is most similar to theirs in principle; but the problem
+setting considered by Aiane et al. only accounts for travel
+times by resources as part of the objective and does not ac-
+count for uncertainty in the outcomes after resource alloca-
+tion [Aiane et al., 2015]. Moreover, their approach is not
+scalable to our setting; the number of decision variables and
+constraints in our problem is 105 times higher.
+Prior work has also explored performing sequential
+decision-making in the context of resource allocation in
+healthcare settings. For example, Mate et al. [Mate et al.,
+2021] and Nishtala et al. [Mate et al., 2021] model the allo-
+cation of targeted phone calls as a restless multi-armed ban-
+dit problem (RMAB). In such an approach, historical data is
+used to estimate the effect of interventions (similar to our ap-
+proach). Then, the RMAB model is used for planning in-
+terventions over multiple decision epochs with limited re-
+sources.Tsoukalas et al. present a data-driven probabilistic
+framework for clinical decision support by using partially ob-
+
+===== PAGE 3 =====
+servable Markov decision processes (POMDP) [Tsoukalas et
+al., 2015]. The POMDP model is based on clinical prac-
+tice, expert knowledge and data representations in emergency
+healthcare settings.
+3
+Problem Formulation
+Problem Setting: Our problem setting involves resource al-
+location to M individuals (e.g., mothers) over T days. We
+use [M] and [T] as shorthand for [1, . . . , M] and [1, . . . , T]
+respectively. While our goal is to ensure that children get vac-
+cinated, mothers typically take their children for vaccination
+in our geographic area of interest. As a result, we say that the
+interventions are designed for mothers. We assume that each
+mother is eligible for an intervention for a ﬁxed number of
+contiguous days within these T days (depending on the last
+date when her child was vaccinated). The binary variable amt
+denotes whether mother m ∈[M] is eligible at time t ∈[T];
+amt = 1 if and only if the mother is eligible on day t, and
+is 0 otherwise. In order to get vaccinated, mothers can either
+travel to designated health centers, or healthcare ofﬁcials can
+visit a mother’s house. We divide the region of interest into
+a grid G consisting of equally sized cells. Each mother’s res-
+idence and each health center therefore map to unique cells
+in G. We use dmg to denote the distance of mother m’s resi-
+dence from cell g ∈G.
+Interventions: In collaboration with HelpMum and domain
+experts, we design four new interventions: 1) Phone call: A
+phone call is made to the mother reminding her about upcom-
+ing vaccination. We denote this intervention by ic. 2) Travel
+Voucher: A travel voucher is provided to the mother to com-
+mute to vaccination centers. We denote this intervention by
+it. 3) Bus Pickup: A bus can pick up a mother (and her
+child) from her residence and drop them at a vaccination cen-
+ter. Each bus has a capacity of γℓ(for ease of exposition,
+we assume that γℓdenotes the number of mothers that a bus
+can accommodate with their children). We denote this inter-
+vention by iℓ. F denotes the set of buses. 4) Vaccine Drive:
+A health worker goes to a designated locality and vaccinates
+mothers (children) living nearby who are eligible for vaccina-
+tion. Naturally, there is a cap on the number of vaccinations
+a health worker can provide in a day. We denote this cap by
+γv, and denote this intervention by iv.
+We use I to denote the set of interventions, and for nota-
+tional convenience, add no-intervention/empty-intervention,
+denoted as in, to this set. HelpMum considers iv to be highly
+effective in practice, followed by ib, it and ic (in decreasing
+order of effectiveness). Each intervention has a cost associ-
+ated with it; we use ej to denote the cost associated with inter-
+vention ij ∈I. Naturally en = 0 (the cost of no-intervention
+is 0), and eℓ> ev ≫et > ec. In particular, employing a bus
+pickup or the cost of conducting a vaccine drive is relatively
+much more expensive than giving a travel voucher or making
+a phone call to a single mother.
+Outcomes: Let pmj be the probability of mother m taking
+her child for vaccination given intervention ij ∈I. Decision
+Variables: Given grid G, mothers M, and a time horizon of
+[T] days, we optimize over the allocation of interventions I.
+We use g and t to denote an arbitrary cell in G and an arbi-
+trary day in [T] respectively. Let xtg be a binary variable that
+denotes the decision to conduct a vaccine drive, i.e., xtg is 1
+if and only if there is a vaccine drive at cell g on day t, and 0
+otherwise. We point out that a vaccination drive at a cell does
+not necessarily target every mother in that cell. A health-
+care ofﬁcial can only visit a ﬁxed number of households, and
+our optimization formulation must optimize which mothers to
+target during a drive. If possible, the healthcare worker will
+travel to nearby cells as well.
+Let Rf denote the set of routes that a bus f ∈F can op-
+erate (we explain constraints speciﬁc to routes later; we ﬁrst
+present our optimization formulation here for ease of expo-
+sition). We use a binary variable qtfr to denote the routes
+that are chosen for operation, i.e., qtfr = 1 if bus f operates
+on route r ∈Rf on day t ∈[T]. Note that a speciﬁc route
+can only potentially target a subset of the mothers based on
+their locations. We use binary values smtfr to denote whether
+mother m can be picked up by a bus f ∈F operating on route
+r ∈Rf on day t ∈[T].
+We use additional u, y, and z variables to match speciﬁc in-
+terventions to each mother. The variable ymtj = 1 if mother
+m is given intervention ij ∈{in, ic, it} at time t. For inter-
+ventions iℓand iv, we have variables u and z such that: a)
+umtfr = 1 if mother m is picked up by bus f employing
+route r ∈Rf on day t ∈[T], and b) zmtg = 1 if mother m is
+targeted on day t by a vaccination drive conducted at cell g.
+Objective Function: Formally, we seek to optimize the fol-
+lowing objective:
+u∗, q∗, x∗, y∗, z∗= arg max
+u,x,y,z
+X
+m∈[M]
+X
+ij∈{in,ic,it}
+ymtjpmj
+(1)
++
+X
+m∈[M]
+X
+t∈[T ]
+X
+g∈[G]
+zmtgpmv +
+X
+m∈[M]
+X
+t∈[T ]
+X
+f∈[F ]
+X
+r∈Rf
+umtfrpmℓ
+We seek to maximize the cumulative probability of success-
+ful vaccination given a ﬁxed overall budget b by ﬁnding the
+optimal allocation of interventions I among the M mothers.
+Constraints: We need to enforce the following constraints
+given our problem setting:
+1. Eligibility Constraints: Each mother must be eligible for
+the vaccine when she is being targeted for an intervention.
+ymtj ≤amt
+∀m ∈[M], t ∈[T], ij ∈{in, ic, it}
+zmtg ≤amt
+∀m ∈[M], t ∈[T], g ∈[G]
+umtfr ≤amt
+∀m ∈[M], t ∈[T], f ∈[F], r ∈Rf
+2. Vaccine Drive Constraints: a) If a mother is being tar-
+geted for a vaccination drive at a given location and time,
+there must exist such a drive, b) only mothers that live within
+distance σ of a drive can be targeted for the drive, and c) at
+most γv mothers can be targeted by a single drive. The last
+two constraints denote operational limitations of conducting
+door-to-door vaccination drives.
+zmtg ≤xtg
+∀m ∈[M], t ∈[T], g ∈[G]
+zmtg dmg ≤σ
+∀m ∈[M], t ∈[T], g ∈[G]
+X
+m∈[M]
+zmtg ≤γv
+∀t ∈[T], g ∈[G]
+3. Route Constraints: If a mother is being being picked by a
+bus on a route on a particular day, then a) the mother should
+
+===== PAGE 4 =====
+be eligible to be picked on that route, b) the bus must employ
+that route on that day, and c) each bus can pick up at most γℓ
+mothers, and d) in addition, given current resource limitations
+of our partner agency, we consider that a bus can only operate
+a single route on a given day.
+umtfr ≤smtfr
+∀m ∈[M], t ∈[T], f ∈[F], r ∈Rf
+umtfr ≤qtfr
+∀m ∈[M], t ∈[T], f ∈[F], r ∈Rf
+X
+m∈[M]
+umtfr ≤γℓ
+∀t ∈[T], f ∈[F], r ∈Rf
+X
+r∈Rf
+qtfr ≤1
+∀t ∈[T], f ∈[F]
+Note that each vehicle route must obey general routing con-
+straints, e.g., there are restrictions on the earliest pick-up
+times and the latest drop-off times in our setting. We assume
+that all routes in Rf , ∀f ∈F obey these constraints (for now)
+to simplify the discussion (discussed in detail in section 3.1).
+4. Intervention constraint: We consider that each mother can
+be targeted for at most one intervention, i.e. for all m ∈[M],
+X
+t∈T
+X
+ij∈{ic,it}
+ymtj +
+X
+t∈T
+X
+g∈G
+zmtg +
+X
+t∈T
+X
+f∈[F ]
+X
+r∈Rf
+umtfr ≤1
+5. Budget Constraint: The total cost of the interventions can
+not exceed the monetary budget b of the organization.
+X
+m∈M
+X
+t∈T
+X
+ij∈{ic,it}
+ymtj · ej +
+X
+t∈T
+X
+g∈G
+xtg · ev
+X
+t∈T
+X
+f∈[F ]
+X
+r∈Rf
+qtfr · eℓ
+≤b
+3.1
+Routing Formulation
+We formulate a vehicle routing problem with time windows
+(VRPTW) [Toth and Vigo, 2002] to schedule vehicles to pick
+up mothers (and their children) and take them to a vaccina-
+tion center. Vehicle routing problems can be static, where
+all inputs are received before optimizing routes, or dynamic,
+where inputs are updated concurrently with the determination
+of the route [Pillac et al., 2013; Wilbur et al., 2022]. We con-
+sider a static VRP; the set of mothers whose children need
+vaccination on a given day is known before routes are opti-
+mized. In practice, the mothers need to be taken to the health
+centers and dropped back to their resp. residences. How-
+ever, we only discuss routing to the health centers to simplify
+the discussion. All vehicles begin operation from ﬁxed spots
+(parking locations rented by HelpMum) called depots. Note
+that on day t, only a subset of mothers are eligible for vac-
+cination, i.e., amt = 1. Let βe(m) and βl(m) denote the
+earliest and latest times on which mother m can be picked
+up. The times vary across the population based on occupa-
+tion and other beneﬁciary speciﬁc constraints. Let the set of
+vaccination centers operating on day t day be St. HelpMum
+requires that mothers are dropped off at a vaccination center
+early so that there is sufﬁcient time for them to get their chil-
+dren vaccinated. Let the earliest and latest drop-off times for a
+vaccination centre s ∈St be denoted βe(s) and βl(s) respec-
+tively. The set of pick-up locations (mothers’ residences) and
+drop-off locations (vaccination centers) represent the nodes
+(N) of a graph with the road network being the edges.
+A route plan is denoted by an ordered sequence of nodes
+θ = {n1, n2, ...}, where nj ∈N is an arbitrary node that
+the vehicle needs to visit en-route. We attach the following
+information with each node in a route plan. First, βθ,e(nk)
+and βθ,l(nk) is the earliest and latest the vehicle can arrive
+at location nk, and is set to βe(m) and βθ,l(nk) respectively,
+when the node corresponds to a pickup location for a mother
+m ∈M, or βe(s) and βl(s) respectively when the node cor-
+responds to a vaccination site s ∈St. Second, the scheduled
+arrival time for the vehicle servicing route plan θ to location
+nk is δθ(nk). A route plan is feasible if all time window con-
+straints are satisﬁed and all mothers who are picked up (up
+to a maximum capacity of each vehicle) are dropped off at
+a vaccination site. The time window constraints are satisﬁed
+for each location if βθ,e(nk) ≤δθ(nk) ≤βθ,l(nk), ∀nk ∈θ.
+For each vehicle f ∈F, the set of feasible routes contain all
+routes that obey all the routing and capacity constraints.
+4
+Approach
+We face three speciﬁc challenges in directly solving optimiza-
+tion problem ( 1). First, the ILP consists of more than 109
+decision variables and constraints. Second, we must generate
+the set of feasible routes as an input to the ILP. In our problem
+setting, the number of routes exceed 10200. Third, we must
+estimate the success of each intervention for each mother. We
+tackle these challenges in a principled manner below. Our ap-
+proach (shown in Figure 1 (b)) is based on pruning the search
+space of the decision variables by greedily conducting the
+most efﬁcient intervention; speciﬁcally, we greedily use the
+given budget to conduct the intervention that has the highest
+success-to-cost ratio. In this case, conducting a vaccination
+drive is relatively more expensive than making a phone call,
+but it enables HelpMum to target more mothers and guarantee
+more successful vaccinations. After the greedy allocation of
+the vaccination drives we use guided local search to generate
+promising vehicle routes, which is fed to the ILP as an input.
+4.1
+Greedy Pruning
+We assume that the probabilities pmj are known for each
+mother and intervention. We describe how such parameters
+can be estimated later. We use an iterative approach for prun-
+ing the size of the ILP. At each step, a set of mothers are
+chosen for intervention and removed from consideration. Let
+[Mw] denote the set of mothers at the beginning of iteration
+w. Let Hw denote a matrix of size G×T, where each entry in
+the matrix (denoted by Hw
+gt) captures the utility of conduct-
+ing a vaccination drive at cell g ∈[G] and time t ∈[T]. At
+iteration w, let g∗
+w on day t∗
+w denote the optimal cell and day
+to conduct an intervention, given [Mw]. The matrix Hw is
+used to choose cell-time combinations to conduct vaccination
+drives in each iteration. The cell-time positions chosen in the
+previous iterations are updated to −1 in the matrix to remove
+them from consideration in future iterations, i.e., g∗
+w′, t∗
+w′ for
+all w′ < w is set to −1. We point out that conducting a vac-
+cination drive at a cell can potentially target mothers from
+nearby cells as well, depending on the number of households
+in consideration and the manner in which door-to-door vac-
+cine delivery is done. Let Mgt denote a subset of mothers in
+[Mw] who live within some exogenously speciﬁed distance σ
+of cell g and are eligible for vaccination at time t. Hw can
+
+===== PAGE 5 =====
+Algorithm 1 The ADVISER Framework
+Input M: set of mothers, a: availability matrix, d distance
+matrix, T: number of days in program, G: grid, b: budget, r:
+radius
+Output I: intervention alloc. array
+1: M ′, C, b′ ←Heuristic(M, a, d, G, b, r)
+/* Calls the Heuristic algorithm (Algorithm 2) which re-
+turns M ′: the remaining set of mothers, C: the vac-
+cine drive allocation matrix indicating where the vaccine
+drives will be conducted, and the left over budget b′. */
+2: I(m) ←Vaccine Drive, for m ∈M \ M ′
+/* Assigns the vaccine drive intervention to all mothers
+in M but not in M ′. */
+3: R ←V RP(M ′, Time windows)
+/* Calls the Vehicle Routing Algorithm (Sections 3.1, 4)
+with inputs M ′, time windows for each mother, and im-
+munization centres. It returns R: the set of optimal routes
+for each (bus depot, centre) pair on each day. */
+4: I(M ′) ←ILP(M ′, R, a, d, C, G, b′, r)
+/* Calls the ILP (Section 3) on the remaining mothers
+M ′ with routes R, leftover budget b′, and other relevant
+parameters. The vaccine drive allocation matrix C helps
+the ILP ensure that there are no vaccination drives at grid
+g ∈G on day t, if the Heuristic has already decided to
+conduct a drive there on that day. The ILP returns the op-
+timal intervention allocation on remaining mothers with
+budget b′. */
+5: Return the intervention allocation array I.
+then be computed as:
+Hw
+gt =
+(
+−1
+if g = g∗
+w′ ∧t = t∗
+w′ ∀w′ < w
+U w(g, t)
+otherwise
+where U w(g, t) = maxS⊆Mgt,|S|≤γv
+P
+m∈S(pmv−pmn) de-
+notes the utility of conducting a vaccine drive at cell g at time
+t on iteration w by targeting the subset of mothers who pro-
+vide the most gain over no interventions. Note that the utility
+depends on w, because mothers who are targeted for inter-
+vention in an iteration are removed from consideration on the
+next iteration. As an example, conducting a vaccination drive
+at the same location on two successive days won’t be ideal, if
+every mother eligible for vaccination is already beneﬁted by
+the service on the ﬁrst day. Then, g∗
+w, t∗
+w = arg maxg,t Hw
+g,t.
+In our formulation, pmv = 1. We denote the mothers tar-
+geted as part of the conducting a drive at g∗
+w, t∗
+w as Sw
+g∗t∗=
+arg maxS⊆Mg∗t∗,|S|≤γv
+P
+m∈S(pmv −pmn).
+We drop references to w to simplify the discussion. In the
+proposed heuristic, we decide to conduct a vaccine drive at
+g∗, t∗if et · |Sg∗t∗| ≥ev, i.e., if the cost of conducting a vac-
+cine drive is at most the cost of giving travel vouchers to the
+mothers being beneﬁted by the drive. Note that conducting
+a vaccine drive is a better intervention than providing travel
+vouchers even when they cost the same (as children are guar-
+anteed to be vaccinated through the former strategy). How-
+ever, our pruning strategy is lazy; we commit to conducting
+a drive only if the aforementioned condition is satisﬁed and
+leave other decisions for the pruned ILP. The mothers who are
+mapped to vaccine drives are removed from consideration at
+the next iteration and the budget is updated accordingly. We
+stop pruning after we are left with some exogenously speci-
+ﬁed budget parameter (b′). We present the pseudo codes for
+the ADVISER framework in Algorithm 1 and the heuristic
+pruning procedure that ADVISER uses in Algorithm 2.
+Algorithm 2 Heuristic Pruning
+Input M: set of mothers, a: availability matrix, d: distance
+matrix, T: number of days in program, G: grid, b: budget, r:
+radius
+Output M ′: set of remaining mothers, C: vaccine drive allo-
+cation matrix, b′: leftover budget
+1: Let C, K, H be matrices of size |G| × T.
+/* Cgt = 1 if the Heuristic decides to conduct a vaccine
+drive at grid g on day t and otherwise 0, Kgt = 1 if at
+step 10 g, t is computed as g∗, t∗and 0 otherwise, Hgt is
+the value of computing the vaccine drive at cell g, t (refer
+Section 4) */
+2: Initialize: Cgt = 0, Hgt = 0, and Kgt = 0 for all g ∈G
+and t ∈[T]
+3: Set Count ←0
+4: while b ≥b′ and count ≤|G| × T do
+5:
+Set Count ←Count + 1
+6:
+for g ∈[|G|] and t ∈[T] do
+7:
+Mgt ←{m ∈M | amt = 1, dmg ≤r}
+8:
+if Kgt = 1 then
+9:
+Hgt ←−1
+10:
+else if Kgt = 0 then
+11:
+Hgt = maxS⊆Mgt,|S|≤γv
+P
+m∈S(pmv −pmn)
+12:
+end if
+13:
+end for
+14:
+g∗, t∗= arg maxg,t Hgt
+15:
+Sg∗t∗= arg maxS⊆Mg∗t∗,|S|≤γv
+P
+m∈S(pmv −pmn)
+16:
+Kg∗t∗←1
+17:
+if et · |Sg∗t∗| ≥ev then
+18:
+Cg∗t∗←1
+19:
+M ←M \ Sg∗t∗
+20:
+b ←b −ev
+21:
+end if
+22: end while
+23: b′ ←b
+24: Return M ′, C, b′
+Performance Bounds: Let k denote the number of vac-
+cination drives determined in the greedy pruning phase, and
+MV H denote the set of mothers targeted by these k vaccina-
+tion drives. We bound the loss incurred through greedy prun-
+ing relative to the optimal solution of the ILP. We assume that
+the optimal solution has at least k vaccination drives of size at
+least ev/et; we verify this empirically in multiple parameter
+settings. We arbitrarily choose k vaccine drives from such an
+optimal solution, and denote by MV I the set of mothers tar-
+geted by these k vaccine drives. Also, let mother m ∈M be
+given intervention i∗
+m by such an optimal solution. We begin
+by proving the following proposition, which is an outcome of
+our greedy choice made at every iteration during pruning.
+
+===== PAGE 6 =====
+Proposition 1. P
+m∈MV H(pmv −pmn) ≥P
+m∈MV I(pmv −
+pmn)
+Proof. Let vwH be the vaccine drive determined by the
+heuristic procedure at the w-th iteration for w ∈[1, k]. Also,
+arbitrarily order the k vaccine drives that the mothers in MV I
+are part of. In particular, let vwI be the w-th vaccine drive
+of such a chosen order among the k vaccine drives that are
+part of the optimal ILP solution, for w ∈[1, k]. Further, let
+M (w)
+V H be the set of mothers targeted by the w vaccination
+drives v1H, . . . , vwH. Similarly, let M (w)
+V I be the set of moth-
+ers targeted by the w vaccination drives v1I, . . . , vwI. Since
+at every iteration w′ ≤w in the greedy pruning we choose to
+have a vaccine drive at grid g∗
+w′ and time t∗
+w′ with the highest
+value of Hw′
+gt , we have for every w ∈[1, k]
+X
+m∈M (w)
+V H
+pmv −pmn ≥
+X
+m∈M (w)
+V I
+pmv −pmn .
+Finally, it is easily seen that M (k)
+V H = MV H and M (k)
+V I =
+MV I, and as the above equation holds for w = k, this com-
+pletes the proof of the proposition.
+Let MV H \MV I (resp. MV I \MV H) denote the set of moth-
+ers in MV H (resp. MV I) but not in MV I (resp. MV H). We
+use Proposition 1 to prove the following theorem.
+Theorem 1. Let OH be the objective value of the solution
+derived from our heuristic procedure and O∗be the objec-
+tive value of the optimal ILP solution. Then OH ≥O∗−
+(P
+m∈MV H\MV I(pmi∗m −pmn)).
+Proof. From Proposition 1, we have
+X
+m∈MV H
+pmv −pmn ≥
+X
+m∈MV I
+pmv −pmn
+Rearranging the above expression we have
+X
+m∈MV H
+pmv +
+X
+m∈MV I\MV H
+pmn ≥
+X
+m∈MV I
+pmv +
+X
+m∈MV H\MV I
+pmn
+We add P
+m∈M\MV I pmi∗m to both sides of the above expres-
+sion.X
+m∈MV H
+pmv +
+X
+m∈MV I\MV H
+pmn +
+X
+m∈M\MV I
+pmi∗m ≥
+X
+m∈MV I
+pmv +
+X
+m∈MV H\MV I
+pmn +
+X
+m∈M\MV I
+pmi∗m
+Now observe that O∗= P
+m∈MV I pmv+P
+m∈M\MV I pmi∗m,
+and M \ MV I = (MV H \ MV I) ⊎(M \ (MV H ∪MV I)).
+Hence, substituting for O∗in RHS and partitioning M \MV I
+in the LHS of the above expression we have
+X
+m∈MV H
+pmv +
+X
+m∈MV I\MV H
+pmn +
+X
+m∈MV H\MV I
+pmi∗m
++
+X
+m∈M\(MV H∪MV I)
+pmi∗
+m ≥O∗+
+X
+m∈MV H\MV I
+pmn
+Rearranging the above expression, we have
+X
+m∈MV H
+pmv +
+X
+m∈MV I\MV H
+pmn +
+X
+m∈M\(MV H∪MV I)
+pmi∗m
+≥O∗−(
+X
+m∈MV H\MV I
+pmi∗m −pmn)
+(2)
+It is easy to see that M \ MV H = (MV I \ MV H) ⊎(M \
+(MV H ∪MV I)), and recall that ADVISER ﬁnally runs the
+ILP on M \ MV H mothers with budget b −k · ev. Now
+since the number of vaccine drives in the optimal solution is
+at least k, the cost of providing interventions i∗
+m to mothers
+m ∈M \ (MV H ∪MV I) is at most b −k · ev. Hence,
+providing no interventions to mothers in MV I \ MV H and
+intervention i∗
+m to mother m ∈M \ (MV H ∪MV I) is a fea-
+sible solution of the ILP run on the remaining mothers. This
+implies the ILP on the remaining mothers returns an inter-
+vention allocation on M \ MV H which has objective value
+at least P
+m∈MV I\MV H pmn + P
+m∈M\(MV H∪MV I) pmim∗.
+Hence the objective value of the heuristic procedure is
+OH ≥
+X
+m∈MV H
+pmv +
+X
+m∈MV I\MV H
+pmn
++
+X
+m∈M\(MV H∪MV I)
+pmim∗
+(3)
+Finally, using Equation 3 in Equation 2 we have
+OH ≥O∗−(
+X
+m∈MV H\MV I
+pmi∗m −pmn) .
+The lower bound on the objective value of the heuristic ap-
+proach in Theorem 1 depends on the interventions provided
+in the optimal solution to mothers in MV H but not in MV I.
+4.2
+Route Generation
+In principle, we could generate all the feasible routes given
+the routing constraints, which can then be provided as an in-
+put to the optimization problem. However, route generation
+is intractable in our setting. The total number of routes in
+our setting exceeds 10200. As a result, we focus on gener-
+ating a smaller subset of promising routes. Recall that our
+overall goal is to maximize the cumulative probability of suc-
+cessful vaccination; as a result, it is imperative that given the
+limited number of vehicles, we pickup mothers that need the
+ride the most. We capture this idea to deﬁne the utility of a
+route plan. Let p(θ, nk) = pmℓ−pmn denote the utility of
+an arbitrary pick-up node nk ∈N in the routing graph (recall
+that each pickup node corresponds to a unique mother). The
+quantity pmℓ−pmn captures the importance of providing a
+bus pickup to mother m over giving no intervention. Given
+the utility function, we use guided local search [Kilby et al.,
+1999] to generate a subset of routes that maximize the utility.
+
+===== PAGE 7 =====
+Table 1: Description of the features used to learn the probability of success for the interventions
+Feature
+Type
+Description
+Vaccination Status
+Binary
+A variable denoting whether the mother took her child for vaccination
+Income Level
+Binary
+A variable denoting whether the family earns more than $25 or not.
+Message Status
+Binary
+A binary variable that denotes whether the mother received a message
+about the upcoming vaccination appointment.
+Age of the mother
+Integer
+The age of the mother in years.
+Age of the child
+Integer
+The age of the child in months.
+Number of children
+Integer
+The number of children the mother has.
+Address
+String
+The neighborhood that the mother lives in.
+Vaccination Center
+String
+The address of the nearest vaccination center from the mother’s house.
+4.3
+Parameter Estimation
+Note that optimization problem (1) requires estimates of the
+probability of success of each intervention for each mother.
+However, estimating the probabilities presents a challenge—
+the interventions — conducting vaccine drives, operating ve-
+hicle routes, and providing travel vouchers, are designed as
+part of this research; as a result, we lack exact historical data
+about the interventions. We only have data about phone calls
+that HelpMum made to all mothers. We compute the proba-
+bility of success of untested interventions (i.e., vaccine drives,
+bus pickups, and travel vouchers) through a community sur-
+vey that HelpMum performed. We estimate the probability of
+successful vaccination through phone calls and the effect of
+no interventions by learning a regression model on historical
+data.
+We assume that a set of features W can be used to repre-
+sent each individual. The set W can encode prior information
+about interventions, income levels, and geographic location.
+However, estimating the probabilities presents a challenge—
+the interventions of conducting vaccine drives, operating ve-
+hicle routes, and providing travel vouchers are designed as
+part of this research; as a result, we lack exact historical data
+about the interventions. Our partner agency reached out to
+the community to gather feedback about the potential ben-
+eﬁt of such interventions. We use feedback from the com-
+munity outreach to compute the probability of their success.
+Our partner agency does have data on its routine phone call
+operation, as part of which it calls every mother to remind
+them about upcoming vaccination. We use the historical data
+about phone calls to estimate the success of making additional
+phone calls by training a logistic regression model.
+Computing the effect of untested interventions
+To aid the estimation of probability of success for interven-
+tions that have not been tested, i.e., travel vouchers, bus pick-
+ups, and vaccination drives, our partner agency asked the ben-
+eﬁciaries for feedback. All mothers reported that they would
+welcome healthcare ofﬁcials when they conduct door-to-door
+vaccination campaigns. They also reported that transportation
+costs were a major barrier for accessibility to health centers,
+and that pickup service or travel vouchers will be of immense
+value. Based on the feedback, we assume that the probabil-
+ity of a successful vaccination for a mother given vaccine
+drive or picked up by a van equal to 1. Our partner agency
+reported that in practice, the efﬁcacy of travel vouchers is
+slightly lower as the intervention lacks direct monitoring (for
+example, the travel voucher might not be used or can be used
+for some other purpose). As a result, for the assignment of
+a travel voucher, we consider the probability of success to
+be lower than 1, but higher than the probability of success
+through a phone call alone or the probability of success in the
+absence of any interventions1.
+We want to estimate the probability that a mother takes a
+child for vaccination given the intervention of making addi-
+tional phone calls to remind her about an upcoming vacci-
+nation (“additional” phone calls refer to targeted calls made
+after all mothers have been called, which our partner agency
+already does). Estimating the effect of phone calls is some-
+what different than the other interventions; we do have histor-
+ical data from phone calls made by our partner agency. How-
+ever, note that the probability we seek to estimate is different
+from P(mother going to vaccination | phone call is made)
+as we do not want to estimate the empirical conditional
+probability by restricting attention to the sub-population for
+which phone calls were made; rather, the phone call is an
+intervention, meaning that we perform the action of mak-
+ing phone calls, which in turn ﬁxes the value of the ran-
+dom variable.
+Formally, we are interested in estimating
+P(mother going for vaccination | do(phone call)). However,
+we point out that a) the marginal distribution of W is invari-
+ant under the intervention of making phone calls, and b) the
+manner in which an individual reacts to a phone call regard-
+ing vaccination uptake is the same irrespective of whether
+the action of making a phone call is through a targeted in-
+tervention or not. As a result, the probability of success given
+the intervention can be directly estimated from historical data
+by simply calculating the empirical conditional distribution
+P(mother going to vaccination | phone call is made).
+5
+Experiments
+5.1
+Data
+We collect anonymous information from HelpMum for 500
+mothers registered as part of a vaccination tracking system
+operated by HelpMum. Each data point consists of several
+1In practice, we anticipate the probability of success to be
+slightly lower for bus pickups as well. Our partner agency reports
+that in practice, a health center can exhaust its stock of vaccines. Our
+estimates can be improved as data is generated through deployment.
+
+===== PAGE 8 =====
+features such as the income level of the family, whether the
+mother received a reminder about the upcoming vaccination
+appointment, whether she took her child for vaccination, and
+the age of her child, among others. HelpMum obtained con-
+sent from each beneﬁciary for anonymous data sharing. A
+description of the features we collect is presented in Table 1.
+We also collect the geographic locations of all 32 vaccination
+centers in our area of interest. The locations of the rented
+parking depots and the vaccination sites are shown in Fig-
+ure 2.
+HelpMum plans to deploy the ADVISER framework to all
+mothers in their vaccination tracking system (about 40000
+mothers). As a result, we use the available data to gener-
+ate two synthetic datasets (D1 and D2), consisting of 40000
+mothers each. We generate features of mothers in D1 and
+D2 by sampling each feature independently and uniformly at
+random from the original data of 500 mothers. For the moth-
+ers in D1, we compute the probabilities of success for each
+mother given an intervention as follows: for each m ∈[M],
+we choose pmn uniformly at random from (0, 1); followed
+by pmc uniformly at random from (pmn, 1); pmt uniformly
+at random from (pmc, 1); and pmℓuniformly at random from
+(pmt, 1). We set pmv = 1 based on community feedback (see
+section ??). D1 essentially captures the domain knowledge
+that we have about the interventions, speciﬁcally, for a mother
+m, pmn ≤pmc ≤pmt ≤pmℓ≤pmv = 1. For D2, we
+estimate the probability of vaccination given no intervention
+(and vaccination given phone calls) by training a logistic re-
+gression model on the original data (details in Appendix ??).
+The probabilities for remaining interventions, pmt, pmℓ, and
+pmv are chosen in a similar manner as in D1.
+Figure 2: Locations of the rented parking locations (in orange) and
+the vaccination centers (in white). The yellow lines represent the
+grid G. We see that there the distribution of the vaccination centers
+is not uniform; however, HelpMum chose to rent a parking location
+towards the north of the city to ensure that mothers have access to
+vaccination centers.
+5.2
+Baseline Algorithms:
+While prior work does not consist of approaches that opti-
+mize the allocation of heterogeneous health resources under
+uncertainty, we consider the following baselines:
+Real-world Baseline: For the ﬁrst baseline, we asked
+HelpMum to allocate the interventions solely based on do-
+main expertise.
+HelpMum identiﬁed 33 ﬁxed neighbour-
+hoods, one in each local government (similar to administra-
+tive jurisdictions) to conduct vaccination drives on alternate
+days. Bus routes are operated each day using all the F vehi-
+cles from the existing depots. Each vehicle serves one vacci-
+nation center each day in a round-robin manner. For each trip,
+mothers who are within some predeﬁned distance from the
+routes are considered. Note that since the routes determined
+by our partner agency is ﬁxed, mothers must walk to the bus
+route; the predeﬁned distance is a check on the distance that
+a mother can walk with a child to get on a bus. Then, travel
+vouchers are distributed to mothers who live more than 10
+kms. away from a vaccination center. The vouchers are dis-
+tributed according to income levels, i.e., mothers who have
+relatively lower income are targeted ﬁrst. Finally, the remain-
+ing budget is used to make targeted phone calls. Our partner
+agency decided to target mothers based on the age of their
+child—the younger the child, the higher the priority. This de-
+cision is motivated by the fact that an infant requires more
+vaccination doses, and missing one dose hampers the sched-
+ule of upcoming vaccine doses.
+Hierarchical Integer Linear Programming (HILP):
+Motivated by the use of hierarchical planning to create
+tractable approaches for resource allocation [Zhang et al.,
+2016; Pettet et al., 2021], we design a baseline that solves
+optimization problem ( 1) in a hierarchical manner. First, we
+leverage the geographic density of the beneﬁciaries to iden-
+tify clusters (using k-means [MacQueen and others, 1967]).
+The overall budget is distributed across clusters in propor-
+tion to the number of mothers in each cluster. A separate
+ILP is then solved directly for each cluster. We start by di-
+viding the entire set of mothers into different clusters via
+k-means clustering on their geographic locations. Our goal
+is to create smaller ILP formulations per cluster. Naturally,
+the abstraction introduced by hierarchical planning also in-
+duces a trade-off between scalability and utility.
+In order
+to select the optimal number of clusters, we use the elbow
+method [Bholowalia and Kumar, 2014] based on the inertia
+of the clusters (the sum of squared distances of samples to
+their closest cluster center). The clusters were initialized by
+sampling the locations of the mothers uniformly at random.
+The number of clusters for datasets D1 and D2 are 35 and 30
+respectively (see Figures 6 and 7).
+5.3
+Experiment Setup
+In consultation with HelpMum, we set the costs as follows:
+ec = $0.1, et = $1.1, ev = $15, and eℓ= $20. We optimize
+the allocation of resources for T = 30 days and γv = 100.
+We vary the overall budget b between $7000 to $8400, and
+use b−$1000 as a threshold for the greedy pruning procedure.
+Our implementation is available at https://anonymous.
+4open.science/r/IJCAI_42/. All experiments were run
+on a Linux machine with 64GB RAM and an 8-core AMD
+processor. We implement ADVISER using the Python pro-
+gramming language and solve the ILP using Google OR Tools
+with SCIP solver.
+
+===== PAGE 9 =====
+Figure 3: (a) Expected number of vaccinations in D1. (b) Expected number of vaccinations in D2. (c) The distribution of the interventions
+through the different algorithms. We observe that ADVISER outperforms the other two baselines. Also, both ADVISER and HILP choose
+vaccination drives as the dominant intervention; RWB’s poor performance can be explained by having ﬁxed allocations for each intervention.
+Figure 4: The output of ADVISER with number of vaccination drives capped to 400. (a) Objective values for D1. (b) Objective values for
+D2. (b) Number of interventions allocated averaged across D1 and D2.
+5.4
+Results
+We show the expected number of successful vaccinations in
+D1 and D2 in Figure 3 (a) and Figure 3 (b) respectively. We
+observe that the expected vaccine uptake achieved via AD-
+VISER is more than 39970 for all the budgets considered in
+the experiment, whereas the average vaccine intake achieved
+by the baseline algorithm is at most 26000 (we performed the
+simulation on 40000 mothers). The average number of moth-
+ers who received intervention through ADVISER is 39672,
+in comparison to 28426 and 20588 through HILP and RWB
+respectively.
+We also observe in Figure 3 (c) the distribution of the in-
+terventions; as expected, both the ILP-based approaches cap-
+italize on solutions with more vaccination drives. However,
+we point out the importance of the other interventions as well.
+In practice, the number of vaccination drives is bound by the
+number of available healthcare workers for the service, whose
+regular job is to work at healthcare centers. We observed that
+when the number of vaccination drives is restricted to 400 per
+month, the average number of mothers who are targeted for
+pickups more than triples as compared to Figure 3 (c) (result
+presented in appendix ??). Moreover, HelpMum seeks to uti-
+lize ADVISER to improve antenatal care for pregnant moth-
+ers as well, which will lower the realization of γv (number of
+children who can be vaccinated during a drive). Finally, we
+point out that it is crucial that the ADVISER framework is
+tractable. On average, the computational time taken to gener-
+ate solutions by the ADVISER framework is 254 seconds, as
+opposed to 4386 seconds by HILP (RWB can generate solu-
+tions in about 10 seconds on average).
+In order to evaluate the performance of all the approaches
+under different parameters, we repeat the experiments by cap-
+ping the maximum number of vaccination drives to 400, i.e.,
+about 13 vaccination drives each day. Essentially, we want to
+test the robustness of the approaches when sufﬁcient health-
+care workers are not available to perform door-to-door vacci-
+nation delivery. We show the results in Figure 4. We observe
+that in comparison to the our original setting (shown in the
+main body of the paper in Figure 3, the number of mothers
+picked up by the bus service more than triples. This obser-
+vation highlights the need for a heterogeneous set of inter-
+ventions. Also, the objective value attained by capping the
+number of vaccination drives is lower than without the ex-
+istence of such a bound; however, ADVISER signiﬁcantly
+outperforms the baseline approaches in both the settings.
+We also show the average distribution of travel vouchers,
+bus pickups, and phone calls in Figure 5. We observe that
+RWB, due to its ﬁxed nature of resource allocation, results in
+
+===== PAGE 10 =====
+Figure 5: Average Intervention Allocations (D1 + D2) for (a) Vehicle Routes, (b) Travel Vouchers, and (c) Phone Calls
+Figure 6: Elbow Curve for D1 with x axis representing the number
+of clusters and y axis representing the distortion score
+the distribution of a large number of travel vouchers and bus
+pickups in comparison to ADVISER and HILP (Figure 5 (a)).
+While travel vouchers and bus pickups are effective modes
+of intervention, they are relatively more expensive than con-
+ducting vaccination drives. The ILP-based approaches (AD-
+VISER and HELP) search the decision-space better an only
+use such interventions where (intuitively) conducting vacci-
+nation drives is not feasible.
+Figure 7: Elbow Curve for D2 with x axis representing the number
+of clusters and y axis representing the distortion score
+5.5
+Deployment:
+HelpMum is currently planning a pilot program in Ibadan, the
+largest city in West Africa. We show an initial version of the
+tool based on the ADVISER framework in Figure 8.
+Figure 8: An initial version of the tool that HelpMum will use for
+deployment. The tool is under construction.
+6
+Conclusion
+In collaboration with HelpMum, a non-proﬁt organization in
+Nigeria, we present ADVISER: AI Driven Vaccination In-
+tervention OptimiSER. Our framework can accelerate our
+progress towards goals in SDG 1 and SDG 3 by increasing
+access to healthcare services and vaccination, and by reduc-
+ing maternal and infant mortality in resource-constrained set-
+tings.
+HelpMum is currently planning a pilot of the AD-
+VISER framework in collaboration with local governments,
+which will be the ﬁrst of its kind in Nigeria.
+7
+Ethical Statement
+Our goal in this project is to improve vaccination uptake in
+Nigeria. We point out that our partner agency, NGO, works
+closely with state and local governments. The speciﬁc inter-
+ventions were designed by NGO in collaboration with domain
+experts and its advisory board. NGO is currently planning to
+deploy the ADVISER framework in the largest city of Nige-
+ria; however, NGO plans to do this in collaboration with the
+local governments. The fairness of the solution quality of
+
+===== PAGE 11 =====
+any AI driven framework for public intervention needs to be
+studied. While a large part of the interventions suggested by
+ADVISER are targeted towards low-income individuals (by
+construction), the objective function of our framework can be
+modiﬁed to add a score function that measures fairness of al-
+location. Also, it is possible to add arbitrary constraints on the
+number of interventions across groups in our problem (based
+on geographic locations). However, the very nature and form
+of such constraints needs to be determined in collaboration
+with NGO and local governments.
+8
+Acknowledgements
+We would like to acknowledge funding from the Google AI
+for Social Good Grant, Google AI for Social Good “Impact
+Scholars” program, National Science Foundation grant CNS-
+1952011, HelpMum, and Vanderbilt University. We would
+like to thank the staff at HelpMum for helping conduct com-
+munity surveys and perform data collection.
+References
+[Aiane et al., 2015] Daouia Aiane, Adnen El-Amraoui, and
+Khaled Mesghouni. A new optimization approach for a
+home health care problem. In Conference on Industrial
+Engineering and Systems Management, 2015.
+[Bholowalia and Kumar, 2014] Purnima
+Bholowalia
+and
+Arvind Kumar. Ebk-means: A clustering technique based
+on elbow method and k-means in wsn.
+International
+Journal of Computer Applications, 105(9), 2014.
+[Hulshof et al., 2013] Peter
+JH
+Hulshof,
+Richard
+J
+Boucherie,
+Erwin W Hans,
+and Johann L Hurink.
+Tactical resource allocation and elective patient admission
+planning in care processes.
+Health Care Management
+Science, 16(2):152–166, 2013.
+[Kilby et al., 1999] Philip Kilby, Patrick Prosser, and Paul
+Shaw. Guided local search for the vehicle routing problem
+with time windows. In Meta-heuristics, pages 473–486.
+Springer, 1999.
+[MacQueen and others, 1967] James MacQueen et al. Some
+methods for classiﬁcation and analysis of multivariate ob-
+servations. In Fifth Berkeley Symposium on Mathemati-
+cal Statistics and Probability, volume 1, pages 281–297,
+1967.
+[Mate et al., 2021] Aditya Mate, Lovish Madaan, Aparna
+Taneja, et al. Field study in deploying restless multi-armed
+bandits: Assisting non-proﬁts in improving maternal and
+child health. arXiv preprint arXiv:2109.08075, 2021.
+[Nishtala et al., 2021] Siddharth Nishtala, Lovish Madaan,
+Aditya Mate, Harshavardhan Kamarthi, Anirudh Grama,
+et al. Selective intervention planning using restless multi-
+armed bandits to improve maternal and child health out-
+comes. arXiv preprint arXiv:2103.09052, 2021.
+[Okwuwa and Adejo, 2020] Charles Onuora Okwuwa and
+Simon M Adejo. Infant mortality, access to primary health
+care and prospects for socio-economic development in
+bwari area council of niger state, nigeria. Journal of In-
+ternational Women’s Studies, 21(1):289–308, 2020.
+[Parker et al., 2020] Felix Parker, Hamilton Sawczuk, Fardin
+Ganjkhanloo, et al. Optimal resource and demand redistri-
+bution for healthcare systems under stress from covid-19.
+arXiv preprint arXiv:2011.03528, 2020.
+[Pettet et al., 2021] Geoffrey Pettet, Ayan Mukhopadhyay,
+Mykel J Kochenderfer, et al.
+Hierarchical planning for
+resource allocation in emergency response systems. In In-
+ternational Conference on Cyber-Physical Systems, pages
+155–166, 2021.
+[Pillac et al., 2013] Victor Pillac, Michel Gendreau, Chris-
+telle Gu´eret, and Andr´es L Medaglia.
+A review of dy-
+namic vehicle routing problems. European Journal of Op-
+erational Research, 225(1):1–11, 2013.
+[Toth and Vigo, 2002] Paolo Toth and Daniele Vigo. The Ve-
+hicle Routing Problem. SIAM, 2002.
+[Tsoukalas et al., 2015] Athanasios Tsoukalas, Timothy Al-
+bertson, and Ilias Tagkopoulos. From data to optimal de-
+cision making: a data-driven, probabilistic machine learn-
+ing approach to decision support for patients with sepsis.
+JMIR medical informatics, 3(1):e3445, 2015.
+[United Nations, 2020] United
+Nations.
+Sustain-
+able
+development
+goals.
+https://www.un.org/
+sustainabledevelopment/health/, 2020.
+[Wilbur et al., 2022] Michael Wilbur, Salah Uddin Kadir,
+Youngseo Kim, Geoffrey Pettet, Ayan Mukhopadhyay,
+Philip Pugliese, Samitha Samaranayake, Aron Laszka, and
+Abhishek Dubey. An online approach to solve the dynamic
+vehicle routing problem with stochastic trip requests for
+paratransit services.
+arXiv preprint arXiv:2203.15127,
+2022.
+[World Health Organization, 2014] World Health Organiza-
+tion. Facility-based maternal death review in nigeria. Link,
+2014.
+[Zhang et al., 2016] Chao Zhang, Victor Bucarey, Ayan
+Mukhopadhyay, et al. Using abstractions to solve oppor-
+tunistic crime security games at scale. 2016.

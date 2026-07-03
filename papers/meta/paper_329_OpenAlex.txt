@@ -1,0 +1,11 @@
+Title: Closing the AI accountability gap
+Authors: Inioluwa Deborah Raji, Andrew Smart, Rebecca N. White, Margaret Mitchell, Timnit Gebru, Ben Hutchinson, Jamila Smith-Loud, Daniel Theron, Parker Barnes
+Source: OpenAlex
+Date: 2020-01-23
+URL: https://doi.org/10.1145/3351095.3372873
+
+Abstract (EN):
+Rising concern for the societal implications of artificial intelligence systems has inspired a wave of academic and journalistic literature in which deployed systems are audited for harm by investigators from outside the organizations deploying the algorithms. However, it remains challenging for practitioners to identify the harmful repercussions of their own systems prior to deployment, and, once deployed, emergent issues can become difficult or impossible to trace back to their source.
+
+Abstract (KO):
+인공 지능 시스템의 사회적 영향에 대한 우려가 높아지면서 알고리즘을 배포하는 조직 외부의 조사관이 배포된 시스템의 피해 여부를 감사하는 학술 및 언론 문헌이 급증했습니다. 그러나 실무자가 배포 전에 자체 시스템의 유해한 영향을 식별하는 것은 여전히 ​​어려운 일이며, 일단 배포되면 긴급 문제의 원인을 추적하는 것이 어렵거나 불가능해질 수 있습니다.

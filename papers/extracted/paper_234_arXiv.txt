@@ -1,0 +1,1021 @@
+### SOURCE: paper_234_arXiv.pdf
+### PAPER_ID: 234
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 14
+
+
+===== PAGE 1 =====
+arXiv:1404.2266v1  [cs.PF]  8 Apr 2014
+Enhanced Cluster Computing Performance
+through Proportional Fairness
+Thomas Bonald1 and James Roberts∗2
+1T´el´ecom ParisTech, Paris, France
+2IRT System-X, Paris-Saclay, France
+Abstract
+The performance of cluster computing depends on how concurrent jobs share multiple data center
+resource types like CPU, RAM and disk storage. Recent research has discussed eﬃciency and fairness
+requirements and identiﬁed a number of desirable scheduling objectives including so-called dominant
+resource fairness (DRF). We argue here that proportional fairness (PF), long recognized as a desirable
+objective in sharing network bandwidth between ongoing ﬂows, is preferable to DRF. The superiority
+of PF is manifest under the realistic modelling assumption that the population of jobs in progress is
+a stochastic process. In random traﬃc the strategy-proof property of DRF proves unimportant while
+PF is shown by analysis and simulation to oﬀer a signiﬁcantly better eﬃciency-fairness tradeoﬀ.
+1
+Introduction
+We consider a cluster of servers, exclusively reserved for executing a certain class of jobs, as a set of
+distinct resource pools. The resources in question include CPU, RAM, disk space and I/O bandwidth,
+for instance. A job must execute a certain number of tasks, each task requiring a given quantity of each
+type of resource. An example of this type of computing environment and its workload are described by
+Reiss et al. [RTG+12]. Each task has its own particular requirements proﬁle specifying how much of
+each resource must be reserved: some tasks require more CPU than RAM, others require more RAM
+than I/O bandwidth, etc. The issue at hand is how a central scheduler should initiate and run tasks in
+parallel to fairly and eﬃciently share cluster resources between jobs. We argue in this paper that such
+resource sharing should realize the objective of Proportional Fairness (PF), that is, it should maximize
+the sum over jobs of logarithms of their number of tasks.
+The multi-resource sharing problem was formulated in a recent paper by Ghodsi et al. [GZH+11]
+under the simplifying assumption that resource pools are homogeneous and inﬁnitely divisible between
+jobs. All tasks of a given job are assumed to have identical proﬁles and, rather than allocating resources
+to discrete tasks, a central scheduler is supposed to assign shares of each resource in proportion to the task
+proﬁle. Sharing objectives are expressed in terms of a number of required properties. In particular, it is
+required that allocations be strategy-proof in the sense that the owner of a job cannot gain a bigger share
+by lying about its actual task proﬁle. The authors of [GZH+11] show that this property is not satisﬁed
+by many otherwise intuitively appealing strategies. They proceed to deﬁne an original strategy-proof
+allocation called Dominant Resource Fairness (DRF) and explain how this can be realized.
+Other authors have since come up with alternative strategies, based on diﬀerent notions of fairness
+(e.g., [DFH+12, ZF13]), or adapting DRF to account for more realistic cluster constraints (e.g., [PPS12,
+PS13, WLL13a]). Gutman and Nisan [GN12] situate proposed fairness objectives like DRF [GZH+11] and
+“no justiﬁed complaints” [DFH+12] in a common economics framework and provide eﬃcient polynomial
+time algorithms.
+We believe the economics literature cited in [GN12] does not in fact constitute an appropriate back-
+ground for modelling cluster resource sharing. This is because it completely ignores the dynamics of job
+∗The authors are members of the LINCS, Paris, France. See www.lincs.fr.
+1
+
+===== PAGE 2 =====
+arrivals and completions that characterize cluster workload [RTG+12]. These dynamics have an obvious
+impact on job completion times and interact closely with the applied allocation algorithm since a job
+ﬁnishes more or less quickly depending on the resources it is allocated. The notion of strategy-proofness
+must be revisited to account for the impact of false user requirements on the process of jobs in progress
+and their expected performance.
+In advocating PF we draw on our understanding of bandwidth sharing performance in networks. PF
+was deﬁned by Kelly et al. [KMT98] as the bandwidth allocation that maximizes the sum of logs of ﬂow
+rates, arguably thus realizing greater social welfare than alternative allocations like max-min fairness. We
+consider rather the impact of the sharing objective on ﬂow completion times in dynamic traﬃc. In wired
+networks, it turns out that completion times are not highly dependent on the type of fairness imposed
+and DRF (equivalent here to max-min fairness) and PF have similar performance [BMPV06]. In wireless
+networks, on the other hand, the radio resource is measured in time slots per second rather than bit/s
+with the achievable bit rate per time slot depending signiﬁcantly on user position. Sharing a channel
+equally in time, as realized in HDR/HSDPA systems for instance, actually corresponds to PF sharing
+in terms of bandwidth. In a mixed wired/wireless network, PF realizes a signiﬁcantly more favourable
+eﬃciency–fairness tradeoﬀthan max-min fairness [BP11].
+To compare PF and DRF in dynamic traﬃc we adopt a simple Markovian traﬃc model assuming
+Poisson job arrivals and exponential job sizes. This simpliﬁes analysis and clariﬁes the respective tradeoﬀs
+realized by the two allocation approaches. Simulation and analytical results conﬁrm that PF performs
+signiﬁcantly better than DRF. Given known insensitivity properties of fair resource sharing, we are
+conﬁdent that PF would be equally preferable under a more realistic traﬃc model [BMPV06].
+In addition to discussing ideal sharing of inﬁnitely divisible resources, Ghodsi et al. show how to
+approximately realize DRF in practice accounting for discrete, ﬁnite-size tasks. The scheduler algorithm
+preferentially launches tasks of the “most deprived” job.
+This is the job whose current share of its
+dominant resource is smallest. PF can be implemented similarly on re-deﬁning “most deprived” in terms
+of the ideal shares determined for that allocation objective. The complexities of PF and DRF algorithms
+are similar and hardly constitute an implementation issue since the number of resource types to be shared
+is typically very small.
+In the next section we deﬁne DRF and PF and demonstrate their respective sharing properties with
+respect to a static job population. We consider dynamic sharing in Section 3 assuming a ﬂuid model
+where resources are inﬁnitely divisible. The task-by-task implementations of DRF and PF are compared
+in Section 4. Finally, related work is discussed in Section 5 before we conclude.
+2
+Multi-resource sharing
+We consider how multiple resources should be shared assuming a static population of jobs, each with
+a particular proﬁle of per-task requirements.
+We adopt a ﬂuid model where pools of resources are
+assume inﬁnitely divisible and compare two allocation strategies: dominant resource fairness (DRF) and
+proportional fairness (PF).
+2.1
+The ﬂuid model
+We consider J inﬁnitely divisible pools of resources of respective capacities Cj, for j = 1, . . . , J, to be
+shared by n jobs indexed by i. Each task of job i requires Aij units of resource j. Denoting by ϕi the
+number of ongoing tasks of job i, we have the capacity constraints:
+n
+X
+i=1
+ϕiAij ≤Cj,
+for j = 1, . . . , J.
+In the ﬂuid model, we assume tasks are inﬁnitesimally small and jobs can run a
+suﬃciently large number of them to attain a given resource allocation. It then makes more sense to
+normalize resource capacities to 1 with aij = Aij/Cj representing fractional requirements. The (now)
+real numbers ϕ1, . . . , ϕn are then considered as task volumes satisfying capacity constraints:
+n
+X
+i=1
+ϕiaij ≤1,
+(1)
+2
+
+===== PAGE 3 =====
+for j = 1, . . . , J. The product ϕiaij is the fraction of resource j allocated to i. We also write capacity
+constraints (1) in matrix form: ϕa ≤1, where inequality is understood component-wise.
+We say that resource j is saturated if the corresponding capacity constraint is attained, i.e., if
+P
+i ϕiaij = 1. Let ai denote the vector whose jth component is aij. We say job i needs resource j
+if aij > 0 and we assume each job needs at least one resource. The dominant resource of job i is that for
+which the normalized requirement aij is largest.
+2.2
+Desirable properties
+The following are desirable properties of a multi-resource allocation algorithm, as discussed by Ghodsi et
+al. [GZH+11]:
+Pareto-eﬃciency. An algorithm is Pareto-eﬃcient if each job needs some resource which is saturated.
+Sharing-incentive. An algorithm satisﬁes sharing-incentive if each job gets no less than a 1/n share of
+its dominant resource.
+Strategy-proof. An algorithm is strategy-proof if the resource shares of any job do not increase if this
+job modiﬁes its vector of resource requirements.
+It proves useful to introduce two additional properties:
+Scale-invariance. An algorithm is scale-invariant if resource shares remain the same when the vector
+of resource requirements of any job is multiplied by a scaling factor.
+Local-fairness. An algorithm is said to be locally fair if resource shares ϕiai1 are all equal to 1/n when
+J = 1.
+Pareto-eﬃciency means no resources are needlessly left idle. Sharing-incentive means each job gets
+no less than it would under a strictly fair allocation where a 1/n share of each resource is allocated
+to every job. Strategy-proof means no job can get a better allocation by lying about its requirements.
+Scale-invariance means resource shares do not depend on the size of tasks (e.g., a scaling factor of 2 is
+equivalent to merging two tasks into one) and may be considered as a weaker form of strategy-proofness.
+Local-fairness means the allocation reverts to simple fair sharing when there is only one resource.
+Remark 1. It is straightforward to verify that local-fairness is realized by any Pareto-eﬃcient algorithm
+that also satisﬁes any one of sharing-incentive, strategy-proof or scale-invariance. This means that if it
+is not locally fair, a Pareto eﬃcient algorithm has none of the other properties.
+2.3
+Dominant resource fairness
+We ﬁrst note that simple max-min fairness is unsatisfactory. The max-min allocation is determined by the
+standard water-ﬁlling procedure: the ϕi are increased from zero together until some resource is saturated;
+the allocations of any job that needs this resource are frozen while the task volumes of the remainder
+increase together until another resource is saturated; the procedure continues until all job allocations are
+frozen.
+The resulting allocation is uniquely characterized by the fact that, for each job i, there is some
+saturated resource j needed by job i such that ϕi is maximum over all jobs that need resource j. In
+particular, for J = 1, we have equal task volumes, ϕi = 1/(Pn
+k=1 ak1), for i = 1, . . . , n. Resource shares
+ϕiai1 are thus proportional to requirements and max-min fairness is not locally fair. Since the algorithm
+is Pareto-eﬃcient, Remark 1 shows it has neither sharing-incentive, strategy-proof nor scale-invariant
+properties. DRF is weighted max-min fairness with weights chosen to correct these failings. Weights are
+inversely proportional to the dominant resource requirements:
+wi =
+1
+maxj=1,...,J aij
+,
+for i = 1, . . . , n.
+The allocation is derived from a modiﬁed water-ﬁlling procedure where ﬁlling rates are proportional
+to the per-job weights. It is the unique Pareto-eﬃcient allocation such that, for each job i, there is some
+saturated resource j needed by job i such that ϕi/wi is maximum over all jobs that need resource j.
+For J = 1, we get equal resource shares, ϕiai1 = 1/n, for i = 1, . . . , n, so that DRF is locally fair. It
+is proved in [GZH+11] that DRF also satisﬁes the sharing-incentive and strategy-proof properties. For
+completeness, we provide short proofs for these and the scale-invariant properties.
+3
+
+===== PAGE 4 =====
+Proposition 1. DRF satisﬁes the sharing-incentive property.
+Proof. For each job i, there is some saturated resource j needed by job i such that ϕi/wi is maximum
+over all jobs that need resource j. In particular,
+ϕi max
+l=1,...,J ail = ϕi
+wi
+≥1
+n
+X
+k:akj>0
+ϕk
+wk
+≥1
+n
+X
+k:akj>0
+ϕkakj = 1
+n.
+Proposition 2. DRF is strategy-proof.
+Proof. Assume that job i claims resource requirements a′
+i instead of ai. Denote by w′
+i the corresponding
+weight and by ϕ′
+i the resulting allocation. We compare the water-ﬁlling processes of both systems with the
+same ﬁlling rates for jobs other than i. If job i is limited in the modiﬁed system ﬁrst, then ϕ′
+i/w′
+i ≤ϕi/wi
+so that the dominant resource j of job i in the original system satisﬁes:
+ϕ′
+ia′
+ij ≤ϕ′
+i
+w′
+i
+≤ϕi
+wi
+= ϕiaij.
+If, on the other hand, job i in the original system is limited ﬁrst on resource j, then all jobs except i that
+need this resource get a better allocation in the modiﬁed system. It follows that:
+ϕ′
+ia′
+ij ≤1 −
+X
+k̸=i
+ϕ′
+kakj ≤1 −
+X
+k̸=i
+ϕkakj = ϕiaij.
+Proposition 3. DRF is scale-invariant.
+Proof. Assume that each job i claims resource requirements a′
+i = αiai instead of ai, for some αi > 0. Let
+w′
+i = wi/αi and ϕ′
+i = ϕi/αi. The allocation ϕ′ satisﬁes the new capacity constraints ϕ′a′ ≤1 and gives
+the same resource shares as the original allocation ϕ. It remains to show that ϕ′ is DRF. We know that,
+for each job i, there exists some saturated resource j such that ϕi/wi is maximum over all jobs that need
+resource j; since ϕ′
+i/w′
+i = ϕi/wi, this property is also satisﬁed by the allocation ϕ′ which is therefore
+DRF.
+Remark 2. Note that DRF also has the following somewhat surprising characteristic: the allocation may
+depend on resource requirements for non-saturated resources. Consider J = 2 resources, n = 2 jobs and
+a1 = (1, 1/3) and a2 = (1/2, 1). Then ϕ = (2/3, 2/3) and resource 2 is not saturated. In the absence
+of resource 2 constraints, that is for a1 = (1, 0) and a2 = (1/2, 0), the allocation changes to ϕ′ = (1, 2)
+corresponding to equal shares of resource 1. The allocation depends on requirements for resource 2 even
+though this is not a bottleneck.
+2.4
+Proportional fairness
+An allocation that is well-known to have excellent properties in the context of sharing network bandwidth
+is proportional fairness (PF) [KMT98]. The PF allocation is deﬁned by:
+arg max
+ϕ
+n
+X
+i=1
+log ϕi,
+(2)
+under capacity constraints (1). By construction, it is Pareto-eﬃcient.
+Let ν be the vector of Lagrange multipliers associated with capacity constraints (1). The Karuch-
+Kuhn-Tucker theorem implies that PF is the unique allocation ϕ such that:
+1
+ϕi
+=
+J
+X
+j=1
+aijνj,
+(3)
+4
+
+===== PAGE 5 =====
+for i = 1, . . . , n, where
+νj ≥0
+and
+νj
+ n
+X
+i=1
+ϕiaij −1
+!
+= 0,
+(4)
+for j = 1, . . . , J.
+From (3) and (4) we deduce,
+J
+X
+j=1
+νj =
+J
+X
+j=1
+νj
+ n
+X
+i=1
+ϕiaij
+!
+=
+n
+X
+i=1
+ϕi
+
+
+J
+X
+j=1
+aijνj
+
+= n.
+(5)
+It follows that PF is locally fair since, for J = 1, ϕiai1 = 1/n.
+Proposition 4. PF satisﬁes the sharing-incentive property.
+Proof. It follows from (3) and (5) that:
+ϕi max
+j
+aij =
+maxj aij
+PJ
+j=1 aijνj
+≥
+1
+PJ
+j=1 νj
+= 1
+n.
+Proposition 5. PF is not strategy-proof.
+Proof. It is suﬃcient to show this with an example. Consider n = 2 jobs and J = 2 resources with
+a1 = (1/2, 1) and a2 = (1, 1/2). We then have ν = (1, 1) and ϕ = (2/3, 2/3). If job 1 claims 2/3 units
+of resource 1 per task instead of 1/2, we have a′
+1 = (2/3, 1) and a′
+2 = (1, 1/2) yielding ν′ = (2, 0) and
+ϕ′ = (3/4, 1/2). Job 1 receives a bigger share at the expense of job 2.
+Remark 3. Unlike max-min fairness, it is not suﬃcient for a job to increase its resource requirements to
+increase its resource shares. Taking a′
+1 = (1, 1) and a′
+2 = (1, 1/2) in the above example yields ν′ = (2, 0)
+and ϕ′ = (1/2, 1/2). Both job 1 and job 2 receive smaller resource shares.
+Remark 4. A job can be sure to increase its resource shares only if it knows the resource requirements
+of the other jobs. Taking a1 = (1/2, 1) and a2 = (1, 1/3) yields ν = (1, 1) and ϕ = (4/5, 3/5). If job
+1 applies the same strategy as in the example of Proposition 5, we have a′
+1 = (2/3, 1) and a′
+2 = (1, 1/3)
+yielding ν′ = (2, 0) and ϕ′ = (3/4, 1/2). Both jobs again receive fewer resources.
+The above remarks suggest a user wishing to exploit PF would be hard-pressed to determine an optimal
+strategy. The impact of false resource claims can only be appraised by considering likely combinations of
+jobs in progress, as determined by a model of dynamic traﬃc. The following proposition shows that PF
+does have the scale-invariance guarantee.
+Proposition 6. PF is scale-invariant.
+Proof. Assume that each job i claims resource requirements a′
+i = αiai instead of ai, for some αi > 0. Let
+ϕ′
+i = ϕi/αi. The allocation ϕ′ satisﬁes the new capacity constraints ϕ′a′ ≤1 and gives the same resource
+shares as the original allocation ϕ. Moreover, from (3) and (4), it can easily be veriﬁed that ϕ′ is the PF
+allocation under capacity constraints ϕ′a′ ≤1.
+Unlike DRF, PF is not biased by non-bottlenecked resources (see Remark 2) since these clearly have
+no impact on the allocation.
+2.5
+Utility maximization
+PF sharing maximizes overall utility under the assumption that the utility for each job i of allocation ϕi
+is proportional to log ϕi. One might consider allocations deﬁned in terms of more general, diﬀerentiable
+and strictly concave utility functions U(·), i.e.,
+ϕ = arg max
+ϕ
+n
+X
+i=1
+U(ϕi),
+(6)
+5
+
+===== PAGE 6 =====
+under capacity constraints (1).
+For instance, U = (·)α/(1−α), for α > 0, deﬁnes the family of α-fair allocations [MW00]. Proportional
+fairness corresponds to the limit α →1 while max-min fairness is realized in the limit α →+∞.
+Let ν be the vector of Lagrange multipliers associated with capacity constraints (1). The Karuch-
+Kuhn-Tucker theorem states that a utility-based allocation is the unique allocation ϕ such that:
+∀i = 1, . . . , n,
+U ′(ϕi) =
+J
+X
+j=1
+aijνj,
+(7)
+under constraints (4). Since utility maximization allocations are necessarily Pareto-eﬃcient, the following
+property shows that no utility-based allocation except PF can be either sharing-incentive, strategy-proof
+or scale-invariant (cf. Remark 1).
+Proposition 7. PF is the only locally fair utility-based allocation.
+Proof. Take a single resource and two jobs with resource requirements a11 = 1
+2 and a21 =
+1
+2x for some
+x > 0. In view of (7), we have U ′(ϕ1) = xU ′(ϕ2). If the allocation is locally fair, we have equal resource
+shares a11ϕ1 = a21ϕ2 = 1
+2 so that:
+∀x > 0,
+U ′(x) = U ′(1)
+x
+.
+This implies that U = α log(·) + β for some constants α > 0 and β, which is PF.
+3
+Behaviour in dynamic traﬃc
+Jobs handled by a data center cluster arrive over time and remain active for a ﬁnite duration that depends
+on the resource shares they are allocated. Algorithm performance, perceived in terms of job completion
+times, can only be realistically appraised under such dynamic traﬃc. We adopt a simple Markovian traﬃc
+model and retain the assumption of inﬁnitely divisible resources to illustrate the relative performance of
+DRF and PF.
+3.1
+Traﬃc model
+We consider the following dynamic traﬃc model. There are K distinct classes of jobs. Jobs of class k
+arrive at rate λk and require the completion of σk tasks on average. We denote by nk the number of
+class-k jobs in progress and by n = n1 + . . . + nK the total number of jobs. Each task of a class-k job
+requires akj units of resource j. The capacity constraints are:
+K
+X
+k=1
+nkϕkakj ≤1,
+(8)
+for j = 1, . . . , J. Let τk be the mean service time of one task of a class-k job. Then µk = 1/(σkτk) is
+the completion rate of a class-k job with exactly one ongoing task and ϕkµk is the completion rate of a
+class-k job.
+Under the ﬂuid sharing model with exponential assumptions, i.e., Poisson job arrivals and exponen-
+tially distributed job sizes, the vector ⃗n = (n1, . . . , nK) is a Markov process with component-k birth rate
+λk and death rate nkϕkµk, for k = 1, . . . , K.
+Markovian assumptions are adopted for the sake of simplicity. We note however that insensitivity
+results for bandwidth sharing in networks suggest the performance of this simple model is indicative
+of much more general and realistic traﬃc models (e.g., see [BMPV06]). The impact of non-inﬁnitely
+divisible resources is evaluated in the next section.
+We assume allocations are instantaneously updated every time a new job starts or a job in progress
+completes. For DRF the allocation is determined by applying the water-ﬁlling algorithm. For PF we can
+determine the vector of Lagrange multipliers ν using the gradient descent method:
+νj ←
+ 
+νj + γ
+ n
+X
+i=1
+ψiaij −1
+!!+
+,
+(9)
+where γ > 0 is a suﬃciently small step size and, for i = 1, . . . , n, ψi = 1/ PJ
+j=1 aijνj.
+6
+
+===== PAGE 7 =====
+3.2
+Traﬃc capacity
+Tasks of class-k jobs arrive at rate λkσk and last τk seconds on average. The corresponding traﬃc demand
+is thus ρk = λk/µk. In dynamic traﬃc, the considered system may be unstable if demand is too high in
+the sense that the number of jobs in progress may then grow indeﬁnitely. The set of loads for which the
+system remains stable deﬁnes a capacity region. The capacity region of DRF and PF (and alternative
+utility-based fairness allocations) can be directly deduced from known results for bandwidth sharing in
+networks [Ye03]. It is deﬁned by the following inequalities:
+K
+X
+k=1
+ρkakj < 1,
+(10)
+for j = 1, . . . , J. In other words, the load on each resource must be less than its normalized capacity.
+3.3
+Performance
+Users experience system performance through the time it takes to complete their job. As this is job size
+dependent, we prefer to present class-k performance in terms of the mean service rate γk deﬁned as the
+ratio of the mean job size to the mean completion time. By Little’s law, we have the following expression:
+γk =
+λk
+E(nk).
+We have evaluated the mean service rates γk for DRF and PF allocations by simulating some simple
+system conﬁgurations. We suppose each job requires quantities of two resources, CPU and RAM say,
+with relative per-task requirements a1 = (1, 1/10) and a2 = (1/10, 1). We set µ1 = µ2 = 1 and consider
+two demand patterns: balanced with λ1 = λ2 = λ/2, where λ is the total demand, and unbalanced
+with λ1 = 3
+4λ and λ2 = 1
+4λ. For balanced demand the load of both resources is λ
+2 (1 + 1
+10) whereas the
+unbalanced case yields a CPU load of λ
+4 (3 + 1
+10) and a RAM load of λ
+4 ( 3
+10 + 1), nearly 3 times smaller.
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+DRF
+PF
+(a) balanced load (ρ1 = ρ2)
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+DRF
+PF
+(b) unbalanced load (ρ1 = 3ρ2)
+Figure 1: Service rate against load of resource 1 (CPU).
+Figure 1 compares the mean relative service rate provided by DRF and PF allocations as a function
+of CPU load. Note that the service rate is 1 (in normalized units) at load zero, when never more than 1
+job is in progress, and tends to zero as load attains system capacity. For a single resource, the service rate
+would in fact be 1 −̺ for both DRF and PF, where ̺ is the resource load. This is so because allocations
+are locally fair and therefore realize a processor sharing system.
+Both graphs in Figure 1 present 4 curves representing γk for k = 1, 2 for DRF and PF. In the left hand
+plot the curves for both classes for each fairness objective coincide by symmetry while PF outperforms
+DRF, especially at high load. The right hand plot for unbalanced demand shows that γ(P F )
+2
+is signiﬁcantly
+higher than γ(DRF )
+2
+while the service rates γ1 for the CPU constrained class are practically the same.
+7
+
+===== PAGE 8 =====
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+DRF
+PF
+(a) balanced load (ρ1 = ρ2)
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+DRF
+PF
+(b) unbalanced load (ρ1 = 3ρ2)
+Figure 2: Service rate against load of resource 1 (CPU).
+This occurs basically because of the bias exhibited by DRF but not PF when resource 2 (RAM) is not
+saturated, as noted in Remark 2.
+Figure 2 presents a case where PF also performs better than DRF at low load. To be precise, the
+service rate of class 2 is signiﬁcantly greater at the cost of a slight decrease of that of class 1. The class
+proﬁles for this case are a1 = (1, 1/10) and a2 = (1/2, 1).
+The above simple examples clearly do not prove that PF is always better than DRF. To gain insight
+ﬁrst consider the light traﬃc behaviour of a general 2-class, 2-resource type system. Suppose, without
+loss of generality in view of scale invariance, job classes have task proﬁles a1 = (1, α) and a2 = (β, 1)
+with α ≤β ≤1. Considering the evolution of the job population as ρ1 →0 and ρ2 →0, we derive the
+following second order approximations for DRF and PF:
+γ(DRF)
+1
+≈1 −ρ1 −βρ2
+and
+γ(DRF)
+2
+≈1 −βρ1 −ρ2.
+γ(PF)
+1
+≈1 −ρ1 −βρ2
+and
+γ(PF)
+2
+≈1 −max (2 −1/β, α) ρ1 −ρ2.
+We see that γ1 has the same light traﬃc behaviour for both allocations while γ2 decreases more rapidly
+for DRF than for PF since max (2 −1/β, α) ≤β.
+Consider now the same proﬁles in heavy traﬃc with ̺ = ρ1 + βρ2 > αρ1 + ρ2, so that resource
+1 has higher load than resource 2, and ̺ →1. PF may then be shown to yield γ(PF)
+1
+≈1 −̺ and
+γ(PF)
+2
+≈(1 −̺)/α. The water ﬁlling deﬁnition of DRF, on the other hand, will equalize the service
+rates of both classes γ(DRF)
+1
+≈γ(DRF)
+2
+≈1 −̺. The latter approximation derives from the underlying
+“processor sharing” system emulated by DRF in heavy, unbalanced traﬃc. Note that the behaviour of
+DRF under balanced load with symmetric proﬁles is rather worse than this in heavy traﬃc (cf. Fig.
+1(a)). This is because the allocation is constrained by the resource with the heaviest instantaneous load,
+arg maxj (n1a1j + n2a2j).
+In Figure 3, we plot results for 4 job classes with proﬁles a1 = (1, 1/10), a2 = (1, 1/2), a3 = (1/2, 1)
+and a4 = (1/10, 1). The ﬁgures plot the service rates of classes 3 and 4 whose dominant resource is
+resource 2 (RAM). These results conﬁrm the trends shown in previous cases are maintained when the
+traﬃc mix is more varied.
+We have simulated several other conﬁgurations including cases with three types of resource. The
+results conﬁrm the trends illustrated in the above plots: PF slightly outperforms DRF for balanced
+traﬃc; the gain is more signiﬁcant for jobs whose dominant resource has relatively lower load; the gain
+comes at the cost of an imperceptible loss of service rate for jobs whose dominant resource is most heavily
+loaded. The latter is approximately 1−̺ for both DRF and PF where ̺ is the resource load, as predicted
+by the underlying processor sharing model, except for DRF under balanced load. DRF tends to behave
+poorly in heavy, balanced traﬃc since it penalizes eﬃciency in favour of strict fairness.
+8
+
+===== PAGE 9 =====
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+DRF
+PF
+(a) balanced load (ρ1 = ρ2 = ρ3 = ρ4)
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+DRF
+PF
+(b) unbalanced load (ρ1 = ρ2 = 3ρ3 = 3ρ4)
+Figure 3: Service rate against load of resource 1 (CPU).
+3.4
+Strategy-proofness
+The strategy-proof property in Section 2.2 relates to a static population of jobs. We demonstrate in this
+subsection that the absence of this property for PF is not a disadvantage in dynamic traﬃc. Even if
+some job knows some statistics about the resource requirements of competing jobs, it does not know how
+many jobs are active and thus can hardly deﬁne a consistent strategy to improve its service rate by lying
+about its resource requirements.
+Consider the following example. There are J = 2 resources and K = 2 classes with resource require-
+ments a1 = (1, α) and a2 = (α, 1) for some α ∈(0, 1). There is a single, permanent class-1 job. The only
+way for this job to increase its service rate is to claim β ∈(α, 1) units of resource 2 per task. Under PF,
+its service rate in the presence of n other jobs is:
+ϕ1(n) = min
+ 1
+n
+1 −α
+1 −αβ ,
+1
+β(n + 1)
+
+,
+which is maximum for:
+β =
+1
+1 + n(1 −α),
+Note that this value of β lies in (α, 1) as long as n ≤1/α. Each class-2 job gets ϕ2(n) = 1
+n(1 −βϕ1(n)).
+The number of class-2 jobs forms a birth-death process with birth rate λ2 and death rate µ2nϕ2(n) in
+state n. This process is stable whenever ρ2 < 1 and then has a certain stationary distribution π yielding
+the mean service rate:
+γ(P F )
+1
+=
+X
+n
+π(n)ϕ1(n).
+Figure 4 plots γ(P F )
+1
+against ρ2 for α =
+1
+10 and three values of β, chosen to maximize the service rate
+ϕ1(n) assuming n = 1, 2 and 5, respectively. We observe that no beneﬁt is gained from any of these static
+optimizations demonstrating that PF is indeed strategy proof in this scenario.
+If, in an alternative scenario, the requirements of all jobs in a given class k were falsely declared with
+a′
+kj ≥akj, for j = 1, . . . , J, and strict inequality for at least one resource, it is clear from (10) that the
+capacity region would be smaller for both DRF and PF. Simulation results shown in Figure 5 conﬁrm that
+service rates at stable loads are reduced for both DRF and PF. The ﬁgure plots the class 1 service rate for
+the conﬁguration of Figure 4 with balanced load. The dashed lines result from the same values of β used
+in Figure 4 conﬁrming there is no winning strategy. Traﬃc capacity is limited by (1 + α)/(1 + β) < 1.
+Of course, class 2 jobs also suﬀer from the false claims of class 1 in all these cases.
+4
+Task assignment algorithms
+While the ﬂuid models analyzed above are useful in appraising the relative merits of alternative fairness
+objectives, it is necessary in practice to account for the fact that tasks are not inﬁnitely divisible. In this
+9
+
+===== PAGE 10 =====
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+True requirement
+False requirement
+Figure 4: Mean service rate of the test ﬂow with true and false requirements that are optimal for 1, 2
+and 5 other ﬂows (from bottom to top).
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+True requirement
+False requirement
+(a) DRF
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+True requirement
+False requirement
+(b) PF
+Figure 5: Mean service rate of class 1 ﬂows against CPU on for false class 1 requirements as in Fig. 4
+section we relax this assumption. We discuss the implementation of task-based versions of DRF and PF
+and compare their performance in simulation experiments.
+4.1
+“Serve the most deprived job”
+We follow the proposal in [GZH+11] in seeking to realize the fairness objective by preferentially launching
+tasks of the most deprived job with respect to the objective fairness criterion.
+Let ϕi now denote
+the integer number of tasks in progress for job i. For DRF, the most deprived job is that for which
+ϕi maxj{aij} is minimal. For PF, the job to serve is that for which ϕi
+PJ
+j=1 aijνj is minimal, where the
+νj are Lagrange multipliers computed iteratively using (9).
+Tasks are assigned when jobs arrive, if resources are available, or when other tasks end. If available
+resources are insuﬃcient to accommodate a task of the most deprived job, allocations are frozen until a
+suﬃcient number of other tasks end or some other job takes over the most-deprived status. Note that we
+continue to assume resources are pooled though the assignment algorithm could be adapted to account
+for additional practical constraints such as assigning CPU and RAM on the same physical server, say,
+[PS13], or meeting other compatibility constraints [GZSS13].
+4.2
+Performance
+We have simulated task-based allocations in the following conﬁguration.
+Two classes of job require
+diﬀerent amounts of CPU and RAM in the following proportions: a1 = (1, 1/10) and a2 = (1/10, 1), as
+10
+
+===== PAGE 11 =====
+previously considered in Section 3.3. Jobs of both classes require the execution of 500 tasks while CPU
+and RAM both have capacity 100. This means a single job of either class in an otherwise empty system
+will have 100 tasks in progress until 400 are completed and then 99, 98 and so on, until the last task
+ﬁnishes. This is a signiﬁcant discrepancy with respect to the ﬂuid model where the service rate would
+remain constant at 100 until job completion. With respect to previous notation, we have σk = 500,
+τk = 1/5, C = 100 and therefore µk = C/(σkτk) = 1, for k = 1, 2.
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+DRF
+PF
+(a) Exponential task size
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+ 0
+ 0.2
+ 0.4
+ 0.6
+ 0.8
+ 1
+Relative service rate
+Load
+DRF
+PF
+(b) Erlang-20 task size
+Figure 6: Service rate against load of resource 1 (CPU) for unbalanced traﬁc (ρ1 = 3ρ2).
+Figure 6 shows the simulation results for DRF and PF allocations under unbalanced load, ρ1 = 3ρ2.
+The left hand plots relate to exponentially distributed task sizes. Compared to the right hand plots of
+Figure 1 there is a signiﬁcant reduction in service rate for low loads due to the discrepancy noted above.
+The service time of an isolated job in the ﬂuid model is the sum of 500 task inter-departure intervals at
+rate 100 compared, in the task-based system, to 401 intervals at rate 100 plus one at rate 99, one at rate
+98, . . . , and 1 at rate 1. The ratio of service times is thus
+500
+100/
+401
+100 + 1
+99 + 1
+98 + . . . + 1
+
+≈0.54,
+corresponding to the zero load service rate seen in the ﬁgure.
+The discrepancy is smaller for task service times that are more deterministic. The right hand plot
+relates to an Erlang-20 distribution (i.e., the sum of 20 exponential random variables) with the same
+mean yielding service rates much closer to those of the ﬂuid model. The ﬂuid model is also a good ﬁt
+when the number of tasks per job is much bigger than the resource capacity (results not shown).
+Despite the discrepancy, it is clear that the relative advantage of PF over DRF, observed and analyzed
+in Section 3, is preserved under the task-based model. PF realizes a more favourable eﬃciency-fairness
+tradeoﬀ, especially when demand for some resource is relatively low.
+5
+Related work
+A number of authors have extended the DRF concept introduced by Ghodsi et al. [GZH+11]. Parkes
+et al. [PPS12] generalize DRF notably to account for per-job sharing weights. Psomas and Schwartz
+[PS13] take account of the fact that task resources must ﬁt into a single machine, bringing bin packing
+considerations to the allocation problem. Wang et al. [WLL13a] further generalize this approach by
+accounting for heterogeneous server capacity limits. Bhattacharya et al. [BCF+13] add the notion of
+hierarchical scheduling to DRF: cluster resource allocations account also for shares attributed to the
+departments that own particular jobs. It is noteworthy that DRF is now implemented in the Hadoop
+Next Generation Fair Scheduler1. Lastly, we note the proposal to use DRF in a diﬀerent application
+setting, namely sharing middlebox resources in software routers [GSZS12, WLL13b].
+1http://hadoop.apache.org/docs/r2.3.0/hadoop-yarn/hadoop-yarn-site/FairScheduler.html
+11
+
+===== PAGE 12 =====
+An alternative multi-resource fairness criterion is proposed by Dolev et al. [DFH+12]. The authors
+introduce the notion of entitlement corresponding to the share of each resource to which a job should
+minimally have access. The objective is then to deﬁne an allocation such that users do not receive less
+than their entitlement on at least one bottlenecked resource and therefore have “no justiﬁed complaints”.
+The resulting allocation, named bottleneck-based fairness (BBF), has been further developed by Zeldes
+and Feitelson [ZF13] who propose an on-line algorithm. The multi-resource fairness problem is deﬁned
+more formally by Gutman and Nisan who generalize the DRF and BBF deﬁnitions somewhat [GN12].
+These authors identify similarities with prior work on fairness in the economics literature and propose
+polynomial complexity algorithms drawn from that source. Joe-Wong et al. [JWSLC12] propose alter-
+native generalized deﬁnitions of what constitutes a fair multi-resource allocation identifying notions of
+“Fairness on dominant shares” (FDS) and “Generalized fairness on jobs” (GFJ).
+All the work cited in the above two paragraphs considers sharing between a ﬁxed population of
+jobs and ignores the impact of traﬃc dynamics due to arrivals over time of ﬁnite size jobs. They do
+not therefore evaluate the performance of allocations in terms of realized job completion times which is
+arguably the most relevant criterion in appraising their eﬀectiveness.
+There is an abundant literature on sharing network bandwidth. PF and, more generally, the idea
+that bandwidth sharing between a ﬁxed set of ﬂows should maximize a sum of per-ﬂow utilities were
+notions introduced by Kelly et al. in 1998 [KMT98]. In that work, and subsequent contributions by
+many authors on network utility maximization, the population of ﬂows in progress is assumed ﬁxed. We
+believe this to be inappropriate, like the assumption that the population of jobs is ﬁxed when evaluating
+cluster sharing. It does not make much sense to measure the utility of a ﬂow as a function of its rate
+(e.g., the log function for PF) on recognizing that the population of ﬂows in progress, and consequently
+the rate of any ongoing ﬂow, changes rapidly and signiﬁcantly throughout the lifetime of that ﬂow.
+The study of bandwidth sharing under a dynamic model of traﬃc also began at the end of the 90s
+[MR00]. The most signiﬁcant results derived over an ensuing period of several years are summarized in
+the paper by Bonald et al. [BMPV06]. It turns out that PF brings signiﬁcantly better ﬂow completion
+time performance than max-min fairness for a network with a mix of wired and wireless links (e.g., see
+Fig. 17.14 in [BP11]). Flows in such networks require unequal resource shares, like jobs in the compute
+cluster, so that these bandwidth sharing results anticipate the excellent performance of PF demonstrated
+here.
+6
+Conclusions
+Sharing multiple compute cluster resources like CPU and RAM is in many ways analogous to sharing
+bandwidth in a network where each link is considered as a distinct resource. The analogy is closest with
+respect to a wireless network where ﬂows have diﬀerent resource requirements on wired and radio links,
+respectively. We know proportional fairness (PF) performs well in such networks and have therefore
+sought to evaluate its suitability for sharing cluster resources. Our results conﬁrm that PF is indeed
+preferable to so-called dominant resource fairness (DRF), the sharing criterion currently applied by the
+Next Generation Hadoop Fair Scheduler, for example.
+DRF was developed to realize a set of sharing properties derived essentially from micro-economics
+considerations. In particular, DRF is claimed to be strategy proof in the sense that a job cannot gain
+better service by announcing false requirements. We have argued here that these properties must be
+revisited to account for the dynamics over time of the job population. In this context, an algorithm is
+strategy proof if the expected completion time of a job cannot be reduced by false announcements, given
+that the user is necessarily unaware of the precise mix of competing jobs.
+In the dynamic setting, PF is strategy proof to the same degree as DRF: it is not possible to improve an
+allocation by declaring false requirements. PF realizes a better fairness–eﬃciency tradeoﬀthan DRF over
+the range of possible loads. This is especially true when resource load is unbalanced with some resources
+remaining underloaded as others become saturated. DRF is then particularly deﬁcient in overly limiting
+use of the underloaded resource in order to satisfy its particular notion of fairness.
+PF can be realized with the same, low complexity as DRF by adapting its “serve-the-most-deprived-
+job” policy. When resources are freed as tasks complete, they are assigned to new tasks of the job whose
+current allocation is furthest from the PF ideal. This ideal allocation is easily determined as the result
+of a simple constrained optimization problem.
+12
+
+===== PAGE 13 =====
+It remains to adapt the PF allocation to account for practical placement constraints that occur
+in data centers.
+These include the requirement to allocate CPU and RAM on the same server, for
+example, or to use a speciﬁc type of server for some jobs. It is also of interest to incorporate hierarchical
+scheduling criteria whereby the departments originating certain classes of jobs have overall service rate
+guarantees. Available trace data suggests cluster resources are currently signiﬁcantly over-provisioned so
+that optimized sharing is hardly an issue in practice. In future, however, one would expect tighter energy
+management leading to a requirement for more closely controlled performance. The key to this would be
+analytical modelling enabling one to predict performance given system capacity and load, by applying
+the robust engineering techniques developed over recent years for networks, for example.
+References
+[BCF+13]
+Arka A. Bhattacharya, David Culler, Eric Friedman, Ali Ghodsi, Scott Shenker, and Ion
+Stoica. Hierarchical scheduling for diverse datacenter workloads. In Proceedings of the 4th
+Annual Symposium on Cloud Computing, SOCC ’13, pages 4:1–4:15, New York, NY, USA,
+2013. ACM.
+[BMPV06]
+T. Bonald, L. Massouli´e, A. Prouti`ere, and J. Virtamo. A queueing analysis of max-min
+fairness, proportional fairness and balanced fairness. Queueing Syst. Theory Appl., 53(1-
+2):65–84, June 2006.
+[BP11]
+Thomas Bonald and Alexandre Proutiere. A queueing analysis of data networks. In Richard
+Boucherie and Nico van Dijk, editors, Queueing Networks: A fundamental approach, pages
+729–765. Springer, 2011.
+[DFH+12]
+Danny Dolev, Dror G. Feitelson, Joseph Y. Halpern, Raz Kupferman, and Nathan Linial.
+No justiﬁed complaints: On fair sharing of multiple resources. In Proceedings of the 3rd
+Innovations in Theoretical Computer Science Conference, ITCS ’12, pages 68–75, New York,
+NY, USA, 2012. ACM.
+[GN12]
+Avital Gutman and Noam Nisan.
+Fair allocation without trade.
+In Proceedings of the
+11th International Conference on Autonomous Agents and Multiagent Systems - Volume 2,
+AAMAS ’12, pages 719–728, Richland, SC, 2012. International Foundation for Autonomous
+Agents and Multiagent Systems.
+[GSZS12]
+Ali Ghodsi, Vyas Sekar, Matei Zaharia, and Ion Stoica. Multi-resource fair queueing for
+packet processing. In Proceedings of the ACM SIGCOMM 2012 Conference on Applications,
+Technologies, Architectures, and Protocols for Computer Communication, SIGCOMM ’12,
+pages 1–12, New York, NY, USA, 2012. ACM.
+[GZH+11]
+Ali Ghodsi, Matei Zaharia, Benjamin Hindman, Andy Konwinski, Scott Shenker, and Ion
+Stoica. Dominant resource fairness: Fair allocation of multiple resource types. In Proceedings
+of the 8th USENIX Conference on Networked Systems Design and Implementation, NSDI’11,
+pages 24–24, Berkeley, CA, USA, 2011. USENIX Association.
+[GZSS13]
+Ali Ghodsi, Matei Zaharia, Scott Shenker, and Ion Stoica. Choosy: Max-min fair sharing
+for datacenter jobs with constraints. In Proceedings of the 8th ACM European Conference
+on Computer Systems, EuroSys ’13, pages 365–378, New York, NY, USA, 2013. ACM.
+[JWSLC12] C. Joe-Wong, S. Sen, Tian Lan, and Mung Chiang. Multi-resource allocation: Fairness-
+eﬃciency tradeoﬀs in a unifying framework. In INFOCOM, 2012 Proceedings IEEE, pages
+1206–1214, 2012.
+[KMT98]
+F. P. Kelly, A. K. Maulloo, and D. K. H. Tan. Rate control for communication networks:
+Shadow prices, proportional fairness and stability. The Journal of the Operational Research
+Society, 49(3):pp. 237–252, 1998.
+[MR00]
+L. Massouli´e and J.W. Roberts. Bandwidth sharing and admission control for elastic traﬃc.
+Telecommunication Systems, 15(1-2):185–201, 2000.
+13
+
+===== PAGE 14 =====
+[MW00]
+Jeonghoon Mo and Jean Walrand.
+Fair end-to-end window-based congestion control.
+IEEE/ACM Trans. Netw., 8(5):556–567, October 2000.
+[PPS12]
+David C. Parkes, Ariel D. Procaccia, and Nisarg Shah. Beyond dominant resource fairness:
+extensions, limitations, and indivisibilities. In ACM Conference on Electronic Commerce,
+pages 808–825. ACM, 2012.
+[PS13]
+Christos-Alexandros Psomas and Jarett Schwartz. Beyond beyond dominant resource fairness
+: Indivisible resource allocation in clusters. Tech Report Berkeley, 2013.
+[RTG+12]
+Charles Reiss, Alexey Tumanov, Gregory R. Ganger, Randy H. Katz, and Michael A. Kozuch.
+Heterogeneity and dynamicity of clouds at scale: Google trace analysis. In Proceedings of
+the Third ACM Symposium on Cloud Computing, SoCC ’12, pages 7:1–7:13, New York, NY,
+USA, 2012. ACM.
+[WLL13a]
+Wei Wang, Baochun Li, and Ben Liang. Dominant resource fairness in cloud computing
+systems with heterogeneous servers. CoRR, abs/1308.0083, 2013.
+[WLL13b]
+Wei Wang, Baochun Li, and Ben Liang. Multi-resource round robin: A low complexity
+packet scheduler with dominant resource fairness. In ICNP 2013, 2013.
+[Ye03]
+Heng-Qing Ye. Stability of data networks under an optimization-based bandwidth allocation.
+Automatic Control, IEEE Transactions on, 48(7):1238–1242, July 2003.
+[ZF13]
+Yoel Zeldes and Dror G. Feitelson. On-line fair allocations based on bottlenecks and global
+priorities. In Proceedings of the 4th ACM/SPEC International Conference on Performance
+Engineering, ICPE ’13, pages 229–240, New York, NY, USA, 2013. ACM.
+14

@@ -1,0 +1,11 @@
+Title: Testing for a unit root in time series regression
+Authors: Peter C.B. Phillips, Pierre Perrón
+Source: OpenAlex
+Date: 1988-01-01
+URL: https://doi.org/10.1093/biomet/75.2.335
+
+Abstract (EN):
+This paper proposes new tests for detecting the presence of a unit root in quite general time series models. Our approach is nonparametric with respect to nuisance parameters and thereby allows for a very wide class of weakly dependent and possibly heterogeneously distributed data. The tests accommodate models with a fitted drift and a time trend so that they may be used to discriminate between unit root nonstationarity and stationarity about a deterministic trend. The limiting distributions of the statistics are obtained under both the unit root null and a sequence of local alternatives. The latter noncentral distribution theory yields local asymptotic power functions for the tests and facilitates comparisons with alternative procedures due to Dickey & Fuller. Simulations are reported on the performance of the new tests in finite samples.
+
+Abstract (KO):
+본 논문에서는 매우 일반적인 시계열 모델에서 단위근의 존재를 탐지하기 위한 새로운 테스트를 제안합니다. 우리의 접근 방식은 성가신 매개 변수와 관련하여 비모수적이므로 약하게 종속적이고 이질적으로 분산된 데이터의 매우 광범위한 클래스를 허용합니다. 테스트에서는 결정적 추세에 대한 단위근 비정상성과 정상성을 구별하는 데 사용할 수 있도록 적합한 드리프트와 시간 추세가 있는 모델을 수용합니다. 통계의 제한 분포는 단위 루트 널과 일련의 로컬 대안 모두에서 얻어집니다. 후자의 비중심 분포 이론은 검정을 위한 국소 점근 검정력 함수를 산출하고 Dickey & Fuller로 인해 대체 절차와의 비교를 용이하게 합니다. 유한 샘플의 새로운 테스트 성능에 대한 시뮬레이션이 보고됩니다.

@@ -1,0 +1,3287 @@
+REVIEW
+Open Access
+© The Author(s) 2026. Open Access  This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International 
+License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate 
+credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. 
+You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party 
+material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material 
+is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted 
+use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit ​h​t​t​p​:​/​/​c​r​e​a​t​i​v​e​c​o​m​m​o​n​s​.​o​r​g​/​l​i​c​e​n​s​
+e​s​/​b​y​-​n​c​-​n​d​/​4​.​0​/.
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+https://doi.org/10.1007/s43621-026-02809-6
+*Correspondence:
+Ahmad Ayobami
+ahmadayobami2000@student.
+usm.my
+1Department of Accounting, School 
+of Management, Universiti Sains 
+Malaysia, Gelugor, Penang, Malaysia
+Leadership competencies: a global bibliometric 
+analysis (1960–2025)
+Zubir Azhar1 and Ahmad Ayobami1*
+1  Introduction
+Over the past 65  years, research on leadership competencies has gained substantial 
+scholarly attention due to its critical role in shaping organisational performance [1]. The 
+development stems from recognising leadership competencies as the set of essential 
+skills and capabilities that enable leaders to guide organisations efficiently and effectively 
+amid evolving business environment [2–4]. Beyond traditional managerial skills, lead­
+ership competencies encompass cognitive, interpersonal, emotional, ethical, and strate­
+gic capabilities that allow leaders to anticipate challenges, foster innovation, and align 
+organisational objectives with broader economic, societal, and environmental goals. [1].
+Discover Sustainability
+Abstract
+Over the past few decades, research on leadership competencies has expanded 
+considerably, shaping both academic inquiries and organisational practice. However, 
+its conceptualisation and application remain limited, as many institutions still treat 
+leadership competency models as static models rather than evolving capabilities. 
+This study bridges the gap through a comprehensive bibliometric analysis of 1,993 
+publications indexed in Scopus (1960–2025), examining intellectual foundations, 
+publication trends, and thematic evolution. Using BiblioMagika, BiblioMagika Split, 
+OpenRefine, and VOSviewer, the study identifies steady growth with over 29,000 
+citations across social sciences, business, management, and health domains. The 
+United States, the United Kingdom, Australia, and Canada are among the leading 
+contributors, with strong international collaboration networks. Results highlight 
+theoretical lenses, such as the resource-based view (RBV) and dynamic capabilities, 
+alongside emerging themes in leadership competencies. Notably, sustainability 
+remains insufficiently embedded within the discourse of leadership competencies, 
+indicating a significant avenue for future examination. The study concludes that 
+leadership competencies should not be regarded as fixed constructs but as adaptive, 
+context-responsive capabilities that evolve with organisational and environmental 
+dynamics. These insights provide a roadmap for integrating sustainability, innovation, 
+and other contextual factors into future leadership competency models.
+Keywords  Leadership, Competency, Leadership competencies, Leadership 
+development, Bibliometric analysis, Sustainable development
+Page 2 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Existing literature conceptualises leadership competencies as multidimensional con­
+structs that directly influence individual, team, and organisational outcomes. According 
+to Ruben et al. [5], leadership competencies comprise an array of skills and capabilities 
+that influence team performance. For example, intrapersonal, interpersonal, and cogni­
+tive skills are essential for synchronising team efforts and organisational objectives in 
+order to achieve a high productivity level [6, 7]. Similarly, technical expertise in one’s 
+professional domain fosters a work environment that values teamwork and mutual 
+growth. It is also evident that technical competence is essential for managers who want 
+to efficiently address workplace challenges and garner the esteem of their subordinates 
+[8, 9]. Additionally, emotional and social competencies, including the management of 
+interpersonal relationships, are crucial for promoting organisational performance [10, 
+11]. Ultimately, these competencies are essential for individuals and organisations in this 
+dynamic corporate environment.
+Within the contemporary business context, leadership competencies have become 
+increasingly indispensable. Shahzad [12] highlights their importance in navigating 
+complex and volatile business environments, particularly in integrating technological 
+innovations into human resource management systems. Similarly, Natsir et al. [13] dem­
+onstrate that leadership competencies, including goal setting, communication, empow­
+erment, and mentoring, significantly enhance employee motivation and productivity, 
+thereby fostering a positive workplace environment. Hence, enhancing these competen­
+cies is imperative not only for individual leadership effectiveness but also for building 
+learning organisations capable of sustaining performance amid continuous environmen­
+tal change.
+Prior studies have emphasised the role of leadership competencies, particularly in 
+strengthening communication, collaboration, and strategic decision-making. Rony et 
+al. [14] the development of these competencies enhances leadership effectiveness and 
+facilitates the achievement of organisational goals. Recent studies also emphasise the 
+importance of emotional intelligence, ethical judgment, resilience, and strategic fore­
+sight contribute substantially to leadership effectiveness and organisational success 
+[15]. For Instance, Boyatzis [16] emotional intelligence attributes result in superior job 
+performance. Similarly, Ngayo [17] proposed that leadership competencies comprise 
+underlying characteristics, motives, traits, skills, and self-concepts that differentiate high 
+performers from average ones. These competencies are intangible assets that provide 
+sustained competitive advantage because they are rare, valuable, and difficult to imitate. 
+Consequently, leadership competency frameworks are increasingly adopted by organ­
+isations and institutions to structure leadership development, performance assessment, 
+and succession planning.
+However, despite the proliferation of leadership research, the absence of a compre­
+hensive integrated knowledge base on leadership competencies limits both theoretical 
+progress and practical application. Previous existing reviews are often limited to specific 
+disciplines or leadership styles, offering only a partial understanding of the field [18]. 
+This conceptual fragmentation impedes the development of unified frameworks that 
+could inform leadership education, leadership development, and organisational policy. 
+Additionally, the accelerating forces of digital transformation, sustainability imperatives, 
+and global crises, including the post-pandemic leadership challenges, underscore the 
+need to understand how leadership competencies have evolved and which dimensions 
+Page 3 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+are emerging as critical for future leaders [18]. A systematic bibliometric approach can 
+reveal intellectual patterns, research trajectories, and global collaborations, guiding 
+scholars toward an integrated and contextually relevant understanding of leadership 
+competence. Thus, this study is motivated by the need to synthesise dispersed knowl­
+edge, identify conceptual convergence, and establish a foundation for future theoretical 
+and empirical advancements. [19].
+To address these objectives and bridge the existing conceptual fragmentation, this 
+study is guided by the following research questions (RQs):
+RQ1  What are the publishing trends, and which journals and countries are the most 
+influential contributors to leadership competency research?
+RQ2   What are the intellectual and thematic structures of the leadership competency 
+research domain?
+RQ3  What are the most prevalent and emerging keywords and concepts in the leader­
+ship competency literature?
+RQ4  What theoretical frameworks dominate this field?
+RQ5  What are the future research opportunities based on recent thematic developments?
+This study makes several important contributions. First, it offers a comprehensive and 
+systematic mapping of leadership competencies, addressing the long-standing fragmen­
+tation through integrating literature from all relevant disciplines. Second, it visualises 
+the intellectual structure underpinning this research area through co-citation and biblio­
+graphic coupling analyses, illuminating how theories and methodologies have evolved. 
+Third, by employing keyword co-occurrence and thematic evolution analysis, the study 
+reveals how leadership competency concepts have evolved in response to global chal­
+lenges, including sustainability and various forms of diversity. Fourth, through content 
+analysis, it identifies the major theoretical frameworks that dominate this field. Finally, 
+the study highlights emerging research opportunities that present various promising 
+areas. Collectively, these contributions provide a strategic roadmap for scholars, prac­
+titioners, and educators seeking to advance leadership theory and practice in a rapidly 
+changing world.
+1.1  Theoretical background
+From a theoretical perspective, both the resource-based view (RBV) and the dynamic 
+capabilities theory provide a strong foundation for understanding the strategic value of 
+leadership competencies. According to the RBV, leaders’ competencies and capabilities 
+serve as intangible assets that shape strategic decisions and organisational outcomes [2]. 
+Similarly, from the perspective of the dynamic capabilities theory, competencies can be 
+seen as intangible, firm-specific assets that enhance the organisation’s capacity to inte­
+grate, build, and reconfigure resources in response to external changes [20].
+Within these theoretical lenses, leadership competencies constitute a critical intangi­
+ble asset that contributes to strategic competitive advantage through fostering employee 
+engagement, ethical conduct, and learning orientation. Moreover, previous studies 
+have also linked leadership competencies with corporate responsibility, arguing that 
+Page 4 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+competent leaders play a crucial role in fostering responsible governance [21]. Conse­
+quently, leadership competencies are now viewed not merely as personal attributes but 
+as strategic imperatives that underpin corporate governance, ethical governance, and 
+long-term performance.
+Figure 1 conceptualizes leadership competencies as a dynamic configurational system 
+that continuously adapts to changing environmental conditions rather than functioning 
+as a static or linear set of traits. At the outer layer, environmental dynamics, including 
+regulatory changes, market volatility, technological disruption, institutional pressures, 
+and sustainability demand, act as ongoing triggers that shape leadership demands and 
+organizational priorities. At the core of the framework lies the Leadership Competency 
+Configuration System, which represents an integrated and interdependent bundle of 
+leadership competencies.
+These competencies are not deployed in isolation, instead, they are reconfigured and 
+recombined in response to environmental signals. Through this system, leaders actively 
+orchestrate and reconfigure organizational resources, capabilities, and routines, consis­
+tent with the logic of dynamic capabilities theory. The framework further emphasizes 
+strategic reinforcement and feedback, whereby organizational outcomes inform learn­
+ing, capability development, and subsequent reconfiguration of leadership competen­
+cies. As a result, outcomes such as sustainable performance, competitive advantage, 
+organizational resilience, and long-term value creation emerge as dynamic conse­
+quences of effective leadership configuration rather than as fixed endpoints. Overall, the 
+figure illustrates leadership competencies as a self-adjusting system that co-evolves with 
+the environment and organizational performance, providing a robust theoretical foun­
+dation for understanding leadership effectiveness under conditions of uncertainty and 
+sustainability change.
+Fig. 1  Dynamic configuration system
+ 
+Page 5 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+2  Literature review
+Several prior studies attempted to review leadership-related research through narra­
+tive or bibliometric methods, yet notable limitations persist. For example, studies have 
+conducted a narrative review of leadership, examining 141 articles from the Web of Sci­
+ence (WoS) database, covering the period from 2000 to 2022 [22]. Similarly, some have 
+also performed a bibliometric review using the Scopus database, analysing 624 scholarly 
+works published between 1966 to 2023, with a specific focus on strategic management 
+through competencies [23]. Additionally, Tao et al. conducted a bibliometric analysis 
+of leadership competencies, reviewing 416 articles from the WoS Core Collection pub­
+lished prior to 2022 [24]. However, this study will build upon previous studies by exam­
+ining leadership competencies across multiple interdisciplinary fields using the Scopus 
+database.
+This bibliometric study stands apart from previous research studies in multiple ways. 
+The data extraction interval spanned from 1960 to October 10, 2025, encompassing 
+1993 publications, which exceeded the parameters of previous inquiries, as it focused 
+on global insights into leadership competencies. Second, it concentrates exclusively on 
+overarching leadership competencies and the broader spectrum of dimensions, in con­
+trast to the narrative review conducted by [22], which solely examines digital leadership 
+competencies, and the bibliometric analysis by [23], which scrutinised strategic trends 
+in leadership competence. Third, it broadens the parameters of the bibliometric inves­
+tigation published by Tao et al. [24] by analysing leadership competency publications 
+across all academic disciplines, rather than confining itself to a singular field (Business) 
+[24]. Fourth, this research provides a broader view of leadership competencies by using 
+a unique database called Scopus, rather than the previous databases utilised in earlier 
+bibliometric studies in this leadership area. Lastly, this study provides an overview of 
+global publications, an approach that has been overlooked by most past reviews across 
+all disciplines.
+3  Research methodology
+3.1  Search strategy
+The data utilised in this research were retrieved from the Scopus repository on October 
+10, 2025. The search was conducted for the period 1960–2025, using an expanded set of 
+title-based keywords to ensure both precision and conceptual inclusiveness. Specifically, 
+the search query applied was: TITLE (“leadership competencies" OR "leadership skill" 
+OR “leadership capabilities*” OR “managerial competencies*” OR “managerial skill*” OR 
+“managerial capabilities*” OR “executive competencies*” OR "executive skill*” OR “exec­
+utive capabilities*”).
+This broader query was designed to capture variations in terminology commonly used 
+in leadership and management research, ensuring that related constructs were not over­
+looked. The restriction to the title field was intentional to guarantee that retrieved pub­
+lications directly reflect the centrality of leadership or managerial competencies within 
+their scope, minimizing irrelevant records where such terms appear only tangentially in 
+abstracts or keywords.
+Also. It encompassed details about subject classification, document categorisation, 
+source typology, linguistic attributes, geographical location, authors’ institutional affili­
+ations, citation metrics, and keywords. Scopus was chosen as the primary data source 
+Page 6 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+for this bibliometric evaluation based on its comprehensive collection of scholarly works 
+[25].
+3.2  Data collection
+The exploration encompassed all articles titled "Leadership Competencies." We incorpo­
+rated publications accessible in all languages from 1960 to October 10, 2025, leading to 
+1993 publications. The review period (1960–2025) was not predetermined but derived 
+from the inclusion and exclusion criteria applied during screening, with the earliest rel­
+evant publication appearing in 1960 and the most recent in 2025, reflecting the natural 
+span of available literature in the domain [28, 29].
+The article titles, abstracts, and keywords of the dataset were scrutinised. In the case 
+of uncertainty, the complete text was reviewed. Afterwards, 1993 publications were pro­
+cured for examination. This procedure is elucidated in Search strategy.
+3.3  Data cleaning and harmonization
+Data cleaning and refinement are crucial phases in bibliometric review, as they guar­
+antee the precision and reliability of results. This process entails correcting errors, 
+removing duplicates, and standardising data formats to create a consistent dataset. By 
+thoroughly preparing the data, researchers can effectively apply various bibliometric 
+methods, leading to meaningful insights and trends in the scientific literature [30]. In 
+the context of this review, we employed OpenRefine, BiblioMagika, and BiblioMagika 
+Split. These three advanced tools were designed to clean and harmonise unstructured 
+data, including author identities, institutional affiliations, keywords, and other critical 
+bibliographic details. Given the diversity of research outputs and potential discrepancies 
+inherent in the dataset, this software facilitates data accuracy and consistency.
+The data cleaning process started by extracting the Scopus dataset in CSV format. 
+Next, the necessary files were created, focusing on specific columns such as keywords, 
+author names, and affiliations. Various methods and functions offered by the clustering 
+tools were then employed to refine these elements. OpenRefine proved invaluable for 
+this task, significantly enhancing data standardisation and accuracy.
+BiblioMagika was utilised to conduct comprehensive bibliometric analyses, cover­
+ing metrics such as Total Publications (TP), Number of Contributing Authors (NCA), 
+Number of Cited Publications (NCP), Total Citations (TC), Citations per Paper (C/P), 
+Citations per Cited Paper (C/CP), Citations per Author (C/A), Authors per Paper (A/P), 
+Citations per Year (C/Y), Citable Year, h-index, g-index, m-index, and Citation Sum 
+within h-Core across different time frames, source titles, authors, institutions, and coun­
+tries. Additionally, BiblioMagika enhanced our ability to identify discrepancies in data, 
+allowing us to systematically address these issues and perform the necessary data clean­
+ing and harmonisation procedures.
+After the first cleaning phase, all screened and modified keywords underwent a metic­
+ulous manual review to ensure accuracy. Multivalued cells were merged, and the original 
+delimiters used in the segmentation process were reinstated to maintain data consis­
+tency. Ultimately, the refined and standardised dataset was restored to its original for­
+mat to prepare it for further analytical tasks. By utilising the capabilities of these tools, 
+we successfully validated our analyses and ensured the reliability of our findings. The 
+harmonisation and cleaning processes also made our dataset more detailed and easier 
+Page 7 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+to understand, providing a solid foundation for exploring the complexities of leadership 
+competencies in greater depth.
+3.4  Data analysis and tools
+The data analysis was systematically organised to address the research inquiries outlined 
+in the introduction section. Our approach includes capturing the current state of leader­
+ship competencies research by examining variables such as document type, source type, 
+languages, subject areas, and citation metrics. The findings are shown based on different 
+criteria, including annual publication counts, contributions from leading authors, insti­
+tutions, countries, and source titles, to identify key contributors and emerging trends 
+within the field. We employed bibliometric indicators, including total publications, num­
+ber of cited papers, total citations, citations per paper, citations per cited paper, h-index, 
+g-index, m-index, and citation sum within the h-core, to thoroughly assess the impact 
+and significance of the identified publications.
+We applied visualisation techniques to reveal key themes and concepts within the 
+field, such as co-occurrence network analysis, thematic mapping, and factorial analysis 
+of author keywords. These visual tools enabled us to pinpoint groups of interconnected 
+topics, reveal concealed patterns, and obtain a deeper understanding of subdomains 
+within the research landscape.
+The included studies were analyzed using BiblioMagika, BiblioMagika Split, Open­
+Refine, and VOSviewer. Initial data organisation was performed using BiblioMagika. 
+Bibliometrics played a pivotal role in converting Scopus metadata into diverse metrics, 
+facilitating the cleaning of authors’ data, affiliations, and the associated countries. Sub­
+sequently, OpenRefine was used to clean and standardize author names and affiliations. 
+After data cleaning and harmonization, network analysis visualizations were conducted 
+using Bibliometrix and VOSviewer. VOS viewer, with its graphical interface, was instru­
+mental in generating and displaying maps for visualising co-authorship and co-word 
+analyses, as well as exploring the evolution of research themes in leadership competen­
+cies. Lastly, Biblioshiny, a shiny app linked to the Bibliometrix R package, supported fac­
+torial analysis utilising author keywords.
+4  Analysis and findings
+4.1  Current state
+The citation pattern of publications on leadership competencies was carried out using a 
+dataset of 1,993 publications spanning from 1960 to 2025 (Table 1). The findings revealed 
+that 70.5% (n = 1,404) of these publications were cited at least once. These cited publica­
+tions received 29,204 citations, averaging approximately 449.29 citations per year. On a 
+per-paper basis, the average citation count was 14.65, while the average for cited papers 
+alone was higher, at 20.80. The analysis highlighted an extensive collaborative effort in 
+leadership competencies, with an average of 2.72 authors per paper and 5,423 contribut­
+ing authors. This level of collaboration indicates a high degree of multi-authorship, sug­
+gesting that the field benefits from a diverse range of scholarly contributions.
+The h-index for leadership competency publications was calculated at 75, indicating 
+that 75 papers in this dataset have each been cited at least 75 times. This metric, which 
+measures cumulative impact, aligns well with the field’s sustained scholarly engagement 
+over several decades [31]. Furthermore, the g-index was 134, reflecting the significant 
+Page 8 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+impact of highly cited papers within the dataset and suggesting a concentration of influ­
+ence among key works [32]. Notably, the sum of citations within the h-core reached 
+24,735, further highlighting the impact of core, highly cited works that form the founda­
+tion of this research area.
+Likewise, articles were the most common document type in leadership competencies 
+research, comprising 72.40% of the total publications (n = 1,443), subsequently followed 
+by conference papers (9.48%) and book chapters (7.48%) (Table 2). Reviews were less 
+frequent, representing 4.92% of the total, while less common formats included notes 
+(1.96%), editorials (1.20%), short surveys (1.05%), books (0.90%), errata (0.25%), letters 
+(0.20%), retracted publications (0.10%), and reports (0.05%).
+This distribution indicates that original research articles dominate this field, supported 
+by significant contributions from book chapters and conference papers. This reflects the 
+topic’s broad academic engagement and practical relevance. A more detailed breakdown 
+of document types and their contribution to the field’s impact can be found below.
+In terms of publication language, English overwhelmingly dominated the literature on 
+leadership competencies, accounting for 96.49% (n = 1,923) of all publications (Table 3).
+This prevalence underscores the global reliance on English as the principal medium for 
+scholarly communication in this field. Other languages appeared with markedly lower 
+Table 1  Citation metrics
+Main information
+Data
+Publication years
+1960–2025
+Total publications
+1993
+Citable year
+66
+Number of contributing authors
+5423
+Number of cited papers
+1404
+Total citations
+29,204
+Citation per paper
+14.65
+Citation per cited paper
+20.80
+Citation per year
+449.29
+Citation per author
+5.39
+Author per paper
+2.72
+Citation sum within h-Core
+24,735
+h-index
+75
+g-index
+134
+m-index
+1.136
+Table 2  Document type distribution
+Document type
+TP
+%
+Article
+1443
+72.40
+Conference paper
+189
+9.48
+Book chapter
+149
+7.48
+Review
+98
+4.92
+Note
+39
+1.96
+Editorial
+24
+1.20
+Short survey
+21
+1.05
+Book
+18
+0.90
+Erratum
+0.25
+Letter
+4
+0.20
+Retracted
+2
+0.10
+Report
+1
+0.05
+Page 9 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+frequencies, including Spanish (1.10%), Portuguese (0.90%), German (0.60%), Russian 
+(0.35%), French (0.30%), and Persian (0.30%). A few studies were also published in Chi­
+nese (0.20%), Turkish (0.20%), and Korean (0.15%), while minor representations were 
+found in Croatian, Hebrew, Italian, Lithuanian, Malay, and Ukrainian (each 0.05%).
+Regarding subject area distribution, the analysis revealed that Business, Management 
+and Accounting constituted the largest proportion of publications (36.33%), followed 
+closely by Social Sciences (34.87%), indicating the interdisciplinary nature of leadership 
+competency research (Table 4). Other notable areas of contribution included Medicine 
+(20.22%), Economics, Econometrics and Finance (11.24%), Engineering (10.34%), Nurs­
+ing (9.58%), and Psychology (7.58%). Additional subject areas such as Computer Science 
+(6.82%), Decision Sciences (4.26%), Arts and Humanities (3.21%), and Health Profes­
+sions (2.86%) also demonstrated engagement in the discourse.
+Less prominent but still relevant contributions emerged from Environmental Science 
+(2.66%), Mathematics (1.61%), Multidisciplinary (1.40%), Energy (1.35%), and Agricul­
+tural and Biological Sciences (0.90%). Smaller shares were recorded in fields such as 
+Pharmacology, Toxicology and Pharmaceutics (0.90%), Biochemistry, Genetics and 
+Molecular Biology (0.85%), Neuroscience (0.80%), Dentistry (0.50%), Earth and Plane­
+tary Sciences (0.50%), Materials Science (0.50%), Physics and Astronomy (0.50%), Chem­
+ical Engineering (0.25%), Chemistry (0.20%), Veterinary (0.15%), and Immunology and 
+Microbiology (0.05%).
+4.2  Publication trends
+The yearly leadership competency publications (TP) have consistently increased since 
+their debut in 1960, with a notable increase in the number of publications over the years, 
+while reaching their peak in 2023 (Fig. 2). Likewise, the number of papers cited (NCP), 
+total citations (TC), and the h-, g-, and m-indexes have all increased over the years, 
+reflecting a growing and more influential research community (Table 5). The trend line 
+indicates that the number of publications grew polynomially (R2 = 0.958), suggesting that 
+the increase in publications is not linear but accelerating, which can be observed in the 
+significant rise after the mid-2000s (Fig. 3).
+Table 3  Language
+Language
+TP
+%
+English
+1923
+96.49
+Spanish
+22
+1.10
+Portuguese
+18
+0.90
+German
+12
+0.60
+Russian
+7
+0.35
+French
+6
+0.30
+Persian
+6
+0.30
+Chinese
+4
+0.20
+Turkish
+4
+0.20
+Korean
+3
+0.15
+Croatian
+1
+0.05
+Hebrew
+1
+0.05
+Italian
+1
+0.05
+Lithuanian
+1
+0.05
+Malay
+1
+0.05
+Ukrainian
+1
+0.05
+Page 10 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+The aggregate citations (TC) peaked in 2005 with 2,213 citations, followed by a notice­
+able decline until 2010, after which they fluctuated before showing another rise in 2019. 
+The average citations per publication (C/P) and average citations per cited publication 
+(C/CP) generally mirrored this trend, with the highest citation impact occurring during 
+the mid-2000s. After 2014, both C/P and C/CP exhibited a gradual decline, suggesting a 
+relative decrease in citation impact per publication in recent years (Table 5).
+The h-index, g-index, and m-index demonstrated steady growth over time, reflecting 
+an increasing cumulative and concentrated impact of leadership competency research. 
+The h-index reached 75, and the g-index peaked at 134, indicating that the field con­
+tinues to be shaped by a core group of highly influential works. The m-index, at 1.136, 
+underscores the field’s consistent and sustained scholarly advancement over the decades.
+4.3  Publication by authors
+Among the most prolific authors in leadership competency research, J. C. R. Añón, from 
+the Management Research Institute in the United States, stands out with 289 publi­
+cations, of which 213 have been cited. His works collectively received 6,408 citations, 
+yielding an average of 22.17 citations per publication (C/P) and 30.08 citations per cited 
+paper (C/CP). Añón’s h-index of 38 and g-index of 80 reflect substantial scholarly influ­
+ence, while his m-index of 0.576 indicates sustained academic productivity and impact 
+over time (Table 6).
+Table 4  Subject area
+Subject area
+TP
+%
+Business, management, and accounting
+724
+36.33
+Social sciences
+695
+34.87
+Medicine
+403
+20.22
+Economics, econometrics, and finance
+224
+11.24
+Engineering
+206
+10.34
+Nursing
+191
+9.58
+Psychology
+151
+7.58
+Computer science
+136
+6.82
+Decision sciences
+85
+4.26
+Arts and humanities
+64
+3.21
+Health professions
+57
+2.86
+Environmental science
+53
+2.66
+Mathematics
+32
+1.61
+Multidisciplinary
+28
+1.40
+Energy
+27
+1.35
+Agricultural and biological sciences
+18
+0.90
+Pharmacology, toxicology and pharmaceutics
+18
+0.90
+biochemistry, genetics and molecular biology
+17
+0.85
+Neuroscience
+16
+0.80
+Dentistry
+10
+0.50
+Earth and planetary sciences
+10
+0.50
+Materials Science
+10
+0.50
+Physics and astronomy
+10
+0.50
+Chemical engineering
+5
+0.25
+Chemistry
+4
+0.20
+Veterinary
+3
+0.15
+Immunology and microbiology
+1
+0.05
+Page 11 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Furthermore, Katarzyna M. Czabanowska from Maastricht University, the Nether­
+lands, ranks among the notable contributors, with seven publications, six of which have 
+been cited. Her total of 32 citations gives an average of 4.57 citations per publication 
+and 5.33 per cited paper. With an h-index of 4, g-index of 5, and m-index of 0.286, Cza­
+banowska demonstrates a steady and consistent contribution to the field. Then, Allan W. 
+Bird from Northeastern University, United States, published six papers, which garnered 
+a total of 253 citations, averaging 42.17 citations per publication and per cited paper 
+(C/P = C/CP). His h-index (5) and g-index (6) indicate that his publications consistently 
+have a significant impact, while his m-index of 0.250 highlights sustained growth in cita­
+tions. (Table 7).
+Another prominent scholar, Frank M. Shipper of Salisbury University, United States, 
+produced six publications, all cited, accumulating 115 citations with an average of 19.17 
+citations per publication. His h-index (6) and g-index (6) reflect an established academic 
+profile, and an m-index of 0.194 points to a gradual yet consistent influence. Afterwards, 
+Tim Heubeck from Universität Bayreuth, Germany, also authored six cited papers, 
+amassing an average of 31.83 citations per publication, totaling 191. His h-index (4), 
+g-index (6), and notably high m-index (1.000) underscore a strong and rapidly growing 
+impact in leadership competency research.
+Fig. 2  Search strategy flow diagram [26, 27]
+ 
+Page 12 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Year
+TP
+NCA
+NCP
+TC
+C/P
+C/CP
+h
+g
+m
+1960
+1
+1
+0
+0
+0.00
+0.00
+0
+0
+0.000
+1962
+2
+2
+1
+1
+0.50
+1.00
+1
+1
+0.016
+1965
+1
+2
+1
+1
+1.00
+1.00
+1
+1
+0.016
+1967
+1
+2
+0
+0
+0.00
+0.00
+0
+0
+0.000
+1969
+1
+1
+1
+7
+7.00
+7.00
+1
+1
+0.018
+1970
+1
+1
+1
+1
+1.00
+1.00
+1
+1
+0.018
+1971
+3
+3
+1
+1
+0.33
+1.00
+1
+1
+0.018
+1972
+3
+4
+1
+5
+1.67
+5.00
+1
+2
+0.019
+1973
+1
+1
+0
+0
+0.00
+0.00
+0
+0
+0.000
+1974
+3
+3
+2
+7
+2.33
+3.50
+1
+2
+0.019
+1976
+3
+4
+2
+114
+38.00
+57.00
+2
+3
+0.040
+1978
+3
+4
+1
+3
+1.00
+3.00
+1
+1
+0.021
+1979
+3
+5
+2
+105
+35.00
+52.50
+2
+3
+0.043
+1980
+3
+5
+3
+8
+2.67
+2.67
+2
+2
+0.043
+1981
+5
+6
+3
+29
+5.80
+9.67
+2
+5
+0.044
+1982
+4
+4
+2
+6
+1.50
+3.00
+2
+2
+0.045
+1983
+8
+13
+5
+27
+3.38
+5.40
+3
+5
+0.070
+1984
+7
+12
+4
+22
+3.14
+5.50
+3
+4
+0.071
+1985
+5
+5
+1
+1
+0.20
+1.00
+1
+1
+0.024
+1986
+4
+6
+2
+68
+17.00
+34.00
+2
+4
+0.050
+1987
+7
+8
+4
+26
+3.71
+6.50
+3
+5
+0.077
+1988
+7
+7
+3
+76
+10.86
+25.33
+2
+7
+0.053
+1989
+7
+8
+3
+18
+2.57
+6.00
+2
+4
+0.054
+1990
+6
+8
+6
+100
+16.67
+16.67
+3
+6
+0.083
+1991
+5
+9
+4
+78
+15.60
+19.50
+4
+5
+0.114
+1992
+8
+11
+5
+52
+6.50
+10.40
+4
+7
+0.118
+1993
+9
+21
+7
+52
+5.78
+7.43
+5
+7
+0.152
+1994
+16
+27
+11
+114
+7.13
+10.36
+7
+10
+0.219
+1995
+10
+19
+9
+275
+27.50
+30.56
+5
+10
+0.161
+1996
+14
+27
+9
+191
+13.64
+21.22
+5
+13
+0.167
+1997
+9
+17
+7
+65
+7.22
+9.29
+3
+8
+0.103
+1998
+18
+32
+16
+336
+18.67
+21.00
+9
+18
+0.321
+1999
+17
+34
+13
+313
+18.41
+24.08
+8
+17
+0.296
+2000
+22
+52
+18
+1976
+89.82
+109.78
+10
+22
+0.385
+2001
+25
+52
+19
+466
+18.64
+24.53
+7
+21
+0.280
+2002
+19
+29
+15
+226
+11.89
+15.07
+7
+15
+0.292
+2003
+26
+47
+21
+1519
+58.42
+72.33
+11
+26
+0.478
+2004
+19
+34
+12
+327
+17.21
+27.25
+8
+18
+0.364
+2005
+31
+63
+26
+2213
+71.39
+85.12
+18
+31
+0.857
+2006
+26
+42
+21
+1279
+49.19
+60.90
+11
+26
+0.550
+2007
+31
+46
+23
+842
+27.16
+36.61
+10
+29
+0.526
+2008
+45
+105
+34
+911
+20.24
+26.79
+13
+30
+0.722
+2009
+40
+98
+33
+1802
+45.05
+54.61
+16
+40
+0.941
+2010
+57
+154
+44
+892
+15.65
+20.27
+14
+29
+0.875
+2011
+39
+92
+31
+1118
+28.67
+36.06
+17
+33
+1.133
+2012
+59
+151
+44
+1130
+19.15
+25.68
+19
+33
+1.357
+2013
+73
+170
+62
+1361
+18.64
+21.95
+20
+35
+1.538
+2014
+59
+138
+44
+673
+11.41
+15.30
+15
+24
+1.250
+2015
+62
+163
+50
+1599
+25.79
+31.98
+16
+39
+1.455
+2016
+73
+209
+56
+671
+9.19
+11.98
+15
+23
+1.500
+2017
+78
+230
+66
+833
+10.68
+12.62
+15
+26
+1.667
+2018
+81
+208
+66
+1063
+13.12
+16.11
+17
+30
+2.125
+2019
+108
+315
+89
+1814
+16.80
+20.38
+18
+40
+2.571
+Table 5  Publication by year
+Page 13 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+In addition, Corey Seemiller from Wright State University, United States, contributed 
+four publications that have received 22 citations, averaging 5.50 citations per publication 
+and cited paper (C/P = C/CP). His h-index (3) and g-index (4), together with an m-index 
+of 0.333, reflect moderate but sustained engagement with the field. Other notable con­
+tributors include Edward L. Baker (University of North Carolina, United States), with six 
+publications and 33 citations (C/P = 5.50; C/CP = 6.60), and Dagmar Cagáňová (Slovak 
+University of Technology, Slovakia), with six papers and 54 citations (C/P = 9.00). Both 
+display moderate academic influence with steady citation patterns.
+Lastly, Stephen J. Zaccaro (George Mason University, United States) and Michael D. 
+Mumford (University of Oklahoma, United States) achieved exceptional citation per­
+formance, with each having five papers that exceeded 1,000 citations: 1,173 and 1,292, 
+respectively. Their extraordinarily high averages (234.60 and 258.40 citations per paper) 
+and strong h- and g-index values (both = 5) mark them as leading intellectual figures 
+within the leadership competency domain.
+4.4  Publication by affiliations
+Analysis of the top 20 institutions contributing to leadership competency research 
+reveals a strong global presence across North America, Europe, Asia, and Latin America. 
+Fig. 3  Total publications and citations by year
+ 
+Year
+TP
+NCA
+NCP
+TC
+C/P
+C/CP
+h
+g
+m
+2020
+88
+280
+72
+1260
+14.32
+17.50
+17
+33
+2.833
+2021
+111
+331
+82
+929
+8.37
+11.33
+15
+26
+3.000
+2022
+130
+395
+102
+792
+6.09
+7.76
+14
+22
+3.500
+2023
+161
+566
+105
+833
+5.17
+7.93
+17
+23
+5.667
+2024
+199
+684
+99
+466
+2.34
+4.71
+10
+16
+5.000
+2025
+136
+457
+40
+107
+0.79
+2.68
+5
+7
+5.000
+Total
+1993
+5423
+1404
+29,204
+14.65
+20.80
+75
+134
+1.136
+TP, total number of publications; NCA, Number of contributing authors; NCP. number of cited publications; TC, total 
+citations; C/P, average citations per publication; C/CP, average citations per cited publication; h, h-index; g, g-index; m, 
+m-index
+Table 5  (continued)
+ 
+Page 14 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Among these, the University of Oklahoma (United States) emerges as the most influen­
+tial institution, with 12 publications, of which 8 were cited, resulting in an exceptional 
+1,306 total citations. This translates to 108.83 citations per publication (C/P) and 163.25 
+citations per cited paper (C/CP), the highest among all institutions. With an h-index of 
+6 and a g-index of 12, respectively, and an m-index of 0.231, the university demonstrates 
+Table 6  Top most productive authors
+Full Name
+Current Affiliation
+Country
+TP
+NCP
+TC
+C/P
+C/CP
+h
+g
+m
+Añón, J. C R
+Management Re­
+search Institute
+United States
+289
+213
+6408
+22.17
+30.08
+38
+80
+0.576
+Czabanowska, 
+Katarzyna M
+Universiteit 
+Maastricht
+Netherlands
+7
+6
+32
+4.57
+5.33
+4
+5
+0.286
+Baker, Edward L
+University of North 
+Carolina
+United States
+6
+5
+33
+5.50
+6.60
+3
+5
+0.273
+Cagáňová, 
+Dagmar
+Slovak University of 
+Technology
+Slovakia
+6
+6
+54
+9.00
+9.00
+5
+6
+0.313
+Heubeck, Tim
+Universität Bayreuth
+Germany
+6
+6
+191
+31.83
+31.83
+4
+6
+1.000
+Shipper, Frank M Salisbury University
+United States
+6
+6
+115
+19.17
+19.17
+6
+6
+0.194
+Bird, Allan W
+Northeastern 
+University
+United States
+6
+6
+253
+42.17
+42.17
+5
+6
+0.250
+Finstuen, Kenn
+Army Medical 
+Department
+United States
+5
+5
+29
+5.80
+5.80
+4
+5
+0.138
+Adamson, 
+Barbara J
+University of Sydney
+Australia
+5
+5
+23
+4.60
+4.60
+3
+4
+0.115
+Zaccaro, Ste­
+phen J
+George Mason 
+University
+United States
+5
+5
+1173
+234.60
+234.60
+5
+5
+0.192
+TP, total number of publications; NCA, number oc contributing authors; NCP, number of cited publications; TC, total 
+citations; C/P, average citations per publication; C/CP, average citations per cited publication; h, h-index; g, g-index; 
+m = m-index
+Table 7  Publication by institutions
+Institution Name
+TP
+NCA
+NCP
+TC
+C/P
+C/CP
+h
+g
+m
+University of Toronto
+13
+24
+8
+54
+4.15
+6.75
+5
+7
+0.185
+University of North Carolina
+13
+18
+11
+134
+10.31
+12.18
+6
+11
+0.353
+Universidade de São Paulo
+12
+34
+11
+46
+3.83
+4.18
+4
+6
+0.222
+Islamic Azad University
+12
+23
+8
+67
+5.58
+8.38
+4
+8
+0.267
+University of Sydney
+12
+35
+11
+373
+31.08
+33.91
+6
+12
+0.231
+University of California
+12
+19
+11
+390
+32.50
+35.45
+7
+12
+0.163
+University of Oklahoma
+12
+15
+8
+1306
+108.83
+163.25
+6
+12
+0.231
+Dallas
+11
+13
+5
+17
+1.55
+3.40
+2
+4
+0.036
+University of Michigan
+11
+18
+9
+867
+78.82
+96.33
+6
+11
+0.207
+Universiti Kebangsaan Malaysia
+10
+26
+4
+11
+1.10
+2.75
+2
+3
+0.133
+Universiti Utara Malaysia
+10
+20
+9
+74
+7.40
+8.22
+4
+8
+0.286
+George Mason University
+10
+18
+10
+1339
+133.90
+133.90
+10
+10
+0.385
+California State University
+10
+14
+9
+265
+26.50
+29.44
+5
+10
+0.192
+Universiteit Maastricht
+8
+11
+7
+42
+5.25
+6.00
+4
+6
+0.250
+Slovak University of Technology in Bratislava
+8
+17
+8
+81
+10.13
+10.13
+6
+8
+0.375
+University of Florida
+8
+11
+5
+59
+7.38
+11.80
+3
+7
+0.231
+Universiti Putra Malaysia
+8
+20
+6
+93
+11.63
+15.50
+4
+8
+0.286
+Northeastern University
+8
+16
+6
+106
+13.25
+17.67
+5
+8
+0.278
+Drexel University
+8
+13
+7
+104
+13.00
+14.86
+5
+8
+0.227
+University of Alabama
+8
+11
+8
+1076
+134.50
+134.50
+7
+8
+0.467
+TP = total number of publications; NCA = number of contributing authors; NCP = number of cited publications; TC = total 
+citations; C/P = average citations per publication; C/CP = average citations per cited publication; h = h-index; g = g-index; 
+m = m-index
+Page 15 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+outstanding impact and leadership in advancing the scholarly understanding of leader­
+ship competencies.
+George Mason University (United States) follows closely with 10 publications, all of 
+which were cited, yielding an impressive 1,339 total citations, an average of 133.90 cita­
+tions per publication and per cited paper. The institution records a perfect h-index and 
+g-index of 10, reflecting both productivity and consistent citation performance, while 
+its m-index of 0.385 underscores sustained research influence over time. Similarly, the 
+University of Alabama (United States) has recorded 8 publications, all of which are cited, 
+with a remarkable 1,076 total citations, equating to 134.50 citations per publication and 
+an equally strong m-index of 0.467, the highest among the top 20 institutions, indicating 
+rapid citation growth and sustained scholarly relevance.
+In terms of research productivity, the University of Toronto (Canada) and the Uni­
+versity of North Carolina (United States) lead with 13 publications each, signifying high 
+institutional engagement in the field. The University of Toronto’s works garnered 54 
+total citations, averaging 4.15 citations per paper and 6.75 per cited publication, with an 
+h-index of 5 and g-index of 7, indicating steady contributions. Meanwhile, the University 
+of North Carolina demonstrates a stronger influence, with 134 citations, an average of 
+10.31 citations per paper, and 12.18 per cited publication. Its h-index (6) and g-index 
+(11) highlight consistent scholarly visibility, and an m-index of 0.353 suggests moderate 
+long-term productivity.
+The University of California and the University of Sydney also exhibit strong research 
+visibility with 12 publications each. The University of California amassed 390 citations, 
+achieving 32.50 citations per paper (C/P) and 35.45 per cited paper (C/CP), supported 
+by an h-index of 7 and a g-index of 12. Similarly, the University of Sydney recorded 373 
+total citations from 12 publications, averaging 31.08 citations per paper, reflecting robust 
+research engagement.
+Latin America’s representation is notable for the Universidade de São Paulo (Brazil), 
+which has produced 12 publications, 11 of which were cited, resulting in 46 total cita­
+tions and an h-index of 4. Its average citation rates (C/P = 3.83; C/CP = 4.18) reflect mod­
+erate yet expanding scholarly activity in leadership-related studies within the region. The 
+Islamic Azad University (Iran) contributes equally, with 12 publications and 67 citations, 
+averaging 5.58 citations per paper and 8.38 citations per cited paper, demonstrating a 
+growing research influence across the Middle East.
+Within the Asian context, Malaysia is represented by three prominent institutions: 
+Universiti Kebangsaan Malaysia (UKM), Universiti Utara Malaysia (UUM), and Uni­
+versiti Putra Malaysia (UPM). UUM leads this group with 10 publications and 74 cita­
+tions (C/P = 7.40; C/CP = 8.22), followed by UPM with 8 publications and 93 citations 
+(C/P = 11.63; C/CP = 15.50). UKM, while producing 10 publications, records 11 total 
+citations, suggesting emerging institutional engagement in leadership competency 
+research.
+Among European institutions, the Slovak University of Technology in Bratislava pro­
+duced 8 publications, all cited, accumulating 81 citations, with C/P = 10.13, an h-index 
+of 6, and an m-index of 0.375, reflecting rapid research growth. Similarly, Maastricht 
+University (Netherlands) contributed 8 papers, with 42 citations and a consistent C/P 
+of 5.25, while maintaining an m-index of 0.250, demonstrating steady, quality-driven 
+research output.
+Page 16 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Notably, Northeastern University (United States) and Drexel University (United 
+States) each recorded 8 publications, accumulating 106 and 104 total citations, respec­
+tively, with averages of 13.25–17.67 and 13.00–14.86 citations per publication and per 
+cited paper. Both institutions display consistent productivity and impact through bal­
+anced publication and citation performance.
+Overall, this analysis underscores the dominant role of American institutions, which 
+not only lead in publication count but also in citation impact, particularly George Mason 
+University, the University of Alabama, and the University of Oklahoma, which set 
+benchmarks for research influence in the domain of leadership competencies. However, 
+the growing participation from Asian and European universities highlights the increas­
+ingly globalized nature of leadership research, which bridges regional perspectives and 
+contributes to a more diverse scholarly discourse.
+4.5  Publication by countries
+The United States dominates research productivity and scholarly influence in leadership 
+competency studies, recording 762 publications, of which 572 have been cited, yielding 
+a remarkable 16,913 total citations. This corresponds to an average of 22.20 citations per 
+publication (C/P) and 29.57 citations per cited paper (C/CP). The country’s h-index of 
+53 and g-index of 130 demonstrate its substantial intellectual depth and breadth, while 
+an m-index of 0.803 underscores consistent, long-term impact within the field (Table 8).
+The United Kingdom follows as a major contributor with 152 publications and 3,275 
+citations, achieving 21.55 C/P and 27.52 C/CP. With an h-index of 27 and a g-index of 
+Table 8  The top 20 Countries contributed to the publications
+Country
+TP
+NCA
+NCP
+TC
+C/P
+C/CP
+h
+g
+m
+United States
+762
+1758
+572
+16,913
+22.20
+29.57
+53
+130
+0.803
+United Kingdom
+152
+305
+119
+3275
+21.55
+27.52
+27
+57
+0.500
+Australia
+73
+197
+60
+1335
+18.29
+22.25
+17
+36
+0.567
+Canada
+73
+180
+57
+1471
+20.15
+25.81
+18
+38
+0.383
+Malaysia
+71
+218
+53
+513
+7.23
+9.68
+15
+22
+0.882
+India
+68
+174
+44
+495
+7.28
+11.25
+11
+22
+0.407
+Germany
+58
+135
+42
+928
+16.00
+22.10
+17
+30
+0.680
+China
+46
+115
+32
+345
+7.50
+10.78
+9
+18
+0.500
+Indonesia
+43
+110
+32
+185
+4.30
+5.78
+7
+13
+0.636
+Spain
+42
+107
+32
+682
+16.24
+21.31
+11
+26
+0.478
+Brazil
+37
+134
+27
+335
+9.05
+12.41
+8
+18
+0.444
+Iran
+36
+116
+21
+189
+5.25
+9.00
+7
+13
+0.269
+South Africa
+35
+63
+22
+179
+5.11
+8.14
+7
+13
+0.333
+Netherlands
+34
+86
+29
+405
+11.91
+13.97
+11
+20
+0.423
+Turkey
+28
+48
+17
+117
+4.18
+6.88
+7
+10
+0.368
+Pakistan
+28
+74
+17
+241
+8.61
+14.18
+9
+15
+0.563
+Italy
+27
+82
+20
+314
+11.63
+15.70
+11
+17
+0.647
+France
+27
+53
+20
+1844
+68.30
+92.20
+10
+27
+0.435
+South Korea
+24
+50
+13
+166
+6.92
+12.77
+7
+12
+0.412
+Switzerland
+23
+37
+21
+382
+16.61
+18.19
+11
+19
+0.407
+Portugal
+21
+55
+14
+137
+6.52
+9.79
+6
+11
+0.545
+Saudi Arabia
+21
+64
+17
+136
+6.48
+8.00
+7
+11
+0.538
+Slovakia
+20
+60
+17
+145
+7.25
+8.53
+7
+12
+0.368
+Poland
+19
+50
+11
+169
+8.89
+15.36
+6
+13
+0.462
+TP, total number of publications; NCA, number of contribution authors; NCP, number of cited publications; TC, total 
+citations; C/P, average citations per publication; C/CP, average citations per cited publication; h, h-index; g, g-index, m, 
+m-index
+Page 17 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+57, it reflects strong academic engagement and theoretical contributions to leadership 
+competency research. Similarly, Australia and Canada have established themselves as 
+key players, each producing 73 publications. Australia’s works have attracted 1,335 cita­
+tions (18.29 C/P; 22.25 C/CP), supported by an h-index of 17 and g-index of 36, while 
+Canada’s 1,471 citations (20.15 C/P; 25.81 C/CP) and h-index of 18 confirm its sustained 
+scholarly relevance.
+Malaysia ranks fifth globally with 71 publications, marking an active and growing 
+research presence. Although its total citation count (513) and averages (7.23 C/P; 9.68 C/
+CP) are comparatively modest, its h-index of 15, g-index of 22, and notably high m-index 
+of 0.882 highlight robust citation growth and emerging regional leadership. India and 
+Germany also feature prominently, with Germany showing higher citation averages 
+(16.00 C/P; 22.10 C/CP) and an h-index of 17, indicating solid impact across European 
+scholarship.
+Other nations such as China, Spain, Brazil, and the Netherlands demonstrate mean­
+ingful engagement with moderate citation influence, while France, despite producing 
+only 27 publications, stands out with an exceptionally high 68.30 C/P and 92.20 C/CP, 
+reflecting highly cited, high-impact contributions. Italy and Switzerland also display 
+strong citation performance, reinforcing Europe’s collective contribution to this research 
+domain.
+Emerging players including Indonesia, Turkey, Pakistan, and Saudi Arabia are expand­
+ing their presence, albeit with lower citation densities, signifying growing academic 
+engagement. Overall, this data highlights the global diffusion of leadership competency 
+research, led by the United States and the United Kingdom, with increasing scholarly 
+momentum across Asia and Europe.
+This data highlights the global scope of research on leadership competencies, with 
+leading countries contributing both in volume and citation impact, while emerging 
+nations show promising growth trajectories.
+4.6  Highly cited documents
+The citation analysis of the most influential publications on leadership competencies 
+reveals the foundational works that have shaped this research domain. Leading the 
+list is Adner and Helfat’s [36] seminal study, Corporate Effects and Dynamic Manage­
+rial Capabilities, published in the Strategic Management Journal. With 1,150 citations 
+and an annual average of 50.00 citations per year, this work is a cornerstone in under­
+standing the evolution of dynamic managerial capabilities and their influence on firm 
+performance. It has profoundly influenced both strategic management and leader­
+ship research, serving as a conceptual anchor for examining managerial adaptability in 
+dynamic environments.
+Following closely, Helfat and Martin [37] in the Journal of Management provide a com­
+prehensive review and assessment of dynamic managerial capabilities. Accumulating 
+775 citations at a remarkable 70.45 citations per year, their work underscores the stra­
+tegic role of managers in driving organisational change and learning. Likewise, Mum­
+ford et al. [38] in The Leadership Quarterly offer a classic contribution titled Leadership 
+Skills for a Changing World: Solving Complex Social Problems, which has received 586 
+citations (22.54 per year). Their research bridges the fields of cognitive psychology and 
+Page 18 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+leadership theory, identifying the core skills leaders need to navigate complex societal 
+challenges.
+Another highly influential study is Lord and Hall’s [39] work in The Leadership Quar­
+terly, which investigates the deep structures of identity and leadership skill development, 
+garnering 560 citations (26.67 per year). Similarly, Sirmon and Hitt [40] explore the 
+interdependent effects of resource investment and deployment within dynamic manage­
+rial capabilities, with 453 citations (26.65 per year). These studies collectively reinforce 
+the centrality of dynamic and cognitive perspectives in leadership competency research.
+Recent scholarship also exhibits growing relevance and timeliness. Notably, Dirani et 
+al. [41] in Human Resource Development International examine leadership competen­
+cies amid the COVID-19 crisis, earning 443 citations at an impressive rate of 73.83 per 
+year, one of the highest citation rates on the list. The rapid recognition of this study high­
+lights its critical contribution to understanding leadership and human resource devel­
+opment during global disruptions. Additionally, Kor and Mesko [42] in the Strategic 
+Management Journal contribute a nuanced discussion on configuring and orchestrating 
+top executives’ capabilities, which has been cited 419 times (32.23 per year), affirming 
+the conceptual link between leadership competencies and organisational logic (Fig. 4).
+Further key works include Mumford et al. [43] on leadership skills stratification across 
+organisational levels (Leadership Quarterly, 361 citations, 19.00 per year) and Custódio 
+et al. [44] on the role of general managerial skills in driving innovation (Management 
+Science, 331 citations, 47.29 per year). Other influential studies, such as Wooten and 
+James [52] on crisis management and leadership competencies (Advances in Developing 
+Human Resources, 234 citations, 13.00 per year) and Bolden and Gosling [48] question­
+ing traditional leadership frameworks (Leadership, 264 citations, 13.20 per year), con­
+tinue to shape discourse in both theoretical and applied contexts.
+Collectively, these top-cited publications highlight the interdisciplinary nature of 
+leadership competency research, spanning management, psychology, education, and 
+organisational behaviour. Their sustained citation impact underscores the enduring 
+Fig. 4  Publication growth
+ 
+Page 19 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+importance of leadership competencies in fostering adaptability, innovation, and resil­
+ience across diverse institutional and contextual landscapes.
+4.7  Co-authorship analysis by countries
+A network analysis elucidated the collaborative dynamics among nations in leadership 
+competency research (Fig. 5). The dimensions of the circles were scaled proportionally 
+to represent each nation’s publication output, while the thickness and proximity of the 
+connecting lines reflected the strength and closeness of collaborative ties. This analysis 
+focused on countries with a minimum of three co-authored publications, thereby refin­
+ing the network to include only nations with a meaningful presence in the research land­
+scape. Out of the total 71 contributing nations, 33 met this threshold, offering a concise 
+yet comprehensive perspective of the principal contributors within the field.
+These 33 nations were systematically grouped into seven distinct clusters, each iden­
+tified by a unique colour. The largest cluster (green) was dominated by the United 
+States, which acted as the central hub of global collaboration. The United States exhib­
+ited extensive linkages with several countries, including Canada, China, India, Italy, and 
+Switzerland, indicating its pivotal role in facilitating transnational research exchanges. 
+The purple cluster, comprising the United Kingdom, Malaysia, Iran, and South Africa, 
+reflected strong inter-regional collaborations, particularly between Western and Asian 
+institutions. The red cluster, featuring Germany, Spain, and Turkey, was characterized 
+by dense intra-European connections, underscoring the region’s tradition of academic 
+cooperation. The blue cluster included France, Italy, and Switzerland, forming a tightly 
+interconnected European subgroup. Meanwhile, the orange cluster, anchored by India, 
+Indonesia, and Japan, revealed vibrant collaborations among Asian nations, extending 
+linkages to Western partners such as the United States and the United Kingdom. Smaller 
+clusters such as those represented by Kenya, Nigeria, and the United Arab Emirates 
+demonstrated emerging engagement, albeit with limited transcontinental connections.
+Fig. 5  Worldwide scientific production indexed by Scopus on labour relations. Source: Generated by the author(s) 
+using iipmaps.com
+ 
+Page 20 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Further examination delineated two primary cohorts based on the frequency and 
+intensity of collaboration. Countries such as the United States, United Kingdom, Can­
+ada, and Germany demonstrated strong interconnections, signifying high research pro­
+ductivity and frequent joint authorship across institutional and national boundaries. 
+In contrast, nations such as South Korea, Japan, and Pakistan displayed comparatively 
+weaker linkages, reflecting lower levels of cross-border engagement within this domain.
+The outcomes of this co-authorship analysis substantially enrich the understanding of 
+global research patterns in leadership competency studies. The visualization underscores 
+that nations such as the United States and the United Kingdom not only lead in publica­
+tion output but also function as central conduits for international knowledge exchange. 
+The findings further reveal emerging collaborative zones, particularly the Malaysia–
+Iran–South Africa and India-Indonesia-Japan clusters, which highlight the potential for 
+expanding partnerships with established research centers. Consequently, this analysis 
+offers valuable implications for policymakers and funding agencies seeking to strengthen 
+global research connectivity, enhance inclusivity, and foster innovation through more 
+balanced and geographically diverse scholarly collaboration in leadership research.
+4.8  Co-word analysis of author keywords
+The network visualisation generated using VOS viewer (Fig. 6) illustrates the co-occur­
+rence patterns of author keywords associated with leadership competency research. 
+Employing the full counting method, a minimum threshold of five keyword occurrences 
+was set to ensure analytical precision. From an initial pool of 867 keywords, 79 met this 
+inclusion criterion, thereby focusing the analysis on the most influential and recurrent 
+terms within the dataset. The resultant network comprises multiple clusters, each distin­
+guished by unique colours that denote thematic relationships and intellectual intersec­
+tions across the field. (Fig. 7)
+The analysis revealed eight major clusters, collectively delineating the intellectual 
+and thematic structure of leadership competency scholarship. Cluster 1 (Red) centres 
+on managerial competencies and organisational performance, incorporating keywords 
+such as competency, managers, organisations, artificial intelligence, executives, and 
+Fig. 6  VOSviewer map. Source: Generated by the author(s) using VOSviewer [33]
+ 
+Page 21 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+public health. This theme underscores the intersection between managerial capability, 
+technological advancement, and organisational effectiveness. Cluster 2 (Green) focuses 
+on leadership development and education, highlighting terms like leadership, leadership 
+development, experiential learning, teamwork, nursing, and students. It reflects exten­
+sive research on leadership capacity building in both academic and professional learning 
+environments. Cluster 3 (Blue) captures the discourse on dynamic managerial capabili­
+ties, encompassing digital transformation, adaptability, human capital, social capital, 
+and Industry 4.0. This cluster highlights the increasing scholarly interest in digital-era 
+leadership and strategic agility. Cluster 4 (Yellow) addresses transformational and ethi­
+cal leadership, integrating concepts such as transformational leadership, service learn­
+ing, ethics, and administration, reflecting interest in value-based and transformative 
+approaches to leadership. Cluster 5 (Purple) pertains to managerial competency frame­
+works and assessments, featuring terms such as managerial capabilities, competency 
+framework, knowledge, and attitude, emphasising evaluative and developmental mech­
+anisms in leadership studies. Cluster 6 (Orange) represents communication and inter­
+personal competencies, including communication skills, non-technical skills, ethics, and 
+professionalism, highlighting the significance of relational and communicative aspects 
+of leadership. Cluster 7 (Light Green) focuses on healthcare leadership, with prominent 
+keywords such as medical education, nurses, nurse managers, hospitals, and primary 
+care, signalling research concentration in clinical and health-related leadership settings. 
+Finally, Cluster 8 (Light Blue) identifies a smaller but specialised area related to cogni­
+tive and executive functions in leadership, including executive functions, cognition, and 
+executive skills, suggesting an emerging interest in the psychological and neurocognitive 
+underpinnings of leadership effectiveness.
+Overall, this thematic mapping provides a comprehensive view of leadership compe­
+tency scholarship. It demonstrates a conceptual evolution from traditional managerial 
+and behavioral frameworks to more integrative approaches that encompass digital trans­
+formation, communication skills, ethics, healthcare, and cognitive dimensions. The find­
+ings offer valuable insights for scholars and practitioners seeking to align their research 
+Fig. 7  Network visualisation of author keyword co-occurrence analysis. Source: Generated by the author(s) using 
+VOSviewer [33] https://tinyurl.com/2b2j27th
+ 
+Page 22 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+with contemporary trends that emphasize adaptive, ethically grounded, and contextually 
+responsive leadership in diverse organizational and societal settings.
+5  Discussion
+This research examined the evolution, intellectual structure, and thematic trends in 
+leadership competency research from 1960 to 2025 using an interdisciplinary bibliomet­
+ric review of 1993 publications indexed in Scopus. The results indicate that leadership 
+competency research has evolved from focusing on individual traits to a comprehensive 
+framework linking leadership attributes with organizational performance. This evolution 
+also highlights the increasing interdisciplinarity of the field, as scholars more frequently 
+incorporate viewpoints from other disciplines.
+The analysis for RQ2 and RQ4 revealed that the field of leadership competencies is 
+primarily anchored in several theoretical foundations, which include transformational 
+leadership theory, human capital theory, dynamic capabilities, and the RBV. Transfor­
+mational leadership theory, introduced by Burns and expanded by Bass, emphasises 
+competencies such as vision, influence, and motivation that act as mechanisms for 
+organisational change [3]. Human capital theory, articulated by Becker, explains that 
+leadership competencies are an investment in skills and knowledge that produce eco­
+nomic and social benefits. [34]. RBV scholars, such as Barney and Wernerfelt, view these 
+competencies as valuable, rare, and inimitable resources that support sustained organi­
+zational advantage. [2]. Together, these perspectives frame leadership competencies as a 
+behavioural mechanism and a strategic asset for value creation. (Tables 9 and 10).
+Building upon these theoretical foundations, this study contributes to the develop­
+ment of theory by proposing an integrative lens through which leadership competen­
+cies can be understood as an adaptive and context-sensitive system. Rather than viewing 
+leadership competencies as static skills, this study positions them as evolving configu­
+rations that interact dynamically with organizational strategy, culture, and sustainabil­
+ity goals. This aligns with Homer and Lim’s [35] call to advance theory in a globalized 
+world by bridging “doing as the Romans do” with “understanding why the Romans do it.” 
+Accordingly, the interdisciplinary convergence observed across all literatures highlights 
+that leadership competencies are not only behavioural mechanisms but also theoretical 
+bridges linking individual effectiveness to organizational performance.
+Furthermore, emerging research is increasingly integrating several clusters by link­
+ing leadership competencies to measurable performance outcomes and organizational 
+growth. Our keyword evolution analysis (RQ3) reveals a significant shift in the field’s. 
+Earlier studies (1960s–1990s) predominantly examined leadership skills and manage­
+rial effectiveness, whereas recent research (since 2015) emphasizes dynamic leadership, 
+digital competencies, ethical decision-making, and sustainability-oriented leadership. 
+The growing frequency of keywords such as "emotional intelligence,” "sustainability,” and 
+“leadership development” signifies the field’s evolution from static competency frame­
+works toward more dynamic, context-responsive models. This shift suggests that schol­
+ars are now exploring how leadership competencies evolve under various environmental 
+pressures, such as technological disruption, globalisation, and societal expectations, 
+rather than merely establishing what competencies leaders should possess.
+A key finding from RQ1 is the expanding geographic and institutional diversification 
+of leadership competency research. Early contributions were dominated by scholars 
+Page 23 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+from the United States, the United Kingdom, Australia, and Canada. Moreover, in recent 
+years, there has been a substantial increase in publications from emerging economies, 
+such as China, Malaysia, and South Africa. This shift marks a gradual decentralisation 
+of knowledge production and introduces new cultural and contextual dimensions into 
+leadership research. In non-Western settings, leadership competencies are often shaped 
+by collectivist values, institutional constraints, and national development priorities, 
+Table 9  Top 20 highly cited articles
+No
+Author(s)
+Title
+Source Title
+TC
+C/Y
+1
+Adner & 
+Helfat [36]
+Corporate effects and dynamic managerial 
+capabilities
+Strategic Manage­
+ment Journal
+1150
+50.00
+2
+Helfat & 
+Martin [37]
+Dynamic Managerial Capabilities: Review and 
+Assessment of Managerial Impact on Strategic 
+Change
+Journal of 
+Management
+775
+70.45
+3
+Mumford et 
+al. [38]
+Leadership skills for a changing world: Solving 
+complex social problems
+Leadership Quarterly
+586
+22.54
+4
+Lord & Hall 
+[39]
+Identity, deep structure and the development of 
+leadership skill
+Leadership Quarterly
+560
+26.67
+5
+Sirmon & 
+Hitt [40]
+Contingencies within dynamic managerial capabili­
+ties: Interdependent effects of resource investment 
+and deployment on firm performance
+Strategic Manage­
+ment Journal
+453
+26.65
+6
+Dirani et al. 
+[41]
+Leadership competencies and the essential role of 
+human resource development in times of crisis: a 
+response to Covid-19 pandemic
+Human Resource 
+Development 
+International
+443
+73.83
+7
+Kor & Mesko 
+[42]
+Dynamic managerial capabilities: Configuration and 
+orchestration of top executives’ capabilities and the 
+firm’s dominant logic
+Strategic Manage­
+ment Journal
+419
+32.23
+8
+Mumford et 
+al. [43]
+The leadership skills strataplex: Leadership skill 
+requirements across organizational levels
+Leadership Quarterly
+361
+19.00
+9
+Sesma et al. 
+[53]
+The contribution of executive skills to reading 
+comprehension
+Child 
+Neuropsychology
+352
+20.71
+10
+Custódio et 
+al. [44]
+Do general managerial skills spur innovation?
+Management 
+Science
+331
+47.29
+11
+Rosen­
+bloom [45]
+Leadership, capabilities, and technological change: 
+The transformation of NCR in the electronic era
+Strategic Manage­
+ment Journal
+303
+11.65
+12
+Dowsett & 
+Livesey [46]
+The development of inhibitory control in preschool 
+children: Effects of ‘executive skills’ training
+Developmental 
+Psychobiology
+300
+11.54
+13
+Carmeli et 
+al. [47]
+Self-leadership skills and innovative behavior at 
+work
+International Journal 
+of Manpower
+287
+14.35
+14
+Bolden & 
+Gosling [48]
+Leadership Competencies: Time to Change the 
+Tune?
+Leadership
+264
+13.20
+15
+Graves & 
+Thomas [49]
+Internationalization of Australian family businesses: 
+A managerial capabilities perspective
+Family Business 
+Review
+251
+12.55
+16
+Mumford et 
+al. [54]
+Development of leadership skills: Experience and 
+timing
+Leadership Quarterly
+250
+9.62
+17
+Dragoni et 
+al. [55]
+Understanding managerial development: Integrat­
+ing developmental assignments, learning orienta­
+tion, and access to developmental opportunities in 
+predicting managerial competencies
+Academy of Man­
+agement Journal
+247
+14.53
+18
+Rubin & 
+Dierdorff 
+[50]
+How relevant is the MBA? Assessing the alignment 
+of required curricula and required managerial 
+competencies
+Academy of Man­
+agement Learning 
+and Education
+243
+14.29
+19
+Smith et al. 
+[51]
+A paradoxical leadership model for social entrepre­
+neurs: Challenges, leadership skills, and peda­
+gogical tools for managing social and commercial 
+demands
+Academy of Man­
+agement Learning 
+and Education
+238
+17.00
+20
+Wooten & 
+James [52]
+Linking Crisis Management and Leadership Compe­
+tencies: The Role of Human Resource Development
+Advances in 
+Developing Human 
+Resources
+234
+13.00
+Page 24 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Author keyword
+cluster
+Occurrences
+Total link 
+strength
+Avg. pub. 
+Year
+Theme
+Managerial competencies
+1
+60
+69
+2016.4
+Theme 1: 
+Managerial 
+Competencies 
+and Digital 
+Transformation 
+for Sustainable 
+Organizational 
+Performance
+Competency
+32
+52
+2016.6875
+Digital transformation
+25
+48
+2015.28
+Managerial capabilities
+25
+24
+2015.48
+Managers
+20
+36
+2015.85
+Smes
+20
+39
+2012.9
+Performance
+19
+41
+2017.5789
+Innovation
+17
+38
+2015.4118
+Emotional intelligence
+16
+30
+2012.9375
+Competency model
+14
+20
+2006.2143
+Managerial competency
+14
+25
+2007.9286
+Sustainability
+14
+29
+2017.2857
+Digital leadership
+13
+12
+2009
+Artificial intelligence
+11
+16
+2010
+Leaders
+11
+27
+2014.6364
+Competitive advantage
+10
+18
+2013.4
+Industry 4.0
+9
+22
+2014.5556
+Project managers
+9
+17
+2013.4444
+Self-efficacy
+9
+17
+2010.3333
+Business performance
+7
+15
+2012
+Information technology
+7
+16
+2019.2857
+Knowledge
+7
+14
+2018
+Organizational performance
+7
+13
+2017.2857
+Sustainable development
+7
+8
+2015.7143
+Competitiveness
+6
+10
+2012.5
+Digitalisation
+6
+15
+2013.5
+Pharmacy
+6
+14
+2009.3333
+Project success
+6
+7
+2016.5
+Resilience
+6
+11
+2010.1667
+Adaptability
+5
+9
+2020.4
+Attitude
+5
+10
+2013
+Global leadership 
+competencies
+5
+5
+2004.4
+Table 10  Research themes based on author keywords with a minimum of 10 occurrences
+Page 25 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Author keyword
+cluster
+Occurrences
+Total link 
+strength
+Avg. pub. 
+Year
+Theme
+Competencies
+2
+81
+158
+2014.6049
+Competency-
+Based Develop­
+ment and Skills 
+Enhancement
+Managerial skills
+73
+60
+2014.9726
+Covid-19
+13
+21
+2014.4615
+Medical education
+11
+19
+2015.8182
+Organizations
+11
+21
+2017.2727
+Decision-Making
+10
+15
+2011.7
+Leadership Training
+10
+11
+2016
+Public health
+10
+21
+2007.3
+Professional development
+9
+12
+2009.2222
+Curriculum
+8
+15
+2017.125
+O*Net
+8
+12
+2011.125
+Skills development
+8
+9
+2011.625
+Engineering education
+7
+11
+2020.4286
+Human resource 
+management
+7
+14
+2018.1429
+Medical leadership
+7
+12
+2011.8571
+Mental health
+7
+9
+2014.4286
+Soft skills
+7
+17
+2017.5714
+Structural equation 
+modeling
+7
+6
+2012.2857
+Capability
+6
+13
+2013
+Crisis management
+6
+6
+2018.1667
+Executive skills
+6
+1
+2019.5
+Executives
+6
+12
+2011.3333
+Medical students
+6
+15
+2014.1667
+Middle managers
+6
+10
+2016.5
+Mutual funds
+6
+4
+2009.3333
+primary care
+6
+11
+2016.3333
+Business model innovation
+5
+9
+2006
+Conflict management
+5
+14
+2006.6
+Diversity
+5
+10
+2013.8
+Executive functioning
+5
+1
+2015.8
+Student leadership
+5
+5
+2012.8
+Table 10  (continued)
+ 
+Page 26 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Author keyword
+cluster
+Occurrences
+Total link 
+strength
+Avg. pub. 
+Year
+Theme
+Dynamic managerial 
+capabilities
+3
+66
+93
+2012.8939
+Dynamic 
+Manage­
+rial Capabilities 
+and Strategic 
+Leadership
+Dynamic capabilities
+18
+40
+2016.1667
+Entrepreneurship
+17
+33
+2017.1765
+Executive functions
+16
+6
+2014
+Social capital
+16
+41
+2013.0625
+Human capital
+12
+32
+2012.9167
+Managerial cognition
+12
+42
+2016.5
+Firm’s performance
+11
+10
+2016
+Strategic change
+9
+23
+2017.5556
+Assessments
+7
+12
+2012.7143
+Cognition
+7
+11
+2015.1429
+Systematic literature review
+7
+18
+2015
+Capabilities
+6
+14
+2020
+Children
+6
+5
+2011.1667
+Managerial human capital
+6
+20
+2010.1667
+Managerial social capital
+6
+20
+2010.1667
+Micro foundation
+6
+10
+2016
+Resource-based view
+6
+8
+2016.6667
+Top management teams
+6
+14
+2015.3333
+Entrepreneurial orientation
+5
+6
+2017.4
+Strategic leadership
+5
+5
+2013.8
+Upper echelon theory
+5
+7
+2011.2
+Leadership
+4
+296
+455
+2015.8649
+Leadership 
+Competencies 
+and Learning 
+Practices
+Skills
+36
+80
+2016
+Nursing
+17
+31
+2018
+Students
+16
+35
+2017.625
+Simulations
+13
+24
+2013.6923
+Motivation
+11
+19
+2008.9091
+Management education
+10
+20
+2018.6
+Leadership competency
+9
+6
+2017.6667
+Communication skills
+8
+4
+2018.5
+Nurse managers
+7
+8
+2009
+Professional competence
+7
+6
+2016.1429
+Systematic review
+7
+13
+2006.1429
+Nurses
+6
+15
+2016.6667
+Nursing education
+5
+7
+2013.4
+Nursing students
+5
+8
+2016
+United States
+5
+17
+2014.4
+Universities
+5
+13
+2010.4
+Table 10  (continued)
+ 
+Page 27 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Author keyword
+cluster
+Occurrences
+Total link 
+strength
+Avg. pub. 
+Year
+Theme
+Leadership competencies
+5
+66
+67
+2013.2273
+Leadership 
+Competencies, 
+Organisational 
+Culture, and 
+Ethical Practice
+Higher education
+22
+33
+2012.6364
+Experiential learning
+12
+12
+2016.6667
+Leadership capabilities
+12
+9
+2018.25
+Gender
+10
+11
+2015.8
+Health care
+10
+24
+2012.7
+Organisational culture
+9
+12
+2014.1111
+Ethics
+6
+7
+2016.8333
+Gamification
+6
+13
+2014.3333
+Job satisfaction
+6
+9
+2018.1667
+Leadership styles
+6
+7
+2011
+School principals
+5
+7
+2020
+Succession planning
+5
+10
+2012.4
+Leadership skills
+6
+92
+102
+2014.25
+Leadership Skills 
+Development 
+and Transforma­
+tional Practices
+Leadership development
+44
+73
+2016.6136
+Education
+23
+48
+2017.3043
+Clinical leadership
+11
+24
+2016.6364
+Transformational leadership
+11
+12
+2015.7273
+Professionals
+7
+20
+2019.2857
+Service-learning
+6
+5
+2014
+Change management
+5
+9
+2002.2
+Construction
+5
+11
+2012
+Hospitals
+5
+6
+2011.8
+Leadership Models
+5
+16
+2016
+Project management
+5
+9
+2014.4
+Management
+7
+52
+99
+2015
+Management 
+Development, 
+Coaching, and 
+Knowledge 
+Integration
+Management skills
+22
+31
+2016.3182
+Training
+12
+23
+2014.5833
+Development
+11
+26
+2015.1818
+Coaching
+10
+19
+2016.5
+Management development
+8
+13
+2018.25
+Administration
+7
+18
+2020.2857
+Business Schools
+5
+4
+2006
+Knowledge management
+5
+10
+2018
+Small- to medium-sized 
+enterprises
+5
+12
+2021
+Communication
+8
+17
+39
+2012.0588
+Interpersonal, 
+Communica­
+tion, and Team 
+Competencies
+Teamwork
+10
+24
+2008.2
+interpersonal skills
+9
+19
+2015.6667
+Technical skills
+8
+16
+2017.875
+Non-technical skills
+7
+12
+2017.2857
+Gifted students
+6
+7
+2012
+Intelligence
+6
+12
+2017
+Planning
+6
+16
+2017
+Surveys
+6
+11
+2018.3333
+Safety
+5
+7
+2011.8
+Table 10  (continued)
+Page 28 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+conditions that challenge the universality of Western-derived leadership models. This 
+pattern highlights the need for comparative and cross-cultural investigations that re-
+examine the contextual validity of leadership competency frameworks.
+Our thematic and intellectual analyses further highlight several underexplored 
+domains that warrant deeper scholarly attention. For instance, the intersection between 
+digital transformation and leadership competencies remains in its infancy despite the 
+growing importance of technological agility in modern leadership. Similarly, sustain­
+ability-oriented leadership, the capacity of leaders to integrate environmental and social 
+considerations into strategic decisions, emerges as a critical yet underdeveloped theme. 
+Another promising direction involves team-level and collective competencies, which 
+reflect a shift from individual-centric views toward distributed leadership capabilities. 
+Lastly, the literature reveals limited attention to methodological pluralism: quantitative 
+dominance persists, but mixed-method and longitudinal approaches could capture the 
+developmental nature of competencies more effectively.
+In conclusion, this bibliometric analysis confirms that leadership competencies have 
+evolved from a fragmented concept into a central pillar of organisational success, link­
+ing leadership effectiveness with adaptability, innovation, and sustainability. Yet, the 
+field continues to face challenges of theoretical integration and contextual diversity. 
+Future research should focus on developing integrative frameworks that bridge psycho­
+logical, strategic, and sustainability perspectives, while expanding empirical coverage to 
+underrepresented regions and interdisciplinary intersections. By doing so, scholars can 
+advance a more holistic understanding of leadership competencies capable of addressing 
+the demands of complex, globalised, and ethically sensitive organisational environments.
+6  Conclusion
+This study provides a comprehensive bibliometric analysis of leadership competency 
+research spanning over five decades (1960–2025), based on publications indexed in the 
+Scopus database. The findings reveal a steady growth and diversification in this field, 
+marked by an increasing number of interdisciplinary contributions and the growing 
+involvement of scholars from emerging economies such as China, Malaysia, and South 
+Africa. These trends reflect the maturation of leadership competencies from an individ­
+ual skill-based construct to a multidimensional framework encompassing behavioural, 
+strategic, and ethical dimensions of leadership. Our co-occurrence and thematic anal­
+yses identified eight dominant research clusters. Collectively, these clusters define the 
+intellectual structure of the field and demonstrate how leadership competencies have 
+evolved to address the challenges of dynamic, digitalized, and globalized organizational 
+environments. The keyword evolution further indicates a gradual shift in conceptual 
+focus from traditional managerial effectiveness to contemporary themes, including digi­
+tal transformation, ethical leadership, and sustainability.
+The findings also reveal that transformational leadership theory, human capital theory, 
+dynamic capabilities, and the resource-based view (RBV) are the prevailing theoretical 
+foundations underpinning research on leadership competency. These frameworks con­
+ceptualize leadership competencies as both behavioural enablers and strategic resources 
+that drive innovation, adaptability, and long-term organizational success. Together, they 
+reinforce the notion that leadership competencies should not be viewed as peripheral 
+Page 29 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+attributes but as essential, value-creating assets that determine an organisation’s capacity 
+to compete and sustain performance in complex environments.
+From a practical standpoint, this study highlights that leadership competencies serve 
+as a bridge between personal capability and organisational resilience. For managers and 
+policymakers, investing in competency development, particularly in emotional intelli­
+gence, digital agility, and sustainability-oriented skills, can foster leadership cultures that 
+promote ethical decision-making, innovation, and inclusive growth.
+Lastly, this research identifies several promising avenues for future inquiry. These 
+include examining the role of digital technologies and AI in leadership competency 
+development, assessing the impact of cultural and institutional contexts on competency 
+frameworks, exploring the integration of sustainability and ethical dimensions into lead­
+ership models, and employing longitudinal and mixed-method designs to trace compe­
+tency evolution over time. Such directions can deepen theoretical integration, enhance 
+global relevance, and contribute to a more nuanced understanding of how leadership 
+competencies shape contemporary organisational success.
+Overall, this study affirms that leadership competencies have evolved into a strategic 
+and interdisciplinary domain central to organisational sustainability and performance. 
+By aligning theoretical insights with empirical trends, future research can continue to 
+advance this field, bridging the gap between leadership theory, competency develop­
+ment, and practical application in an increasingly complex and interconnected world.
+7  Limitations
+While this study offers valuable insights into the intellectual and thematic landscape of 
+leadership competency research, several limitations have been acknowledged. First, the 
+analysis relied exclusively on the Scopus database, which may have excluded relevant 
+studies published in other repositories. Future research could enhance the comprehen­
+siveness of this field by integrating multiple databases, such as Web of Science (WoS), 
+Google Scholar, or regional databases. Second, the title-based search strategy, while 
+ensuring conceptual precision, may have omitted studies addressing leadership compe­
+tencies under alternative terminologies. Expanding future searches to include abstracts 
+and keywords could help capture broader conceptual variations and improve inclusive­
+ness. Third, this study employed Open Refine, VOSviewer, and BiblioMagika Split as the 
+main analytical tools, which, despite their robustness, may limit analytical depth in areas 
+such as thematic evolution or conceptual network dynamics. Future studies could com­
+bine or triangulate these tools with Cite Space, Biblioshiny, or SciMAT to achieve a more 
+nuanced visualization and temporal mapping of research trends. Finally, while this study 
+provides a bibliometric overview, it does not empirically test the proposed theoretical 
+integrations between leadership competencies, organizational culture, and sustainable 
+corporate performance. Future research should empirically validate these relationships 
+through a quantitative model (e.g., structural equation model, SEM, or partial least 
+squares structural equation model, PLS-SEM) or qualitative inquiry (e.g., case studies or 
+in-depth interviews) to strengthen theoretical generalizability.
+Acknowledgements
+The authors would like to thank the Universiti Sains Malaysia grant (304/PMGT/6315758) for their financial support for 
+this study.
+Page 30 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+Author contributions
+Author Contributions All authors contributed equally to the conception, design, analysis, and writing of the manuscript. 
+All authors reviewed and approved the final version.
+Funding
+Open Access funding provided by Universiti Sains Malaysia. Institute of Postgraduate Studies, Universiti Sains Malaysia, 
+304/PMGT/6315758
+Data availability
+No datasets were generated or analysed during the current study.
+Declarations
+Ethics approval and consent to participate
+Not applicable.
+Consent to publish
+Not Applicable.
+Clinical trial number
+Not applicable.
+Competing interests
+The authors declare no competing interests.
+Received: 16 August 2025 / Accepted: 4 February 2026
+References
+1.	
+Abukalusa K, Oosthuizen R. An adaptive organisational leadership framework through systems thinking. Int J Organ Anal. 
+2025;33(8):2673–703.
+2.	
+Barney J. Firm resources and sustained competitive advantage. J Manage. 1991;17(1):99–120.
+3.	
+Bass BM, Avolio BJ, editors. Improving organizational effectiveness through transformational leadership. T housand Oaks: 
+Sage; 1994.
+4.	
+Widana ID, Faeni DP. Sustainable aviation: the role of green leadership in green human resources management practices. 
+Discover Sustain. 2025;6(1):1363.
+5.	
+Ruben BD, De Lisi R, Gigliotti RA. A guide for leaders in higher education: Concepts, competencies, and tools. Milton Park: 
+Taylor & Francis; 2023.
+6.	
+Bindeeba DS, Tukamushaba EK, Bakashaba R, Atuhaire S. Green human resources management and green innovation: a 
+meta-analytic review of strategic human resources levers for environmental sustainability. Discover Sustain. 2025;6(1):650.
+7.	
+Mulyaseva M, Wisesa A. Analyzing how leadership competencies impact on business performance: a case of Pet&Co 
+company. J Integ Social Stud Bus Dev. 2024;2(1):56–61.
+8.	
+Jumawan J, Sawitri NN, Supardi S. Productivity and Sustainability Organization: Leadership, Motivation, Competence. 
+Dinasti International Journal of Management Science (DIJMS). 2023 May 1;4(5).
+9.	
+Tran AV, Khoa BT. Integrating leadership, identity, and knowledge systems for sustainable performance in the era of digital 
+transformation. Discover Sustain. 2025;6(1):887.
+10.	 Bjekić R, Jelača MS, Aleksić M, Marić S. Social competencies of leaders as key factor of employee work engagement during 
+the crisis. In international scientific conference strategic management and decision support systems in strategic manage­
+ment 2023 (pp. 462–469).
+11.	 Tantry A, Gilani SA, Al Sabbah S, Sitinjak C, Khan N, Mulla T, et al. Sustainable leadership styles adopted by small businesses 
+in the UAE during and post COVID-19. Discover Sustain. 2025;6(1):570.
+12.	 Shahzad MU. Core competencies for digital leadership development: a perspective from the lens of paradox theory. The 
+Bottom Line. 2024;37(4):454–72.
+13.	 Natsir R, Ramli M, Putra AH. The effect of leadership style, compensation and competence on optimizing organizational 
+performance. Golden Ratio Human Resource Manag. 2024;4(2):146–57.
+14.	 Rony ZT, Lestari TS, Ismaniah YM, Lubis FM. The complexity of leadership competence in universities in the 21st century. 
+Cogent Social Sci. 2023;9(2):2276986.
+15.	 Zahari AI, Mohamed N, Said J, Yusof F. Assessing the mediating effect of leadership capabilities on the relationship 
+between organisational resilience and organisational performance. Int J Soc Econ. 2022;49(2):280–95.
+16.	 Boyatzis RE. The competent manager: A model for effective performance. Hoboken: John Wiley & Sons; 1991.
+17.	 Ngayo Fotso GM. Leadership competencies for the 21st century: a review from the Western world literature. Eur J Train 
+Dev. 2021;45(6/7):566–87.
+18.	 Legutko BJ. An exploration of authentic, servant, transactional, and transformational leadership styles in Fortune 500 CEO 
+letters. J Leadersh Stud. 2020;14(2):44–51.
+19.	 Strukova S. A framework and case studies for data-driven evaluation of competencies and capabilities across contexts. 
+Proyecto de investigación:. 2024 Sep 10.
+20.	 Teece DJ, Pisano GP, Shuen A. Dynamic capabilities and strategic management. Center for Research in Management, 
+University of California, Berkeley; 1992.
+21.	 Zhao J. Reimagining corporate social responsibility in the era of COVID-19: Embedding resilience and promoting corpo­
+rate social competence. Sustainability. 2021;13(12):6548.
+Page 31 of 31
+Azhar and Ayobami Discover Sustainability           (2026) 7:638 
+22.	 Aydın E, Kırılmaz SK, Şimşir İ, Ayhün SE. Bibliometric analysis of digital leadership studies. J Mehmet Akif Ersoy Univ Econ 
+Admin Sci Faculty. 2024;11(2):778–818.
+23.	 Rosso F, García-Salirrosas EE. Strategic trends in management by competencies: a bibliometric review. Int J Prof Bus Rev. 
+2023;8(9):15.
+24.	 Tao Y, He J, Wang YF, Ke H. Strategic leadership: a bibliometric analysis on current status and emerging trends. Int J Organ 
+Leadership. 2021;10(4):439–58.
+25.	 Salouw E, Setiawan B, Roychansyah MS, Sarwadi A. Bibliometric analysis of tourism and community participation research: 
+a comparison of scopus and web of science databases. Int J Sustain Dev Plan. 2024;19(4):1415–22.
+26.	 Zakaria R, Ahmi A, Ahmad AH, Othman Z, Azman KF, Ab Aziz CB, et al. Visualising and mapping a decade of literature on 
+honey research: a bibliometric analysis from 2011 to 2020. J Apic Res. 2021;60(3):359–68.
+27.	 Moher D, Liberati A, Tetzlaff J, Altman DG. Preferred reporting items for systematic reviews and meta-analyses: the PRISMA 
+statement. BMJ. 2009;21:339.
+28.	 Tod D. Inclusion and exclusion criteria. Cham: Springer International Publishing; 2019.
+29.	 Butler AR, Hartmann-Boyce J, Livingstone-Banks J, Turner T, Lindson N. Optimizing process and methods for a living 
+systematic review: 30 search updates and three review updates later. J Clin Epidemiol. 2024;1(166):111231.
+30.	 Passas I. Bibliometric analysis: the main steps. Encyclopedia. 2024 Jun 20;4(2).
+31.	 Mondal H, Deepak KK, Gupta M, Kumar R. The h-Index: Understanding its predictors, significance, and criticism. J Family 
+Med Primary Care. 2023;12(11):2531–7.
+32.	 Manjareeka M. Evaluation of researchers: H-Index or G-Index which is better? J Integrat Med Res. 2023;1(1):34–6.
+33.	 Van Eck NJ, Waltman L. Visualizing bibliometric networks. Cham: Springer International Publishing; 2014. p. 285–320.
+34.	 Becker GS. Human capital. Concise Encyclop Econ. 2002;24(2):1–2.
+35.	 Homer ST, Lim WM. Theory development in a globalized world: bridging “doing as the romans do” with “understanding 
+why the romans do it.” Glob Bus Organ Excel. 2024;43(3):127–38.
+36.	 Adner R, Helfat CE. Corporate effects and dynamic managerial capabilities. Strateg Manag J. 2003;24(10):1011–25.
+37.	 Helfat CE, Martin JA. Dynamic managerial capabilities: Review and assessment of managerial impact on strategic change. 
+J Manag. 2015;41(5):1281–312.
+38.	 Mumford MD, Zaccaro SJ, Harding FD, Jacobs TO, Fleishman EA. Leadership skills for a changing world: solving complex 
+social problems. Leadersh Q. 2000;11(1):11–35.
+39.	 Lord RG, Hall RJ. Identity, deep structure and the development of leadership skill. Leadersh Q. 2005;16(4):591–615.
+40.	 Sirmon DG, Hitt MA. Contingencies within dynamic managerial capabilities: interdependent effects of resource invest­
+ment and deployment on firm performance. Strateg Manag J. 2009;30(13):1375–94.
+41.	 Dirani KM, Abadi M, Alizadeh A, Barhate B, Garza RC, Gunasekara N, Majzun Z. Leadership competencies and the 
+essential role of human resource development in times of crisis: a response to Covid-19 pandemic. Hum Resour Dev Int. 
+2020;23(4):380–94.
+42.	 Kor YY, Mesko A. Dynamic managerial capabilities: configuration and orchestration of top executives' capabilities and the 
+firm's dominant logic. Strateg Manag J. 2013;34(2):233–44.
+43.	 Mumford TV, Campion MA, Morgeson FP. The leadership skills strataplex: leadership skill requirements across organiza­
+tional levels. Leadersh Q. 2007;18(2):154–66.
+44.	 Custódio C, Ferreira MA, Matos P. Do general managerial skills spur innovation? Manage Sci. 2019;65(2):459–76.
+45.	 Rosenbloom RS. Leadership, capabilities, and technological change: the transformation of NCR in the electronic era. 
+Strateg Manag J (John Wiley & Sons, Inc.)-1980 to 2009, 2000. p. 21.
+46.	 Dowsett SM, Livesey DJ. The development of inhibitory control in preschool children: effects of executive skills training. 
+Dev Psychobiol J Int Soc Dev Psychobiol. 2000;36(2):161–74.
+47.	 Carmeli A. Top management team behavioral integration and the performance of service organizations. Group Organ 
+Manage. 2008;33(6):712–35.
+48.	 Bolden R, Gosling J. Leadership competencies: time to change the tune? Leadership. 2006;2(2):147–63.
+49.	 Graves C, Thomas J. Internationalization of Australian family businesses: a managerial capabilities perspective. Family Bus 
+Rev. 2006;19(3):207–24.
+50.	 Rubin RS, Dierdorff EC. How relevant is the MBA? Assessing the alignment of required curricula and required managerial 
+competencies. Acad Manage Learn Educ. 2009;8(2):208–24.
+51.	 Smith P, Davies CA, Ogle S, Zanchi G, Bellarby J, Bird N, Braimoh AK. Towards an integrated global framework to assess 
+the impacts of land use and management change on soil carbon: current capability and future vision. Glob Change Biol. 
+2012;18(7):2089–101.
+52.	 Wooten LP, James EH. Linking crisis management and leadership competencies: The role of human resource develop­
+ment. Adv developing Hum Resour. 2008;10(3):352–79.
+53.	 Sesma HW, Mahone EM, Levine T, Eason SH, Cutting LE. The contribution of executive skills to reading comprehension. 
+Child Neuropsychol. 2009;15(3):232–46.
+54.	 Mumford MD, Marks MA, Connelly MS, Zaccaro SJ, Reiter-Palmon R. Development of leadership skills: experience and tim­
+ing. Leadersh Q. 2000;11(1):87–114.
+55.	 Dragoni L, Tesluk PE, Russell JE, Oh IS. Understanding managerial development: integrating developmental assignments, 
+learning orientation, and access to developmental opportunities in predicting managerial competencies. Acad Manag J. 
+2009;52(4):731–43.
+Publisher's Note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.

@@ -1,0 +1,11 @@
+Title: Fairness Perceptions and Trust as Mediators for Transformational and Transactional Leadership: A Two-Sample Study
+Authors: Rajnandini Pillai, Chester A. Schriesheim, Eric S. Williams
+Source: OpenAlex
+Date: 1999-12-01
+URL: https://doi.org/10.1177/014920639902500606
+
+Abstract (EN):
+This research presents a comprehensive model of relationships between transformational and transactional leadership, procedural and distributive justice, trust, job satisfaction, organizational commitment, and organizational citizenship behaviors (OCBs). Structural equation modeling was used to test a theoretical model with two independent samples that were comprised of 192 and 155 matched leaders and subordinates. Several rival models were also tested. Finally, “stacked” modeling techniques showed that the parameter estimates developed from the two samples were invariant except for one additional relationship, which was significant in the second sample only. The results supported the indirect effect of transformational leadership on OCBs through procedural justice and trust. Implications and directions for future research are discussed.
+
+Abstract (KO):
+이 연구는 변혁적 리더십과 거래적 리더십, 절차적 정의와 분배적 정의, 신뢰, 직업 만족도, 조직 헌신, 조직 시민 행동(OCB) 사이의 관계에 대한 포괄적인 모델을 제시합니다. 구조 방정식 모델링은 192명과 155명의 일치하는 리더와 부하 직원으로 구성된 두 개의 독립적인 샘플을 사용하여 이론적 모델을 테스트하는 데 사용되었습니다. 여러 경쟁 모델도 테스트되었습니다. 마지막으로, "누적" 모델링 기술은 두 표본에서 개발된 매개변수 추정치가 두 번째 표본에서만 중요한 하나의 추가 관계를 제외하고는 변하지 않음을 보여주었습니다. 결과는 절차적 정의와 신뢰를 통해 OCB에 대한 변혁적 리더십의 간접적인 효과를 뒷받침했습니다. 향후 연구에 대한 시사점과 방향에 대해 논의합니다.

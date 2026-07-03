@@ -1,0 +1,11 @@
+Title: Bounds testing approaches to the analysis of level relationships
+Authors: M. Hashem Pesaran, Yongcheol Shin, Richard J. Smith
+Source: OpenAlex
+Date: 2001-05-01
+URL: https://doi.org/10.1002/jae.616
+
+Abstract (EN):
+Abstract This paper develops a new approach to the problem of testing the existence of a level relationship between a dependent variable and a set of regressors, when it is not known with certainty whether the underlying regressors are trend‐ or first‐difference stationary. The proposed tests are based on standard F ‐ and t ‐statistics used to test the significance of the lagged levels of the variables in a univariate equilibrium correction mechanism. The asymptotic distributions of these statistics are non‐standard under the null hypothesis that there exists no level relationship, irrespective of whether the regressors are I (0) or I (1). Two sets of asymptotic critical values are provided: one when all regressors are purely I (1) and the other if they are all purely I (0). These two sets of critical values provide a band covering all possible classifications of the regressors into purely I (0), purely I (1) or mutually cointegrated. Accordingly, various bounds testing procedures are proposed. It is shown that the proposed tests are consistent, and their asymptotic distribution under the null and suitably defined local alternatives are derived. The empirical relevance of the bounds procedures is demonstrated by a re‐examination of the earnings equation included in the UK Treasury macroeconometric model. Copyright © 2001 John Wiley &amp; Sons, Ltd.
+
+Abstract (KO):
+Abstract 이 문서에서는 기본 회귀 변수가 추세 또는 1차 차분 고정 상태인지 확실하게 알 수 없는 경우 종속 변수와 회귀 변수 집합 간의 수준 관계 존재를 테스트하는 문제에 대한 새로운 접근 방식을 개발합니다. 제안된 테스트는 단변량 평형 수정 메커니즘에서 변수의 시차 수준의 유의성을 테스트하는 데 사용되는 표준 F 및 t 통계를 기반으로 합니다. 이러한 통계의 점근 분포는 회귀 변수가 I(0)인지 I(1)인지에 관계없이 수준 관계가 존재하지 않는다는 귀무 가설 하에서 비표준입니다. 두 세트의 점근적 임계값이 제공됩니다. 하나는 모든 회귀 변수가 순전히 I(1)인 경우이고 다른 하나는 모두 순전히 I(0)인 경우입니다. 이러한 두 가지 임계 값 세트는 회귀 변수의 가능한 모든 분류를 순수 I(0), 순수 I(1) 또는 상호 공적분으로 포괄하는 대역을 제공합니다. 이에 따라 다양한 경계 테스트 절차가 제안된다. 제안된 테스트는 일관성이 있으며 null 및 적절하게 정의된 로컬 대안 하에서 점근 분포가 도출되는 것으로 나타났습니다. 범위 절차의 실증적 타당성은 영국 재무부 거시경제학 모델에 포함된 소득 방정식의 재검토를 통해 입증됩니다. 저작권 © 2001 John Wiley &amp; 주식회사 아들즈

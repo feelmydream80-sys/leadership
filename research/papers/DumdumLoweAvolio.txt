@@ -1,0 +1,1485 @@
+
+ A Meta-analysis of Transformational and Transactional Leadership Correlates
+         of Effectiveness and Satisfaction: An Update and Extension
+
+
+
+
+
+
+                             Uldarico Rex Dumdum
+                            Marywood University &
+                        Center for Leadership Studies
+                            Binghamton University
+
+
+                                Kevin B. Lowe
+                    Department of Business Administration
+                   Bryan School of Business and Economics
+                  University of North Carolina-- Greensboro
+
+                                     and
+
+                               Bruce J. Avolio
+                          Department of Management
+                     College of Business Administration
+                           University of Nebraska
+
+
+
+
+                             To be published as
+
+Dumdum, U. R., Lowe, K. B., & Avolio, B. J. (2002). A meta-analysis of
+transformational and transactional leadership correlates of effectiveness
+and satisfaction: An update and extension. In Bruce J. Avolio and Francis
+J. Yammarino (Eds.), Transformational and charismatic leadership: The road
+ahead. (pp 35-66). Oxford, UK: Elsevier Science.
+
+
+
+                                Introduction
+
+      One of the core arguments made by Bass (1985) was that
+transformational leadership would account for a greater share of the
+variance in performance outcomes when compared to more traditional
+transactional styles of leadership. Over the last fifteen plus years,
+considerable evidence has been accumulated supporting Bass' original
+contention with studies conducted in a very broad range of organizational
+settings (Avolio, 1999; Bass, 1998). Transformational leadership has been
+shown to correlate positively with performance outcome measures ranging
+from growth in church membership (Onnen, 1987) to the performance of
+platoons operating in near combat conditions (Bass, Avolio, Jung, & Berson,
+in press).
+      The growing attention in the literature to transformational and
+charismatic leadership has rejuvenated the field of leadership and
+attracted a number of new scholars to the field (Hunt, 1999).  For example,
+in a comprehensive 10 year review of the articles published in the
+Leadership Quarterly, Lowe and Gardner (2000) found the
+charismatic/transformational leadership paradigm was the most researched
+areas of leadership over the last decade, surpassing attention given to all
+other leadership paradigms. A further analysis of the Lowe and Gardner data
+conducted for this paper, showed that the 1995-1999 period produced more
+published studies on the paradigm than the 1990-1994 period, suggesting a
+growing interest among leadership scholars in researching charismatic and
+transformational leadership.
+      Over the time span since Bass published his (1985) book, there have
+been three quantitative reviews of the literature conducted on the
+neocharismatic/transformational leadership paradigm (Gaspar, 1992; Lowe,
+Kroeck, and Sivasubramainiam, 1996; DeGroot, Kiker & Cross, 2000). Gasper's
+work focused primarily on educational settings, in which he aggregated a
+number of study variables later shown to be important moderators of the
+leadership and effectiveness relationship. Lowe, Kroeck, and
+Sivasubramaniam focused on the five-factor model of transformational
+leadership as measured by the Multi-Factor Leadership Questionnaire (MLQ)
+to guide their meta-analysis. Lowe et al. examined the relationship between
+transformational and transactional leadership with individual and
+organizational-level measures of effectiveness.  Lowe et al. (1996) also
+included three different moderators of the transformational leadership to
+effectiveness relationship: type of criterion, level of leader, and type of
+organization. DeGroot, Kiker and Cross (2000) focused more narrowly on the
+charismatic component of transformational leadership, including in their
+meta-analysis a wider variety of instruments including the MLQ, which all
+assessed charismatic leadership.
+      The primary purpose of the current study was to update and extend the
+work of Lowe et al. (1996).  Specifically, we set as our goal to examine
+all research using the MLQ that was not included in the Lowe et al. (1996),
+by going back to 1995 and reviewing all published and non published
+research on the MLQ up to and including research published in 2002. The
+focus of the current meta-analysis was on empirical research using the MLQ
+to measure transformational leadership and its relationship with measures
+of performance effectiveness and satisfaction.  We settled on this strategy
+for several reasons.  First, transformational leadership research utilizing
+the full range leadership model and the MLQ provides the most widely
+researched empirical assessment of the paradigm available.  Alternative
+measures such as Podsakoff, MacKenzie, Moorman, & Fetter (1990) provide a
+narrower assessment of the dimensions comprising the full range model.
+      Second, an initial review of the literature back to 1995 showed that
+the MLQ was by far, the most frequently used measure for studying
+transformational leadership, and therefore the number of studies available
+with this instrument allowed us to conduct more robust tests of moderator
+variables. The survey developed by Podsakoff et al. (1990) has rarely
+appeared in the literature, thus we decided to abandon its use in the
+current study.
+       Third, the Lowe et al. (1996) paper is by far, the most widely cited
+quantitative review of the transformational leadership literature,
+accumulating over one hundred citations in the six years since publication.
+Thus, we felt using it as point of departure for the current meta-analysis
+would provide an interesting and helpful update to their original study and
+offer some continuity to examining the linkages between transformational
+leadership and performance.
+      The strategy we adopted can be described as a replication of the
+theoretical arguments of Bass and extension with respect to data analysis
+and interpretation. Consequently, we will not focus here on providing an
+extensive discussion of the origins and evolution of the
+charismatic/transformational leadership paradigm, which appears in a number
+of other sources, including other chapters in this book (cf. Antonakis &
+House, in press; Avolio, 1999; Bass, 1995, 1998; Conger & Kanungo, 1998;
+House and Aditya, 1997). Our primary purpose is to conduct a meta-analysis
+of studies published since Lowe et al. (1996) to determine if the
+relationships they reported still hold. We also extend their analysis by
+examining the relationship between leadership style and satisfaction. Since
+the two most widely used criterion measures are performance and
+satisfaction, we felt this extension could help provide a more
+comprehensive picture of the charismatic/transformational leadership
+paradigm.
+       We chose to explore satisfaction in this meta-analysis since there is
+a substantial literature that has showed linkages between satisfaction and
+performance, a relationship that was described by Landy (1989) as the "Holy
+Grail" of industrial psychologists. Yet evidence concerning this linkage
+indicates the association although typically significant, is weaker than
+initially thought, and in need of further research (Judge, Thoresen, Bono,
+& Patton, 2001). Hence, our primary purpose is to explore the "true"
+association between various leadership styles measured by the MLQ and the
+"big two" criterion measures that are repeatedly used as benchmarks for
+determining the impact of leadership in organizations. Thus, based on prior
+leadership research and three previous meta-analyses we will examine the
+following broad propositions:
+         . Transformational leadership will be positively associated with
+           measures of performance effectiveness and satisfaction.
+         . Transactional contingent reward leadership will be positively
+           associated with measures of performance effectiveness and
+           satisfaction, but less so than transformational.
+         . Passive-avoidant transactional leadership will be negatively
+           associated with measures of performance effectiveness and
+           satisfaction.
+      In an attempt to re-examine the findings reported by Lowe et al.
+(1996), we will explore whether the relationships between leadership style
+and performance are moderated by organizational type. Specifically, we
+examined the degree to which the leader x outcome relationships varied
+between public/government and private organizations.
+      We also intend to explore how the type of outcome measure moderates
+the relationship between leadership style and satisfaction. Prior evidence
+indicates that the leadership styles measured by the MLQ tend to be more
+highly correlated with subjective versus more objective or external outcome
+measures.  We intend to examine how the leadership styles measured by the
+MLQ relate to satisfaction with the leader versus satisfaction with the
+job.
+Examining the Full Range Model
+      Prior to reporting our methods and results we provide a quick overview
+of the dimensions contained in the full range leadership development model,
+which again is covered in more detail by Antonakis and House in the
+previous chapter. The full range model of leadership may be broadly
+classified as transformational leadership, transactional leadership, and
+nontransactional leadership (Avolio, 1999).  Transformational leaders
+engender trust, seek to develop leadership in others, exhibit self
+sacrifice and serve as moral agents, focusing themselves and followers on
+objectives that transcend the more immediate needs of the work group.
+Transformational leaders typically engender higher levels of commitment,
+trust, and loyalty in their followers that may lead to performance beyond
+expectations.  Transformational leadership scales in this meta-analysis
+included Attributed Charisma, Idealized Influence, Inspirational
+Motivation, Intellectual Stimulation, and Individualized Consideration. We
+also conducted a meta-analysis of a global scale of transformational
+leadership comprised of selected items from the dimensional scales, since a
+number of studies have included this higher-order construct, versus
+reporting results for the individual component scales.
+      Transactional leaders address the self-interest concerns of followers
+by exchanging rewards or recognition for cooperation and compliance
+behaviors consistent with task requirements.  The more effective
+transactional relationships are constructive and often result in achieving
+defined performance requirements. Transactional leadership scales in this
+meta-analysis included the Contingent Reward, Management-by-Exception, and
+a more global Transactional Leadership Scale comprised of selected items
+from the component scales.
+      Non-transactional leadership styles represent leadership behaviors
+that are neither transformational nor are contingent on the exchange of
+rewards for effort or performance.  The non-transactional scale used in
+this meta-analysis has been labeled in the MLQ as Lassiez-Faire.
+      In sum, our primary goal in conducting this latest meta-analysis of
+literature accumulated using the MLQ survey was to update the results of
+Lowe et al. (1996), by extending the period of review of their initial
+study to the year 2002.  Thus, in combination, these two meta-analyses will
+provide a review of the last 15 years of data collected on Bass' (1985)
+originally proposed model of transformational, transactional and non-
+transactional leadership and the extended model labeled the full range of
+leadership
+                                   Method
+      The central purpose for conducting a meta-analysis is to statistically
+analyze the results of many empirical studies in order to reveal a summary
+set of findings.  Among the several available techniques for conducting a
+meta-analysis we choose the method offered by Hunter and Schmidt (1990),
+which has become the most widely used method in the organizational behavior
+literature.  We followed the guidelines suggested by Schmitt and Klimoski
+(1991) in our approach to the coding of studies and gave careful
+consideration to the many judgment calls required in meta-analysis as
+outlined by Wanous, Sullivan, and Malinak (1989).  We highlight two of
+these judgment calls here to enable an accurate interpretation of our
+results.
+      First, we elected to include dissertations and "file drawer" studies
+in an effort to capture as broad a sample as possible.  We felt some
+comfort in doing so since Lowe et al. (1996) found that few differences
+existed between published and unpublished studies in this domain.  Indeed
+when unpublished studies do have an impact on the results it is generally
+to reduce observed correlations.  Thus, the inclusion of unpublished
+studies typically results in a more conservative test of significance.
+      Second, many studies reported multiple measures of effectiveness and
+satisfaction, which came from the perspective of a single group of raters.
+To report each of these correlations with the associated sample size
+attributed to each correlation would overweight studies correlating
+leadership ratings with multiple effectiveness criteria, while
+underweighting other studies that may have included only one outcome
+measure.  If we used the strategy of coding multiple leader-outcome
+relationships including the same leadership scales collected within a
+single study, the correlations would not be independent, thus also
+violating a basic assumption required for conducting a meta-analysis.
+      There are two basic options one can pursue to deal with the problem of
+dependent correlations. The research coder can determine the best
+correlation coefficient to be included in the meta-analysis, eliminating
+the other correlations from consideration. Alternatively, one can choose to
+average multiple correlation coefficients to form a composite measure of
+the variable of interest. In this study we were interested in effectiveness
+and satisfaction as multi-faceted constructs and therefore decided to use
+the averaging strategy to develop composite correlation coefficients in
+studies where multiple measures of effectiveness and satisfaction were
+collected.
+
+Selection of Studies for the Meta-analysis
+
+      We selected the cutoff date for the Lowe et al. (1996) study as the
+beginning date for the current study by going back to 1995, when their
+study was in the publication pipeline. We conducted a full literature
+search as described in detail below, and included all articles that were
+not included in the prior study.
+      Five criteria were used for inclusion of studies in the meta-analysis:
+(1) The study must have used the MLQ to measure leadership style; (2) The
+study must have reported a measure of leader effectiveness; (3) The sample
+size must have been reported; (4) A Pearson correlation coefficient (or
+some other test statistic that could be converted into a correlation)
+between leadership style and effectiveness must have been reported; and (5)
+The leader must have been a direct leader of the subordinate (not an
+idealized or hypothetical leader).
+      Studies were located using a variety of methods including: (1)
+Computer searches of ABI-INFORM, Web of Science, Expanded Academic ASAP,
+Sociological Abstracts, PsychInfo, PA Research II Peer Reviewed, Francis,
+Emerald, and Dissertation Abstracts; (2) Manual searches of Academy of
+Management Proceedings; (3) Reference lists of published and unpublished
+sources; (4) Request for all "file drawer" articles from the Center for
+Leadership Studies (CLS) at Binghamton University and from the personal
+library of  Bernard M. Bass.
+      The literature search yielded over one hundred studies.  Forty-nine
+studies met the five criteria for inclusion.  Twenty-four of these studies
+were published in journals and books, thirteen were unpublished
+dissertations and twelve were file-drawer articles. File-drawer articles
+include working papers, internal reports or articles sent to the CLS
+(through one or more of the CLS fellows), papers sent to Bernard M. Bass,
+and papers under revision for journals.
+
+Coding of Information
+
+
+      Studies meeting the five criteria were reviewed and relevant
+performance effectiveness and satisfaction data were extracted and coded.
+The studies were coded twice by six students in three teams comprised of
+two members on each team. The two members of each team independently coded
+the article and then compared and discussed their coded information.
+Students were trained on meta-analysis procedures and were taken through
+several practice articles that had appeared in the meta-analysis reported
+by Lowe et al. (1996). The training period was discontinued once the pairs
+of raters had achieved a minimum coding agreement level of 80%.
+
+
+      Initial inter-coder agreement well exceeded 90% for all study
+variables included in the current meta-analysis. Where disagreement did
+exist they were found to be a result of clerical error. Subsequent
+discussion led to corrections of these clerical errors and agreement on the
+appropriate criterion variables for coding and coefficient signage (need
+for reverse coding).
+
+
+      For studies in which multiple measures of effectiveness and
+satisfaction were reported, the coding policy was to code all measures of
+effectiveness (i.e., individual performance, team performance, extra
+effort, turnover, cycle time, percent of goals met) and to code all
+measures of satisfaction (i.e., satisfaction with leader, job
+satisfaction).  In the overall meta-analysis (see Table 1) these
+coefficients were averaged (as described above) within a study to obtain a
+composite measure of effectiveness/satisfaction.  This process was repeated
+in subsequent moderator analyses with relevant coefficients (e.g.,
+effectiveness criterion only, objective measures of effectiveness) within a
+study averaged to form a composite coefficient. As the specification of the
+relevant criterion becomes more specific the need to construct a composite
+measure is obviated by the specificity of the criterion variable.
+
+Meta-Analytic Procedures
+      Sample weighted means and standard deviations were first calculated.
+Following the approach of Lowe et al. (1996), correlations were first
+subjected to a meta-analysis to eliminate the effects of sampling error.
+Reliability data was not reported for all of the studies however the
+available reports were sufficient to allow for corrections due to
+unreliability using the artifact distribution method (Hunter and Schmidt,
+1990).  Credibility and confidence intervals were constructed around the
+mean effect sizes to make inferences regarding the extent to which
+moderators might be present and to determine the accuracy and significance
+of the estimated mean effect size.  Credibility intervals indicate the
+extent to which the corrected coefficient might be generalized and indicate
+tests for moderators when they are large or include zero, while confidence
+intervals assess the accuracy of the mean effect size.
+                                   Results
+Overall Meta-analysis Findings
+      Results of the overall meta-analysis combining effectiveness and
+satisfaction measures are provided in Table 1.  All transformational scales
+had internal consistency reliabilities exceeding .70, the conventional
+level for acceptance as internally consistent (Nunnally, 1978).  All
+transformational leadership scales were highly and positively correlated
+with the effectiveness/satisfaction criteria.  The corrected and
+uncorrected coefficients were .66 (.54) for Attributed Charisma, .66 (.50)
+for Idealized Influence, .56 (.46) for Inspirational Motivation, .52 (.42)
+for Intellectual Stimulation, .55 (.44) for Individualized Consideration,
+and .46 (.40) for Transformational Leadership.
+       Sample weighted scale means and standard deviations were similar for
+the five transformational scales ranging from 2.43 to 2.76 and .72 to .86
+respectively.  The composite Transformational Leadership scale had a mean
+of 3.05 and a standard deviation of .93.  All credibility intervals were
+large and several included zero indicating that further analysis for
+moderators was warranted.  This finding is not surprising given the diverse
+set of subjective and objective criterion measures included in this meta-
+analysis. Yet, such an initial broad brush does help answer the question of
+what is the relationship between leadership and desired outcomes.  A broad
+approach also prevents an a priori conclusion regarding the presence of
+moderators.
+                         ---------------------------
+                          Insert table 1 about here
+                         ---------------------------
+      For the transactional scales, all of the reliability estimates
+exceeded .70, except a .69 for the Management-by-Exception Passive scale.
+The corrected and uncorrected correlation coefficients were .51 (.41) for
+Contingent Reward, .05 (.04) for Management-by-Exception Active, -.34 (-
+.26) for Management-by-Exception Passive, and -.21 (-.16) for the combined
+Management-by-Exception scale. The composite scale mean and standard
+deviation for the transactional scale was 2.94 and .76, respectively.
+      For the non-transactional leadership scale Lazziez-Faire the corrected
+and uncorrected correlations were -.30 and -.38 respectively. Consequently,
+this scale had the strongest negative relationship with
+effectiveness/satisfaction among the full range leadership scales examined
+in this study.  This finding is consistent with that advanced by Avolio
+(1999) who describes Laissez-faire as "...by definition, [the] most
+inactive, as well as most ineffective, according to almost all prior
+research on the style (p. 50)".  The mean, standard deviation, and
+reliability of the scale were consistent with those reported for the
+transformational and transactional scales.  The credibility interval was
+narrower than for most other scales but included zero suggesting further
+exploration for moderators was warranted.
+      Overall, these preliminary results provide some support for the three
+basic propositions stated up front, except that the overall
+transformational scales relationship with the performance outcome (.46) was
+similar to the relationship between contingent reward and the performance
+outcomes (.51). It is important to note, that the composite
+transformational scale did not include all of the scales, or necessarily
+all of the items. However, these results generally support Bass' (1998)
+contention that there is a hierarchical relationship between
+transformational, transactional, non-transactional and performance
+effectiveness, especially at the individual scale level.
+      Based on the wide credibility intervals observed for the overall meta-
+analysis we proceeded to investigate moderators.  The first natural
+dichotomy was to separate the criterion measures into effectiveness and
+satisfaction.
+Examining Outcome Measures of Satisfaction and Effectiveness
+      Table 2 reports two meta-analyses, one for effectiveness and one for
+satisfaction, which are subsets of the overall meta-analyses discussed
+above. The careful reader will note that the sum of the effectiveness and
+satisfaction sample sizes in Table 2 exceed the sample size reported in
+Table 1. This increase occurs where composite criterion coefficients were
+initially constructed and then decomposed and assigned the study sample
+size in each moderator subgroup.
+                                                  ---------------------------
+-------
+                          Insert table 2 about here
+                     ----------------------------------
+      The means and standard deviations for the twelve scales were nearly
+identical for the effectiveness and satisfaction sub-samples, and
+consistent with results reported for the overall sample.  Scale
+reliabilities for both subgroups were also consistently in the acceptable
+range with the exception of the Management-by-Exception scale with
+satisfaction where the alpha was .62.  Thus the population parameters for
+the two subgroups were quite similar.  The number of studies in most
+subgroups exceeded the minimum five recommended for conducting a meta-
+analysis and the number of coefficients across the studies was more than
+sufficient to conduct a proper meta-analysis.
+      Correlations of the transformational leadership scales with
+effectiveness and satisfaction were consistently high and positive.  For
+each of the transformational subscales the coefficient for Satisfaction was
+greater than for Effectiveness.  Corrected coefficients for Effectiveness
+and Satisfaction respectively were .68(.90) for Attributed Charisma,
+.68(.73) for Idealized Influence, .55(.75) for Inspirational Motivation,
+.57(.73) for Intellectual Stimulation and .59(.81) for Individualized
+Consideration.  For the Transformational scale used in a smaller number of
+studies the Effectiveness and Satisfaction coefficients were .50 (.40). For
+the transactional leadership scales the coefficient for Satisfaction was
+again higher than for Effectiveness when the coefficients were positive and
+more negative when the coefficients were negative.  Corrected coefficients
+for Effectiveness and Satisfaction respectively were .76(.56) for
+Contingent Reward, -.09(.08) for Management-By-Exception-Active, -.46(-.38)
+for Management-by-Exception-Passive, -.44(-.30) for Management-by-
+Exception, and .21(.19) for Transactional Leadership.
+      For the non-transactional Lassiez-Faire scale the same pattern was
+observed, the corrected coefficient was stronger for Satisfaction (-.53)
+than for Effectiveness (-.37).
+An analysis of the credibility and confidence intervals shows that the
+intervals remain large but are less likely to include zero than in the
+overall meta-analysis.  In general, the credibility intervals for the
+transformational subscales and the Contingent Reward scale have higher
+positive lower bounds, while credibility intervals for the transactional
+and non-transactional scales have more negative lower bounds.  Although the
+wide confidence intervals continue to suggest the presence of moderators,
+the decreasing presence of zero in these intervals suggests that
+improvement was realized through separating these two outcome measures.
+      Based on results reported in Table 2, we decided to probe the
+Effectiveness and Satisfaction measures for moderators.  Two promising
+moderators for Effectiveness identified by Lowe et al. (1996) included the
+type of criterion measure and type of organization.  We turn our attention
+to these two moderators of the leadership to effectiveness relationship
+first and then examine the leadership to satisfaction relationship by
+dichotomizing satisfaction into satisfaction with the leader and
+satisfaction with the job.
+Public and Private Organizations
+      Comparing public to private organizations, we found the means and
+standard deviations for these two subgroups across the twelve scales were
+statistically different due to large sample sizes, but there was relatively
+little practical difference observed.  For example, the means for the
+transformational scales were typically between 2.5 and 2.8 with standard
+deviations between .60 and .80.  For the transactional scales and
+nontransactional leadership scales the means were generally lower, but
+still comparable scale to scale.
+        Internal consistency reliabilities met conventional thresholds with
+the exception of Idealized Influence for Public organizations (.69) and
+Lassiez Faire for Private organizations (.67).  The number of studies in
+most of the subgroups exceeded the minimum five recommended for conducting
+a meta-analysis, except for four of the twenty four subgroups (Idealized
+Influence-Public, Management-by-Exception-Private (and Public),
+Transactional Leadership-Private had fewer than five and one
+Transformational Leadership-Private had exactly five.  Concerns regarding
+the number of unique studies are ameliorated to some extent by the
+relatively high number of coefficients garnered from these studies, which
+often utilized multiple samples or measures within a study.
+      Correlations between transformational leadership scales and
+effectiveness were moderately high and positive for all scales.  In
+contrast to the effectiveness/satisfaction subgroup analyses neither the
+Public or Private subgroup consistently had a higher coefficient.
+Corrected coefficients for Public and Private Organizations respectively
+were .76(.65) for Attributed Charisma, .66(.70) for Idealized Influence,
+.48(.60) for Inspirational Motivation, .50(.58) for Intellectual
+Stimulation, .48(.61) for Individualized Consideration and .53(N/A) for the
+Transformational Leadership scale.
+                     ----------------------------------
+
+                          Insert Table 3 about here
+
+                     ----------------------------------
+      Like the findings for the transformational scales neither
+Public/Private subgroup had a consistently higher correlation with
+effectiveness when we examined the transactional scales.  For Contingent
+Reward the public subgroup had a marginally higher coefficient (.56) than
+the private subgroup (.53).  Management-by-Exception Active was positively
+correlated with effectiveness for both subgroups with coefficients of .13
+and .04 in the Private and Public subgroups, respectively. Of the remaining
+scales only Management-by-Exception Passive (-.38) -.36 and Lassiez-Faire (-
+.38) -.36 for public and private organizations respectively had sufficient
+subgroup sample sizes to make these comparisons.
+      An analysis of the credibility intervals identifies that although the
+range of the credibility intervals declined marginally, the number
+excluding zero continued to improve. The credibility intervals for the
+private subgroup excluded zero for all transformational subscales. A review
+of the 95% confidence intervals reveals that all scales excluded zero for
+all subgroups except Management-by Exception Active in Public
+organizations.  Thus it seems reasonable to conclude that there is a
+relationship between leadership styles as measured by the MLQ scales and
+effectiveness criteria in both public and private organizations with the
+five transformational subscales, Contingent Reward, and Management-by-
+Exception Active scales exhibiting positive relationships and the combined
+Management-by-Exception scale, Management-by-Exception Passive and Lassiez-
+Faire scales producing negative relationships with effectiveness.  We can
+also conclude from the large credibility intervals, that a continued search
+for moderators is warranted.  Based on prior meta-analyses of the
+transformational leadership literature we next considered the impact of the
+type of criterion on the leadership and effectiveness relationship
+Type of Criterion: Leadership Style and Effectiveness
+      A review of Table 4 reveals a now familiar pattern in means, standard
+deviations and internal consistency reliabilities. Corrected correlation
+coefficients were dramatically different across subgroups for the five
+transformational leadership subscales and the Contingent Reward scale.  In
+general, many more studies utilized subjective measures of effectiveness
+than utilized objective measures of effectiveness and thus there were in
+some cases insufficient sample sizes in the objective subgroup to examine
+these relationships.
+      Corrected correlation coefficients for the subjective and objective
+groups respectively were .85 (.23) for Attributed Charisma, .76 (n.a.) for
+Idealized Influence, .74(.21) for Inspirational Motivation, .71(.21) for
+Intellectual Stimulation, .75(.20) for Individualized Consideration and .70
+(.16) for Contingent Reward. The objective subgroup coefficient for
+Inspirational Motivation must be interpreted with considerable caution
+given the relatively low number of studies even though they were based on a
+relatively large aggregated sample size across these few studies.
+      The findings for the objective subgroup for Intellectual Stimulation,
+Individualized Consideration, and Contingent Reward are more robust. These
+findings are consistent with earlier meta-analyses (Lowe et. al., 1996) and
+are based on a sufficiently large number of independent studies.
+                       ------------------------------
+                          Insert table 4 about here
+                       ------------------------------
+      Corrected correlation coefficients for the remaining transactional and
+nontransactional scales were .10 (.00) for Management-by Exception-Active,
+.10(-.07) for Management-by-Exception-Passive, -.32 (N/A) for Management-by-
+Exception, -.47 (-15) for Lassiez Faire, and .32 (-.05) for Transactional
+Leadership for the subjective and objective subgroups respectively.
+However, most of the objective subgroup coefficients should be interpreted
+cautiously due to the small number of studies.  The notable exception to
+the small number of studies concern was for the Lassiez Faire scale.  Our
+results are consistent with the argument that Lassiez Faire is the least
+effective form of leadership.
+      Credibility interval analysis suggests that a further search for
+moderators is warranted.  This is not surprising since the disappointing
+number of studies incorporating objective measures of effectiveness hampers
+our ability to test for these effects.  An analysis of the 95% confidence
+intervals reveals that most do not include zero and thus we can posit that
+leadership behavior as measured by the MLQ is associated with subjective
+effectiveness in the direction indicated.  For objective measures of
+effectiveness we can make this claim for a limited set of scales.
+Type of Criterion: Leadership Style and Two Satisfaction Measures
+      Means, standard deviations, and internal consistency reliabilities
+were similar to our findings for earlier subgroups.  This provides some
+reassurance that differences in correlations regarding leadership styles
+and various outcome measures are determined by something other than
+response bias differences across subgroups.  Consistent with our
+expectations, the transformational leadership scales were more highly
+correlated with satisfaction with the leader than with satisfaction with
+the job.  Corrected correlations for satisfaction with the leader and
+satisfaction with the job subgroups respectively were .92(.57) for
+Attributed Charisma, .77(.41) for Idealized Influence, .78(.35) for
+Inspirational Motivation, .71(.21) for Intellectual Stimulation, and
+.83(.43) for Individualized Consideration.  For the Transformational
+Leadership scale the subgroup coefficients were .57 and .30, respectively.
+      For transactional and nontransactional scales the subgroup
+correlations were .82(.52) for Contingent Reward, -.12(-.05) for Management-
+by-Exception Active, -.47(-39) for Management-by-Exception Positive, -.44
+(n.a.) for Management-by-Exception, and -.56(-.44) for Lassiez-Faire.  For
+the Transactional Leadership scale the coefficients were .21(.24).  A
+review of these coefficients reveals a clear pattern of MLQ scale scores
+being more strongly correlated with Satisfaction with the Leader than with
+Satisfaction with the job.  This is true for both positive correlations
+(e.g., Attributed Charisma, Contingent Reward) and negative correlations
+(e.g., Lassiez-Faire).
+      Again, these subgroup analyses must also be viewed with some degree of
+caution given the relatively small number of studies in each grouping.
+Perhaps, the strongest conclusions can be drawn for the Contingent Reward
+and Transformational Leadership scales and to a lesser extent the
+Management-by-Exception Active scale, given the larger sample sizes
+representing these different subgroups.
+                                 Discussion
+   With most leadership paradigms, it would be helpful to update results
+periodically to determine whether the hypothesized relationships change
+over time. Changes in organizational structure and how performance is
+measured may affect relationships between leadership style and performance.
+For example, as more leaders work with followers at a distance and via
+advanced information technology one wonders what impact that may have on
+the relationship between leadership style and performance (Avolio, Kahai &
+Dodge, 2000). Also, as new cohorts of workers enter organizations one
+wonders how the relationship between leadership style and performance may
+change over time. This leads one to question the extent to which the new
+cohort of employees, who have been described in the media as more
+independent and challenging, may view directive leadership as a more
+negative style of leadership than previous cohorts of employees.
+   The meta-analysis conducted for this study extends the work of Lowe et
+al. (1996) by examining 12 scales comprising the MLQ as opposed to the 5
+reported in their study. The inclusion of all 12 scales provides a more
+comprehensive assessment of the full range of leadership styles, which
+Antonakis and House (in-press) advocate using as the 'scaffold' for
+building a broader and fuller range model of leadership. We've also
+included in this meta-analysis an examination of the relationship between
+leadership style and satisfaction, which was not included in the earlier
+meta-analysis.
+   Generally speaking, the results of the overall meta-analysis and
+subsequent examination of moderators, confirmed what has been reported in
+earlier individual studies and meta-analyses. The hierarchical pattern
+proposed in the full range model of leadership, has received consistent
+support over these last 15 years, with the current study reflecting prior
+trends linking transformational, transactional and non-transactional
+leadership to performance. This consistent pattern of results is
+encouraging in that it suggests these relationships are enduring and are
+not episodic in the sense that they are tied to one period in history, a
+particular version of the MLQ, or artifacts of the cohort or type of
+outcome measures being evaluated. Indeed, the corrected correlations
+reported for effectiveness with the various transformational scales
+presented in Table 2, are remarkably similar to those reported by Lowe et
+al. (1996) in their overall meta-analysis of effectiveness.  Specifically,
+the corrected correlations in the current and 1996 study were .68(.73) for
+Charisma, .59(.62) for Individualized Consideration, and .57(.60) for
+Intellectual Stimulation, respectively.  Contingent Reward was somewhat
+different .56(.41), but would lead to the same conclusion, that Contingent
+Reward is positively and has a moderately high correlation with
+effectiveness. Perhaps the main difference is that the Contingent reward
+scale tended to have a similar positive relationship with performance
+effectiveness and satisfaction as compared with transformational
+leadership.
+   Yet, there were also some notable exceptions comparing the results of the
+two meta-analyses. For example, there was a significant between study
+difference in the corrected correlation coefficient for Management-by-
+Exception .05(-.30).  Presently, it is not clear why such a large
+difference exists. However, it is worth noting that the number of studies
+utilizing this scale decreased by two thirds relative to the meta-analysis
+conducted in 1996. This has been due to an increased use of the subscales
+representing Management-by Exception Active and Management by Exception
+Passive. The similarity that should be noted is that that the coefficient
+for Management-by-Exception Passive in this study was approximately the
+same as the Management-by-Exception coefficient in the 1996 meta-analysis.
+   The differences regarding the overall Management-by-Exception scale may
+be due to a variety of factors. Possibly as organizations de-level, the
+span of control has increased affecting how leaders actively and passively
+manage-by-exception with their followers. Alternatively, the earlier meta-
+analysis conducted by Lowe et al. (1996) was based on an earlier version of
+the MLQ, which did not as clearly distinguish active and passive management-
+by-exception. Thus the item composition of the two instruments may have
+affected the outcomes that are reported in each respective study.
+    The differences in MLQ forms between 1996 and 2002 may also help explain
+the lower positive correlation noted between Contingent Reward leadership
+and effectiveness reported by Lowe et al. (1996). Specifically, the earlier
+MLQ Form 5R, contained contingent reward items that were more exchange
+oriented or based on quid pro quo criteria. The MLQ Form 5X used in most of
+the research contained in this meta-analysis, contains a shorter contingent
+reward scale (4 versus 10 items), and that scale taps more of the higher-
+order transactions associated with recognition and exchange of agreements
+(Avolio, 1999). Along these lines, Goodwin et al. (2001) has argued that
+some of the transactional contingent reward items are of a lower order
+type, which they associate with more explicit contracting with followers.
+The remaining items are more of the higher order transactional type and are
+generally associated with recognition and forming of implicit contracts. In
+the newer MLQ Form 5X, two of the contingent reward items appear to
+represent more of the lower order transactional-type items. For example one
+of the items is 'rewards us when we do what we are supposed to do'.
+Goodwin et al. (2001) reported that the lower-order transactional scale had
+higher discriminant validity versus the higher-order transactional scale
+when correlated with the transformational leadership scale
+   Bass et al. (in press) also showed that when only the lower-order
+transactional Contingent Reward items were included in a hierarchical
+regression analysis, the transformational scale augmented the Contingent
+Reward scale in predicting unit performance over time. However, when the
+recognition items were included in the Contingent Reward scale, the
+transformational scale did not significantly augment that Contingent Reward
+scale in predicting unit performance.
+   The MLQ has gone through a number of revisions to address concerns about
+its psychometric properties (Yukl, 1999). Yet, by revising the items and
+scales to address these concerns, we also run into the potential problem of
+not being able to replicate earlier findings due to different items being
+included across survey instruments. However we do need to reiterate, that
+by and large, our results remain consistent with the earlier meta-analytic
+findings. However, would recommend that future research examine the
+components of the transactional scales to see if the lower and higher-order
+distinction can be reliably obtained across different samples and
+organizational contexts.
+   Confirming earlier findings, our results are consistent with Lowe et al.
+(1996) who reported consistently higher correlations with effectiveness in
+Public as compared to Private organizations.  In the current meta-analysis,
+the relationships for Public versus Private were higher for Attributed
+Charisma, although the coefficients were very close on an absolute basis.
+However, the relationships reported for Idealized Influence, Inspirational
+Motivation, Intellectual Stimulation, and Individualized Consideration were
+higher in private organizations in the present study.
+Limitations and Future Directions
+      As careful as one can be, a meta-analysis is only as good as the
+studies that are available to conduct an empirical review of the
+literature. Since the last meta-analysis was conducted, there has been less
+emphasis in this literature on collecting more 'objective' measures of
+performance effectiveness. We suggest that future research on the full
+range model and MLQ must now begin to focus on collecting a broader range
+of independent and objective measures collected at the same time as the
+leadership scales, as well as over time, allowing future research to
+examine the links explored in this study using a longitudinal framework.
+      In addition to collecting measures of objective performance, it also
+will be helpful for the next meta-analysis to have measures of performance
+which tap both individual and group levels of extra effort or performance
+beyond expectations. Of course, building a broader data base with objective
+measures is the primary goal, however over time, tapping measures that
+might be more sensitive to the influence of transformational versus
+transactional leadership, may help to advance this theory more rapidly.
+Specifically, a fundamental proposition in Bass (1985) writings is that
+transformational leadership will augment transactional in predicting
+performance. Gathering objective measures that tap into performance around
+stretch goals or extreme criteria, will allow future researchers to examine
+this fundamental proposition in Bass' work.
+      There is also sufficient theoretical justification to suggest that
+transformational leadership impacts on followers in ways that are different
+than transactional styles of leadership. Thus to examine the black box in
+which followers are 'transformed', we suggest that future research
+concentrate on measuring some of the following outcome measures:
+    . Using the per person productivity (ppp) rates and trends over time to
+      track fundamental improvements and changes in performance.
+    . Examining growth rates in followers' knowledge, learning capacity,
+      motivation to lead, self and collective-efficacy.
+    .  Examining as an outcome measure followers' levels of moral reasoning,
+      willingness to self-sacrifice, ethical standards, concern for the
+      community, are outcomes that are all theoretically linked to basic
+      propositions which Burns (1978) and Bass (1985) used to differentiate
+      transformational versus transactional leaders. Specifically, if
+      transforming leaders are morally uplifting then we should examine
+      moral reasoning as an outcome measure.
+    . To the extent transformational leaders develop followers into leaders,
+      than we should be examining the leadership qualities/styles of
+      followers over time, as an outcome measure.
+    . As more leaders lead virtually and at a distance, we need to begin to
+      examine how each of the styles of leadership is related to performance
+      over time and distance.
+    . As noted by Lowe and Gardner (2000), the field of leadership studies
+      is still by and large dominated by work completed with samples in the
+      United States. Future research needs to explore how the relationships
+      between these leadership styles and outcomes vary as a consequence of
+      culture.
+    . There are only a relatively handful of studies that have examined the
+      relationship between leadership style and strategic organizational
+      performance (see Waldman and Javidan in this volume for a review.)
+      Future research needs to examine the relationship between the full
+      range of leadership styles and various measures of firm performance
+      over time, at the most senior levels of both public and private
+      organizations.
+                        Conclusions and Implications
+   Any researcher going through this coding exercise cannot help but be
+struck by the fact that there are still too few experimental studies,
+studies using objective measures, studies exploring distant rather than
+proximal leaders, studies considering work unit maturity, hierarchical
+level and other environmental factors such as the rate of change,
+technology intensity, cross cultural differences and gender differences to
+perform a meta-analysis. However, each time one goes through this exercise
+and points to what is missing, the current and future generation of
+scholars are alerted to the areas that require further attention and data
+collection. We suspect that the results reported here, and the areas that
+we could not explore, will in combination provide further impetus to fill
+in the blanks to offer yet another assessment of this emerging paradigm of
+leadership. And in so doing, we hope to advance the field of leadership and
+broaden potentially what constitutes the full range of styles and criterion
+measures that can be explored.
+
+                                 References
+
+Antonakis, J. & House, R.J. (in press).  The full-range leadership theory:
+The way
+      forward. In B.J. Avolio, & F.J. Yammarino (eds.), Transformational
+      and charismatic leadership: The road ahead.  Elsevier Science Inc.
+
+Avolio, B, J.  (1999). Full leadership development:  Building the vital
+      forces in organizations, Thousand Oaks: Sage.
+
+Bass, B. M.  (1985).  Leadership and performance beyond expectations.  New
+      York: Free Press.
+
+Bass, B.M. (1998).  Transformational leadership: Industrial, military and
+      educational impact. NJ: Lawrence Erlbaum Associates
+
+Bass, B.M., Avolio, B.J., Jung, D.I., & Berson, Y. Predicting unit
+      performance by assessing transformational and transactional
+      leadership. (In press, Journal of Applied Psychology, 2002).
+
+Burns, J.M. (1978).  Leadership.  NY: Free Press.
+
+Conger, J. A. & Kanungo, R. N.  (1998). Charismatic leadership in
+      organizations. Thousand Oaks, CA: Sage
+
+DeGroot, T., Kiker, D. S. and Cross, T. C.  (2000). A meta-analysis to
+      review organizational outcomes related to charismatic leadership.
+      Canadian Journal of Administrative Sciences, 17, 357-371.
+
+
+Gaspar, R.  (1992).  Transformational leadership:  An integrative review of
+      the literature.  Unpublished doctoral dissertation, Western Michigan
+      University, Kalamazoo.
+
+Goodwin, V.L., Wofford, J.C., & Whittington, J.L. (2001). A theoretical and
+      empirical extension to the transformational leadership construct.
+      Journal of Organizational Behavior, 22, 759-774.
+
+House, R. J., & Aditya, R. N. (1997). The social scientific study of
+      leadership: Quo vadis? Journal of Management, 23, 409-473.
+
+Hunt, J. G. (1999). Transformational/Charismatic leadership's
+      transformation of the field: an historical essay. The Leadership
+      Quarterly, 10, 129-144
+
+Judge, T. A. Thoresen, C. J.,Bono, J E., & Patton, G. K.  (2001). The job
+      satisfaction-job performance relationship: A qualitative and
+      quantitative Psychological Bulletin.  127, 376-407
+
+Landy, F. J. (1989). Psychology of work behavior. (Pacific Grove, CA:
+      Brooks/Cole)
+
+Lowe, K. B., Kroeck, K. G., & Sivasubramaniam, N. (1996). Effectiveness
+      correlates of transformation and transactional leadership: A meta-
+      analytic review of the MLQ literature. The Leadership Quarterly, 7,
+      385-425.
+
+Lowe, K. B. & Gardner, W. L.  (2000).  A decade of The Leadership
+      Quarterly:  Contributions and challenges for the future.  The
+      Leadership Quarterly, 11,  459-514
+
+Nunally, J. C.  (1978).  Psychometric theory. New York: McGraw-Hill.
+
+Onnen, M.K. (1987).  The relationship of clergy leadership characteristics
+      to growing or declining churches.  Unpublished doctoral dissertation,
+      University of Louisville, Louisville.
+
+Podsakoff, P.M., MacKenzie, S. B., Moorman, R.H. & Fetter, R.  (1990).
+      Transformational leader behaviors and their effects on followers'
+      trust in leader, satisfaction, and organizational citizenship
+      behaviors, The Leadership Quarterly, 1, 107-142.
+
+Schmidt, N. W. & Klimoski, R. J.  (1991).  Research methods in human
+      resources management, Cincinnati: Southwestern Publishing.
+
+Yukl, G. (1999). An evaluation of conceptual weaknesses in transformational
+      and charismatic leadership theories. Leadership Quarterly, 10, 285-
+      305.
+
+Wanous, J. P., Sullivan, S.E., and Malinak, J. (1989).  The role of
+      judgment calls in meta-analysis.  Journal of Applied Psychology, 74,
+      259-264.
+
+Waldman, D.A., & Javidan, M. (in press).  Charismatic leadership at the
+strategic
+      level: Taking a new look at upper echelons theory.  In  B.J. Avolio,
+      & F.J. Yammarino (eds.), Transformational and charismatic leadership:
+      The road ahead. Elsevier Science Inc.
+
+
+
+                     Reference Studies in Meta-analyses
+
+Avolio, B.J., Howell, J.M. & Sosik, J.J. (1999). A funny thing  happened  on
+   the way to the bottom line: humor as  a  moderator  of  leadership  style
+   effects. Academy of Management Journal, 42, 219-227.
+
+Avolio, B.J., Jung, D., Murry, W. &  Sivasubramaniam,  N.  (1996).  Building
+   Highly  Developed  Teams:  Focusing  on  Shared   Leadership   Processes,
+   Efficacy, Trust, and Performance. Advances in  Interdisciplinary  Studies
+   of Work Teams, Vol. 3, 173-209. JAI Press.
+
+Avolio,  B.J.,  Sivasubramaniam,  N.,  Murry,  W.D.  &  Jung,  D.I.  (1996).
+   Assessing team leadership and predicting group  performance.  Unpublished
+   manuscript.
+
+Avolio, B.J., Bass, B.M. & Berson, Y. (2000). Leadership and its  impact  on
+   platoon readiness at Joint Readiness Training Center (JRTC).  Unpublished
+   manuscript.
+
+Bass, B.M., Avolio, B.J., Jung, D. &  Berson,  Y.  (1999).  Predicting  Unit
+   Performance by Assessing Transformational and  Transactional  Leadership.
+   Unpublished manuscript.
+
+Bayless, R.R. (1996). The  identification  of  leadership  styles  of  large
+   group music ensemble leaders and  their  use  as  predictors  of  teacher
+   effectiveness. Unpublished Dissertation. Kent State Univ, USA.
+
+Brown, F.W. & Dodd, N.G. (1999). Rally the troops or make the trains run  on
+   time: the relative importance and interaction of  contingent  reward  and
+   transformational  leadership.  Leadership  &   Organization   Development
+   Journal, 20, 291-299.
+
+Bycio, P., Hackett, R.D. &  Allen,  J.S.  (1995).   Further  Assessments  of
+   Bass's (1985) Conceptualization  of  Transactional  and  Transformational
+   Leadership. Journal of Applied Psychology, 80, 468-478.
+
+Commer, L.B., Jolson, M.A., Dubinssky, A.J. & Yammarino, F.J. (1995).   When
+   the sales manager is  a  woman:  an  exploration  into  the  relationship
+   between salespeople's gender and their responses  to  leadership  styles.
+   Journal of Personal Selling & Sales Management, 15, 17-32.
+
+Daughtry, L.H. (1995). Vocational administrator leadership effectiveness  as
+   a function of gender  and  leadership  style.  Unpublished  Dissertation.
+   Virginia Polytechnic Institute and State University, USA.
+
+Doherty, A.J., & K.E. Danylchuk. (1996). Transformational and  transactional
+   leadership in interuniversity  athletics  management.  Journal  of  Sport
+   Management 10, 292-309.
+Dubinsky, A.J., Yammarino,  F.J.,  Jolson,  M.A.  &  Spangler,  W.D.  (1995)
+   Transformational  leadership:   an   initial   investigation   in   sales
+   management. Journal of Personal Selling & Sales Management, 15, 17-31.
+
+Elliot, R. & Albert, K. (2000).  An  investigation  of  the  Australian  MLQ
+   norms database [Draft Document for Internal  Research  Review].  MLQ  Pty
+   Ltd.
+
+Elliot, R.  &  Albert,  K.  (2000).  Predicting  performance  outcomes  from
+   transformational behaviors and rater congruence.  Unpublished manuscript.
+
+Garcia, J.L. (1995) Transformational leadership  processes  and  salesperson
+   performance effectiveness: A  theoretical  model  and  partial  empirical
+   examination. Unpublished Dissertation. The Fielding Institute. USA.
+
+Geyer, A.L.J. &  Steyrer,  J.M.  (1998).   Transformational  leadership  and
+   objective performance in  banks.  Applied  Psychology:  An  International
+   Review, 47, 397-420.
+
+Geyer,  A.L.J.  &  Steyrer,  J.M.  (undated)  Transformational   leadership,
+   classical leadership dimensions and performance  indicators  in  savings-
+   banks. Unpublished manuscript.
+
+Gunigundo,  M.S.T.  (1998).  An  exploration  of  the  relationship  between
+   principal leadership  style  and  student  academic  achievement  in  the
+   Philippines. Unpublished Dissertation.  Louisiana  State  University  and
+   Agricultural and Mechanical College, USA.
+
+Howell, J.M. & Hall-Merenda, K.E. (1999). The ties that bind: the impact  of
+   leader-member exchange, transformational  and  transactional  leadership,
+   and distance on  predicting  follower  performance.  Journal  of  Applied
+   Psychology, 84, 680-694.
+
+Hult, G.T.M., Ferrell, O.C. & Schul,  P.L.  (1998).  The  effect  of  global
+   leadership on purchasing process outcomes. European Journal of Marketing,
+   32, 1029-1050.
+
+Judge, T.A. & Bono,  J.E.  (2000).  Five-factor  model  of  personality  and
+   transformational leadership. Journal of Applied  Psychology,  85:5,  751-
+   765.
+
+Judge,  T.A.  &  Bono,  J.    (2000).   Personality   and   transformational
+   leadership. Unpublished manuscript.
+
+Jung, D. & Avolio, B.J. (2000).  Opening  the  black  box:  an  experimental
+   investigation of the mediating effects of trust and value  congruence  on
+   transformational and transactional leadership. Journal of  Organizational
+   Behavior, 21, 949-964.
+
+Jung, D. &  Avolio,  B.J.  (1998).  An  experimental  investigation  of  the
+   mediating effects of trust and value congruence on  transformational  and
+   transactional  leadership:  A  multicultural   perspective.   Unpublished
+   manuscript.
+
+Jung, D. &  Avolio,  B.J.   (1998).  Transformational  leadership  and  it's
+   effects on group processes and performance among  Caucasian-  and  Asian-
+   Americans. Unpublished manuscript.
+
+Jung, D. I. (1997). Effects of different leadership  styles  and  followers'
+   cultural orientations on performance under  various  task  structure  and
+   reward allocation conditions. Unpublished Dissertation. State  University
+   of New York at Binghamton, USA.
+
+Kane, T.D. & Tremble, T.R.  (2000). Transformational Leadership  Effects  at
+   Different Levels of the Army. Military Psychology, 12, 137-160.
+
+Koh,  W.L.,  Steers,  R.M.  &  Terborg,  J.R.  (1995).     The  effects   of
+   transformational leadership on teacher attitudes and student  performance
+   in Singapore. Journal of Organizational Behavior, 16, 319-333.
+
+Medley, F. & Larochelle, D.R. (1995). Transformational  leadership  and  job
+   satisfaction. Nursing Management: 26, 9.
+
+Muenjohn, N. (2000).   The effect of culture on the leadership  behavior  of
+   Australian expatriate managers  in  Thailand.  Unpublished  Dissertation.
+   Victoria University of Technology, Australia.
+
+Nischan,  T.P.  (1997).  Transformational  leadership  as  a  predictor   of
+   effectiveness, extra effort, and  satisfaction  in  a  community  college
+   classroom  environment.  Unpublished  Dissertation.   Nova   Southeastern
+   University, USA.
+
+Peters,  T.J.  (1997).  Transactional   and   transformational   leadership:
+   predictors  of  employee  satisfaction,  commitment,  and   productivity.
+   Unpublished Dissertation. Marquette University, USA.
+
+Pillai,  R.,  Schriesheim,  C.A.  &   Williams,   E.S.   (1999).    Fairness
+   perceptions and trust as mediators for transformational and transactional
+   leadership: a two-sample study. Journal of Management, 25, 897-933.
+
+Russell,  R.G.  (1996).  The  relationship  between   transformational   and
+   transactional  leadership  styles  and  employee   turnover   intentions.
+   Unpublished Dissertation. Nova Southeastern University, USA.
+
+Sosik, J.J. (1997). Effects of Transformational Leadership and anonymity  on
+   idea  generation  in  computer-mediated  groups.  Group  &   Organization
+   Management, 22, 460-487
+
+Sosik, J.J., Avolio, B.J., Kahai, S.S.  &  Jung,  D.I.  (1998).    Computer-
+   Supported  Work  Group   Potency   and   Effectiveness:   The   Role   of
+   transformational  leadership,  anonymity,   and   task   interdependence.
+   Computers in Human Behavior, 14, 491-511.
+
+Sosik, J.J., Avolio, B.J. & Kahai, S.S. (1998). Inspiring Group  Creativity:
+   Comparing Anonymous and Identified Electronic Brainstorming. Small  Group
+   Research, 29, 3-31.
+
+Sosik,  J.J.,  Kahai,  S.S.  &  Avolio,  B.J.  (1999).   Leadership   style,
+   anonymity,  and  creativity  in  group  decision  support  systems:   the
+   mediating role of optimal flow. Journal of Creative Behavior, 33, 227-256
+
+Sosik, J.J., Kahai, S.S. & Avolio, B.J. (1998). Transformational  leadership
+   and dimensions of creativity: motivating  idea  generation  in  computer-
+   mediated groups. Creativity Research Journal, 11, 111-121.
+
+Sosik, J.J.  (1995).  The  impact  of  leadership  style  and  anonymity  on
+   performance, creative output, and satisfaction in GDSS-supported  groups.
+   Unpublished Dissertation. State University of New York, USA.
+
+Srisilpsophon,  P.  (1999).  Transformational  leadership  and   performance
+   outcomes  of  multinational   corporations   in   Thailand.   Unpublished
+   Dissertation. Nova Southeastern University, USA.
+
+Steeves, R. (1997).   Why leaders are effective: an examination into  leader
+   developmental level and leader-follower developmental fit  as  predictors
+   of  effective  leadership.   Unpublished   Dissertation.   The   Fielding
+   Institute, USA.
+
+Stepp, P.L. Cho, H. & Chung, S. (1997). Perceived differences in  leadership
+   styles of people of color: transformational or transactional? Unpublished
+   manuscript.
+
+Tracey,  J.B.  &  Hinkin,  T.R.  (1998).  Transformational   leadership   or
+   effective managerial practices? Group &  Organizational  Management,  23,
+   220-236.
+
+Tucker,  M.L.,  McCarthy,  A.M.  &  Jones,  M.C.  (1999).  Women   and   men
+   politicians: are some of the  best  leaders  dissatisfied?  Leadership  &
+   Organization Development, 20, 285-290.
+
+VanDoren, E. (1998). The  relationship  between  leadership/followership  in
+   staff nurses and employment setting.  Unpublished  Dissertation.  Western
+   Michigan University, USA.
+
+Weierter,  S.  (1995).   Transformational   leadership   and   transactional
+   substitutes: An exploratory analysis. Unpublished manuscript.
+
+Wofford, J.C., Goodwin, V.L. & Whittington, J.L. (1998). A field study of  a
+   cognitive approach to understanding  transformational  and  transactional
+   leadership. Leadership Quarterly, 9, 1.
+
+
+
+
+                                   Table 1
+                            Overall Meta-Analysis
+
+                              Scale1 | |Sample
+                              Size2 |Mean3 |Std
+                                Dev.3 |Scale
+                             Alpha3 |Number of r
+                 Coefficient4 |Number of studies4 |Range of
+                                      r
+                           Coefficients |Mean Raw
+                              r |Mean Corrected
+                             r |95% Credibility
+                               Interval6 |95%
+                                 Confidence
+Interval6 | | | | | | | | | | | | | | | |Attributed
+                              Charisma (AC) | |
+                                   9538 |
+                                   2.75 |
+                                    .79 |
+                                    .82 |
+                                    65 |
+                                    17 |
+                                .93 to -.67 |
+                                    .54 |
+                                    .66 |
+                                1.00 to .08 |
+   .77 to .56 | | | | | | | | | | | | | | | |Idealized Influence (II) | |
+                                   8608 |
+                                   2.76 |
+                                    .75 |
+                                    .72 |
+                                    68 |
+                                    16 |
+                                .87 to -.16 |
+                                    .50 |
+                                    .66 |
+                               1.00 to -.22 |
+ .75 to .58 | | | | | | | | | | | | | | | |Inspirational Motivation (IM) | |
+                                   12009 |
+                                   2.74 |
+                                    .77 |
+                                    .86 |
+                                    101 |
+                                    22 |
+                                .93 to -.14 |
+                                    .46 |
+                                    .56 |
+                                1.00 to .02 |
+.66 to .46 | | | | | | | | | | | | | | | |Intellectual
+                            Stimulation (IS) | |
+                                   14290 |
+                                   2.43 |
+                                    .79 |
+                                    .83 |
+                                    113 |
+                                    26 |
+                                .90 to -.25 |
+                                    .42 |
+                                    .52 |
+                               1.00 to -.03 |
+.60 to .43 | | | | | | | | | | | | | | | |Individualized
+                            Consideratio (IC) | |
+                                   14842 |
+                                   2.61 |
+                                    .85 |
+                                    .82 |
+                                    116 |
+                                    27 |
+                                .93 to -.31 |
+                                    .44 |
+                                    .55 |
+                               1.00 to -.02 |
+ .64 to .46 | | | | | | | | | | | | | | | |Transformational Ldrshp (TFL) | |
+                                   9721 |
+                                   3.05 |
+                                    .89 |
+                                    .93 |
+                                    79 |
+                                    23 |
+                                .87 to -.19 |
+                                    .40 |
+                                    .46 |
+                               1.00 to -.14 |
+.65 to .42 | | | | | | | | | | | | | | | |Contingent
+                               Reward (CR) | |
+                                   18682 |
+                                   2.42 |
+                                    .75 |
+                                    .80 |
+                                    120 |
+                                    27 |
+                                .89 to -.34 |
+                                    .41 |
+                                    .51 |
+                               1.10 to -.10 |
+ .60 to .41 | | | | | | | | | | | | | | | |Mgmt-by-Except Active (MBEA) | |
+                                   13895 |
+                                   1.93 |
+                                    .81 |
+                                    .75 |
+                                    90 |
+                                    20 |
+                                .50 to -.62 |
+                                    .04 |
+                                    .05 |
+                                .38 to -.29 |
+ .11 to -.02 | | | | | | | | | | | | | | | |Mgmt-by-Except Passive (MBEP) |
+                                      |
+                                   12386 |
+                                   1.70 |
+                                    .67 |
+                                    .69 |
+                                    68 |
+                                    17 |
+                                .43 to -.76 |
+                                   -.26 |
+                                   -.34 |
+                                .04 to -.73 |
+    -.27 to -.42 | | | | | | | | | | | | | | | |Mgmt-by-Except (MBE) | |
+                                   3036 |
+                                   2.12 |
+                                    .29 |
+                                    .76 |
+                                    17 |
+                                     5 |
+                                .50 to -.53 |
+                                   -.16 |
+                                   -.21 |
+                                .11 to -.52 |
+     -.01 to -.36 | | | | | | | | | | | | | | | |Lassiez Faire (LF) | |
+                                   11564 |
+                                    .79 |
+                                    .63 |
+                                    .76 |
+                                    92 |
+                                    21 |
+                                .55 to -.72 |
+                                   -.30 |
+                                   -.38 |
+-.02 to -.75 |
+ -.36 to -.51 | | | | | | | | | | | | | | | |Transactional Ldrship (TRL) | |
+                                   2667 |
+                                   2.94 |
+                                    .76 |
+                                    .87 |
+                                    33 |
+                                    10 |
+                                .55 to -.18 |
+                                    .17 |
+                                    .20 |
+                                .46 to -.06 |
+.31 to .15 | |
+1  Because only one coefficient was reported for the scales (1) Management
+By Exception & Lassiez Faire and (2) Charismatic Leadership they cannot be
+meta-analyzed and are thus not reported here.
+2  Unique sample size across all studies.
+3  Mean, standard deviation, and reliability weighted by sample size.
+4  Coefficients exceeds number of studies due to multiple criterion
+variables.  For studies correlating one set of leadership ratings to
+multiple criteria, coefficients are averaged to obtain a composite
+correlation coefficient.  Composite criteria maintain assumptions of sample
+independence required in meta-analysis. The impact of different criterion
+measures on the correlation of leadership ratings to outcomes may be
+investigated further if credibility interval analysis suggests that
+moderators may be present (see footnote six)
+5  Corrected for attenuation due to measurement of the independent and
+dependent variable
+6  Credibility intervals indicate the extent to which validity findings can
+be generalized and indicate moderators when large or include zero.
+Confidence intervals assess the accuracy of the mean effect size.
+
+                                   Table 2
+     The Relationship of MLQ Scales with Effectiveness and Satisfaction
+
+                          Scale1 |Moderator |Sample
+                              Size2 |Mean3 |Std
+                                Dev.3 |Scale
+                             Alpha3 |Number of r
+                 Coefficient4 |Number of studies4 |Range of
+                                      r
+                           Coefficients |Mean Raw
+                              r |Mean Corrected
+                             r |95% Credibility
+                               Interval6 |95%
+                                 Confidence
+ Interval6 | | | | | | | | | | | | | | | |AC |Effectiveness |9201 |2.76 |.78
+|.82 |45 |16 |.89 to -.20 |.55 |.68 |1.00 to .12 |.80 to .57 | |
+ |Satisfaction |5966 |2.74 |.85 |.78 |18 |10 |.93 to -.14 |.72 |.90 |1.00 to
+   .54 |1.00 to .81 | | | | | | | | | | | | | | | |II |Effectiveness |8196
+|2.78 |.74 |.72 |43 |14 |.87 to -.16 |.52 |.68 |1.00 to .25 |.77 to .59 | |
+ |Satisfaction |6818 |2.77 |.73 |.68 |20 |12 |.83 to -.14 |.54 |.73 |1.00 to
+   .35 |.82 to .65 | | | | | | | | | | | | | | | |IM |Effectiveness |11898
+|2.75 |.76 |.86 |70 |19 |.85 to -.14 |.46 |.55 |1.00 to .00 |.66 to .44 | |
+ |Satisfaction |6600 |2.72 |.85 |.85 |24 |14 |.93 to -.12 |.62 |.75 |1.00 to
+   .38 |.83 to .67 | | | | | | | | | | | | | | | |IS |Effectiveness |13392
+|2.43 |.79 |.84 |76 |23 |.90 to -.19 |.47 |.57 |1.00 to .17 |.68 to .48 | |
+ |Satisfaction |8570 |2.37 |.84 |.81 |26 |16 |.86 to -.12 |.58 |.73 |1.00 to
+   .31 |.81 to .65 | | | | | | | | | | | | | | | |IC |Effectiveness |14364
+|2.61 |.85 |.82 |82 |24 |.89 to -.27 |.47 |.59 |1.00 to .04 |.68 to .49 | |
+ |Satisfaction |8570 |2.58 |.87 |.78 |26 |16 |.93 to -.24 |.64 |.81 |1.00 to
+   .36 |.90 to .72 | | | | | | | | | | | | | | | |TFL |Effectiveness |7262
+|3.08 |.84 |.93 |45 |18 |.87 to -.19 |.43 |.50 |1.00 to -.17 |.63 to .36 |
+  | |Satisfaction |4034 |3.04 |.88 |.95 |19 |13 |.87 to -.02 |.35 |.40 |.95
+ to -.15 |.53 to .26 | | | | | | | | | | | | | | | |CR |Effectiveness |16578
+|2.36 |.76 |.81 |80 |24 |.87 to -.34 |.45 |.56 |1.00 to -.03 |.66 to .46 |
+  | |Satisfaction |9672 |2.46 |.79 |.77 |30 |17 |.89 to .08 |.60 |.76 |1.00
+    to .31 |.85 to .68 | | | | | | | | | | | | | | | |MBEA |Effectiveness
+ |12638 |1.91 |.82 |.74 |65 |18 |.50 to -.39 |.06 |.08 |.41 to -.25 |.15 to
+  .02 | | |Satisfaction |7523 |1.79 |.88 |.77 |19 |13 |.35 to -.62 |-.07 |-
+.09 |.30 to -.49 |-.01 to -.18 | | | | | | | | | | | | | | | |MBEP
+ |Effectiveness |11761 |1.50 |.69 |67 |44 |15 |.36 to -.76 |-.28 |-.38 |-.11
+ to -.65 |-.32 to -.43 | | |Satisfaction |7335 |1.72 |.72 |.72 |18 |12 |.43
+ to -.69 |-.35 |-.46 |.13 to -1.00 |-.33 to -.59 | | | | | | | | | | | | | |
+ | |MBE |Effectiveness |3006 |2.06 |.45 |.75 |8 |4 |.50 to -.53 |-.23 |-.30
+  |-.06 to -.54 |-.20 to -.40 | | |Satisfaction |1550 |2.76 |.51 |.62 |5 |3
+ |.13 to -.36 |-.31 |-.44 |-.08 to -.80 |-.28 to -.60 | | | | | | | | | | |
+ | | | | |LF |Effectiveness |11547 |.81 |.63 |.76 |70 |21 |.51 to -.69 |-.29
+  |-.37 |-.03 to -.70 |-.31 to -.43 | | |Satisfaction |7199 |.82 |.68 |.76
+ |19 |13 |.55 to -.73 |-.41 |-.53 |.07 to -1.00 |.40 to -.66 | | | | | | | |
+ | | | | | | | |TRL |Effectiveness |1646 |2.74 |.64 |.83 |18 |7 |.55 to -.18
+ |.15 |.19 |.47 to -.09 |.29 to .09 | | |Satisfaction |1347 |3.64 |.73 |.81
+|5 |4 |.41 to .04 |.17 |.21 |.39 to .02 |.31 to .11 | |
+1  Because only one coefficient was reported for the scales (1) Management
+By Exception & Lazziez Faire and (2) Charismatic Leadership they cannot be
+meta-analyzed and are thus not reported here.
+2  Unique sample size across all studies.
+3  Mean, standard deviation, and reliability weighted by sample size.
+4  Coefficients exceeds number of studies due to multiple criterion
+variables.  For studies correlating one set of leadership ratings to
+multiple criteria, coefficients are averaged to obtain a composite
+correlation coefficient.  Composite criteria maintain assumptions of sample
+independence required in meta-analysis. The impact of different criterion
+measures on the correlation of leadership ratings to outcomes may be
+investigated further if credibility interval analysis suggests that
+moderators may be present (see footnote six)
+5  Corrected for attenuation due to measurement of the independent and
+dependent variable
+6  Credibility intervals indicate the extent to which validity findings can
+be generalized and indicate moderators when large or include zero.
+Confidence intervals assess the accuracy of the mean effect size.
+                                   Table 3
+  The Moderating Effect of Type of Organization on the Relationship of the
+                        MLQ Scales and Effectiveness
+
+                          Scale1 |Moderator |Sample
+                              Size2 |Mean3 |Std
+                                Dev.3 |Scale
+                             Alpha3 |Number of r
+                 Coefficient4 |Number of studies4 |Range of
+                                      r
+                           Coefficients |Mean Raw
+                              r |Mean Corrected
+                             r |95% Credibility
+                               Interval6 |95%
+                                 Confidence
+  Interval6 | | | | | | | | | | | | | | | |AC |Public |2633 |2.70 |.82 |.78
+  |21 |7 |.86 to -.20 |.60 |.76 |1.00 to .19 |.93 to .59 | | |Private |6432
+|2.78 |.77 |.85 |21 |8 |.89 to -.19 |.53 |.65 |1.00 to .09 |.81 to .49 | |
+ | | | | | | | | | | | | | |II |Public |2307 |2.67 |.82 |.69 |18 |4 |.75 to
+ -.12 |.49 |.66 |1.00 to .22 |.83 to .49 | | |Private |5753 |2.83 |.71 |.73
+ |23 |9 |.87 to -.16 |.53 |.70 |1.00 to .26 |.81 to .58 | | | | | | | | | |
+  | | | | | |IM |Public |4522 |2.61 |.90 |.86 |42 |7 |79 to -.09 |.40 |.48
+  |1.00 to -.16 |.68 to .28 | | |Private |7239 |2.79 |.72 |.86 |26 |11 |.85
+to -.14 |.50 |.60 |1.00 to .12 |.72 to .48 | | | | | | | | | | | | | | |
+   |IS |Public |4446 |2.51 |.77 |.79 |44 |9 |76 to -.11 |.40 |.50 |1.00 to
+  -.16 |.68 to .33 | | |Private |7435 |2.59 |.73 |.85 |28 |12 |.90 to -.19
+    |.48 |.58 |1.00 to .08 |.70 to .46 | | | | | | | | | | | | | | | |IC
+   |Public |4446 |2.77 |84 |79 |44 |9 |.78 to -.33 |.38 |.48 |1.00 to -.16
+  |.65 to .31 | | |Private |8406 |2.63 |.85 |.83 |34 |13 |.89 to -.27 |.50
+  |.61 |1.00 to .09 |.73 to .49 | | | | | | | | | | | | | | | |TFL |Public
+ |5561 |3.02 |.74 |.92 |34 |13 |.83 to -.19 |.45 |.53 |1.00 to -.10 |.68 to
+ .38 | | |Private |1701 |3.25 |1.09 |.93 |11 |5 |.87 to .02 |.32 |.37 |1.00
+  to -.32 |.64 to .10 | | | | | | | | | | | | | | | |CR |Public |7330 |2.28
+     |.78 |.82 |45 |9 |.83 to -.08 |43 |53 |1.00 to -.11 |.71 to .36 | |
+ |Private |7737 |2.64 |.75 |.81 |31 |13 |.87 to -.34 |.45 |.56 |1.00 to -.01
+  |.69 to .43 | | | | | | | | | | | | | | | |MBEA |Public |5289 |1.78 |.91
+   |.74 |18 |7 |.50 to -.11 |10 |13 |.47 to -.22 |.23 to -.02 | | |Private
+  |7213 |2.04 |.72 |.76 |45 |10 |.33 to -.39 |.03 |.04 |.37 to -.29 |.13 to
+  .04 | | | | | | | | | | | | | | | |MBEP |Public |5584 |1.84 |.64 |.80 |21
+ |6 |.01 to -.76 |-.30 |-.38 |-.34 to -.41 |-.35 to -.41 | | |Private |6041
+ |1.11 |.75 |.64 |21 |8 |.36 to -.62 |-.26 |-.36 |.01 to -.73 |-.26 to -.46
+  | | | | | | | | | | | | | | | |MBE |Public |N/A |N/A |N/A |N/A |N/A |N/A
+  |N/A |N/A |N/A |N/A |N/A | | |Private |1630 |N/A |N/A |.77 |6 |3 |.50 to
+.53 |-.18 |-.23 |.05 to -.51 |-.09 to -.37 | | | | | | | | | | | | | | |
+ |LF |Public |4635 |.78 |.53 |.78 |43 |10 |.14 to -.66 |-.30 |-.38 |-.29 to
+-.46 |-.34 to -.41 | | |Private |6687 |.75 |.72 |.67 |25 |10 |.51 to -.69 |-
+   .28 |-.36 |.07 to -.80 |-.26 to -.47 | | | | | | | | | | | | | | | |TRL
+  |Public |1552 |2.74 |.64 |.83 |15 |6 |.55 to -.18 |.16 |.20 |.49 to -.09
+ |.31 to .09 | | |Private |94 |N/A |N/A |N/A |3 |1 |N/A |N/A |N/A |N/A |N/A
+| |
+1  Because only one coefficient was reported for the scales (1) Management
+By Exception & Lazziez Faire and (2) Charismatic Leadership they cannot be
+meta-analyzed and are thus not reported here.
+2  Unique sample size across all studies.
+3  Mean, standard deviation, and reliability weighted by sample size.
+4  Coefficients exceeds number of studies due to multiple criterion
+variables.  For studies correlating one set of leadership ratings to
+multiple criteria, coefficients are averaged to obtain a composite
+correlation coefficient.  Composite criteria maintain assumptions of sample
+independence required in meta-analysis. The impact of different criterion
+measures on the correlation of leadership ratings to outcomes may be
+investigated further if credibility interval analysis suggests that
+moderators may be present (see footnote six)
+5  Corrected for attenuation due to measurement of the independent and
+dependent variable
+6  Credibility intervals indicate the extent to which validity findings can
+be generalized and indicate moderators when large or include zero.
+Confidence intervals assess the accuracy of the mean effect size.
+                                   Table 4
+ The Moderating Effect of Type of Criterion Measurement on the Relationship
+                    Between MLQ Scales and Effectiveness
+
+                          Scale1 |Moderator |Sample
+                              Size2 |Mean3 |Std
+                                Dev.3 |Scale
+                             Alpha3 |Number of r
+                 Coefficient4 |Number of studies4 |Range of
+                                      r
+                           Coefficients |Mean Raw
+                              r |Mean Corrected
+                             r |95% Credibility
+                               Interval6 |95%
+                                 Confidence
+  Interval6 | | | | | | | | | | | | | | | |AC |Subjective |6826 |2.80 |.84
+|.79 |39 |14 |.89 to -.20 |.68 |.85 |1.00 to .48 |.93 to .77 | | |Objective
+ |2375 |2.66 |.59 |.91 |6 |4 |.33 to -.08 |.19 |.23 |.39 to .06 |.31 to .14
+ | | | | | | | | | | | | | | | |II |Subjective |7450 |2.80 |.73 |.71 |39 |14
+  |.87 to -.12 |.58 |.76 |1.00 to .39 |.84 to .69 | | |Objective |632 |2.56
+|.89 |.75 |4 |1 |N/A |N/A |N/A |N/A |N/A | | | | | | | | | | | | | | | |IM
+  |Subjective |7766 |2.79 |.82 |.85 |57 |18 |.85 to -.09 |.61 |.74 |1.00 to
+  .38 |.82 to .67 | | |Objective |4132 |2.61 |.50 |.88 |13 |3 |.35 to -.14
+|.17 |.20 |.44 to -.04 |.33 to .10 | | | | | | | | | | | | | | | |IS
+  |Subjective |9944 |2.42 |.83 |.82 |62 |21 |.90 to -.11 |.58 |.71 |1.00 to
+  .25 |.79 to .63 | | |Objective |3658 |2.48 |.55 |.90 |14 |5 |.58 to -.19
+|.18 |.21 |.42 to .01 |.32 to .08 | | | | | | | | | | | | | | | |IC
+ |Subjective |10216 |2.62 |.85 |.80 |65 |22 |.89 to -.27 |.60 |.75 |1.00 to
+  .30 |.83 to .67 | | |Objective |4034 |2.56 |.90 |.89 |17 |6 |.50 to -.14
+|.17 |.20 |.43 to -.02 |.29 to .12 | | | | | | | | | | | | | | | |TFL
+  |Subjective |5474 |3.03 |.80 |.93 |26 |13 |.87 to .04 |.52 |.61 |1.00 to
+ -.06 |.77 to .45 | | |Objective |1560 |3.31 |1.00 |.93 |19 |10 |.49 to -.19
+|.10 |.11 |.26 to -.04 |.19 to .04 | | | | | | | | | | | | | | | |CR
+ |Subjective |12475 |2.30 |.79 |.78 |62 |21 |.87 to -.31 |.56 |.70 |1.00 to
+  .16 |.80 to .61 | | |Objective |4104 |2.58 |.60 |.89 |18 |7 |.43 to -.34
+|.13 |.16 |.32 to .00 |.22 to .09 | | | | | | | | | | | | | | | |MBEA
+  |Subjective |10621 |1.89 |.81 |.74 |53 |17 |.50 to -.39 |.08 |.10 |.44 to
+  -.25 |.17 to .03 | | |Objective |2017 |2.18 |.96 |.77 |12 |3 |.13 to -.05
+|.00 |.00 |.00 to .00 |.04 to -.04 | | | | | | | | | | | | | | | |MBEP
+  |Subjective |10621 |1.89 |.81 |.74 |53 |17 |.50 to -.39 |.08 |.10 |.44 to
+ -.25 |.17 to .03 | | |Objective |1097 |1.36 |.88 |.68 |6 |3 |.04 to -.20 |-
+.05 |-.07 |.03 to -.17 |-.01 to -.13 | | | | | | | | | | | | | | | |MBE
+  |Subjective |1550 |1.87 |.80 |.71 |7 |3 |.50 to -.53 |-.24 |-.32 |.03 to
+ -.68 |-.16 to -.49 | | |Objective |1456 |2.15 |0 |.77 |1 |1 |N/A |N/A |N/A
+ |NA |NA | | | | | | | | | | | | | | | |LF |Subjective |7852 |.90 |.67 |.76
+|53 |18 |.51 to -69 |-.37 |-.47 |-.09 to -.86 |-.40 to -.55 | | |Objective
+  |3582 |.50 |.49 |.75 |17 |6 |-.09 to -.28  |-.12 |-.15 |.03 to -.17 |-.10
+   to -.21 | | | | | | | | | | | | | | | |TRL |Subjective |1049 |1.58 |.48
+  |.84 |9 |4 |.55 to -.05 |.27 |.32 |.52 to .13 |.43 to .22 | | |Objective
+  |597 |3.54 |.73 |.82 |9 |4 |.12 to -.18 |-.04 |-.05 |.14 to -.24 |.01 to
+-.11 | |
+1  Because only one coefficient was reported for the scales (1) Management
+By Exception & Lazziez Faire and (2) Charismatic Leadership they cannot be
+meta-analyzed and are thus not reported here.
+2  Unique sample size across all studies.
+3  Mean, standard deviation, and reliability weighted by sample size.
+4  Coefficients exceeds number of studies due to multiple criterion
+variables.  For studies correlating one set of leadership ratings to
+multiple criteria, coefficients are averaged to obtain a composite
+correlation coefficient.  Composite criteria maintain assumptions of sample
+independence required in meta-analysis. The impact of different criterion
+measures on the correlation of leadership ratings to outcomes may be
+investigated further if credibility interval analysis suggests that
+moderators may be present (see footnote six)
+5  Corrected for attenuation due to measurement of the independent and
+dependent variable
+6  Credibility intervals indicate the extent to which validity findings can
+be generalized and indicate moderators when large or include zero.
+Confidence intervals assess the accuracy of the mean effect size.
+                                   Table 5
+ The Moderating Effect of Type of Criterion Measurement on the Relationship
+                     Between MLQ Scales and Satisfaction
+
+                          Scale1 |Moderator |Sample
+                              Size2 |Mean3 |Std
+                                Dev.3 |Scale
+                             Alpha3 |Number of r
+                 Coefficient4 |Number of studies4 |Range of
+                                      r
+                           Coefficients |Mean Raw
+                              r |Mean Corrected
+                             r |95% Credibility
+                               Interval6 |95%
+                                 Confidence
+  Interval6 | | | | | | | | | | | | | | | |AC |Leader |5659 |2.76 |.85 |.78
+ |17 |9 |.93 to -.14 |.73 |.92 |1.00 to .69 |1.00 to .83 | | |Job |307 |2.38
+|.93 |.77 |1 |1 |.45 |.45 |.57 |N/A |N/A | | | | | | | | | | | | | | | |II
+  |Leader |6511 |2.81 |.71 |.68 |17 |11 |.83 to -.14 |.57 |.77 |1.00 to .42
+ |.85 to .69 | | |Job |907 |2.60 |.72 |.82 |3 |3 |.40 to .29 |.33 |.41 |.49
+  to .32 |.46 to .35 | | | | | | | | | | | | | | | |IM |Leader |6293 |2.73
+|.85 |.85 |21 |13 |.93 to -.12 |.64 |.78 |1.00 to .47 |.85 to .70 | | |Job
+|907 |2.83 |.75 |.83 |3 |3 |.38 to .24 |.29 |.35 |.39 to .32 |.43 to .28 |
+ | | | | | | | | | | | | | | |IS |Leader |8167 |2.38 |.84 |.80 |23 |15 |.86
+ to -.12 |.60 |.75 |1.00 to .38 |.83 to .67 | | |Job |907 |2.47 |.72 |.78 |3
+ |3 |.42 to .22 |.29 |.36 |.54 to .20 |.47 to .26 | | | | | | | | | | | | |
+ | | |IC |Leader |8263 |2.59 |.86 |.78 |23 |15 |93 to -24 |.66 |.83 |1.00 to
+  .42 |.91 to .74 | | |Job |907 |2.58 |.80 |.77 |3 |3 |.48 to .26 |.33 |.43
+  |.63 to .22 |.54 to .31 | | | | | | | | | | | | | | | |TFL |Leader |2547
+|3.48 |.92 |.92 |10 |9 |.87 to -.02 |.49 |.57 |.96 to .18 |.69 to .45 | |
+  |Job |2175 |2.95 |1.03 |.96 |9 |6 |.68 to .07 |.27 |.30 |.76 to -.15 |.47
+ to .13 | | | | | | | | | | | | | | | |CR |Leader |8513 |2.47 |.80 |.77 |22
+   |16 |.89 to .08 |.64 |.82 |1.00 to .46 |.89 to .74 | | |Job |2351 |2.85
+ |.63 |.71 |8 |5 |.69 to .09 |.39 |.52 |.95 to .09 |.67 to .37 | | | | | | |
+ | | | | | | | | |MBEA |Leader |6371 |1.73 |.92 |.77 |15 |11 |.35 to -.62 |-
+  .10 |-.12 |.31 to -.55 |-.02 to -.23 | | |Job |1752 |1.86 |.67 |.76 |4 |4
+ |.10 to -.18 |-.04 |-.05 |.14 to -.23 |.05 to -.14 | | | | | | | | | | | |
+ | | | |MBEP |Leader |7028 |1.59 |.71 |.69 |15 |11 |.43 to -.69 |-.35 |-.47
+  |.15 to -1.00 |-.32 to -.61 | | |Job |907 |1.60 |.69 |.76 |3 |3 |-.12 to
+-.66 |-.31 |-.39 |-.23 to -1.00 |-.10 to -.68 | | | | | | | | | | | | | | |
+ |MBE |Leader |1550 |2.26 |.51 |.62 |5 |3 |.13 to -.36 |-.31 |-.44 |-.08 to
+  -.80 |-.28 to -.60 | | |Job |N/A |N/A |N/A |N/A |N/A |N/A |N/A |N/A |N/A
+  |N/A |N/A | | | | | | | | | | | | | | | |LF |Leader |7025 |.80 |.68 |.76
+ |16 |12 |.55 to -.73 |-.43 |-.56 |.07 to -1.00 |-.41 to -.70 | | |Job |774
+ |.82 |.56 |.74 |3 |3 |-.10 to -.21 |-.19 |-.24 |-.09 to -.39 |-.19 to -.29
+ | | | | | | | | | | | | | | | |TRL |Leader |1347 |3.64 |.73 |.81 |5 |4 |.41
+  to .04 |.17 |.21 |.39 to .02 |.31 to .11 | | |Job |642 |2.60 |.90 |.90 |4
+|3 |.33 to .05 |.20 |.24 |.42 to .06 |.37 to .11 | |
+1  Because only one coefficient was reported for the scales (1) Management
+By Exception & Lazziez Faire and (2) Charismatic Leadership they cannot be
+meta-analyzed and are thus not reported here.
+2  Unique sample size across all studies.
+3  Mean, standard deviation, and reliability weighted by sample size.
+4  Coefficients exceeds number of studies due to multiple criterion
+variables.  For studies correlating one set of leadership ratings to
+multiple criteria, coefficients are averaged to obtain a composite
+correlation coefficient.  Composite criteria maintain assumptions of sample
+independence required in meta-analysis. The impact of different criterion
+measures on the correlation of leadership ratings to outcomes may be
+investigated further if credibility interval analysis suggests that
+moderators may be present (see footnote six)
+5  Corrected for attenuation due to measurement of the independent and
+dependent variable
+6  Credibility intervals indicate the extent to which validity findings can
+be generalized and indicate moderators when large or include zero.
+Confidence intervals assess the accuracy of the mean effect size.

@@ -1,0 +1,2856 @@
+### SOURCE: paper_361_arXiv.pdf
+### PAPER_ID: 361
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 19
+
+
+===== PAGE 1 =====
+1
+Generative Models in Decision Making: A Survey
+Xinyu Shao, Jianping Zhang, Haozhi Wang, Leo Maxime Brunswic, Kaiwen Zhou,
+Jiqian Dong, Kaiyang Guo, Zhitang Chen, Jun Wang, Jianye Hao, Xiu Li, and Yinchuan Li.
+Abstract—Generative models have fundamentally reshaped the landscape of decision-making, reframing the problem from pure
+scalar reward maximization to high-fidelity trajectory generation and distribution matching. This paradigm shift addresses intrinsic
+limitations in classical Reinforcement Learning (RL), particularly the limited expressivity of standard unimodal policy distributions in
+capturing complex, multi-modal behaviors embedded in diverse datasets. However, current literature often treats these models as
+isolated algorithmic improvements, rarely synthesizing them into a single comprehensive framework. This survey proposes a principled
+taxonomy grounding generative decision-making within the probabilistic framework of Control as Inference. By performing a
+variational factorization of the trajectory posterior, we conceptualize four distinct functional roles: Controllers for amortized policy
+inference, Modelers for dynamics priors, Optimizers for iterative trajectory refinement, and Evaluators for trajectory guidance and
+value assessment. Unlike existing architecture-centric reviews, this function-centric framework allows us to critically analyze
+representative generative families across distinct dimensions. Furthermore, we examine deployment in high-stakes domains,
+specifically Embodied AI, Autonomous Driving, and AI for Science, highlighting systemic risks such as dynamics hallucination in world
+models and proxy exploitation. Finally, we chart the path toward Generalist Physical Intelligence, identifying pivotal challenges in
+inference efficiency, trustworthiness, and the emergence of Physical Foundation Models.
+Index Terms—Generative Artificial Intelligence, Control as Inference, Physical Foundation Models, Embodied AI, World Models
+✦
+1
+INTRODUCTION
+S
+EQUENTIAL
+decision-making has traditionally been
+dominated by Reinforcement Learning (RL) and optimal
+control algorithms, which seek to maximize cumulative
+scalar rewards [1]. While effective in well-defined simula-
+tions, these methods face fundamental bottlenecks when
+scaled to open-world, high-dimensional tasks. Although
+maximum entropy RL methods, such as Soft Actor-Critic
+(SAC) [2], attempt to mitigate exploration issues via entropy
+regularization, they are often constrained by the limited ex-
+pressivity of parametric distributions (e.g., unimodal Gaus-
+sians used in PPO [3]). Consequently, they struggle to cap-
+ture the complex, multi-modal nature of human behavior
+found in diverse offline datasets (e.g., D4RL [4]) [5], prompt-
+ing the use of more expressive generative architectures such
+as diffusion models [6]. Furthermore, the entanglement of
+dynamics modeling and policy optimization in model-free
+RL often results in severe sample inefficiency. As the field
+moves toward generalizing from large-scale datasets and
+robot foundation models [7], the classical trial-and-error
+paradigm encounters intrinsic limits in both expressivity
+and robustness, necessitating new approaches that decouple
+representation learning from behavior synthesis [8], [9].
+Driven by the success of foundation models in content
+generation, ranging from DALL-E [10], [11] for imagery to
+Corresponding authors: Xiu Li and Yinchuan Li.
+X. Shao and X. Li are with the Tsinghua Shenzhen International Grad-
+uate School, Tsinghua University, Shenzhen 518055, China. X. Shao
+is also with the Huawei Noah’s Ark Lab, Shenzhen, China. (e-mail:
+shaoxy23@mails.tsinghua.edu.cn; li.xiu@sz.tsinghua.edu.cn).
+Y. Li, H. Wang, L. M. Brunswic, K. Zhou, J. Dong, K. Guo, Z. Chen,
+and J. Hao are with the Huawei Noah’s Ark Lab, Shenzhen, China. (e-mail:
+yinchuan.li.cn@gmail.com)
+J. Zhang is with The Chinese University of Hong Kong, Hong Kong SAR,
+China.
+J. Wang is with the Department of Computer Science, University College
+London, London WC1E 6BT, U.K.
+GPT-4 [12], [13] for language, generative models are now re-
+framing decision-making from scalar maximization to high-
+fidelity distribution matching [14]. Unlike standard policies
+that often rely on unimodal or deterministic mappings,
+models such as Diffusion [15] and Autoregressive Trans-
+formers [16] treat trajectories as first-class data units. This
+probabilistic perspective offers three distinct advantages:
+(1) Multimodal Modeling: They can represent arbitrarily
+complex, non-parametric distributions, effectively mitigat-
+ing the mode-collapse issue inherent in classical imitation
+learning. (2) Inference-as-Planning: They transform the
+hard planning problem into an iterative sampling process,
+such as denoising in diffusion models, enabling effective
+search in high-dimensional action spaces. (3) High-Fidelity
+Dynamics Modeling: They act as expressive data-driven
+simulators that approximate complex physical dynamics, fa-
+cilitating efficient planning and reducing real-world sample
+complexity via imagined rollouts.
+Despite the surge in research, existing reviews remain
+fragmented. As detailed in Table 1, prior surveys typically
+limit their scope to specific architectures, such as Diffusion
+for RL [17] or Transformers [18], or isolated domains [19].
+These works often treat generative components as auxiliary
+modules rather than a core decision-making paradigm. Cru-
+cially, they often lack a unifying probabilistic framework
+to connect diverse mechanisms, from Energy-Based Models
+to GFlowNets, under a common decision-theoretic lens.
+To bridge this gap, this survey proposes a unified tax-
+onomy grounded in the probabilistic framework of Control
+as Inference. By factorizing the trajectory posterior (de-
+tailed in Section 3), we systematically conceptualize four
+functional roles that cover the complete generative loop:
+Controller, Modeler, Optimizer, and Evaluator.
+The primary contributions of this work are as follows:
+arXiv:2502.17100v4  [cs.LG]  5 Mar 2026
+
+===== PAGE 2 =====
+2
+The Paradigm Shift in Decision Making:
+From Point Optimization to Distribution Inference
+Traditional RL
+(Scalar Maximization, Point Estimate)
+π ≈argmax Q
+(Collapse)
+a
+P(a|s)
+a∗
+Result: Single, Rigid Trajectory
+S
+G
+(Fragile to perturbations)
+Generative Decision Making
+(Distribution Matching, Multi-modal)
+a ∼pθ(a|s)
+(Capture Diversity)
+a
+P(a|s)
+Result: Diverse Trajectory Bundle
+S
+G
+(Robust & Multi-modal)
+Fig. 1: The paradigm shift in decision making: from scalar
+maximization to distribution matching. (Left) Traditional
+RL typically optimizes for a single optimal policy (point
+estimate), often leading to mode collapse and rigid behav-
+iors. (Right) Generative Decision Making reframes control
+as inference, modeling the conditional distribution of opti-
+mal trajectories (i.e., the posterior). This approach captures
+the inherent multi-modal nature of physical behavior data,
+enabling the generation of diverse, robust, and high-fidelity
+action sequences.
+●
+A Unified, Function-Centric Taxonomy. We theo-
+retically formulate four roles from the probabilis-
+tic factorization of the trajectory posterior. This
+moves beyond purely architectural categorization to
+a grounded functional perspective.
+●
+A Critical Synthesis of Methodologies. We system-
+atically evaluate representative families across key
+task dimensions defined in our functional scope,
+identifying why specific generative mechanisms suit
+specific decision roles.
+●
+An Application-Aware Safety Analysis. We assess
+real-world applications with a dedicated focus on
+robustness. This includes identifying systemic risks
+such as physics hallucination, defined as generating
+physically implausible transitions in world models,
+and outlining mitigation strategies for safety.
+The remainder of this survey is organized as follows.
+Section 2 establishes preliminaries. Section 3 presents our
+core contribution regarding the theoretical derivation of
+the unified taxonomy. Section 4 critically analyzes specific
+algorithms through the lens of this taxonomy. Section 5
+reviews applications with a focus on safety boundaries.
+Finally, Section 6 outlines open challenges and the path
+toward adaptive and generalizable decision agents.
+2
+PRELIMINARIES
+In this section, we review the key concepts that help con-
+nect probabilistic decision-making with generative Artificial
+Intelligence (AI). We first introduce the sequential decision
+problem, framing it from the perspective of trajectory op-
+timization to better align with generative modeling frame-
+works. We then briefly categorize common RL methodolo-
+gies based on their primary learning objectives (Value vs.
+Policy) and their use of environmental dynamics (Model-
+Free vs. Model-Based). Finally, we provide an overview of
+the generative modeling families that are increasingly being
+adopted to facilitate decision-making in physical agents.
+2.1
+Problem Formulation: From Steps to Trajectories
+Markov Decision Processes (MDPs). We formulate the
+decision-making problem as a Markov Decision Process
+(MDP) [21], defined by the tuple M = (S, A,P,R,γ,ρ0) [1].
+In partially observable settings (POMDP) [22], states are in-
+ferred from observations ot. Unlike classical controls which
+focus on instantaneous state st ∈S and action at ∈A,
+generative decision-making often operates on the level of
+complete trajectories. Let τ = (s0,a0,s1,a1,...,sT ) denote
+a trajectory sequence of horizon T. The standard objective
+is to maximize the expected discounted cumulative return
+J(π) = Eτ∼π[R(τ)], where R(τ) = ∑T
+t=0 γtr(st,at).
+Trajectory Distribution Matching. In the context of
+generative modeling, we reframe the optimization goal from
+finding a deterministic policy π∗to approximating an opti-
+mal trajectory distribution p∗(τ) [23]. For example, in the
+offline setting, given a dataset D = {τi}N
+i=1 drawn from a
+behavior distribution πβ, the goal is to learn a parameterized
+policy πθ(τ) that minimizes the divergence to the high-
+reward regions of the data manifold [5], [24]:
+min
+θ DKL (πθ(τ) ∥p(τ∣O = 1)),
+(1)
+where O denotes the binary event of optimality. This for-
+mulation links RL to probabilistic inference, serving as the
+cornerstone for the unified taxonomy in Section 3.
+2.2
+Taxonomy of RL Paradigms
+We structure standard RL algorithms along two orthogonal
+axes: the learning objective and the reliance on dynamics. Cru-
+cially, we highlight how generative approaches address the
+specific limitations inherent in classical methods.
+2.2.1
+Learning Paradigms: Value vs. Policy
+Value-Based and Distributional RL. Traditional value-
+based
+methods,
+such
+as
+DQN
+[25]
+and
+Fitted
+Q-
+iteration [26], approximate the expected return Qπ(s,a)
+via Bellman backups (Qπ = BπQπ) [27]. However, scalar
+expectations obscure the multi-modal nature of stochastic
+environments. Distributional RL [28] bridges this gap by
+modeling the full return distribution Zπ(s,a) rather than
+its mean. This shift marks an early precursor to generative
+decision-making, acknowledging that capturing uncertainty
+requires estimating densities, not just scalars.
+Policy-Based and Imitation Learning. Standard policy
+gradient methods, such as REINFORCE [29] and PPO [3],
+typically assume unimodal Gaussian policies π(a∣s) =
+N(µθ(s),Σθ(s)). Trust Region methods (TRPO) [30] sta-
+bilize this by constraining the KL divergence between up-
+dates. However, this unimodal assumption is fundamen-
+tally limited in open-world settings where valid actions
+
+===== PAGE 3 =====
+3
+TABLE 1: Comparison of this survey with closely related literature. Prior reviews either focus on specific neural
+architectures or explore the reverse direction (e.g., RL for Generative AI). In contrast, our work provides a
+comprehensive, unified perspective grounded in Control as Inference, categorizing all major generative mechanisms
+by their functional roles.
+Survey (Ref)
+Primary Focus / Scope
+Taxonomy Basis
+Control as Inference Lens
+Safety & Risk Analysis
+Zhu et al. [17]
+Diffusion Models
+RL Paradigms (Offline, Online, Multi-task)
+×
+Partial
+Li et al. [18]
+Transformers
+Algorithmic integrations (Model-free/based)
+×
+×
+Gozalo et al. [19]
+LLMs / ChatGPT
+Application domains (Robotics, Games, etc.)
+×
+Partial
+Cao et al. [20]
+RL for Generative AI
+Alignment techniques (e.g., RLHF, DPO)
+×
+✓
+Ours
+All Generative Families
+(GAN, VAE, Flow, Diff,
+GFN, AR, EBM)
+Functional Roles (Controller, Modeler, Optimizer,
+Evaluator)
+✓
+✓(Systemic Risks)
+are multi-modal. Generative Imitation Learning overcomes
+this by treating policy learning as conditional density es-
+timation πθ(a∣s) ≈pdata(a∣s) [31]. By leveraging rigorous
+density estimators, these methods can represent arbitrarily
+complex action distributions, a capability essential for gen-
+eralist agents [32], [33].
+2.2.2
+Dynamics Modeling: Model-Free vs. Model-Based
+Model-Free RL. Agents learn directly from interaction tu-
+ples without constructing an environmental surrogate. Ad-
+vanced Actor-Critic methods like DDPG [34] and Soft Actor-
+Critic (SAC) [2] introduce deterministic policies or entropy
+regularization to improve sample efficiency. While asymp-
+totically optimal, their deployment in physical systems is
+limited by the high cost of real-world interaction.
+Model-Based RL (MBRL) and World Models. MBRL
+approximates transition dynamics P(s′∣s,a) to enable plan-
+ning [35]. Prior probabilistic approaches often relied on
+Gaussian ensembles to capture uncertainty (e.g., PETS [36]),
+which can struggle in high-dimensional visual spaces.
+Modern Generative World Models, derived from the
+Dyna paradigm [37], utilize variational autoencoders (e.g.,
+Dreamer [38]) or discrete tokens (e.g., IRIS [39]) to learn
+compact latent dynamics. This enables agents to perform
+planning in imagination, effectively decoupling physical trial-
+and-error from cognitive reasoning.
+2.3
+Generative Modeling Foundations
+Generative models provide the mathematical machinery to
+sample from complex distributions pdata(x) [40], [41]. In
+decision-making, x generalizes to actions a, states s, or
+trajectories τ. We categorize them into four paradigms based
+on their inference mechanisms, as illustrated in Figure 2.
+One-Step Latent Mapping (VAEs & GANs). Unlike se-
+quence models, these approaches introduce latent variables
+to capture high-level semantics via a single forward pass.
+Variational Autoencoders (VAEs) [42], [43] learn a com-
+pressed latent space Z by maximizing the Evidence Lower
+Bound (ELBO), which is critical for constructing compact
+World Models. Extensions like β-VAE [44] and VQ-VAE [45]
+further improve disentanglement and discrete representa-
+tion. Generative Adversarial Networks (GANs) [40] pio-
+neer implicit sampling via adversarial games. While effec-
+tive for domain adaptation [46] and imitation [31], their
+training instability (mode collapse) often limits their adop-
+tion in reliability-critical control compared to likelihood-
+based methods.
+Explicit Sequence Modeling (Autoregressive). These mod-
+els optimize the exact likelihood pθ(x) via the chain rule
+decomposition: p(x) = ∏t p(xt∣x<t) [47], [48]. In decision-
+making, this mechanism enables casting planning as se-
+quence modeling. Prominent examples include Decision
+Transformer [16] (for model-free control) and Trajectory
+Transformer [14] (for model-based planning via beam
+search). This paradigm allows the massive scaling prop-
+erties of Large Language Models (LLMs) to be directly
+transferred to trajectory prediction [12], [49].
+Iterative Refinement (Diffusion, EBMs & Flow Match-
+ing). To model complex continuous distributions without
+restricting architecture, these models rely on iterative mix-
+ing processes. Energy-Based Models (EBMs) [50] learn an
+unnormalized density function via methods like Contrastive
+Divergence [51]. Diffusion Models [15], [52], [53] circumvent
+the intractable normalizing constant by learning the score
+function ∇x log p(x) via a stochastic differential equation
+(SDE) [54]:
+dx = [f(x,t) −g2(t)∇x log pt(x)]dt + g(t)dw.
+(2)
+This iterative process enables test-time optimization, allowing
+planners like Diffuser [55] to refine coarse trajectories into
+smooth, feasible plans. Recently, Flow Matching [56], [57]
+has emerged as a robust alternative, creating straight prob-
+ability flows that significantly accelerate inference speed for
+real-time control.
+Amortized Structural Inference (GFlowNets). While the
+above models excel in continuous spaces, decision-making
+often
+involves
+discrete,
+compositional
+structures
+(e.g.,
+molecule graphs). We characterize the generation of such
+objects as amortized structural inference, where the high cost
+of exploring complex discrete distributions is amortized into
+rapid, sequential sampling steps. As a prominent example,
+Generative Flow Networks (GFlowNets) [58], [59] achieve
+this by treating policy learning as flow matching on a
+directed acyclic graph (DAG). Unlike RL which maximizes
+reward, GFlowNets aim to sample objects x proportional
+to their reward R(x), satisfying the flow consistency con-
+straint:
+∑
+s′→s
+F(s′ →s) = ∑
+s→s′′ F(s →s′′).
+(3)
+This property makes them uniquely suited for diverse ex-
+ploration in vast combinatorial spaces [60], [61].
+
+===== PAGE 4 =====
+4
+(a) One-Step Mapping
+s
+z
+Generator /
+Policy Network
+a
+Direct
+Mapping
+Pros: Low Latency
+Cons: Mode Collapse
+(b) Autoregressive Generation
+s0
+a0
+s1
+ht
+Causal Attention
+a1
+Predict
+Pros: Long Context
+Cons: Error Accumulation
+(c) Iterative Refinement
+ϵ
+xK
+∼
+xt
+τ
+x0
+s
+Denoise
+Denoise
+Pros: High Fidelity
+Cons: Slow Inference
+(d) Amortized Structural Inference
+s0
+x
+P ∝R
+P Fin = P Fout
+Pros: Diverse Exploration
+Cons: Training Complexity
+Fig. 2: Schematic comparison of four generative inference mechanisms in decision making. (a) One-Step Mapping:
+Direct, low-latency projection from state/latent space to actions (e.g., VAEs, GANs). (b) Autoregressive Generation:
+Sequential token prediction utilizing causal attention for long-horizon planning (e.g., AR Models / Transformers).
+(c) Iterative Refinement: Progressive generation via denoising or energy/flow matching, enabling flexible test-time
+optimization (e.g., Diffusion Models, EBMs, Flow Matching). (d) Amortized Structural Inference: Flow-based sampling
+constructing compositional objects (e.g., molecules or graphs) ensures diverse exploration (e.g., GFlowNets).
+3
+UNIFIED TAXONOMY: CONTROL AS INFERENCE
+Current literature predominantly categorizes methods by
+architecture (e.g., Diffusion vs. Transformer). However, this
+architecture-centric view is increasingly insufficient because
+structural equivalence does not imply functional equiva-
+lence. For instance, a Transformer can serve as a Controller
+(Decision Transformer) or a Modeler (IRIS). To navigate this
+complexity, a taxonomy grounded in decision-theoretic roles
+rather than backbone networks is essential.
+We propose a unified framework rooted in Control as
+Inference [23]. We posit that generative models are naturally
+suited for this paradigm, acting as powerful approximate
+inference engines to solve the intractable trajectory poste-
+rior. By formally factorizing this objective, we derive four
+canonical roles: Controller, Modeler, Evaluator, and Opti-
+mizer. By decoupling architecture from functional purpose,
+this taxonomy allows us to systematically analyze how
+different generative mechanisms address specific decision-
+making bottlenecks. We detail the mathematical derivation
+of these roles below.
+3.1
+Theoretical Foundation: Control as Inference
+Consider a trajectory τ
+= (s0,a0,...,sT ,aT ). To frame
+reward maximization as a probabilistic inference problem,
+we introduce a binary optimality variable Ot. Rather than
+treating raw rewards as probabilities, we define the un-
+normalized likelihood of a specific step being optimal as
+p(Ot = 1∣st,at) ∝exp(r(st,at)). This exponential trans-
+formation elegantly maps arbitrary scalar rewards to non-
+negative potential values. Consequently, the fundamental
+goal of decision-making is to infer the posterior distribution
+of trajectories conditioned on the optimality of all steps:
+p(τ∣O1∶T = 1).
+Using Bayes’ rule and the Markov property, this poste-
+rior factorizes as:
+p(τ∣O) ∝
+p(τ)
+±
+Trajectory Prior
+⋅p(O∣τ)
+´¹¹¹¹¹¸¹¹¹¹¹¶
+Optimality
+Likelihood
+(4)
+= ρ0(s0)(
+T −1
+∏
+t=0
+p(st+1∣st,at)
+´¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¸¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¶
+Dynamics
+(Modeler)
+π(at∣st)
+´¹¹¹¹¹¹¹¸¹¹¹¹¹¹¹¶
+Policy
+(Controller)
+) ⋅exp(R(τ))
+´¹¹¹¹¹¹¹¹¹¹¹¹¸¹¹¹¹¹¹¹¹¹¹¹¹¶
+Value
+(Evaluator)
+.
+This factorization (Eq. 4) reveals the fundamental com-
+ponents of generative decision-making, demonstrating that
+these four roles are necessary and sufficient to cover the
+entire inference process:
+●
+Controller (π): The policy prior π(a∣s), providing the
+proposal distribution for actions.
+●
+Modeler (P): The transition dynamics p(s′∣s,a),
+defining the physical laws of the environment.
+●
+Evaluator (R): The optimality likelihood exp(R(τ)),
+representing goal or constraint satisfaction.
+●
+Optimizer (Inference): The algorithmic mechanism
+(e.g., variational inference or iterative sampling) used
+to approximate the intractable posterior p(τ∣O).
+3.2
+Functional Roles and Scope Definition
+Based on the variational derivation, we define the precise
+scope for each role. Table 2 serves as the Scope Box for
+our taxonomy, mapping each role to its theoretical inputs,
+outputs, and the specific assumptions generative models
+operate under.
+Controller (The Amortized Inference). Generative models
+in this role perform amortized inference: they learn a paramet-
+ric map πθ to directly approximate the optimal posterior.
+
+===== PAGE 5 =====
+5
+TABLE 2: The Scope Box: Definitions and Interfaces of Generative Roles. This table formally maps each functional role
+to its mathematical equivalent in the Control as Inference framework, explicitly defining the boundaries, inputs, outputs,
+and underlying assumptions.
+Role
+Theoretical Equivalent
+Input Space
+Output / Target
+Assumption
+Core Generative Task
+Controller
+Policy Prior π(a∣s)
+State s (or History h)
+Action a
+Markovian / Auto-regressive
+Amortized Sampling: Instantly generating optimal actions from states.
+Modeler
+Dynamics p(s′∣s, a)
+State s, Action a
+Next State s′ / Reward
+Stationary Dynamics
+Density Estimation: Simulating environment transitions and rollouts.
+Evaluator
+Likelihood p(O∣τ)
+State s, Action a, or τ
+Scalar Score / Safety Flag
+Tractable Likelihood / Density
+Guidance & Verification: Providing gradients or rejecting unsafe samples.
+Optimizer
+Posterior q ≈p(τ∣O)
+State s0, Goal g, Noise ϵ
+Trajectory τ
+Known Reward / Differentiable
+Iterative Planning: Refining sequences via gradients or sampling (e.g., denoising).
+Unlike standard RL policies which are often deterministic
+or unimodal Gaussian, generative controllers, such as Dif-
+fusion Policies [6], can represent highly multi-modal action
+distributions. This is crucial for offline imitation learning,
+where human demonstrations are naturally diverse and
+multi-modal.
+Modeler (The Dynamics Prior). These models approximate
+the environment dynamics p(s′∣s,a). In the context of this
+factorization, they serve as the prior that constrains the op-
+timization to physically plausible trajectories. A generative
+modeler acts as a World Model [8], allowing the agent to
+dream potential futures. Crucially, generative models enable
+high-fidelity simulation in complex domains (e.g., video
+prediction) that are intractable for traditional Gaussian dy-
+namics models.
+Evaluator (The Likelihood Estimator). The Evaluator ap-
+proximates the optimality likelihood p(O∣τ). While stan-
+dard RL relies on scalar Value Functions, generative ap-
+proaches often employ Energy-Based Models (EBMs) or
+Discriminators. Their key advantage is providing dense
+gradient signals (∇τ log p(O∣τ)) rather than sparse rewards,
+guiding the optimizer toward high-reward regions via dif-
+ferentiable manifolds. Furthermore, in safety-critical sys-
+tems, Evaluators function as Safety Guards, filtering out
+generated trajectories that violate learned constraints via
+rejection sampling.
+Optimizer (The Iterative Inference). The Optimizer is the
+mechanism that performs the maximization of the objective.
+We classify methods as Optimizers when the generative
+model is used to define the search process itself, for exam-
+ple in Diffuser [55]. Here, trajectory planning is treated
+as a generative in-painting problem. These methods per-
+form computation-heavy iterative inference at test time
+(e.g., via reverse diffusion) to refine trajectories, offering
+stronger mode-seeking capabilities and long-horizon con-
+sistency than single-step policies.
+Remark on Functional Overlap. In advanced architectures,
+boundaries between roles can blur. We categorize such
+methods based on their inference-time behavior. For instance,
+Diffuser [55] models the joint distribution p(τ). Although
+it conceptually acts as a policy, its inference involves an
+iterative denoising process guided by rewards. Therefore,
+we classify it primarily as an Optimizer because the core
+contribution is the planning-as-sampling mechanism. Con-
+versely, Decision Transformer [16] performs autoregressive
+sequence modeling. While it models the joint distribution
+p(τ), its inference is a direct, causal token generation.
+Consequently, we classify it as a Controller performing
+amortized policy inference.
+Static Probabilistic Components (∝P · π · exp(R))
+Controller
+π(at|st)
+Modeler
+p(st+1|st, at)
+Evaluator
+∝exp(R(τ))
+st
+at
+st+1
+Ot
+...
+...
+Optimizer ⟳
+(Algorithmic Inference Engine)
+Solves / Approximates
+p(τ|O)
+Fig. 3: The Unified Taxonomy of Generative Decision Mak-
+ing based on Control as Inference. Following Equation 4,
+we decompose the decision-making process into four proba-
+bilistic components: (1) Controller: The policy prior π(at∣st)
+that proposes actions; (2) Modeler: The dynamics model
+p(st+1∣st,at) that predicts future states; (3) Evaluator: The
+likelihood function p(O∣τ) that evaluates optimality; and
+(4) Optimizer: The inference mechanism that solves for the
+posterior p(τ∣O) to determine optimal actions.
+3.3
+Task Dimensions
+Beyond functional roles, we categorize methodologies ac-
+cording to four key decision-making dimensions. These
+dimensions dictate the specific constraints and determine
+which generative advantages are most critical.
+Online vs. Offline Settings. Offline settings require models
+to handle distribution shifts and stitch suboptimal sub-
+trajectories; here, generative models excel due to their su-
+perior distribution matching capabilities. Online settings
+demand efficient exploration and real-time inference, often
+requiring lighter-weight generative models or distillation
+techniques to minimize latency.
+State
+and
+Action
+Modality.
+Tasks
+range
+from
+low-
+dimensional proprioceptive states to high-dimensional vi-
+sual observations (POMDPs). Generative models, such as
+Latent Diffusion or VAEs, are particularly adept at handling
+partial observability and visual complexity by learning com-
+pact belief states in latent space, enabling planning directly
+on pixels.
+
+===== PAGE 6 =====
+6
+Learning Signal (Reward vs. Preference). While traditional
+RL maximizes scalar rewards, recent trends, such as RLHF,
+utilize preference rankings. Generative Evaluators (Reward
+Models) play a central role here, bridging static preference
+datasets with policy optimization by learning a differen-
+tiable reward landscape that guides the agent.
+Single vs. Multi-Agent Contexts. In multi-agent scenarios,
+the goal extends to coordinating joint actions or modeling
+opponents. Generative modeling provides a distinct advan-
+tage here by approximating complex joint equilibrium dis-
+tributions, allowing agents to sample diverse and consistent
+joint strategies.
+To ground this taxonomy in existing literature, we pro-
+vide a comprehensive catalog of representative algorithms
+in Table 3 (split into Part 1 and Part 2 due to space con-
+straints). These tables map state-of-the-art methods across
+various application domains to their corresponding genera-
+tive families and functional roles, serving as a roadmap for
+the subsequent methodological analysis.
+4
+METHODOLOGIES: A CRITICAL ANALYSIS
+As visually evidenced by the historical trajectory in Figure 4,
+the landscape of generative decision-making has undergone
+a profound evolution over the past decade. While early ap-
+plications were heavily dominated by Controllers designed
+for direct policy imitation, the advent of scalable sequence
+modeling and iterative refinement has recently catalyzed a
+massive surge in Modelers (generative world simulators) and
+Optimizers (inference-based planners).
+Building upon this historical context, this section criti-
+cally synthesizes how different generative mechanisms ful-
+fill the four functional roles defined in our taxonomy. Rather
+than exhaustively listing every algorithm, we categorize
+methods by their inference mechanisms and analyze their
+comparative advantages and trade-offs in decision-making
+contexts. A comprehensive synthesis of these mechanisms
+is detailed in Table 4, while Figure 5 visually maps these
+trade-offs across five critical performance dimensions to
+serve as a rapid navigational guide.
+4.1
+Generative Models as Controller (The Policy)
+Recall from Eq. (4) that the Controller corresponds to the
+policy prior π(at∣st), whose theoretical objective is to ap-
+proximate the optimal trajectory distribution. The Controller
+role maps states st (or history ht) to actions at. While stan-
+dard RL relies on unimodal Gaussian assumptions (π(a∣s) =
+N(µ,σ)), generative controllers leverage advanced density
+estimation to capture complex, multi-modal policies [129],
+[130]. This is particularly critical in Imitation Learning,
+where human demonstrators often exhibit diverse strategies
+for the same task.
+One-Step Mappings: GANs and VAEs. Early approaches
+focused on direct, single-step inference. GAN-based con-
+trollers, such as GAIL [31] and its variants (e.g., Info-
+GAIL [64], FAGIL [66]), employ a discriminator to force
+the policy to match expert occupancy measures. Extensions
+like AIRL [69] and AugAIRL [70] further frame this as
+adversarial reward learning, while others integrate optimal
+transport (WAIL [71]) or model-based differentiable opti-
+mization (MAIRL [72]). While offering ultra-fast inference
+suitable for real-time control, they notoriously suffer from
+mode collapse, often dropping diverse strategies to focus
+on a single dominant mode.
+Conversely, VAE-based policies utilize latent spaces to
+structure exploration. Examples include Play-LMP [75] for
+learning from play and TACO-RL [76] for long-horizon hier-
+archical control. For primitive learning, OPAL [77] extracts
+continuous latent behaviors, while recent advancements [9]
+extend this paradigm by employing discrete latent actions
+to further enhance behavior generation robustness. Ap-
+proaches like MaskDP [78] and HULC [74] further enhance
+this by integrating masking or hierarchical decomposition.
+However, the MSE-based reconstruction loss typically leads
+to averaged or blurry actions, which lacks the precision
+required for fine-grained manipulation tasks.
+Iterative Refinement: Diffusion and Flow Policies. Tradi-
+tional Offline RL methods, such as CQL [131], IQL [132],
+BCQ [133], TD3+BC [134], and RvS [135], mitigate distri-
+butional shift via conservatism constraints but are limited
+by unimodal assumptions. To capture the full multimodal
+distribution of expert behavior [82], [136], Diffusion Mod-
+els (DMs) [6] have emerged as the state-of-the-art. Variants
+cover diverse settings: Diffusion-QL [85] and DIPO [88] for
+offline RL, and SfBC [86] for behavior cloning. For hierarchi-
+cal and constraint-aware planning, Decision Diffuser [83]
+and AdaptDiffuser [87] introduce inverse dynamics and
+goal conditioning, while Decision Stacks [84] decompose
+the policy into modular generative stacks. UniPi [89] further
+extends this to video-based universal policies. Similarly,
+Normalizing Flows offer bijective mapping for policy mod-
+eling, as seen in NF-Policy [79] and Guided Flows [81].
+Sequence Modeling: Autoregressive Transformers. Models
+like Decision Transformer (DT) [16] reframe control as next-
+token prediction (τ = s1,a1,... ), leading to numerous ex-
+tensions such as Trajectory Transformer [14], Online DT [96],
+and Bootstrapped DT [98]. This paradigm scales exception-
+ally well with data size, serving as the backbone for General-
+ist Agents like Gato [94], RT-1 [7], and multi-objective agents
+like PEDA [97]. However, standard autoregressive cloning is
+prone to compounding errors in open-loop generation and
+often struggles to extrapolate behavior beyond the training
+distribution.
+To address these limitations and handle complex rea-
+soning horizons, the field has expanded to leverage Large
+Language Models (LLMs) as High-Level Planners. Instead
+of outputting raw actions, frameworks like SayCan [137]
+and Code as Policies [138] ground natural language in-
+structions into executable primitives or Python code, en-
+abling zero-shot robotic control. Prompting strategies such
+as ReAct [139] and Inner Monologue [140] further intro-
+duce closed-loop feedback and self-correction mechanisms.
+In open-ended digital environments, autonomous agents
+like Voyager [141] and GITM [142] demonstrate lifelong
+learning capabilities, while Generative Agents [143] utilize
+generative memory to simulate believable social behaviors.
+Synthesis and Model Selection. Selecting a generative
+controller requires trading off latency, mode coverage, and
+
+===== PAGE 7 =====
+7
+TABLE 3: A Comprehensive Catalog of Generative Decision-Making Algorithms (Part 1 of 2). Methods are categorized
+by their primary Functional Role (as defined in Section 3) and Generative Family. Key task dimensions (Online/Offline,
+Domain) are highlighted.
+Role
+Algorithm (Ref)
+Gen. Family
+Backbone / Structure
+Setting (RL Paradigm)
+Application Domain
+CONTROLLER (Policy)
+Soft Q-learning [62]
+EBM
+Energy Function
+Online RL
+Robot Control
+EBIL [63]
+EBM
+Energy Function
+Imitation Learning
+Robot Control
+GAIL [31]
+GAN
+Generator-Discriminator
+Imitation Learning
+Robot Control
+InfoGAIL [64]
+GAN
+InfoGAN
+Imitation Learning
+Robot Control
+MGAIL [65]
+GAN
+GAN
+Imitation Learning
+Robot Control
+FAGIL [66]
+GAN
+Wasserstein GAN
+Imitation Learning
+Robot Control
+WGAIL [67]
+GAN
+GAN
+Imitation Learning
+Robot Control
+IC-GAIL [68]
+GAN
+GAN
+Imitation Learning
+Robot Control
+AIRL [69]
+GAN
+GAN (Inv. RL)
+Imitation Learning
+Robot Control
+AugAIRL [70]
+GAN
+GAN
+Imitation Learning
+Robot Control
+WAIL [71]
+GAN
+Wasserstein GAN
+Imitation Learning
+Robot Control
+MAIRL [72]
+GAN
+GAN
+Imitation Learning
+Robot Control
+GTI [73]
+VAE
+CVAE
+Imitation Learning
+Robot Control
+HULC [74]
+VAE
+Seq2Seq CVAE
+Imitation Learning
+Robot Control
+Play-LMP [75]
+VAE
+Seq2Seq CVAE
+Imitation Learning
+Robot Control
+TACO-RL [76]
+VAE
+Seq2Seq CVAE
+Imitation Learning
+Robot Control
+OPAL [77]
+VAE
+β-VAE
+Offline RL
+Structural Gen.
+MaskDP [78]
+VAE
+Masked Autoencoder
+Offline RL
+Robot Control
+NF Policy [79]
+Flow
+Coupling Flow
+Offline RL
+Robot Control
+CNF [80]
+Flow
+Autoregressive Flow
+Offline RL
+Autonomous Driving
+Guided Flows [81]
+Flow
+Continuous Flow
+Offline RL
+Optimization
+Pearce et al. [82]
+Diffusion
+DDPM
+Imitation Learning
+Robot Control
+Diffusion Policy [6]
+Diffusion
+DDPM (U-Net)
+Imitation (Robotics)
+Robot Control
+Diffuser [55]
+Diffusion
+DDPM (Trajectory)
+Offline RL
+Structural Gen.
+Decision Diffuser [83]
+Diffusion
+DDPM (Inv. Dynamics)
+Offline RL
+Structural Gen.
+Decision Stacks [84]
+Diffusion
+DDPM
+Offline RL
+Structural Gen.
+Diffusion-QL [85]
+Diffusion
+DDPM
+Offline RL
+Robot Control
+SfBC [86]
+Diffusion
+DDPM
+Offline RL
+Structural Gen.
+AdaptDiffuser [87]
+Diffusion
+DDPM
+Robotics
+Robot Control
+DIPO [88]
+Diffusion
+DDPM
+Online RL
+Robot Control
+UniPi [89]
+Diffusion
+DDPM
+Offline RL
+Robot Control
+GFlowNets [58]
+GFlowNet
+Trajectory Flow
+Offline/Online RL
+Structural Gen.
+Stochastic GFN [90]
+GFlowNet
+GFlowNet
+Offline RL
+Structural Gen.
+GAFlowNets [91]
+GFlowNet
+GFlowNet
+Offline RL
+Structural Gen.
+AFlowNets [92]
+GFlowNet
+GFlowNet
+Offline RL
+Structural Gen.
+CFlowNets [93]
+CFlowNet
+Continuous Flow
+Online RL
+Structural Gen.
+Decision Trans. [16]
+Autoregressive
+GPT (Decoder)
+Offline RL
+Robot Control
+Trajectory Trans. [14]
+Autoregressive
+GPT (Decoder)
+Offline RL
+Robot Control
+Gato [94]
+Autoregressive
+Multi-modal GPT
+Offline RL
+Generalist Agent
+Multi-Game DT [95]
+Autoregressive
+GPT (Decoder)
+Offline RL
+Games
+Online DT [96]
+Autoregressive
+GPT (Decoder)
+Online RL
+Driving
+PEDA [97]
+Autoregressive
+GPT (Decoder)
+Offline RL
+Robot Control
+BooT [98]
+Autoregressive
+GPT (Decoder)
+Offline RL
+Structural Gen.
+scalability. GANs and VAEs dominate latency-critical tasks
+(e.g., > 50 Hz reactive control) but suffer from limited
+expressivity. Conversely, Diffusion Policies excel in high-
+fidelity offline imitation, prioritizing multimodal precision
+over inference speed. Finally, despite lacking the contin-
+uous precision of diffusion, Autoregressive Transformers
+leverage proven scaling laws to serve as the foundational
+architecture for large-scale generalist agents.
+4.2
+Generative Models as Modeler (The Simulator)
+The
+Modeler
+approximates
+the
+transition
+dynamics
+p(st+1∣st,at) as defined in the factorization of Eq. (4). By
+learning to synthesize environmental dynamics P(s′∣s,a)
+or counterfactual experiences, it serves as the physical prior
+that constrains trajectory inference. Unlike traditional aug-
+mentation methods like S4RL [144] or RAD [145] which rely
+on heuristic perturbations, generative modelers capture the
+underlying data manifold [146], [147].
+Latent Space Dynamics (RSSM & VAEs). The concept
+of learning internal simulators traces back to the seminal
+World Models [8] and PlaNet [148]. While MuZero [149]
+pioneered value-equivalent planning without reconstruct-
+ing observations, recent approaches like VideoGPT [150]
+and DayDreamer [151] explicitly target high-fidelity visual
+synthesis. A cornerstone in this domain is the Dreamer
+family [38], which utilizes Recurrent State Space Models
+(RSSM) to decouple deterministic history from stochastic
+transitions. By predicting future rewards and planning en-
+tirely within this compact latent space, these agents achieve
+unprecedented sample efficiency and fast inference for
+real-time Model Predictive Control (MPC). Extending this
+paradigm, VAE-based approaches [102], [103] map high-
+dimensional states to structured spaces to bridge the pixel-
+
+===== PAGE 8 =====
+8
+TABLE 3: A Comprehensive Catalog of Generative Decision-Making Algorithms (Part 2 of 2 - Continued). This section
+covers the Modeler, Optimizer, and Evaluator roles.
+Role
+Algorithm (Ref)
+Gen. Family
+Backbone / Structure
+Setting (RL Paradigm)
+Application Domain
+MODELER
+BM [99]
+EBM
+Boltzmann Machine
+Generation
+Structural Gen.
+DEBMs [62]
+EBM
+EBM
+Online RL
+Robot Control
+SGMs [100]
+EBM
+Score Model
+Generation
+Structural Gen.
+EGAN [101]
+GAN
+GAN
+Online RL
+Structural Gen.
+S2P [102]
+GAN
+GAN
+Offline RL
+Robot Control
+Han & Kim [103]
+VAE
+VAE
+Offline RL
+Structural Gen.
+NICE [104]
+Flow
+Coupling Flow
+Generation
+Optimization
+Rezende et al. [105]
+Flow
+Norm. Flow
+Generation
+Optimization
+MTDiff [106]
+Diffusion
+DDPM
+Offline RL
+Robot Control
+GenAug [107]
+Diffusion
+Latent Diffusion
+Robotics
+Sim Augmentation
+SynthER [108]
+Diffusion
+EDM
+Offline/Online RL
+Robot Control
+ALPINE [109]
+Autoregressive
+Transformer
+Online RL
+Optimization
+ARP [110]
+Autoregressive
+Transformer
+Online RL
+Games
+OPTIMIZER
+SO-EBM [111]
+EBM
+Energy Landscape
+Optimization
+Optimization
+pcEBM [112]
+EBM
+Pareto Front
+Generation
+Structural Gen.
+CF-EBM [113]
+EBM
+Energy
+Generation
+Structural Gen.
+He et al. [114]
+GAN
+GAN
+Generation
+Optimization
+DCGANs [115]
+GAN
+DCGAN
+Generation
+Optimization
+C-GANs [116]
+GAN
+C-GAN
+Generation
+Optimization
+CVAE-Opt [117]
+VAE
+CVAE
+Optimization
+Optimization
+CageBO [118]
+VAE
+CVAE
+Optimization
+Optimization
+Gabri´e et al. [119]
+Flow
+Norm. Flow
+Generation
+Optimization
+DDOM [120]
+Diffusion
+DDPM
+Optimization
+Optimization
+Li et al. [121]
+Diffusion
+DDIM
+Optimization
+Optimization
+DiffOPT [122]
+Diffusion
+DDIM
+Optimization
+Optimization
+GFACS [123]
+GFlowNet
+GFlowNet
+Generation
+Optimization
+MOGFNs [124]
+GFlowNet
+Cond. Flow
+Generation
+Optimization
+BONET [125]
+Autoregressive
+Decoder Only
+Optimization
+Optimization
+TNP [126]
+Autoregressive
+Encoder-Decoder
+Optimization
+Optimization
+EVALUATOR
+EBIL (Reward) [63]
+EBM
+Energy Function
+Inverse RL
+Reward Modeling
+DEBMs (Cost) [62]
+EBM
+Energy Function
+Online RL
+Soft Constraints
+GAIL (Discrim.) [31]
+GAN
+Discriminator
+Inverse RL
+Surrogate Reward
+AIRL (Reward) [69]
+GAN
+Discriminator
+Inverse RL
+Reward Learning
+PlanCP [127]
+Statistical
+Conformal Prediction
+Safety Guard
+Autonomous Driving
+KnowNo [128]
+Statistical
+Conformal Prediction
+Safety Guard
+Robot Control
+TABLE 4: Comparative Analysis of Generative Mechanisms across Functional Roles. This table synthesizes the core
+advantages, inference trade-offs, and primary utilities of different generative paradigms when acting as Controllers,
+Modelers, Optimizers, and Evaluators, providing a when-to-use rule of thumb.
+Functional Role
+Implementation Paradigm
+Core Advantage / Output
+Key Trade-off / Limitation
+Primary Utility
+Controller (Policy)
+One-Step Mapping (GAN / VAE)
+Fast (1-step) Inference
+Mode collapse / Blurry actions
+High-frequency reactive control
+Iterative Refinement (Diffusion / Flow)
+High Mode Coverage
+High inference latency
+High-fidelity offline imitation
+Sequence Modeling (Autoregressive)
+Extreme Scalability
+Error compounding over time
+Generalist multi-task agents
+Modeler (Simulator)
+Latent Dynamics (VAE / RSSM)
+Fast state transitions
+Medium fidelity (Posterior collapse)
+Online Model Predictive Control
+Token Prediction (Autoregressive)
+Long-horizon consistency
+Quantization errors
+Scalable general world models
+Pixel Synthesis (Diffusion / GAN)
+Very High visual fidelity
+Slow generation speed
+Offline synthetic data augmentation
+Optimizer (Planner)
+Trajectory In-painting (Diffusion)
+Long-horizon consistency
+Computationally heavy at test-time
+Continuous control / Navigation
+Proportional Sampling (GFlowNet)
+Mode Diversity
+Complex training stability
+Discrete / Combinatorial Design
+Latent Space Search (VAE / GAN)
+Landscape Smoothing
+Strictly bound to latent quality
+Black-box Policy Search
+Evaluator (Critic)
+Energy Guidance (EBM)
+Energy Gradient ∇E
+Requires expensive MCMC sampling
+Differentiable Planning / Constraints
+Adversarial Scoring (GAN)
+Real/Fake Probability
+Adversarial game non-stationarity
+Inverse RL / Surrogate Reward
+Density Monitoring (Flow / VAE)
+Exact Likelihood log p(x)
+Compute-heavy for strict bounds
+Safety Guard / OOD Detection
+to-control gap. However, a fundamental limitation of VAE-
+based dynamics is posterior collapse: the reconstruction ob-
+jective often ignores complex, high-frequency visual details
+to focus on easily predictable features. Consequently, while
+latent modelers excel at core control, they may struggle in
+environments demanding precise spatial reasoning or fine-
+grained visual discrimination.
+Discrete
+Token
+Dynamics
+(Transformers).
+A
+rapidly
+
+===== PAGE 9 =====
+9
+Controller (Policy)
+Optimizer (Planner)
+Modeler (Simulator)
+Evaluator (Critic/Safety)
+2020-2021
+2022-2023
+2024-2025
+2014-2015
+2016-2017
+2018-2019
+Year
+Cosmos
+OpenVLA
+Pi0 / Pi0.5
+SafeDiffuser
+Number of papers
+500
+1000
+1500
+GAIL
+DDPG
+InfoGAIL
+AIRL
+World 
+Models
+GTI
+RT-1 / RT-2
+Diffusion 
+Policy
+GFlowNet
+Fig. 4: The evolutionary trajectory of generative models in physical decision-making. The bar chart illustrates the
+exponential growth in publications and the paradigm shift across our proposed functional roles (Controller, Modeler,
+Optimizer, Evaluator). While early research heavily focused on amortized policy inference (Controllers, e.g., DDPG), recent
+years have witnessed a massive surge in generative environment simulators (Modelers, e.g., Cosmos) and iterative planning
+mechanisms (Optimizers, e.g., Diffuser). Highlighted works represent seminal milestones bridging generative AI and
+physical intelligence. Publication statistics were aggregated from Google Scholar using targeted keywords to reflect the
+community’s shifting research priorities and validate our proposed taxonomy.
+emerging paradigm, exemplified by IRIS [39] and Ge-
+nie [152], discretizes the world into visual tokens (via VQ-
+VAE) and models dynamics as autoregressive token predic-
+tion. Recent works like ALPINE [109] and ARP [110] extend
+this to action-conditioned prediction for long-term plan-
+ning and exploration. This approach leverages the scaling
+laws of Transformers, allowing world models to be trained
+on massive internet-scale video datasets. Unlike RSSMs
+which struggle with long-horizon consistency, Transformer-
+based modelers excel at maintaining coherence over long
+sequences, enabling Generative Interactive Environments
+where agents can train entirely inside a hallucinated world.
+High-Fidelity Observation Simulation (Diffusion, GANs
+&
+Flows).
+To
+address
+the
+blurriness
+of
+VAEs,
+ap-
+proaches leverage Diffusion Models (e.g., ROSIE [153],
+GenAug [107], MTDiff [106]) or GANs (e.g., EGAN [101])
+to synthesize photorealistic scenes and counterfactual sce-
+narios. Normalizing Flows (NFs) also contribute by mod-
+eling complex posterior distributions for efficient Bayesian
+inference [105], [154]. These models excel at Sim-to-Real
+transfer and data augmentation by covering long-tail dis-
+tributions. However, their high inference latency makes
+them largely unsuitable for real-time online planning loops,
+restricting their use primarily to offline data synthesis or
+low-frequency re-planning.
+Synthesis and Model Selection. The selection of a gen-
+erative modeler depends on the role of simulation in the
+learning pipeline. For online planning where thousands
+of imaginary trajectories must be evaluated per second,
+Latent Modelers (RSSM) remain the only viable option due
+to their compact state space. For large-scale pre-training,
+Transformer-based Modelers offer a scalable path to learn
+general-purpose world models from diverse video data.
+Finally, for offline robustness testing or generating synthetic
+training data for corner cases, Pixel-space Diffusion pro-
+vides the visual fidelity to bridge the sim-to-real gap.
+4.3
+Generative Models as Optimizer (The Planner)
+The Optimizer serves as the inference engine responsible
+for solving the trajectory posterior p(τ∣O = 1) derived in
+Eq. (4). By effectively navigating high-dimensional density
+landscapes, these optimizers leverage generative priors to
+directly search for optimal trajectories τ ∗or parameters θ∗.
+Unlike feed-forward Controllers, Optimizers treat decision-
+making as an iterative inference or test-time sampling
+problem [155], [156], strategically trading off computational
+budget for higher precision and long-horizon consistency.
+Trajectory In-painting (Diffuser). Approaches such as Dif-
+fuser [55] reframe planning as a conditional in-painting
+task, where intermediate trajectories are generated via it-
+erative denoising between a start state s0 and a goal
+sg. This framework has been extended by Decision Dif-
+fuser [83] for constraint handling, AdaptDiffuser [87] for
+goal-conditioned tasks, and Decision Stacks [84] for mod-
+ular generation. This formulation marks a fundamental
+departure from traditional shooting methods, which rely on
+step-by-step dynamics rollouts and frequently suffer from
+compounding errors. By treating the entire trajectory τ as a
+single generative unit, these models ensure global temporal
+consistency and effectively mitigate the credit assignment
+
+===== PAGE 10 =====
+10
+challenges inherent in RL. Nevertheless, the benefits of this
+global perspective are tempered by a significant increase in
+inference latency, as the iterative denoising process (O(K)
+steps) is computationally more demanding than traditional
+single-step reactive policies.
+Proportional Sampling (GFlowNets). GFlowNets [58], [59]
+provide a rigorous framework for discrete and continuous
+optimization by learning to sample candidates proportional
+to the reward distribution: π(x) ∝R(x). Recent advance-
+ments, including Stochastic GFN [90], GAFlowNets [91],
+and Continuous GFlowNets (CFlowNets) [93], [157], have
+expanded its utility in complex control tasks. The primary
+strength of this framework lies in its inherent diversity-
+seeking mechanism, which renders GFlowNets superior
+to traditional MCMC or genetic algorithms in navigating
+multi-modal landscapes. While conventional optimizers of-
+ten converge to a single local optimum (mode collapse),
+GFlowNets maintain coverage over multiple high-reward
+modes. This property is particularly indispensable for
+tasks such as scientific discovery or complex motion plan-
+ning, where capturing a diverse set of high-quality solutions
+is as critical as finding the global optimum.
+Latent Space and Black-box Optimization. Generative
+models further facilitate efficient search by mapping rugged,
+high-dimensional optimization landscapes onto smooth la-
+tent manifolds. This strategy is exemplified by VAEs (e.g.,
+CageBO [118], CVAE-Opt [117]) and GANs used in topol-
+ogy optimization [114], [115], as well as Diffusion models
+applied to black-box optimization like DDOM [120] and
+DiffOPT [122]. Autoregressive models, such as BONET [125]
+and TNPs [126], similarly leverage pre-training to stream-
+line the optimization process. The core intuition behind
+this strategy is the circumvention of local optima prevalent
+in raw parameter spaces. Crucially, however, the efficacy
+of this approach remains strictly contingent upon the
+fidelity and smoothness of the learned latent manifold;
+any discontinuities or poorly modeled regions in the latent
+space can inadvertently lead to sub-optimal or physically
+infeasible solutions.
+Synthesis and Model Selection. The optimal generative
+optimizer is determined by the topology of the solution
+space. For continuous control tasks requiring long-horizon
+reasoning (e.g., maze navigation), Diffuser-style In-painting
+excels by treating time as a spatial dimension. For discrete,
+combinatorial discovery tasks where the goal is to find a
+diverse set of high-performing candidates (e.g., drug discov-
+ery), GFlowNets are currently unmatched. Finally, for black-
+box optimization problems where gradients are unavailable,
+Latent Space Optimization provides a differentiable surro-
+gate landscape to accelerate convergence.
+4.4
+Generative Models as Evaluator (The Critic)
+The Evaluator approximates the optimality likelihood term
+p(O∣τ) ∝exp(R(τ)) derived in Section 6.4, essentially serv-
+ing as the grounding mechanism for the trajectory posterior.
+Generative models upgrade this role from simple scalar
+scoring to distributional guidance and safety verification.
+Energy-Based Guidance (EBMs). EBMs learn an unnormal-
+ized density function E(s,a) which serves as a learnable
+1
+2
+3
+4
+5
+Inference
+Speed
+Sample
+Fidelity
+Mode Coverage
+(Diversity)
+Training
+Stability
+Scalability
+(a) One-Step (e.g., GANs)
+(b) Autoregressive (e.g., Transformers)
+(c) Iterative (e.g., Diffusion)
+(d) Amortized (e.g., GFlowNets)
+Fig. 5: Qualitative trade-off analysis of four generative
+paradigms across five critical dimensions. (a) One-Step
+Mapping (Blue) excels in speed but lacks diversity. (b) Au-
+toregressive (Orange) offers extreme scalability but suffers
+from error accumulation. (c) Iterative Refinement (Green)
+achieves high fidelity and mode coverage at the cost of
+inference speed. (d) Amortized Structural Inference (Pur-
+ple) specializes in diversity for discrete structures but faces
+training stability challenges.
+cost function, often used in Inverse RL (e.g., EBIL [63],
+DEBMs [62]) to capture expert reward structures. Impor-
+tantly, unlike black-box reward models, EBMs are differen-
+tiable with respect to the input actions. This architectural
+trait allows planners to use the energy gradient ∇aE(s,a) to
+optimize trajectories directly, proving particularly powerful
+for satisfying soft constraints during motion planning.
+Adversarial & Preference Learning (Discriminators). In
+frameworks like GAIL [31], the Discriminator D(s,a) acts
+as a surrogate reward signal. Modern extensions generalize
+this to learn from human preferences. Despite their effec-
+tiveness for Inverse RL, a major limitation is that these eval-
+uators are inherently unstable due to the non-stationarity of
+the adversarial game. Specifically, if the generator outpaces
+the discriminator (reward hacking), the evaluation signal
+collapses.
+Density-Based Safety Monitors. Explicit density models
+(Normalizing Flows, VAEs) function as OOD Detectors.
+By computing the exact log-likelihood log pθ(s,a), they
+quantify the familiarity of a state. Consequently, this density
+estimation serves as a fundamental component for Safe
+Deployment. If a proposed action falls into a low-density
+region (Out-of-Distribution), the Evaluator can veto the
+action or penalize the reward. This epistemic uncertainty
+estimation is therefore the primary defense against halluci-
+nated or dangerous behaviors in open-world environments.
+Synthesis and Model Selection. The choice of Evalua-
+tor is dictated by the availability of supervision signals.
+When expert demonstrations are available but no reward
+function exists, Discriminators (Adversarial Learning) are
+essential for extracting surrogate rewards. When explicit
+constraints must be satisfied, EBMs offer the geometric gra-
+dients needed for optimization. Crucially, for safety-critical
+deployment, incorporating a Density-Based Monitor is not
+optional but necessary to filter unreliable model outputs.
+
+===== PAGE 11 =====
+11
+5
+APPLICATIONS AND SAFETY ANALYSIS
+While generative models have demonstrated transforma-
+tive capabilities across diverse domains, their deployment
+in high-consequence decision-making introduces non-trivial
+safety risks. In this section, we move beyond algorithmic
+details to critically analyze the robustness, safety, and mis-
+use challenges inherent to each domain. We focus on three
+high-impact areas where the tension between generative
+expressivity and reliability is most acute. A summary of
+these risks and mitigation strategies is provided in Table 5.
+5.1
+Embodied AI and Robotics
+In the domain of Embodied AI, generative models are
+fundamentally reshaping the learning paradigm, advancing
+beyond classical control methods [158], [159], [160]. They act
+both as infinite data engines that mitigate data scarcity and
+generalist policy priors that enable robust generalization,
+as seen in foundation agents like Gato [94] and Multi-Game
+Transformers [95], [161].
+Generative Simulation and The Reality Gap. The scarcity
+of diverse real-world interaction data remains the primary
+bottleneck for robot learning. Generative modelers address
+this by synthesizing large-scale synthetic environments. To
+bridge the visual sim-to-real gap, early works relied on
+Domain Randomization [162], [163] and feature-level adap-
+tation [164]. Generative approaches extend this by seman-
+tically modifying simulation assets (e.g., GenAug [107])
+or synthesizing realistic textures via GANs (e.g., Retina-
+GAN [165]) [166], [167], [168]. More recently, foundation
+models have enabled automated curriculum generation;
+systems like RoboGen [169] leverage LLMs and genera-
+tive models to autonomously propose tasks and synthesize
+demonstration trajectories.
+Multimodal Policy Learning and Safety. On the control
+side, the field has witnessed a paradigm shift from uni-
+modal Gaussian policies to generative controllers, pre-
+dominantly driven by Diffusion Models [60], [170]. Ap-
+proaches like Diffusion Policy [6] model the policy as a
+conditional denoising process. This formulation captures the
+highly multi-modal action distributions inherent in human
+demonstrations (e.g., bypassing an obstacle from either the
+left or right), which standard MSE-based cloning fails to
+represent. This expressivity has culminated in generalist
+Vision-Language-Action (VLA) policies, such as Octo [171]
+and OpenVLA [172], extending even to complex locomo-
+tion [173].
+Despite their success, the stochastic nature of generative
+policies complicates safety verification [174]. A primary
+vulnerability is high-confidence hallucination during dis-
+tributional shifts, where diffusion policies may generate vi-
+sually coherent yet hazardous trajectories without intrinsic
+uncertainty signaling. Mitigating this requires integrating
+rigorous uncertainty quantification, such as conformal pre-
+diction [128] for statistical safety bounds, to detect and abort
+unsafe executions.
+5.2
+Autonomous Driving (AD)
+In autonomous driving, the long-tail distribution of safety-
+critical scenarios necessitates a transition from traditional
+log-replay to generative simulation, and from modular
+pipelines to end-to-end generative planning [70], [175],
+[176].
+Corner Case Synthesis and Domain Fidelity. Naturalistic
+driving logs are dominated by mundane cruising, leaving
+critical corner cases underrepresented. Generative mod-
+elers address this through controllable scene synthesis.
+Foundation models like MagicDrive [177] leverage layout-
+conditioned diffusion to synthesize photorealistic, multi-
+view sensor data, enhancing perception tasks [178], [179].
+Furthermore, world models like Drive-WM [180] and Traf-
+ficGen [181] facilitate counterfactual safety testing by simu-
+lating potential future trajectories and edge cases.
+However, a persistent gap remains in sensor-realistic
+consistency. Generative simulators often struggle to pre-
+serve high-frequency sensor characteristics, creating a do-
+main shift that degrades planner performance. Moreover,
+generative scene reconstruction is vulnerable to semantic
+adversarial attacks, where imperceptible perturbations in
+latent spaces can mislead planners into predicting haz-
+ardous maneuvers.
+Generative Planning and Hierarchical Safeguards. The
+field is transitioning towards end-to-end generative plan-
+ning, with systems like UniAD [182] casting decision-
+making as a joint occupancy and ego-motion prediction
+task. Nevertheless, the black-box nature of generative mod-
+els hinders certifiable safety. A model may output a high-
+likelihood trajectory that violates hard constraints (e.g.,
+crossing lane boundaries). To align with safety standards
+like ISO 26262, deployment requires a hierarchical safe-
+guard system (Figure 6). In this hybrid architecture [183],
+the generative model acts as a creative proposal distribution,
+while a safety filter grounded in formal logic (e.g., RSS [184])
+or conformal prediction (e.g., PlanCP [127]) actively rejects
+unsafe actions.
+5.3
+Scientific Discovery & Material Design
+In biochemical discovery and combinatorial optimization,
+generative models shift the focus from behavior imitation
+1. Proposal Generation
+2. Hierarchical Safeguard
+3. Safe Action
+Generative Model
+(Planner / Policy)
+Kinematic Constraints
+Collision Checking
+Uncertainty Monitor
+Controller
+(Execution)
+Infeasible
+High
+Uncertainty
+τ ∗
+Verified
+×
+×
+Replanning / Guidance
+Fig. 6: Hierarchical Safeguard System for Generative
+Decision-Making. To mitigate the stochastic risks of gen-
+erative models (e.g., hallucinations or constraint violations),
+the system employs a Generate-then-Filter paradigm. (1) The
+Generative Model acts as a creative proposal distribution.
+(2) A deterministic Safeguard Module (e.g., RSS for driving
+or Collision Checkers for robotics) filters out infeasible
+actions. (3) Only verified trajectories are executed. This
+architecture decouples expressivity from safety assurance.
+
+===== PAGE 12 =====
+12
+TABLE 5: Summary of Generative Applications, Systemic Risks, and Mitigation Strategies. We map each domain’s
+primary utility to our proposed functional taxonomy (in parentheses), highlighting the specific vulnerabilities induced by
+generative mechanisms and current mitigation frontiers.
+Domain
+Core Generative Utility (Role)
+Key Benefit
+Systemic Risk
+Mitigation Strategy
+Embodied AI & Robotics
+World Simulation (Modeler)
+Infinite Synthetic Data
+Physics Hallucination (Unreal dynamics)
+Neuro-symbolic Physics; Sim-to-Real
+Generalist Policies (Controller)
+Multimodal Behavior
+High-Confidence Errors (OOD shift)
+Conformal Prediction [128]; Uncertainty Bounds
+Autonomous Driving
+Corner Case Synthesis (Modeler)
+Long-tail Coverage
+Sensor/Domain Shift
+Adversarial Training; Generative Augmentation
+End-to-End Planning (Optimizer)
+Joint Occupancy
+Semantic Adversarial Attacks
+Hierarchical Safeguards (e.g., RSS)
+Scientific Discovery
+Structure Optimization (Optimizer)
+Diverse Candidate Search
+Proxy Exploitation (Invalid structures)
+Latent Sanitization; In-loop Verification
+Biochemical Design (Evaluator)
+Differentiable Guidance
+Dual-Use / Biosecurity (Toxin generation)
+Machine Unlearning; Alignment Guardrails
+to efficient combinatorial search [185], [186]. By learning
+the manifold of valid structures, these models act as high-
+dimensional optimizers that balance sample fidelity with
+structural diversity for tasks ranging from graph genera-
+tion [187], [188] to neural architecture search [189].
+From Engineering Design to Scientific Discovery. Gener-
+ative optimization reformulates decision-making as prob-
+abilistic sampling. Optimizers like RFdiffusion [190] and
+DiffDock [191] navigate complex chemical manifolds by
+sampling candidates proportional to their biological utility.
+This paradigm has been notably advanced by AlphaFold
+3 [192] for biomolecular interaction prediction, and by geo-
+metric generators like GeoDiff [193] and Equivariant Dif-
+fusion [194]. Similar generative principles apply to human
+kinematic synthesis (MotionDiffuse [195]). In the discrete
+domain, employing GFlowNets [58] to explore the posterior
+of optimal structures facilitates the discovery of novel pro-
+tein backbones distinct from existing datasets [196], [197].
+Research in prompt-based optimization [198], [199], [200]
+further highlights their versatility in handling diverse con-
+ditioning constraints.
+Reliability Gaps and Biosecurity Risks. Despite their ex-
+pressive power, generative optimizers are susceptible to
+proxy exploitation, a manifestation of Goodhart’s Law
+where models hack the inaccuracies of learned surrogate
+reward functions. By optimizing against imperfect proxies,
+generators often produce chemically invalid or structurally
+unstable candidates. More critically, their dual-use poten-
+tial poses significant biosecurity risks, as mechanisms de-
+signed for therapeutics can be repurposed to generate toxic
+pathogens. To mitigate these threats, the field is actively
+developing latent space sanitization [201] and human-in-
+the-loop verification to constrain exploration to ethical and
+physically plausible regions.
+6
+OPEN CHALLENGES AND FUTURE DIRECTIONS
+While generative models have initiated a paradigm shift in
+decision-making, bridging the gap between current capa-
+bilities and deployment-ready agents requires addressing
+several challenges. We highlight four pivotal directions for
+the next generation of generalist physical intelligence.
+6.1
+Foundation Models for Physical Intelligence
+The field is witnessing a paradigm shift from domain-
+specific controllers to Physical Foundation Models (PFMs)
+that natively model the continuous dynamics of the physical
+world [202]. Unlike early Vision-Language-Action models
+(e.g., RT-2 [7], [203], OpenVLA [172], and CogACT [204])
+that treated physical interaction as a discrete text completion
+problem, next-generation PFMs aim to bridge high-level
+semantic reasoning with low-level physical execution across
+diverse platforms. This evolution centers on three critical
+architectural dimensions: efficient sequence processing, pre-
+dictive world modeling, and continuous generative action.
+Efficient Sequence Backbones. Standard Transformers suf-
+fer from quadratic computational complexity O(N 2), creat-
+ing a bottleneck for processing dense, high-frequency senso-
+rimotor streams. To mitigate this, emerging research inves-
+tigates State-Space Models (SSMs), such as Mamba [205], as
+linear-complexity alternatives. In perception, architectures
+like Vision Mamba [206] demonstrate that visual SSMs
+can process high-resolution temporal inputs with signifi-
+cantly lower overhead. Extending this to decision-making,
+frameworks like Cobra [207] adapt SSMs to multi-modal
+reasoning. By compressing history into fixed-size recurrent
+states, these backbones efficiently capture the long-horizon
+dependencies crucial for complex manipulation tasks.
+General-Purpose World Models. Learning robust internal
+models of physical dynamics is fundamental to embodied
+intelligence. One prominent paradigm focuses on Latent
+Prediction (e.g., V-JEPA [208]), while generative video-
+based world models like Genie [152] treat physical in-
+teraction as a controllable generative process. The recent
+NVIDIA Cosmos [209] scales this approach, providing a
+world foundation model that adheres to conservation laws.
+By serving as scalable engines for both data synthesis and
+counterfactual planning, these models provide a unified
+substrate for agents to evaluate potential futures across
+diverse physical domains.
+Generative Action Modeling. A critical limitation of early
+foundation models lies in quantization errors. To address
+this, the field is shifting towards continuous generative
+modeling. Diffusion-based approaches, such as Diffusion
+Policy [6] and web-scale robotic diffusion models [153],
+[210], [211], treat trajectory planning as a probabilistic de-
+noising process. Recent advancements, including DP3 [212]
+for spatial generalization and Consistency Policy [213] for
+high-frequency control, have specialized these models for
+physical agency. Integrating these into unified backbones
+like Pi0 [202] enables agents to bridge abstract semantic
+goals with high-fidelity, continuous motor execution.
+
+===== PAGE 13 =====
+13
+6.2
+Real-Time Inference and Sampling Efficiency
+A critical bottleneck preventing deployment is inference la-
+tency. Bridging the frequency gap between Hertz-level gen-
+eration and Kilohertz-level control necessitates a transition
+to accelerated generation architectures.
+Distillation and Speculative Execution. Techniques like
+Consistency Models [214] learn to map arbitrary noise
+states directly to the solution manifold in a single step, dis-
+tilling the knowledge of slow diffusion teachers. In parallel,
+Speculative Decoding [215] offers a runtime acceleration
+strategy for autoregressive planners, trading parallel com-
+putation for reduced latency.
+Flow Matching and Straight Paths. Beyond distillation,
+a more fundamental approach lies in reformulating the
+generative ODE. Rectified Flow [57] and Conditional Flow
+Matching [56] enforce straight generation trajectories in the
+probability flow, minimizing transport cost. This enables
+high-quality sample generation with as few as 1–2 Euler
+steps, promising SOTA efficiency for real-time planning.
+Action Chunking and Cognitive Decoupling. At the de-
+ployment level, engineering paradigms like Action Chunk-
+ing [216] effectively mask inference latency by generat-
+ing and executing multi-step open-loop macro-actions, of-
+ten combined with temporal ensembling for smoothness.
+Concurrently, inspired by biological cognition, hierarchical
+frameworks like SwiftSage [217] decouple decision-making
+into deliberative planning (System 2) and reflexive execu-
+tion (System 1), reconciling the latency of foundation models
+with real-time sensorimotor responsiveness.
+6.3
+Trustworthy AI: Safety, Alignment, and Unlearning
+The transition from disembodied agents to embodied actors
+mandates that next-generation foundation models be verifi-
+able, behaviorally aligned, and corrigible.
+Certifiable Constrained Generation. To address the lack
+of safety guarantees, research is embedding rigorous con-
+straints into the sampling process. Approaches like SafeD-
+iffuser [218] integrate Control Barrier Functions (CBFs) into
+the reverse diffusion SDE to enforce invariant sets. Statisti-
+cally, applying conformal prediction to physical foundation
+models (e.g., KnowNo [128]) allows agents to quantify
+uncertainty with finite-sample guarantees, deferring actions
+when confidence is low.
+Safety-Aware Preference Alignment. Embodied control re-
+quires safety-aware preference optimization beyond stan-
+dard RLHF [219]. Emerging paradigms adapt constitutional
+AI principles to physical agents (e.g., AutoRT [220]), where
+models are fine-tuned on compliance with operational con-
+stitutions. Furthermore, optimization techniques like Direct
+Preference Optimization (DPO) [221] and LIMA [222] offer
+stable alignment objectives without separate reward mod-
+els. Recent efforts also explore using LVLMs as independent
+safety verifiers [223] to prune unsafe actions.
+Machine Unlearning for Anti-Misuse. The risk of dual-use
+creates a need for post-training safety measures. Machine
+unlearning [224] aims to erase dangerous knowledge with-
+out damaging overall performance. Unlike unlearning in
+LLMs, unlearning in physical policies requires erasing spe-
+cific behavioral primitives (e.g., synthesizing toxins) while
+preserving basic motor skills, which remains an open chal-
+lenge for future research [225].
+6.4
+Theoretical Foundations
+Bridging experimental success with rigorous guarantees is
+crucial for safety-critical deployment.
+Causal Identifiability. Current world models relying on ob-
+servational data often capture spurious correlations (causal
+confusion) rather than true physical mechanisms [226]. Fu-
+ture theory must integrate causal discovery into generative
+modeling [227], transitioning from correlational simulators
+to Causal World Models that support valid counterfactual
+reasoning and intervention.
+Generalization and Mode Coverage. We hypothesize that
+the superior performance of generative policies stems from
+their ability to cover the full distribution of optimal behav-
+iors (Mode Coverage). Rigorous work is needed to derive
+sample complexity bounds [228] that explicitly link the
+diversity of the generative posterior to the policy’s success
+rate in OOD scenarios, particularly in high-dimensional
+continuous spaces.
+7
+CONCLUSION
+In this survey, we have systematized the rapidly evolving
+landscape of generative models in decision-making. De-
+parting from conventional architecture-centric taxonomies,
+we established a unified framework grounded in the per-
+spective of Control as Inference. By mathematically fac-
+torizing the probabilistic control loop, we delineated four
+distinct functional roles for generative mechanisms: acting
+as Controllers that amortize policy inference, Modelers that
+enforce dynamics priors, Optimizers that refine trajectories
+via iterative sampling, and Evaluators that provide dense
+likelihood guidance.
+Our analysis reveals a fundamental transition in the
+field: from the scalar reward maximization of classical Re-
+inforcement Learning to high-fidelity distribution matching.
+Unlike standard policies that often collapse into brittle point
+estimates, generative models approximate the full trajectory
+posterior. This expressivity is the cornerstone for addressing
+modern challenges, including multi-modal imitation, robust
+offline learning from suboptimal data, and open-ended ex-
+ploration in high-dimensional spaces.
+Looking ahead, the convergence of generative AI and
+physical systems signals the dawn of Generalist Physical
+Intelligence. However, bridging the gap between generative
+simulation and physical execution requires addressing crit-
+ical challenges, including inference efficiency, safety verifi-
+cation, and causal reasoning. We envision next-generation
+agents that go beyond merely hallucinating plausible fu-
+tures to effectively realizing them in the physical world.
+REFERENCES
+[1]
+R. S. Sutton and A. G. Barto, Reinforcement Learning: An Introduc-
+tion, 2nd ed.
+Cambridge, Massachusetts: The MIT Press, 2018.
+
+===== PAGE 14 =====
+14
+[2]
+T. Haarnoja, A. Zhou, P. Abbeel, and S. Levine, “Soft actor-critic:
+Off-policy maximum entropy deep reinforcement learning with
+a stochastic actor,” in International conference on machine learning.
+PMLR, 2018, pp. 1861–1870.
+[3]
+J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov,
+“Proximal
+policy
+optimization
+algorithms,”
+arXiv
+preprint
+arXiv:1707.06347, 2017.
+[4]
+J. Fu, A. Kumar, O. Nachum, G. Tucker, and S. Levine, “D4rl:
+Datasets for deep data-driven reinforcement learning,” arXiv
+preprint arXiv:2004.07219, 2020.
+[5]
+S. Levine, A. Kumar, G. Tucker, and J. Fu, “Offline reinforcement
+learning: Tutorial, review, and perspectives on open problems,”
+arXiv preprint arXiv:2005.01643, 2020.
+[6]
+C. Chi, Z. Xu, S. Feng, E. Cousineau, Y. Du, B. Burchfiel,
+R. Tedrake, and S. Song, “Diffusion policy: Visuomotor policy
+learning via action diffusion,” The International Journal of Robotics
+Research, vol. 44, no. 10-11, pp. 1684–1704, 2025.
+[7]
+A. Brohan, N. Brown, J. Carbajal, Y. Chebotar, J. Dabis, C. Finn,
+K. Gopalakrishnan, K. Hausman, A. Herzog, J. Hsu et al., “RT-1:
+Robotics transformer for real-world control at scale,” in Robotics:
+Science and Systems (RSS), 2023.
+[8]
+D. Ha and J. Schmidhuber, “World models,” in Advances in Neural
+Information Processing Systems (NeurIPS), vol. 31, 2018.
+[9]
+S. Lee, Y. Wang, H. Etukuru, H. J. Kim, N. M. M. Shafiullah, and
+L. Pinto, “Behavior generation with latent actions,” in Interna-
+tional Conference on Machine Learning, 2024.
+[10]
+A. Ramesh, M. Pavlov, G. Goh, S. Gray, C. Voss, A. Radford,
+M. Chen, and I. Sutskever, “Zero-shot text-to-image generation,”
+in International conference on machine learning.
+Pmlr, 2021, pp.
+8821–8831.
+[11]
+J. Betker, G. Goh, L. Jing, T. Brooks, J. Wang, L. Li, L. Ouyang,
+J. Zhuang, J. Lee, Y. Guo et al., “Improving image generation with
+better captions,” OpenAI, Tech. Rep., 2023.
+[12]
+T. Brown, B. Mann, N. Ryder, M. Subbiah, J. D. Kaplan, P. Dhari-
+wal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell et al.,
+“Language models are few-shot learners,” Advances in neural
+information processing systems, vol. 33, pp. 1877–1901, 2020.
+[13]
+R. OpenAI, “Gpt-4 technical report. arxiv 2303.08774,” View in
+Article, vol. 2, no. 5, 2023.
+[14]
+M. Janner, Q. Li, and S. Levine, “Offline reinforcement learning
+as one big sequence modeling problem,” Advances in neural
+information processing systems, vol. 34, pp. 1273–1286, 2021.
+[15]
+J. Ho, A. Jain, and P. Abbeel, “Denoising diffusion probabilistic
+models,” Advances in neural information processing systems, vol. 33,
+pp. 6840–6851, 2020.
+[16]
+L. Chen, K. Lu, A. Rajeswaran, K. Lee, A. Grover, M. Laskin,
+P. Abbeel, A. Srinivas, and I. Mordatch, “Decision transformer:
+Reinforcement learning via sequence modeling,” Advances in
+neural information processing systems, vol. 34, pp. 15 084–15 097,
+2021.
+[17]
+Z. Zhu, H. Zhao, H. He, Y. Zhong, S. Zhang, H. Guo, T. Chen,
+and W. Zhang, “Diffusion models for reinforcement learning: A
+survey,” arXiv preprint arXiv:2311.01223, 2023.
+[18]
+W. Li, H. Luo, Z. Lin, C. Zhang, Z. Lu, and D. Ye, “A sur-
+vey on transformers in reinforcement learning,” arXiv preprint
+arXiv:2301.03044, 2023.
+[19]
+R. Gozalo-Brizuela, “Chatgpt is not all you need. a state of
+the art review of large generative ai models,” arXiv preprint
+arXiv:2301.04655, 2023.
+[20]
+Y. Cao, Q. Z. Sheng, J. McAuley, and L. Yao, “Reinforce-
+ment learning for generative ai: A survey,” arXiv preprint
+arXiv:2308.14328, 2023.
+[21]
+R. Bellman, “A markovian decision process,” Journal of mathemat-
+ics and mechanics, pp. 679–684, 1957.
+[22]
+V. Krishnamurthy, Partially observed Markov decision processes.
+Cambridge university press, 2016.
+[23]
+S. Levine, “Reinforcement learning and control as probabilistic
+inference: Tutorial and review,” arXiv preprint arXiv:1805.00909,
+2018.
+[24]
+F. Tao, “Data-driven decision-making based on noisy data
+samples—studies in the machine learning applications,” Ph.D.
+dissertation, The University of Texas at San Antonio, 2021.
+[25]
+V. Mnih, K. Kavukcuoglu, D. Silver, A. A. Rusu, J. Veness, M. G.
+Bellemare, A. Graves, M. Riedmiller, A. K. Fidjeland, G. Ostrovski
+et al., “Human-level control through deep reinforcement learn-
+ing,” nature, vol. 518, no. 7540, pp. 529–533, 2015.
+[26]
+D. Ernst, P. Geurts, and L. Wehenkel, “Tree-based batch mode
+reinforcement learning,” Journal of Machine Learning Research,
+vol. 6, 2005.
+[27]
+K. Arulkumaran, M. P. Deisenroth, M. Brundage, and A. A.
+Bharath, “Deep reinforcement learning: A brief survey,” IEEE
+signal processing magazine, vol. 34, no. 6, pp. 26–38, 2017.
+[28]
+M. G. Bellemare, W. Dabney, and R. Munos, “A distributional
+perspective on reinforcement learning,” in International Conference
+on Machine Learning, 2017, pp. 449–458.
+[29]
+R. S. Sutton, D. McAllester, S. Singh, and Y. Mansour, “Policy
+gradient methods for reinforcement learning with function ap-
+proximation,” Advances in neural information processing systems,
+vol. 12, 1999.
+[30]
+J. Schulman, S. Levine, P. Abbeel, M. Jordan, and P. Moritz, “Trust
+region policy optimization,” in International conference on machine
+learning.
+PMLR, 2015, pp. 1889–1897.
+[31]
+J. Ho and S. Ermon, “Generative adversarial imitation learning,”
+Advances in neural information processing systems, vol. 29, 2016.
+[32]
+J. G. Kuba, R. Chen, M. Wen, Y. Wen, F. Sun, J. Wang, and Y. Yang,
+“Trust region policy optimisation in multi-agent reinforcement
+learning,” arXiv preprint arXiv:2109.11251, 2021.
+[33]
+C. Yu, A. Velu, E. Vinitsky, J. Gao, Y. Wang, A. Bayen, and Y. Wu,
+“The surprising effectiveness of ppo in cooperative multi-agent
+games,” Advances in Neural Information Processing Systems, vol. 35,
+pp. 24 611–24 624, 2022.
+[34]
+T. P. Lillicrap, J. J. Hunt, A. Pritzel, N. Heess, T. Erez, Y. Tassa,
+D. Silver, and D. Wierstra, “Continuous control with deep rein-
+forcement learning,” arXiv preprint arXiv:1509.02971, 2015.
+[35]
+C. Sutton, A. McCallum et al., “An introduction to conditional
+random fields,” Foundations and Trends® in Machine Learning,
+vol. 4, no. 4, pp. 267–373, 2012.
+[36]
+K. Chua, R. Calandra, R. McAllister, and S. Levine, “Deep rein-
+forcement learning in a handful of trials using probabilistic dy-
+namics models,” Advances in neural information processing systems,
+vol. 31, 2018.
+[37]
+V. Feinberg, A. Wan, I. Stoica, M. I. Jordan, J. E. Gonzalez, and
+S. Levine, “Model-based value estimation for efficient model-free
+reinforcement learning,” arXiv preprint arXiv:1803.00101, 2018.
+[38]
+D. Hafner, T. Lillicrap, J. Ba, and M. Norouzi, “Dream to con-
+trol: Learning behaviors by latent imagination,” in International
+Conference on Learning Representations (ICLR), 2020.
+[39]
+V. Micheli, E. Alonso, and F. Fleuret, “Transformers are sample
+efficient world models,” in International Conference on Learning
+Representations (ICLR), 2023.
+[40]
+I. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-
+Farley, S. Ozair, A. Courville, and Y. Bengio, “Generative adver-
+sarial networks,” Communications of the ACM, vol. 63, no. 11, pp.
+139–144, 2020.
+[41]
+S. Bond-Taylor, A. Leach, Y. Long, and C. G. Willcocks, “Deep
+generative modelling: A comparative review of vaes, gans, nor-
+malizing flows, energy-based and autoregressive models,” IEEE
+transactions on pattern analysis and machine intelligence, vol. 44,
+no. 11, pp. 7327–7347, 2021.
+[42]
+D. P. Kingma and M. Welling, “Auto-encoding variational bayes,”
+arXiv preprint arXiv:1312.6114, 2013.
+[43]
+D. J. Rezende, S. Mohamed, and D. Wierstra, “Stochastic back-
+propagation and approximate inference in deep generative mod-
+els,” in International conference on machine learning.
+PMLR, 2014,
+pp. 1278–1286.
+[44]
+I. Higgins, L. Matthey, A. Pal, C. Burgess, X. Glorot, M. Botvinick,
+S. Mohamed, and A. Lerchner, “beta-vae: Learning basic visual
+concepts with a constrained variational framework,” in Interna-
+tional conference on learning representations, 2016.
+[45]
+A. Van Den Oord, O. Vinyals et al., “Neural discrete representa-
+tion learning,” Advances in neural information processing systems,
+vol. 30, 2017.
+[46]
+J.-Y. Zhu, T. Park, P. Isola, and A. A. Efros, “Unpaired image-to-
+image translation using cycle-consistent adversarial networks,”
+in Proceedings of the IEEE international conference on computer vision,
+2017, pp. 2223–2232.
+[47]
+A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N.
+Gomez, Ł. Kaiser, and I. Polosukhin, “Attention is all you need,”
+Advances in neural information processing systems, vol. 30, 2017.
+[48]
+A. Radford, J. Wu, R. Child, D. Luan, D. Amodei, I. Sutskever
+et al., “Language models are unsupervised multitask learners,”
+OpenAI blog, vol. 1, no. 8, p. 9, 2019.
+
+===== PAGE 15 =====
+15
+[49]
+J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “Bert: Pre-
+training of deep bidirectional transformers for language under-
+standing,” arXiv preprint arXiv:1810.04805, 2018.
+[50]
+Y. LeCun, S. Chopra, R. Hadsell, M. Ranzato, F. Huang et al.,
+“A tutorial on energy-based learning,” Predicting structured data,
+vol. 1, no. 0, 2006.
+[51]
+G. E. Hinton, “Training products of experts by minimizing con-
+trastive divergence,” Neural computation, vol. 14, no. 8, pp. 1771–
+1800, 2002.
+[52]
+J. Sohl-Dickstein, E. Weiss, N. Maheswaranathan, and S. Ganguli,
+“Deep unsupervised learning using nonequilibrium thermody-
+namics,” in International Conference on Machine Learning.
+PMLR,
+2015, pp. 2256–2265.
+[53]
+L. Yang, Z. Zhang, Y. Song, S. Hong, R. Xu, Y. Zhao, W. Zhang,
+B. Cui, and M.-H. Yang, “Diffusion models: A comprehensive
+survey of methods and applications,” ACM Computing Surveys,
+vol. 56, no. 4, pp. 1–39, 2023.
+[54]
+Y. Song, J. Sohl-Dickstein, D. P. Kingma, A. Kumar, S. Ermon, and
+B. Poole, “Score-based generative modeling through stochastic
+differential equations,” arXiv preprint arXiv:2011.13456, 2020.
+[55]
+M. Janner, Y. Du, J. Tenenbaum, and S. Levine, “Planning with
+diffusion for flexible behavior synthesis,” in International Confer-
+ence on Machine Learning.
+PMLR, 2022, pp. 9902–9915.
+[56]
+Y. Lipman, R. T. Q. Chen, H. Ben-Hamu, M. Nickel, and M. Le,
+“Flow matching for generative modeling,” in International Con-
+ference on Learning Representations (ICLR), 2023.
+[57]
+X. Liu, C. Gong, and Q. Liu, “Flow straight and fast: Learning
+to generate and transfer data with rectified flow,” in International
+Conference on Learning Representations (ICLR), 2023.
+[58]
+Y. Bengio, S. Lahlou, T. Deleu, E. J. Hu, M. Tiwari, and E. Bengio,
+“Gflownet foundations,” arXiv preprint arXiv:2111.09266, 2021.
+[59]
+E. Bengio, M. Jain, M. Korablyov, D. Precup, and Y. Bengio,
+“Flow network based generative models for non-iterative diverse
+candidate generation,” Advances in Neural Information Processing
+Systems, vol. 34, pp. 27 381–27 394, 2021.
+[60]
+N. Malkin, M. Jain, E. Bengio, C. Sun, and Y. Bengio, “Trajectory
+balance: Improved credit assignment in gflownets,” arXiv preprint
+arXiv:2201.13259, 2022.
+[61]
+L. Pan, N. Malkin, D. Zhang, and Y. Bengio, “Better training of
+gflownets with local credit and incomplete trajectories,” arXiv
+preprint arXiv:2302.01687, 2023.
+[62]
+T. Haarnoja, H. Tang, P. Abbeel, and S. Levine, “Reinforcement
+learning with deep energy-based policies,” in International confer-
+ence on machine learning.
+PMLR, 2017, pp. 1352–1361.
+[63]
+M. Liu, T. He, M. Xu, and W. Zhang, “Energy-based imitation
+learning,” in Proceedings of the 20th International Conference on
+Autonomous Agents and MultiAgent Systems, 2021, pp. 809–817.
+[64]
+Y. Li, J. Song, and S. Ermon, “Infogail: Interpretable imitation
+learning from visual demonstrations,” Advances in neural informa-
+tion processing systems, vol. 30, 2017.
+[65]
+N. Baram, O. Anschel, I. Caspi, and S. Mannor, “End-to-end dif-
+ferentiable adversarial imitation learning,” in International Con-
+ference on Machine Learning.
+PMLR, 2017, pp. 390–399.
+[66]
+P. Geiger and C.-N. Straehle, “Fail-safe adversarial generative
+imitation learning,” Transactions on Machine Learning Research,
+2022.
+[67]
+Y. Wang, C. Xu, B. Du, and H. Lee, “Learning to weight imperfect
+demonstrations,” in International Conference on Machine Learning.
+PMLR, 2021, pp. 10 961–10 970.
+[68]
+Y.-H. Wu, N. Charoenphakdee, H. Bao, V. Tangkaratt, and
+M. Sugiyama, “Imitation learning from imperfect demonstra-
+tion,” in International Conference on Machine Learning.
+PMLR,
+2019, pp. 6818–6827.
+[69]
+J. Fu, K. Luo, and S. Levine, “Learning robust rewards with
+adverserial inverse reinforcement learning,” in International Con-
+ference on Learning Representations, 2018.
+[70]
+P. Wang, D. Liu, J. Chen, H. Li, and C.-Y. Chan, “Decision mak-
+ing for autonomous driving via augmented adversarial inverse
+reinforcement learning,” in 2021 IEEE International Conference on
+Robotics and Automation (ICRA).
+IEEE, 2021, pp. 1036–1042.
+[71]
+H. Xiao, M. Herman, J. Wagner, S. Ziesche, J. Etesami, and T. H.
+Linh, “Wasserstein adversarial imitation learning,” arXiv preprint
+arXiv:1906.08113, 2019.
+[72]
+J. Sun, L. Yu, P. Dong, B. Lu, and B. Zhou, “Adversarial inverse re-
+inforcement learning with self-attention dynamics model,” IEEE
+Robotics and Automation Letters, vol. 6, no. 2, pp. 1880–1886, 2021.
+[73]
+A. Mandlekar, D. Xu, R. Mart´ın-Mart´ın, S. Savarese, and L. Fei-
+Fei, “Learning to generalize across long-horizon tasks from hu-
+man demonstrations,” arXiv preprint arXiv:2003.06085, 2020.
+[74]
+O. Mees, L. Hermann, and W. Burgard, “What matters in lan-
+guage conditioned robotic imitation learning over unstructured
+data,” IEEE Robotics and Automation Letters, vol. 7, no. 4, pp.
+11 205–11 212, 2022.
+[75]
+C. Lynch, M. Khansari, T. Xiao, V. Kumar, J. Tompson, S. Levine,
+and P. Sermanet, “Learning latent plans from play,” in Conference
+on robot learning.
+PMLR, 2020, pp. 1113–1132.
+[76]
+E. Rosete-Beas, O. Mees, G. Kalweit, J. Boedecker, and W. Bur-
+gard, “Latent plans for task-agnostic offline reinforcement learn-
+ing,” in Conference on Robot Learning. PMLR, 2023, pp. 1838–1849.
+[77]
+A. Ajay, A. Kumar, P. Agrawal, S. Levine, and O. Nachum, “Opal:
+Offline primitive discovery for accelerating offline reinforcement
+learning,” in International Conference on Learning Representations,
+2020.
+[78]
+F. Liu, H. Liu, A. Grover, and P. Abbeel, “Masked autoencoding
+for scalable and generalizable decision making,” Advances in
+Neural Information Processing Systems, vol. 35, pp. 12 608–12 618,
+2022.
+[79]
+P. N. Ward, A. Smofsky, and A. J. Bose, “Improving exploration
+in soft-actor-critic with normalizing flows policies,” arXiv preprint
+arXiv:1906.02771, 2019.
+[80]
+D.
+Akimov,
+V.
+Kurenkov,
+A.
+Nikulin,
+D.
+Tarasov,
+and
+S. Kolesnikov, “Let offline rl flow: Training conservative agents in
+the latent space of normalizing flows,” in 3rd Offline RL Workshop:
+Offline RL as a”Launchpad”, 2022.
+[81]
+Q. Zheng, M. Le, N. Shaul, Y. Lipman, A. Grover, and R. T. Chen,
+“Guided flows for generative modeling and decision making,”
+arXiv preprint arXiv:2311.13443, 2023.
+[82]
+T. Pearce, T. Rashid, A. Kanervisto, D. Bignell, M. Sun,
+R. Georgescu, S. V. Macua, S. Z. Tan, I. Momennejad, K. Hofmann
+et al., “Imitating human behaviour with diffusion models,” in The
+Eleventh International Conference on Learning Representations, 2022.
+[83]
+A. Ajay, Y. Du, A. Gupta, J. B. Tenenbaum, T. S. Jaakkola, and
+P. Agrawal, “Is conditional generative modeling all you need
+for decision making?” in The Eleventh International Conference on
+Learning Representations, 2023.
+[84]
+S. Zhao and A. Grover, “Decision stacks: Flexible reinforcement
+learning via modular generative models,” in Advances in Neural
+Information Processing Systems, vol. 36, 2023.
+[85]
+Z. Wang, J. J. Hunt, and M. Zhou, “Diffusion policies as an
+expressive policy class for offline reinforcement learning,” in
+International Conference on Learning Representations (ICLR), 2023.
+[86]
+H. Chen, C. Lu, C. Ying, H. Su, and J. Zhu, “Offline reinforcement
+learning via high-fidelity generative behavior modeling,” in The
+Eleventh International Conference on Learning Representations, 2023.
+[87]
+Z. Liang, Y. Mu, M. Ding, F. Ni, M. Tomizuka, and P. Luo, “Adapt-
+diffuser: Diffusion models as adaptive self-evolving planners,”
+in International Conference on Machine Learning.
+PMLR, 2023, pp.
+20 725–20 745.
+[88]
+L. Yang, Z. Huang, F. Lei, Y. Zhong, Y. Yang, C. Fang, S. Wen,
+B. Zhou, and Z. Lin, “Policy representation via diffusion
+probability model for reinforcement learning,” arXiv preprint
+arXiv:2305.13122, 2023.
+[89]
+Y. Du, S. Yang, B. Dai, H. Dai, O. Nachum, J. Tenenbaum,
+D. Schuurmans, and P. Abbeel, “Learning universal policies via
+text-guided video generation,” Advances in Neural Information
+Processing Systems, vol. 36, 2024.
+[90]
+L. Pan, D. Zhang, M. Jain, L. Huang, and Y. Bengio, “Stochastic
+generative flow networks,” in Uncertainty in Artificial Intelligence.
+PMLR, 2023, pp. 1628–1638.
+[91]
+L. Pan, D. Zhang, A. Courville, L. Huang, and Y. Bengio, “Gen-
+erative augmented flow networks,” in The Eleventh International
+Conference on Learning Representations, 2022.
+[92]
+M. Jiralerspong, B. Sun, D. Vucetic, T. Zhang, Y. Bengio, G. Gidel,
+and N. Malkin, “Expected flow networks in stochastic environ-
+ments and two-player zero-sum games,” in The Twelfth Interna-
+tional Conference on Learning Representations, 2023.
+[93]
+Y. Li, S. Luo, H. Wang, and J. Hao, “Cflownets: Continu-
+ous control with generative flow networks,” arXiv preprint
+arXiv:2303.02430, 2023.
+[94]
+S. Reed, K. Zolna, E. Parisotto, S. G. Colmenarejo, A. Novikov,
+G. Barth-Maron, M. Gimenez, Y. Sulsky, J. Kay, J. T. Springenberg
+et al., “A generalist agent,” Transactions on Machine Learning
+Research, 2022.
+
+===== PAGE 16 =====
+16
+[95]
+K.-H. Lee, O. Nachum, S. Yang, L. Lee, C. D. Freeman, S. Guadar-
+rama, I. Fischer, W. Xu, E. Jang, H. Michalewski, and I. Mordatch,
+“Multi-game decision transformers,” in Advances in Neural Infor-
+mation Processing Systems, A. H. Oh, A. Agarwal, D. Belgrave, and
+K. Cho, Eds., 2022.
+[96]
+Q. Zheng, A. Zhang, and A. Grover, “Online decision trans-
+former,” in international conference on machine learning.
+PMLR,
+2022, pp. 27 042–27 059.
+[97]
+B. Zhu, M. Dang, and A. Grover, “Scaling pareto-efficient de-
+cision making via offline multi-objective RL,” in The Eleventh
+International Conference on Learning Representations, 2023.
+[98]
+K. Wang, H. Zhao, X. Luo, K. Ren, W. Zhang, and D. Li,
+“Bootstrapped transformer for offline reinforcement learning,”
+Advances in Neural Information Processing Systems, vol. 35, pp.
+34 748–34 761, 2022.
+[99]
+D. H. Ackley, G. E. Hinton, and T. J. Sejnowski, “A learning
+algorithm for boltzmann machines,” Cognitive science, vol. 9,
+no. 1, pp. 147–169, 1985.
+[100] Y. Song and S. Ermon, “Generative modeling by estimating
+gradients of the data distribution,” Advances in neural information
+processing systems, vol. 32, 2019.
+[101] V. Huang, T. Ley, M. Vlachou-Konchylaki, and W. Hu, “Enhanced
+experience replay generation for efficient reinforcement learn-
+ing,” arXiv preprint arXiv:1705.08245, 2017.
+[102] D. Cho, D. Shim, and H. J. Kim, “S2p: State-conditioned image
+synthesis for data augmentation in offline reinforcement learn-
+ing,” Advances in Neural Information Processing Systems, vol. 35,
+pp. 11 534–11 546, 2022.
+[103] J. Han and J. Kim, “Selective data augmentation for improving
+the performance of offline reinforcement learning,” in 2022 22nd
+International Conference on Control, Automation and Systems (IC-
+CAS).
+IEEE, 2022, pp. 222–226.
+[104] L. Dinh, D. Krueger, and Y. Bengio, “Nice: Non-linear inde-
+pendent components estimation,” arXiv preprint arXiv:1410.8516,
+2014.
+[105] D. Rezende and S. Mohamed, “Variational inference with nor-
+malizing flows,” in International conference on machine learning.
+PMLR, 2015, pp. 1530–1538.
+[106] H. He, C. Bai, K. Xu, Z. Yang, W. Zhang, D. Wang, B. Zhao,
+and X. Li, “Diffusion model is an effective planner and data
+synthesizer for multi-task reinforcement learning,” Advances in
+neural information processing systems, vol. 36, 2024.
+[107] Z. Chen, I. S. Kweon, D. Xu et al., “GenAug: Retargeting be-
+haviors to unseen situations via generative augmentation,” in
+Robotics: Science and Systems (RSS), 2023.
+[108] C. Lu, P. Ball, Y. W. Teh, and J. Parker-Holder, “Synthetic expe-
+rience replay,” Advances in Neural Information Processing Systems,
+vol. 36, 2024.
+[109] S. Wang, Y. Shen, S. Feng, H. Sun, S.-H. Teng, and W. Chen,
+“Alpine: Unveiling the planning capability of autoregressive
+learning in language models,” in The Thirty-eighth Annual Con-
+ference on Neural Information Processing Systems, 2024.
+[110] D. Korenkevych, A. R. Mahmood, G. Vasan, and J. Bergstra, “Au-
+toregressive policies for continuous control deep reinforcement
+learning,” arXiv preprint arXiv:1903.11524, 2019.
+[111] L. Kong, J. Cui, Y. Zhuang, R. Feng, B. A. Prakash, and C. Zhang,
+“End-to-end stochastic optimization with energy-based model,”
+Advances in Neural Information Processing Systems, vol. 35, pp.
+11 341–11 354, 2022.
+[112] N. Tagasovska, N. C. Frey, A. Loukas, I. H¨otzel, J. Lafrance-
+Vanasse, R. L. Kelly, Y. Wu, A. Rajpal, R. Bonneau, K. Cho
+et al., “A pareto-optimal compositional energy-based model for
+sampling and optimization of protein sequences,” arXiv preprint
+arXiv:2210.10838, 2022.
+[113] Y. Zhao, J. Xie, and P. Li, “Learning energy-based generative
+models via coarse-to-fine expanding and sampling,” in Interna-
+tional Conference on Learning Representations, 2020.
+[114] C. He, S. Huang, R. Cheng, K. C. Tan, and Y. Jin, “Evolutionary
+multiobjective optimization driven by generative adversarial net-
+works (gans),” IEEE transactions on cybernetics, vol. 51, no. 6, pp.
+3129–3142, 2020.
+[115] E.-A. Sim, S. Lee, J. Oh, and J. Lee, “Gans and dcgans for
+generation of topology optimization validation curve through
+clustering analysis,” Advances in Engineering Software, vol. 152,
+p. 102957, 2021.
+[116] P. R. Kalehbasti, M. D. Lepech, and S. S. Pandher, “Augmenting
+high-dimensional nonlinear optimization with conditional gans,”
+in Proceedings of the Genetic and Evolutionary Computation Confer-
+ence Companion, 2021, pp. 1879–1880.
+[117] A. Hottung, B. Bhandari, and K. Tierney, “Learning a latent
+search space for routing problems using variational autoen-
+coders,” in International Conference on Learning Representations,
+2021.
+[118] W. Xing, J. Lee, C. Liu, and S. Zhu, “Bayesian optimization with
+hidden constraints via latent decision models,” arXiv preprint
+arXiv:2310.18449, 2023.
+[119] M. Gabri´e, G. M. Rotskoff, and E. Vanden-Eijnden, “Adaptive
+monte carlo augmented with normalizing flows,” Proceedings of
+the National Academy of Sciences, vol. 119, no. 10, p. e2109420119,
+2022.
+[120] S. Krishnamoorthy, S. M. Mashkaria, and A. Grover, “Diffusion
+models for black-box optimization,” in International Conference on
+Machine Learning.
+PMLR, 2023, pp. 17 842–17 857.
+[121] Z. Li, H. Yuan, K. Huang, C. Ni, Y. Ye, M. Chen, and M. Wang,
+“Diffusion model for data-driven black-box optimization,” arXiv
+preprint arXiv:2403.13219, 2024.
+[122] L. Kong, Y. Du, W. Mu, K. Neklyudov, V. De Bortol, H. Wang,
+D. Wu, A. Ferber, Y.-A. Ma, C. P. Gomes et al., “Diffusion
+models as constrained samplers for optimization with unknown
+constraints,” arXiv preprint arXiv:2402.18012, 2024.
+[123] M. Kim, S. Choi, H. Kim, J. Son, J. Park, and Y. Bengio, “Ant
+colony sampling with gflownets for combinatorial optimization,”
+arXiv preprint arXiv:2403.07041, 2024.
+[124] M. Jain, S. C. Raparthy, A. Hern´andez-Garcıa, J. Rector-Brooks,
+Y. Bengio, S. Miret, and E. Bengio, “Multi-objective gflownets,”
+in International conference on machine learning.
+PMLR, 2023, pp.
+14 631–14 653.
+[125] S. M. Mashkaria, S. Krishnamoorthy, and A. Grover, “Generative
+pretraining for black-box optimization,” in International Confer-
+ence on Machine Learning.
+PMLR, 2023, pp. 24 173–24 197.
+[126] T. Nguyen and A. Grover, “Transformer neural processes:
+Uncertainty-aware meta learning via sequence modeling,” in
+International Conference on Machine Learning.
+PMLR, 2022, pp.
+16 569–16 594.
+[127] J. Sun, Y. Jiang, J. Qiu, P. Nobel, M. J. Kochenderfer, and
+M. Schwager, “Conformal prediction for uncertainty-aware plan-
+ning with diffusion dynamics model,” Advances in Neural Infor-
+mation Processing Systems, vol. 36, 2024.
+[128] A. Z. Ren, A. Dixit, A. Bodrova et al., “Robots that ask for help:
+Uncertainty alignment via large language models,” Conference on
+Robot Learning (CoRL), 2023.
+[129] E. Hazan, S. Kakade, and K. Singh, “The nonstochastic control
+problem,” in Algorithmic Learning Theory, 2020.
+[130] X. Chen and E. Hazan, “Black-box control for linear dynamical
+systems,” in Conference on Learning Theory, 2021.
+[131] A. Kumar, A. Zhou, G. Tucker, and S. Levine, “Conservative q-
+learning for offline reinforcement learning,” Advances in Neural
+Information Processing Systems, vol. 33, pp. 1179–1191, 2020.
+[132] I. Kostrikov, A. Nair, and S. Levine, “Offline reinforcement
+learning with implicit q-learning,” in International Conference on
+Learning Representations, 2022.
+[133] S. Fujimoto, D. Meger, and D. Precup, “Off-policy deep reinforce-
+ment learning without exploration,” in International conference on
+machine learning.
+PMLR, 2019, pp. 2052–2062.
+[134] S. Fujimoto and S. S. Gu, “A minimalist approach to offline
+reinforcement learning,” Advances in neural information processing
+systems, vol. 34, pp. 20 132–20 145, 2021.
+[135] S. Emmons, B. Eysenbach, I. Kostrikov, and S. Levine, “Rvs: What
+is essential for offline rl via supervised learning?” in International
+Conference on Learning Representations, 2021.
+[136] T. Pearce, T. Rashid, A. Kanervisto, D. Bignell, M. Sun,
+R. Georgescu, S. V. Macua, S. Z. Tan, I. Momennejad, K. Hofmann
+et al., “Imitating human behaviour with diffusion models,” arXiv
+preprint arXiv:2301.10677, 2023.
+[137] M. Ahn, A. Brohan, N. Brown, Y. Chebotar, O. Cortes, B. David,
+C. Finn, C. Fu, K. Gopalakrishnan, K. Hausman et al., “Do as i
+can, not as i say: Grounding language in robotic affordances,”
+arXiv preprint arXiv:2204.01691, 2022.
+[138] J. Liang, W. Huang, F. Xia, P. Xu, H. Karol, and A. Zeng, “Code
+as policies: Language model programs for embodied control,” in
+IEEE International Conference on Robotics and Automation (ICRA),
+2023.
+[139] S. Yao, J. Zhao, D. Yu, N. Du, I. Shafran, K. R. Narasimhan, and
+Y. Cao, “React: Synergizing reasoning and acting in language
+
+===== PAGE 17 =====
+17
+models,” in The eleventh international conference on learning rep-
+resentations, 2022.
+[140] W. Huang, F. Xia, T. Xiao, H. Chan, J. Liang, P. Florence, A. Zeng,
+J. Tompson, I. Mordatch, Y. Chebotar et al., “Inner monologue:
+Embodied reasoning through planning with language models,”
+arXiv preprint arXiv:2207.05608, 2022.
+[141] G. Wang, Y. Xie, Y. Jiang, A. Mandlekar, C. Xiao, Y. Zhu, L. Fan,
+and A. Anandkumar, “Voyager: An open-ended embodied agent
+with large language models,” arXiv preprint arXiv:2305.16291,
+2023.
+[142] X. Zhu, Y. Chen, H. Tian, C. Tao, W. Su, C. Yang, G. Huang,
+B. Li, L. Lu, X. Wang et al., “Ghost in the minecraft: Generally
+capable agents for open-world environments via large language
+models with text-based knowledge and memory,” arXiv preprint
+arXiv:2305.17144, 2023.
+[143] J. S. Park, J. O’Brien, C. J. Cai, M. R. Morris, P. Liang, and M. S.
+Bernstein, “Generative agents: Interactive simulacra of human
+behavior,” in Proceedings of the 36th annual acm symposium on user
+interface software and technology, 2023, pp. 1–22.
+[144] S. Sinha, A. Mandlekar, and A. Garg, “S4rl: Surprisingly simple
+self-supervision for offline reinforcement learning in robotics,” in
+Conference on Robot Learning.
+PMLR, 2022, pp. 907–917.
+[145] M. Laskin, K. Lee, A. Stooke, L. Pinto, P. Abbeel, and A. Srinivas,
+“Reinforcement learning with augmented data,” Advances in neu-
+ral information processing systems, vol. 33, pp. 19 884–19 895, 2020.
+[146] M. Thomas, A. Bender, and C. de Graaf, “Integrating structure-
+based approaches in generative molecular design,” Current Opin-
+ion in Structural Biology, vol. 79, p. 102559, 2023.
+[147] T. Ashuach, M. I. Gabitto, R. V. Koodli, G.-A. Saldi, M. I. Jordan,
+and N. Yosef, “Multivi: deep generative model for the integration
+of multimodal data,” Nature Methods, pp. 1–10, 2023.
+[148] D. Hafner, T. Lillicrap, I. Fischer, R. Villegas, D. Ha, H. Lee,
+and J. Davidson, “Learning latent dynamics for planning from
+pixels,” in International conference on machine learning.
+PMLR,
+2019, pp. 2555–2565.
+[149] J. Schrittwieser, I. Antonoglou, T. Hubert, K. Simonyan, L. Sifre,
+S. Schmitt, A. Guez, E. Lockhart, D. Hassabis, T. Graepel et al.,
+“Mastering atari, go, chess and shogi by planning with a learned
+model,” Nature, vol. 588, no. 7839, pp. 604–609, 2020.
+[150] W. Yan, Y. Zhang, P. Abbeel, and A. Srinivas, “Videogpt:
+Video generation using vq-vae and transformers,” arXiv preprint
+arXiv:2104.10157, 2021.
+[151] P. Wu, A. Escontrela, D. Hafner, K. Goldberg, and P. Abbeel,
+“Daydreamer: World models for physical robot learning,” in
+Conference on Robot Learning, 2022.
+[152] J. Bruce, M. D. Dennis, A. Edwards, J. Parker-Holder, Y. Shi,
+E. Hughes, M. Lai, A. Mavalankar, R. Steigerwald, C. Apps
+et al., “Genie: Generative interactive environments,” in Forty-first
+International Conference on Machine Learning, 2024.
+[153] T. Yu, T. Xiao, A. Stone, J. Tompson, A. Brohan, S. Wang, J. Singh,
+C. Tan, J. Peralta, B. Ichter et al., “Scaling robot learning with se-
+mantically imagined experience,” arXiv preprint arXiv:2302.11550,
+2023.
+[154] T. M¨uller, B. McWilliams, F. Rousselle, M. Gross, and J. Nov´ak,
+“Neural importance sampling,” ACM Transactions on Graphics
+(ToG), vol. 38, no. 5, pp. 1–19, 2019.
+[155] X. Qiao, Y. Yang, and H. Li, “Defending neural backdoors via
+generative distribution modeling,” Advances in neural information
+processing systems, vol. 32, 2019.
+[156] T. Lattimore, C. Szepesvari, and G. Weisz, “Learning with good
+feature representations in bandits and in rl with a generative
+model,” in International Conference on Machine Learning.
+PMLR,
+2020, pp. 5662–5670.
+[157] S. Lahlou, T. Deleu, P. Lemos, D. Zhang, A. Volokhova,
+A. Hern´andez-Garc´ıa, L. N. Ezzine, Y. Bengio, and N. Malkin, “A
+theory of continuous generative flow networks,” arXiv preprint
+arXiv:2301.12594, 2023.
+[158] Y. Duan, X. Chen, R. Houthooft, J. Schulman, and P. Abbeel,
+“Benchmarking deep reinforcement learning for continuous con-
+trol,” in International conference on machine learning.
+PMLR, 2016,
+pp. 1329–1338.
+[159] S. Levine, C. Finn, T. Darrell, and P. Abbeel, “End-to-end training
+of deep visuomotor policies,” The Journal of Machine Learning
+Research, vol. 17, no. 1, pp. 1334–1373, 2016.
+[160] R. Bailo, M. Bongini, J. A. Carrillo, and D. Kalise, “Optimal con-
+sensus control of the cucker-smale model,” IFAC-PapersOnLine,
+vol. 51, no. 13, pp. 1–6, 2018.
+[161] J. Li, Y. Li, N. Wadhwa, Y. Pritch, D. E. Jacobs, M. Rubinstein,
+M. Bansal, and N. Ruiz, “Unbounded: A generative infinite game
+of character life simulation,” arXiv preprint arXiv:2410.18975,
+2024.
+[162] J. Tobin, R. Fong, A. Ray, J. Schneider, W. Zaremba, and P. Abbeel,
+“Domain randomization for transferring deep neural networks
+from simulation to the real world,” in 2017 IEEE/RSJ international
+conference on intelligent robots and systems (IROS).
+IEEE, 2017, pp.
+23–30.
+[163] X. B. Peng, M. Andrychowicz, W. Zaremba, and P. Abbeel, “Sim-
+to-real transfer of robotic control with dynamics randomization,”
+in 2018 IEEE international conference on robotics and automation
+(ICRA).
+IEEE, 2018, pp. 3803–3810.
+[164] J. Hoffman, E. Tzeng, T. Park, J.-Y. Zhu, P. Isola, K. Saenko,
+A. Efros, and T. Darrell, “Cycada: Cycle-consistent adversarial
+domain adaptation,” in International conference on machine learn-
+ing.
+Pmlr, 2018, pp. 1989–1998.
+[165] D. Ho, K. Rao, Z. Xu, E. Jang, M. Khansari, and Y. Bai, “Retinagan:
+An object-aware approach to sim-to-real transfer,” in 2021 IEEE
+International Conference on Robotics and Automation (ICRA).
+IEEE,
+2021, pp. 10 920–10 926.
+[166] S. H¨ofer, K. Bekris, A. Handa, J. C. Gamboa, M. Mozifian,
+F. Golemo, C. Atkeson, D. Fox, K. Goldberg, J. Leonard et al.,
+“Sim2real in robotics and automation: Applications and chal-
+lenges,” IEEE transactions on automation science and engineering,
+2021.
+[167] X. Chen, J. Hu, C. Jin, L. Li, and L. Wang, “Understanding domain
+randomization for sim-to-real transfer,” in International Conference
+on Learning Representations, 2022.
+[168] M. Wang and W. Deng, “Deep visual domain adaptation: A
+survey,” Neurocomputing, vol. 312, pp. 135–153, 2018.
+[169] Y. Wang, X. Zhou et al., “RoboGen: Towards unleashing infinite
+data for automated robot learning via generative simulation,” in
+International Conference on Machine Learning (ICML), 2023.
+[170] D. Zhang, R. T. Chen, C.-H. Liu, A. Courville, and Y. Bengio,
+“Diffusion generative flow samplers: Improving learning signals
+through partial trajectory optimization,” in The Twelfth Interna-
+tional Conference on Learning Representations, 2023.
+[171] O. M. Team, D. Ghosh, H. Walke, K. Pertsch, K. Black, O. Mees,
+S. Dasari, J. Hejna, T. Kreiman, C. Xu et al., “Octo: An open-source
+generalist robot policy,” arXiv preprint arXiv:2405.12213, 2024.
+[172] M. J. Kim, K. Pertsch, S. Karamcheti, T. Xiao, A. Balakrishna,
+S. Nair, R. Rafailov, E. Foster, G. Lam, P. Sanketi et al., “Openvla:
+An open-source vision-language-action model,” arXiv preprint
+arXiv:2406.09246, 2024.
+[173] G. B. Margolis, G. Yang, K. Paigwar, T. Chen, and P. Agrawal,
+“Rapid locomotion via reinforcement learning,” The International
+Journal of Robotics Research, vol. 43, no. 4, pp. 572–587, 2024.
+[174] J. Hu, H. Zhong, C. Jin, and L. Wang, “Provable sim-to-real
+transfer in continuous domain with partial observations,” arXiv
+preprint arXiv:2210.15598, 2022.
+[175] A. Ghosh, B. Bhattacharya, and S. B. R. Chowdhury, “Sad-
+gan: Synthetic autonomous driving using generative adversarial
+networks,” arXiv preprint arXiv:1611.08788, 2016.
+[176] L. Chen, X. Hu, W. Tian, H. Wang, D. Cao, and F.-Y. Wang, “Paral-
+lel planning: A new motion planning framework for autonomous
+driving,” IEEE/CAA Journal of Automatica Sinica, vol. 6, no. 1, pp.
+236–246, 2018.
+[177] R. Gao, K. Chen et al., “MagicDrive: Street view generation
+with diverse 3d geometry control,” in IEEE/CVF Conference on
+Computer Vision and Pattern Recognition (CVPR), 2024.
+[178] A. Marathe, D. Ramanan, R. Walambe, and K. Kotecha, “Wedge:
+A multi-weather autonomous driving dataset built from gener-
+ative vision-language models,” in Proceedings of the IEEE/CVF
+Conference on Computer Vision and Pattern Recognition, 2023, pp.
+3317–3326.
+[179] H. Arnelid, E. L. Zec, and N. Mohammadiha, “Recurrent condi-
+tional generative adversarial networks for autonomous driving
+sensor modelling,” in 2019 IEEE Intelligent transportation systems
+conference (ITSC).
+IEEE, 2019, pp. 1613–1618.
+[180] Y. Wang et al., “Drive-WM: On the utility of world models for
+autonomous driving,” in IEEE/CVF Conference on Computer Vision
+and Pattern Recognition (CVPR), 2024.
+[181] L. Feng, Q. Li, Z. Peng, S. Tan, and B. Zhou, “Trafficgen: Learning
+to generate diverse and realistic traffic scenarios,” in 2023 IEEE
+International Conference on Robotics and Automation (ICRA).
+IEEE,
+2023, pp. 3567–3575.
+
+===== PAGE 18 =====
+18
+[182] Y. Hu, J. Yang, L. Chen, K. Li, C. Sima, X. Zhu, S. Chai, and
+S. Du, “Planning-oriented autonomous driving,” in IEEE/CVF
+Conference on Computer Vision and Pattern Recognition (CVPR),
+2023.
+[183] J. Huang, S. Xie, J. Sun, Q. Ma, C. Liu, D. Lin, and B. Zhou,
+“Learning a decision module by imitating driver’s control be-
+haviors,” in Conference on Robot Learning.
+PMLR, 2021, pp. 1–10.
+[184] S. Shalev-Shwartz, S. Shammah, and A. Shashua, “On a formal
+model of safe and scalable self-driving cars,” arXiv preprint
+arXiv:1708.06374, 2017.
+[185] Y. Bengio, A. Lodi, and A. Prouvost, “Machine learning for
+combinatorial optimization: a methodological tour d’horizon,”
+European Journal of Operational Research, vol. 290, no. 2, pp. 405–
+421, 2021.
+[186] J. Zhang, C. Liu, X. Li, H.-L. Zhen, M. Yuan, Y. Li, and J. Yan,
+“A survey for solving mixed integer programming via machine
+learning,” Neurocomputing, vol. 519, pp. 205–217, 2023.
+[187] Y. Li, L. Zhang, and Z. Liu, “Multi-objective de novo drug design
+with conditional graph generative model,” Journal of cheminfor-
+matics, vol. 10, pp. 1–24, 2018.
+[188] A. Grover, A. Zweig, and S. Ermon, “Graphite: Iterative gener-
+ative modeling of graphs,” in International conference on machine
+learning.
+PMLR, 2019, pp. 2434–2444.
+[189] D. Liu, M. Jain, B. F. Dossou, Q. Shen, S. Lahlou, A. Goyal,
+N. Malkin, C. C. Emezue, D. Zhang, N. Hassen et al., “Gflowout:
+Dropout with generative flow networks,” in International Confer-
+ence on Machine Learning.
+PMLR, 2023, pp. 21 715–21 729.
+[190] J. L. Watson, D. Juergens, N. R. Bennett, B. L. Trippe, J. Yim, H. E.
+Eisenach, W. Ahern, A. J. Borst, R. J. Ragotte, L. F. Milles et al., “De
+novo design of protein structure and function with rfdiffusion,”
+Nature, vol. 620, no. 7976, pp. 1089–1100, 2023.
+[191] G. Corso, H. St¨ark, B. Jing, R. Barzilay, and T. Jaakkola, “DiffDock:
+Diffusion steps, twists, and turns for molecular docking,” in
+International Conference on Learning Representations (ICLR), 2023.
+[192] J. Abramson, J. Adler, J. Dunger, R. Evans, T. Green, A. Pritzel,
+O. Ronneberger, L. Willmore, A. J. Ballard, J. Bambrick et al.,
+“Accurate structure prediction of biomolecular interactions with
+alphafold 3,” Nature, vol. 630, no. 8016, pp. 493–500, 2024.
+[193] M. Xu, L. Yu, Y. Song, C. Shi, S. Ermon, and J. Tang, “Geodiff:
+A geometric diffusion model for molecular conformation gener-
+ation,” arXiv preprint arXiv:2203.02923, 2022.
+[194] E. Hoogeboom, V. G. Satorras, C. Vignac, and M. Welling, “Equiv-
+ariant diffusion for molecule generation in 3d,” in International
+conference on machine learning.
+PMLR, 2022, pp. 8867–8887.
+[195] M. Zhang, Z. Cai, L. Pan, F. Hong, X. Guo, L. Yang, and Z. Liu,
+“Motiondiffuse: Text-driven human motion generation with dif-
+fusion model,” IEEE transactions on pattern analysis and machine
+intelligence, vol. 46, no. 6, pp. 4115–4128, 2024.
+[196] M. Jain, E. Bengio, A. Hernandez-Garcia, J. Rector-Brooks, B. F.
+Dossou, C. A. Ekbote, J. Fu, T. Zhang, M. Kilgour, D. Zhang et al.,
+“Biological sequence design with gflownets,” in International
+Conference on Machine Learning.
+PMLR, 2022, pp. 9786–9801.
+[197] M. Kim, T. Yun, E. Bengio, D. Zhang, Y. Bengio, S. Ahn, and
+J. Park, “Local search gflownets,” in The Twelfth International
+Conference on Learning Representations, 2023.
+[198] X. Xin, T. Pimentel, A. Karatzoglou, P. Ren, K. Christakopoulou,
+and Z. Ren, “Rethinking reinforcement learning for recommenda-
+tion: A prompt perspective,” in Proceedings of the 45th International
+ACM SIGIR Conference on Research and Development in Information
+Retrieval, 2022, pp. 1347–1357.
+[199] M. Deng, J. Wang, C.-P. Hsieh, Y. Wang, H. Guo, T. Shu,
+M. Song, E. P. Xing, and Z. Hu, “Rlprompt: Optimizing dis-
+crete text prompts with reinforcement learning,” arXiv preprint
+arXiv:2205.12548, 2022.
+[200] T. Zhang, X. Wang, D. Zhou, D. Schuurmans, and J. E. Gonzalez,
+“Tempera: Test-time prompt editing via reinforcement learning,”
+in The Eleventh International Conference on Learning Representations,
+2023.
+[201] M. Schwalbe et al., “Predictable and safe AI for science,” arXiv
+preprint arXiv:2402.16782, 2024.
+[202] P. Intelligence, K. Black, N. Brown, D. Driess, A. Esmail, M. Equi,
+C. Finn, N. Fusai, L. Groom, K. Hausman et al., “π0: A vision-
+language-action flow model for general robot control,” arXiv
+preprint arXiv:2504.16054, 2025.
+[203] B. Zitkovich, T. Yu, S. Xu, P. Xu, T. Xiao, F. Xia, J. Wu, P. Wohlhart,
+S. Welker, A. Wahid et al., “RT-2: Vision-language-action models
+transfer web knowledge to robotic control,” in Conference on Robot
+Learning.
+PMLR, 2023, pp. 2165–2183.
+[204] Q. Li, Y. Liang, Z. Wang, L. Luo, X. Chen, M. Liao, F. Wei,
+Y. Deng, S. Xu, Y. Zhang et al., “Cogact: A foundational vision-
+language-action model for synergizing cognition and action in
+robotic manipulation,” arXiv preprint arXiv:2411.19650, 2024.
+[205] A. Gu and T. Dao, “Mamba: Linear-time sequence modeling with
+selective state spaces,” in First conference on language modeling,
+2024.
+[206] L. Zhu et al., “Vision Mamba: Efficient visual representation
+learning with bidirectional state space model,” in International
+Conference on Machine Learning (ICML), 2024.
+[207] H. Zhao, M. Zhang, W. Zhao, P. Ding, S. Huang, and D. Wang,
+“Cobra: Extending mamba to multi-modal large language model
+for efficient inference,” in Proceedings of the AAAI Conference on
+Artificial Intelligence, vol. 39, no. 10, 2025, pp. 10 421–10 429.
+[208] A. Bardes, Q. Garrido, J. Ponce, X. Chen, M. Rabbat, Y. Le-
+Cun, M. Assran, and N. Ballas, “Revisiting feature prediction
+for learning visual representations from video,” arXiv preprint
+arXiv:2404.08471, 2024.
+[209] N. Agarwal, A. Ali, M. Bala, Y. Balaji, E. Barker, T. Cai,
+P. Chattopadhyay, Y. Chen, Y. Cui, Y. Ding et al., “Cosmos
+world foundation model platform for physical ai,” arXiv preprint
+arXiv:2501.03575, 2025.
+[210] I. Kapelyukh, V. Vosylius, and E. Johns, “Dall-e-bot: Introducing
+web-scale diffusion models to robotics,” IEEE Robotics and Au-
+tomation Letters, vol. 8, no. 7, pp. 3956–3963, 2023.
+[211] G. Gupta, K. Yadav, Y. Gal, D. Batra, Z. Kira, C. Lu, and T. G.
+Rudner, “Pre-trained text-to-image diffusion models are versatile
+representation learners for control,” Advances in Neural Informa-
+tion Processing Systems, vol. 37, pp. 74 182–74 210, 2025.
+[212] Y. Ze, G. Zhang, K. Zhang, C. Hu, M. Wang, and D. Xu, “3d
+diffusion policy: Generalizable visuomotor policy learning via
+simple 3d representations,” in Robotics: Science and Systems (RSS),
+2024.
+[213] A. Prasad, K. Lin, J. Wu, L. Zhou, and J. Bohg, “Consistency pol-
+icy: Accelerated visuomotor policies via consistency distillation,”
+arXiv preprint arXiv:2405.07503, 2024.
+[214] Y. Song, P. Dhariwal, M. Chen, and I. Sutskever, “Consistency
+models,” in International Conference on Machine Learning (ICML),
+2023.
+[215] Y. Leviathan, M. Kalman, and Y. Matias, “Fast inference from
+transformers via speculative decoding,” in International Confer-
+ence on Machine Learning (ICML), 2023.
+[216] T. Z. Zhao, V. Kumar, S. Levine, and C. Finn, “Learning fine-
+grained bimanual manipulation with low-cost hardware,” in
+Robotics: Science and Systems (RSS), 2023.
+[217] B. Y. Lin, Y. Fu, K. Yang, F. Brahman, S. Huang, C. Bhagavatula,
+P. Ammanabrolu, Y. Choi, and X. Ren, “Swiftsage: A generative
+agent with fast and slow thinking for complex interactive tasks,”
+Advances in Neural Information Processing Systems, vol. 36, pp.
+23 813–23 825, 2023.
+[218] W. He, Y. Huang, R. Wei, Y. Wang, and H. Liu, “Safediffuser: Safe
+planning with diffusion probabilistic models,” in International
+Conference on Learning Representations (ICLR), 2025.
+[219] L. Ouyang, J. Wu, X. Jiang, D. Almeida, C. Wainwright,
+P. Mishkin, C. Zhang, S. Agarwal, K. Slama, A. Ray et al., “Train-
+ing language models to follow instructions with human feed-
+back,” Advances in Neural Information Processing Systems, vol. 35,
+pp. 27 730–27 744, 2022.
+[220] M. Ahn et al., “Autort: Embodied foundation models for large
+scale robot learning,” arXiv preprint arXiv:2401.12963, 2024.
+[221] R. Rafailov, A. Sharma, E. Mitchell, C. D. Manning, S. Ermon, and
+C. Finn, “Direct preference optimization: Your language model is
+secretly a reward model,” Advances in neural information processing
+systems, vol. 36, pp. 53 728–53 741, 2023.
+[222] C. Zhou, P. Liu, P. Xu, S. Iyer, J. Sun, Y. Mao, X. Ma, A. Efrat,
+P. Yu, L. Yu et al., “Lima: Less is more for alignment,” Advances in
+Neural Information Processing Systems, vol. 36, pp. 55 006–55 021,
+2023.
+[223] W. Huang, C. Wang, R. Zhang, Y. Li, J. Wu, and L. Fei-Fei,
+“Voxposer: Composable 3d value maps for robotic manipulation
+with language models,” in Conference on Robot Learning (CoRL),
+2023.
+[224] Y. Cao and J. Yang, “Towards making systems forget with ma-
+chine unlearning,” in 2015 IEEE symposium on security and privacy.
+IEEE, 2015, pp. 463–480.
+
+===== PAGE 19 =====
+19
+[225] V. S. Chundawat, A. K. Tarun, M. Mandal, and M. Kankanhalli,
+“Can bad teaching induce forgetting? unlearning in deep net-
+works using an incompetent teacher,” in Proceedings of the AAAI
+Conference on Artificial Intelligence, vol. 37, no. 6, 2023, pp. 7210–
+7217.
+[226] P. De Haan, D. Jayaraman, and S. Levine, “Causal confusion
+in imitation learning,” Advances in neural information processing
+systems, vol. 32, 2019.
+[227] B. Sch¨olkopf, F. Locatello, S. Bauer, N. R. Ke, N. Kalchbrenner,
+A. Goyal, and Y. Bengio, “Toward causal representation learn-
+ing,” Proceedings of the IEEE, vol. 109, no. 5, pp. 612–634, 2021.
+[228] S. Chen et al., “Sampling is as easy as learning the score: theory
+for diffusion models with minimal data assumptions,” in ICLR,
+2023.

@@ -1,0 +1,11 @@
+Title: Executive Leadership and Organizational Performance: Suggestions for a New Theory and Methodology
+Authors: David V. Day, Robert G. Lord
+Source: OpenAlex
+Date: 1988-09-01
+URL: https://doi.org/10.1177/014920638801400308
+
+Abstract (EN):
+It is argued that the question over whether top-level leadership significantly affects organizationalperformance can be clarified by properly interpreting the results of executive succession studies that have used economic aspects of organizational performance as criteria. When several methodological concerns are addressed, it is evident that executive leadership can explain as much as 45% of an organization's performance. In order to more fully understand how upperlevel leaders affect organizational performance, we propose that a theory of executive leadership be developed. Guidelines are providedfor developing such a theory. Specifically, problems to avoid, methodologies to consider, and places to look for relevant theory are discussed.
+
+Abstract (KO):
+최고위층의 리더십이 조직성과에 유의미한 영향을 미치는지에 대한 의문은 조직성과의 경제적 측면을 기준으로 삼은 임원승계연구의 결과를 적절히 해석함으로써 명확해질 수 있다는 주장이다. 몇 가지 방법론적 문제를 다루면 경영진의 리더십이 조직 성과의 최대 45%를 설명할 수 있다는 것이 분명해졌습니다. 상위 리더가 조직 성과에 어떻게 영향을 미치는지 더 완벽하게 이해하기 위해 우리는 경영진 리더십 이론을 개발할 것을 제안합니다. 그러한 이론을 개발하기 위한 지침이 제공됩니다. 구체적으로 피해야 할 문제, 고려해야 할 방법론, 관련 이론을 찾을 수 있는 장소에 대해 논의합니다.

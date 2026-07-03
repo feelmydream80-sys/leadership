@@ -1,0 +1,11 @@
+Title: Quantum decision making by social agents
+Authors: V. I. Yukalov, D. Sornette
+Source: arXiv
+Date: 2012-02-21
+URL: http://arxiv.org/abs/1202.4918v2
+
+Abstract (EN):
+The influence of additional information on the decision making of agents, who are interacting members of a society, is analyzed within the mathematical framework based on the use of quantum probabilities. The introduction of social interactions, which influence the decisions of individual agents, leads to a generalization of the quantum decision theory developed earlier by the authors for separate individuals. The generalized approach is free of the standard paradoxes of classical decision theory. This approach also explains the error-attenuation effects observed for the paradoxes occurring when decision makers, who are members of a society, consult with each other, increasing in this way the available mutual information. A precise correspondence between quantum decision theory and classical utility theory is formulated via the introduction of an intermediate probabilistic version of utility theory of a novel form, which obeys the requirement that zero-utility prospects should have zero probability weights.
+
+Abstract (KO):
+사회의 구성원으로서 상호작용하는 행위자의 의사결정에 대한 추가정보의 영향을 양자확률을 활용한 수학적 프레임워크 내에서 분석합니다. 개별 행위자의 결정에 영향을 미치는 사회적 상호 작용의 도입은 저자가 개별 개인을 위해 이전에 개발한 양자 결정 이론의 일반화로 이어집니다. 일반화된 접근 방식은 고전적 의사결정 이론의 표준 역설에서 자유롭습니다. 이 접근법은 또한 사회의 구성원인 의사결정자들이 서로 협의하여 이용 가능한 상호 정보를 증가시킬 때 발생하는 역설에 대해 관찰되는 오류 감쇠 효과를 설명합니다. 양자 결정 이론과 고전 효용 이론 사이의 정확한 대응은 효용이 없는 전망이 확률 가중치가 0이어야 한다는 요구 사항을 따르는 새로운 형태의 효용 이론의 중간 확률 버전을 도입함으로써 공식화됩니다.

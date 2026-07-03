@@ -1,0 +1,11 @@
+Title: Leadership development
+Authors: Kevin Roe
+Source: Crossref
+Date: 2020-4-23
+URL: https://doi.org/10.1093/hebz/9780198834304.003.0016
+
+Abstract (EN):
+<p>This chapter evaluates leadership development. Leadership development activities and the broader framework vary enormously from organization to organization. The evidence from some reports makes it clear that investment in leadership provides clear benefits to the organization. However, take-up is patchy across the UK with only one in five managers having any formal qualification in this field. Newer initiatives, such as the Chartered Manager status offered by the Chartered Management Institute (CMI), are making some slow but sustained progress towards offering sceptical organizations more concrete evidence that to be a world-class organization one needs world-class leaders. The methods for delivering this agenda are also numerous�the number of organizations claiming to offer leadership development increases almost daily. Nevertheless, leadership development does remain, for some organizations at least, central to their organizational development and, as such, will become more important as they face continuing uncertainty in terms of finance, globalization, and competition.</p>
+
+Abstract (KO):
+<p>이 장에서는 리더십 개발을 평가합니다. 리더십 개발 활동과 더 넓은 프레임워크는 조직마다 크게 다릅니다. 일부 보고서의 증거는 리더십에 대한 투자가 조직에 분명한 이점을 제공한다는 것을 분명히 보여줍니다. 그러나 채용은 영국 전역에서 고르지 못하여 관리자 5명 중 1명만이 이 분야에 대한 공식 자격을 보유하고 있습니다. CMI(Chartered Management Institute)가 제공하는 공인 관리자 지위와 같은 새로운 계획은 회의적인 조직에 세계적 수준의 조직이 되려면 세계적 수준의 리더가 필요하다는 보다 구체적인 증거를 제공하기 위해 느리지만 지속적인 진전을 보이고 있습니다. 이 의제를 전달하는 방법도 다양합니다. 리더십 개발을 제공한다고 주장하는 조직의 수가 거의 매일 증가하고 있습니다. 그럼에도 불구하고 리더십 개발은 적어도 일부 조직의 경우 조직 개발의 핵심으로 남아 있으며, 따라서 재무, 세계화, 경쟁 측면에서 지속적인 불확실성에 직면할수록 더욱 중요해질 것입니다.</p>

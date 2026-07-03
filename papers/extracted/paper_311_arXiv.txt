@@ -1,0 +1,321 @@
+### SOURCE: paper_311_arXiv.pdf
+### PAPER_ID: 311
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 7
+
+
+===== PAGE 1 =====
+Evaluation scheme for children-centered language interaction competence of
+AI-driven robots
+SIQI XIE∗, Central China Normal University, China
+JIANTAO LI∗, Beijing Language and Culture University, China
+This article explores the evaluation method for the language communication proficiency of AI-driven robots engaging in interactive
+communication with children. The utilization of AI-driven robots in children’s everyday communication is swiftly advancing,
+underscoring the importance of evaluating these robots’ language communication skills. Based on 11 Chinese families’ interviews and
+thematic analysis of the comment text from shopping websites (like Taobao, Tmall, and JD. et al.), a framework is introduced in the
+article to assess five key dimensions of child-robot language communication: interactivity, specificity, development, sociality, and
+safety. We draw on the concept of “children’s agency”, viewing children as active participants in shaping society and cultural life
+alongside adults. Therefore, this article places particular emphasis on collecting data related to children. Whether through survey
+interviews or direct interactive experiments, we treat children as an independent object for data collection. The study involved
+empirical research following the mentioned framework, which involved capturing interaction videos in natural conversation settings
+among children from 6 families. Analysis was performed on quantitative data obtained from video recordings, alongside questionnaires
+and interviews carried out by parents acting as participants or observers. We found that the presence or absence of parents during
+children’s interactions with robots can impact the evaluation of robots’ language communication abilities. Ultimately, this article
+proposes an enhanced comprehensive evaluation framework incorporating insights from parents and children, supported by empirical
+evidence and inter-rater consistency assessments, showcasing the scheme’s efficacy.
+CCS Concepts: • Human-centered computing →Human computer interaction (HCI); HCI design and evaluation methods;
+Additional Key Words and Phrases: Child-robot interaction, Child-centered AI evaluation methods
+ACM Reference Format:
+Siqi Xie and Jiantao Li. 2024. Evaluation scheme for children-centered language interaction competence of AI-driven robots. In CHI
+2024 Workshop on Child-centred AI Design, May 11, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 7 pages.
+1
+INTRODUCTION
+The advent of artificial intelligence (AI) has ushered in a new era of technological advancement, significantly impacting
+various sectors including education and domestic environments. In recent years, the incorporation of AI-driven
+robots in child-oriented settings has witnessed substantial growth. These robots are no longer passive tools but active
+participants in fostering learning, social interaction, and emotional support for children [6]. However, the effectiveness
+of these interactions largely hinges on the robot’s ability to understand, process, and respond to children’s language
+cues appropriately. Given children’s unique linguistic characteristics and developmental stages, standard language
+interaction benchmarks used for adults may not be suitable.
+∗Both authors contributed equally to this research.
+Authors’ addresses: Siqi Xie, sqxie@mails.ccnu.edu.cn, Central China Normal University, 152 Luoyu Rd., Wuhan, Hubei, China, 430079; Jiantao Li,
+lijt0909@163.com, Beijing Language and Culture University, 15 Xueyuan Rd., Beijing, Beijing, China, 100083.
+Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not
+made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party
+components of this work must be honored. For all other uses, contact the owner/author(s).
+© 2024 Copyright held by the owner/author(s).
+Manuscript submitted to ACM
+Manuscript submitted to ACM
+1
+arXiv:2405.09144v1  [cs.HC]  15 May 2024
+
+===== PAGE 2 =====
+2
+Siqi Xie & Jiantao Li
+Therefore, there is a pressing need for a dedicated evaluation scheme that comprehensively assesses a robot’s
+language interaction competence specifically in the context of child users [11]. To establish a comprehensive and
+adaptive evaluation scheme for children-centered language interaction competence, a mixed-methods approach was
+selected, which combines quantitative and qualitative methods to analyze and interpret the data, including descriptive
+statistics, content analysis, and thematic analysis. Firstly, we have implemented a preliminary study to establish the
+evaluation framework, which interring 11 families and around 30 thousand words of comment test on shopping websites.
+Then six children between 3 and 6 years old were selected to interact with AI-driven robots, these children and their
+parents were consulted to develop the evaluation scheme based on a questionnaire and semi-structured interviews.
+2
+BACKGROUND AND RELATED WORK
+To evaluate the language interaction competence of robots, most research carried out on evaluating the effects of
+robot-assisted language learning [1, 7–10, 12], emotion interaction [3]or engagement degree[5], based on the efficiency-
+oriented approach. The components can be deduced from what kinds of functions or characters can improve the
+efficiency of HRI. For example, students evaluate robots in the robot-assisted language learning tasks from different
+aspects, including the understanding ability, speaking speed, sound quality, and English proficiency [9]; a conceptual
+framework consisting of three main components: goal orientation, embodiment, and multimodality was proposed to
+comprehensively understand different chatbot types and their possibilities for educational use in language learning [7];
+Dautenhahn has proposed some dimensions for social robots [4], but these kinds of dimensions are suitable for all the
+human beings, not specifically oriented to children, and not typically focused on social language skills.
+In conclusion, these studies can’t comprehensively answer the following questions: What dimensions and components
+can affect the evaluation of child-directed language interaction competence of robots? How do family members affect
+child-robot interaction and the evaluation process? Despite the growing achievement, the research gaps are evident:
+recent research lacks theoretical frameworks to support the above questions and there is inadequate empirical research
+concerning the above questions.
+3
+PRELIMINARY STUDY
+The preliminary study aims to establish an outline of the evaluation framework, and we use the thematic analysis
+method to consult 11 Chinese families’ views about children’s language intelligence products. We collect data of
+semi-structured interviews and consumer feedback on online shopping platforms (such as Tmall1 and JD2) to obtain
+information on the usage demands, experiences, and evaluations of children’s robots (mainly in terms of interactive
+language).
+Following established open coding methods [2], the data obtained in this study was conducted by two researchers
+using thematic analysis. Firstly, the interviews were transcribed into text using Feishu Minutes software3, and manual
+verification was conducted to enhance the understanding of the entire interview content. After transcription, the
+data were read multiple times to develop initial coding awareness. Then, initial coding was conducted by two coders
+independently analyzing the interview data, comparing similarities and differences, and using Nvivo for inductive and
+theory-driven thematic analysis. This approach allowed for the discovery of facts based on the interview data and
+provided specific investigations into the interactive language of children’s robots. Next, themes were identified by
+1https://www.tmall.com
+2https://www.jd.com/
+3https://www.feishu.cn/product/minutes
+Manuscript submitted to ACM
+
+===== PAGE 3 =====
+Evaluation scheme for children-centered language interaction competence of AI-driven robots
+3
+Fig. 1. Thematic analysis
+comparing and categorizing the initial codes, grouping conceptually similar codes, and assigning different codes to
+different themes. Only the initial codes agreed upon by both coders were confirmed as final codes. Finally, the themes
+were examined to ensure the accuracy of the coding and the relevance to the respective theme. The specific theme
+codes can be found in Fig.1.
+Furthermore, a saturation test was conducted using 411 feedback evaluations from shopping platforms. The analysis
+results showed that during the coding analysis process, the identified codes and themes were repeatedly present, and
+no new codes or themes emerged. Therefore, through the saturation test, it can be concluded that the extracted codes
+and themes in this study are reliable.
+4
+EMPIRICAL RESEARCH
+Only when observing the real interactive context can different evaluation dimensions be tested, in this case, a compre-
+hensive evaluation framework of robots’ children-centered language ability will be proposed. Our research’s objective
+is to explore whether the five dimensions of the evaluation framework can comprehensively assess the language
+interaction competence of robots.
+Manuscript submitted to ACM
+
+===== PAGE 4 =====
+4
+Siqi Xie & Jiantao Li
+Table 1. Procedure of empirical child-robot interaction
+Setting
+Stage
+Description
+Parents are absent
+Ice-breaking
+Introduction of their name, age, and hobbies.
+Explanation
+Tutorial presentation on how to use the robot.
+Open-dialogue
+Children interact with the robot in an open-domain mode, such as asking questions, sharing
+experiences, or storytelling, and the investigators observe them during the entire process.
+Parents are present
+Introduction
+Introduction of the parent’s name, and to establish the identity of the participant.
+Collaboration
+Parents and children co-create a story or share a series of emotional experiences during
+children’s study and life.
+4.1
+Methods
+The research is centered on preschool-aged children due to their higher likelihood of being cared for at home compared
+to older children. A total of 6 kindergartens between 3 and 6 years old and their parents from China participated in
+this study. And the study involved parental participants from two age ranges: 20-30 years and 30-40 years, with three
+parents in each group. They also had a range of education levels from bachelor to doctoral degrees.
+We use a robot called Alpha Egg GPT, which is LLM-equipped for managing the dialogue flow (i.e., The robot was
+embedded in the API of iFlytek’s Alpha-egg large cognitive model for children). Parents were requested to complete
+an online survey, providing demographic information about their family and their previous encounters with robots.
+Subsequently, the researcher arranged experiments with the parents and their child, either at their residence or within a
+laboratory setting. The engagement between the individual child and the robots extended for approximately 30 minutes,
+encompassing a series of prescribed procedures followed by Table1: Throughout our study, we meticulously recorded
+all interaction sessions between children and robots. These video recordings serve as a valuable resource, capturing the
+nuances of behavior, communication, and emotional responses. By analyzing these videos, we gain insights into how
+children engage with robots. Non-verbal cues, gestures, and expressions provide valuable context that might not be
+apparent through other data collection methods.
+In addition to video recordings, we conduct post-interviews with both parents and children. These interviews
+provide subjective perspectives and rich contextual information. Following the practical session of each family, a brief
+10-minute interview was conducted, primarily aimed at gathering insights and experiences from both parents and
+children regarding their feelings in the respective session. After observing and receiving participants’ feedback, we
+have developed a comprehensive evaluation scheme based on 5 dimensions extracted from our preliminary study. More
+details will be provided in the following section.
+We transcribed videos by Baidu Netdisk4 and noted the timestamps of positive and negative feedback from children.
+Then, we asked parents and children to complete a questionnaire based on the developed evaluation scheme. This
+questionnaire reports the degree of satisfaction, which is a quantitative measure used to assess the success of child-robot
+interactions.
+4.2
+Developed scheme
+The preliminary research involved the implementation of an extensive assessment framework. We established a detailed
+evaluation scheme based on empirical research. The evaluation system, outlined in Table ??, encompasses a total of five
+dimensions and 16 indicators.
+4https://pan.baidu.com
+Manuscript submitted to ACM
+
+===== PAGE 5 =====
+Evaluation scheme for children-centered language interaction competence of AI-driven robots
+5
+Table 2. Developed evaluation scheme
+Dimensions
+Indicators
+Interactivity
+• Response are relevant to the context, purpose and tasks, and feedback can stimulate children’s
+desire to further express themselves.
+• Speech recognition is accurate, and the language output or response is smooth and rapid.
+• Can adjust the style of dialogue, content, and strategy according to children’s feedback, prompt
+and the whole family’s collaboration.
+Specificity
+• The voice features meet the needs of children and have affinity, children can customize the voice
+role;
+• Language interaction is in line with children’s cognition, emotions, and interests, with empathy
+and fun;
+• The vocabulary and syntax of the language output meet the age level of the children.
+Expansibility
+• The theme of the session was appropriately challenging to the children’s level of cognitive devel-
+opment;
+• Adjusting for language interaction content and communicative strategies with children’s age and
+cognitive development;
+• Can update the system repository or language model version, and enrich the children-centered
+language resources.
+Safety
+• Filter out false, unverified, untrue or other inappropriate material;
+• Refusing to answer and export contents that imply negative energy, violence, or discrimination
+that affect children’s physical and mental health;
+• Can protect privacy and data security;
+• Can interrupt dialogue and self-lock to prevent children from becoming too addicted.
+Sociability
+• Language output conforms to social culture life, law, moral and language norms;
+• Being able to promptly correct and guide children’s speech behaviors that do not comply with
+moral and language norms;
+• Interpreting children’s social intent correctly and engaging with them appropriately like a real
+social role.
+Table 3. Evaluation result
+Dimensions
+Mean±SD
+Internal reliability1
+Interactivity
+1.778±0.344
+.750
+Specificity
+2.278±0.443
+.906
+Expansibility
+2.778±0.344
+.750
+Safety
+3.292±0.332
+.805
+Sociality
+2.722±0.390
+.732
+1 The internal reliability used Cronbach 𝛼to calculate
+4.3
+Result and Findings
+To evaluate the efficiency of the developed evaluation scheme, parents finished a questionnaire and made a 5-rate scale
+to score the different dimensions. They are asked to assess it by the practical experience and the video recording of
+the interaction. In the end, we calculate the mean score, SD, and internal reliability of each dimension, Table 3 shows
+the result. The Cronbach 𝛼score serves as an essential metric for assessing the reliability of the developed evaluation
+scheme.
+Manuscript submitted to ACM
+
+===== PAGE 6 =====
+6
+Siqi Xie & Jiantao Li
+The study found that the complex communication style of robots, which included the use of sophisticated vocabulary
+and intricate grammatical structures, proved to be a hurdle for the children involved. Simplifying language, using more
+common words and shorter sentences, is crucial to enhance the effectiveness of robot-child interactions. Secondly,
+parental involvement plays a crucial role in fostering a child’s willingness to engage and participate actively, and
+supportive environments contribute to a more positive and immersive experience for the child. Thirdly, the robots
+exhibited significant limitations when it came to discerning individual voice characteristics amidst a cacophony of
+multiple speakers, underscoring a pressing need for the enhancement of multi-part voice recognition capabilities.
+5
+DISCUSSION
+Balance of Safety and Creativity. The delicate equilibrium between safety and creativity lies at the heart of designing
+effective language interaction competence evaluation schemes for AI-driven robots. While fostering creativity is
+essential for engaging children and promoting cognitive development, ensuring safety remains paramount. Striking this
+balance necessitates thoughtful consideration of the following aspects: 1. Content Filters: Implementing robust content
+filters to shield children from harmful or inappropriate material while still allowing for imaginative and educational
+interactions. 2. Dynamic Adaptation: Developing adaptable algorithms that adjust their responses based on context, age,
+and individual preferences, thereby fostering creativity without compromising safety. 3. Human Oversight: Regular
+human monitoring and intervention to address unforeseen situations and maintain a safe environment.
+Considering the Role of AI-Driven Robots. Recognizing the multifaceted roles AI-driven robots play in children’s lives
+is crucial. Beyond mere communication tools, they serve as companions, educators, and playmates. 1. Educational
+Enhancement: Leveraging robots to enhance language learning, cognitive skills, and social development. 2. Emotional
+Support: Acknowledging the potential for robots to provide emotional support and companionship, especially in
+contexts where human interaction is limited. 3. Ethical Responsibility: Ensuring that robots uphold ethical standards
+and align with societal values, considering their influential role in shaping children’s perceptions and behaviors.
+Family Members’ Participation. Involving family members—particularly parents and guardians—in the evaluation
+process is pivotal. Their active participation contributes valuable insights and fosters a holistic understanding of child-
+robot interactions. 1. Parental Perception: Recognizing that parents’ perspectives significantly impact the evaluation of
+robots’ language communication abilities. 2. Collaborative Assessment: Encouraging joint assessments by parents and
+children, as their combined viewpoints provide a comprehensive picture. 3. Feedback Loop: Establishing a continuous
+feedback loop between families, researchers, and developers to refine and improve language interaction competence. In
+summary, thoughtful consideration of safety, the multifaceted role of AI-driven robots, and family involvement will
+shape effective evaluation schemes, ensuring that child-robot language interactions are not only proficient but also
+enriching and secure.
+6
+CONCLUSION
+We present a conceptual model aimed at gauging the linguistic capabilities of AI-powered robots engaging with children.
+Our scheme scrutinizes five facets of communication between children and robots: responsiveness, precision, progression,
+sociability, and security. Information was gathered from six family units via video documentation, surveys, and personal
+discussions. Our results underscore the necessity for a thorough assessment protocol integrating perspectives from
+both parental figures and children.
+Manuscript submitted to ACM
+
+===== PAGE 7 =====
+Evaluation scheme for children-centered language interaction competence of AI-driven robots
+7
+7
+ACKNOWLEDGMENTS
+We express our great gratitude to all the participating families, whose time and efforts were essential to the success of this
+study. Our special gratitude is extended to participant Zhenda Zhang and his son Dudu, for their remarkable dedication
+and invaluable contribution to this research. Furthermore, we would like to acknowledge the support provided by the
+National Social Science Foundation of China (Major Program) (23&ZD320) and the Fundamental Research Funds for the
+Central Universities (No. 30106230479).
+REFERENCES
+[1] Jose Belda-Medina and José Ramón Calvo-Ferrer. 2022. Using chatbots as AI conversational partners in language learning. Applied Sciences 12, 17
+(Aug. 2022), 8427. https://doi.org/10.3390/app12178427
+[2] Virginia Braun and Victoria Clarke. 2006. Using thematic analysis in psychology. Qualitative Research in Psychology 3, 2 (Jan. 2006), 77–101.
+https://doi.org/10.1191/1478088706qp063oa Place: United Kingdom Publisher: Hodder Arnold.
+[3] Alejandro Catala, Hannie Gijlers, and Iris Visser. 2023. Guidance in storytelling tables supports emotional development in kindergartners. Multimedia
+Tools and Applications 82, 9 (April 2023), 12907–12937. https://doi.org/10.1007/s11042-022-14049-7
+[4] Kerstin Dautenhahn. 2007. Socially intelligent robots: dimensions of human–robot interaction. Philosophical Transactions of the Royal Society B:
+Biological Sciences 362, 1480 (April 2007), 679–704. https://doi.org/10.1098/rstb.2006.2004
+[5] Mirjam de Haas, Paul Vogt, Rianne van den Berghe, Paul Leseman, Ora Oudgenoeg-Paz, Bram Willemsen, Jan de Wit, and Emiel Krahmer. 2022.
+Engagement in longitudinal child-robot language learning interactions: Disentangling robot and task engagement. International Journal of
+Child-Computer Interaction 33 (Sept. 2022), 100501. https://doi.org/10.1016/j.ijcci.2022.100501
+[6] Jonathan Grudin. 2017. From Tool to Partner: The Evolution of Human-Computer Interaction (1 ed.). Number 1946-7680 in Synthesis Lectures on
+Human-Centered Informatics. Springer, Cham. https://doi.org/10.1007/978-3-031-02218-0
+[7] Jaeho Jeon, Seongyong Lee, and Hohsung Choe. 2023. Beyond ChatGPT: a conceptual framework and systematic review of speech-recognition
+chatbots for language learning. Robotics 206 (Dec. 2023), 104898. https://doi.org/10.1016/j.compedu.2023.104898
+[8] Junko Kanero, Vasfiye Geçkin, Cansu Oranç, Ezgi Mamus, Aylin C. Küntay, and Tilbe Göksun. 2018. Social robots for early language learning:
+current evidence and future directions. Child Development Perspectives 12, 3 (Sept. 2018), 146–151. https://doi.org/10.1111/cdep.12277
+[9] AlBara Khalifa, Tsuneo Kato, and Seiichi Yamamoto. 2019. Learning effect of implicit learning in joining-in-type robot-assisted language learning
+system. International Journal of Emerging Technologies in Learning (iJET) 14, 02 (2019), 105. https://doi.org/10.3991/ijet.v14i02.9212
+[10] Natasha Randall. 2020. A Survey of Robot-Assisted Language Learning (RALL). ACM Transactions on Human-Robot Interaction 9, 1 (Jan. 2020), 1–36.
+https://doi.org/10.1145/3345506
+[11] Yuling Sun, Jiali Liu, Bingsheng Yao, Jiaju Chen, Dakuo Wang, Xiaojuan Ma, Yuxuan Lu, Ying Xu, and Liang He. 2024. Exploring parent’s needs for
+children-centered AI to support preschoolers’ storytelling and reading activities. https://doi.org/10.48550/arXiv.2401.13804 arXiv:2401.13804 [cs].
+[12] Shunan Zhang, Cheng Shan, John Sie Yuen Lee, ShaoPeng Che, and Jang Hyun Kim. 2023. Effect of chatbot-assisted language learning: a meta-analysis.
+Education and Information Technologies 28, 11 (April 2023), 15223–15243. https://doi.org/10.1007/s10639-023-11805-6
+Manuscript submitted to ACM

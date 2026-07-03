@@ -1,0 +1,11 @@
+Title: Naked-eye detection of fluoride ion in water: a remarkably selective easy-to-prepare test paper
+Authors: Zhihua Lin, Shengju Ou, Chunying Duan, Bingguang Zhang, Zhiping Bai
+Source: OpenAlex
+Date: 2006-01-01
+URL: https://doi.org/10.1039/b514337c
+
+Abstract (EN):
+A test paper for high-selectivity detecting fluoride ion in natural aqueous environments without any spectroscopic instrumentation was achieved by using Ru-bipy based quinonehydrazone as a chromo- and fluorogenic hybrid chemosensor.
+
+Abstract (KO):
+분광학 장비 없이 자연 수성 환경에서 불소 이온을 고선택적으로 검출하기 위한 테스트 논문은 Ru-bipy 기반 퀴논히드라존을 발색 및 형광 생성 하이브리드 화학 센서로 사용하여 달성되었습니다.

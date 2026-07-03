@@ -1,0 +1,1322 @@
+{
+ "generated": "2026-07-02",
+ "method": "label KO keyword profile vs corpus text (title+abstract_ko+fulltext)",
+ "status": "CANDIDATE (unverified, abstract-level) — 검증완료 label_evidence_map.json과 별개",
+ "candidates": {
+  "M01-01": {
+   "label_name": "명확한 비전 제시",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 190,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M01-03": {
+   "label_name": "목표 정렬",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 196,
+     "score": 4
+    },
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 240,
+     "score": 3
+    }
+   ],
+   "n": 3
+  },
+  "M01-04": {
+   "label_name": "비전 공유",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 190,
+     "score": 4
+    },
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 392,
+     "score": 3
+    }
+   ],
+   "n": 3
+  },
+  "M02-01": {
+   "label_name": "내재적 동기 자극",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 223,
+     "score": 3
+    },
+    {
+     "pid": 102,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M02-02": {
+   "label_name": "성장 기회 제공",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 327,
+     "score": 3
+    },
+    {
+     "pid": 297,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 3
+  },
+  "M02-03": {
+   "label_name": "격려 및 인정",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    }
+   ],
+   "n": 1
+  },
+  "M02-04": {
+   "label_name": "목표 몰입 유도",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 364,
+     "score": 3
+    },
+    {
+     "pid": 196,
+     "score": 3
+    },
+    {
+     "pid": 190,
+     "score": 3
+    }
+   ],
+   "n": 4
+  },
+  "M03-01": {
+   "label_name": "문제 재정의",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 159,
+     "score": 5
+    },
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 391,
+     "score": 3
+    },
+    {
+     "pid": 190,
+     "score": 3
+    },
+    {
+     "pid": 139,
+     "score": 3
+    }
+   ],
+   "n": 5
+  },
+  "M03-03": {
+   "label_name": "새로운 접근 유도",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 190,
+     "score": 4
+    },
+    {
+     "pid": 27,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M05-01": {
+   "label_name": "변화 필요 성명",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 364,
+     "score": 3
+    },
+    {
+     "pid": 56,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M05-02": {
+   "label_name": "변화 실행 장려",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 328,
+     "score": 3
+    },
+    {
+     "pid": 224,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M05-03": {
+   "label_name": "변화 문화 조성",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 323,
+     "score": 4
+    },
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 286,
+     "score": 3
+    },
+    {
+     "pid": 240,
+     "score": 3
+    },
+    {
+     "pid": 190,
+     "score": 3
+    },
+    {
+     "pid": 58,
+     "score": 3
+    }
+   ],
+   "n": 6
+  },
+  "M07-01": {
+   "label_name": "구체적 피드백",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 5
+    }
+   ],
+   "n": 1
+  },
+  "M07-02": {
+   "label_name": "성장 지향 피드백",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 317,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M08-01": {
+   "label_name": "책임 및 원칙 준수",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 317,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M08-02": {
+   "label_name": "공정한 성과 인정_L08",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M09-01": {
+   "label_name": "공정한 성과 인정_L09",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M11-01": {
+   "label_name": "적극적 경청",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M11-02": {
+   "label_name": "개방적 의견 수용",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 159,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M15-03": {
+   "label_name": "적극적 의견 청취",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    }
+   ],
+   "n": 1
+  },
+  "M15-05": {
+   "label_name": "신뢰 형성",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 240,
+     "score": 3
+    },
+    {
+     "pid": 190,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M18-02": {
+   "label_name": "데이터 기반 의사결정_L18",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 343,
+     "score": 4
+    },
+    {
+     "pid": 315,
+     "score": 4
+    },
+    {
+     "pid": 207,
+     "score": 4
+    },
+    {
+     "pid": 395,
+     "score": 3
+    },
+    {
+     "pid": 382,
+     "score": 3
+    },
+    {
+     "pid": 323,
+     "score": 3
+    }
+   ],
+   "n": 8
+  },
+  "M19-01": {
+   "label_name": "신속한 의사결정",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M20-01": {
+   "label_name": "위기 대응 및 문제 해결",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    }
+   ],
+   "n": 1
+  },
+  "M21-01": {
+   "label_name": "학습 및 디지털 민첩성",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M23-01": {
+   "label_name": "혁신 아이디어 발굴",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    }
+   ],
+   "n": 1
+  },
+  "M27-01": {
+   "label_name": "전략적 자원 배분",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 300,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M31-01": {
+   "label_name": "포용성 및 다양성 존중_L31",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 139,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M33-04": {
+   "label_name": "공정한 의사결정",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M33-05": {
+   "label_name": "책임 있는 행동",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 392,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M34-01": {
+   "label_name": "데이터 기반 의사결정_L34",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 207,
+     "score": 5
+    },
+    {
+     "pid": 382,
+     "score": 4
+    },
+    {
+     "pid": 315,
+     "score": 4
+    },
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 395,
+     "score": 3
+    },
+    {
+     "pid": 393,
+     "score": 3
+    }
+   ],
+   "n": 12
+  },
+  "M35-01": {
+   "label_name": "디지털 도구 활용 및 자동화",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 318,
+     "score": 3
+    },
+    {
+     "pid": 317,
+     "score": 3
+    },
+    {
+     "pid": 304,
+     "score": 3
+    }
+   ],
+   "n": 3
+  },
+  "M37-01": {
+   "label_name": "AI 및 기술 기반 혁신 주도",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 207,
+     "score": 4
+    },
+    {
+     "pid": 328,
+     "score": 3
+    },
+    {
+     "pid": 304,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 4
+  },
+  "M37-02": {
+   "label_name": "디지털 리터러시 전파",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 317,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M13-01": {
+   "label_name": "회복력 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M16-01": {
+   "label_name": "이해관계자 관계 구축",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 169,
+     "score": 4
+    },
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 299,
+     "score": 3
+    },
+    {
+     "pid": 246,
+     "score": 3
+    },
+    {
+     "pid": 239,
+     "score": 3
+    },
+    {
+     "pid": 392,
+     "score": 3
+    }
+   ],
+   "n": 6
+  },
+  "M22-03": {
+   "label_name": "성찰/학습 지향",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 317,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M24-02": {
+   "label_name": "권한 위임",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 300,
+     "score": 6
+    },
+    {
+     "pid": 263,
+     "score": 5
+    },
+    {
+     "pid": 395,
+     "score": 3
+    },
+    {
+     "pid": 190,
+     "score": 3
+    },
+    {
+     "pid": 392,
+     "score": 3
+    }
+   ],
+   "n": 5
+  },
+  "M25-01": {
+   "label_name": "글로벌/다문화 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 155,
+     "score": 3
+    },
+    {
+     "pid": 139,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M27-02": {
+   "label_name": "시간 관리 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 304,
+     "score": 3
+    },
+    {
+     "pid": 155,
+     "score": 3
+    },
+    {
+     "pid": 139,
+     "score": 3
+    },
+    {
+     "pid": 56,
+     "score": 3
+    }
+   ],
+   "n": 5
+  },
+  "M36-01": {
+   "label_name": "전략적 사고",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 56,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M36-02": {
+   "label_name": "양손잡이 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 322,
+     "score": 3
+    },
+    {
+     "pid": 190,
+     "score": 3
+    },
+    {
+     "pid": 159,
+     "score": 3
+    }
+   ],
+   "n": 3
+  },
+  "M36-03": {
+   "label_name": "의미 부여",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    }
+   ],
+   "n": 1
+  },
+  "M40-02": {
+   "label_name": "조건부 보상",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 104,
+     "score": 7
+    },
+    {
+     "pid": 102,
+     "score": 6
+    },
+    {
+     "pid": 99,
+     "score": 6
+    },
+    {
+     "pid": 190,
+     "score": 4
+    }
+   ],
+   "n": 4
+  },
+  "M43-01": {
+   "label_name": "참여적 리더십",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    },
+    {
+     "pid": 392,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M43-02": {
+   "label_name": "조정/프로세스 관리",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 364,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M44-01": {
+   "label_name": "정치적 인식",
+   "already_verified": true,
+   "candidate_papers": [
+    {
+     "pid": 395,
+     "score": 3
+    },
+    {
+     "pid": 139,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 3
+  },
+  "M44-02": {
+   "label_name": "성취지향 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 382,
+     "score": 3
+    },
+    {
+     "pid": 240,
+     "score": 3
+    },
+    {
+     "pid": 239,
+     "score": 3
+    },
+    {
+     "pid": 104,
+     "score": 3
+    },
+    {
+     "pid": 100,
+     "score": 3
+    }
+   ],
+   "n": 7
+  },
+  "M45-01": {
+   "label_name": "환경 책임 의식",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 315,
+     "score": 4
+    },
+    {
+     "pid": 392,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "M45-02": {
+   "label_name": "사회적 책임 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 283,
+     "score": 3
+    },
+    {
+     "pid": 196,
+     "score": 3
+    },
+    {
+     "pid": 190,
+     "score": 3
+    },
+    {
+     "pid": 392,
+     "score": 3
+    }
+   ],
+   "n": 5
+  },
+  "M46-02": {
+   "label_name": "기회 인식",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "M47-01": {
+   "label_name": "공유 리더십 촉진",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 343,
+     "score": 3
+    },
+    {
+     "pid": 240,
+     "score": 3
+    },
+    {
+     "pid": 169,
+     "score": 3
+    },
+    {
+     "pid": 392,
+     "score": 3
+    }
+   ],
+   "n": 5
+  },
+  "M47-02": {
+   "label_name": "효과적 추종 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 391,
+     "score": 3
+    },
+    {
+     "pid": 207,
+     "score": 3
+    },
+    {
+     "pid": 155,
+     "score": 3
+    },
+    {
+     "pid": 139,
+     "score": 3
+    },
+    {
+     "pid": 106,
+     "score": 3
+    }
+   ],
+   "n": 9
+  },
+  "N01-01": {
+   "label_name": "비현실적 목표 제시",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 364,
+     "score": 3
+    },
+    {
+     "pid": 225,
+     "score": 3
+    },
+    {
+     "pid": 195,
+     "score": 3
+    },
+    {
+     "pid": 189,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 5
+  },
+  "N03-01": {
+   "label_name": "아이디어 무시",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 159,
+     "score": 3
+    },
+    {
+     "pid": 155,
+     "score": 3
+    },
+    {
+     "pid": 27,
+     "score": 3
+    }
+   ],
+   "n": 4
+  },
+  "N05-01": {
+   "label_name": "의견 없이 변화 강행",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    }
+   ],
+   "n": 1
+  },
+  "N05-02": {
+   "label_name": "준비 없는 변화 추진",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 328,
+     "score": 3
+    },
+    {
+     "pid": 322,
+     "score": 3
+    }
+   ],
+   "n": 3
+  },
+  "N05-03": {
+   "label_name": "변화 반대 억압",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 343,
+     "score": 3
+    },
+    {
+     "pid": 190,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "N08-01": {
+   "label_name": "직접 책임 전가",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N08-03": {
+   "label_name": "의사결정 지연",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 315,
+     "score": 3
+    },
+    {
+     "pid": 207,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 3
+  },
+  "N11-02": {
+   "label_name": "의견 폄하",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N14-01": {
+   "label_name": "자기 이익 우선",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 327,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N15-01": {
+   "label_name": "의견 무시",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 5
+    },
+    {
+     "pid": 159,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "N19-01": {
+   "label_name": "독단 결정",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    },
+    {
+     "pid": 327,
+     "score": 3
+    },
+    {
+     "pid": 322,
+     "score": 3
+    },
+    {
+     "pid": 392,
+     "score": 3
+    }
+   ],
+   "n": 4
+  },
+  "N21-01": {
+   "label_name": "디지털 거부",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 304,
+     "score": 4
+    }
+   ],
+   "n": 1
+  },
+  "N23-01": {
+   "label_name": "혁신 아이디어 차단",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N27-01": {
+   "label_name": "자원 독점",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    }
+   ],
+   "n": 1
+  },
+  "N28-01": {
+   "label_name": "정보 은폐",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 378,
+     "score": 3
+    },
+    {
+     "pid": 354,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "N30-01": {
+   "label_name": "말과 행동 불일치",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N33-02": {
+   "label_name": "문제 회피",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 139,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "N35-01": {
+   "label_name": "도구 남용",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 286,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N37-01": {
+   "label_name": "AI 부정 사용",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 327,
+     "score": 3
+    },
+    {
+     "pid": 155,
+     "score": 3
+    },
+    {
+     "pid": 392,
+     "score": 3
+    }
+   ],
+   "n": 3
+  },
+  "N05-04": {
+   "label_name": "사회적 무책임 변화",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 117,
+     "score": 3
+    },
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "N16-01": {
+   "label_name": "이해관계자 무시",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 169,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N38-01": {
+   "label_name": "수동적 예외 관리",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 223,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N38-02": {
+   "label_name": "방임형 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N38-03": {
+   "label_name": "권력 독점",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 4
+    }
+   ],
+   "n": 1
+  },
+  "N39-01": {
+   "label_name": "이기적 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N39-03": {
+   "label_name": "나르시시즘 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 155,
+     "score": 3
+    }
+   ],
+   "n": 1
+  },
+  "N41-03": {
+   "label_name": "무모한 위험 감수",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 316,
+     "score": 3
+    },
+    {
+     "pid": 297,
+     "score": 3
+    }
+   ],
+   "n": 2
+  },
+  "N42-01": {
+   "label_name": "권위주의적 리더십",
+   "already_verified": false,
+   "candidate_papers": [
+    {
+     "pid": 342,
+     "score": 3
+    }
+   ],
+   "n": 1
+  }
+ }
+}

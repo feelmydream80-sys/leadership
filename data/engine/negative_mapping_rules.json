@@ -159,7 +159,7 @@
       ]
     },
     {
-      "trait_id": "T08",
+      "trait_id": "T11",
       "trait_name": "Emotional Intelligence Leader",
       "logic": "공감형 리더는 공감 결여와 직접 충돌",
       "hard_forbidden": [
@@ -335,7 +335,7 @@
       ]
     },
     {
-      "trait_id": "T10",
+      "trait_id": "T06",
       "trait_name": "Strategic Execution Leader",
       "logic": "전략 실행형 리더는 책임 회피 및 실행력 저해와 충돌",
       "hard_forbidden": [

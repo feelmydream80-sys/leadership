@@ -1,0 +1,11 @@
+Title: Servant Leadership
+Authors: Chad Hartnell, G. James Lemoine
+Source: Crossref
+Date: 2025-5-27
+URL: https://doi.org/10.1093/obo/9780199846740-0235
+
+Abstract (EN):
+<p>Servant leadership is a style of leadership in which leaders (i.e., those who attempt to influence others toward a shared goal) are others-focused and committed to improving the well-being of multiple stakeholders, including employees, teams, organizations, shareholders, customers, and the community. Servant leadership is a moral form of leadership, alongside ethical and authentic leadership, that has gained prominence in the leadership landscape for its distinctive others-first mentality and its ability to influence outcomes even after accounting for other forms of leadership. A rapidly accumulating literature documents servant leadership’s positive effects for multiple stakeholders. Cutting-edge research is focused on explaining how servant leadership emerges, understanding its positive and negative effects on leaders themselves, and refining how servant leadership’s moral foundations influence others’ morality, attitudes, and behaviors.</p>
+
+Abstract (KO):
+<p>서번트 리더십은 리더(예: 공유 목표를 향해 다른 사람에게 영향을 미치려고 시도하는 사람)가 다른 사람에게 초점을 맞추고 직원, 팀, 조직, 주주, 고객, 커뮤니티를 비롯한 다양한 이해관계자의 복지를 개선하는 데 전념하는 리더십 스타일입니다. 서번트 리더십은 윤리적이고 진정한 리더십과 함께 도덕적 형태의 리더십으로, 다른 형태의 리더십을 고려한 후에도 독특한 타인 우선 사고방식과 결과에 영향을 미치는 능력으로 인해 리더십 환경에서 두각을 나타내고 있습니다. 빠르게 축적되는 문헌은 다양한 이해관계자에 대한 서번트 리더십의 긍정적인 효과를 문서화합니다. 최첨단 연구는 서번트 리더십이 어떻게 나타나는지 설명하고, 서번트 리더십이 리더 자신에게 미치는 긍정적인 영향과 부정적인 영향을 이해하며, 서번트 리더십의 도덕적 기반이 다른 사람의 도덕성, 태도, 행동에 어떻게 영향을 미치는지 개선하는 데 중점을 두고 있습니다.</p>

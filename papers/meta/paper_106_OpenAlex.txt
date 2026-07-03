@@ -1,0 +1,11 @@
+Title: Transformational and transactional leadership and innovative behavior: The moderating role of psychological empowerment
+Authors: Anne Nederveen Pieterse, Daan van Knippenberg, Michaéla C. Schippers, Daan Stam
+Source: OpenAlex
+Date: 2009-08-20
+URL: https://doi.org/10.1002/job.650
+
+Abstract (EN):
+Abstract Innovative behavior is increasingly important for organizations' survival. Transformational leadership, in contrast to transactional leadership, has been argued to be particularly effective in engendering follower innovative behavior. However, empirical evidence for this relationship is scarce and inconsistent. Addressing this issue, we propose that follower psychological empowerment moderates the relationship of transformational and transactional leadership with follower innovative behavior. In a field study with 230 employees of a government agency in the Netherlands combining multisource ratings, we show that transformational leadership is positively related to innovative behavior only when psychological empowerment is high, whereas transactional leadership has a negative relationship with innovative behavior only under these conditions. Copyright © 2009 John Wiley &amp; Sons, Ltd.
+
+Abstract (KO):
+Abstract 혁신적인 행동은 조직의 생존을 위해 점점 더 중요해지고 있습니다. 거래적 리더십과 달리 변혁적 리더십은 추종자의 혁신적인 행동을 이끌어내는 데 특히 효과적이라고 주장되어 왔습니다. 그러나 이 관계에 대한 경험적 증거는 부족하고 일관성이 없습니다. 이 문제를 해결하기 위해 우리는 추종자의 심리적 권한 부여가 추종자의 혁신적인 행동과 변혁적, 거래적 리더십의 관계를 조절한다고 제안합니다. 다중 소스 평가를 결합한 네덜란드 정부 기관 직원 230명을 대상으로 한 현장 연구에서 우리는 변혁적 리더십이 심리적 권한 부여가 높을 때만 혁신적 행동과 긍정적인 관련이 있는 반면, 거래적 리더십은 이러한 조건에서만 혁신적 행동과 부정적인 관계가 있음을 보여줍니다. 저작권 © 2009 John Wiley &amp; 주식회사 아들즈

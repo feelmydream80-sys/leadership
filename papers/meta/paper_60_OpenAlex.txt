@@ -1,0 +1,11 @@
+Title: IMPACT OF TRANSFORMATIONAL LEADERSHIP ON FOLLOWER DEVELOPMENT AND PERFORMANCE: A FIELD EXPERIMENT.
+Authors: Tom Dvir, Dov Eden, Bruce J. Avolio, Boas Shamir
+Source: OpenAlex
+Date: 2002-08-01
+URL: https://doi.org/10.2307/3069307
+
+Abstract (EN):
+In a longitudinal, randomized field experiment, we tested the impact of transformational leadership, enhanced hy training, on follower development and performance. Experimental group leaders received transformational leadership training, and control group leaders, eclectic leadership training. The sample included 54 military leaders, their 90 direct followers, and 724 indirect followers. Results indicated the leaders in the experimental group had a more positive impact on direct followers' development and on indirect followers' performance than did the leaders in the control group.
+
+Abstract (KO):
+종단적, 무작위 현장 실험에서 우리는 변혁적 리더십, 강화된 교육이 추종자 개발 및 성과에 미치는 영향을 테스트했습니다. 실험그룹 리더는 변혁적 리더십 훈련을, 통제그룹 리더는 절충적 리더십 훈련을 받았다. 표본에는 군 지도자 54명, 직속 추종자 90명, 간접 추종자 724명이 포함되었습니다. 결과는 실험 그룹의 리더가 통제 그룹의 리더보다 직접 추종자의 발전과 간접 추종자의 성과에 더 긍정적인 영향을 미치는 것으로 나타났습니다.

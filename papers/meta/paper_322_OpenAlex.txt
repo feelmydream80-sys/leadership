@@ -1,0 +1,11 @@
+Title: Equilibrating Emotional Intelligence and AI Driven Leadership for Transnational Organizations
+Authors: Sweta Dixit, Mohit Maurya
+Source: OpenAlex
+Date: 2021-02-17
+URL: https://doi.org/10.1109/iciptm52218.2021.9388350
+
+Abstract (EN):
+Artificial Intelligence - AI intervention in business has become pervasive across industries, making it invariably essential for human leadership to adapt. AI which might simulate human cognitive behaviour is likely to supplant human leadership. AI may thus redefine the role of leadership in organizations as AI progressively performs new intellectual tasks by replacing human intelligence. While, human limits of domain knowledge and experience restrict decision making, AI with its superior information processing abilities aims at overcoming cognition and complexity. Executives accept that AI will impact workforces as routine and logic based tasks become automated, leading to an increase in demand for EI skills. Even though AI is yet to replace skilled professionals, EI is what machines will remain deprived of. However forging of data, technology and emotional intelligence might be crucial to build an effective decision. HR professionals, policy and decision makers thus intend to leverage potential of AI technologies while seeking ways to offset the negative impacts of AI systems. The study proposes that in this era of technological leap, unprecedented disruption and ambiguous change; effective leadership needs to be redefined. Thus if, business functional domains seek any competitive advantage from AI, they would essentially need it to be coupled with EI.
+
+Abstract (KO):
+인공 지능 - 비즈니스에 대한 AI 개입은 산업 전반에 걸쳐 널리 보급되어 인간 리더십이 적응하는 것이 변함없이 필수적입니다. 인간의 인지 행동을 시뮬레이션할 수 있는 AI가 인간의 리더십을 대체할 가능성이 높습니다. 따라서 AI가 인간 지능을 대체하여 새로운 지적 작업을 점진적으로 수행함에 따라 AI는 조직에서 리더십의 역할을 재정의할 수 있습니다. 인간의 영역 지식과 경험의 한계로 인해 의사 결정이 제한되는 반면, 뛰어난 정보 처리 능력을 갖춘 AI는 인지와 복잡성을 극복하는 것을 목표로 합니다. 경영진은 일상적이고 논리 기반 작업이 자동화되면서 AI가 인력에 영향을 미쳐 EI 기술에 대한 수요가 증가할 것이라는 점을 인정합니다. AI가 아직 숙련된 전문가를 대체하지는 못하더라도 EI는 기계에게 여전히 부족한 존재입니다. 그러나 데이터, 기술 및 감성 지능의 위조는 효과적인 결정을 내리는 데 중요할 수 있습니다. 따라서 HR 전문가, 정책 및 의사 결정자는 AI 기술의 잠재력을 활용하는 동시에 AI 시스템의 부정적인 영향을 상쇄할 방법을 모색하려고 합니다. 본 연구는 기술 도약, 전례 없는 파괴, 모호한 변화의 시대에; 효과적인 리더십을 재정의해야 합니다. 따라서 비즈니스 기능 영역이 AI로부터 경쟁 우위를 추구한다면 본질적으로 이를 EI와 결합해야 합니다.

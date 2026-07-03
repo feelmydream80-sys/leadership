@@ -1,0 +1,354 @@
+### SOURCE: paper_267_arXiv.pdf
+### PAPER_ID: 267
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 8
+
+
+===== PAGE 1 =====
+Designing User-Centered Simulations of
+Leadership Situations for Cave Automatic
+Virtual Environments: Development and
+Usability Study
+Francesco Vona1[0000−0003−4558−4989], Miladin ´Cerani´c1[0009−0005−4700−1240],
+Irma Rybnikova1[0000−0002−1162−755X], and Jan-Niklas
+Voigt-Antons1[0000−0002−2786−9262]
+Immersive Reality Lab, University of Applied Sciences Hamm-Lippstadt, Hamm,
+Germany
+jan-niklas.voigt-antons@hshl.de
+Abstract. Given that experience is a pivotal dimension of learning pro-
+cesses in the field of leadership, the ongoing and unresolved issue is how
+such experiential moments could be provided when developing leadership
+skills and competencies. Role-plays and business simulations are widely
+used in this context as they are said to teach relevant social leadership
+skills, like those required by everyday communication to followers, by
+decision-making on compensation, evaluating performance, dealing with
+conflicts, or terminating contracts. However, the effectiveness of simula-
+tions can highly vary depending on the counterpart’s ability to act in the
+given scenarios. In our project, we deal with how immersive media could
+create experiential learning based on simulations for leadership develop-
+ment. In recent years different variations of extended reality got signif-
+icant technological improvements. Head-mounted displays are an easy
+and cost-efficient way to present high-resolution virtual environments.
+For groups of people that are part of an immersive experience, cave au-
+tomatic virtual environments offer an excellent trade-off between actual
+exchange with other humans and interaction with virtual content simul-
+taneously. The work presented is based on developing a user-centered
+simulation of leadership situations for cave automatic virtual environ-
+ments and includes the results of a first usability study. In the future,
+the presented results can help to support the development and evaluation
+of simulated situations for cave automatic virtual environments with an
+emphasis on leadership-related scenarios.
+Keywords: Leadership Situations· User-Centered Simulations · Cave
+Automatic Virtual Environments · Usability
+This paper has been accepted for publication in the Human-Computer Interaction
+International conference 2023. The final authenticated version is available online at
+https://doi.org/10.1007/978-3-031-36004-6 45.
+arXiv:2403.10312v1  [cs.HC]  15 Mar 2024
+
+===== PAGE 2 =====
+1
+Introduction
+The development of effective leadership skills and competencies has long been
+recognized as a crucial aspect of organizational success and individual growth
+[19]. However, the process of cultivating these capabilities often hinges on experi-
+ential learning, which can be challenging to provide in a controlled and targeted
+manner [3]. Traditional methods such as role-plays and business simulations
+have been widely employed to teach essential social leadership skills [16], but
+their efficacy can be significantly impacted by the performance and adaptabil-
+ity of the individuals involved. As a result, there is an ongoing need to explore
+novel approaches for delivering experiential learning opportunities in leadership
+development.
+Despite repeated calls and appeals to consider immersive media as a new and
+potentially fruitful approach to leadership development (e.g. [11]), there is a
+lack of empirical investigations that aim at developing, testing and evaluating
+concrete learning tools based on immersive media with the focus of leadership
+development. With our study, we address this shortcoming.
+The rapid advancements in extended reality (XR) technologies, including head-
+mounted displays and cave automatic virtual environments (CAVEs), offer promis-
+ing new avenues for enhancing the learning experiences of aspiring leaders [24].
+The immersive nature of these technologies enables users to engage in realis-
+tic and interactive simulations, providing valuable opportunities for practicing
+leadership skills in a controlled environment [1]. This paper focuses on the po-
+tential application of CAVEs in creating user-centered simulations of leadership
+situations, addressing the existing gap in experiential learning opportunities.
+The motivation behind our research stems from the recognition that immersive
+media could revolutionize the way leadership skills are developed and practiced.
+By leveraging the unique capabilities of CAVEs, we aim to provide an effective,
+interactive, and engaging platform for leadership development, enhancing the
+overall learning experience [11]. Our work involves the design and implementa-
+tion of a user-centered simulation tailored for CAVE environments, as well as an
+initial usability study to assess the effectiveness of our approach.
+Ultimately, the findings presented in this paper hold the potential to significantly
+impact the future of leadership development, providing valuable insights and
+guidance for the creation and evaluation of simulated scenarios within CAVE
+environments [2]. By harnessing the power of immersive technologies, we hope
+to contribute to a more effective, engaging, and accessible approach to leadership
+education and training, addressing the current lack of empirical investigations
+in the field [11].
+2
+Related Work
+This section provides an overview of the research landscape relevant to immersive
+media, tracing its roots from the initial theories of flow to the development of
+CAVE systems for media presentation.
+
+===== PAGE 3 =====
+Flow Theory: The concept of flow, first introduced by [6], refers to a mental
+state of complete immersion and absorption in an activity. In this state, individ-
+uals experience heightened focus, deep involvement, and optimal enjoyment. In
+the context of media experiences, flow is considered an essential component for
+achieving immersion and engaging users effectively [10].
+Immersion and Presence in Virtual Environments: The concept of pres-
+ence, or the subjective feeling of being in a virtual environment, has been exten-
+sively studied in relation to immersive media. [25] identified three factors that
+contribute to the sense of presence in virtual environments: vividness, interac-
+tivity, and the extent to which the user can control the environment. Lombard
+et al.[18] proposed six dimensions of presence, including spatial presence, social
+presence, and self-presence, which have since been used to inform the design
+of immersive media experiences. High immersive systems can be used to evoke
+strong emotions [28]. Bio-signals that are related to emotions can be measured
+in real time and used to adapt content of immersive media systems [20]. Be-
+sides technological factors, also social environments can have an influence on
+user experience and social acceptability of immersive systems [27].
+CAVE Systems for Media Presentation: Cave Automatic Virtual Environ-
+ment (CAVE) systems, introduced by [5], represent a significant advancement in
+the immersive media presentation. CAVE systems consist of large-scale, room-
+sized displays that surround users with multiple projection screens, creating an
+enveloping 3D visual experience [5]. These systems have been widely used in sci-
+entific visualization, architectural design, and cultural heritage applications [4].
+The inherent advantages of CAVE systems over HMD-based VR, such as the al-
+lowance for natural group collaboration and the elimination of motion sickness,
+have led to their continued relevance and application in various research and
+industrial contexts [23].
+In conclusion, the study of immersive media has evolved from foundational the-
+ories of flow and presence to the development of advanced technologies such as
+VR and CAVE systems. The continued exploration of these technologies will
+undoubtedly result in novel applications and further insights into the potential
+of immersive media experiences.
+In the field of leadership development, experience, and experience-based tools are
+considered as the most effective approach to obtaining leadership skills and com-
+petencies. In conceptual terms, this idea goes back to the experiential learning
+theory by [15]. The author states that learning processes could be described as
+processes of meaning-making from personal experiences. Especially those expe-
+riences that are assumed to trigger meaning-making and learning that challenge,
+irritate, or unsettling. One of the established ways to provide such experiential
+learning when developing leaders are business games and role-plays. They are
+widely used in leadership development settings. Leadership students are said to
+more effectively achieve relevant leadership skills, like those required by every-
+day interactions with followers, decision-making and decision communicating to
+followers, or conflict resolution, than using case studies [7]. The main reason is
+a high level of realism and high involvement of students in business games [14].
+
+===== PAGE 4 =====
+Although immersive media is a flourishing field and bear a particularly high
+potential for experiencing learning, there is barely research on how immersive
+media could be used in leadership development. Instead, there are several studies
+that investigate online gaming as a potentially educative tool to develop effective
+leaders. Reeves et al.[21] argue that multiplayer-online games can teach leader-
+ship competencies that are needed in business companies. Some scholars appeal
+to consider game-based virtual worlds as a “prospective avenue for leadership
+skill development” since they require a wide array of skills and competencies that
+are of great value for leadership tasks, like role delegation, member motivation,
+persuasion, and collaborative work [12]. Virtual reality is also said to hold man-
+ifold potential for leadership development since intelligent tutoring tools may
+be able to adapt situations to the learner’s behaviors. Studies argue in favor of
+the effectiveness of educational tools based on virtual reality and point out that
+especially avatar-based games provide a psychologically secure environment to
+test and improve the interactive skills of students in an almost-real way [8].
+3
+Methods
+Participants: Ten people participated in the study (8 self-identified as male
+and two self-identified as female). The mean age was 30.1 years, with a standard
+deviation of 5.8. The experiment was approved by the local ethics committee.
+Procedure: Participants were invited to a lab room at a different separated
+time slot to participate alone in the experiment. In the beginning, the partic-
+ipants were welcomed by a moderator and presented with an introduction to
+the study and its purpose. After signing a consent form, the participants were
+given a pre-questionnaire asking about demographic information and their affin-
+ity for technology interaction [9]. The next step was to introduce participants
+to the simulated leadership situations. After this introductory part, the partici-
+pant could start the condition communicated by the moderator. The participants
+were supposed to play each of the four conditions in randomized order. After
+each condition, the participant was asked to answer web-based questionnaires
+encompassing User Experience Questionnaire (UEQ), igroup Presence Question-
+naire (IPQ), and Social Presence Questionnaire (SPQ) [22,17,13]. After all the
+conditions had been played and rated, the participant was asked to rate the
+overall experience and which condition they liked most. The complete duration
+of the experiment was around 40 minutes.
+Apparatus: A CAVE (CAVE Automatic Virtual Environment) is a room where
+the environment is simulated in three dimensions for an observer. The walls in
+such a room are often made of projection screens on which content can be dis-
+played. CAVE projection systems can consist of up to six projection screens for
+simulations in a cuboid-shaped room. The CAVE used at the Hamm-Lippstadt
+University of Applied Science consists of four acrylic glass screens: a front pro-
+jection, two side projections, and a floor projection screen. Four 3D special pro-
+jectors are used to project the image, which is redirected onto the projection
+screens via mirrors due to space limitations in the room. To track the observer’s
+
+===== PAGE 5 =====
+movements, a marker tracking system consists of fixed and mobile infrared cam-
+eras. A sound system consisting of subwoofers and passive speakers is also in-
+stalled. Virtual Reality Application: The Virtual Reality application was
+created in Unity and consists of 4 scenarios, and 2 simulated leadership situa-
+tions, each with animated and non-animated virtual avatars (2x2). All scenarios
+are composed of at least two people (one real), and the user must impersonate
+a different character each time (once the boss, and once the employee, for each
+situation). The 2 simulated leadership situations concern the themes of ”giv-
+ing critical feedback as a supervisor” and ”leadership and employee health”. In
+the first scenario, there are 2 people: Tim and Mike. Tim is responsible for the
+payroll department of human resources. After the introduction of new software
+that allows for more efficient payroll accounting, Tim is not satisfied with Mike’s
+performance because he is not yet proficient in using the software. Now, in the
+Human Resources department, the annual staff evaluation is scheduled. In this
+scenario the user has to play once Tim and the other Mike.
+The second scenario concerns workplace health. In German organizations, there
+are mental risk assessments for every workplace. This is not a measurement of
+employees’ mental health but an analysis to determine whether work activities,
+the workplace, or the environment in which it takes place are placing employees
+under stress or could lead to psychological stress or illness. The idea behind this
+evaluation is to prevent illnesses and inform employees and employers on how to
+design working conditions so that employees feel well. In this scenario, there are
+three characters: a manager (Tom) and two employees (Anne and S¨oren). In this
+scenario, the user must interpret Tom and S¨oren once each. All four scenarios
+take place in the same virtual environment: a very simple office with some fur-
+nishings in the background (furniture and plants). Figure 1 shows the experiment
+with a first person and third person point of view. All avatars have audio that can
+be played from the moderator’s keyboard during the experience. In this way, the
+experiment moderator can control the entire execution of the experience. Virtual
+characters will have animations during audio playback in conditions with ani-
+mated avatars, while in conditions with non-animated avatars, avatars remain
+in a sitting idle position. Avatars and animations were taken from Mixamo [26].
+Fig. 1: On the left: what the user sees in the virtual environment; on the right:
+a picture taken from outside the CAVE
+
+===== PAGE 6 =====
+4
+Results
+4.1
+UEQ-S
+The results for the UEQ-S dimensions of the pragmatic and hedonic quality can
+be found in Figure 2. For condition 1 (1 virtual user + no animation) hedonic
+quality was similar to the pragmatic quality (PQ = 1.15, HQ = 1.12). For con-
+dition 2 (2 virtual users + no animation) pragmatic quality was rated as being
+lower compared to the hedonic quality (PQ = 0.15, HQ = 0.92). A similar trend
+could be observed for condition 3 (1 virtual users + animation) and condition
+4 (2 virtual users + animation), for which also pragmatic quality was rated as
+being lower compared to the hedonic quality (condition 3: PQ = 0.52, HQ =
+1.27; condition 4: PQ = 0.6, HQ = 1.15).
+4.2
+IPQ
+For the one virtual user condition (condition 1), the perceived overall presence
+(G1) was reduced when adding animations from a mean value of 4.4 to 4. Adding
+animation for the one user condition resulted in a lower experienced spatial pres-
+ence, from 3.74 to 3.14. In the case of the two-user conditions, adding animation
+resulted in a higher perceived overall presence (from a mean value of 3.2 to 4.3)
+and also a higher spatial presence (from 3.14 to 3.42).
+Fig. 2: On the left: Average values over all participants for the two UEQ-S scales
+pragmatic and hedonic quality. On the right: Average values over all participants
+for the two IPQ scales general presence (IPQ G1) and spatial presence (IPQ SP).
+4.3
+After condition questions
+A 7-value Likert scale was used for the evaluation of the post experiment ques-
+tions. The results of the questions also show that the first condition, with an
+avatar and no animation was the one felt most real with a mean value of 4,3.
+This is probably due to the fact that the avatar in the idle position seemed to
+
+===== PAGE 7 =====
+maintain eye contact with the user which in the same condition with animation
+and with two users did not happen. For the second question, in addition to con-
+dition 1 (mean = 5.7),also conditions 2 (mean = 5.5) and 4 (mean = 5.6) scored
+high. This may have to do with the role played during the scenarios.
+5
+Conclusion
+To summarize, it is crucial to exercise prudence in situations involving a single
+virtual user. Incorporating non-congruent animations may negatively affect both
+overall and spatial presence perception. As such, it is essential to thoughtfully
+choose animations and details. In contrast, the presence of two virtual users
+seems to enhance the experience, as the addition of animation appears to have
+a generally positive influence on presence.
+The vast potential of immersive media for experiential learning and training
+in leadership cannot be understated. Nonetheless, educational institutions must
+recognize the significant time and effort necessary for the development, testing,
+and evaluation of such tools. Furthermore, forging a more robust connection
+between leadership theories and innovative leadership development tools presents
+an opportunity for future research and practical applications.
+References
+1. Blascovich, J., Bailenson, J.: Infinite reality: Avatars, eternal life, new worlds, and
+the dawn of the virtual revolution. Harper Collins (2011)
+2. Bowman, D.A., McMahan, R.P.: Virtual reality: How much immersion is enough?
+Computer 40(7), 36–43 (2007)
+3. Carroll, B.: Experiential learning in leadership development: A review and impli-
+cations for future research. Leadership 18(1), 3–23 (2022)
+4. Carrozzino, M., Bergamasco, M.: Beyond virtual museums: Experiencing immer-
+sive virtual reality in real museums. Journal of Cultural Heritage 11(4), 452–458
+(2010). https://doi.org/10.1016/j.culher.2010.04.001
+5. Cruz-Neira, C., Sandin, D.J., DeFanti, T.A.: Surround-screen projection-based vir-
+tual reality: The design and implementation of the cave. In: Proceedings of the 20th
+Annual Conference on Computer Graphics and Interactive Techniques. pp. 135–142
+(1992). https://doi.org/10.1145/133994.134045
+6. Csikszentmihalyi, M.: Beyond Boredom and Anxiety: Experiencing Flow in Work
+and Play. Jossey-Bass (1975)
+7. Dentico, P.: Leadsimm: Collaborative leadership development for the knowledge
+society. Developments in Business Simulation & Experiential Learning 26, 98–106
+(1999)
+8. Fecke, J., M¨uller, L.: Simulationen in virtuellen lernumgebungen: Welche vor-
+und nachteile haben avatarbasierte und videokamerabasierte formate bei der
+durchf¨uhrung von rollenspielen? Zeitschrift f¨ur Hochschulentwicklung 17(1), 215–
+232 (2022)
+9. Franke, T., Attig, C., Wessel, D.: A personal resource for technology interaction:
+development and validation of the affinity for technology interaction (ati) scale.
+International Journal of Human–Computer Interaction 35(6), 456–467 (2019)
+
+===== PAGE 8 =====
+10. Ghani, J.A., Deshpande, S.P.: Task characteristics and the experience of optimal
+flow in human-computer interaction. The Journal of Psychology 128(4), 381–391
+(1994). https://doi.org/10.1080/00223980.1994.9712742
+11. Guthrie, K.L., Jones, T.B., Osteen, L., Hu, S.: Developing leadership education
+through virtual simulations. Journal of Leadership Education 10(1), 54–68 (2011)
+12. Guthrie, K.L., Phelps, K., Downey, S.: Virtual worlds. a developmental tool
+for leadership education. Journal of Leadership Studies 5(2), 6–13 (2011).
+https://doi.org/10.1002/jls
+13. Heim, J., Brooks, P., Følstad, A., T.Schliemann: Fitness for purpose evaluation
+methodology. Tech. rep., University of Nottingham
+14. Hunsaker, P.L.: Leadership evaluation and training through behavioral simulations:
+Method, results, and future directions. New Horizons in Simulation Game and
+Experiential Learning 4, 40–47 (1977)
+15. Kolb, D.: Experiential learning: Experience as the source of learning and develop-
+ment. Prentice Hall, Englewood Cliffs, New Jersey (1984)
+16. Kolb, D.A.: Experiential learning: Experience as the source of learning and devel-
+opment. FT Press (2014)
+17. Laugwitz, B., Held, T., Schrepp, M.: Construction and evaluation of a user expe-
+rience questionnaire. In: HCI and Usability for Education and Work. pp. 63–76.
+Springer Berlin Heidelberg (2008)
+18. Lombard, M., Ditton, T.: At the heart of it all: The concept of presence. Journal of
+Computer-Mediated Communication 3(2) (1997). https://doi.org/10.1111/j.1083-
+6101.1997.tb00072.x
+19. Northouse, P.G.: Leadership: Theory and practice. Sage Publications (2018)
+20. Pinilla, A., Voigt-Antons, J.N., Garcia, J., Raffe, W., Moller, S.: Real-time
+affect detection in virtual reality: a technique based on a three-dimensional
+model of affect and eeg signals. Frontiers in Virtual Reality 3, 964754 (2023).
+https://doi.org/10.3389/frvir.2022.964754
+21. Reeves, B., Malone, T.W., O’Driscoll, T.: Leadership’s online labs. Harvard Busi-
+ness Review 86(5), 58–66 (2008)
+22. Schubert, T.W.: The sense of presence in virtual environments: A three-component
+scale measuring spatial presence, involvement, and realness. Z. f¨ur Medienpsycholo-
+gie (2003)
+23. Shaw, C.D., Green, M.: Beyond the head-mounted display: Toward immersive
+multi-display systems. IEEE Computer Graphics and Applications 34(6), 6–10
+(2014). https://doi.org/10.1109/MCG.2014.117
+24. Slater, M.: Place illusion and plausibility can lead to realistic behaviour in im-
+mersive virtual environments. Philosophical Transactions of the Royal Society B:
+Biological Sciences 364(1535), 3549–3557 (2009)
+25. Steuer, J.: Defining virtual reality: Dimensions determining telepresence. Jour-
+nal of Communication 42(4), 73–93 (1992). https://doi.org/10.1111/j.1460-
+2466.1992.tb00812.x
+26. Systems, A.: Mixamo.com, https://www.mixamo.com/#/
+27. Vergari, M., Koji´c, T., Vona, F., Garzotto, F., M¨oller, S., Voigt-Antons, J.N.:
+Influence of interactivity and social environments on user experience and social ac-
+ceptability in virtual reality. In: 2021 IEEE Virtual Reality and 3D User Interfaces
+(VR). pp. 695–704. IEEE (2021)
+28. Voigt-Antons, J.N., Spang, R., Koji´c, T., Meier, L., Vergari, M., M¨oller, S.: Don’t
+worry be happy-using virtual environments to induce emotional states measured
+by subjective scales and heart rate parameters. In: 2021 IEEE Virtual Reality and
+3D User Interfaces (VR). pp. 679–686. IEEE (2021)

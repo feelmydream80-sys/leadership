@@ -1,0 +1,11 @@
+Title: Ethical leadership and the psychology of decision making
+Authors: David M. Messick, Max H. Bazerman
+Source: OpenAlex
+Date: 2004-05-19
+URL: https://doi.org/10.1016/s1529-2096(01)03014-0
+
+Abstract (EN):
+Executives today face many difficult, potentially explosive situations in which they must make decisions that can help or harm their firms, themselves, and others. How can they improve the ethical quality of their decisions? How can they ensure that their decisions will not backfire? The authors discuss three types of theories - theories about the world, theories about other people, and theories about ourselves - that will help executives understand how they make the judgments on which they base their decisions. By understanding those theories, they can learn how to make better, more ethical decisions.
+
+Abstract (KO):
+오늘날 경영진은 회사와 자신, 그리고 다른 사람들에게 도움이 되거나 해를 끼칠 수 있는 결정을 내려야 하는 어렵고 폭발 가능성이 있는 많은 상황에 직면해 있습니다. 의사결정의 윤리적 질을 어떻게 향상시킬 수 있습니까? 자신의 결정이 역효과를 내지 않을 것이라고 어떻게 확신할 수 있습니까? 저자들은 세 가지 유형의 이론, 즉 세상에 관한 이론, 다른 사람에 관한 이론, 우리 자신에 관한 이론을 논의합니다. 이 이론은 경영진이 결정의 기초가 되는 판단을 내리는 방법을 이해하는 데 도움이 됩니다. 이러한 이론을 이해함으로써 학생들은 더 나은, 더 윤리적인 결정을 내리는 방법을 배울 수 있습니다.

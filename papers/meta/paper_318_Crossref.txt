@@ -1,0 +1,11 @@
+Title: From Data To Decisions
+Authors: Tendai Charles, Abdulai Abukari, Hend Al Mazmi
+Source: Crossref
+Date: 2026-2-20
+URL: https://doi.org/10.4018/979-8-3373-4908-4.ch013
+
+Abstract (EN):
+This chapter examines the emergence of AI-driven pedagogical leadership as a critical response to the challenges and opportunities posed by the integration of artificial intelligence in education. Set against the backdrop of increasingly data-intensive digital ecosystems, it argues that effective leadership must move beyond technological adoption to cultivate the capacity for ethical, inclusive and contextually grounded decision-making. Drawing on theories of distributed leadership, sensemaking and data use, the chapter explores how AI tools can support strategic planning, staff development and resource allocation. It critically analyses ethical concerns, risks of technocentrism and the erosion of teacher autonomy, while highlighting persistent data literacy and infrastructure gaps. The chapter concludes by proposing models for capacity building and strategic recommendations for embedding AI within continuous improvement cycles.
+
+Abstract (KO):
+이 장에서는 교육에 인공 지능을 통합함으로써 발생하는 과제와 기회에 대한 중요한 대응으로서 AI 중심 교육적 리더십의 출현을 검토합니다. 점점 더 데이터 집약적인 디지털 생태계를 배경으로 효과적인 리더십은 기술 채택을 넘어 윤리적이고 포용적이며 상황에 맞는 의사 결정 능력을 배양해야 한다고 주장합니다. 분산된 리더십, 감각 형성 및 데이터 사용에 대한 이론을 바탕으로 이 장에서는 AI 도구가 전략적 계획, 직원 개발 및 자원 할당을 지원할 수 있는 방법을 탐구합니다. 윤리적 우려, 기술 중심주의의 위험, 교사 자율성 침해를 비판적으로 분석하는 동시에 지속적인 데이터 활용 능력과 인프라 격차를 강조합니다. 이 장은 지속적인 개선 주기 내에 AI를 내장하기 위한 역량 강화 모델과 전략적 권장 사항을 제안하는 것으로 마무리됩니다.

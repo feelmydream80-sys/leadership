@@ -1,0 +1,11 @@
+Title: Data-Informed, Not Data-Driven
+Authors: Karim Ragab
+Source: Crossref
+Date: 2026-2-20
+URL: https://doi.org/10.4018/979-8-3373-4908-4.ch011
+
+Abstract (EN):
+As artificial intelligence tools increasingly shape instructional delivery, student monitoring, and administrative operations in K–12 education, school leaders must navigate the fine line between leveraging data for insight and over-relying on algorithmic outputs. This chapter critically examines the evolving role of educational leaders in Gulf and Middle Eastern school systems, where ambitious national AI strategies intersect with traditional education governance and cultural expectations. It argues for a data-informed leadership model, one that integrates AI-generated insights into human-centered, pedagogically sound decision-making processes. The chapter unpacks the risks of data determinism, including eroded teacher agency, student dehumanization, and biased performance metrics. It introduces actionable strategies and transparency frameworks that restore judgment, context, and trust to leadership practices. The chapter positions AI not as a substitute for educational vision but as a tool that must be curated, interpreted, and ethically managed by reflective school leaders.
+
+Abstract (KO):
+인공 지능 도구가 K-12 교육에서 교육 전달, 학생 모니터링 및 행정 운영을 점점 더 구체화함에 따라 학교 리더는 통찰력을 위해 데이터를 활용하는 것과 알고리즘 결과에 과도하게 의존하는 것 사이에서 미묘한 차이를 찾아야 합니다. 이 장에서는 야심 찬 국가 AI 전략이 전통적인 교육 거버넌스 및 문화적 기대와 교차하는 걸프 및 중동 학교 시스템에서 교육 리더의 진화하는 역할을 비판적으로 검토합니다. 이는 AI에서 생성된 통찰력을 인간 중심적이고 교육학적으로 건전한 의사 결정 프로세스에 통합하는 데이터 기반 리더십 모델을 주장합니다. 이 장에서는 침식된 교사 기관, 학생 비인간화, 편향된 성과 지표를 포함한 데이터 결정론의 위험을 설명합니다. 리더십 관행에 대한 판단, 맥락, 신뢰를 회복하는 실행 가능한 전략과 투명성 프레임워크를 소개합니다. 이 장에서는 AI를 교육적 비전을 대체하는 것이 아니라 성찰적인 학교 리더가 선별하고 해석하고 윤리적으로 관리해야 하는 도구로 지정합니다.

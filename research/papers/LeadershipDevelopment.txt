@@ -1,0 +1,950 @@
+Environment and Social Psychology (2024) Volume 9 Issue 2
+doi: 10.54517/esp.v9i2.2000
+1
+Research Article
+Leadership development through 360-degree multi-rater feedback—
+An experience sharing of need, approach, roll-out, and the impact
+Barttanu Kumar Das1, Rajini G.2,*
+1 Department of Corporate Human Resource, Larsen and Toubro Limited, Powai, Mumbai 400076, India
+2 School of Management Studies, Vels Institute of Science, Technology & Advanced Studies, Chennai 6000117, India
+* Corresponding author: Rajini G, rajini.sms@velsuniv.ac.in, dr.rajini.g@gmail.com
+ABSTRACT
+The organizational development (OD) interventions carried out by the assessment center identifying the
+competencies becomes effective only if the expectation of the stakeholders is met. A 360-degree multipurpose
+intervention is to assess and develop project director’s leadership capabilities and enable them to execute Mega
+Infrastructure Projects in India executed by Larsen and Toubro, the leading engineering, procurement and construction
+(EPC) players of India. Implementing such Mega Projects by maintaining time, cost, safety, and quality parameters
+require leadership skills of high order. To meet out this requirement implementation partner interacted with few project
+directors from each business verticals such as nuclear, hydel, metro, defense, special bridges and ports and harbor, to
+understand the role holders’ challenges and the expectations. L&T Heavy Civil Infrastructure (HCI) Leadership
+Competency framework was thus drafted looking into the role intensity and specific role-based challenges of the Mega
+Project Leaders. The questionnaires were designed to cover all dimensions and sub dimensions of 8 competencies,
+covering 40 behavioral Indicators. the questionnaires were hosted on the online platform to including self, supervisor,
+direct repartees, peers, customers, and other stakeholders. Validation to the assessment of each dimension and sub-
+dimensions as qualitative feedback is done with simple average scores and the range. The study found that execution
+leadership was the highest rated competency followed by customer engagement and talent management. The study also
+found that strategic orientation and decision making were rated low compared to other competencies, got validated by
+comments of customers as well. This is quite evident from the feedback that was taken after 9 months of the intervention.
+The study by using Delphi technique revealed that by providing feedback from all stakeholders supported by systematic
+coaching, 88% participants showed improvement in the low rated items. The study further proved that with proper
+feedback and coaching at an individual level with required trust and keeping development as the core agenda and without
+linking to any other HR processes like appraisal and promotion, majority of the participants took full ownership, interest
+and worked on their individual competency development showing their learning agility.
+Keywords: leadership development; execution leadership; customer engagement; learning agility; decision making and
+change management
+1. Introduction
+360-degree feedback, a multi rater feedback instrument, is an established HR methodology used in
+ARTICLE INFO
+Received: 24 August 2023 | Accepted: 19 September 2023 | Available online: 15 December 2023
+CITATION
+Das BK, G R. Leadership development through 360-degree multi-rater feedback—An experience sharing of need, approach, roll-out and the
+impact. Environment and Social Psychology 2024; 9(2): 2000. doi: 10.54517/esp.v9i2.2000
+COPYRIGHT
+Copyright © 2023 by author(s). Environment and Social Psychology is published by Asia Pacific Academy of Science Pte. Ltd. This is an Open
+Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/),
+permitting distribution and reproduction in any medium, provided the original work is cited.
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+2 
+organizations across the world. It is very comprehensive and effective process that gives leaders and managers 
+powerful insights. The insights come essentially by receiving clear feedback from their peers, employees, 
+managers, and customers. The feedback creates strong ground for change by providing specific input, linked 
+to the various aspects of leadership behavior and competencies. It further brings the right focus to improve the 
+leadership effectiveness by learning and practicing required new skills and behavior. Gathering and getting 
+feedback from colleagues and customers has many benefits. Besides the valuable feedback from the managers, 
+it gives an opportunity to also know how others in his circle of influence such as peers, team members and 
+customers perceive and think about his leadership style and behavior. 
+Generally, employees in many cases don’t accept fully the feedback from their superiors with whatever 
+good intention it may have been given, due to the intrinsic aspect of bias perception ingrained in the mind due 
+to boss-subordinate relationship, which creeps in the mind for multiple reasons such as lack of objective 
+performance evaluation, proactive and timely feedback, lack of fairness, favoritism perception, lack of trust 
+and empathy in the relationship and not getting full support for career advancements and other developmental 
+opportunities. 
+Since 360-degree feedback process throws input through a rounded view, hence less prone to biased 
+perception as it is based on perspectives of multiple persons. For example, a manager may be thinking that the 
+boss is biased and picky about some aspect of his competency, such as communication skills, will take it 
+seriously, when everyone around suggest that he needs improvement in that area. 
+1.1. History and origin of 360-degree as developmental tool 
+The Mesopotamians invented the wheel about 6000 years ago. They loved the number 60. Mary 
+Blockman, in her book ‘Reading the Numbers’, writes that the Mesopotamians passed their base of 60 
+numerical system to the ancient Egyptians, who used it to divide a circle into 360 degrees. 
+The 360-degree circle worked out great: The Egyptians loved perfect triangles, and exactly six of them 
+fit into a circle. Therefore, six triangular slices of 60 degrees each made for a sensible 360-degree dissection 
+of a circle. Since then, the 360-degree circle has stood the test of time and has made its mark on time itself: 
+When time was first recorded on the face of a circle, it was an easy leap to divide hours into 60 min and minutes 
+into 60 s. 
+However, the origin of 360-degree feedback concept started with the German Military around 1930, when 
+the military psychologist Johann Baptist Rieffert developed a methodology to select officer candidates and 
+later during World War II, the German military began gathering feedback from multiple sources to evaluate 
+Military officer’s performance[1]. After 2 decades of start of 360° feedback concept, it was introduced into the 
+business world in the 1950’s. The Esso Research and Engineering Group (Now known as ExxonMobil) was 
+the first company who had documented use of multisource surveys to evaluate their employees. 
+From there, the idea of 360-degree feedback gained momentum, and by the 1990s most human resource 
+and organizational development professionals understood the concept. The problem of collecting and collating 
+the feedback demanded a paper-based system, which causes delays and involves complex manual calculations. 
+This led to despair amongst practitioners and a gradual erosion of commitment by recipients. However, with 
+the ability to conduct evaluations by online surveys due to rise of the Internet, multi-rater feedback became 
+popular and steadily its usage increased. Further, outsourcing of human resource functions has created a strong 
+market for 360-degree feedback products from consultants. This has led to a proliferation of this feedback tool 
+in the market. 
+Today, studies suggest that over one-third of U.S. companies use some type of multi-source feedback, 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+3 
+while others claim that this estimate is closer to 90% of all fortune 500 firms. 
+Mauri Periperl, the Pro-Vice Chancellor of Cranefield University studied 17 organisations and mentioned 
+in her article of “Getting 360-degree feedback right”[2] that 360-degree feedback systems, and peer appraisal 
+programs, are always work in progress—subject to vulnerabilities, requiring sensitivity to hidden conflicts as 
+much as to tangible results, but nevertheless it is responsive to thoughtful design and purposeful change. 
+Companies that have achieved success with these programs tend to be open to learning and willing to 
+experiment. They are led by executives who are direct about the expected benefits as well as the challenges 
+and who actively demonstrate support for the process. By laying themselves open to praise and criticism from 
+all directions and inviting others to do the same, they guide their organizations to new capacities for continuous 
+improvement. 
+Zenger and Folkman[3], after surveying the 360-degree feedback of more than 20,000 mangers with 
+200,000 people’s feedback, indicated that the potential of this tool to transform a keen Manger into a leader is 
+very huge. They further mention that impact of one perceived strength moves leaders to the 64th percentile of 
+effectiveness, three strengths move them to 81st percentiles and suggest that individual should figure out in 
+what he/she is good at and then improve it to the 90th percentile. 
+1.2. 360-degree feedback in India 
+Rao[4], a leading Human resources development (HRD) expert, pioneered the concept of 360-degree 
+feedback and its use in India. He had initiated this during his tenure as professor of human resource 
+management (HRM) and organization behaviour (OB) in Indian Institute of Management, Ahmedabad (IIM-
+A). He believed that feedback from stranger groups is likely to be more authentic and reliable than the ones 
+coming from known persons. He further opines that feedback from known people gets coloured by the 
+workplace relationship that we may have, while strangers having no prior views and have nothing at stake to 
+please the feedback seeker. 
+Rao[4] got the insight to think about such a feedback system from the suggestions of the Management 
+Development Program (MDP) participants that he was taking at Xavier Labour Relations Institute (XLRI), 
+Jamshedpur, while he was on leave from IIM, Ahmedabad (IIMA) between 1983 and 1985. During the sessions, 
+he was confronted repeatedly with this question, “If only there is some way of knowing what others around 
+me and who interact with me thought of me and my personality, I will feel more motivated to change?’’. 
+Immediately after return to IIMA, he decided to launch a program which is based on feedback from known 
+people. Around this time, he was using the Supervisory and Leadership styles questionnaire. He developed 
+this based on his work with Abigail Stewart of Wesleyan University which was funded by David McClelland. 
+The Stewart Maturity scale had four stages of development which were converted into three leadership styles: 
+benevolent, critical and developmental. 
+He used this questionnaire on many managers including doctors in charge of primary health centres and 
+school heads and other managers. This instrument tried to test how the Indian managers are perceived by their 
+juniors. At IIMA, subsequently, he proposed a program called as “Leadership Styles and Organizational 
+Effectiveness”. The program was for three full days and the design required a series of tests to be administered 
+and feedback collected anonymously from known people (subordinates, colleagues, bosses, and others) who 
+interacted with the participant enrolled for the program. 
+IIMA will in turn plan to send this questionnaire along with a pre-signed letter from the participant 
+requesting the respondent to give frank responses on the questionnaire and send to IIMA program coordinator. 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+4 
+Pradip Khandwalla and Singh JP, both professors of OB area in IIM-A, who had volunteered to work with him 
+in this programme and also used their own questionnaires as additional ones. 
+Pradip’s management styles questionnaire was tested out already in Canada and the USA which was very 
+popular. Singh JP volunteered to work on Decision making styles. Later S. Ramnarayan joined the team to 
+work on learning styles and so on. Thus, the four of us formed a four team and announced the program. When 
+they were keeping their finger crossed about the registration, they got almost sixty people nominated for it and 
+decided not to take more than 20 at a time as it was feedback intensive. The program was conducted and 
+repeated for a few years. 
+In mid-nineties, T. V. Rao read a book on 360-degree feedback by Edwards and then realised that this 
+methodology that they used has been called as 360 degree feedback in early nineties. He emphasizes further 
+that the origins cannot be attributed to any of them as multi-rater feedback and multisource feedback were used 
+even earlier. He quotes from the Indian epic Ramayana when Lord Rama used some form of 360 feedback to 
+know the people’s perception of his rule by using Gooptacharis (Spy) and many other kings used to go round 
+in disguise to know and feel the impact of their leadership or rule. From mid-nineties when Dr. Rao started T. 
+V. Rao Learning Systems, he started using the term 360-Degree Feedback and popularised the same in India. 
+He says that given the Indian personality which uses heart and works more on emotions, they are very 
+cautious in interpreting such feedback and treat it as provocative and subjective and treat it with respect it 
+deserves and not as an objective assessment.  Hence very cautious in recommending it for any administrative 
+use but liberally promote for self-reflection and self as well as organization development. 
+Hence T. V. Rao, in his book, The Power of 360-degree feedback—The India way for leadership 
+effectiveness, second edition, 2014 advocates that this tool should be used for developmental purpose than an 
+appraisal tool in Asian countries, though it is being used as performance evaluation and appraisal in USA and 
+few other countries. When used as a developmental tool, he feels that it has lot of potential to build future 
+leaders in all sectors. He further argues that hence it’s potential power to strengthen and enhance leadership 
+competencies need to be used and can’t be ignored or avoided for the fear of negative feedback. 
+He further states that still it is not a very accepted tool and top-level leaders still dread this tool. He further 
+emphasizes after profiling 3000 senior managers with 30,000 feedbacks, on an average of 10 circles of 
+influence feedback for each manager from 2009 to 2014, that it is a tremendous tool for growth and enhancing 
+leadership competencies. The process is an experience, and every manager must go through it. 
+1.3. Leadership competencies used by in his model 
+Managerial and leadership competencies which is termed as RSDQ (roles, styles, delegation and qualities) 
+is the base for this study[4]. This model of leadership and managerial effectiveness views effective management 
+and leadership as a combination of 4 sets of variables. All these variables are part of RSDQ—360-degree 
+feedback instrument. 
+1.3.1. Roles 
+To be effective, every manager must play several roles. These are transformational (leadership roles) and 
+transactional (managerial) roles. Some of them are like articulating and communicating vision and values, 
+formulating long-term policies and strategies, introducing new technology and systems, inspiring and 
+developing teams, managing team members, managing internal customers and external customers, etc. 
+1.3.2. Styles 
+While effective managers and leaders recognize all aspects of their role and perform them well, it is not 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+5 
+only the roles or the activities that determine the effectiveness but the way in which they are played. The model 
+envisages that the manager may play all the roles well but may be insensitive to the style in which they carry 
+out the roles. The leadership style classified and included are Benevolent or paternalistic leadership style 
+believe that the employees should be constantly guided. The critical leadership style is close to the theory of 
+X belief system where the manager believes that the employees should be closely and constantly supervised 
+and directed. The developmental leadership style is an empowering style where the Top Management believes 
+in developing the competencies of the staff, treats them as mature adults. 
+1.3.3. Delegation 
+The RSDQ model considers level of delegation to be important part of a senior executive’s effectiveness. 
+The dimension is included because most of the senior executive find it difficult to delegate especially those 
+executives who get the promotions very fast. 
+1.3.4. Qualities 
+The model envisages that the managers should exhibit qualities of leaders and world-class managers i.e., 
+proactiveness, listening, communication, positive approach, participative nature and quality orientation. 
+1.4. Competencies for 360-degree as an industry practice 
+While T. V. Rao Learning Systems Pvt. Ltd (TVRLS), the consulting arm has been using the RSDQ 
+model as per his research and in Indian conditions, but there is a trend by some companies to design the 360-
+degree feedback system as per their organizational competencies, culture, and values that they would like to 
+embed in the overall tool and use it for development. In India, there is also concept of competencies for 
+different levels in general and leadership competencies for senior management. So, for 360-degree instrument 
+that are designed are mapped into the leadership competencies or the competency of the career band or the 
+overall competencies. 
+1.5. Need for 360-degree review feedback process intervention at HCI, L&T 
+L&T’s Heavy Civil Infrastructure undertakes Mega Projects execution in India and abroad. These projects 
+pertain to various types of infrastructure segments namely metro-elevated and underground, nuclear, hydel, 
+ports and harbor, Defense, Special bridges, and High-Speed Rail (Bullet Train) projects. Many of these projects 
+like underground metro constructed in cities like Mumbai and Chennai, Mumbai Trans Harbor Link (MTHL), 
+Mumbai’s coastal road projects, High Speed Rail (Bullet Train) projects are happening for the first time in 
+India, very complex in terms of design, and execution, requires high level of project management, People 
+management, skill development, resource management, customer focus and stakeholder management 
+competencies and skills. 
+These projects are high value in terms of project award value and each one is more than Rs 5000 crores 
+with a very stiff project completion timeline. To executive these projects of mega in scale and size and of 
+engineering marvel that are happening for the first time in India, to meet the talent requirements of diverse 
+engineering capability, the company engages talent from India and abroad in design engineering, safety, 
+underground construction and few such specialist  professions where expat talent from other countries having 
+global experience and exposure in executing similar complex project elsewhere in the world, are hired and 
+posted in head office and such Mega Projects. 
+Looking into the complexity of these projects, the company has been posting very senior leader as project 
+director who are mostly internally grown, though at some projects there are expat project directors. The project 
+directors have undergone Mega Project Leadership programs conducted in collaboration with Great Lakes of 
+Management, Chennai, and few of them also attended L&T group’s 7-step leadership development programme. 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+6 
+Some of them have also undergone special mentoring sessions facilitated by an internationally renowned leader 
+who had more than 4 decades of experience in executing Mega Projects of similar scale and size such as Hong 
+Kong Metro. 
+These project directors that company has appointed, are required to interact with senior officials of the 
+clients who are mostly central/state government bodies, Senior Project Management Organization’s (PMO) 
+officials appointed by the clients, engineering consultants, Japan International Cooperation Agency (JICA) 
+and Asia development bank officials, the funding agencies, other government machineries, local politicians 
+and people representatives, peers from other functions of the same independent company, peers from other 
+divisions and the top management of the company. 
+Due to the contractual and various other administrative reasons, executing these projects on time and with 
+profitability maintaining the safety and quality standards require deft leadership skills and high standards of 
+general management skills with high customer focus, cost management, people management and stakeholder 
+management skills. Hence, the project directors are like mini business heads generating annual sales and 
+profitability for the company, which gets aggregated at the business level. 
+As per company’s succession planning and development process, many of these project directors, since 
+having experience in various aspects business and management processes including project management and 
+customers, act as pipeline to future segment and business heads, IC heads, directors of the company. So, to 
+groom and hone the potential project director with requisite leadership skills and developing them in all facets 
+of leadership holistically, its introduction was felt to be of utmost importance. In view of tremendous growth 
+opportunities in Infrastructure development as per the focus of Govt of India, it was also imperative on the part 
+of these project directors to focus on developing subordinates who can become future Mega Project directors 
+to lead such Mega Projects that the company expects to bag. 
+Though the company had many leadership development training programmes like Mega Project 
+Leadership with Great Lakes Institutes, 7-step leadership development programme of the group and as part of 
+these programmes, before they attend 7-step programme, feedback taken from seniors, peers, and subordinates, 
+to understand their development focus by the faculty and however, post the programme, that remains with the 
+individual without any further review and coaching/follow-up support and many others who are not part of 7-
+seven step leadership programme, do not get opportunity of it and hence it remains limited to only to few 
+participants of 7-step leadership development programmes. However, as per criteria, very few such Mega 
+Project directors were eligible and were able to attend these programmes. 
+In view of the above perspectives, it was strongly felt to introduce a system for their holistic development 
+based on feedback from immediate boss, Boss’s boss, peers, subordinates, and customers. Accordingly, the 
+first ever 360-degree feedback intervention for leadership development of Mega Project Leaders was 
+conceptualized and introduced in Heavy Civil Infrastructure of L&T Construction, Chennai in the year 2019–
+2020. 
+1.6. Implementation partner 
+Since this was for the first time that was introduced, it was decided to partner with an external 
+consultant/agency who has the expertise and experience in helping the clients to design, develop and roll-out 
+competency based 360-degree system in Indian Organizations. It was further decided to roll this out on a 
+reliable on-line platform. After survey of the market, the organization development and training head 
+recommended to empanel People Business Consulting, Bangalore for this initiative, which was agreed by the 
+Management. 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+7 
+1.7. Research background 
+By including 360-degree feedback, the organization can identify the major areas which helps for 
+leadership development. Further his research explains the concept multi rater or multi source feedback which 
+acts as a key component of leadership development. He found that gender also plays a key role in leadership 
+development and study said about the issues involved with gender-based leadership development. The study 
+was conducted with public sector organizations in the United Kingdom[5]. 
+Considering other development approaches based on very distinct leadership models, the proposed 
+differentiation is fundamental. Leader development is founded on a conventional individualistic view of 
+leadership. The fundamental notion is that developing individual leaders results in more effective leadership. 
+It also assumes that organizations may add leadership to increase their social and operational efficiency. 
+Leadership development, on the other hand, has its roots in a more current, relational style of leadership. This 
+paradigm assumes that leadership is determined by social resources embedded in relationships[6]. 
+Developing individual leaders without regard for reciprocal relationships within people or their 
+interactions within a larger social environment contradicts research proving that leadership is a complex 
+interplay between individuals and their social and organizational surroundings. Attempting to construct 
+mutually beneficial systems and mutual commitments among communities of practice without a thorough 
+investment in individual preparation risks placing people in tough developmental circumstances that are too 
+far above their heads. 
+360-degree feedback and executive coaching, mentorship and networking, and job assignment and action 
+learning have all been praised as good for leadership development in some way. Unfortunately, there is little 
+empirical evidence to back up those statements. It is probably safe to say that any of these practices could be 
+beneficial or ineffective for leadership development. Effective leadership development is more concerned with 
+continuous and intentional implementation than with whatever specific practices are accepted. The 
+organizational discipline to introduce leadership development throughout the organization, rather than 
+confined by specific (typically top) levels, is critical to effective implementation. Another essential to 
+effectiveness is the integration of efforts across organizational levels and in terms of a broader developmental 
+goal within the context a strategic business challenge. 
+The research[7] has expanded the proximal outcomes of leadership development to include not just the 
+development of individuals’ knowledge skills and attitude (KSA) and social skills, but also the relationships 
+that connect people and give valuable resources to individuals, teams, business units, and organizations. Our 
+survey determined how many leadership development practitioners agree on the necessity of establishing 
+individuals’ and collectives’ social interactions. We specifically asked survey respondents about the 
+importance of strengthening KSAs through leadership development, the emphasis placed on those objectives 
+in their organization’s leadership development initiatives, and the effectiveness of those efforts. Then we asked 
+the same questions on enhancing workplace relationships that connect people and provide resources to 
+individuals, teams, business units, and organizations. 
+Almost all practitioners tested agreed or strongly agreed that strengthening individuals’ KSAs is critical 
+for organizational effectiveness, and almost as many emphasized the importance of KSA development in 
+leadership development efforts. A lower proportion of respondents said their organization was effective at 
+aiding individuals in improving their KSAs. Similarly, virtually all practitioners agreed or strongly agreed that 
+building relationships within organizations was critical to organizational effectiveness, and this goal was 
+emphasized. Significantly fewer respondents thought their organization was effective in facilitating the 
+formation of those partnerships. As a result, while leadership development practitioners agree that developing 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+8 
+leaders’ KSAs and social skills, as well as the relationships that bind people together, are important goals for 
+leadership development, they also believe their organizations could do better in terms of effectively addressing 
+both goals. 
+In summary, the network-enhancing leadership development conceptual model explains various methods 
+in how social networks can be incorporated into leadership advancement and demonstrates a requirement for 
+strategies that employ network-enhancing approaches focusing on both people and groups as part of an 
+integrated strategy to increasing organizational leadership capacity. The findings highlight major gaps between 
+network-enhancing leadership development science and practice. This gap provides researchers with an 
+opportunity and an imperative to develop theoretically relevant and tested techniques that enable people as 
+well as groups to understand, leverage, and modify the social and leadership relationship structures that 
+underpin organizational leadership. 
+The 360-degree feedback[8] has both benefits and drawbacks. It is vital to highlight that 360-degree 
+feedback for performance and 360-degree input for development will almost certainly yield quite different 
+results. They should not be used in the same sentence. Organizations should combine 360-degree feedback 
+and standard performance evaluation approaches to achieve the best results. The use of several feedback 
+methods will provide a completer and more accurate picture of overall employee performance. If used 
+appropriately, the 360-degree feedback technique has the ability to provide invaluable knowledge for both the 
+company and its personnel. 
+The goal of the study[9] is to estimate the influence of 360-degree feedback on leadership development. 
+The findings revealed that there were 20 common 360-degree feedbacks. 360-degree feedback is critical for 
+employees’ leadership development. The responses Each feedback feature of the three categories of 
+experienced employees is ranked in order of relevance. Based on these findings, firms must improve an 
+employee’s leadership development through 360-degree feedback. The findings suggest that there are no 
+significant differences in leadership growth based on employee experience, and this study demonstrates the 
+good effect of integrating 360-degree feedback for employee leadership development. Furthermore, firms that 
+employ the 360-degree appraisal system to encourage a healthy work environment. In the future, the 
+researchers should be concerned with new techniques to improve employee leadership development. 
+Additionally, organizations that use the 360-degree appraisal system to promote a healthy work environment. 
+The researchers should be concerned with innovative ways to boost employee leadership development in the 
+future. 
+The findings[10] reveal that training efficacy, learner expectations and experiences, and organizational 
+commitment to the development of leadership are all factors. Each of these themes has provided insights into 
+basic but effective activities that can help maximize the benefits of leadership development, such as the 
+inclusion of intentional selection techniques and scheduled debriefing and follow-up opportunities. In order to 
+address the urgent lack of leaders, organizations and people are making considerable expenditures in leadership 
+development. Without reform, institutions will continue to invest in developing leaders who do not pursue 
+leadership chances. Adopting thoughtful choosing of participants and follow-up practices would improve the 
+effectiveness and efficiency of institutional resources invested in leadership development programmes. 
+Paying attention to these practices will raise the applicant’s and the institution’s expectations, resulting 
+in greater goal congruence between applicants and institutions. Applicants who understand the standards and 
+have institutional support are more likely to apply for leadership positions. Institutions will profit from this by 
+solving the leadership deficit by sponsoring and assisting qualified candidates who will then assume leadership 
+positions within the institution. 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+9 
+Using a leadership development programme to encourage and assist the pursuit of leadership chances in 
+Aramco is a solid approach that helps institutions establish a larger pool of qualified leadership candidates, 
+according to this study. Employers can better prepare for their human resource needs if they understand how 
+their employees make decisions about future work. Individuals are motivated by their talents, knowledge, 
+abilities, attitudes, values, and life circumstances. Employers offer the employment and information about the 
+occupations, as well as the opportunities and limits that employees may face in the future if they pursue other 
+jobs. Organizations should monitor career pathways and strengthen leaders’ skills. 
+Management seeks information in order to direct and monitor the success of certain groups of employees, 
+as well as to ensure that capable managerial and technical talent is available to meet the needs of the 
+organization. Similarly, Aramco works hard to deliver an intensive learning and development on-boarding 
+programme that targets the needs of freshly employed young professionals in order to prepare them for the 
+workplace and future leadership roles. Aramco has a programme in place to provide young talent with engaging 
+and experiential learning opportunities. Through the use of several strategies such as talent management, 
+participant-driven, team-oriented, and simulated work environment. This example results in a very effective 
+Saudi Aramco employee who has the skills and confidence to lead both at work and in the community. 
+In today’s world, leadership is a current trend[11]. Every individual must be a leader in order for an 
+organization to be successful. According to the study, mentorship and action learning would be the most 
+successful and outcome-based practices; managers should invest more in them while also considering other 
+leadership development practices such as social networks and job assignments and attempting to improve them 
+in their particular organizations. Leadership development programs (LDPs) are a method for improving 
+organizational performance by redefining the organization’s strategy, implementing relevant changes in the 
+organization’s culture, implementing continuous development, strengthening competences and skills in 
+employees, and developing them as leaders. Organizational leaders should accept responsibility for developing 
+strategies to apply LDPs in order to boost organizational effectiveness. By fostering these practices, 
+organizations’ leadership development would be strengthened. 
+The primary goal of the research[12] was to emphasise the differences between leadership training and 
+development and to give evidence-based suggestions for where to best invest resources in leadership training 
+and development. We will now briefly outline investments that should be avoided. Avoid investing in 
+leadership development practises that (a) are not based on a needs analysis, (b) do not include methods for 
+applying the training back to the job, and (c) have not been scientifically verified. In terms of leadership 
+development, it is best to avoid investing in (a) techniques that rely primarily on classroom-based education, 
+(b) programmes that do not offer leaders with timely feedback and support, and (c) interventions that promise 
+quick-fix solutions. 
+This study[13] discovered that executives who worked in a constructive feedback context prior to attending 
+a leadership-development programme that included 360-degree feedback performed better than those who 
+worked in a negative feedback environment. These findings will assist practitioners in maximizing the 
+effectiveness of expensive leadership development programmes by strengthening workplace feedback 
+mechanisms prior to leadership development interventions. Post program leader improvement was also linked 
+to self-awareness and learning agility. 
+The findings of the study[14] show a link between 360-degree leadership performance appraisal and 
+organizational outcomes. A recent study adds to the evidence that 360-degree leadership performance appraisal 
+has a favourable impact on organizational success. Notably, having a 360-degree leader in an organization 
+enhances collaboration with middle-level leaders. The findings highlight the complexities of leading in all 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+10 
+directions, emphasizing the importance of a diversified skill set for effective leadership. Several interviewees 
+emphasized the need of intuition when navigating diverse organizational areas. The report does, however, 
+identify issues faced by middle or 360-degree leaders, like as pressures from superiors and demands from 
+subordinates or customers. 
+According to the report, organizations should recognize their employees’ varied needs and recognize the 
+critical function of feedback in improving performance. Empirical research has found a positive relationship 
+between 360-degree feedback adoption and employee contentment and engagement. The consensus among 
+participating faculty members who serve as middle-level leaders implies that individuals can analyses and 
+improve their leadership qualities regardless of their hierarchically different needed position. 
+This indicates that leadership development can come from a variety of organizational levels, emphasizing 
+the importance of varied leadership competencies. Experienced leaders frequently have an innate awareness 
+of how to navigate and connect across organizational levels. The investigation focuses on a university setting 
+in which the head adopts the role of 360-degree leader. The study’s findings highlight the link between the 
+deployment of 360-degree leadership performance appraisal in universities and beneficial organizational 
+outcomes.  
+A culture’ that encourages open and meaningful feedback exchanges has been shown to dramatically 
+boost the positive outcomes of 360-degree leadership performance reviews. To do this, it is preferable to create 
+a climate that not only recognizes the value of feedback but actively encourages its contribution to growth. 
+This study[15] found that transformational leadership is a strong positive predictor of FFOs’ in-role 
+performance, psychological empowerment, and work-life balance. This could be because effective 
+transformational leadership considers employees’ psychological needs and work-life balance when developing 
+organizational policies that improve workers’ in-role performance and organizational success. The progression 
+of transformational leadership style can ensure that an organization’s overall health and goals are met. This 
+study adds to the management literature by establishing the relationship between transformational leadership 
+and other study variables by eliciting information from a diverse range of stakeholders using the 360-degree 
+feedback method, making the findings more reliable and authentic. The research also demonstrated that the 
+combined mediation of psychological Work-life balance and empowerment can improve the relationship 
+between leaders and followers’ in-role performance. 
+The research question which arises now are: 
+1) 
+What would be the competencies expected at senior level starting from Joint General Manager and above 
+the manager level, who work for infrastructure projects based in India and Abroad. 
+2) 
+Can we bring in changes amongst the leaders by creating a system by multi rater feedback mechanism 
+based on Delphi technique? 
+3) 
+How does the corporate level assessment centers work by understanding the psychological aspects of 
+leaders involved in Nation Building Infrastructure Development? 
+2. Methods 
+Design and development of competency framework and the instrument with questionnaires is an 
+important aspect to be disseminated for reiterating the science way of appraisal for the managers who are 
+considered as leaders and business partners by the virtue of their positions held. L&T has an established 
+competency framework and matrix for its managers which are defined band wise and are in place for the four 
+bands. Managers at different bands go through Development Center and are assessed against these companies, 
+which are used for development purpose and at senior level starting from Joint General Manager and above 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+11 
+the manager is required to clear the benchmark score to be considered for the next grade. With more than 
+19,000+ managers going through leadership assessment through Development Center since 2004 is an industry 
+leading practice. 
+The Mega Project Leaders were mostly in Tier-3/Tier-4 level officers at the level of Joint General 
+Manager (Tier-3), General Manager and Vice President Grade (Tier-4). Despite these two levels, it was agreed 
+to review both the levels competencies that are used for Development Center. Since the role holder’s 
+development purpose is one and hence an integrated L&T HCI Leadership competency framework was drafted 
+looking into the role intensity and specific role-based challenges of the Mega Project Leaders. 
+At first, all competencies of Tier-3 and Tier-4 were shared with People Business, the implementation 
+partner. They were also shared the job descriptions and the write-up about various Mega Projects under 
+implementation in various business verticals across India and Abroad. Subsequently, interaction with HR Head 
+was arranged for briefing the partner about the strategic need of the intervention, sharing them the business of 
+HCI, leadership interventions already in place, business growth and expansion and the challenges associated 
+with Mega Project execution, succession planning and development pipeline for business head and for future 
+project directors. 
+Further to HR Head interaction, the implementation partner interacted with the business heads to get 
+perspectives from them about their specific business challenges. Finally, the implementation partner interacted 
+with a few project directors from each business verticals such as nuclear, hydel, metro, defense, special bridges 
+and ports and harbor, to understand the role holders’ challenges and the expectations. 
+The company’s Tier-3 framework consists of the following competencies: 
+• 
+Strategic orientation. 
+• 
+Driving and dealing with change. 
+• 
+Critical thinking. 
+• 
+Building tomorrow’s leaders. 
+• 
+Leveraging synergy. 
+• 
+Customer and stakeholder partnership. 
+• 
+Result and execution leadership. 
+• 
+Drive to excel. 
+The company’s Tier-4 framework consists of the following competencies: 
+• 
+Strategic mind-set. 
+• 
+Learning agility and digital mindset. 
+• 
+Conscientious decision. 
+• 
+Inspire and deliver results. 
+• 
+Organizational stewardship. 
+• 
+Social intelligence and collaboration. 
+• 
+Strategic talent management. 
+• 
+Synergistic customer engagement. 
+After review of our competencies, role descriptions, understanding of business, Mega Project challenges 
+and requirements and interaction with leadership team, the following competencies were co-created as HCI 
+Leadership competencies as per Table 1 for the purpose of design and development of 360-degree tool: 
+ 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+12 
+Table 1. Leadership competencies. 
+S. No 
+Competency name 
+Sub-dimensions  
+01 
+Strategic orientation 
+Big picture thinking 
+Managing market and business dynamics 
+Seizing business opportunities 
+Driving business value 
+02 
+Change management 
+Generating new novel ideas and solutions 
+Challenging the status quo 
+Thinking out of the box 
+03 
+Decision making 
+Quick and critical thinking 
+Taking prompt decisions 
+Calculated risk taking 
+04 
+Execution leadership 
+Driving operational excellence 
+Fostering first time right work culture 
+Delivering exceptional results 
+05 
+Customer engagement 
+Understanding customer needs 
+Creating unique customer solutions 
+Becoming a trusted advisor to clients 
+06 
+Relationship management 
+Demonstrating social intelligence 
+Networking with impact 
+Managing conflict 
+07 
+Learning agility 
+Investing high energy at work 
+Learning and adapting to new situations 
+Tackling demanding goals with tenacity 
+08 
+Talent management 
+Motivating teams 
+Guiding and supporting team members 
+Building a second line of leadership 
+The L&T HCI Leadership competency framework thus finalized, was used as the assessment criterion for 
+the 360-Degree Feedback Survey. The questionnaires were designed to cover all dimensions and sub 
+dimensions of 8 competencies, covering 40 behavioral indicators. Each competency consisted of 5 questions 
+and at the end of 5 questions, it was asked to provide specific examples how the person had behaved under the 
+situation to bring further clarity and validation to the assessment of each dimension and sub-dimensions as 
+qualitative feedback. 
+It was agreed to use a 5-point rating scale for the feedback as per the below: 
+• 
+Most often—4 (Acts this way 80% of the time) 
+• 
+Usually—3 (Acts this way 60% of the time) 
+• 
+Sometimes—2 (Acts this way 40% of the time) 
+• 
+Rarely—1 (Acts this way 20% of the time) 
+• 
+Unable to rate—0 
+To reach out to the participants and all the circles of influence seamlessly and faster, and for the analytics 
+and reporting without any hassles, the online platform of the implementation partner was used. The 
+questionnaires with instruments were hosted on the online platform of the implementation partner. 
+2.1. Brand name of the initiative 
+Since it was a new initiative and was designed for organization and leadership development, it was felt 
+that an appropriate name should be given. After discussion with the Organisation Development & Training 
+Development (OD & TD) team and the implementation partner, the initiative was named as My Darpan. 
+Darpan in Hindi language means—Mirror. Since the feedback will come from known and not very known 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+13 
+circles, which provide a good reflection opportunity for the participant leading to change, the name Darpan 
+was accepted by all as very appropriate to the intervention. 
+2.2. Circle of influence 
+To initiate the process, a mail was sent to the project directors from the desk of HR Head inviting them 
+to participate. It was clearly stated that the tool is meant to facilitate their development and will not be used 
+for any other purpose of HR process like performance appraisal, promotion, and succession planning and hence 
+the outcome will be kept confidential. 
+A write-up about 360-degree intervention, the process and benefits were also enclosed for their reference. 
+26 project directors gave their consent to participate in the process and they were invited to attend the kick-off 
+meeting. The implementation partner, HR Head and Head-TD & OD spoke about the initiative, the purpose 
+and thanked them for their voluntary participation. 
+The implementation partner made a detailed presentation about 360-degree process, the process, the 
+roadmap with timeline, and the expectations from them. At the end of the session, implementation partner took 
+feedback from all about the initiative, the concept and the timeline and very positive feedback was received 
+giving confidence that there is a buy-in by the participants. 
+2.3. Roll-out 
+As a first step, the participants were asked to share their circle of influence, including self, supervisor, 
+direct repartees, peers, customers, and other stakeholders. They were asked to provide as below: 
+Self: 1 
+Supervisor: 2 (Immediate Boss and Boss’s boss) 
+Peers—4, Sub-ordinate—4, Customer—2 
+The above was the minimum no’s stipulated in the process norms; however, it was clarified that 
+participants can nominate few more in category of customer, peers, and subordinates with whom they have 
+professional relationships of interactions in the recent role preferably in last 1 year or so, so that they will be 
+able to provide the feedback and views. 
+All were given 3 weeks’ time initially to complete the survey, however, all couldn’t complete it within 
+the time and hence the time was extended for another 2 weeks by sending reminder in the mail. Still, few 
+needed personal follow-up which included few external customers. 
+However, in the ultimate analysis, there was a good participation by all the targeted circles of influence 
+as per the target and the survey was closed after attending required circle of influence of minimum 13 responses 
+for all 26 leaders who participated in this. 
+2.4. Report preparation and sharing with all participants. 
+A comprehensive report was prepared for each participant providing them the average scores of each 
+competency as received from the circles of influence. The average rating reflected ratings given by 12 numbers 
+of raters and the same was also compared with the individual rating. Further, the report consisted of the 
+comments provided by the raters for each competency as was asked for. 
+A copy of the report was also shared with Head of OD and Training. Subsequently, a coach was assigned 
+to explain the report to each participant, so that they understand the report, there are no gaps in reading the 
+report and accept the feedback constructively as professional input for development and don’t take it personally. 
+It was observed that all participants were looking forward to it as they had joined the initiative voluntarily. 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+14 
+The Coach who was assigned for discussion/clarification on the report to start with, impressed upon the 
+participants to identify 2 areas of development from the report. They can pick up any two items from the lowest 
+rated average scores of others, alternatively, they were advised to go through the qualitative comments and can 
+also some areas to be addressed even though they had received higher rating score, as it was believed that they 
+are very meaningful observations with examples by the circles of influence and should be prioritized for action, 
+as they will give immediate results being the low hanging fruits in the entire feedback basket. It was also 
+decided that each participant will be assigned a trained coach, who will work them for a period of 3 months. 
+3. Analysis and interpretation 
+3.1. Legend for interpreting the rating 
+Based on the best practices and discussion with OD & Training Department, it was agreed to keep the 
+below range for classifying the analysis, only for the average ratings Table 2 and Figure 1 received from 
+others, individual rating was not including in this Table 3: 
+Table 2. Average scores—Analysis of 360 degree feedback. 
+Competency 
+Change 
+management 
+Customer 
+engagement 
+Decision 
+making 
+Execution 
+leadership 
+Learning 
+agility 
+Relationship 
+management 
+Strategic 
+orientation 
+Talent 
+management 
+Average score others 3.3 
+3.4 
+3.3 
+3.5 
+3.4 
+3.3 
+3.4 
+3.4 
+Average score self 
+3.6 
+3.5 
+3.4 
+3.6 
+3.6 
+3.4 
+3.4 
+3.6 
+Others—Circle of influence, direct reports, peers, customers etc. 
+Table 3. Interpretation of ratings. 
+Sr No 
+Range 
+Rating descriptor 
+1 
+3.5 & above 
+Outstanding 
+2 
+3.00 to 3.49 
+Very good 
+3 
+<3.00 
+Areas of opportunity 
+ 
+Figure 1. Average Scores based on 360 degree feedback. 
+3.2. Summary of customer/stakeholder feedback 
+Like Johari window this analysis helps to increase the self-awareness and our understanding of others. In 
+this case, most of the competencies were rated 0.1 to 0.3 points higher in four point scale by the individual. 
+Only the strategic orientation has exactly same score rated by self and others. This creates a scope for further 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+15 
+improvement which leads to change and development. Most of the scores are in very good band but the leaders 
+will always thrive to be excellent in all spheres and that’s the reason for the coaching initiatives. 
+4. Findings and observations 
+Managing change and bringing in development to an organization needs a strategic integration of human 
+resources department’s appropriate appraisal mechanism, management development initiatives, OD 
+interventions, coaching, pre-test and post-test of developmental interventions. A holistic approach followed by 
+L&T for the leadership development program in a systematic manner for enhancing the competencies for is a 
+road map and the step by step approach is envisaged as the internal customers (Subordinates) feedback is more 
+important for a manager who becomes the leader by the virtue of his position. 
+4.1. Interventions post the feedback and report 
+To take the leadership effectiveness and development to the next level, the following specific 
+interventions related to the developmental areas were conceptualized and implemented for a period of 5 months. 
+Program on leadership development: All participants were invited to attend the program. The program 
+provided input on how to inspire others, growth mindset of self and others and influencing others through 
+leadership presence with the following sub-themes. 
+4.1.1. Growth mindset 
+Managing Yourself as a Leader—Zoom In/Zoom Out. 
+Working with an Entrepreneurial/Growth Mind-set (special focus on Learning Agility & Resilience). 
+Creating a Culture for Innovation and Creativity. 
+Allowing Failures: Learning—Unlearning and Relearning. 
+4.1.2. Inspiring others 
+Strengthen your skills to craft & deliver powerful executive messages. 
+Inspiring others as Leaders during interactive communications. 
+NLP and its role in influencing and inspiring others. 
+Working together as a team. 
+4.1.3. Leadership presence 
+Traits that make up executive/leadership presence. 
+The shift in paradigm needed to master influencing. 
+The core building blocks that help in influencing others. 
+Generations at work. 
+Leading & motivating a multi-generational workforce. 
+Understand the importance of image projection through physical appearance, voice tonality and body 
+language. 
+Workshop on strategic orientation was conducted for the participants. 
+Workshop on leading change was conducted for the participants. 
+Providing customised learning snippets on fortnightly basis to all the participants. 
+Personalised and individual coach was assigned to each of the participants on 1:3 ratio, means each 
+external coach had only 3 participants to coach on their individual development areas (IDP). The coach before 
+starting the coaching engagement discussed with each participant with their report and feedback and helped 
+them to define their IDP. Each participant thus finalised two to three development areas to work upon. Final 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+16 
+review of IDP progress was conducted after a period of 8 months followed by a 180-degree feedback from 
+their circle of influence on the changed observations Table 4. 
+Table 4. The qualitative feedback from the customers and the stakeholder feedback. 
+Competency 
+Feedback 
+Strategic orientation 
+Spots opportunities where margins on additional scope can be generated. 
+Negotiates keeping the interest of both client and organization. 
+Demonstrates strong financial acumen coupled with strategic orientation. 
+Soft spoken, needs to make his points and ideas heard. 
+Decision making 
+Considers various operational constraints, anticipates the potential risks, and takes actions to 
+mitigate such risks to achieve maximum business impact. 
+Demonstrates the ability to prioritize and take necessary actions in challenging situations. 
+Hesitates at times to make prompt, autonomous decisions when there is incomplete information. 
+Learning agility 
+Demonstrates the enthusiasm and a quest to learn new technology. 
+Adopts new ideas from team members and learns from mistakes. 
+Shows commitment and is energetic, enthusiastic, and always motivated to deliver by looking for 
+out-of-the-box solutions. 
+Change management 
+Supports the team in generating and innovating new ideas. 
+Takes the help of team members in arriving at optimum solutions. 
+Tries to leverage new age digital technology and innovation over conventional methods. 
+At times adopts a traditional project approach/simply carries forward the existing process. 
+At times adopts a traditional project approach/simply carries forward the existing process. 
+Execution leadership 
+Understands the quality aspect of the project and achieves target regularly. 
+Motivates team members to get it “first time right” and proactively takes corrective actions to 
+deliver high quality work outcomes. 
+Champions the solution, rallying the team to focus on achieving the goal. 
+Talent management 
+Grooms, mentors, coaches team members to develop the second line of leadership. 
+Provides opportunities by exposing them to versatile work fronts. 
+Encourages team members to take responsibility for actions. 
+Relationship management 
+Negotiates to achieve win-win outcomes keeping the best interest of all the parties. 
+Handles stakeholders with finesse by engaging & involving them to find the most suitable solution. 
+Utilizes networking efficiently to resolve any roadblocks. 
+Reliable, honest, and open during professional interactions. 
+Customer engagement 
+Strives to understand and work according to the client’s needs. 
+Focused on achieving customer satisfaction with zero accidents and best quality. 
+Builds everlasting relationships by working within frameworks. 
+Takes accountability and is very calm and composed during interactions. 
+4.2. Results after the IDP based coaching journey 
+23 participants have moved towards closure on their coaching journey and have shown good progress on 
+their IDP, substantiated by coach comments. Participants have used their customized development dossiers in 
+an optimal manner, participants have shown low interest despite regular follow-ups by coach, participant could 
+not join the program due to health-related issues. 
+4.3. Observable behavior changes: Post IDP based coaching 
+The overall interest level of participants was high in Figure 2 and the progress was also high for 65 
+percent of them in Figure 3. On ‘THINK’ cluster of competencies: It comprises of strategic orientation, 
+decision making and change management in Table 5. 
+ 
+ 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+17 
+ 
+Figure 2. Overall interest for coaching. 
+ 
+Figure 3. Progress on individual development areas. 
+Table 5. Competencies—Strategic orientation, decision making, and change management. 
+Current observations of the group 
+What could be better 
+THINK: 
+Applies functional knowledge and relevant experience to 
+business situations and is able to spot new opportunities. 
+Able to gather insights from the available information and has a 
+deep understanding of various project functions. 
+Big picture thinking and long-term orientation. 
+Prompt decision making even in challenging and ambiguous 
+situations. 
+Understanding of emerging trends in the dynamic external 
+environment to generate fallback options. 
+The participant has shown improvement in strategic thinking, long term orientation in terms of 
+anticipating potential risks and effectively generating fall back options, shows openness in adapting with 
+change and exploring digital solutions. 
+On ‘ACT’ Cluster of competencies: It comprises of execution leadership and learning agility in Table 6. 
+The participant has shown ability to make decisions promptly or take risks even without complete 
+information and in ambiguous situations. 
+Table 6. Competencies—Execution leadership, learning agility. 
+Current observations of the group 
+What could be better 
+ACT: 
+Plans and actively contributes to the set goals. 
+High commitment and ownership of tasks at hand. 
+High process orientation and quality focus. 
+Challenges self to learn new skills and build an innovative mind-
+set. 
+Develop their risk-taking ability in the face of unfamiliar 
+projects and tasks. 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+18 
+4.4. Shows willingness to learn new skills, projects more confidence and greater conviction in 
+ideas 
+On ‘engage’ cluster of competencies: It comprises of relationship management, talent management, 
+customer engagement in Table 7. 
+Table 7. Competencies—Relationship management, talent management, and customer engagement. 
+Current observations of the group  
+What could be better 
+ENGAGE: 
+Supports, motivates, and respects team members. 
+Understands customer/stakeholder context and engages well to 
+build trust. 
+Is able to anticipate needs of stakeholders and honours 
+commitments made to them. 
+Need to leverage digital technology while finding solution. 
+Executive presence and influencing peers and seniors. 
+Comfort in challenging the status quo as required. 
+Manage expectations of a multi-generational workforce. 
+Dedicated in developing second line of leadership by coaching and mentoring team members. 
+Going beyond comfort zone to build relationships with key internal and external stakeholders. 
+Improvement in active listening. 
+Proactively anticipating customer needs for better engagement. 
+Some success stories, practices and projects initiated by the Leaders as an outcome of the IDP based 
+coaching journey Figure 3. 
+Leader-1 
+The leader started process for developing his 4 of his direct reports to build succession. 
+Building a high-performance team through effective delegation, regular performance review and feedback 
+and looking at building an innovative mind set for continuous improvement with his team. 
+Leader-2 
+The leader worked on bottom-up innovation and doing an Idea Burst Program (collect, collate and look 
+at relevance) where inputs are taken actively from team members. 
+Leader-3 
+The leader rolled out IDP to his team members too for their development. 
+Leader-4 
+The leader conceptualized two high-impact projects as his developmental targets in change management. 
+The cost optimization project introduced by him in the project and results were made tangible in FY 21–
+22. 
+Further, he decided to analyse ROI, based on electricity rates, the scope for introducing power generation 
+using gas in the new Mega Project. 
+Leader-5 
+Leader introduced My Journey-View-Thought (My JVT) program to create an open atmosphere for 
+sharing and learning. 
+He also implemented the 5-stage process for project reviews. 
+Leader-6 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+19 
+The leader started a Mentor-Mentee Program within his team. 
+5. Conclusion and the model for the way forward 
+It was a first ever multi-Rater feedback for leadership development in a very systematic manner linked to 
+the development goals, an intervention for the Project Directors, though L&T deploys 360-degree feedback 
+system for the high potential leaders who go through 7 step leadership development. 
+The top management supported the intervention with full involvement in design, roll-out and providing 
+feedback to the participants, which had made lot of difference to its success. 
+HR Head’s direction and training & OD head’s full ownership to drive ensured that the gaps that arises 
+during implementation of any new and change management initiatives are addressed at the right time with 
+mutual discussion and follow-up. The project coordinator from L&T side and from the partner side worked on 
+it with all sincerity and commitment. Their ownership made lot of difference. 
+The implementation partner chosen by the TD & OD Head proved to be very helpful as they had the 
+requisite experience and expertise, had the On-line tool available where our customized questionnaires could 
+be hosted. Further, they brought the outside. In perspective by offering their advice at every stage. Also, they 
+helped in development of concepts and post feedback development intervention. The approach of the 
+intervention was kept as developmental and the openness and transparency maintained from the beginning and 
+throughout the intervention and after it was completed, helped to build trust and get commitment of the 
+participants to the intervention. Since it was made voluntary, it further enhanced the trust level and ownership 
+from the participants. 
+The feedback sought from customers made it more attractive. However, getting feedback response from 
+the customers was a challenge and needed a lot of follow-up. Last but not the least, the participants saw and 
+experienced lot of newness in the approach with personal engagement, individual coach assignment and Coach 
+helping them to draw the IDP, coaching discussions around the IDP, which gained their buy-in and full 
+involvement. 
+To sum-up, the initiative of 360-degree feedback development was a great intervention for developing 
+future leaders and project directors in Heavy Civil Infrastructure. It is recommended to replicate in other 
+Divisions, also others can also learn enrich their leadership developing by using this approach and practice. 
+Author contributions 
+Conceptualization, BKD and RG; methodology, BKD; software, BKD; validation, RG; formal analysis, 
+BKD; investigation, BKD; resources, BKD and RG; data curation, BKD and RG; writing—original draft 
+preparation, BKD and RG; writing—review and editing, BKD and RG; visualization, BKD; supervision, RG; 
+project administration, BKD; funding acquisition, BKD. All authors have read and agreed to the published 
+version of the manuscript. 
+Conflict of interest 
+The authors declare no conflict of interest. 
+References 
+1. 
+Available online: https://en.m.wikipedia.org>360-degree feedback (accessed on 20 August 2023). 
+2. 
+Periperl M. Getting 360-Degree Feedback Right. Harvard Business Review; 2001. 
+3. 
+Zenger J, Folkman J. The Extraordinary Leader: Turning Good Managers into Great Leaders. McGraw-Hill; 
+2002. 
+Environment and Social Psychology | doi: 10.54517/esp.v9i2.2000 
+20 
+4. 
+Rao TV, Rao R. The Power of 360- Degree Feedback—The India Wau for Leadership Effectiveness. Sage 
+Publications; 2014. 
+5. 
+Alimo-Metcalfe B. 360-degree feedback and leadership development. International Journal of Selection and 
+Assessment 1998; 6(1): 35–44. doi: 10.1111/1468-2389.00070 
+6. 
+Day DV. Leadership development: A review in context. The Leadership Quarterly 2000; 11(4): 581–613. doi: 
+10.1016/S1048-9843(00)00061-8 
+7. 
+Cullen-Lester KL, Maupin CK, Carter DR. Incorporating social networks into leadership development: A 
+conceptual model and evaluation of research and practice. The Leadership Quarterly 2017; 28(1): 130–152. doi: 
+10.1016/j.leaqua.2016.10.005 
+8. 
+Hosain S. 360-degree feedback as a technique of performance appraisal: Does it really work? Asian Business 
+Review 2016; 6(1): 21–24. 
+9. 
+Das UK, Panda J. The impact of 360-degree feedback on employee role in leadership development. Asian Journal 
+of Management 2017; 8(4): 962. doi: 10.5958/2321-5763.2017.00149.4 
+10. Aldulaimi SH. Leadership development program and leaders performance for mid-level managers in Saudi 
+petroleum company, ARAMCO. Arab Economic and Business Journal 13(1): 15–24. doi: 
+10.1016/j.aebj.2018.02.001 
+11. Azam A. Combined leadership development practices: Improving organizational performance through 
+organizational commitment. International Journal of Business Reflections 2020; 1(1): 111–141 
+12. Day D, Bastardoz N, Bisbey T, et al. Unlocking human potential through leadership training & development 
+initiatives. Behavioural Science & Policy 2021; 7(1): 41–54. doi: 10.1177/237946152100700105 
+13. Ellison LJ, Steelman LA, Young SF, Riordan BG. Setting the stage: Feedback environment improves outcomes for 
+a 360-degree-feedback leader-development program. Consulting Psychology Journal 2022; 74(4): 363–382. doi: 
+10.1037/cpb0000236 
+14. Rafiq S, Kahdim M, Afzal A. The assessment and impact of 360-degree leadership performance appraisal at 
+university level. Journal of Social Sciences Development 2023; 2(2): 189–203. doi: 10.53664/jssd/02-02-2023-06-
+189-203 
+15. Ugwoke EO, Edeh NI, Nwokike FO, et al. Join mediation of psychological empowerment and work-life balance 
+between transformational leadership and in role performance of accounting personnel: 360-degree feedback. 
+Journal of Management & Organization 2023; 1–20. doi: 10.1017/jm0.2023 

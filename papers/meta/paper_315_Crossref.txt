@@ -1,0 +1,11 @@
+Title: The Mediating Role of AI-Driven Leadership Decision Making in the Relationship Between Green AI and Sustainable Leadership Behaviors
+Authors: Malik Habib, Jalaludeen Kuzhikkala
+Source: Crossref
+Date: 2026-5-1
+URL: https://doi.org/10.4018/979-8-2600-1348-9.ch005
+
+Abstract (EN):
+This study focuses on the employment of AI towards Sustainable Leadership Behaviors through its influence on leadership decision making with a focus on environmental welfare. Based on the data gathered from professionals working in the banking industry in the UAE. This paper studies how AI Readiness, AI Tools &amp; Systems, AI Competency, and AI Governance &amp; Ethical Integration impact AI-Driven Leadership Decision Making and subsequently Sustainable Leadership Behaviors. Using quantitative approach and regression based mediation analysis, the results demonstrate that AI enablers play a significant role in improving AI-Driven Leadership Decision Making which positively influences sustainability oriented leadership practices. The results further confirm that AI-Driven Leadership Decision Making is an important mechanism by which AI capabilities are transformed into environmentally responsible leadership behaviors. The significance of this research is the contribution of bridging the gap between AI and the sustainability of the environment by making leadership behaviors as a central link between technology and sustainable outcomes. This research gives a good idea to organizations and policy makers interested in ensuring that AI is aligned to long term ecological health by integrating AI in leadership operations rather than focusing on AI operational efficiency.
+
+Abstract (KO):
+본 연구는 환경 복지에 중점을 두고 리더십 의사 결정에 미치는 영향을 통해 지속 가능한 리더십 행동을 위한 AI의 활용에 중점을 둡니다. UAE 은행 업계 전문가로부터 수집한 데이터를 기반으로 합니다. 이 논문에서는 AI 준비, AI 도구 및 앰프; 시스템, AI 역량, AI 거버넌스 &amp; 윤리적 통합은 AI 기반 리더십 의사 결정과 그에 따른 지속 가능한 리더십 행동에 영향을 미칩니다. 정량적 접근 방식과 회귀 기반 중재 분석을 사용한 결과는 AI 조력자가 지속 가능성 지향 리더십 관행에 긍정적인 영향을 미치는 AI 기반 리더십 의사 결정을 개선하는 데 중요한 역할을 한다는 것을 보여줍니다. 결과는 AI 기반 리더십 의사결정이 AI 역량을 환경적으로 책임 있는 리더십 행동으로 전환시키는 중요한 메커니즘임을 더욱 확증해 줍니다. 본 연구의 의의는 리더십 행동을 기술과 지속 가능한 결과 사이의 중심 연결 고리로 삼아 AI와 환경의 지속 가능성 사이의 격차를 해소하는 데 기여한다는 것입니다. 이 연구는 AI 운영 효율성에 초점을 맞추기보다는 AI를 리더십 운영에 통합함으로써 AI가 장기적인 생태 건강에 부합하도록 보장하는 데 관심이 있는 조직 및 정책 입안자에게 좋은 아이디어를 제공합니다.

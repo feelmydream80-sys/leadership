@@ -1,0 +1,425 @@
+### SOURCE: paper_375_OpenAlex.pdf
+### PAPER_ID: 375
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 16
+
+
+===== PAGE 1 =====
+Skip to main content
+Thank you for visiting nature.com. You are using a browser version
+with limited support for CSS. To obtain the best experience, we
+recommend you use a more up to date browser (or turn off
+compatibility mode in Internet Explorer). In the meantime, to
+ensure continued support, we are displaying the site without styles
+and JavaScript.
+Advertisement
+[image]
+[image]
+•  View all journals
+•  
+Saved research
+•  
+Search
+•  Log in
+•  Content Explore content
+•  About the journal
+•  Publish with us
+•  Subscribe
+•  Sign up for alerts
+•  RSS feed
+1. nature 
+2. letters 
+3. article
+•  Letter
+•  Published: 03 February 2005
+Effective leadership and
+
+===== PAGE 2 =====
+decision-making in animal
+groups on the move
+•  Iain D. Couzin
+1,2,
+•  Jens Krause3,
+•  Nigel R. Franks4 &
+•  …
+•  Simon A. Levin1 
+Show authors
+Nature volume 433, pages 513–516 (2005) Cite this article
+Save article
+View saved research
+•  28k Accesses
+•  2468 Citations
+•  71 Altmetric
+•  Metrics details
+Abstract
+For animals that forage or travel in groups, making movement
+decisions often depends on social interactions among group
+members1,2. However, in many cases, few individuals have
+pertinent information, such as knowledge about the location of a
+food source3,4, or of a migration route5,6,7,8,9. Using a simple
+model we show how information can be transferred within groups
+both without signalling and when group members do not know
+which individuals, if any, have information. We reveal that the
+larger the group the smaller the proportion of informed individuals
+needed to guide the group, and that only a very small proportion of
+informed individuals is required to achieve great accuracy. We also
+
+===== PAGE 3 =====
+demonstrate how groups can make consensus decisions, even
+though informed individuals do not know whether they are in a
+majority or minority, how the quality of their information compares
+with that of others, or even whether there are any other informed
+individuals. Our model provides new insights into the mechanisms
+of effective leadership and decision-making in biological systems.
+ Access through your institution
+Buy or subscribe
+This is a preview of subscription content, access via your institution
+Access options
+ Access through your institution
+Subscribe to this journal
+Receive 52 print issues and online access
+185,98 € per year
+only 3,58 € per issue
+Learn more
+Buy this article
+•  Purchase on SpringerLink
+•  Instant access to the full article PDF.
+39,95 €
+Prices may be subject to local taxes which are calculated during
+checkout
+Additional access options:
+•  Log in
+
+===== PAGE 4 =====
+•  Learn about institutional subscriptions
+•  Read our FAQs
+•  Contact customer support
+Figure 1: Group accuracy, and shape, as a function of the
+proportion of informed individuals p, for different group sizes
+N.
+[image]
+Figure 2: The influence of the weighting of preferred direction.
+[image]
+Figure 3: Collective selection of group direction when informed
+individuals differ in preference.
+[image]
+Figure 4: Discrimination between two directions (s1 = 0; s2 =
+100 degrees) based on information quality (χ, see Methods).
+[image]
+Similar content being viewed by others
+[image]
+Intermittent collective motion in sheep results from
+alternating the role of leader and follower
+Article 20 October 2022
+[image]
+A call to integrate animal movement into biodiversity
+indicators
+Article 17 June 2026
+[image]
+Disentangling influence over group speed and
+direction reveals multiple patterns of influence in
+moving meerkat groups
+Article Open access 16 August 2022
+
+===== PAGE 5 =====
+References
+1. Krause, J. & Ruxton, G. D. Living in Groups 84–85, 137–143
+(Oxford Univ. Press, Oxford, 2002)
+Google Scholar 
+2. Couzin, I. D. & Krause, J. Self-organization and collective
+behaviour in vertebrates. Adv. Study Behav. 32, 1–75 (2003)
+Article  Google Scholar 
+3. Reebs, S. G. Can a minority of informed leaders determine the
+foraging movements of a fish shoal? Anim. Behav. 59, 403–
+409 (2000)
+Article  CAS  Google Scholar 
+4. Swaney, W., Kendal, J., Capon, H., Brown, C. & Laland, K. N.
+Familiarity facilitates social learning of foraging behaviour in
+the guppy. Anim. Behav. 62, 591–598 (2001)
+Article  Google Scholar 
+5. Franks, N. R., Pratt, S. C., Mallon, E. B., Britton, N. F. &
+Sumpter, D. J. T. Information flow, opinion polling and
+collective intelligence in house-hunting social insects. Phil.
+Trans. R. Soc. Lond. B 357, 1567–1583 (2002)
+Article  Google Scholar 
+6. Lindauer, M. Communication in swarm-bees searching for a
+new home. Nature 179, 63–66 (1957)
+Article  ADS  Google Scholar 
+7. Seeley, T. D. Honeybee Ecology: a Study of Adaptation in Social
+Life 71–74 (Princeton Univ. Press, Princeton, 1985)
+Book  Google Scholar 
+8. Seeley, T. D. The Wisdom of the Hive 34–35 (Harvard Univ.
+
+===== PAGE 6 =====
+Press, Cambridge, 1995)
+Google Scholar 
+9. Seeley, T. D. Consensus building during nest-site selection in
+honey bee swarms: the expiration of dissent. Behav. Ecol.
+Sociobiol. 53, 417–424 (2003)
+Google Scholar 
+10. Conradt, L. & Roper, T. J. Group decision-making in animals.
+Nature 421, 155–158 (2003)
+Article  ADS  CAS  Google Scholar 
+11. von Frisch, K. The Dance Language and Orientation of Bees 28–
+235 (Harvard Univ. Press, Harvard, 1967)
+Google Scholar 
+12. Rubenstein, D. I. & Hack, M. Horse signals: the sounds of
+scents and fury. Evol. Ecol. 6, 254–260 (1992)
+Article  Google Scholar 
+13. Partridge, B. L. Structure and function of fish schools. Sci. Am.
+245, 114–123 (1982)
+Article  Google Scholar 
+14. Berthold, P. & Querner, U. Genetic basis of migratory
+behaviour in European warblers. Science 212, 77–79 (1981)
+Article  ADS  CAS  Google Scholar 
+15. Berthold, P., Helbig, A. J., Mohr, G. & Querner, U. Rapid
+microevolution of migratory behaviour in a wild bird species.
+Nature 360, 668–670 (1992)
+Article  ADS  Google Scholar 
+16. Neill, W. H. Mechanisms of fish distribution in heterothermal
+environments. Am. Zool. 19, 305–317 (1979)
+
+===== PAGE 7 =====
+Article  Google Scholar 
+17. Grunbaum, D. Schooling as a strategy for taxis in a noisy
+environment. Evol. Ecol. 12, 503–522 (1998)
+Article  Google Scholar 
+18. Couzin, I. D., Krause, J., James, R., Ruxton, G. D. & Franks, N.
+R. Collective memory and spatial sorting in animal groups. J.
+Theor. Biol. 218, 1–11 (2002)
+Article  MathSciNet  Google Scholar 
+19. Hoare, D. J., Couzin, I. D., Godin, J.-G. & Krause, J. Context-
+dependent group-size choice in fish. Anim. Behav. 67, 155–
+164 (2004)
+Article  Google Scholar 
+20. Batschelet, E. Circular Statistics in Biology 34–36 (Academic,
+London, 1981)
+MATH  Google Scholar 
+21. Simons, A. M. Many wrongs: the advantage of group
+navigation. Trends Ecol. Evol. 19, 453–455 (2004)
+Article  Google Scholar 
+22. Gregóire, G., Chaté, H. & Tu, Y. Moving and staying together
+without a leader. Physica D 181, 157–170 (2003)
+Article  ADS  MathSciNet  Google Scholar 
+Download references
+Acknowledgements
+I.D.C. thanks the Pew Charitable Trusts, the NSF and the EPSRC for
+their support. I.D.C. and J.K. acknowledge an EPSRC grant and are
+also grateful for fellowships at the Centre for Interdisciplinary
+
+===== PAGE 8 =====
+Research, University of Bielefeld, where we had the opportunity to
+develop this research. S.A.L. acknowledges support from the NSF
+and the Andrew W. Mellon Foundation, and N.R.F. from the EPSRC
+and the BBSRC. I.D.C. thanks Balliol College for support and S.
+Pratt, D. Rubenstein, D. James and A. Ward for their input.
+Author information
+Authors and Affiliations
+1. Department of Ecology and Evolutionary Biology, Princeton
+University, Princeton, New Jersey, 08544, USA
+Iain D. Couzin & Simon A. Levin
+2. Department of Zoology, University of Oxford, South Parks
+Road, OX1 3PS, Oxford, UK
+Iain D. Couzin
+3. Centre for Biodiversity and Conservation, School of Biology,
+University of Leeds, LS2 9JT, Leeds, UK
+Jens Krause
+4. Centre for Behavioural Biology, School of Biological Sciences,
+University of Bristol, Woodland Road, BS8 1UG, Bristol, UK
+Nigel R. Franks
+Authors
+1. Iain D. Couzin
+View author publications
+Search author on:PubMed Google Scholar
+2. Jens Krause
+View author publications
+Search author on:PubMed Google Scholar
+
+===== PAGE 9 =====
+3. Nigel R. Franks
+View author publications
+Search author on:PubMed Google Scholar
+4. Simon A. Levin
+View author publications
+Search author on:PubMed Google Scholar
+Corresponding author
+Correspondence to Iain D. Couzin.
+Ethics declarations
+Competing interests
+The authors declare that they have no competing financial interests.
+Supplementary information
+Supplementary Figure 1 (download DOC 
+)
+This figure shows the influence of imperfect information on the
+relationship between weighting ω and the accuracy of groups and
+the proportion of groups that split (a), and the proportion of
+informed individuals p and accuracy and proportion of splitting (b).
+(DOC 156 kb)
+Rights and permissions
+Reprints and permissions
+About this article
+Cite this article
+
+===== PAGE 10 =====
+Couzin, I., Krause, J., Franks, N. et al. Effective leadership and
+decision-making in animal groups on the move. Nature 433, 513–
+516 (2005). https://doi.org/10.1038/nature03236
+Download citation
+•  Received: 10 August 2004
+•  Accepted: 30 November 2004
+•  Issue date: 03 February 2005
+•  DOI: https://doi.org/10.1038/nature03236
+Share this article
+Anyone you share the following link with will be able to read this
+content:
+Get shareable link
+Sorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+Provided by the Springer Nature SharedIt content-sharing initiative
+ Access through your institution
+Buy or subscribe
+Editorial Summary
+Leadership by numbers
+Moving groups of animals, including fish, ungulates, birds and
+honeybee swarms seem able to take complex decisions in the
+absence of signalling mechanisms, and when group members cannot
+establish who has or has not got information. A numerical
+simulation shows how such groups can make accurate consensus
+
+===== PAGE 11 =====
+decisions, and that the larger the group, the smaller the proportion
+of informed individuals needed to guide the group. A very small
+proportion of informed individuals is sufficient for near maximal
+accuracy. This has implications for our understanding of the
+evolution of information transfer in groups, and also suggests a new
+design protocol for the guidance of grouping robots. Cover photo,
+by Phillip Colla Natural History Photography (http://
+www.OceanLight.com), shows schooling jack mackerel.
+show all
+Advertisement
+[image]
+Explore content
+•  Research articles
+•  News
+•  Opinion
+•  Research Analysis
+•  Careers
+•  Books & Culture
+•  Podcasts
+•  Videos
+•  Current issue
+•  Browse issues
+•  Collections
+•  Subjects
+•  Follow us on Facebook
+•  Follow us on Bluesky
+•  Follow us on X
+•  Subscribe
+•  Sign up for alerts
+•  RSS feed
+About the journal
+
+===== PAGE 12 =====
+•  Journal Staff
+•  About the Editors
+•  Research Cross-Journal Editorial Team
+•  Journal Information
+•  Journal Metrics
+•  Our publishing models
+•  Editorial Values Statement
+•  Editorial policies
+•  Journalistic Principles
+•  History of Nature
+•  Awards
+•  Contact
+•  Send a news tip
+Publish with us
+•  For Authors
+•  For Referees
+•  Language editing services
+•  Open access funding
+•  Submit manuscript
+Search
+Search articles by subject, keyword or author
+Show results from All journals This journal
+Search
+Advanced search
+Quick links
+•  Explore articles by subject
+•  Find a job
+•  Guide to authors
+•  Editorial policies
+Nature (Nature)
+
+===== PAGE 13 =====
+ISSN 1476-4687 (online)
+ISSN 0028-0836 (print)
+nature.com footer links
+About Nature Portfolio
+•  About us
+•  Press releases
+•  Press office
+•  Contact us
+Discover content
+•  Journals A-Z
+•  Articles by subject
+•  protocols.io
+•  Nature Index
+Publishing policies
+•  Nature portfolio policies
+•  Open access
+Author & Researcher services
+•  Reprints & permissions
+•  Research data
+•  Language editing
+•  Scientific editing
+•  Nature Masterclasses
+•  Research Solutions
+Libraries & institutions
+•  Librarian service & tools
+•  Librarian portal
+•  Open research
+
+===== PAGE 14 =====
+•  Recommend to library
+Advertising & partnerships
+•  Advertising
+•  Partnerships & Services
+•  Media kits
+•  Branded content
+Professional development
+•  Nature Awards
+•  Nature Careers
+•  Nature Conferences
+Regional websites
+•  Nature Africa
+•  Nature China
+•  Nature India
+•  Nature Japan
+•  Nature Middle East
+•  Privacy Policy
+•  Use of cookies
+•  Your privacy choices/Manage cookies
+•  Legal notice
+•  Accessibility statement
+•  Terms & Conditions
+•  Your US state privacy rights
+[image]
+© 2026 Springer Nature Limited
+
+===== PAGE 15 =====
+ Close
+[image]
+Sign up for the Nature Briefing newsletter — what matters in
+science, free to your inbox daily.
+Email address
+
+===== PAGE 16 =====
+Sign up
+I agree my information will be processed in accordance with the
+Nature and Springer Nature Limited Privacy Policy.
+ Close
+Get the most important science stories of the day, free in your
+inbox. Sign up for Nature Briefing

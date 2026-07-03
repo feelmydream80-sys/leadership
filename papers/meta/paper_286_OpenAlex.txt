@@ -1,0 +1,11 @@
+Title: Taking Gender Into Account: Theory and Design for Women's Leadership Development Programs
+Authors: Robin J. Ely, Herminia Ibarra, Deborah M. Kolb
+Source: OpenAlex
+Date: 2011-09-01
+URL: https://doi.org/10.5465/amle.2010.0046
+
+Abstract (EN):
+We conceptualize leadership development as identity work and show how subtle forms of gender bias in the culture and in organizations interfere with the identity work of women leaders. Based on this insight, we revisit traditional approaches to standard leadership topics, such as negotiations and leading change, as well as currently popular developmental tools, such as 360-degree feedback and networking; reinterpret them through the lens of women's experiences in organizations; and revise them to meet the particular challenges women face when transitioning into senior leadership. By framing leadership development as identity work, we reveal the gender dynamics involved in becoming a leader, offer a theoretical rationale for teaching leadership in women-only groups, and suggest design and delivery principles to increase the likelihood that women's leadership programs will help women advance into more senior leadership roles.
+
+Abstract (KO):
+우리는 리더십 개발을 정체성 작업으로 개념화하고 문화와 조직에서 미묘한 형태의 성 편견이 여성 리더의 정체성 작업을 어떻게 방해하는지 보여줍니다. 이러한 통찰력을 바탕으로 우리는 협상 및 변화 선도와 같은 표준 리더십 주제에 대한 전통적인 접근 방식은 물론 360도 피드백 및 네트워킹과 같은 현재 널리 사용되는 개발 도구를 재검토합니다. 조직 내 여성의 경험이라는 렌즈를 통해 이를 재해석합니다. 여성이 고위 리더십으로 전환할 때 직면하는 특정 과제를 해결하도록 개정합니다. 리더십 개발을 정체성 작업으로 구성함으로써 우리는 리더가 되는 것과 관련된 성별 역학을 밝히고, 여성 전용 그룹에서 리더십 교육에 대한 이론적 근거를 제공하며, 여성 리더십 프로그램이 여성이 고위 리더십 역할로 진출하는 데 도움이 될 가능성을 높이기 위한 설계 및 전달 원칙을 제안합니다.

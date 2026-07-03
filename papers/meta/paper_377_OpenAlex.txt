@@ -1,0 +1,7 @@
+Title: Leadership and Decision-Making.
+Authors: Edwin P. Hollander, Victor H. Vroom, Philip Yetton
+Source: OpenAlex
+Date: 1973-12-01
+URL: https://doi.org/10.2307/2392210
+
+Abstract (EN):

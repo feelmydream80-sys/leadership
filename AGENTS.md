@@ -2,7 +2,7 @@
 
 > **Project Compass**  
 > 이 문서는 프로젝트의 중앙 나침반입니다. 어떤 파일이 어디에 있고 무엇을 하는지, 그리고 현재 상태는 어떤지 한눈에 파악할 수 있습니다.  
-> **버전:** v2.1 | **라벨:** 178개 | **샘플:** 12,460개 | **마지막 업데이트:** 2026-05-18
+> **버전:** v2.3 | **라벨:** 178개 | **샘플:** 12,460개 | **마지막 업데이트:** 2026-07-01
 
 ---
 
@@ -30,7 +30,15 @@
 | **시스템 운영 방법** | [docs/HANDOVER.md](docs/HANDOVER.md) | 웹 서버 실행, 데이터 수정 워크플로우, API 엔드포인트, 해결된 이슈, 남은 과제 |
 | **Vector DB + LLM 설계 계획** | [docs/vector_db_vs_llm_plan.md](docs/vector_db_vs_llm_plan.md) | 아키텍처 비교, 실패 사례 분석(T04-B, T105-A), 개발 결과, 성능 지표 |
 | **웹 수정 시스템 계획** | [docs/WEB_EDIT_PLAN.md](docs/WEB_EDIT_PLAN.md) | 웹 기반 라벨/트레이트 편집, 통합 파일 생성, 백업 시스템 |
-| **라벨 감사 보고서** | [label_audit_report.md](label_audit_report.md) | 178개 라벨의 정의, when/not_when, 예시 문장 |
+| **라벨 감사 보고서** | [docs/label_audit_report.md](docs/label_audit_report.md) | 178개 라벨의 정의, when/not_when, 예시 문장 |
+| **Trait/라벨 근거·비판적 검증** | [docs/leadership_validation_ledger.md](docs/leadership_validation_ledger.md) | 논문 근거·반증·검증상태 원장(활성). 근거 커버리지·부재 논문·미검증 항목 |
+| **종합 연구 보고서** | [RESEARCH_REPORT_2026-06-26.md](RESEARCH_REPORT_2026-06-26.md) | 12이론·20Trait·178라벨 조사 이력(2026-06-26 기준, 정리 후 동기화 주의 포함) |
+| **구 문서 (아카이브)** | [docs/archive/](docs/archive/) | RAG_PLAN.md, architecture.md, leadership_catalog.md 등 8개 |
+| **연구 참고자료** | [research/](research/) | 학술 논문(papers/), 서베이(surveys/), 증거 매핑(evidence_mapping/) |
+| **논문 컬렉션 인덱스** | [papers/INDEX.md](papers/INDEX.md) | 신규 227편(초록) + 75 PDF 이론별 분류. 근거 채택은 evidence_mapping에서 확정 |
+| **PDF 전문 추출본(영구)** | [papers/extracted/](papers/extracted/) | PDF→텍스트 1회 추출(PAGE 마커). 근거 검색은 PDF 대신 여기 참조. `manifest.json`·README 참조. 재생성: `python scripts/extract_pdfs.py` |
+| **논문↔trait 코퍼스 매핑** | [research/evidence_mapping/paper_corpus.json](research/evidence_mapping/paper_corpus.json) | 258편 내용기반 이론→trait 매핑(137편 연결). trait별 근거 논문 목록 |
+| **라벨 근거 후보(미검증)** | [research/evidence_mapping/label_corpus_candidates.json](research/evidence_mapping/label_corpus_candidates.json) | 라벨↔논문 키워드 후보. **검증완료(label_evidence_map)와 분리, unverified** |
 
 ---
 
@@ -110,12 +118,33 @@ python -c "import json; d=json.load(open('dataset/ori/training_data_all_labels.j
 3. [AI 검토용 통합] 버튼 클릭
 4. AI에게 "temp/integrated_data.json 읽고 검토해줘" 요청
 ```
+> 참고: `temp/integrated_data.json`은 `/api/edit/integrate` 호출 시 생성되는 임시 파일입니다.
 
 ---
 
 ## 버전 역사
 
-### v2.1 (2026-05-18) — Current
+### v2.3 (2026-07-01) — Current
+- `papers/` 컬렉션 유입(초록 227 + PDF 75) → `papers/INDEX.md` 이론별 분류 생성
+- 갭 근거 확보(초록): 거래적(R10 Bono&Judge·R14 Pillai·R15 Bass)·윤리(R13 Schaubroeck)·진정성(R11 Walumbwa ALQ) → 부재 논문 P009/P011 의존 해소
+- 반증 확보: R12 Min&Jung(2022) 진정성 리더십 비판적 리뷰
+- `trait_theory_mapping.json` registry R10–R17 등록, `label_evidence_map.json` 34라벨(신규 M32-01·M41-01·M43-01)
+- 검증 원장 §4b 반영. 부정/독성 리더십 근거는 여전히 공백(과제)
+
+### v2.2 (2026-06-30)
+- 폴더 구조 정리 완료 (Step 1-4)
+- `temp/` 구 라벨 시스템 파일 14개 삭제
+- `temp/reftext/` → `research/papers/` 이동 (9개 논문)
+- `dataset/real_world/` → `dataset/test_real_world/` 이동
+- `ref data/` → `research/surveys/` + `research/evidence_mapping/` 분할 이동
+- `docs/archive/` 생성, 구 문서 8개 이동
+- `scripts/` 불필요 3개 → `docs/archive/scripts/` 이동
+- `data/vectors/` 테스트 출력물 3개 삭제
+- `backup_20260630/` 삭제
+- AGENTS.md v2.2, FILE_STRUCTURE.md 갱신
+- `research/` 폴더 신설 (papers/, surveys/, evidence_mapping/)
+
+### v2.1 (2026-05-18)
 - 178개 라벨 완성 (98 긍정 + 80 부정)
 - 12,460개 고품질 학습 샘플 생성
 - Vector DB 178 vectors로 재구축

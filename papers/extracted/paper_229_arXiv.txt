@@ -1,0 +1,780 @@
+### SOURCE: paper_229_arXiv.pdf
+### PAPER_ID: 229
+### TITLE: 
+### AUTHORS: 
+### YEAR: 
+### PAGES: 15
+
+
+===== PAGE 1 =====
+Performance of Genetic Algorithms in the
+Context of Software Model Refactoring
+Vittorio Cortellessa1[0000−0002−4507−464X] Daniele Di
+Pompeo1[0000−0003−2041−7375] and Michele Tucci1[0000−0002−0329−1101]
+University of L’Aquila, L’Aquila, Italy
+{vittorio.cortellessa, daniele.dipompeo, michele.tucci}@univaq.it
+Abstract. Software systems continuously evolve due to new function-
+alities, requirements, or maintenance activities. In the context of soft-
+ware evolution, software refactoring has gained a strategic relevance. The
+space of possible software refactoring is usually very large, as it is given
+by the combinations of different refactoring actions that can produce
+software system alternatives. Multi-objective algorithms have shown the
+ability to discover alternatives by pursuing different objectives simulta-
+neously. Performance of such algorithms in the context of software model
+refactoring is of paramount importance. Therefore, in this paper, we con-
+duct a performance analysis of three genetic algorithms to compare them
+in terms of performance and quality of solutions. Our results show that
+there are significant differences in performance among the algorithms
+(e.g., PESA2 seems to be the fastest one, while NSGAII shows the least
+memory usage).
+Keywords: Performance · Multi-Objective · Refactoring · Search-Based
+Software Engineering
+1
+Introduction
+Multi-objective optimization techniques proved to be effective in tackling many
+model-driven software development problems [21, 25, 29, 31]. Such problems
+usually involve a number of quantifiable metrics that can be used as objectives to
+drive the optimization. Problems related to non-functional aspects undoubtedly
+fit into this category, as confirmed by the vast literature in this domain [1, 2, 23].
+Most approaches are based on evolutionary algorithms [6], which allow exploring
+the solution space by combining solutions.
+The improvement of software models quality through refactoring is a kind of
+task that can be carried out by multi-objective optimization. However, multi-
+objective algorithms demand a lot of hardware resources (e.g., time, and mem-
+ory allocation) to search the solution space and generate a (near-)optimal Pareto
+frontier. Therefore, the actual performance of multi-objective algorithms in soft-
+ware model refactoring is of paramount importance, especially if the goal is to
+integrate them into the design and evolution phases of software development.
+arXiv:2308.13875v1  [cs.SE]  26 Aug 2023
+
+===== PAGE 2 =====
+2
+Cortellessa et al.
+For this reason, in this paper, we compare the performance in terms of exe-
+cution time, memory allocation, and quality of Pareto frontiers of the NSGAII,
+SPEA2, and PESA2 multi-objective algorithms within the context of software
+model refactoring. We have selected NSGAII due to its extensive use in the con-
+text of software refactoring, SPEA2 because it has already been compared with
+NSGAII in other domains [8, 18, 22], and PESA2 because it uses a different tech-
+nique (i.e., hyper-grid crowding degree operator) to search the solution space.
+We have evaluated the performance of each algorithm by using a reference
+case study presented in [15]. To achieve this, we have executed 30 independent
+runs, as suggested in [3], for each algorithm by varying the number of itera-
+tions for each run, and we have collected execution time and memory usage. We
+provide a replication package of the experimentation presented in this study.1
+We aim at answering the following research questions:
+– RQ1: How do NSGA-II, SPEA2, and PESA2 compare in terms of execution
+time?
+– RQ2: How do NSGA-II, SPEA2, and PESA2 compare in terms of memory
+usage?
+– RQ3: How do NSGA-II, SPEA2, and PESA2 compare in terms of multi-
+objectindicatorsive optimization indicators?
+Our experimentation showed that PESA2 is the algorithm whose executions last
+quite less than the NSGAII and SPEA2 ones. Furthermore, PESA2 generates Pareto
+frontiers that showed better solutions in terms of reliability and performance.
+NSGAII, instead, consumed less memory than SPEA2, and PESA2. However, it
+generated less densely populated Pareto frontiers. Finally, SPEA2 showed worse
+performance and Pareto frontiers than PESA2, and NSGAII.
+The remaining of the paper is structured as follows: Section 2 reports related
+work; Section 3 introduces the algorithms subject of the study; Section 4 briefly
+introduces the case studies; Section 5 discusses results and findings. Section 6
+describes takeaways from the study; Section 7 discussed threats to validity. Sec-
+tion 8 concludes the paper.
+2
+Related Work
+Genetic algorithms are exploited in different domains to identify alternatives of
+the initial problem that show at least one better attribute (i.e., at least on ob-
+jective). In particular, studies have analyzed the performance in building Pareto
+frontiers in heterogeneous domains, which span from automotive problems to
+economic ones [11, 20, 22, 32]. In this paper, instead, we analysed performance
+in terms of hardware consumption needed to search the solution space for soft-
+ware model refactoring. In the context of software architecture, studies have
+investigated how multi-objective optimization can improve quality of software
+architectures.
+1 Replication
+package:
+https://github.com/danieledipompeo/replication-
+package__Perf-Comp-GA-4-Multi-Obj-SW-Model-Ref
+
+===== PAGE 3 =====
+Title Suppressed Due to Excessive Length
+3
+For example, Cortellessa and Di Pompeo [8] studied the sensitivity of multi-
+objective software architecture refactoring to configuration characteristics. They
+compared two genetic algorithms in terms of Pareto frontiers quality dealing
+with architectures defined in Æmilia, which is a performance-oriented Archi-
+tecture Descrption Language (ADL). In this paper, we propose a performance
+comparison between NSGAII, SPEA2, and PESA2 to identify which algorithm needs
+less resources to search the solution space.
+Aleti et al. [1] have presented an approach for modeling and analyzing Ar-
+chitecture Analysis and Design Language (AADL) architectures [17]. They have
+also introduced a tool aimed at optimizing different quality attributes while
+varying the architecture deployment and the component redundancy. Instead,
+our work relies on UML models and offers more complex refactoring actions as
+well as different target attributes for the fitness function. Besides, we investigate
+the role of performance antipatterns in the context of multi-objective software
+architecture refactoring optimization.
+Menasc´e et al. [27] have presented a framework for architectural design and
+quality optimization, where architectural patterns are used to support the search-
+ing process (e.g., load balancing, fault tolerance). Two limitations affects the
+approach: the architecture has to be designed in a tool-related notation and not
+in a standard modelling language (as we do in this paper), and it uses equation-
+based analytical models for performance indices that might be too simple to
+capture architectural details and resource contention. We overcome the possible
+the Menasc´e et al. limitation by employing Layred Queueing Network (LQN)
+models to estimate performance indices.
+Martens et al. [26] have presented PerOpteryx, a performance-oriented multi-
+objective optimization problem. In PerOpteryx the optimization process is guided
+by tactics referring to component reallocation, faster hardware, and more hard-
+ware, which do not represent structured refactoring actions, as we employ in
+our refactoring engine. Moreover, PerOpteryx supports architectures specified
+in Palladio Component Model (PCM) [5] and produces, through model trans-
+formation, a LQN for of performance analysis.
+Rago et al. have presented SQuAT [30], an extensible platform aimed at
+including flexibility in the definition of an architecture optimization problem.
+SQuAT supports models conforming to PCM language, exploits LQN for per-
+formance evaluation, and PerOpteryx tactics for architecture.
+A recent work compares the ability of two different multi-objective optimiza-
+tion approaches to improve non-functional attributes [28], where randomized
+search rules have been applied to improve the software model. The study of Ni
+et al. [28] is based on a specific modelling notation (i.e., PCM) and it has implic-
+itly shown that the multi-objective optimization problem at model level is still
+an open challenge. They applied architectural tactics, which in general do not
+represent structured refactoring actions, to find optimal solutions. Conversely,
+we applied refactoring actions that change the structure of the initial model by
+preserving the original behavior. Another difference is the modelling notation,
+
+===== PAGE 4 =====
+4
+Cortellessa et al.
+as we use UML with the goal of experimenting on a standard notation instead
+of a custom DSL.
+3
+Algorithms
+NSGA-II The Non-dominated Sorting Algorithm II (NSGAII), introduced by Deb
+et al. [13], is widely used in the software engineering community due to its good
+performance in generating Pareto frontiers. The algorithm, randomly generates
+the initial population P0, shuffles it and applies the Crossover operator with
+probability Pcrossover, and the Mutation operator with probability PMutation to
+generate the Qt offspring. Thus, the obtained Rt = Pt+Qt mating pool is sorted
+by the Non-dominated sorting operator, which lists Pareto frontiers with respect
+to considered objectives. Finally, a Crowding distance is computed and a new
+family (i.e., Pt+1) is provided to the next step by cutting the worse half off.
+SPEA2 Strength Pareto Evolutionary Algorithm 2 (SPEA2) has been introduced
+by Zitzler et al. [34]. Differently from NSGAII, SPEA2 does not employ a non-
+dominated sorting process to generate Pareto frontiers.
+SPEA2 randomly generates an initial population P0 and an empty archive
+¯P0 in which non-dominated individuals are copied at each iteration. For each
+iteration t = 0, 1, . . . , T, the fitness function values of individuals in Pt and ¯Pt
+are calculated. Then non-dominated individuals of Pt and ¯Pt are copied to ¯Pt+1
+by discarding dominated individuals or duplicates (with respect to the objective
+values). In case size of ¯Pt+1 exceeds ¯N, i.e., the size of the initial population, the
+Truncation operator drops exceeded individuals by preserving the characteristics
+of the frontier, using the k-th nearest neighbor knowledge. In case size of ¯Pt+1
+is less than ¯N, dominated individuals from Pt and ¯Pt are used to fill ¯Pt+1. The
+algorithm ends when a stopping criterion is met, e.g., the iteration t exceeds the
+maximum number of iterations T, and it generates the non-dominated set A in
+output.
+PESA2 The Pareto Envelope-based Selection Algorithm 2 (PESA2) is a multi-
+objective algorithm, introduced by Corne et al. [7] that uses two sets of popu-
+lation, called internal (IP) and external (EP).The internal population is often
+smaller than the external one and it contains solution candidates to be included
+in the external population. Furthermore, the external population is generally
+called archive. The selection process is driven by a hyper-grid crowding distance
+degree. The current set of IP are incorporated into the EP one by one if it is
+non-dominated within IP, and if is not dominated by any current member of the
+EP. Once a candidate has entered the EP, members of the EP which it dom-
+inated (if any) will be removed. If the addition of a candidate renders the EP
+over-full, then an arbitrary chromosome which has the maximal squeeze factor
+in the population of EP is removed. Also, the squeeze factor describes the total
+number of other chromosomes in the archive which inhabit the same box. The
+PESA2 crowding strategy works by forming an implicit hyper-grid which divides
+
+===== PAGE 5 =====
+Title Suppressed Due to Excessive Length
+5
+the solution space into hyper-boxes. Furthermore, each chromosome in the EP
+is associated with a particular hyper-box in solution space. Then, the squeeze
+factor is assigned to each hyper-box, and it is used during the searching phase.
+4
+Case study
+In this section, we apply our approach to the Train Ticket Booking Service
+(TTBS) case study [15, 33], and to the well-established model case study CoCOME,
+whose UML model has been derived by the specification in [19].
+Train Ticket Booking Service Train Ticket Booking Service (TTBS) is a
+web-based booking application, whose architecture is based on the microservice
+paradigm. The system is made up of 40 microservices, and it provides different
+scenarios through users that can perform realistic operations, e.g., book a ticket
+or watch trip information like intermediate stops. Our UML model of TTBS
+is available online.2 The static view is made of 11 UML Components, where
+each component represents a microservice. In the deployment view, we consider
+11 UML Nodes, each one representing a docker container. We selected these
+three scenarios because they commonly represent performance-critical ones in a
+ticketing booking service.
+CoCOME CoCOME describes a Trading System containing several stores. A
+store might have one or more cash desks for processing goodies. A cash desk is
+equipped with all the tools needed to serve a customer (e.g., a Cash Box, Printer,
+Bar Code Scanner). CoCOME describes 8 scenarios involving more than 20 compo-
+nents. From the CoCOME original specification, we analyzed different operational
+profiles, i.e., scenarios triggered by different actors (such as Customer, Cashier,
+StoreManager, StockManager), and we excluded those related to marginal parts
+of the system, such as scenarios of the EnterpriseManager actor. Thus, we se-
+lected 3 UML Use Cases, 13 UML Components, and 8 UML Nodes from the
+CoCOME specification.
+5
+Results
+In this section, we compare execution times, memory consumption, and quality
+of Pareto frontiers across the considered algorithms and case studies.
+5.1
+RQ1: How do NSGAII, SPEA2, and PESA2 compare in terms of
+execution time?
+In order to answer to the RQ1 we collected execution time of each algorithm 30
+times. Based on the results of our experimentation, we can state that the PESA2
+2 https://github.com/SEALABQualityGroup/2022-ist-replication-package/
+tree/main/case-studies/train-ticket
+
+===== PAGE 6 =====
+6
+Cortellessa et al.
+algorithm showed the best execution time with respect to NSGAII and SPEA2
+in both case studies. Also, it appears as complexity and size of the case study
+plays an important role in determining execution time and its variability across
+iterations.
+0
+20
+40
+60
+80
+100
+iteration
+400
+500
+600
+700
+800
+900
+1000
+execution time (sec)
+NSGAII
+PESA2
+SPEA2
+(a) TTBS
+0
+20
+40
+60
+80
+100
+iteration
+150
+200
+250
+300
+350
+400
+450
+execution time (sec)
+NSGAII
+PESA2
+SPEA2
+(b) CoCOME
+Fig. 1: Comparison of algorithms execution time.
+Figure 1 compares NSGAII, SPEA2, and PESA2 in terms of their execution
+times for TTBS and CoCOME, respectively. Darker lines report the mean over 30
+runs for each iteration, while the bands represent 95% confidence intervals for
+the mean, and are computed for the same runs. Our results show substantial
+differences in the execution times of the algorithms, both on the same case
+study, and across them.
+It is easy to notice that, regardless of the algorithm, the search is twice as
+fast in CoCOME that it is in TTBS, as it is obvious when observing the scale on the
+y-axis. PESA2 is clearly the fastest algorithm in both cases (around 400 sec in
+TTBS, and 180 sec in CoCOME). However, when it comes to comparing NSGAII and
+SPEA2, their execution time, while consistently larger than PESA2, is almost on
+par in TTBS, and noticeably apart in CoCOME. This suggests that the execution
+time might very well be dependent on the complexity and size of the specific
+case study. For instance, it looks like the more complex the case study is, the
+slower SPEA2 is. Therefore, it appears evident that the search policy used by
+SPEA2, i.e., the dominance operator, is slower than the crowing distance used
+by NSGAII. Moreover, the search policy employed by PESA2, i.e., the hyper-grid
+crowding distance, seems to be faster than the ones used by NSGAII and SPEA2,
+as it lasts half the time of the other two techniques.
+Another interesting point, could be the stability of execution times, as it ap-
+pears that the three algorithms exhibit different variability. For instance, PESA2
+and NSGAII showed a more stable execution time in both the case studies, while
+SPEA2 showed a quite stable execution time with TTBS, and a considerably larger
+variability with CoCOME, with some abrupt changes. This might be due to the
+
+===== PAGE 7 =====
+Title Suppressed Due to Excessive Length
+7
+usage of the archive for storing generated solutions. When the case study is more
+complex, as it is the case for TTBS, the usage of the archive seems to help find a
+Pareto frontier, while the usage of two archives with a less complex case study
+results in prolonged executions. In fact, when a higher number of different solu-
+tions are found, these slower executions may be caused by the fact that a higher
+number of comparisons are needed to fill the two archives.
+5.2
+RQ2: How do NSGAII, SPEA2, and PESA2 compare in terms of
+memory usage?
+In order to answer to the RQ2 we collected the memory allocation of each al-
+gorithm during the experiments by exploiting the Java API. From our experi-
+mentation results, the NSGAII algorithm shows the least memory consumption
+with respect to PESA2 and SPEA2. Our results also show that the memory usage
+is not strictly related to the complexity of the case study.
+0
+20
+40
+60
+80
+100
+iteration
+2
+4
+6
+8
+10
+12
+memory (GiB)
+NSGAII
+PESA2
+SPEA2
+(a) TTBS
+0
+20
+40
+60
+80
+100
+iteration
+2
+4
+6
+8
+10
+12
+memory (GiB)
+NSGAII
+PESA2
+SPEA2
+(b) CoCOME
+Fig. 2: Comparison of algorithms memory usage.
+Figure 2 shows the memory allocation of the three algorithms. NSGAII, SPEA2,
+and PESA2 occupy the same quantity of memory showing an increase trend of
+the memory usage around the 20 iterations, then NSGAII becomes almost flat.
+Moreover, SPEA2 shows a steep memory usage, and it occupies all the available
+memory after 40 iterations, while PESA2 showed a smooth but linear increase of
+the memory, and it filled the available memory after 80 iteration.
+Undoubtedly, the NSGAII search policy is the least memory demanding among
+the three analyzed in our study, and it requires around 5 GiB when it stabilizes.
+SPEA2 and PESA2, on the other hand, occupy almost all the available memory
+(i.e., 12 GiB).
+SPEA2 shows a different behavior in the two case studies, in our results. In
+the case of CoCOME, we can see an almost flat memory consumption around the
+12 Gib after 20 iteration, while in TTBS we can observe a reduction of the memory
+
+===== PAGE 8 =====
+8
+Cortellessa et al.
+allocation after 80 iterations. Combining the latter with the overall quality of the
+generated Pareto fronts (see Section 5.3), we can assume that SPEA2 cannot find
+better solutions after 80 iterations, thus any new solution was probably already
+stored in the two archives.
+Finally, PESA2 showed an interesting trend, as it allocated more memory
+almost linearly. This might be due to the search policy of splitting the solution
+space in hyper-grids that will require to store new solutions when other locations
+of the solution space will be investigated by longer iterations. Therefore, we can
+expect that PESA2 will likely exceed the 12 GiB with longer iterations.
+5.3
+RQ3: How do NSGAII, SPEA2, and PESA2 compare in terms of
+multi-objective optimization indicators?
+In order to answer to the RQ3 we graphically compare properties of the Pareto
+frontiers computed by each algorithm, and we use well-known indicators to esti-
+mate the quality of Pareto frontiers. From our results, the PESA2 algorithm is the
+best to search the solution space, with solutions closest to the reference Pareto in
+TTBS and CoCOME. Also, NSGAII generates solutions with the highest variability
+in both case studies. Finally, SPEA2 did not show any quality indicators with
+higher quality.
+0.1
+0.0
+0.1
+0.2
+0.3
+0.4
+perfQ
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+reliability
+initial
+algorithm
+NSGAII
+PESA2
+SPEA2
+#PAs
+13
+14
+15
+16
+18
+(a) TTBS.
+0.1
+0.0
+0.1
+0.2
+0.3
+0.4
+perfQ
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+reliability
+initial
+algorithm
+NSGAII
+PESA2
+SPEA2
+#PAs
+8
+10
+12
+14
+16
+18
+(b) CoCOME.
+Fig. 3: Comparison of reference Paretos.
+The overall quality of computed Pareto frontiers (PF c) is one of the most
+critical parameters to consider when comparing genetic algorithms. Figure 3 de-
+picts the PF c generated by the three genetic algorithms for TTBS and CoCOME,
+where, in each plot, the top right quadrant is the optimal location for the op-
+timization. Furthermore, we measure the quality of PF c through the quality
+indicators listed in Table 1.
+From Figures 3a and 3b, we can clearly deduce that none of the subject al-
+gorithms shows the ability of finding solutions towards the top right quadrant
+
+===== PAGE 9 =====
+Title Suppressed Due to Excessive Length
+9
+in both the case studies. In fact, we can see that the solutions are organized in
+a vertical cluster in Figure 3a, and in a horizontal one in Figure 3b. Also, it ap-
+pears that the optimization process selects similar refactoring actions, therefore
+generating almost identical solutions within the frontiers.
+Furthermore, we can observe a different behavior of each algorithm in TTBS,
+and CoCOME. For example, PESA2 found the best solutions for CoCOME, in terms
+of reliability and perfQ (e.g., see the rightmost squares in Figure 3b), while this
+is not the case for TTBS, where, instead, PESA2 found the best solution in terms
+of perfQ, with worse reliability than the initial solution (see the square near the
+point (0.3, 0.4) in Figure 3a).
+Besides the graphical analysis, we performed a study of the quality of PF c in
+both case studies, by exploiting established quality indicators for multi-objective
+optimization. It is important to recall that an indicator estimates the quality of
+a specific property of PF c with respect to the reference Pareto frontier (PF ref).
+Since PF ref has not yet been defined for our case studies, we estimated the
+PF ref as the set of non-dominated solutions produced by any algorithm. In
+particular, we computed the Hypervolume (HV) [35], Inverted Generational Dis-
+tance + (IGD+) [24], GSPREAD [16], and Epsilon (EP) [16] quality indicators.
+We listed quality indicators (Q Ind) in Table 1, where the up arrow (↑) means
+the indicator is to be maximized, and the down arrow (↓) means the indicator
+is to be minimized.
+From our experimental results, we see that PESA2 produced the highest value
+of Hypervolume, thus proving that the algorithm covered the solution space
+better than NSGAII and SPEA2. Also, PESA2 showed the best value of IGD+,
+meaning that solutions belonging to the PF c are closer to the PF ref. NSGAII
+produced the best value of generalized spread (GSPREAD), thus indicating that
+the solutions in NSGAII Pareto frontiers are more different from each other.
+Finally, our results prove that SPEA2 computes quality indicators with good
+quality only for CoCOME. Therefore, it seems that SPEA2 is able to find good PF c
+when case studies with lower complexity.
+Q Ind
+# iter
+NSGAII
+PESA2
+SPEA2
+TTBS CoCOME
+TTBS CoCOME
+TTBS CoCOME
+HV (↑)
+102
+0.22433 0.07022 0.50909 0.44431 0.14467 0.36521
+IGD+ (↓)
+102
+0.11221 0.06005 0.04683 0.04046 0.10270 0.06620
+GSPREAD (↓)
+102
+0.16013 0.12675 0.38391 0.52451 0.39153 0.33592
+EP (↓)
+102
+0.33333 0.20339 0.20000 0.10000 0.50000 0.36191
+Table 1: Quality indicators to establish the overall quality of Pareto frontiers.
+
+===== PAGE 10 =====
+10
+Cortellessa et al.
+6
+Lesson Learned
+Genetic algorithms have proved to help optimize quantifiable metrics, such as
+performance and reliability. Their ability to search for optimal solutions is in-
+fluenced by several configuration parameters. In our experience, we noticed that
+each configuration parameter has a different impact on the overall performance,
+e.g., the population size impacts the execution time and the memory usage.
+A wider initial population size requires longer execution times to generate in-
+dividuals, and it might produce stagnation during the optimization [4] that, in
+turn, might hamper the quality of Pareto frontiers. Furthermore, in model-based
+software refactoring, a wider initial population also implicates a higher memory
+consumption, because entire models need to be loaded in memory for the refac-
+toring to be performed. Hence, it is crucial to find the optimal trade-off between
+the configuration parameters and the quality of the Pareto frontiers.
+Besides the initial population, crossover and mutation operators might im-
+pact the execution time. For instance, a higher mutation probability will obvi-
+ously produce more frequent mutations within the population. The more muta-
+tions are produced, the higher the probability of having an invalid individual,
+thus requiring additional time to check for feasibility, repair or even change
+the individual entirely. The crossover probability, instead, impacts the execu-
+tion time since combinations of individuals are more frequent. Furthermore, the
+crossover operator requires time to perform the combination and might also
+generate invalid individuals. Therefore, using the right crossover and mutation
+probabilities is crucial for the time and quality of subsequent populations. This
+is clearly an opportunity for further research on heuristic to estimate some con-
+figuration values, since it would be impractical to evaluate every parameter com-
+bination. In future work, we plan to examine how different configurations affect
+the resulting quality and performance of different genetic algorithms.
+We cannot guarantee that our analysis can be generalized in other domains or
+with other modeling notations. However, in the context in which we performed
+our study, there is not an in-depth analysis of performance traits of genetic
+algorithms. We believe this study might open a research direction on improving
+genetic algorithm performance for model-based refactoring optimization. For
+example, in a recent work, Di Pompeo and Tucci [14] studied the possibility
+of reducing the search time by limiting it with a budget. Also, knowing how
+algorithms compare in terms of performance might open to even using them in an
+interactive optimization process, where the designer could be involved in a step-
+by-step decision process aided by the automation provided by the algorithms,
+but bounded in time. In such a scenario, the designer could be at the core of the
+process, potentially making optimization trade-offs at each step.
+7
+Threats to validity
+Our results may be affected by threats related to the specific versions of Java
+and the JMetal library. We mitigated these threats by using the same configu-
+ration for the Java Virtual Machine and the same JMetal version in each run.
+
+===== PAGE 11 =====
+Title Suppressed Due to Excessive Length
+11
+In particular, we used the OpenJDK 11 with default configuration, and we built
+the implementation on JMetal v5.10.
+Multiple factors may influence the performance measurements gathered dur-
+ing the experiments and, therefore, could undermine our conclusions. However,
+we mitigated external influences by disabling any other software running on the
+same server, and we repeated each experiment 30 times as suggested in [3].
+Also, the study we conducted in this paper may be affected, as for any perfor-
+mance analysis experiment, by the input data. Although we use two case studies,
+our deductions may change if other case studies, i.e., different software models,
+are employed as inputs to the optimization problem. However, we considered
+two models presented in [15, 19] that has been already used in other perfor-
+mance analysis problems [9, 10, 14]. To the best of our knowledge, there are
+no previous studies that analyzed and compared performance of multi-objective
+algorithms in the context of software model refactoring, as we did in this study.
+Therefore, although the paper may suffer from this threat to conclusion validity,
+it represents a first investigation in this direction.
+The overall quality of Pareto frontiers generated by each algorithm has been
+estimated through well-known quality indicators. These indicators leverage the
+estimation by comparing a Pareto frontier to problem-specific reference points.
+Since in our experimentation these reference points are not yet available, we
+computed them as the non-dominated points within every Pareto frontier of each
+run of each algorithm. Therefore, the reference points might affect the overall
+quality computation, and we further investigate the usage of more appropriated
+reference points.
+Finally, our results may be affected by threats related to the configurations of
+the genetic algorithms. For example, the number of iterations can influence per-
+formance results. We cannot be sure to have effectively mitigated these threats
+because of the long execution time required to run each configuration. Such long
+execution times make trying many alternative configurations unfeasible. For this
+reason, we used a configuration in an attempt to detect performance flaws that
+may only manifest during longer executions.
+8
+Conclusion
+This study presented a performance comparison of three genetic algorithms, i.e.,
+NSGAII, SPEA2, and PESA2. We selected those algorithms due to their wide usage
+in the software refactoring context and their search algorithm characteristics.
+We compared the execution time, the memory allocation, and the quality of
+the produced Pareto frontiers. We collected performance metrics by using two
+case studies presented in [15, 19] by executing 30 different runs, and we compared
+the overall quality of Pareto frontiers through specific quality indicators, such as
+Hypervolume and IGD+. Our analysis can summarize that PESA2 is the fastest
+algorithm, and NSGAII is the least memory-demanding algorithm. Finally, SPEA2
+has shown the worst memory usage as well as the worst execution time. We
+
+===== PAGE 12 =====
+12
+Cortellessa et al.
+will further investigate memory consumption by employing a more sophisticated
+memory profiling, which might introduce an overhead within the measurements.
+Concerning the overall quality of the produced Pareto frontiers, we found
+that PESA2 produced the most densely populated Pareto frontiers, while NSGAII
+generated the least densely populated frontiers. PESA2 has also shown a linear
+memory consumption, thus we intend to further analyze the trend by exploring
+longer execution in terms of the number of iterations.
+Furthermore, we intend to investigate if our findings can be generalized to
+other case studies, different algorithms, and different kinds of refactoring actions,
+as those aimed at other non-functional properties, such as availability [12].
+Acknowledgements Daniele Di Pompeo and Michele Tucci are supported by
+European Union - NextGenerationEU - National Recovery and Resilience Plan
+(Piano Nazionale di Ripresa e Resilienza, PNRR) - Project: “SoBigData.it -
+Strengthening the Italian RI for Social Mining and Big Data Analytics” - Prot.
+IR0000013 - Avviso n. 3264 del 28/12/2021.
+References
+1. Aleti, A., Bj¨ornander, S., Grunske, L., Meedeniya, I.: ArcheOpterix: An extend-
+able tool for architecture optimization of AADL models. In: ICSE 2009 Workshop
+on Model-Based Methodologies for Pervasive and Embedded Software, MOMPES
+2009, May 16, 2009, Vancouver, Canada, pp. 61–71, IEEE Computer Society, Wash-
+ington, DC, USA (2009)
+2. Aleti, A., Buhnova, B., Grunske, L., Meedeniya, I.: Software Architecture Opti-
+mization Methods: A Systematic Literature Review. IEEE Transactions on Soft-
+ware Engineering 39(5), 658–683 (2013)
+3. Arcuri, A., Briand, L.C.: A practical guide for using statistical tests to assess
+randomized algorithms in software engineering. In: Taylor, R.N., Gall, H.C., Med-
+vidovic, N. (eds.) Proceedings of the 33rd International Conference on Software
+Engineering, ICSE 2011, Waikiki, Honolulu , HI, USA, May 21-28, 2011, pp.
+1–10, ACM (2011), https://doi.org/10.1145/1985793.1985795, URL https:
+//doi.org/10.1145/1985793.1985795
+4. Arcuri, A., Fraser, G.: Parameter tuning or default values? an empirical in-
+vestigation in search-based software engineering. Empirical Software Engineer-
+ing 18(3), 594–623 (2013), https://doi.org/10.1007/s10664-013-9249-9, URL
+https://doi.org/10.1007/s10664-013-9249-9
+5. Becker, S., Koziolek, H., Reussner, R.H.: The Palladio component model for model-
+driven performance prediction. Journal of Systems and Software 82(1), 3–22 (Jan
+2009)
+6. Blum, C., Roli, A.: Metaheuristics in combinatorial optimization: Overview and
+conceptual comparison. ACM Computing Surveys 35(3), 268–308 (2003), https:
+//doi.org/10.1145/937503.937505
+7. Corne, D.W., Jerram, N.R., Knowles, J.D., Oates, M.J.: Pesa-ii: Region-based se-
+lection in evolutionary multiobjective optimization. In: GECCO, p. 283–290 (2001),
+ISBN 1558607749, https://doi.org/10.5555/2955239.2955289, URL https://
+doi.org/10.5555/2955239.2955289
+
+===== PAGE 13 =====
+Title Suppressed Due to Excessive Length
+13
+8. Cortellessa, V., Di Pompeo, D.: Analyzing the sensitivity of multi-objective soft-
+ware architecture refactoring to configuration characteristics. Inf. Softw. Tech-
+nol. 135, 106568 (2021), https://doi.org/10.1016/j.infsof.2021.106568, URL
+https://doi.org/10.1016/j.infsof.2021.106568
+9. Cortellessa, V., Di Pompeo, D., Eramo, R., Tucci, M.: A model-driven approach for
+continuous performance engineering in microservice-based systems. Journal of Sys-
+tems and Software 183, 111084 (2022), https://doi.org/10.1016/j.jss.2021.
+111084, URL https://doi.org/10.1016/j.jss.2021.111084
+10. Cortellessa, V., Di Pompeo, D., Stoico, V., Tucci, M.: On the impact of per-
+formance antipatterns in multi-objective software model refactoring optimiza-
+tion. In: 47th SEAA 2021, Palermo, Italy, September 1-3, 2021, pp. 224–233,
+IEEE (2021), https://doi.org/10.1109/SEAA53835.2021.00036, URL https:
+//doi.org/10.1109/SEAA53835.2021.00036
+11. Cortellessa, V., Di Pompeo, D., Stoico, V., Tucci, M.: Many-objective optimization
+of non-functional attributes based on refactoring of software models. Inf. Softw.
+Technol. 157, 107159 (2023), https://doi.org/10.1016/j.infsof.2023.107159,
+URL https://doi.org/10.1016/j.infsof.2023.107159
+12. Cortellessa, V., Eramo, R., Tucci, M.: Availability-driven architectural change
+propagation through bidirectional model transformations between UML and petri
+net models. In: IEEE International Conference on Software Architecture, ICSA
+2018, Seattle, WA, USA, April 30 - May 4, 2018, pp. 125–134, IEEE Com-
+puter Society (2018), https://doi.org/10.1109/ICSA.2018.00022, URL https:
+//doi.org/10.1109/ICSA.2018.00022
+13. Deb, K., Pratap, A., Agarwal, S., Meyarivan, T.: A fast and elitist multiobjec-
+tive genetic algorithm: NSGA-II. IEEE Transactions on Evolutionary Computation
+6(2), 182–197 (Apr 2002)
+14. Di Pompeo, D., Tucci, M.: Search budget in multi-objective refactoring optimiza-
+tion: a model-based empirical study. In: 48th Euromicro Conference on Software
+Engineering and Advanced Applications, SEAA 2022, pp. 406–413, IEEE (2022),
+https://doi.org/10.1109/SEAA56994.2022.00070, URL https://doi.org/10.
+1109/SEAA56994.2022.00070, to appear
+15. Di Pompeo, D., Tucci, M., Celi, A., Eramo, R.: A microservice reference case study
+for design-runtime interaction in MDE. In: STAF 2019 Co-Located Events Joint
+Proceedings: 1st Junior Researcher Community Event, 2nd International Workshop
+on Model-Driven Engineering for Design-Runtime Interaction in Complex Systems,
+and 1st Research Project Showcase Workshop co-located with Software Technolo-
+gies: Applications and Foundations (STAF 2019), Eindhoven, The Netherlands,
+July 15 - 19, 2019, CEUR Workshop Proceedings, vol. 2405, pp. 23–32, CEUR-
+WS.org (2019), URL http://ceur-ws.org/Vol-2405/06_paper.pdf
+16. Durillo, J.J., Nebro, A.J.: jmetal: A java framework for multi-objective optimiza-
+tion. Advances in Engineering Software 42(10), 760–771 (2011)
+17. Feiler, P.H., Gluch, D.P.: Model-Based Engineering with AADL - An Introduction
+to the SAE Architecture Analysis and Design Language. SEI series in software
+engineering, Addison-Wesley (2012)
+18. Gadhvi, B., Savsani, V., Patel, V.: Multi-Objective Optimization of Vehicle Passive
+Suspension System Using NSGA-II, SPEA2 and PESA-II. Procedia Technology 23,
+361–368 (2016)
+19. Herold, S., Klus, H., Welsch, Y., Deiters, C., Rausch, A., Reussner, R., Krogmann,
+K., Koziolek, H., Mirandola, R., Hummel, B., Meisinger, M., Pfaller, C.: Cocome -
+the common component modeling example. In: The Common Component Modeling
+
+===== PAGE 14 =====
+14
+Cortellessa et al.
+Example: Comparing Software Component Models, LNCS, vol. 5153, pp. 16–53
+(2008), https://doi.org/10.1007/978-3-540-85289-6_3
+20. Hiroyasu, T., Nakayama, S., Miki, M.: Comparison study of spea2+, spea2, and
+NSGA-II in diesel engine emissions and fuel economy problem. In: CEC, pp. 236–
+242 (2005), https://doi.org/10.1109/CEC.2005.1554690
+21. Kessentini, M., Sahraoui, H.A., Boukadoum, M., Benomar, O.: Search-based model
+transformation by example. Journal of Software and Systems Modeling 11(2), 209–
+226 (2012), https://doi.org/10.1007/s10270-010-0175-7, URL https://doi.
+org/10.1007/s10270-010-0175-7
+22. King, R.A., Deb, K., Rughooputh, H.: Comparison of nsga-ii and spea2 on the
+multiobjective environmental/economic dispatch problem. University of Mauritius
+Research Journal 16(1), 485–511 (2010)
+23. Koziolek, A., Koziolek, H., Reussner, R.H.: PerOpteryx: automated application of
+tactics in multi-objective software architecture optimization. In: 7th International
+Conference on the Quality of Software Architectures, pp. 33–42, ACM, New York,
+New York, USA (2011)
+24. L´opez, E.M., Coello, C.A.C.: An improved version of a reference-based multi-
+objective evolutionary algorithm based on igd+. In: Aguirre, H.E., Takadama, K.
+(eds.) GECCO, pp. 713–720 (2018), https://doi.org/10.1145/3205455.3205530
+25. Mariani, T., Vergilio, S.R.: A systematic review on search-based refactoring. Jour-
+nal of Information and Software Technology 83, 14–34 (Mar 2017)
+26. Martens, A., Koziolek, H., Becker, S., Reussner, R.H.: Automatically improve
+software architecture models for performance, reliability, and cost using evolu-
+tionary algorithms. In: ICPE 2010 - Proceedings of the 1st ACM/SPEC Inter-
+national Conference on Performance Engineering, pp. 105–116 (2010), https:
+//doi.org/10.1145/1712605.1712624
+27. Menasc´e, D.A., Ewing, J.M., Gomaa, H., Malek, S., Sousa, J.P.: A framework for
+utility-based service oriented design in SASSY. In: Adamson, A., Bondi, A.B.,
+Juiz, C., Squillante, M.S. (eds.) Proceedings of the first joint WOSP/SIPEW
+International Conference on Performance Engineering, pp. 27–36 (2010), https:
+//doi.org/10.1145/1712605.1712612
+28. Ni, Y., Du, X., Ye, P., Minku, L.L., Yao, X., Harman, M., Xiao, R.: Multi-objective
+software performance optimisation at the architecture level using randomised
+search rules. Inf. Softw. Technol. 135, 106565 (2021), https://doi.org/10.1016/
+j.infsof.2021.106565, URL https://doi.org/10.1016/j.infsof.2021.106565
+29. Ouni, A., Kessentini, M., Inoue, K., Cinn´eide, M.´O.: Search-based web ser-
+vice antipatterns detection. IEEE Trans. Serv. Comput. 10(4), 603–617 (2017),
+https://doi.org/10.1109/TSC.2015.2502595, URL https://doi.org/10.1109/
+TSC.2015.2502595
+30. Rago, A., Vidal, S.A., Diaz-Pace, J.A., Frank, S., van Hoorn, A.: Distributed
+quality-attribute optimization of software architectures. In: Proceedings of the
+11th Brazilian Symposium on Software Components, Architectures and Reuse,
+SBCARS, pp. 7:1–7:10 (2017), https://doi.org/10.1145/3132498.3132509
+31. Ram´ırez, A., Romero, J.R., Ventura, S.: A survey of many-objective optimisation in
+search-based software engineering. Journal of Systems and Software 149, 382–395
+(2019)
+32. Zhao, F., Lei, W., Ma, W., Liu, Y., Zhang, C.: An improved spea2 algorithm with
+adaptive selection of evolutionary operators scheme for multiobjective optimization
+problems. Mathematical Problems in Engineering 2016, 1–20 (2016)
+
+===== PAGE 15 =====
+Title Suppressed Due to Excessive Length
+15
+33. Zhou, X., Peng, X., Xie, T., Sun, J., Ji, C., Li, W., Ding, D.: Fault analysis and
+debugging of microservice systems: Industrial survey, benchmark system, and em-
+pirical study. TSE 47(2), 243–260 (2021), https://doi.org/10.1109/TSE.2018.
+2887384, URL https://doi.org/10.1109/TSE.2018.2887384
+34. Zitzler, E., Laumanns, M., Thiele, L.: Spea2: Improving the strength pareto evo-
+lutionary algorithm. TIK-report 103, Swiss Federal Institute of Technology (ETH)
+Zurich (2001)
+35. Zitzler, E., Thiele, L.: Multiobjective optimization using evolutionary algorithms
+- A comparative case study. In: Eiben, A.E., B¨ack, T., Schoenauer, M., Schwe-
+fel, H. (eds.) Parallel Problem Solving from Nature, LNCS, vol. 1498, pp. 292–
+304 (1998), https://doi.org/10.1007/BFb0056872, URL https://doi.org/10.
+1007/BFb0056872

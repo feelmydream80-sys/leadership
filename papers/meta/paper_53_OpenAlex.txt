@@ -1,0 +1,11 @@
+Title: Two Decades of Research and Development in Transformational Leadership
+Authors: Bernard M. Bass
+Source: OpenAlex
+Date: 1999-03-01
+URL: https://doi.org/10.1080/135943299398410
+
+Abstract (EN):
+The interests of the organization and its members need to be aligned. Such is a task for the transformational leader. In contrast to the transactional leader who practises contingent reinforcement of followers, the transformational leader inspires, intellectually stimulates, and is individually considerate of them. Transformational leadership may be directive or participative. Requiring higher moral development, transformational leadership is recognized universally as a concept. Furthermore, contrary to earlier expectations, women leaders tend to be more transformational than their male counterparts. Although a six-factor model of transformational/ transactional leadership best fits a diversity of samples according to confirmatory factor analyses, whether fewer factors are necessary remains an open question. Another important research question that has only been partially answered is why transformational leadership is more effective than transactional leadership in a wide variety of business, military, industrial, hospital, and educational circumstances.
+
+Abstract (KO):
+조직과 구성원의 이해관계가 일치해야 합니다. 이것이 변혁적 리더의 임무이다. 추종자의 조건부 강화를 실천하는 거래적 리더와 달리 변혁적 리더는 추종자에게 영감을 주고 지적으로 자극하며 개별적으로 배려합니다. 변혁적 리더십은 지시적일 수도 있고 참여적일 수도 있습니다. 더 높은 도덕적 발전을 요구하는 변혁적 리더십은 보편적인 개념으로 인식됩니다. 더욱이, 이전의 기대와는 달리 여성 리더는 남성 리더보다 더 변혁적인 경향이 있습니다. 확증적 요인 분석에 따르면 변혁적/거래적 리더십의 6가지 요인 모델이 다양한 표본에 가장 적합하지만, 더 적은 수의 요인이 필요한지 여부는 여전히 미해결 문제로 남아 있습니다. 부분적으로만 답변된 또 다른 중요한 연구 질문은 다양한 비즈니스, 군사, 산업, 병원 및 교육 환경에서 변혁적 리더십이 거래적 리더십보다 더 효과적인 이유입니다.
